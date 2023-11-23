@@ -1,0 +1,1375 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- #BeginTemplate "../../../styles/dwt/training.dwt" -->
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta http-equiv="Content-Language" content="en-gb" />
+<!-- #BeginEditable "doctitle" -->
+<title>ELT Concourse: cracking and using shell nouns</title>
+<style type="text/css">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.auto-style3 {
+	padding-left: 5px;
+}
+.auto-style16 {
+	list-style-type: lower-alpha;
+}
+.auto-style50 {
+	border-left: medium none #666666;
+	border-right: medium none #666666;
+	border-top: medium none #666666;
+	border-bottom: 1px solid #666666;
+	padding-left: 2px;
+}
+.auto-style49 {
+	border-left: medium none #666666;
+	border-right: 1px solid #666666;
+	border-top: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	text-align: left;
+}
+.auto-style68 {
+	border-left: 1px solid #666666;
+	border-right: medium none #666666;
+	border-top: medium none #666666;
+	border-bottom: 1px solid #666666;
+	padding-left: 3px;
+	padding-right: 2px;
+}
+.auto-style54 {
+	border-left: medium none #666666;
+	border-right: 1px solid #666666;
+	border-top: 1px solid #666666;
+	border-bottom: medium none #666666;
+	text-align: left;
+}
+.auto-style51 {
+	border-left: 1px solid #666666;
+	border-right: medium none #666666;
+	border-top: 1px solid #666666;
+	border-bottom: medium none #666666;
+	padding-left: 3px;
+	padding-right: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.auto-style75 {
+	border-collapse: collapse;
+	border: 1px solid #000080;
+	background-color: #ffffff;
+}
+.auto-style76 {
+	padding-left: 3px;
+	padding-right: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.auto-style77 {
+	list-style-type: lower-alpha;
+	color: #000000;
+}
+.auto-style78 {
+	background-color: #FFFFFF;
+}
+.auto-style79 {
+	color: red;
+	text-decoration: underline;
+}
+.auto-style81 {
+	border-left: 1px solid #666666;
+	border-right: medium none #666666;
+	border-top: 1px solid #666666;
+	border-bottom: medium none #666666;
+}
+.auto-style82 {
+	border-left: medium none #666666;
+	border-right: medium none #666666;
+	border-top: medium none #666666;
+	border-bottom: 1px solid #666666;
+	background-color: #F5F5F5;
+}
+.auto-style83 {
+	text-align: center;
+	border-left: 1px solid #666666;
+	border-right: medium none #666666;
+	border-top: medium none #666666;
+	border-bottom: 1px solid #666666;
+}
+.auto-style85 {
+	text-align: center;
+	border-left: medium none #666666;
+	border-right: 1px solid #666666;
+	border-top: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+}
+.auto-style86 {
+	border-left: medium none #666666;
+	border-right: 1px solid #666666;
+	border-top: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	color: #000000;
+}
+.auto-style87 {
+	border-left: 1px solid #666666;
+	border-right: medium none #666666;
+	border-top: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+}
+.auto-style88 {
+	border-left: medium none #666666;
+	border-right: 1px solid #666666;
+	border-top: 1px solid #666666;
+	border-bottom: medium none #666666;
+}
+.auto-style93 {
+	border-left: 1px solid #666666;
+	border-right: 1px solid #666666;
+	border-top: medium none #666666;
+	border-bottom: medium none #666666;
+}
+.auto-style95 {
+	color: #000000;
+	border-left: 1px solid #666666;
+	border-right: medium none #666666;
+	border-top: medium none #666666;
+	border-bottom: 1px solid #666666;
+}
+.auto-style96 {
+	border: 1px solid #666666;
+	background-color: #F5F5F5;
+}
+.auto-style97 {
+	border: 1px solid #666666;
+}
+.auto-style98 {
+	color: #000000;
+	border-left: 1px solid #666666;
+	border-right: medium none #666666;
+	border-top: 1px solid #666666;
+	border-bottom: medium none #666666;
+}
+.auto-style99 {
+	color: #000000;
+	border-left: 1px solid #666666;
+	border-right: medium none #666666;
+	border-top: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+}
+.auto-style100 {
+	color: #000000;
+	border-left: medium none #666666;
+	border-right: 1px solid #666666;
+	border-top: 1px solid #666666;
+	border-bottom: medium none #666666;
+}
+.auto-style101 {
+	border-left: 1px solid #666666;
+	border-right: 1px solid #666666;
+	border-top: 1px solid #666666;
+	border-bottom: 1px none #666666;
+}
+.auto-style102 {
+	border: 1px solid #666666;
+	color: #000000;
+}
+.auto-style103 {
+	border-left: 1px solid #666666;
+	border-right: 1px none #666666;
+	border-top: 1px solid #666666;
+	border-bottom: 1px none #666666;
+}
+.auto-style104 {
+	border-left: 1px solid #666666;
+	border-right: 1px none #666666;
+	border-top: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+<meta content="ELT Concourse English language analysis and teaching guides. Shell nouns" name="description" />
+<script type="text/javascript">
+<!--
+function FP_changeProp() {//v1.0
+ var args=arguments,d=document,i,j,id=args[0],o=FP_getObjectByID(id),s,ao,v,x;
+ d.$cpe=new Array(); if(o) for(i=2; i<args.length; i+=2) { v=args[i+1]; s="o"; 
+ ao=args[i].split("."); for(j=0; j<ao.length; j++) { s+="."+ao[j]; if(null==eval(s)) { 
+  s=null; break; } } x=new Object; x.o=o; x.n=new Array(); x.v=new Array();
+ x.n[x.n.length]=s; eval("x.v[x.v.length]="+s); d.$cpe[d.$cpe.length]=x;
+ if(s) eval(s+"=v"); }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+// -->
+</script>
+<!-- #EndEditable -->
+<meta content="language analysis,eltconcourse,English grammar,free English language teaching materials,CELTA,Delta,language guides,free Delta training,free CELTA training,free ELT Training materials,teacher training,ELT,learning English,teaching English,English Language Teaching,ESOL,EFL,English as a Foreign Language" name="keywords" />
+<link href="../../../styles/mainstyle.css" rel="stylesheet" type="text/css" />
+<link href="../../../styles/training.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+</style>
+</head>
+
+<body>
+	<!-- Begin Masthead -->
+	<div id="masthead" >
+		<table style="width: 100%; border-bottom: #000080 solid">
+			<tr>
+				<td style="width: 135px">
+				<img alt="logo" height="49" src="../../../gfx/logo.png" width="78" /></td>
+				<td valign="bottom">
+				<span class="orangexxlargebold">ELT </span>
+				<span class="bluexxlargebold">Concourse teacher training</span></td>
+			</tr>
+		</table>
+	</div>
+	<!-- End Masthead -->
+	<!-- Begin Content -->
+			<!-- Begin Sidebar -->
+		<div id="sidebartt">
+			<ul>
+				<li><a href="../../../index.html">ELT Concourse home</a></li>
+				<li><a href="../../../a-z_index.html">A-Z site index</a></li>
+				<li><a href="../../training_index.html">Teacher training index</a></li>
+				<li><a href="../../../development/development_index.html">Teacher development</a></li>
+				<li><a href="../../../teachers/teachers.html">For teachers</a></li>
+				<li><a href="../../trainers/trainers_index.html">For trainers</a></li>
+				<li>
+				<a href="../../../academic_management/academic_management_index.html">For managers</a></li>
+				<li><a href="../../../learners/learners.html">For learners</a></li>
+				<li><a href="../../common/about_language.html">About language</a></li>
+				<li><a href="../../../questions/questions.html">Language questions</a></li>
+				<li class="whiteback">Other areas</li>
+				<li><a href="../indexes_is/eap_index_is.html">Academic English</a></li>
+				<li><a href="../indexes_is/be_index_is.html">Business English</a></li>
+				<li><a href="../../entering/introduction_to_elt.html">Entering ELT</a></li>
+				<li><a href="../../courses/courses_index.html">Courses index</a></li>
+				<li><a href="../../courses/basic/introduction_basic.html">Basic ELT course</a></li>
+				<li><a href="../../tkt/tkt_index.html">TKT</a></li>
+				<li><a href="../../bridge/bridge_index.html">The Bridge</a></li>
+				<li><a href="../../courses/lacourse/index_la_course.html">Language analysis</a></li>
+				<li>
+				<a href="../../courses/training_to_train/training_to_train_index.html">Training to train</a></li>
+				<li><a href="../../courses/transcription1/transcription.html">Transcription</a></li>
+				<li><a href="../../glossaries/glossary_index.html">Glossaries</a></li>
+				<li><a href="../../../articles/articles.html">Articles</a></li>
+			</ul>
+		</div>
+		<!-- End Sidebar -->
+		<!-- Begin Content -->
+		
+		<div id="toppicture" style="text-align: left; background-color: white; padding: 0px; margin-left: 140px;">
+				<img alt="Concourse 2" height="207" src="../../../images/concourse2blue.jpg" width="310" /></div>
+		
+			<!-- #BeginEditable "content" -->
+		
+			<!-- #BeginEditable "content" -->
+		
+		<div id="content">
+		
+			<h1>Cracking and Using shell nouns</h1>
+			<p>
+			<img alt="shell" height="207" src="../../images/shell_crack310.jpg" width="310" /></p>
+			<p>Shell nouns are widely used in Academic English of all kinds as 
+			well as in Business English and many other forms of 
+			formal writing and speaking.&nbsp; Accordingly, this guide is linked 
+			from both the EAP index and the Business English index.<br />
+			They are, however, also a feature of many general texts, written and 
+			spoken, and of quite casual conversation.&nbsp; What follows focuses 
+			a good deal on more formal texts because it is in those that the use 
+			of shell nouns is important.&nbsp; Such texts need not be confined 
+			to academic or business contexts and almost any kind of report or 
+			fact-based text will contain shell nouns whose understanding is 
+			crucial to a comprehension of the writer / speaker's view of things.</p>
+			<p>Here are some examples of shell nouns in action,
+			<span class="style_black"><strong><em>highlighted</em></strong></span>, 
+			and then we'll try a definition of what is a rather slippery 
+			concept.</p>
+			<ol>
+				<li><em>In major cities, the most pervasive form of pollution is 
+				caused by heavy traffic, particularly diesel goods vehicles and 
+				buses.&nbsp; This </em><span class="style_black"><strong><em>
+				problem</em></strong></span><em> is exacerbated in hot weather 
+				and when the air is still.</em></li>
+				<li><em>The </em><span class="style_black"><strong><em>outcome</em></strong></span><em> 
+				of our investigation was the finding that the majority of 
+				students in halls of residence were generally satisfied with the 
+				level of service they were receiving although intermittent 
+				internet access at peak demand times is an </em>
+				<span class="style_black"><strong><em>issue</em></strong></span><em> 
+				for many which causes intense frustration and discontent.</em></li>
+				<li><em>The </em><span class="style_black"><strong><em>aim</em></strong></span><em> 
+				of this experiment was to see how far and how widely the 
+				findings of other researchers in the area are parallelled in this 
+				environment.</em></li>
+				<li><em>The <span class="style_black"><strong>plan</strong></span> 
+				was to take the bus to the station and then get the 4:30 train 
+				up to London in time for the wedding.&nbsp; Unfortunately, it 
+				didn't work out that way.</em></li>
+			</ol>
+			<table cellpadding="0" class="auto-style75">
+				<tr>
+					<td>
+					<img alt="think" height="60" src="../../../gfx/think60.jpg" width="60" /></td>
+					<td class="auto-style76">What is happening here and why are 
+					these nouns highlighted in particular?<br />
+					<a href="#1" onclick="FP_changeProp(/*id*/'egs',0,'style.visibility','visible')">Click here when you have some ideas</a>.</td>
+				</tr>
+			</table>
+			<div id="egs" style="position: relative;  visibility: hidden">
+			<p><a name="1"></a>The nouns here are abstract entities: <em>
+			<span class="style_black"><strong>problem, outcome, issue</strong></span>
+			</em>and <span class="style_black"><em><strong>aim</strong></em></span>.&nbsp; 
+			They all refer to how something is viewed by the writer / speaker 
+			and clearly differ from more obviously simple content nouns such as
+			<em>apple, book, egg, fountain, generosity, happiness, joke, money</em> 
+			and so on.<br />
+			What these nouns are doing in the discourse is to encapsulate 
+			propositions in a way that determines how they are seen and how they 
+			should be understood.&nbsp; In more detail:</p>
+			<ol>
+				<li>In example 1., the word <span class="style_black"><em>
+				<strong>problem</strong></em></span> clearly sends the message 
+				that the writer / speaker sees the issue as a negative event or 
+				state which needs in some way to be solved or ameliorated.&nbsp; 
+				The whole of the first sentence (which could have been a longer 
+				text if we had wished to try your patience a little) is 
+				encapsulated or, so to speak, put in the shell of the term <em>
+				problem</em>.&nbsp; Thereafter, in the text, that is how it is 
+				to be understood and references to <em>it</em> and <em>this</em>, 
+				for example, are clearly linked to the shell and not to elements 
+				within it.</li>
+				<li>In example 2., there are two shell nouns:
+				<span class="style_black"><em><strong>outcome</strong></em></span> 
+				and <span class="style_black"><em><strong>issue</strong></em></span>.<br />
+				The first encapsulates findings which have already been set out 
+				or which are to be set out later.&nbsp; The author of this text 
+				clearly wants the reader to understand that the information 
+				presented to the reader / listener derives from an investigation 
+				of some kind and is not simply assertion or guesswork.<br />
+				The second raises an <em>issue</em>, often a euphemism for a <em>
+				problem</em>, which is to be seen as something in want of a 
+				solution.&nbsp; The reader is being primed to understand what 
+				follows that way.</li>
+				<li>In example 3., the shell noun is <span class="style_black">
+				<em><strong>aim</strong></em></span> which sets the context for 
+				what follows.&nbsp; It is clearly distinguished from <em>
+				outcomes</em> or <em>reasons</em>, for example, and is to be 
+				taken as the context in which all that follows is to be 
+				understood.<br />
+				The word <em>findings</em> is not highlighted but it, too, is 
+				potentially a shell noun if there are a number of results of 
+				other people's investigations included in the overall term.</li>
+				<li>The last example shows how shell nouns can be used in quite 
+				casual speech to place a series of propositions within a simple 
+				shell noun, <span class="style_black"><em><strong>plan</strong></em></span>, 
+				in this case.&nbsp; The use of the shell noun allows the speaker 
+				to refer back to the three intentions easily with the simple anaphoric 
+				reference, <em>it</em>.</li>
+			</ol></div>
+			<hr />
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="slippery" height="166" src="../../images/sign_slippery_road250.jpg" width="250" /></td>
+					<td class="auto-style3"><h2>Defining a slippery concept</h2>
+					</td>
+				</tr>
+			</table>
+			<p>Now we get to the hard part: defining what exactly a shell noun 
+			is and is not.</p>
+			<p>Firstly, shell nouns do not form a class of nouns which can be 
+			definitively and exhaustively listed (although we'll make an attempt 
+			at listing and categorising them later for teaching purposes).&nbsp; 
+			All shell nouns are able to be used, as it were , in non-shell 
+			functions when they simply represent an entity, abstract or 
+			concrete, to use rather old-fashioned terms, and are nouns like any 
+			other.<br />
+			What identifies a shell noun is the function it performs in a 
+			discourse.&nbsp; Some nouns, usually like the ones exemplified above 
+			which represent rather loose abstract concepts, lend themselves to 
+			being the shell in which other stretches of discourse are understood 
+			and should be viewed.<br />
+			So, for example, in:</p>
+			<p class="indentpara"><em>John has a problem with his car so he's 
+			taking it to the workshop tomorrow</em></p>
+			<p>we do not have a shell-noun use of the noun <em>problem</em>.&nbsp; 
+			It merely represents a dispreferred circumstance.<br />
+			However, in:</p>
+			<p class="indentpara">Climate change and human exploitation of the 
+			animals' habitat are combining to create a serious challenge for 
+			conservation efforts.&nbsp; This problem is beginning to be tackled 
+			by a range of non-governmental agencies, not least our own.</p>
+			<p>we do have the use of the term <em>problem</em> as a shell noun because it 
+			functions to subsume the whole preceding text (which could have been 
+			very much longer and more complex).&nbsp; It defines, in other 
+			words, the way in which the preceding or following propositions need 
+			to be understood.&nbsp; It is their context, rather than their 
+			co-text.<br />
+			We also have another shell noun, <em>challenge</em>, to which 
+			reference can later be made leading the reader through the text 
+			logically.</p>
+			<p>Schmid, 2018:112, identifies the characteristics of shell nouns 
+			like this:</p>
+			<ol>
+				<li><em class="style_black">the specific concepts [shell nouns] 
+				encapsulate are local, to a large part context-specific and 
+				therefore transient.&nbsp; What is characterized as a </em>
+				<span class="style_black">problem, challenge</span><em class="style_black"> 
+				or </em><span class="style_black">aim</span><em class="style_black"> 
+				changes from one use of these nouns to the next, depending on 
+				the proposition encoded in the surrounding linguistic context, 
+				i.e. the shell content.</em><br />
+				So, for example, while we can quite easily define the word <em>
+				problem</em> in the example of John's car, above, we can only 
+				define the word in the second example by reference to the 
+				surrounding text and the intentions of the author.</li>
+				<li>Shell nouns characterise the propositions they enclose and 
+				they do this on a cline from very general ideas such as <em>aim, 
+				thing, problem, issue </em>and so on to more narrow definitions 
+				encoded in shell nouns such as <em>disadvantage, peculiarity, 
+				uniqueness</em> and so on.</li>
+				<li>Discoursally, shell nouns allow internal referencing to be 
+				much more precise than would otherwise be the case.&nbsp; For 
+				example, having defined a stretch of discourse (which may be 
+				long or short) as <em>an aim, a problem, an issue, an advantage</em> 
+				or whatever, thereafter, the writer can safely used deictic 
+				markers such as <em>this</em> and<em> it</em> with the shell 
+				noun as the referent rather than being obliged to refer to the 
+				whole section of discourse.&nbsp; As we shall see, the use of
+				<em>this</em> as the pronoun for the shell noun is very common 
+				and allows it to be used as if the whole of a text were 
+				nominalised.&nbsp; The text is not nominalised but the text is 
+				enclosed within the shell and that is, of course, just a noun.</li>
+			</ol>
+			<p>The key principle at work here is the way that nouns can <strong>
+			reify</strong> propositions, i.e., convert an abstract idea into a 
+			thing.&nbsp; The other term, used extensively for this behaviour of 
+			nouns, is that they provide the ability to <strong>hypostatize</strong>, 
+			i.e., treat or represent something abstract as a concrete reality.<br />
+			Only nouns can do this, of course, because nouns are, along with 
+			verbs, the chief way 
+			in which any language represents reality.</p>
+			<p>For example, compare these two mini-texts:</p>
+			<ol class="auto-style77">
+				<li><em>People in the organisation are spending too much 
+				time duplicating work that is being done in other departments leading 
+				to unfocused activity and often to internal contradictions.&nbsp; 
+				This must be addressed by setting out clearer definitions of 
+				people's roles.&nbsp; It can be tackled in one of three ways ...</em></li>
+				<li><em>People in the organisation are spending too much 
+				time duplicating work that is being done in other departments leading 
+				to unfocused activity and often to internal contradictions.&nbsp; 
+				This <strong>wasteful duplication</strong> must be addressed by 
+				setting out clearer definitions of people's roles.&nbsp; It can 
+				be tackled in one of three ways ...</em></li>
+			</ol>
+			<p>It should be clear that in the second version, the issue is 
+			discussed within a noun shell, the expression <em>wasteful 
+			duplication</em>, which is quite specific and more carefully defined 
+			than it would be with the use of a more generalised shell noun such 
+			as <em>problem</em>.<br />In the first version, the use of <em>it</em> in the final sentence is 
+			potentially confusing because the reader is left to surmise what the 
+			referent might be.&nbsp; In the second version, because we have a 
+			shell noun, it is quite clear what <em>it</em> refers to: <em>
+			<strong>wasteful duplication</strong></em>.<br />That means that the writer can thereafter refer to the whole 
+			set of propositions with a simple pronouns, <em>this </em>or<em> it</em>, 
+			used to refer to <em>the duplication</em> rather than vaguely 
+			pointing at something in the text.<br />
+			It also means that the text hangs together much more successfully 
+			because the reader is aware of exactly what is being discussed.&nbsp; 
+			In other words, cohesion is achieved.</p>
+			<p>It should now also be clear why shell nouns should be the target 
+			of some teaching in, especially, programmes focused on academic and 
+			business English in which the cohesiveness of both spoken and 
+			written production has a high priority.<br />
+			They should not, however, be neglected on general English courses 
+			because the ability to understand and use them has positive 
+			communicative benefits.<br />
+			In the last sentence, there is the deliberate inclusion of the shell 
+			noun, <span class="style_black"><em><strong>ability</strong></em></span>, 
+			which encapsulates both understanding and using.</p>
+			<hr />
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="link" height="166" src="../../images/link_chain_rope250.jpg" width="250" /></td>
+					<td class="auto-style3"><h2>Theme and rheme</h2>
+					</td>
+				</tr>
+			</table>
+			<p>If the concepts of theme and rheme are obscure to you, try the 
+			guide the theme-rheme structures, linked below.</p>
+			<p>An obvious use of shell nouns is in the maintenance of coherence 
+			and cohesion in a text.&nbsp; These twin ideas can be achieved in a 
+			variety of ways, of course, but shell nouns are convenient and easy 
+			to manipulate in this regard.<br />
+			For example, in a text such as:</p>
+			<p class="indentpara">Photocopying costs are getting out of hand 
+			because people are making unnecessary copies, failing to use copies 
+			that already exist on the shelves and using the machines for 
+			personal purposes and this is becoming a real issue.&nbsp; Because 
+			of it, we are instituting a new system of card operation so a check 
+			can be kept on who is copying what.</p>
+			<p>The theme of the first sentence is simply <em>photocopying costs</em> 
+			but it has a long and extended rheme of over 30 words which should 
+			form the theme of the next sentence but is simply too long to be 
+			easily put into the theme position.&nbsp; However, in this case, the 
+			writer has neatly encapsulated the initial rheme propositions inside 
+			the shell noun <em>issue</em>.&nbsp; What follows, therefore, is a 
+			simplified theme using <em>it </em>as a pronoun reference to <em>
+			issue</em> which makes the text coherent and cohesive without the 
+			need to introduce a very long theme expression.<br />
+			Neat.</p>
+			<p>Shell nouns are also used in reverse, of course, and can begin as 
+			the theme of a statements such as:<br />
+			<em>&nbsp;&nbsp;&nbsp; The <span class="style_black"><strong>problem</strong></span> 
+			of ...<br />
+&nbsp;&nbsp;&nbsp; The <span class="style_black"><strong>findings</strong></span> 
+			were that ...<br />
+&nbsp;&nbsp;&nbsp; Our <span class="style_black"><strong>intention</strong></span> 
+			was to ...</em><br />
+			etc.<br />
+			and in these cases, once set up as topical themes, reference can be 
+			made to them with simple pro-forms such as <em>they, it, this</em> 
+			etc. which themselves may form themes of subsequent sentences 
+			followed by rhemes explaining their nature or importance.</p>
+			<hr />
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="shells" height="166" src="../../images/shell_eggs250.jpg" width="250" /></td>
+					<td class="auto-style3"><h2>Types of shell noun</h2>
+					</td>
+				</tr>
+			</table>
+			<p>Here we draw heavily on Schmid's (2018) summary but will add in a 
+			few more examples in an effort to extend the list of possible shell 
+			nouns that would be appropriate targets for a teaching programme 
+			in general, academic or business English environments.<br />
+			Later, we'll look briefly at the kinds of texts within which each 
+			variety can be usefully employed and suggest some simple teaching 
+			techniques.</p>
+			<p>The crudest classification can be made into two groups:</p>
+			<ul class="greenbullet">
+				<li>shell nouns 
+			which are generalised and prototypical.&nbsp; In this first group we find, e.g.:<br />&nbsp;<em>&nbsp;&nbsp; fact, idea, issue, principle, problem, reason</em></li>
+				<li>shell nouns which are restricted to certain meanings and 
+				sometimes less obviously shell nouns at all.&nbsp; In this group 
+				come nouns such as:<br /><em>&nbsp;&nbsp;&nbsp; danger, fear, mistake, proof, sign<br />
+				</em>etc. which are all restricted to certain kinds of meaning.</li>
+			</ul>
+			<p>A more refined classification is:<br /></p>
+			<ol>
+				<li>Factual<ol class="auto-style16">
+					<li>Neutral:<br />
+					<em>&nbsp;&nbsp;&nbsp; circumstance, fact, phenomenon, 
+					reality, thing</em></li>
+					<li>Causal<br />
+					<em>&nbsp;&nbsp;&nbsp; cause, conclusion, consequence, 
+					effect, outcome, product, reason, result, upshot</em></li>
+					<li>Evidential<br />
+					<em>&nbsp;&nbsp;&nbsp; confirmation, evidence, indication, 
+					proof, sign, signal, substantiation, verification</em></li>
+					<li>Comparative<br />
+					<em>&nbsp;&nbsp;&nbsp; contradiction, contrast, 
+					correspondence, difference, disparity, dissimilarity, 
+					distinction, divergence, gap, likeness, match, parallel, 
+					pattern, resemblance, similarity</em></li>
+					<li>Partitive<br />
+					<em>&nbsp;&nbsp;&nbsp; aspect, attribute, case, example, 
+					facet, feature, instance, part, portion, property, quality, 
+					sample</em></li>
+					<li>Attitudinal<br />
+					<em>&nbsp;&nbsp;&nbsp; advantage, aid, benefit, con, 
+					difficulty, dilemma, disadvantage, drawback, hindrance, 
+					improvement, irony, obstacle, paradox, predicament, pro, 
+					problem</em></li>
+				</ol>
+				</li>
+				<li>Linguistic<ol class="auto-style16">
+					<li>Propositional<br />
+					<em>&nbsp;&nbsp;&nbsp; argument, assertion, claim, 
+					contention, intelligence, news, report, rumour</em></li>
+					<li>Illocutionary (i.e., containing within the meaning a 
+					communicative function)<br />
+					<em>&nbsp;&nbsp;&nbsp; avowal, complaint, demand, directive, 
+					doubt, edict, instruction, objection, offer, order, 
+					proposal, question, recommendation, statement, submission, 
+					suggestion</em></li>
+				</ol>
+				</li>
+				<li>Mental<ol class="auto-style16">
+					<li>Conceptual<br />
+					<em>&nbsp;&nbsp;&nbsp; concept, conjecture, guess, 
+					hypothesis, idea, notion, opinion, perception, perspective, 
+					question, theory, mystery</em></li>
+					<li>Creditive<br />
+					<em>&nbsp;&nbsp;&nbsp; assumption, belief, conviction, 
+					faith, illusion, knowledge, presumption, realisation, view</em></li>
+					<li>Dubitative<br />
+					<em>&nbsp;&nbsp;&nbsp; disbelief, distrust, doubt, question, 
+					reservation, scepticism, suspicion, wariness</em></li>
+					<li>Volitional<br />
+					<em>&nbsp;&nbsp;&nbsp; aim, ambition, goal, intention, 
+					object, plan, purpose, resolution, solution, target</em></li>
+					<li>Emotive<br />
+					<em>&nbsp;&nbsp;&nbsp; anxiety, apprehension, concern, 
+					delight, disappointment, fear, joy, pleasure, regret, 
+					revelation, satisfaction, shock, surprise, worry</em></li>
+				</ol>
+				</li>
+				<li>Modal<ol class="auto-style16">
+					<li>Epistemic<br />
+					<em>&nbsp;&nbsp;&nbsp; certainty, chance, danger, 
+					likelihood, possibility, probability, prospect, reality, 
+					threat, truth, vulnerability</em></li>
+					<li>Deontic<br />
+					<em>&nbsp;&nbsp;&nbsp; authorisation, burden, charge, 
+					clearance, demand(s), duty, consent, mission, need, 
+					obligation, onus, permission, task</em></li>
+					<li>Dynamic<br />
+					<em>&nbsp;&nbsp;&nbsp; ability, capacity, chance, 
+					competence, opening, opportunity, power</em></li>
+				</ol>
+				</li>
+				<li>Eventive<ol class="auto-style16">
+					<li>General<br />
+					<em>&nbsp;&nbsp;&nbsp; act, action, deed, event, incident, 
+					situation</em></li>
+					<li>Specific<br />
+					<em>&nbsp;&nbsp;&nbsp; attempt, challenge, effort, 
+					endeavour, fight, primacy, priority, struggle</em></li>
+					<li>Attitudinal<br />
+					<em>&nbsp;&nbsp;&nbsp; blunder, difficulty, error, 
+					miscalculation, mistake, problem, success, trouble, victory</em></li>
+				</ol>
+				</li>
+				<li>Circumstantial<ol class="auto-style16">
+					<li>General<br />
+					<em>&nbsp;&nbsp;&nbsp; background, context, environment, 
+					framework, position, setting, situation, surroundings</em></li>
+					<li>Specific<br />
+					<em>&nbsp;&nbsp;&nbsp; costs, location, means, method, 
+					moment, place, procedure, provision, time, way</em></li>
+				</ol>
+				</li>
+			</ol>
+			<p>In the list above, there are over 200 potential shell nouns.&nbsp; 
+			Do not try to teach them all at once.<br />
+			If you would like that list as a PDF document, use the link at the 
+			end.<br />
+			If you would like to take a short matching test on these categories,
+			<a href="shell_nounshp.htm">click here</a>.</p>
+			<hr />
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="read" height="166" src="../../images/reading_business_paper250.jpg" width="250" /></td>
+					<td class="auto-style3"><h2>Text type and shell noun use</h2>
+					</td>
+				</tr>
+			</table>
+			<p>In academic and business settings, a limited number of genres 
+			need to be deployed.&nbsp; It is unlikely, for example, that in 
+			these environments there will be much need for the skills of writing 
+			or orally presenting a narrative or an exposition, setting out a 
+			story or one side of an argument only.<br />
+			However, in general English use, such texts are quite common and 
+			need to be produced and understood by many learners.<br />
+			As far as academic and business English are concerned, we are left, therefore, with a set of four generic categories into 
+			which it will be useful to include shell nouns to maintain cohesion 
+			and to nominalise ideas and concepts.<br />
+			Here are the these four with the shell nouns highlighted
+			<span class="style_black"><strong><em>like this </em></strong>
+			</span>and the deictic pointers (determiners, pronouns and lexical 
+			alternatives) which make the text cohesive, <span class="style_red">
+			<em><strong>like this</strong></em></span>:</p>
+			<dl>
+				<dt><strong>Recount</strong></dt>
+				<dd>A recount is intended to set out clearly what has happened.&nbsp; 
+				It is the format for reporting back on experiments conducted, 
+				surveys carried out and work done.<br />
+				Into these kinds of texts, there are obvious opportunities to 
+				encapsulate propositions and concepts in noun shells.&nbsp; For 
+				example:<br />
+				<em>&nbsp;&nbsp;&nbsp; The </em><span class="style_black">
+				<strong><em>aim</em></strong></span><em> of the survey was to 
+				identify the </em><span class="style_black"><strong><em>aspects</em></strong></span><em> 
+				of the business which ... and this <span class="style_red">
+				<strong>aim</strong></span> was ... see which of
+				<span class="style_red"><strong>them</strong></span> ...<br />
+&nbsp;&nbsp;&nbsp; The </em><span class="style_black"><strong><em>context</em></strong></span><em> 
+				of the experiment was ... and it gave us the </em>
+				<span class="style_black"><strong><em>opportunity</em></strong></span><em> 
+				to ... and ... .&nbsp; <span class="style_red"><strong>These a</strong></span><span class="auto-style78"><span class="style_red"><strong>ffordances</strong></span>
+				</span>were ...<br />
+				</em>Recounts are also common in less specialised settings, too, 
+				and are often the way in which excuses are given.&nbsp; They 
+				occur in anecdotes, news reports, explanations and excuses and 
+				so on.<br />
+				Here's an example of part of a recount, with the shell noun and 
+				the references highlighted in the same way.<br />
+				<em>&nbsp;&nbsp;&nbsp; Well, my </em><span class="style_black">
+				<strong><em>assumption</em></strong></span><em> was that the 
+				trains would be running as normal so I'd be able to get to the 
+				party with plenty of time to spare.&nbsp; </em>
+				<span class="style_red"><strong><em>It</em></strong></span><em> 
+				turned out to be wrong, however, because I had forgotten about 
+				the Bank Holiday timetable changes.</em></dd>
+				<dt><strong>Procedure</strong></dt>
+				<dd>A procedure text (spoken or written) is intended to explain 
+				how something is done.<br />
+				Suitable shell nouns might be:<br />
+				<em>&nbsp;&nbsp;&nbsp; To measure the </em>
+				<span class="style_black"><strong><em>products</em></strong></span><em> 
+				of the reactions it was necessary to take a </em>
+				<span class="style_black"><strong><em>sample</em></strong></span><em> 
+				of the material.&nbsp; </em><span class="style_red"><strong><em>
+				These products</em></strong></span><em> were ... and </em>
+				<span class="style_red"><strong><em>the samples</em></strong></span><em> 
+				showed ...<br />
+&nbsp;&nbsp;&nbsp; The <span class="style_black"><strong>purpose</strong></span> 
+				of the procedure is to ensure that customer
+				<span class="style_black"><strong>complaints</strong></span> are 
+				dealt with in a timely matter.&nbsp; <span class="style_red">
+				<strong>This</strong></span> will be achieved by classifying
+				<span class="style_red"><strong>each one</strong></span> on the 
+				basis of ...</em></dd>
+				<dt><strong>Information report / Explanation</strong></dt>
+				<dd>An information report is intended to present data logically 
+				and has a simple structure although the ordering of information 
+				needs careful attention.&nbsp; This form of writing is common when a 
+				student is asked to summarise the results of reading and 
+				research to demonstrate understanding or a concise report of 
+				activities undertaken is needed in a business context.<br />
+				Suitable shell nouns might be:<br />
+				<em>&nbsp;&nbsp;&nbsp; The <span class="style_black"><strong>
+				attributes</strong></span> of the programme a<span class="auto-style78">llow 
+				it t</span>o address the <span class="style_black"><strong>
+				problems</strong></span> of ... by reducing the
+				<span class="style_black"><strong>possibility</strong></span> 
+				that ... .&nbsp; <span class="style_red"><strong>These</strong></span> 
+				mean that the <span class="style_red"><strong>issues</strong></span> 
+				are ... and the <span class="style_red"><strong>chance</strong></span> 
+				of is ...<br />
+&nbsp;&nbsp;&nbsp; Napoleon's first <span class="style_black"><strong>priority</strong></span> 
+				in 1813 was to ... and <span class="style_red"><strong>this</strong></span> 
+				he achieved by ...</em></dd>
+				<dt><strong>Discussion</strong></dt>
+				<dd>A discussion is intended to present both sides of a 
+				controversy and is more common in the humanities than the 
+				sciences.<br />
+				This kind of text is, naturally, what is required when 
+				departments issue essay titles containing the word <em>Discuss</em>.&nbsp; 
+				Often, within a discussion, it is necessary to embed other text 
+				forms as digressions or explanation phases.<br />
+				Discussions may also occur in a business context, often as part 
+				of a report which sets out alternatives with pros and 
+				cons balanced.<br />
+				Such texts almost require the use of suitable shell nouns such 
+				as:<br />
+&nbsp;<em>&nbsp;&nbsp; There is a <span class="style_black"><strong>view</strong></span> 
+				that ... and <span class="style_red"> <strong>this</strong></span> needs to be taken into 
+				account because of the <span class="style_black"><strong>
+				possibility</strong></span> that ... <span class="style_red">
+				<strong>which</strong></span> may lead to ...<br />
+&nbsp;&nbsp;&nbsp; While initial <span class="style_black"><strong>costs</strong></span> 
+				may be ... <span class="style_black"><strong>advantages</strong></span> 
+				are that ... and the <span class="style_red"><strong>latter</strong></span> 
+				may serve to reduce the impact of the <span class="style_red">
+				<strong>former</strong></span> by ...</em></dd>
+			</dl>
+			<p>Now we can look at how shell nouns might be used in other genres, narratives and expositions, which are more usually used in 
+			less specialised settings.</p>
+			<dl>
+				<dt><strong>Narratives</strong></dt>
+				<dd>Narratives exhibit a similar structure to recounts with 
+				the addition, usually, of some kind of complication or problem 
+				occurring in them which is resolved somehow.&nbsp; This issue is 
+				often embedded&nbsp; within a shell noun so that it can be 
+				referred to easily.&nbsp; Here's an example of part of a 
+				narrative where this happens:<br />
+				<em>&nbsp;&nbsp;&nbsp; Of course the <span class="style_black">
+				<strong>upshot</strong></span> of all the problems with the car, 
+				the cancelled train service, the weather 
+				and so on was that we couldn't leave when we intended.&nbsp;
+				<span class="style_red"><strong>That</strong></span> led to all 
+				sorts of difficulties later on because the hotel was shut by the 
+				time we arrived.&nbsp; <span class="style_red"><strong>It</strong></span> 
+				had a silver lining in that we&nbsp; got to stay somewhere much 
+				nicer in the end.</em></dd>
+				<dt><strong>Expositions</strong></dt>
+				<dd>Expositions are found frequently on blog sites, in newspaper 
+				leader articles, in essays and in letters and proposals.&nbsp; 
+				They differ from discussions in that they are intended to 
+				persuade, not inform, and conventionally focus only on one side 
+				of an argument.&nbsp; Like discussions, however, they can use 
+				shell nouns to present issues concisely and in a way that allows 
+				the author of the text, written or spoken, to refer to quite 
+				complicated issues without being too vague.&nbsp; Like this, for 
+				example:<br />
+				<em>&nbsp;&nbsp;&nbsp; The <span class="style_black"><strong>
+				need</strong></span> is for a rapid and sensible response to
+				<span class="style_black"><strong>these issues</strong></span> 
+				and <span class="style_red"><strong>it</strong></span> is a 
+				pressing <span class="style_red"><strong>one</strong></span>.&nbsp; 
+				Unless <span class="style_red"><strong>they</strong></span> are 
+				tackled soon, the situation will only get worse and
+				<span class="style_red"><strong>the problems </strong></span>
+				will multiply.</em></dd>
+			</dl>
+			<p>While there is nothing very mysterious to most readers faced with 
+			texts like this, learners need considerable practice following some 
+			awareness raising to deploy shell nouns effectively because they have 
+			to:</p>
+			<ul class="bluebullet">
+				<li>select the correct shell noun which appropriately 
+				encapsulates the propositions it holds</li>
+				<li>make sure that the shell noun is as precise or as general as 
+				it needs to be</li>
+				<li>make anaphoric reference in the following text to the 
+				correct shell noun</li>
+			</ul>
+			<p>This is by no means easy but the dividends, in terms, of 
+			cohesive, mature texts are considerable.</p>
+			<hr />
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="thimb" src="../../images/thumb_bw250.jpg" /></td>
+					<td class="auto-style3"><h2>Form</h2>
+					</td>
+				</tr>
+			</table>
+			<p>There are few hard-and-fast rules, well, none, to be fair, but 
+			there are some rules of thumb:</p>
+			<ol>
+				<li>Most of the shell nouns are complemented by a copular verb 
+				and a <em>that-</em>clause.&nbsp; So for example, we get:<br />
+				<em>&nbsp;&nbsp;&nbsp; The reality is that ...<br />
+&nbsp;&nbsp;&nbsp; The problem appears that ...<br />
+&nbsp;&nbsp;&nbsp; The advantage has been that ...<br />
+&nbsp;&nbsp;&nbsp; Our hypothesis was that ...<br />
+&nbsp;&nbsp;&nbsp; The theory emerged that ...<br />
+&nbsp;&nbsp;&nbsp; The likelihood grows that ...<br />
+&nbsp;&nbsp;&nbsp; The danger remained that ...</em><br />
+				and so on.<br />
+				It is worth noting here that not all so-called abstract nouns in 
+				English can follow this pattern.&nbsp; We do not, for example, 
+				allow:<br />
+				<em>&nbsp;&nbsp;&nbsp; *The science was that ...<br />
+&nbsp;&nbsp;&nbsp; *The hatred was that ...<br />
+&nbsp;&nbsp;&nbsp; *The comprehension was that ...</em><br />
+				and so on.<br />
+				This pattern is not unique to shell nouns but is an important 
+				defining characteristic and one that makes them particularly 
+				useful and flexible.</li>
+				<li>Because of its usual prospective meaning (think about: <em>hope to, 
+				intend to, want to, am going to</em> etc.) the <em>to-</em>infinitive 
+				is the natural complement for shell nouns with prospective 
+				meanings, too, with and without a copula, so we get, e.g.:<br />
+&nbsp;<em>&nbsp;&nbsp; An opportunity exists to ...<br />
+&nbsp;&nbsp;&nbsp; The aim has been to ...<br />
+&nbsp;&nbsp;&nbsp; We got permission to ...<br />
+&nbsp;&nbsp;&nbsp; The government does not have the ability to ...<br />
+&nbsp;&nbsp;&nbsp; Our efforts were made to ...<br />
+&nbsp;&nbsp;&nbsp; It w<span class="auto-style78">as </span>a silly mistake to ...</em><br />
+				etc.<br />
+				Again, not all abstract nouns in English allow this pattern so 
+				we cannot have, e.g.:<br />
+				<em>&nbsp;&nbsp;&nbsp; *The love was to ...<br />
+&nbsp;&nbsp;&nbsp; *The mercy was to ...<br />
+&nbsp;&nbsp;&nbsp; *The understanding was to ...</em><br />
+				etc.<br />
+				And, again, this pattern is not unique to shell nouns but is 
+				another which makes them useful and flexible.</li>
+				<li>Illocutionary shell nouns depend for their grammar on the 
+				type of communicative function which the nouns suggest as in, 
+				e.g.:<br />
+&nbsp;&nbsp;&nbsp; <em>The complaints about ...<br />
+&nbsp;&nbsp;&nbsp; The demand that ...<br />
+&nbsp;&nbsp;&nbsp; The question whether ...<br />
+&nbsp;&nbsp;&nbsp; The proposal for ...<br />
+&nbsp;&nbsp;&nbsp; The point was made that ...<br />
+				</em>and so on.</li>
+				<li>Some shell nouns, especially the circumstantial ones, take 
+				less predictable complements so we may encounter:<br />
+				<em>&nbsp;&nbsp;&nbsp; The context of ...<br />
+&nbsp;&nbsp;&nbsp; The environment in which ...<br />
+&nbsp;&nbsp;&nbsp; The surroundings of ...<br />
+&nbsp;&nbsp;&nbsp; The background to ...</em><br />
+				etc.</li>
+			</ol>
+			<p>The form of the language is, therefore, unpredictable in detail 
+			but reasonably straightforward, nevertheless.<br />
+			Patterns 1. and 2. above are particularly important, according to
+		Schmid, 2000:3.</p>
+			<hr />
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="seminar" height="166" src="../../images/teaching_seminar250.jpg" width="250" /></td>
+					<td class="auto-style3"><h2>Teaching: eating the elephant</h2>
+					</td>
+				</tr>
+			</table>
+			
+			<p>This has to come in sections, piecemeal, and it is foolish to 
+			believe that the ability to comprehend and use shell nouns is 
+			something that can be taught quickly or easily.<br />
+			To get the trick of using these nouns appropriately demands a good 
+			deal of time and effort but the rewards are substantial.<br />
+			Many of the examples which follow are set in an academic or business 
+			English teaching context but it is simple to see how they can be 
+			adapted or designed to focus on more generalised texts.</p>
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="aware" height="133" src="../../images/woman_aware200.jpg" width="200" /></td>
+					<td class="auto-style3"><h3>Awareness raising</h3>
+					</td>
+				</tr>
+			</table>
+			<p>Simply being able to identify the role of shell nouns in texts is 
+			a great help to comprehension and it is a comparatively 
+			straightforward matter to alert learners to them in any texts you 
+			use.&nbsp; Concept-checking questions and leading questions are 
+			effective such as:<br />
+			<span class="style_black"><em>&nbsp;&nbsp;&nbsp; What is the meaning 
+			of </em><span class="style_underline">aspect</span><em> in the 
+			second sentence?<br />
+&nbsp;&nbsp;&nbsp; What does the word </em><span class="style_underline">issue</span><em> 
+			include?<br />
+&nbsp;&nbsp;&nbsp; What does </em><span class="style_underline">this</span><em> 
+			refer to in the second paragraph?</em></span><br />
+			and so on.<br />
+			Providing learners with a list of the shell nouns in longer texts 
+			and getting them to scan for them and mark them in some way is also 
+			an effective approach.&nbsp; Once identified, they can be analysed 
+			for meaning and their pronoun and other references identified.</p>
+			<p>Noticing tasks are familiar approaches to raising awareness of 
+			the existence of these sorts of nouns and the functions they 
+			perform.&nbsp; Simply <span class="auto-style79"><strong><em>
+			highlighting</em></strong></span> the nouns in texts is often a good 
+			beginning and, thereafter, the advantages of using shell nouns can 
+			be the focus of the awareness-raising procedures.&nbsp; Like this, 
+			perhaps:</p>
+			<table cellpadding="3" cellspacing="0" class="tableblueborder" style="width: 90%">
+				<tr>
+					<td class="auto-style82" colspan="2">1. What is the 
+					difference between texts a) and texts b)?<br />
+					2. Which is better and easier to understand?</td>
+				</tr>
+				<tr>
+					<td class="auto-style85" style="width: 365px">a)</td>
+					<td class="auto-style83" style="width: 365px">b)</td>
+				</tr>
+				<tr>
+					<td class="auto-style86" style="width: 365px">
+					<span class="style_blue"><em>There are too many cars, causing 
+					too much pollution and damaging our children's health as 
+					well as causing medical problems for older citizens in the 
+					city and this has to be addressed.</em></span></td>
+					<td class="auto-style87" style="width: 365px"><em>The main issue 
+					is that there are too many cars, causing too much pollution 
+					and damaging our children's health as well as causing 
+					medical problems for older citizens in the city and this has 
+					to be addressed.</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style88" style="width: 365px"><em>We set out to 
+					determine what influenced policy maker's decisions in the 
+					area of customer relations and public policy and we found 
+					that they depended on ...</em></td>
+					<td class="auto-style81" style="width: 365px"><em>The aim of the 
+					investigation was to determine what factors influenced 
+					policy maker's decisions in the area of customer relations 
+					and public policy it was accomplished by identifying them in 
+					some detail.</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style88" style="width: 365px"><em>We wanted 
+					to take a taxi into town, have a bite to eat and then go on 
+					to the theatre and meet up with you all there but it didn't 
+					prove possible because ...</em></td>
+					<td class="auto-style81" style="width: 365px"><em>Our plan 
+					was to take a taxi into town, have a bite to eat and then go 
+					on to the theatre and meet up with you all there but it 
+					didn't work out because ...</em></td>
+				</tr>
+			</table>
+			<p>Three examples are not, of course, enough.&nbsp; To address this 
+			area thoroughly, learners need exposure to many of these exercises 
+			focusing on each of the categories of shell nouns which we have set 
+			out above.</p>
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="scope" height="133" src="../../images/scope200.jpg" width="200" /></td>
+					<td class="auto-style3"><h3>Focusing on meaning and scope</h3>
+					</td>
+				</tr>
+			</table>
+			<p>We noted that a crude distinction can be made between shell nouns 
+			which are general in meaning and those which are more specific.&nbsp; 
+			That (i.e., the shell noun <span class="style_black"><em><strong>
+			distinction</strong></em></span>) is a good place to begin.<br />
+			Like this:</p>
+			<table cellpadding="3" class="tableblueborder">
+				<tr>
+					<td class="auto-style82" colspan="3">Choose the right shell 
+					noun for the topics on the left</td>
+				</tr>
+				<tr>
+					<td class="auto-style86">All the negative points</td>
+					<td class="auto-style93" rowspan="5">&nbsp;</td>
+					<td class="auto-style95"><em>aims</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style86">Negative and positive points</td>
+					<td class="auto-style99"><em>views</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style86">Only what you wanted to do</td>
+					<td class="auto-style99"><em>locations</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style86">Only the places you want to discuss</td>
+					<td class="auto-style99"><em>issues</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style100">All sides of an argument</td>
+					<td class="auto-style98"><em>disadvantages</em></td>
+				</tr>
+			</table>
+			<p>Once the crude distinctions are clear, it is possible to focus 
+			more narrowly on the range of shell nouns appropriate to a text.<br />
+			For example:</p>
+			<table cellpadding="3" class="auto-style75">
+				<tr>
+					<td class="auto-style96" colspan="3">Fill the gaps in the 
+					texts with an appropriate shell noun from the list on the 
+					right.</td>
+				</tr>
+				<tr>
+					<td class="auto-style97">The __________ of the survey were 
+					to discover which ____________ were held by the majority of 
+					the staff in relation to their working hours and to find 
+					__________ of similarity.</td>
+					<td class="auto-style87" rowspan="4">
+					<span class="style_black"><em>findings<br />
+					aspects<br />
+					aims<br />
+					aim<br />
+					patterns<br />
+					issues<br />
+					pros</em></span></td>
+					<td class="auto-style86" rowspan="4"><em>opinions<br />
+					ideas<br />
+					tasks<br />
+					conclusions<br />
+					issues<br />
+					outcomes<br />
+					cons</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style97">The meeting's ____________ were 
+					firstly that ... and secondly ...</td>
+				</tr>
+				<tr>
+					<td class="auto-style97">The __________ which have arisen 
+					have both positive and negative __________ .</td>
+				</tr>
+				<tr>
+					<td class="auto-style97">All the __________ people had for a 
+					surprise 50th party for Mary had both __________ and 
+					__________ .</td>
+				</tr>
+			</table>
+			<p>A more advanced task, of course, is one without the column 
+			containing the choices.</p>
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="form" height="133" src="../../images/form_hammer_anvil200.jpg" width="200" /></td>
+					<td class="auto-style3"><h3>Focusing on form and colligation</h3>
+					</td>
+				</tr>
+			</table>
+			<p>Sentence clause matching, such as this example, can help at the 
+			outset:</p>
+			<table cellpadding="3" cellspacing="0" class="tableblueborder">
+				<tr>
+					<td class="auto-style82" colspan="4">Match the clauses on 
+					the left to those on the right.</td>
+				</tr>
+				<tr>
+					<td class="auto-style102">1</td>
+					<td class="auto-style102"><span class="style_blue">The aim 
+					was ...</span></td>
+					<td class="auto-style104">A</td>
+					<td class="auto-style104">... is for more research</td>
+				</tr>
+				<tr>
+					<td class="auto-style101">2</td>
+					<td class="auto-style101">The issues were ...</td>
+					<td class="auto-style103">B</td>
+					<td class="auto-style103">... to determine</td>
+				</tr>
+				<tr>
+					<td class="auto-style101">3</td>
+					<td class="auto-style101">The possibility ...</td>
+					<td class="auto-style103">C</td>
+					<td class="auto-style103">... to surprise her</td>
+				</tr>
+				<tr>
+					<td class="auto-style101">4</td>
+					<td class="auto-style101">The outcome showed ...</td>
+					<td class="auto-style103">D</td>
+					<td class="auto-style103">... that most solutions have poor 
+					outcomes</td>
+				</tr>
+				<tr>
+					<td class="auto-style101">5</td>
+					<td class="auto-style101">The need ...</td>
+					<td class="auto-style103">E</td>
+					<td class="auto-style103">... was present that</td>
+				</tr>
+				<tr>
+					<td class="auto-style101">6</td>
+					<td class="auto-style101">The plot was ...</td>
+					<td class="auto-style103">F</td>
+					<td class="auto-style103">... that it will be possible to 
+					...</td>
+				</tr>
+			</table>
+			<p>because it provides an opportunity to discuss and highlight 
+			correct forms.<br />
+			The next step is to get the learners to incorporate sentence frames 
+			like these into their own production (oral or written).</p>
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="woman" height="133" src="../../images/woman_model_railings200.jpg" width="200" /></td>
+					<td class="auto-style3"><h3>Teaching: a modelling approach</h3>
+					</td>
+				</tr>
+			</table>
+			<p>There are, in just the list above, over 200 of these potential 
+			shell nouns and it is a challenge for most learners to acquire more 
+			than around ten new items of lexis a day (and many fail to do that).&nbsp; 
+			(There are at least another 400 or so which have not been mentioned 
+			(Schmid, 2000, lists 670 of them).)<br />
+			If, as seems likely, your learners and you do not have 20 days to 
+			spare, there needs to be some focus:</p>
+			<ul class="bluebullet">
+				<li>Many shell nouns are, in fact, quite common whether 
+				functioning as shells or as simple nouns denoting abstractions.<br />
+				This means that most learners above, say B1 level, already know 
+				many of them but may not be alert to their possibilities in 
+				terms of writing and presenting texts.</li>
+				<li>A survey of the lists above and others will quickly show 
+				that many shell nouns are synonymous (or nearly so) with 
+				others.&nbsp; So for example<br /><em>&nbsp;&nbsp;&nbsp; consequence, effect</em> and <em>outcome</em> form a set<br /><em>&nbsp;&nbsp;&nbsp; cause </em>and <em>reason</em> are often synonymous in many 
+				environments<br /><em>&nbsp;&nbsp;&nbsp; likelihood, probability, chance</em> and <em>possibility</em> 
+				are also often interchangeable<br /><em>&nbsp;&nbsp;&nbsp; plan, plot, scheme, idea </em>and <em>proposal</em> carry the same senses but at varying levels of formality and so on.<br />
+				These sets of (near) synonyms share grammatical characteristics 
+				and form colligations concerning the kinds of complementation 
+				which are appropriate.<br />
+				Synonymy is also widely used in keeping the text cohesive 
+				lexically so one may start by characterising something as <em>a 
+				plan</em> and refer to it later as <em>an intention</em> or 
+				begin with the shell noun <em>a problem</em> which is later 
+				referred to as <em>the issue</em>.</li>
+				<li>Learners do not need to master 670, or even 200, shell nouns but they do need at 
+			least one in each of the categories to be able to write and present 
+			texts appropriately.&nbsp; More than one would be better.</li>
+				<li>Helping learners to produce texts is often done <em>via</em> a 
+			modelling approach in which a text is analysed for its features and 
+			then learners are tasked with writing or presenting a similar text 
+			which parallels the model.&nbsp; For an example and explanation, see 
+			the guide in the EAP section to understanding generic structures.<br />
+				Shell nouns in model texts, of which there are almost always 
+				more than a few, can effectively be a major or minor part of the 
+				analysis.&nbsp; This can only happen if you are alert to the 
+				possibilities.</li>
+			</ul>
+			<hr /><br />
+			<table id="istrainingnav" cellpadding="0" cellspacing="0" class="tableblueborder">
+			<tr>
+				<td class="auto-style50" colspan="2">Related guides</td>
+			</tr>
+			<tr>
+				<td class="auto-style49">
+				<a href="../../../documents/ELT_Concourse_potential_shell_nouns.pdf" target="_blank">
+				shell nouns</a></td>
+				<td class="auto-style68">for a list of some 200 potential shell 
+				nouns</td>
+			</tr>
+			<tr>
+				<td class="auto-style49">
+				<a href="theme_rheme.html">theme and rheme</a></td>
+				<td class="auto-style68">for the guide dedicated to explaining 
+				the concepts and exemplifying how they are realised in English</td>
+			</tr>
+			<tr>
+				<td class="auto-style49">
+				<a href="../eap/genre_eap.html">genre in EAP</a></td>
+				<td class="auto-style68">for more about the kinds of genres 
+				learners may need to operate with</td>
+			</tr>
+			<tr>
+				<td class="auto-style54"> 
+				<a href="../eap/nominalisation.html">nominalisation: EAP</a></td>
+				<td class="auto-style51">for a guide to a key writing skill 
+				and how to teach it</td>
+			</tr>
+			<tr>
+				<td class="auto-style54"> 
+				<a href="../phrases_clauses_sentences/nominal_clauses_phrases.html">
+				nominal clauses and phrases</a></td>
+				<td class="auto-style51">for a more general guide</td>
+			</tr>
+			</table>
+			<br />
+			<hr />
+		<p class="smallfont">Reference:<br />
+		Schmid, H-J, 2000, <em>English abstract nouns as conceptual shells: from 
+		corpus to cognition</em>, Berlin / New York, Mouton de Gruyter<br />
+		
+			Schmid, H-J, 2018, <em>Shell Nouns in English: a personal roundup</em>, 
+			Caplletra 64 (Primavera, 2018), pp. 109-128. ISSN 0214-8188, ISSN 
+			versió electrònica 2386-7159<br />
+			</p>
+			<hr />
+			</div>
+			<!-- #EndEditable -->
+		<!-- End Content -->
+	
+	<!-- Begin Footer -->
+	<div id="footer">
+		<p>
+		<a href="../../../contact.html">Contact</a> |
+		<a href="../../../faq.html">FAQs</a> |
+		<a href="../../../copyright_notice.html">Copyright notice</a> |
+		<a href="../../../documents/ELT_Concourse_Charter.pdf" target="_blank"> ELT Concourse charter</a> |
+		<a href="../../../disclaimer.html"> Disclaimer and Privacy statement </a>|
+		<a href="../../../search_the_site.html">Search <strong>
+		ELT Concourse</strong></a></p>
+	</div>
+	<!-- End Footer -->
+
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

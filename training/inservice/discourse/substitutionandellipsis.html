@@ -1,0 +1,772 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- #BeginTemplate "../../../styles/dwt/training.dwt" -->
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta http-equiv="Content-Language" content="en-gb" />
+<!-- #BeginEditable "doctitle" -->
+<title>ELT Concourse: ellipsis and substitution</title>
+<script type="text/javascript">
+<!--
+function FP_swapImg() {//v1.0
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+ elm.$src=elm.src; elm.src=args[n+1]; } }
+}
+
+function FP_preloadImgs() {//v1.0
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+
+function FP_changeProp() {//v1.0
+ var args=arguments,d=document,i,j,id=args[0],o=FP_getObjectByID(id),s,ao,v,x;
+ d.$cpe=new Array(); if(o) for(i=2; i<args.length; i+=2) { v=args[i+1]; s="o"; 
+ ao=args[i].split("."); for(j=0; j<ao.length; j++) { s+="."+ao[j]; if(null==eval(s)) { 
+  s=null; break; } } x=new Object; x.o=o; x.n=new Array(); x.v=new Array();
+ x.n[x.n.length]=s; eval("x.v[x.v.length]="+s); d.$cpe[d.$cpe.length]=x;
+ if(s) eval(s+"=v"); }
+}
+// -->
+</script>
+<style type="text/css">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.auto-style3 {
+	list-style-type: lower-alpha;
+}
+.auto-style8 {
+	border: 1px solid #FDB415;
+	text-align: left;
+}
+.auto-style4 {
+	vertical-align: middle;
+}
+.auto-style7 {
+	border: 1px solid #FDB415;
+}
+.auto-style9 {
+	color: #0005b3;
+}
+.auto-style5 {
+	color: #932d00;
+}
+.auto-style10 {
+	list-style-type: lower-alpha;
+	border-collapse: collapse;
+	border: 1px
+ solid #932d00;
+}
+.auto-style11 {
+	list-style-type: lower-alpha;
+	padding-left: 5px;
+}
+.auto-style12 {
+	padding-left: 5px;
+	padding-right: 2px;
+}
+.auto-style14 {
+	list-style-image: url('../../../gfx/7pxbullet.png');
+	margin-left: 40px;
+}
+.auto-style16 {
+	border-left: medium none #747373;
+	border-right: medium none #747373;
+	border-top: medium none #747373;
+	border-bottom: 1px solid #747373;
+	padding-left: 2px;
+}
+.auto-style17 {
+	border-left: 1px solid #747373;
+	border-right: medium none #747373;
+	border-top: medium none #747373;
+	border-bottom: 1px solid #747373;
+	padding-left: 3px;
+	padding-right: 2px;
+}
+.auto-style18 {
+	text-align: left;
+	border-left: medium none #747373;
+	border-right: 1px solid #747373;
+	border-top: 1px solid #747373;
+	border-bottom: medium none #747373;
+}
+.auto-style19 {
+	text-align: left;
+	border-left: medium none #747373;
+	border-right: 1px solid #747373;
+	border-top: 1px solid #747373;
+	border-bottom: 1px solid #747373;
+}
+.auto-style20 {
+	border-left: 1px solid #747373;
+	border-right: medium none #747373;
+	border-top: 1px solid #747373;
+	border-bottom: medium none #747373;
+	padding-left: 3px;
+	padding-right: 2px;
+}
+</style>
+<!-- #EndEditable -->
+<meta content="eltconcourse,concourse,free English language teaching materials,CELTA,Delta,Trinity TESOL,free Delta training,free CELTA training,free ELT Training materials,teacher training,ELT,learning English,teaching English,English Language Teaching,ESOL,EFL,English as a Foreign Language,English" name="keywords" />
+<meta content="Free English language training materials for trainers and teachers with sections on Cambridge Delta, TKT and CELTA." name="description" />
+<link href="../../../styles/mainstyle.css" rel="stylesheet" type="text/css" />
+<link href="../../../styles/training.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+
+.auto-style1 {
+	text-align: left;
+}
+.masterheader {
+	margin-bottom: 0;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Begin Container -->
+<div id="container">
+	<!-- Begin Masthead -->
+	<div id="masthead" class="auto-style1">
+		<table style="width: 100%; border-bottom: #FDB415 solid">
+			<tr>
+				<td style="width: 135px">
+				<img alt="logo" height="49" src="../../../gfx/logo.png" width="80" />&nbsp;</td>
+				<td valign="bottom">
+				<span class="orangexxlargebold">ELT </span>
+				<span class="bluexxlargebold">Concourse teacher training</span></td>
+			</tr>
+		</table>
+	</div>
+	<!-- End Masthead -->
+	<!-- Begin Page Content -->
+	<div id="page_content">
+		<!-- Begin Sidebar -->
+		<div id="sidebartt">
+			<ul>
+				<li><a href="../../../index.html">ELT Concourse home</a></li>
+				<li><a href="../../ttindex.html">Teacher training index</a></li>
+				<li><a href="../inserviceindex.html">In-service training</a></li>
+				<li><a href="../../initial/initialindex.html">Initial plus training</a></li>
+				<li><a href="../../../development/developmentindex.html">Teacher development</a></li>
+				<li><a href="../../../acman/acmanindex.html">Academic management</a></li>
+				<li><a href="../../../searchthesite.html">Search ELT Concourse</a></li>
+				<li><a href="../../a-ztrainingindex.html">A-Z training index</a></li>
+				<li><a href="../../../articles/articles.html">Articles</a></li>
+				
+				<li><a href="../../../questions/questions.html">Language questions</a></li>
+				
+			</ul>
+		</div>
+		<!-- End Sidebar -->
+		<!-- Begin Content -->
+		
+		<div id="toppicture "style="text-align: left; background-color: white; padding: 0px; margin-left: 140px;">
+				<img alt="Concourse 2" height="207" src="../../../images/concourse2blue.JPG" width="310" /></div>
+		
+		<div id="content">
+			<!-- #BeginEditable "content" -->
+	<div id="lessonbody">
+	<h1>Substitution and ellipsis</h1>
+		<p>
+		<img alt="omit replace" height="231" src="../../imagesgraphics/omitreplace.png" width="310" /></p>
+		<p>There are many occasions in both speaking and writing when repeating 
+		ourselves is considered poor form, poor style or quite odd.&nbsp; For 
+		example, an utterance such as:<br />
+		<em>&nbsp;&nbsp;&nbsp; I expected the weather to be bad and stop us playing and the weather 
+		was bad and the weather stopped us playing<br />
+		</em>would sound strange whenever it was said or written.<br />
+		It can be amended to the better-sounding:<br />
+		<em>&nbsp;&nbsp;&nbsp; I expected the weather to be bad and stop us playing and it was and 
+		did</em></p>
+		<table cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+				<img alt="write" height="60" src="../../../gfx/write.gif" width="60" /></td>
+				<td class="auto-style12"><strong>Task</strong><br />
+				On a piece of paper, abbreviate the following by replacing parts 
+				of sentences (substitution) or by leaving them out (ellipsis).<br />
+				Click on the table when you've done it.</td>
+			</tr>
+		</table>
+		<p>
+		<img id="img1" alt="ellipsis and substitution 1" height="327" onclick="FP_swapImg(0,0,/*id*/'img1',/*url*/'../../imagesgraphics/ellipsubtaskans.png')" src="../../imagesgraphics/ellipsubtask.png" width="500" /></p>
+		<hr />
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="closer" height="165" src="../../images/microscope_research250.jpg" width="250" /></td>
+					<td class="auto-style11">
+					<h2>A closer look</h2>
+					</td>
+				</tr>
+			</table>
+			<p>OK.&nbsp; Let's see what's happening.</p>
+		<ol>
+			<li>The sentence:<em><br />
+&nbsp;&nbsp;&nbsp; I bought a shirt online but when the shirt arrived I didn't 
+			like the shirt</em><br />
+			changed to<br />
+			<em>&nbsp;&nbsp;&nbsp; I bought a shirt online but when <span class="style_black">it</span> 
+			arrived I didn't like <span class="style_black">it</span></em><br />
+			The noun <em>shirt</em> (with its article) has been replaced 
+			twice by <em>it.&nbsp; </em>Pronoun substitution is just about the 
+			most common form of substitution.&nbsp; The third-person pronouns 
+			are used to refer to things in the text, e.g.:<br />
+			<em>&nbsp;&nbsp;&nbsp; I don't really need reading glasses but
+			<span class="style_black">they</span> help</em><br />
+			and first- and second-person pronouns are used to refer to people and things outside the text, 
+			e.g.:<em><br />
+			&nbsp;&nbsp;&nbsp;
+			I liked the shirt but <span class="style_black">you</span> didn't like 
+			<span class="style_black">it</span><br />
+			&nbsp;&nbsp;&nbsp;
+			Maggie, Jim and I set out on time but <span class="style_black">we</span> 
+			were delayed</em></li>
+			<li>The exchange:<em><br />
+&nbsp;&nbsp;&nbsp; Do you have any dark green floor tiles?<br />
+			&nbsp;&nbsp;&nbsp;
+			No we don't have any dark green floor tiles but we have some dark 
+			blue floor tiles</em><br />
+			changed to<br />
+			<em>&nbsp;&nbsp;&nbsp; Do you have any dark green floor tiles?<br />
+			&nbsp;&nbsp;&nbsp;
+			No, we don't, but we have some dark blue <span class="style_black">ones</span></em><br />
+			In this example, two things are happening:<ol class="auto-style3">
+				<li>The noun phrase (<em>dark green floor tiles</em>) has been 
+				replaced with <em>ones, </em>another common device.&nbsp; This 
+				is a pronoun of sorts (the term pro-form would be better) and it 
+				can exist in both singular and plural guises (<em>one/ones</em>).</li>
+				<li>The whole clause <em>have any dark green floor tiles</em> 
+				has been simply elided (left out), leaving only the auxiliary 
+				verb and the negative particle.&nbsp; The verb <em>have</em> is 
+				clearly understood by both speakers.</li>
+			</ol>
+			</li>
+			<li>The exchange:<em><br />
+&nbsp;&nbsp;&nbsp; Has the post come?<br />
+			&nbsp;&nbsp;&nbsp;
+			No, the post hasn't come</em><br />
+			changed to<br />
+			<em>&nbsp;&nbsp;&nbsp; Has the post come?<br />
+			&nbsp;&nbsp;&nbsp;
+			No <span class="style_black">it</span> hasn't</em><br />
+			Again, two things are happening:<ol class="auto-style3">
+				<li>The noun phrase (<em>the post</em>) has been replaced with
+				<em>it, </em>as in 1.</li>
+				<li>The lexical verb <em>come </em>has been elided, leaving only 
+				the auxiliary verb and the negative particle (<em>No, it hasn't</em>).&nbsp; 
+				Clearly, the verb <em>come</em> is understood.</li>
+			</ol>
+			</li>
+			<li>The sentence:<em><br />
+&nbsp;&nbsp;&nbsp; She loves gardening and Tom loves gardening</em><br />
+			changed to<br />
+			<em>&nbsp;&nbsp;&nbsp; She loves gardening and <span class="style_black">so</span>
+			<span class="style_black">does</span> Tom</em><br />
+			Here we have an example of <em>so </em>+ the auxiliary standing 
+			for the lexical verb.&nbsp; In these cases the auxiliary is called 
+			the operator.&nbsp; It is a common device within and across 
+			sentences so we can also have, e.g., <br />
+			<em>&nbsp;&nbsp;&nbsp; I love gardening<br />
+			&nbsp;&nbsp;&nbsp;
+			So <span class="style_black">do</span> I!<br />
+			</em>You may have changed this differently, having, perhaps:<br />
+			<em>&nbsp;&nbsp;&nbsp; She and Tom love gardening</em><br />
+			which elides the verb and its object from the first half.<br />
+			or even<br />
+			<em>&nbsp;&nbsp;&nbsp; She loves gardening and Tom, too<br />
+			</em>eliding the whole verb phrase and its object<br />
+			In this case the adverb <em>too</em> must be inserted or we 
+			understand that she loves Tom (and the ambiguity is still present).</li>
+			<li>The sentence:<em><br />
+&nbsp;&nbsp;&nbsp; The doctor advised me to take more exercise and I will take 
+			more exercise</em><br />
+			changed to<br />
+			<em>&nbsp;&nbsp;&nbsp; The doctor advised me to take more exercise and I will
+			<span class="style_black">do</span> (<span class="style_black">so</span>)</em><br />
+			Here again the operator auxiliary stands for the whole clause <em>will 
+			take more exercise</em>.&nbsp; It can be followed by <em>do</em> or 
+			its variant <em>do so.<br />
+			</em>In this case, we can also reduce it to<em><br />
+			&nbsp;&nbsp;&nbsp;
+			The doctor advised me to take more exercise and I will<br />
+			</em>where the auxiliary is left to stand for the whole verb phrase.</li>
+			<li>The sentence:<em><br />
+&nbsp;&nbsp;&nbsp; I didn't think he would arrive but he arrived</em><br />
+			changed to<br />
+			<em>&nbsp;&nbsp;&nbsp; I didn't think he would arrive but he <span class="style_black">
+			did</span></em><br />
+			Here the word <em>did</em> (the operator) stands for the verb 
+			<em>arrived</em>.&nbsp; It's a straight substitution that is used with 
+			lexical verbs in simple past and simple present tenses.&nbsp; For 
+			example:<br />
+			<em>&nbsp;&nbsp;&nbsp; She promised to come early and did<br />
+			&nbsp;&nbsp;&nbsp;
+			He thought it would rain but it didn't</em><br />
+			In 
+			tenses in the progressive and perfect aspect we can remove the main 
+			lexical verb and leave the auxiliary to substitute, e.g.:<br />
+			<em>&nbsp;&nbsp;&nbsp; He has promised to pay me and he has</em><br />
+			but if we do that 
+			with simple tenses, there's nothing left.&nbsp; We can't have<em><br />
+			&nbsp;&nbsp;&nbsp;
+			*I 
+			didn't think he would arrive but he<br />
+			</em>so English inserts the 
+			operator (<em>did</em>) to stand as the verb or verb phrase.&nbsp; It can stand for 
+			very long verb phrases as in<br />
+			<em>&nbsp;&nbsp;&nbsp; I was surprised that the government <span class="style_brown">
+			decided to pass a law making it illegal to study grammar in school 
+			or even the privacy of your own home</span> but it
+			<span class="style_brown">did</span>.</em></li>
+			<li>The sentence:<em><br />
+&nbsp;&nbsp;&nbsp; She has cleaned and she has polished the car</em><br />
+			changed to<br />
+			&nbsp;&nbsp;&nbsp;
+			S<em>he has cleaned and polished the car</em><br />
+			Both the subject, <em>she</em>, and the auxiliary verb, <em>has</em>, have been elided because 
+			they are common to both verbs.&nbsp; The object of both verbs is <em>
+			the car.<br />
+			</em>At other times, various parts 
+			of the sentence can be elided, for example:<br />
+			<em>&nbsp;&nbsp;&nbsp; They have painted the house and the garage<br />
+			</em>eliding the subject, the auxiliary verb and the main verb<br />
+			<em>&nbsp;&nbsp;&nbsp; I have washed the car and painted the door<br />
+			</em>eliding only the subject and the auxiliary verb because the 
+			object of each verb is different<br />
+			<em>&nbsp;&nbsp;&nbsp; She has cleaned and repaired the door<br />
+			</em>eliding the object common to both verbs and the auxiliary.</li>
+			<li>The exchange:<em><br />
+&nbsp;&nbsp;&nbsp; Where is she?<br />
+			&nbsp;&nbsp;&nbsp;
+			She is in the garden</em><br />
+			changed to<br />
+			<em>&nbsp;&nbsp;&nbsp; Where is she?<br />
+			&nbsp;&nbsp;&nbsp;
+			In the garden</em><br />
+			Again, shared information has allowed the elision of the verb and 
+			its subject, leaving only the prepositional phrase.</li>
+		</ol>
+		<hr />
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="cut out" height="166" src="../../images/scissors250.jpg" width="250" /></td>
+					<td class="auto-style11">
+					<h2>Elision</h2>
+					</td>
+				</tr>
+			</table>
+			<p>Ellipsis (or elision) has been described as substitution by zero.<br />
+		Technically, ellipsis only occurs when the item that is omitted is 
+		'uniquely recoverable'.&nbsp; That is to say, there is no doubt about 
+		what has been omitted.&nbsp; In, say,<br />
+		<em>&nbsp;&nbsp;&nbsp; She often drinks sherry and probably will this evening</em><br />
+		only <em>drink sherry</em> is the possible ellipsis.<br />
+			In something 
+		like<br />
+		<em>&nbsp;&nbsp;&nbsp; I liked the car so I bought three</em><br />
+		there are a number of possibilities (<em>of them, cars, more</em> etc.) 
+		so this is not a case of ellipsis in the technical sense.&nbsp; For 
+			teaching 
+		purposes, that doesn't really matter.</p>
+		<hr />
+		<p>Here's a graphical way of representing what we do with these devices.&nbsp; 
+		The examples of ellipsis are outlined in red and the rest are 
+		substitutions of one kind or another.</p>
+		<p>
+		<img alt="summary" height="542" src="../../imagesgraphics/ellipsissubstitutionsummary.png" width="620" />&nbsp;</p>
+		<p>Here are some of the examples again with some things to notice.<br />
+		Think briefly about why they have been selected and then click on the
+		<img alt="eye open" class="auto-style4" height="16" src="../../../gfx/eyeopen.gif" width="16" /> 
+		to reveal some comments.</p>
+			<table cellpadding="3" class="auto-style10" style="width: 90%">
+				<tr>
+					<td class="auto-style8" style="width: 125px"><strong>I liked 
+					the car so I bought it<br />
+					I liked the car so I bought one<br />
+					</strong>
+					<img alt="eye open" class="auto-style4" height="16" src="../../../gfx/eyeopen.gif" width="16" onclick="FP_changeProp(/*id*/'intel',0,'style.visibility','visible')" /></td>
+					<td class="auto-style7">
+					<div id="intel" style="visibility:hidden" class="auto-style9"> 
+						<ul class="greenbullet">
+							<li><span class="style_brown">Straight pronoun substitution can occur but in 
+							this case, <em>it </em>
+							is used <strong>to refer 
+							</strong>(anaphorically) to <em>the 
+							car</em></span></li>
+							<li><span class="style_brown">The word <em>one</em> in this case does not 
+							refer to </span> <em><span class="style_brown"><strong>this</strong> car</span></em><span class="style_brown"> at all.&nbsp; 
+							It substitutes grammatically for <em>a car like it</em></span></li>
+						</ul>
+					</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="auto-style8" style="width: 125px"><strong>I liked 
+					the car and she thought the same<br />
+					</strong> 					
+					<img alt="eye open" class="auto-style4" height="16" src="../../../gfx/eyeopen.gif" width="16" onclick="FP_changeProp(/*id*/'intel0',0,'style.visibility','visible')" /></td>
+					<td class="auto-style7">
+					<div id="intel0" style="visibility:hidden" class="auto-style9"> 
+						<ul class="greenbullet">
+							<li><span class="style_brown"><em>the same</em> can actually substitute for 
+							many different items.&nbsp; In this case, it's a 
+							substitute for something like <em>she liked the car, 
+							too</em></span></li>
+							<li><span class="style_brown">frequently, <em>the same</em> is a substitute 
+							for a noun phrase (as in </span> <em>
+							<span class="style_brown">I'll have 
+							the same</span></em><span class="style_brown">)</span></li>
+							<li><span class="style_brown">it can also substitute for a clause as in 
+							</span> <em><span class="style_brown">I 
+							thought the holiday was marvellous and I know you 
+							thought the same</span></em></li>
+							<li><span class="style_brown"><em>the same</em> can even stand in for an 
+							adjective as in </span> <em>
+							<span class="style_brown">the music was wonderful and the 
+							dancing was the same</span></em></li>
+						</ul>
+					</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="auto-style8" style="width: 125px"><strong>I liked 
+					the car so I bought 6<br />
+					</strong>
+					<img alt="eye open" class="auto-style4" height="16" src="../../../gfx/eyeopen.gif" width="16" onclick="FP_changeProp(/*id*/'intel1',0,'style.visibility','visible')" /></td>
+					<td class="auto-style7">
+					<div id="intel1" style="visibility:hidden" class="style_brown"> 
+						some determiners only can allow omission of the noun<ul class="greenbullet">
+							<li>demonstratives (<em>these, those </em>etc.), 
+							numerals (<em>twelve, the twelfth</em> etc.), 
+							possessives (<em>his, ours</em> etc.), non-phrasal 
+							quantifiers (<em>a few, plenty</em> etc.), 
+							partitives (<em>a bit, a cup, a piece</em> etc.) 
+							and measures (<em>a pint, a kilo</em> etc.) all 
+							allow the elision of the noun phrase<br />
+							<em>I liked the glass so I bought
+							<span class="style_black">a few</span><br />
+							I enjoyed the beer so I got
+							<span class="style_black">a pint</span><br />
+							She liked the cheese so I brought
+							<span class="style_black">a kilo</span> back</em></li>
+							<li>expressions with <em>of </em>are shortened with
+							<em>of</em> being elided because it belongs with the 
+							noun</li>
+							<li>articles and simple possessives do not allow 
+							elision of the noun phrase:<br />
+							<em>*I liked her car so I bought one like her</em></li>
+						</ul>
+					</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="auto-style8" style="width: 125px"><strong>I 
+					didn't enjoy the film but she did<br />
+					</strong>
+					<img alt="eye open" class="auto-style4" height="16" src="../../../gfx/eyeopen.gif" width="16" onclick="FP_changeProp(/*id*/'intel6',0,'style.visibility','visible')" /></td>
+					<td class="auto-style7">
+					<div id="intel6" style="visibility:hidden" class="auto-style5"> 
+						<ul class="greenbullet">
+							<li>The operators <em>do, does </em>and <em>did</em> 
+							can stand alone to substitute for the verb phrase or 
+							they can be followed by <em>so.</em>&nbsp; We can 
+							have, therefore<br />
+							<em>He told me to read the book and I will / will 
+							<span class="style_black">do</span> 
+							/ will do <span class="style_black">so</span></em></li>
+							<li>One oddity is the pro-form <em>so</em> cannot be 
+							added to a comparative expression:<br />
+							<em>*He plays tennis better than I 
+							<span class="style_black">do so</span></em></li>
+						</ul>
+					</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="auto-style8" style="width: 125px"><strong>Someone 
+					must have done it but he can't<br />
+					</strong>
+					<img alt="eye open" class="auto-style4" height="16" src="../../../gfx/eyeopen.gif" width="16" onclick="FP_changeProp(/*id*/'intel2',0,'style.visibility','visible')" /></td>
+					<td class="auto-style7">
+					<div id="intel2" style="visibility:hidden" class="auto-style5"> 
+						When the lexical verb is omitted, the first 
+						auxiliary can be left to stand for all the auxiliaries, 
+						in this case <em>can't</em> stands for <em>can't have 
+						done it</em></div>
+					</td>
+				</tr>
+				<tr>
+					<td class="auto-style8" style="width: 125px"><strong>I hope 
+					not<br />
+					I think so<br />
+					</strong>
+					<img alt="eye open" class="auto-style4" height="16" src="../../../gfx/eyeopen.gif" width="16" onclick="FP_changeProp(/*id*/'intel3',0,'style.visibility','visible')" /></td>
+					<td class="auto-style7">
+					<div id="intel3" style="visibility:hidden" class="auto-style5"> 
+						<p><span class="style_brown">These are somewhat 
+						irregular in English.&nbsp; For more see the part of the 
+						guide to negation which deals with something called 
+						transferred negation linked in the list of related guides at the end.</span></p>
+						<ul class="greenbullet">
+							<li>The pro-form<em> not</em> occurs mainly with 
+							verbs signifying belief or understanding<em>:<br />
+							I think not, I believe not, I hope not, I assume not</em><br />
+							but its use is somewhat formal with many verbs and 
+							the transferred negative + <em>so</em> is often preferred<br />
+							<em>I don't think so, I don't imagine so, I don't 
+							suppose so</em></li>
+							<li>The pro-form <em>so </em>is also used with verbs 
+							of speaking<em><br />
+							I say so, I told him so<br />
+							</em>but not with <em>ask<br />
+							*I asked so</em></li>
+							<li><em>so </em>can be initial with a few verbs in 
+							the first person, usually<em><br />
+							So I hear, So we understand</em></li>
+						</ul>
+					</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="auto-style8" style="width: 125px"><strong>
+					Something made a noise but I don't know what<br />
+					</strong>
+					<img alt="eye open" class="auto-style4" height="16" src="../../../gfx/eyeopen.gif" width="16" onclick="FP_changeProp(/*id*/'intel4',0,'style.visibility','visible')" /></td>
+					<td class="auto-style7">
+					<div id="intel4" style="visibility:hidden" class="auto-style5"> 
+						All <em>wh-</em> words can function in this way:<br />
+						<em>&nbsp;&nbsp;&nbsp; He arrived early but I don't know exactly when<br />
+						&nbsp;&nbsp;&nbsp;
+						I put it down but can't remember where<br />
+						&nbsp;&nbsp;&nbsp;
+						She came with a girl but I don't who<br />
+						&nbsp;&nbsp;&nbsp;
+						He left early but nobody knows why<br />
+						&nbsp;&nbsp;&nbsp;
+						He wants me to play the game but I don't know how<br />
+						</em>These all follow a predictable structure 
+						and form a good mini-teaching unit.</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="auto-style8" style="width: 125px"><strong>I was 
+					told to speak but I was too shy to<br />
+					</strong>
+					<img alt="eye open" class="auto-style4" height="16" src="../../../gfx/eyeopen.gif" width="16" onclick="FP_changeProp(/*id*/'intel5',0,'style.visibility','visible')" /></td>
+					<td class="auto-style7">
+					<div id="intel5" style="visibility:hidden" class="style_brown">
+					
+						The <em>to </em>doesn't always come at the 
+						end.&nbsp; It can be followed by an adverbial in, e.g.,<em><br />
+						I tried to get it finished but I was too tired to at the 
+						time.<br />
+						</em>Many hundreds of verbs can be used this way but 
+						they are all normally followed by infinitives with <em>
+						to</em> rather than gerunds.<br />
+						<em>hope to, be required to, remember to, forget to, 
+						want to, expect to</em> and so on are OK but you can't 
+						do this with verbs usually followed by a gerund such as
+						<em>enjoy, practise, get used to, detest, deny, admit
+						</em>etc<em>.<br />
+						&nbsp;&nbsp;&nbsp;
+						I want to swim tomorrow but it's too cold to<br />
+						</em>is OK 
+						but<em><br />
+						&nbsp;&nbsp;&nbsp;
+						*She detested living in England but got used to<br />
+						</em>is not.<em><br />
+						</em>Verbs which take either the infinitive or the 
+						gerund with no change in meaning, such as<em> continue, 
+						prefer</em> etc. can produce somewhat doubtful 
+						utterances such as<br />
+						<em>?I prefer eating early but he prefers to late</em></div></td>
+				</tr>
+			</table>
+	
+		<br />
+		<hr />
+		<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="speak" height="165" src="../../images/talk_watercooler250.JPG" width="250" /></td>
+					<td class="auto-style11">
+					<h2>Clausal elision in spoken English</h2>
+					</td>
+				</tr>
+			</table>
+		<p>A dialogue such as:<br />
+		<em>&nbsp;&nbsp;&nbsp; Why did you bring that book upstairs?<br />
+		&nbsp;&nbsp;&nbsp;
+		I brought this book upstairs to read in bed</em><br />
+		is at least unusual and very clumsy.<br />
+		It would be better as<br />
+		<em>&nbsp;&nbsp;&nbsp; Why did you bring that book upstairs?<br />
+		&nbsp;&nbsp;&nbsp;
+		To read in bed<br />
+		</em>which elides the whole clause <em>I brought this book upstairs</em></p>
+		<p>This is such a common phenomenon (and not only in English) that we can 
+		often forget the fact that learners can have some difficulty 
+		understanding the sense.&nbsp; It is not always the case that this kind 
+		of elision occurs in response to questions.&nbsp; It can happen with all 
+		initiation types, for example:</p>
+		<dl>
+			<dt><strong>Initiations which inform</strong></dt>
+			<dd><em>I have bought a new sweater<br />
+			Where?</em></dd>
+			<dt><strong>Initiations which ask if</strong></dt>
+			<dd><em>Can you help me with this?<br />
+			Yes, of course.</em></dd>
+			<dt><strong>Initiations which ask whether</strong></dt>
+			<dd><em>Do you think it'll rain?<br />
+			No chance.</em></dd>
+			<dt><strong>Initiation which direct</strong></dt>
+			<dd><em>Get me some chocolate when you are at the station, will you?<br />
+			Sure.</em></dd>
+		</dl>
+		<p>For teaching purposes, we can call these <strong>response 
+		elisions</strong> because they almost always occur in the response to some kind of 
+		initiation.&nbsp; Here are a few examples of clausal elision in 
+		responses:</p>
+		<ul class="redbulletlist">
+			<li>Conditional sentences<ul class="redbulletlist">
+				<li class="greybulletlist"><em>What will you do if he is late?<br />
+				Carry on without him</em><br />
+				(eliding the <em>if</em> clause)</li>
+				<li class="greybulletlist"><em>I'm taking the train<br />
+				If they are running</em><br />
+				(eliding the main clause)</li>
+			</ul>
+			</li>
+			<li>Causal subordinate clauses</li>
+			<li class="auto-style14"><em>Why are you taking your laptop?<br />
+			In case I need to check my email</em><br />
+			(eliding the main clause)</li>
+			<li>Additive clauses</li>
+			<li class="auto-style14"><em>He's winning at the moment<br />
+			And looks like he'll take the points</em><br />
+			(eliding the first half of a compound sentence)</li>
+			<li>Adversative subordinate clauses</li>
+			<li class="auto-style14"><em>The weather's lovely<br />
+			But it won't last</em><br />
+			(eliding the main clause)</li>
+			<li>Concessive clauses</li>
+			<li class="auto-style14"><em>She gave him a lovely present<br />
+			Even though she couldn't afford it</em><br />
+			(eliding the main clause)</li>
+			<li>Directives</li>
+			<li class="auto-style14"><em>Tell me the answer to the fifth item<br />
+			17</em><br />
+			(eliding everything except the complement)</li>
+			<li>Elicitations</li>
+			<li class="auto-style14"><em>Is the weather very cold at this time 
+			of year?<br />
+			Not where we live.</em><br />
+			(eliding the clause and inserting <em>Not</em> for the negative verb 
+			phrase)</li>
+		</ul>
+		<hr />
+		<p><a href="substitutionellipsishp.htm">Try a short test on some 
+				of this</a>.</p>
+		<hr /><br />
+		<table id="istrainingnav" cellpadding="0" cellspacing="0" class="tableblueborder">
+			<tr>
+				<td class="auto-style16" colspan="2">Related guides</td>
+			</tr>
+			<tr>
+				<td class="auto-style19">
+				<a href="cohesion.html" target="_blank">cohesion</a></td>
+				<td class="auto-style17">for more on how we hold things together 
+				grammatically and lexically</td>
+			</tr>
+			<tr>
+				<td class="auto-style18"> <a href="proforms.html" target="_blank">
+				pro-forms</a></td>
+				<td class="auto-style20">for more on pronouns and more</td>
+			</tr>
+			<tr>
+				<td class="auto-style18">
+				<a href="../indexes_is/discourseindex_is.html">discourse index</a></td>
+				<td class="auto-style20">for more guides to the area in general</td>
+			</tr>
+			<tr>
+				<td class="auto-style18">
+				<a href="deixis.html">deixis</a></td>
+				<td class="auto-style20">for more consideration of concepts such 
+				as the deictical centre (and how it may move)</td>
+			</tr>
+			<tr>
+				<td class="auto-style18">
+				<a href="../lexicogrammar/negation.html">negation</a></td>
+				<td class="auto-style20">for more on transferred negation</td>
+			</tr>
+		</table>
+		<br />
+		<hr />
+				</div>
+	
+			<!-- #EndEditable --></div>
+		<!-- End Content --></div>
+	<!-- End Page Content -->
+	<!-- Begin Footer -->
+	<div id="footer">
+		<p><a href="../../../index.html">ELT Concourse home</a> | 
+		<a href="../../ttindex.html">Teacher training</a> |
+		<a href="../../../development/developmentindex.html">Teacher development</a> |
+		<a href="../../../teachers/teachers.html">For teachers</a> |
+		<a href="../../../learners/learners.html">For learners</a> |
+		<a href="../../../articles/articles.html">Articles</a> | 
+		<a href="../../../contributetoELTC.html">Contribute</a> |
+		<a href="../../../contact.html">Contact</a> |
+		<a href="../../../questions/questions.html">Language questions</a> |
+		<a href="../../../faq.html">FAQs</a> |
+		<a href="../../../documents/ELT_Concourse_Charter.pdf" target="_blank"> ELT Concourse charter</a> |
+		<a href="../../../disclaimer.html"> Disclaimer and Privacy statement </a>|
+		<a href="../../../searchthesite.html">Search <strong>
+		ELT Concourse</strong></a></p>
+		</div>
+	<!-- End Footer --></div>
+<!-- End Container -->
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

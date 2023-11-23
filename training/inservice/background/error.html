@@ -1,0 +1,1044 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- #BeginTemplate "../../../styles/dwt/training.dwt" -->
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta http-equiv="Content-Language" content="en-gb" />
+<!-- #BeginEditable "doctitle" -->
+<title>ELT Concourse: understanding error</title>
+<meta content="ELT Concourse English language analysis and teaching guides. Error" name="description" />
+<script type="text/javascript">
+<!--
+function FP_changeProp() {//v1.0
+ var args=arguments,d=document,i,j,id=args[0],o=FP_getObjectByID(id),s,ao,v,x;
+ d.$cpe=new Array(); if(o) for(i=2; i<args.length; i+=2) { v=args[i+1]; s="o"; 
+ ao=args[i].split("."); for(j=0; j<ao.length; j++) { s+="."+ao[j]; if(null==eval(s)) { 
+  s=null; break; } } x=new Object; x.o=o; x.n=new Array(); x.v=new Array();
+ x.n[x.n.length]=s; eval("x.v[x.v.length]="+s); d.$cpe[d.$cpe.length]=x;
+ if(s) eval(s+"=v"); }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+// -->
+</script>
+<style type="text/css">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.auto-style5 {
+	color: #000000;
+}
+.auto-style6 {
+	color: #000000;
+	font-size: small;
+}
+.auto-style7 {
+	color: #663300;
+}
+.auto-style8 {
+	text-align: left;
+	color: black;
+}
+.auto-style16 {
+	padding-left: 5px;
+	padding-right: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.auto-style21 {
+	color: #663300;
+	padding-left: 5px;
+}
+.auto-style22 {
+	padding-top: 0;
+}
+.auto-style2 {
+	padding-left: 5px;
+}
+.auto-style50 {
+	border-left: medium none #666666;
+	border-right: medium none #666666;
+	border-top: medium none #666666;
+	border-bottom: 1px solid #666666;
+	padding-left: 2px;
+}
+.auto-style49 {
+	border-left: medium none #666666;
+	border-right: 1px solid #666666;
+	border-top: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	text-align: left;
+}
+.auto-style55 {
+	border-left: 1px solid #666666;
+	border-right: medium none #666666;
+	border-top: medium none #666666;
+	border-bottom: 1px solid #666666;
+	padding-left: 5px;
+	padding-right: 2px;
+}
+.auto-style57 {
+	border-left: medium none #666666;
+	border-right: 1px solid #666666;
+	border-top: 1px solid #666666;
+	border-bottom: medium none #666666;
+	text-align: left;
+}
+.auto-style58 {
+	border-left: 1px solid #666666;
+	border-right: medium none #666666;
+	border-top: medium none #666666;
+	border-bottom: medium none #666666;
+	padding-left: 5px;
+	padding-right: 2px;
+}
+.auto-style59 {
+	border: 1px solid #666666;
+}
+.auto-style68 {
+	border-right: 1px solid #666666;
+	border-top: medium none #666666;
+	border-bottom: 1px solid #666666;
+	border-left: medium none #666666;
+}
+.auto-style69 {
+	border-right: medium none #666666;
+	border-top: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	border-left: 1px solid #666666;
+}
+.auto-style70 {
+	border-right: 1px solid #666666;
+	border-top: 1px solid #666666;
+	border-bottom: medium none #666666;
+	border-left: 1px solid #666666;
+}
+.auto-style71 {
+	border-right: medium none #666666;
+	border-top: 1px solid #666666;
+	border-bottom: medium none #666666;
+	border-left: 1px solid #666666;
+}
+.auto-style72 {
+	border-right: 1px solid #666666;
+	border-top: medium none #666666;
+	border-bottom: 1px solid #666666;
+	border-left: 1px solid #666666;
+}
+.auto-style73 {
+	border-right: medium none #666666;
+	border-top: medium none #666666;
+	border-bottom: 1px solid #666666;
+	border-left: 1px solid #666666;
+}
+.auto-style76 {
+	border-right: 1px solid #666666;
+	border-top: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	border-left: medium none #666666;
+}
+.auto-style77 {
+	border-right: 1px solid #666666;
+	border-top: 1px solid #666666;
+	border-bottom: medium none #666666;
+	border-left: medium none #666666;
+}
+.auto-style78 {
+	list-style-type: lower-alpha;
+}
+</style>
+<!-- #EndEditable -->
+<meta content="language analysis,eltconcourse,English grammar,free English language teaching materials,CELTA,Delta,language guides,free Delta training,free CELTA training,free ELT Training materials,teacher training,ELT,learning English,teaching English,English Language Teaching,ESOL,EFL,English as a Foreign Language" name="keywords" />
+<link href="../../../styles/mainstyle.css" rel="stylesheet" type="text/css" />
+<link href="../../../styles/training.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+</style>
+</head>
+
+<body>
+	<!-- Begin Masthead -->
+	<div id="masthead" >
+		<table style="width: 100%; border-bottom: #000080 solid">
+			<tr>
+				<td style="width: 135px">
+				<img alt="logo" height="49" src="../../../gfx/logo.png" width="78" /></td>
+				<td valign="bottom">
+				<span class="orangexxlargebold">ELT </span>
+				<span class="bluexxlargebold">Concourse teacher training</span></td>
+			</tr>
+		</table>
+	</div>
+	<!-- End Masthead -->
+	<!-- Begin Content -->
+			<!-- Begin Sidebar -->
+		<div id="sidebartt">
+			<ul>
+				<li><a href="../../../index.html">ELT Concourse home</a></li>
+				<li><a href="../../../a-z_index.html">A-Z site index</a></li>
+				<li><a href="../../training_index.html">Teacher training index</a></li>
+				<li><a href="../../../development/development_index.html">Teacher development</a></li>
+				<li><a href="../../../teachers/teachers.html">For teachers</a></li>
+				<li><a href="../../trainers/trainers_index.html">For trainers</a></li>
+				<li>
+				<a href="../../../academic_management/academic_management_index.html">For managers</a></li>
+				<li><a href="../../../learners/learners.html">For learners</a></li>
+				<li><a href="../../common/about_language.html">About language</a></li>
+				<li><a href="../../../questions/questions.html">Language questions</a></li>
+				<li class="whiteback">Other areas</li>
+				<li><a href="../indexes_is/eap_index_is.html">Academic English</a></li>
+				<li><a href="../indexes_is/be_index_is.html">Business English</a></li>
+				<li><a href="../../entering/introduction_to_elt.html">Entering ELT</a></li>
+				<li><a href="../../courses/courses_index.html">Courses index</a></li>
+				<li><a href="../../courses/basic/introduction_basic.html">Basic ELT course</a></li>
+				<li><a href="../../tkt/tkt_index.html">TKT</a></li>
+				<li><a href="../../bridge/bridge_index.html">The Bridge</a></li>
+				<li><a href="../../courses/lacourse/index_la_course.html">Language analysis</a></li>
+				<li>
+				<a href="../../courses/training_to_train/training_to_train_index.html">Training to train</a></li>
+				<li><a href="../../courses/transcription1/transcription.html">Transcription</a></li>
+				<li><a href="../../glossaries/glossary_index.html">Glossaries</a></li>
+				<li><a href="../../../articles/articles.html">Articles</a></li>
+			</ul>
+		</div>
+		<!-- End Sidebar -->
+		<!-- Begin Content -->
+		
+		<div id="toppicture" style="text-align: left; background-color: white; padding: 0px; margin-left: 140px;">
+				<img alt="Concourse 2" height="207" src="../../../images/concourse2blue.jpg" width="310" /></div>
+		
+			<!-- #BeginEditable "content" -->
+		
+			<!-- #BeginEditable "content" -->
+		
+		<div id="content">
+		<h1>Understanding error</h1><table>
+		<tr>
+			<td>
+			<img alt="shcool" height="207" src="../../images/sign_shcool310.jpg" width="310" /></td>
+			<td>
+			<h3>Everyone makes mistakes</h3>
+			</td>
+		</tr>
+		</table>
+						<p>We are focused here on the errors made by learners of 
+						the language.<br />
+						The example above is not one of those.&nbsp; It is 
+						somewhat akin to the kind of error made by native 
+						speakers of a language which is normally referred to as 
+						a slip of the tongue, although, in this case, it is a 
+						slip of the paint sprayer.<br />
+						We are also not concerned with the sorts of errors made 
+						by children acquiring their first language(s).&nbsp; 
+						Such errors do happen frequently, of course, and we 
+						often hear children selecting the wrong past-tense form 
+						or failing to produce the auxiliary verb or the 
+						determiner in something like:<br />
+						<em>&nbsp;&nbsp;&nbsp; Going to park</em><br />
+						(where <em>I want to go to the park</em> is intended).<br />
+						Errors of that kind are often referred to as 
+						transitional forms.</p>
+			<p>In what follows we will make a distinction between 
+						three sorts of mistakes in learner production or 
+						reception:</p>
+						<ol>
+							<li><strong>Slips</strong><br />
+							<img alt="banana" height="133" src="../../images/banana_skin_a200.jpg" width="200" /><br />
+							If, during a lesson on producing oral recounts of 
+							past events, a learner at B2 level says or writes 
+							something like:<br />
+							<em>&nbsp;&nbsp;&nbsp; I go yesterday</em><br />
+							then you may be safe in assuming that if you stop 
+							the learner and say:<br />
+							<em>&nbsp;&nbsp;&nbsp; Go?!</em><br />
+							you will probably elicit something like:<br />
+							<em>&nbsp;&nbsp;&nbsp; Sorry:
+							<span class="style_black">went</span>, of course.</em><br />
+							The fact that the learner is able immediately to 
+							self correct shows that this wasn't a real error at 
+							all.&nbsp; It was a slip caused by inattention, 
+							tiredness, cognitive overload or simple 
+							carelessness.<br />
+							In a lesson in which correct use of past verb forms 
+							is the target (or one of them), some corrective 
+							action probably needs to be taken.&nbsp; In other 
+							circumstances, the slip can be safely ignored.</li>
+							<li><strong>Attempts</strong><br />
+							<img alt="try" height="133" src="../../images/effort_stone200.jpg" width="200" /><br />
+							If during the same kind of lesson, a learner at A1 
+							level produces something like:<br />
+							<em>&nbsp;&nbsp;&nbsp; If I was go to the party 
+							yesterday I saw him</em><br />
+							then we have a very malformed sentence indeed and it 
+							is vanishingly unlikely that the learner could self 
+							correct without a great deal of external input 
+							concerning how to make a conditional sentence that 
+							refers to a past unfulfilled contingency.&nbsp; In 
+							fact, such is the gap between the learner's current 
+							knowledge and the target conditional form that you 
+							would probably be unwise to treat the attempt at 
+							all.&nbsp; It would be possible to say something 
+							like:<br />
+							<em>&nbsp;&nbsp;&nbsp; No, that should be: "<span class="style_black">If 
+							I had gone to the party yesterday, I would have seen 
+							him</span>"</em><br />
+							but the likelihood of the learner being able to 
+							absorb the data and put it into practice is not 
+							strong.<br />
+							An attempt, therefore, is a mistake which is caused 
+							by simply not having the data to make a well-formed 
+							utterance.</li>
+							<li><strong>Errors</strong><br />
+							<img alt="error" height="133" src="../../images/error_nail200.jpg" width="200" /><br />
+							If, during the same lesson, a learner produces:<br />
+							<em>&nbsp;&nbsp;&nbsp; The sun shone when we were 
+							walking in the park</em><br />
+							we have some evidence that the learner is attempting 
+							to refer to a background continuous state and a 
+							progressive action.&nbsp; We know that a better 
+							sentence would be:<br />
+							<em>&nbsp;&nbsp;&nbsp; The sun was shining when / 
+							while we were walking in the park</em><br />
+							but it is unlikely that the learner could 
+							self-correct except by guesswork and assuming that 
+							the alternative tense form is required.&nbsp; The 
+							error is not wholly unacceptable because we do often 
+							use a simple form of the verb to refer to a 
+							continuous state as in, for example:<br />
+							<em>&nbsp;&nbsp;&nbsp; Mary appeared upset while we 
+							were talking in the pub</em><br />
+							in which the first verb form is simple past but the 
+							reference is to a continuous state.&nbsp; It would 
+							be wrong to say:<br />
+							<em>&nbsp;&nbsp;&nbsp; Mary was appearing upset 
+							while we were talking in the pub</em><br />
+							because of the semantic nature of the verb and that 
+							is not to do with the grammar point.<br />
+							What is happening here is describable as a real 
+							error.&nbsp; The learner is in the process of 
+							acquiring the system but has not yet fully mastered 
+							it in terms of the aspectual nature of the verbs 
+							which can be used to talk about past states or 
+							events.<br />
+							This is the kind of mistake one would expect if a 
+							cognitive view of language learning is to be 
+							believed.&nbsp; A grammar rule has been encountered 
+							and the learner has hypothesised that because <em>
+							Mary appeared</em> can be seen as a continuous 
+							background state, so, too, can <em>The sun shone</em>.&nbsp; 
+							This is a semantic issue, not a grammatical one.</li>
+						</ol>
+						<p>In what follows, we are concerned with errors, not 
+						slips or attempts.</p>
+						<hr />
+						<table cellpadding="0" cellspacing="0">
+			<tr>
+				<td class="auto-style22">
+				<img alt="feelings" height="166" src="../../images/four_feelings250.png" width="250" /></td>
+				<td class="auto-style16">
+				<h2>How do you feel about errors?</h2>
+				</td>
+			</tr>
+			</table>
+		<p>An elementary student you are teaching has made this error.<br />
+		<span class="auto-style5">&nbsp;&nbsp;&nbsp; *<em>I catched the train to London last week 
+		with my friend and his brother.</em></span><br />
+		The error is made in free speech and you have very recently covered the 
+		language point in question.<br />
+		Which of these adjective(s) might, at different times, most typically 
+		describe your feelings:</p>
+		<table cellpadding="3" cellspacing="0" class="auto-style7">
+			<tr>
+				<td class="auto-style8" style="width: 25%">DISAPPOINTED</td>
+				<td class="auto-style8" style="width: 25%">DISCOURAGED</td>
+				<td class="auto-style8" style="width: 25%">IRRITATED</td>
+				<td class="auto-style8" style="width: 25%">AMUSED</td>
+			</tr>
+			<tr>
+				<td class="auto-style8" style="width: 25%">CHALLENGED</td>
+				<td class="auto-style8" style="width: 25%">ENCOURAGED</td>
+				<td class="auto-style8" style="width: 25%">HAPPY</td>
+				<td class="auto-style8" style="width: 25%">BORED</td>
+			</tr>
+			<tr>
+				<td class="auto-style8" style="width: 25%">INDIFFERENT</td>
+				<td class="auto-style8" style="width: 25%">UNSURPRISED</td>
+				<td class="auto-style8" style="width: 25%">SURPRISED</td>
+				<td class="auto-style8" style="width: 25%">ANGRY</td>
+			</tr>
+			<tr>
+				<td class="auto-style8" style="width: 25%">INTERESTED</td>
+				<td class="auto-style8" style="width: 25%">RELIEVED</td>
+				<td class="auto-style8" style="width: 25%">ASTONISHED</td>
+				<td class="auto-style8" style="width: 25%">TIRED</td>
+			</tr>
+			<tr>
+				<td class="auto-style8" style="width: 25%">BAFFLED</td>
+				<td class="auto-style8" style="width: 25%">COMPETENT</td>
+				<td class="auto-style8" style="width: 25%">FRUSTRATED</td>
+				<td class="auto-style8" style="width: 25%">TOLERANT</td>
+			</tr>
+		</table>
+		<p>What considerations (L1, level etc.) affect your attitude?</p>
+		<hr />
+		<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img height="166" src="../../images/eye_multicoloured250.jpg" width="250" alt="eye" /></td>
+					<td class="auto-style21">
+			<h2>How we view error and how we view learning</h2>
+					</td>
+				</tr>
+			</table>
+			
+		
+		<p>If you feel disappointed, angry, frustrated, irritated etc., then it 
+		seems that you believe that error is somehow dysfunctional: a failure of 
+		the learning process.&nbsp; In other words, you view an error as an 
+		unwanted form.<br />
+		If, on the other hand, you feel encouraged, interested or even happy, it 
+		could mean that you feel that making error is just part of the 
+		learning process, and a positive one at that.</p>
+		<p><strong>View 1<br />
+		</strong>Error is to be avoided at all costs in the classroom because 
+		language learning is essentially about making good habits and 
+		automatising language output.&nbsp; People learn by repetition of 
+		correct models, not by making mistakes or testing hypotheses.&nbsp; 
+		There has been insufficient training in this case of model sentences 
+		such as <em>I caught a bus, I caught a train, I caught a tram </em>etc.</p>
+		<p><strong>View 2<br />
+		</strong>Errors of this sort, in which the student has correctly 
+		inserted the <em>-ed</em> ending for the simple past tense in English 
+		show that a rule is being acquired.&nbsp; He or she has hypothesised 
+		that the correct past tense ending for the verb <em>catch</em> is the 
+		same as for a large number of other verbs in English.&nbsp; The 
+		hypothesis was incorrect in this case but all that needs to be done now 
+		is to lead the learner to understand that the rule doesn't work for all 
+		verbs in English.&nbsp; Learners need to understand the limitations and 
+		restrictions but acquiring the past tense ending is a positive step on 
+		the road to fluency and accuracy.<br />
+		In other words, you see error as an opportunity to shape the learner's 
+		language production positively and you view error as a developmental 
+		form.</p>
+		<p>Which view do you hold?</p>
+		<hr />
+		<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img height="166" src="../../images/test_tubes250.jpg" width="250" alt="test" /></td>
+					<td class="auto-style21">
+					<h2><a name="1"></a>Testing hypotheses</h2>
+					</td>
+				</tr>
+			</table>
+			
+		
+		<p>Look at this exchange between a parent and young child:</p>
+		<table cellpadding="2" cellspacing="0" style="width: 50%">
+			<tr>
+				<td class="auto-style5">Mother:</td>
+				<td><em>Did Billy have his egg cut up for him at breakfast?</em></td>
+			</tr>
+			<tr>
+				<td class="auto-style5">Child:</td>
+				<td><em>Yes, I showeds him.</em>&nbsp; (<span class="auto-style7">Hypothesis 1</span>)</td>
+			</tr>
+			<tr>
+				<td class="auto-style5">Mother:</td>
+				<td><em>You what?</em></td>
+			</tr>
+			<tr>
+				<td class="auto-style5">Child:</td>
+				<td><em>I showed him.</em>&nbsp; (<span class="auto-style7">Hypothesis&nbsp;2</span>)</td>
+			</tr>
+			<tr>
+				<td class="auto-style5">Mother:</td>
+				<td><em>You showed him?</em></td>
+			</tr>
+			<tr>
+				<td class="auto-style5">Child:</td>
+				<td><em>I seed him.</em>&nbsp; (<span class="auto-style7">Hypothesis&nbsp;3</span>)</td>
+			</tr>
+			<tr>
+				<td class="auto-style5">Mother:</td>
+				<td><em>Ah, you saw him.</em></td>
+			</tr>
+			<tr>
+				<td class="auto-style5">Child:</td>
+				<td><em>Yes, I saw him.</em></td>
+			</tr>
+			<tr>
+				<td class="auto-style6" colspan="2">from Corder, SP (1981: 11)</td>
+			</tr>
+		</table>
+		
+		<p> The point of this is to show that children make hypotheses as they 
+		go along and test them to see the reaction.&nbsp; In this example, the 
+		child is making three hypotheses (indicated above).&nbsp; What are they?&nbsp; 
+		Click 
+		<a href="#1" onclick="FP_changeProp(/*id*/'error1',0,'style.visibility','visible')"> when you have an answer</a>.<br />
+			</p><div id="error1" style="visibility: hidden"><p>
+			<span class="auto-style7">Hypothesis 1:</span> the past tense of <em>show</em> 
+			might be <em>showeds</em>.&nbsp; This is scotched by the mother's '<em>You 
+			what?'</em> so the child retries (correctly?) with <em>I showed him.<br />
+			</em><span class="auto-style7">Hypothesis 2: </span>the verb <em>
+			show</em> means <em>observe</em>.<em>&nbsp; </em>Both verbs involve sight and 
+			looking so it's not unreasonable.&nbsp; The child is alerted to the 
+			problem by the mother's repetition (with rising intonation, 
+			probably).<br />
+			<span class="auto-style7">Hypothesis 3:</span> the past tense of <em>see</em> is regular (as it is 
+			with <em>show</em>).&nbsp; Here the mother corrects rather than 
+			questions.</p></div>
+			<p>It is something of a leap to assert that adult learners of a 
+			foreign language also consistently make hypotheses like these but it 
+			would explain the <em>I catched</em> example, above, wouldn't it?</p>
+		<p>According to Pit Corder, whose example this is, foreign language 
+		learners have to make similar hypotheses all the time.&nbsp; In 
+		particular, humans ask questions like:</p>
+		<ul class="redbullet">
+			<li>Are the systems in the language I'm learning the same as they are in the 
+		language(s) I know?</li>
+			<li>If they are different, how do they work?</li>
+		</ul>
+		<p>The guide to the similarities and differences between
+		first and second language acquisition, and that to interference and 
+		facilitation, linked in the list of related 
+		guides at the end, has more 
+		on this.</p>
+		<hr />
+		<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img height="166" src="../../images/stages250.jpg" width="250" alt="stages" /></td>
+					<td class="auto-style21">
+					<h2><a name="2"></a>Interlanguage</h2>
+					</td>
+				</tr>
+			</table>
+			
+		
+		<p>This is a key concept and describes where the learners' current 
+		language mastery stands on a scale from knowing nothing of the target 
+		language to complete mastery.&nbsp; Diagrammatically, it can be pictured 
+		like this:</p>
+		<p>
+		<img alt="interlanguage" height="175" src="../../imagesgraphics/interlanguage350.png" width="350" /></p>
+		
+		<p> The diagram oversimplifies and hides some interesting ideas 
+			concerning the sources of error and the current state of the 
+			learners' knowledge.<br />
+			What studies showed was that although <strong>some</strong> errors 
+			were the result of applying first-language rules to the target 
+			language (which would indicate the transfer of language habits), 
+			some errors indicated that learners were 
+			<span class="style_underline">creatively</span> constructing 
+			rules and hypotheses to explain the data to which they were exposed.<br />
+			If this is the case, then teaching needs to address the positive 
+			role of error, the concept of noticing the difference between one's 
+			own output and native-speaker models and the supply of adequately 
+			rich linguistic data for the learners' cognitive processes to work 
+			on.</p>
+						<p> It is, of course, crucial to know where a learner's interlanguage 
+		currently is.&nbsp; There are four reasons (at least) for this.&nbsp; 
+		Can you come up with them?&nbsp; Click 
+		<a href="#2" onclick="FP_changeProp(/*id*/'error2',0,'style.visibility','visible')">when you've made a note</a> (or 
+		at least thought about it!).</p>
+		<div id="error2" style="position: relative; visibility: hidden">
+		<table cellpadding="3" cellspacing="0" class="tableblueborder" style="width: 60%">
+			<tr>
+				<td style="width:15%" class="auto-style68">Reason 1:</td>
+				<td style="width: 100%" class="auto-style73">it tells us what 
+				the learner is likely to know already and that helps us plan 
+				what to teach.</td>
+			</tr>
+			<tr>
+				<td style="width:15%" class="auto-style76">Reason 2:</td>
+				<td style="width: 100%" class="auto-style69">it helps us to decide what to correct in 
+				class.&nbsp; There's little point in trying to correct a very 
+				elementary student who is trying to produce a complex third 
+				conditional form with a modal auxiliary verb because it will take too long 
+				and probably confuse the learners.</td>
+			</tr>
+			<tr>
+				<td style="width:15%" class="auto-style76">Reason 3:</td>
+				<td style="width: 100%" class="auto-style69">it helps us to recognise whether an error 
+				should be corrected by you or whether the error can be 
+				self-corrected by the learner.</td>
+			</tr>
+			<tr>
+				<td style="width:15%" class="auto-style77">Reason 4:</td>
+				<td style="width: 100%" class="auto-style71">it helps us to set 
+				the level of challenge so the learner is operating from the 
+				known to the unknown in small steps, not just being thrown in 
+				the deep end.</td>
+			</tr>
+		</table></div>
+		
+		<p> In what follows, you'll need to <a href="../../../documents/ELT_Concourse_Error_Worksheet.pdf" target="_blank" download="error worksheet">download a worksheet</a>.<br />
+		As we go along, it will help you to think up examples of the sorts of 
+		errors <em>your</em> learners make in the various categories of error we 
+		are looking at.</p>
+		<hr />
+		<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img height="166" src="../../images/classify_butterfly_case250.jpg" width="250" alt="classify" /></td>
+					<td class="auto-style21">
+					<h2> Categorising error</h2>
+					</td>
+				</tr>
+			</table>
+			
+		
+		<table>
+			<tr>
+				<td style="width: 350px" valign="top">
+		<h3> How systematic?</h3>
+				</td>
+				<td style="width: 100%" valign="top">&nbsp;</td>
+			</tr>
+			<tr>
+				<td style="width: 350px" valign="top"> 
+		<img alt="error 1" height="141" src="../../imagesgraphics/error1.png" width="310" /></td>
+				<td style="width: 100%" valign="top">
+		<p> <strong>Pre-systematic errors</strong> are those made with language the 
+		learner has not encountered.&nbsp; For example, a student guessing that 
+		a word is similar in meaning to something which looks the same in her 
+		language or trying to form a complex sentence with relative clauses that 
+		she hasn't yet learned how to do.&nbsp; This is the kind of mistake that 
+		was classified at the outset as an attempt.<br />
+		<strong>Systematic errors</strong> are those made while learning or 
+		acquiring items in the language.&nbsp; If, for example, you are teaching 
+		that the negative of <em>must have</em> is <em>can't have / couldn't have</em> 
+		then you can expect error with the forms because it's non-intuitive that 
+		the negative of <em>must have </em>is not<em>&nbsp;mustn't have</em> 
+		(as it is in many languages).<br />
+		<strong>Post systematic errors</strong> are sometimes called 'slips' 
+		(see above) because they happen with language the learners have already mastered but 
+		are due to carelessness, tiredness or cognitive overload (they have too 
+		much else to think about).</p>
+				</td>
+			</tr>
+			<tr>
+				<td style="width: 350px" valign="top">Now complete part 1 of the worksheet.</td>
+				<td style="width: 100%" valign="top">&nbsp;</td>
+			</tr>
+			<tr>
+				<td style="width: 350px" valign="top">
+		<h3> Productive or Receptive error</h3>
+				</td>
+				<td style="width: 100%" valign="top">&nbsp;</td>
+			</tr>
+			<tr>
+				<td style="width: 350px" valign="top"> 
+		<img alt="error 2" height="147" src="../../imagesgraphics/error2.png" width="310" /></td>
+				<td style="width: 100%" valign="top">This is an easy category.<br />
+				Either the error is produced in 
+		writing or speaking (it's <strong>productive</strong>) or in listening or reading (it's 
+				<strong>receptive</strong>).<br />
+				<br />
+				Which is easiest to spot?<br />
+				<br />
+				How do you identify if 
+		someone has made a receptive error?</td>
+			</tr>
+			<tr>
+				<td style="width: 350px" valign="top">Complete Part 2 of the worksheet.</td>
+				<td style="width: 100%" valign="top">&nbsp;</td>
+			</tr>
+			<tr>
+				<td style="width: 350px" valign="top">
+				<h3> 
+				Is it just me?</h3>
+				</td>
+				<td style="width: 100%" valign="top">&nbsp;</td>
+			</tr>
+			<tr>
+				<td style="width: 350px" valign="top"> 
+		<img alt="error 4" height="150" src="../../imagesgraphics/error4.png" width="310" /></td>
+				<td style="width: 100%" valign="top">
+				If all or most people in a group are making the same 
+				error, how do you deal with it?<br />
+				<br />
+				If one person is making the same kind of error only, how do you 
+				deal with that?</td>
+			</tr>
+			<tr>
+				<td style="width: 350px" valign="top">Complete part 3 of the 
+				worksheet.</td>
+				<td style="width: 100%" valign="top">&nbsp;</td>
+			</tr>
+			<tr>
+				<td style="width: 350px" valign="top">
+				<h3>Is it obvious?</h3>
+				</td>
+				<td style="width: 100%" valign="top">&nbsp;</td>
+			</tr>
+			<tr>
+				<td style="width: 350px" valign="top"> 
+		<img alt="error 5" height="152" src="../../imagesgraphics/error5.png" width="310" /></td>
+				<td style="width: 100%" valign="top">You can probably guess the 
+				distinction here.<strong><br />
+				Covert errors</strong> 
+		occur when, for example, a student says<br /><em>&nbsp;&nbsp;&nbsp;
+				I have been to London &ndash; 
+		is that right?<br />
+				</em>You can't tell, of course, without finding out what 
+		the student actually wants to say.<br />
+				If the learner produces<br /><em>&nbsp;&nbsp;&nbsp;
+				I 
+		have been to London yesterday<br />
+				</em>then the error is <strong>overt</strong> 
+				and you can decide whether and how to deal with it.</td>
+			</tr>
+			<tr>
+				<td style="width: 350px" valign="top">Try part 4 of the 
+		worksheet.</td>
+				<td style="width: 100%" valign="top">&nbsp;</td>
+			</tr>
+			</table>
+		<table style="width: 100%">
+			<tr>
+				<td style="width: 620px" valign="top">
+				<h3><a name="3"></a>What sort of error is it?</h3>
+				</td>
+				<td style="width: 100%" valign="top">&nbsp;</td>
+			</tr>
+			<tr>
+				<td style="width: 620px" valign="top">
+				<img alt="types of error" height="207" src="../../imagesgraphics/error6.png" width="620" /></td>
+				<td style="width: 100%" valign="top">Before we tackle this area, 
+				can you make sense of the descriptions of error types here?<br />
+				<br />
+				<br />
+				<strong>Phonological error</strong> seems simple enough but what 
+				do the others mean?</td>
+			</tr>
+			<tr>
+				<td valign="top">Do part 5 of the worksheet now and <a href="#3" onclick="FP_changeProp(/*id*/'error3',0,'style.visibility','visible')">then click
+				here</a>.</td>
+				<td style="width: 100%" valign="top">&nbsp;</td>
+			</tr>
+		</table>
+		<div id="error3" style="position: relative; visibility: hidden">
+		
+		<table cellpadding="3" cellspacing="0" class="tableblueborder">
+			<tr>
+				<td class="auto-style68">Type of error</td>
+				<td class="auto-style72">Explanation</td>
+				<td class="auto-style73">Examples</td>
+			</tr>
+			<tr>
+				<td class="auto-style49" style="height: 30px"><strong>Referential</strong> or <strong>
+				Lexical</strong></td>
+				<td class="auto-style59" style="height: 30px">An error in the lexical system</td>
+				<td class="auto-style69" style="height: 30px"><em>We don't have enough furnitures<br />
+				I showed my passport to the 
+				immigrant officer<br />
+				He moved the car's turning wheel the wrong way</em></td>
+			</tr>
+			<tr>
+				<td class="auto-style49" style="height: 30px"><strong>Syntactical</strong> or <strong>
+				Textual</strong></td>
+				<td class="auto-style59" style="height: 30px">An error in the 
+				structural or grammatical system</td>
+				<td class="auto-style69" style="height: 30px">There are 4 forms 
+				of this kind of error:<ol class="auto-style78">
+					<li>Omissions:<br />
+					<em>He arriving today</em></li>
+					<li>Additions:<br />
+					<em>Because the rain so I took an umbrella</em></li>
+					<li>Structural flaws:<br />
+					<em>It's not mine; he's 
+				having it</em></li>
+					<li>Misordering:<br /><em>Where she is going?</em></li>
+				</ol>
+				</td>
+			</tr>
+			<tr>
+				<td class="auto-style49" style="height: 30px"><strong>Phonological</strong></td>
+				<td class="auto-style59" style="height: 30px">A pronunciation error</td>
+				<td class="auto-style69" style="height: 30px">Using /ɪ/ instead of /i:/ in <em>seat<br />
+				</em>Errors are also often made in intonation patterns and in 
+				other prosodic features.</td>
+			</tr>
+			<tr>
+				<td class="auto-style49" style="height: 30px"><strong>Interpretive</strong></td>
+				<td class="auto-style59" style="height: 30px">Getting the wrong message</td>
+				<td class="auto-style69" style="height: 30px">Understanding<br /><em>How long are you staying?<br />
+				</em>as<br /><em>How 
+				long have you been here?</em></td>
+			</tr>
+			<tr>
+				<td class="auto-style57" style="height: 30px"><strong>Pragmatic</strong>, <strong>
+				Social</strong> or <strong>Stylistic</strong></td>
+				<td class="auto-style70" style="height: 30px">Using the wrong style or register</td>
+				<td class="auto-style71" style="height: 30px">(To a waiter)<br /><em>Excuse me sir, can I order now?<br />
+				My cat's 
+				had babies<br />
+				</em>Included in this category are less obvious errors such as a 
+				failure to respond to a complement or an offer because of a lack 
+				of awareness of the cultural norms.</td>
+			</tr>
+		</table></div>
+		<p>Click here for <a href="errorhp.htm">tests</a> of your understanding 
+		of error so far.</p>
+		<hr />
+		<table cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+				<img alt="source" height="166" src="../../images/source250.jpg" width="250" /></td>
+				<td class="auto-style2">
+				<h2>Sources of error</h2>
+				</td>
+			</tr>
+		</table>
+			<p>It isn't enough to know what sort of error we are dealing with.&nbsp; 
+			We also need to be able to suggest why the error occurred in the 
+			first place.<br />
+			There are three obvious sources.</p>
+		<dl >
+			<dt><strong>Ignorance</strong></dt>
+			<dd>the learner may simply have never learnt the form or the meaning 
+			and is just stabbing in the dark.&nbsp; This is most common at lower 
+			levels because that's where learners' needs often outstrip their 
+			abilities to produce language.&nbsp; For example, if a lower-level 
+			learner produces a syntactical error like:<br />
+			<em>&nbsp;&nbsp;&nbsp; *If he didn't came to my party I was sad</em><br />
+			or a lexical error such as:<br />
+			<em>&nbsp;&nbsp;&nbsp; *I did not have informations from that</em><br />
+			then the cause may often be an ignorance of how unreal events are 
+			expressed in English in the first example or a lack of lexical 
+			knowledge concerning countability and the meaning of prepositions in 
+			the second case.<br />
+			We are dealing with attempts, here, not errors proper.</dd>
+			<dt><strong>Overgeneralising the rule</strong></dt>
+			<dd>sometimes, when a rule has been learned, learners will 
+			over-extend it.<br />
+			For example, if you have learned the rule to 
+			add <em>-ed</em> to make a past tense, it seems logical to form <em>
+			catched</em>.&nbsp; Equally, over-extending a rule might lead to the 
+			production of <em>wonderfuller.<br />
+			</em>This source of error is also known as <strong>ignorance 
+			of rule restriction</strong> (i.e., not knowing the limits of the 
+			rule's applicability) or <strong>analogy</strong> (i.e., assuming 
+			that a rule which works perfectly well in one utterance will be 
+			applicable to a similar one).</dd>
+			<dt><strong>First language interference</strong></dt>
+			<dd>all learners, especially adult ones, will draw on language(s) 
+			they know to try to figure out a new one.&nbsp; This is most obvious 
+			in the area of pronunciation, of course, but occurs frequently in 
+			other areas:<br />
+			Structure: the learner's first language may have a structure that 
+			looks similar but means different things.<br />
+			For example, the 
+			German structure of <em>ich habe gesehen</em> [<em>I have seen</em>, 
+			literally] often is better translated into English as <em>I saw</em> 
+			rather than <em>I have seen</em>.&nbsp; That's only one reason for 
+			finding out a bit about our learners' first languages.<br />
+			Lexis: many languages, and not only European ones, have words which 
+			look the same but have different meanings.<br />
+			For example, <em>
+			simpatico</em> in Italian means <em>nice</em> or <em>friendly</em>,
+			<em>sensibel</em> in German means <em>sensitive</em> and <em>un 
+			smoking </em>in French is <em>a dinner jacket</em>.<br />
+			There are 
+			many hundreds of these so-called false friends.&nbsp; There's
+			a set of exercises on this site focused on false friends and it is 
+			linked below.&nbsp; There are, it should be remembered, even more 
+			true friends, i.e., words which look the same in the learners' first 
+			languages and mean pretty much the same.<br />
+			Appropriacy: in many languages, such as Greek, it is perfectly 
+			acceptable, for example, to go into a shop and state<br /><em>&nbsp;&nbsp;&nbsp; I want ...<br />
+			</em>or<br /><em>&nbsp;&nbsp;&nbsp; 
+			Give me ...<br />
+			</em>with no <em>please</em> to soften the demand or instruction although the 
+			form of the verb in the second case will signal that it is marked 
+			for politeness.&nbsp; 
+			That will not work well in most English-speaking cultures.<br />
+			Languages differ in a huge variety of ways and some of the 
+			differences are not immediately obvious because interference can 
+			result in unnatural rather than patently wrong production.&nbsp; For 
+			example, selecting:<br />
+&nbsp;<em>&nbsp;&nbsp; A bank is on the corner</em><br />
+			instead of<br />
+			<em>&nbsp;&nbsp;&nbsp; There's a bank on the corner</em><br />
+			may not be obviously flawed but is unnatural in English which 
+			deploys the anticipatory <em>there</em>-construction much more 
+			widely than many languages do.<br />
+			There is a guide to language interference and facilitation, linked 
+			below.</dd>
+			<dt><strong>Teacher-induced error</strong></dt>
+			<dd>regrettably, many errors are caused or allowed to persist 
+			because of the teacher's behaviour, and materials.&nbsp; This 
+			includes giving learners ambiguous, incomplete or false information.&nbsp; 
+			There is a separate 
+			guide to teacher-induced error on this site, linked below.</dd>
+		</dl>
+		<p>Here's a brief summary of this as a reminder.</p>
+		<p>
+		<img alt="sources of error" height="323" src="../../imagesgraphics/error_source.png" width="620" /></p>
+		<hr /><br />
+		<table id="istrainingnav" cellpadding="0" cellspacing="0" class="tableblueborder">
+			<tr>
+				<td class="auto-style50" colspan="2">Related guides</td>
+			</tr>
+			<tr>
+				<td class="auto-style49">
+				<a href="../teaching/teacher_induced_error.html">
+				teacher-induced error</a></td>
+				<td class="auto-style55">for the guide to this avoidable error 
+				source</td>
+			</tr>
+			<tr>
+				<td class="auto-style49">
+				<a href="../../initial/teaching/correcting_learners.html">
+				correcting learners</a></td>
+				<td class="auto-style55">this is a straightforward guide in the 
+				initial plus section which may remind you of important 
+				techniques</td>
+			</tr>
+			<tr>
+				<td class="auto-style49">
+				<a href="fla_sla.html">first-language acquisition</a></td>
+				<td class="auto-style55">for a guide to some current theories 
+				and how they may be relevant to teaching languages</td>
+			</tr>
+			<tr>
+				<td class="auto-style49">
+				<a href="l2_acquisition.html">second-language 
+				acquisition</a></td>
+				<td class="auto-style55">for a guide to some current theories</td>
+			</tr>
+			<tr>
+				<td class="auto-style49">
+				<a href="interference_facilitation.html">language interference 
+				and facilitation</a></td>
+				<td class="auto-style55">this guide considers how interlingual 
+				phenomena may hinder or aid the learning of another language</td>
+			</tr>
+			<tr>
+				<td class="auto-style49">
+		<a href="../teaching/feedback_learner_production.html">feedback</a></td>
+				<td class="auto-style55">which covers dealing with error rather 
+				than just analysing it</td>
+			</tr>
+			<tr>
+				<td class="auto-style49">
+				<a href="../../common/types_of_languages.html">types of languages</a></td>
+				<td class="auto-style55">for a guide which sets out the 
+				structural ways in which languages differ</td>
+			</tr>
+			<tr>
+				<td class="auto-style49">
+				<a href="../lexicogrammar/markedness.html">markedness</a></td>
+				<td class="auto-style55">how items are distinguished across 
+				languages varies quite dramatically and is the source of much 
+				language which is unnatural when not plain wrong</td>
+			</tr>
+			<tr>
+				<td class="auto-style49">
+				<a href="../../common/cognates.html">cognate words</a></td>
+				<td class="auto-style55">for a guide to the area of lexical 
+				overlap and differences</td>
+			</tr>
+			<tr>
+				<td class="auto-style57">
+			<a href="../../../learners/exercises/falsefriends/elt_concourse_false_friends_index.html">
+				false friends</a></td>
+				<td class="auto-style58">this is a link to the learner 
+				exercises in this area</td>
+			</tr>
+			</table>
+		
+		<br />
+		<hr />
+		<p class="smallfont">Reference:<br />
+		Corder, SP, 1981, <em>Error analysis and interlanguage</em>, Oxford: 
+		Oxford University Press</p>
+		<hr />
+				</div>
+			<!-- #EndEditable -->
+		<!-- End Content -->
+	
+	<!-- Begin Footer -->
+	<div id="footer">
+		<p>
+		<a href="../../../contact.html">Contact</a> |
+		<a href="../../../faq.html">FAQs</a> |
+		<a href="../../../copyright_notice.html">Copyright notice</a> |
+		<a href="../../../documents/ELT_Concourse_Charter.pdf" target="_blank"> ELT Concourse charter</a> |
+		<a href="../../../disclaimer.html"> Disclaimer and Privacy statement </a>|
+		<a href="../../../search_the_site.html">Search <strong>
+		ELT Concourse</strong></a></p>
+	</div>
+	<!-- End Footer -->
+
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>
