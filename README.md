@@ -1,0 +1,1 @@
+This is an archive of the eltconcourse website that was created by Dave Russell. Dave has since passed away and now the archived contents will continue to live on here. There will be no updates to information. This is purely to provide access to what he had worked so hard to create.
