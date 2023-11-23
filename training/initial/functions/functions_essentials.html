@@ -1,0 +1,894 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- #BeginTemplate "../../../styles/dwt/training.dwt" -->
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta http-equiv="Content-Language" content="en-gb" />
+<!-- #BeginEditable "doctitle" -->
+<title>ELT Concourse: the essential guide to functions</title>
+<style type="text/css">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.auto-style22 {
+	list-style-type: lower-alpha;
+	padding-left: 5px;
+}
+.auto-style30 {
+	border-right: 1px solid #FD7A15;
+	border-top: medium none #FD7A15;
+	border-left: 1px solid #FD7A15;
+	border-bottom: 1px solid #FD7A15;
+}
+.auto-style40 {
+	border-right: medium none #FD7A15;
+	border-top: 1px solid #FD7A15;
+	color: #000000;
+	border-left: 1px solid #FD7A15;
+	border-bottom-color: #FD7A15;
+	border-bottom-width: 1px;
+}
+.auto-style41 {
+	border-right: medium none #FD7A15;
+	border-top: medium none #FD7A15;
+	color: #000000;
+	border-left: 1px solid #FD7A15;
+	border-bottom: 1px solid #FD7A15;
+}
+.auto-style15 {
+	border-collapse: collapse;
+	border-color: #663300;
+	border-width: 0;
+	vertical-align: middle;
+}
+.auto-style26 {
+	border-left: medium none #FD7A15;
+	border-right: 1px solid #FD7A15;
+	border-top: 1px solid #FD7A15;
+	border-bottom: medium none #FD7A15;
+	color: #000000;
+}
+
+
+
+
+
+.auto-style4 {
+	border-collapse: collapse;
+	border: 0px solid #663300;
+}
+.auto-style27 {
+	border-left: 1px solid #FD7A15;
+	border-right: medium none #FD7A15;
+	border-top: medium none #FD7A15;
+	border-bottom: 1px solid #FD7A15;
+	border-collapse: collapse;
+	background-color: #FFFFFF;
+}
+.auto-style24 {
+	border-left: 1px solid #FD7A15;
+	border-right: medium none #FD7A15;
+	border-bottom: 1px solid #FD7A15;
+	border-collapse: collapse;
+	border-top-color: #FD7A15;
+	border-top-width: 1px;
+	background-color: #FFFFFF;
+}
+.auto-style42 {
+	border-left: medium none #FD7A15;
+	border-right: 1px solid #FD7A15;
+	border-top: 1px solid #FD7A15;
+	border-bottom: 1px solid #FD7A15;
+	color: #000000;
+}
+.auto-style43 {
+	border-left: 1px solid #FD7A15;
+	border-right: medium none #FD7A15;
+	border-bottom: medium none #FD7A15;
+	border-collapse: collapse;
+	border-top-color: #FD7A15;
+	border-top-width: 1px;
+	background-color: #FFFFFF;
+}
+.auto-style44 {
+	border-left: medium none #FD7A15;
+	border-right: 1px solid #FD7A15;
+	border-top: medium none #FD7A15;
+	border-bottom: 1px solid #FD7A15;
+	color: #000000;
+}
+.auto-style45 {
+	border-left: 1px solid #FD7A15;
+	border-right: 1px solid #FD7A15;
+	border-top: 1px solid #FD7A15;
+	border-bottom-color: #FD7A15;
+	border-bottom-width: 1px;
+}
+.auto-style46 {
+	border-right: 1px solid #FD7A15;
+	border-top: medium none #FD7A15;
+	border-left: medium none #FD7A15;
+	border-bottom: 1px solid #FD7A15;
+}
+.auto-style47 {
+	border-left: medium none #FD7A15;
+	border-right: 1px solid #FD7A15;
+	border-top: 1px solid #FD7A15;
+	border-bottom-color: #FD7A15;
+	border-bottom-width: 1px;
+}
+.auto-style48 {
+	border-left: medium none #FD7A15;
+	border-right: 1px solid #FD7A15;
+	border-top: 1px solid #FD7A15;
+	border-bottom: medium none #FD7A15;
+}
+.auto-style49 {
+	border-right: medium none #FD7A15;
+	border-top: 1px solid #FD7A15;
+	border-bottom: medium none #FD7A15;
+	color: #000000;
+	border-left: 1px solid #FD7A15;
+}
+</style>
+<meta content="ELT Concourse English language analysis and teaching guides. Functions: essentials" name="description" />
+<script type="text/javascript">
+<!--
+function FP_changeProp() {//v1.0
+ var args=arguments,d=document,i,j,id=args[0],o=FP_getObjectByID(id),s,ao,v,x;
+ d.$cpe=new Array(); if(o) for(i=2; i<args.length; i+=2) { v=args[i+1]; s="o"; 
+ ao=args[i].split("."); for(j=0; j<ao.length; j++) { s+="."+ao[j]; if(null==eval(s)) { 
+  s=null; break; } } x=new Object; x.o=o; x.n=new Array(); x.v=new Array();
+ x.n[x.n.length]=s; eval("x.v[x.v.length]="+s); d.$cpe[d.$cpe.length]=x;
+ if(s) eval(s+"=v"); }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+// -->
+</script>
+<!-- #EndEditable -->
+<meta content="language analysis,eltconcourse,English grammar,free English language teaching materials,CELTA,Delta,language guides,free Delta training,free CELTA training,free ELT Training materials,teacher training,ELT,learning English,teaching English,English Language Teaching,ESOL,EFL,English as a Foreign Language" name="keywords" />
+<link href="../../../styles/mainstyle.css" rel="stylesheet" type="text/css" />
+<link href="../../../styles/training.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+</style>
+</head>
+
+<body>
+	<!-- Begin Masthead -->
+	<div id="masthead" >
+		<table style="width: 100%; border-bottom: #000080 solid">
+			<tr>
+				<td style="width: 135px">
+				<img alt="logo" height="49" src="../../../gfx/logo.png" width="78" /></td>
+				<td valign="bottom">
+				<span class="orangexxlargebold">ELT </span>
+				<span class="bluexxlargebold">Concourse teacher training</span></td>
+			</tr>
+		</table>
+	</div>
+	<!-- End Masthead -->
+	<!-- Begin Content -->
+			<!-- Begin Sidebar -->
+		<div id="sidebartt">
+			<ul>
+				<li><a href="../../../index.html">ELT Concourse home</a></li>
+				<li><a href="../../../a-z_index.html">A-Z site index</a></li>
+				<li><a href="../../training_index.html">Teacher training index</a></li>
+				<li><a href="../../../development/development_index.html">Teacher development</a></li>
+				<li><a href="../../../teachers/teachers.html">For teachers</a></li>
+				<li><a href="../../trainers/trainers_index.html">For trainers</a></li>
+				<li>
+				<a href="../../../academic_management/academic_management_index.html">For managers</a></li>
+				<li><a href="../../../learners/learners.html">For learners</a></li>
+				<li><a href="../../common/about_language.html">About language</a></li>
+				<li><a href="../../../questions/questions.html">Language questions</a></li>
+				<li class="whiteback">Other areas</li>
+				<li><a href="../../inservice/indexes_is/eap_index_is.html">Academic English</a></li>
+				<li><a href="../../inservice/indexes_is/be_index_is.html">Business English</a></li>
+				<li><a href="../../entering/introduction_to_elt.html">Entering ELT</a></li>
+				<li><a href="../../courses/courses_index.html">Courses index</a></li>
+				<li><a href="../../courses/basic/introduction_basic.html">Basic ELT course</a></li>
+				<li><a href="../../tkt/tkt_index.html">TKT</a></li>
+				<li><a href="../../bridge/bridge_index.html">The Bridge</a></li>
+				<li><a href="../../courses/lacourse/index_la_course.html">Language analysis</a></li>
+				<li>
+				<a href="../../courses/training_to_train/training_to_train_index.html">Training to train</a></li>
+				<li><a href="../../courses/transcription1/transcription.html">Transcription</a></li>
+				<li><a href="../../glossaries/glossary_index.html">Glossaries</a></li>
+				<li><a href="../../../articles/articles.html">Articles</a></li>
+			</ul>
+		</div>
+		<!-- End Sidebar -->
+		<!-- Begin Content -->
+		
+		<div id="toppicture" style="text-align: left; background-color: white; padding: 0px; margin-left: 140px;">
+				<img alt="Concourse 2" height="207" src="../../../images/concourse2blue.jpg" width="310" /></div>
+		
+			<!-- #BeginEditable "content" -->
+		
+			<!-- #BeginEditable "content" -->
+		
+		<div id="content">
+		
+			<h1>Functions: the essentials</h1>
+			<p>
+			<img alt="cogs" height="207" src="../../images/cogwheels310.jpg" width="310" /></p>
+			<p>This brief guide has three main purposes:</p>
+			<ol>
+				<li>to explain what is meant by function in language</li>
+				<li>to identify some of the main functions</li>
+				<li>to suggest some ways in which functions can be introduced, 
+				taught and practised in the classroom</li>
+			</ol>
+			<hr />
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="meaning" height="166" src="../../images/meaning_woman250.jpg" width="250" /></td>
+					<td class="auto-style22">
+					<h2>What is meant by <em>function</em></h2>
+					</td>
+				</tr>
+			</table>
+		
+			<p>Unfortunately, as with many things in ELT, there are two accepted 
+			meanings of the term <strong>function</strong>:</p>
+			<ol>
+				<li><strong>Grammatical function</strong><br />
+				This refers to what a word or phrase is doing in a sentence 
+				rather than what it looks like.&nbsp; For example<ol class="redbullet">
+					<li>In<br /><em>&nbsp;&nbsp;&nbsp;
+					Smoking is bad for you<br />
+					</em>it is clear that <em>smoking</em> is a form of a 
+					verb.&nbsp; However, its grammatical function in that 
+					sentence is a noun.&nbsp; Compare, for example:<br />
+					<em>&nbsp;&nbsp;&nbsp; Fat is bad for you<br />
+					&nbsp;&nbsp;&nbsp;
+					Sugar is bad for you<br />
+					</em>etc.</li>
+					<li>This change in word class happens with all sorts of words in English.&nbsp; 
+					What is often a noun can act as a verb:<br />
+					<em>&nbsp;&nbsp;&nbsp; I bank in town at that bank there</em> (a verb and a 
+					noun)<br />
+					and what is usually an adjective can become a noun:<br />
+					<em>&nbsp;&nbsp;&nbsp; One absolute essential is to start on time; it really is 
+					essential that we do that</em> (the word <em>essential</em> 
+					is firstly a noun and then an adjective)</li>
+					<li>Grammatical function can also apply to a phrase or even 
+					a whole clause.&nbsp; For example, in:<br />
+					<em>&nbsp;&nbsp;&nbsp; That he wrote me such as rude letter 
+					surprised me</em><br />
+					the clause <em>That he wrote me such as rude letter </em>is 
+					acting as a noun and is the subject of the verb surprise.</li>
+				</ol>
+				</li>
+				<li><strong>Communicative function</strong><br />
+				This refers to the communicative value of what we say and write, 
+				rather than the grammatical form that we happen to select.&nbsp; 
+				For example:<ol class="redbullet">
+					<li><em>I could use a cup of tea</em><br />
+					is a simple statement but it acts as a request in many cases</li>
+					<li><em>Is that your car in the street?</em><br />
+					may be a question but it could easily also be a demand to 
+					move it</li>
+					<li><em>Get away!</em><br />
+					looks like an imperative (an order) but is, in fact, often 
+					an expression of surprise.</li>
+				</ol>
+				</li>
+			</ol>
+			<p>In this guide, we are concerned with <strong>communicative</strong> 
+			rather than grammatical function.</p>
+			<hr />
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="main square" height="166" src="../../images/buildings_place250.jpg" width="250" /></td>
+					<td class="auto-style22">
+					<h2>What are the main communicative functions in languages</h2>
+					</td>
+				</tr>
+			</table>
+			<p>Notice that the heading contains 'in languages' not 'in English'.&nbsp; 
+			Functions are, of course, common across all languages and the 
+			mismatch we saw above between the form and what it actually means in 
+			context is 
+			a phenomenon that occurs in all languages, too.&nbsp; But functions 
+			are often 
+			differently expressed, of course.</p>
+			<p>There are usually considered to be three types of function in 
+			languages but the categories may overlap.&nbsp; They are:</p>
+			<ol>
+				<li>The descriptive function:<br />
+				This refers to giving and understanding factual information.&nbsp; 
+				For example:<br />
+				<em>&nbsp;&nbsp;&nbsp; Can you tell me where the station is?<br />
+&nbsp;&nbsp;&nbsp; It's getting late<br />
+&nbsp;&nbsp;&nbsp; I'm taking the train home<br />
+&nbsp;&nbsp;&nbsp; I can't help you</em><br />
+				etc.</li>
+				<li>The expressive function:<br />
+				This concerns the relaying and understanding of information 
+				about the speaker's feelings, preferences and ideas.&nbsp; For 
+				example:<br />
+				<em>&nbsp;&nbsp;&nbsp; I'm not feeling well<br />
+&nbsp;&nbsp;&nbsp; I really don't like that man<br />
+&nbsp;&nbsp;&nbsp; I am not even going to try</em><br />
+				etc.</li>
+				<li>The social function:<br />
+				This refers to establishing and maintaining social 
+				relationships, especially roles and power structures.&nbsp; For 
+				example:<br />
+				<em>&nbsp;&nbsp;&nbsp; Can I help you, madam?<br />
+&nbsp;&nbsp;&nbsp; Anything else?<br />
+&nbsp;&nbsp;&nbsp; Good morning officer.&nbsp; How can I help you?</em></li>
+			</ol>
+			<p>Here's a list of the main functions by the categories used in the 
+			Council of Europe's Modern Language Project in the 1970s and 1980s:</p>
+			<table cellpadding="3" cellspacing="0" class="tablebrownborder">
+				<tr>
+					<td class="auto-style46" valign="top">Area</td>
+					<td class="auto-style30">Function</td>
+					<td class="auto-style41"><em>Example exponents</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style47" rowspan="4" valign="top">
+					<ol>
+						<li>imparting and seeking factual information</li>
+					</ol>
+					<p>
+					<img alt="facts" height="133" src="../../images/books_reference200.jpg" width="200" /></p>
+					</td>
+					<td class="auto-style45">identifying</td>
+					<td class="auto-style40"><em>This is my friend, John<br />
+
+					My name is ...</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style47">reporting (describing and 
+					narrating) </td>
+					<td class="auto-style40"><em>I went to the museum<br />
+					It was a hot day<br />
+					The trip was interesting</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style47">correcting</td>
+					<td class="auto-style40"><em>No, that's not true<br />
+					I never do that</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style47">asking</td>
+					<td class="auto-style40"><em>Do you have any fruit?<br />
+					When / Where / Why / What is that etc.</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style47" rowspan="22" valign="top">
+					<ol>
+						<li value="2">expressing and finding out intellectual 
+						attitudes</li>
+					</ol>
+					<p>
+					<img alt="opinion" height="133" src="../../images/opinion_poll200.jpg" width="200" /></p>
+					</td>
+					<td class="auto-style45">expressing agreement and 
+					disagreement</td>
+					<td class="auto-style40"><em>Yes, that's true<br/>
+					No that's not the right way<br/>
+					It isn't a good idea</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style47">enquiring about agreement or 
+					disagreement</td>
+					<td class="auto-style40"><em>What do you think?<br />
+					Do you agree?</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style47">denying</td>
+					<td class="auto-style40"><em>I haven't got it<br />
+					I didn't do it<br />
+					I never go to the cinema</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style47">expressing knowledge or its lack</td>
+					<td class="auto-style40"><em>I (don't) know<br />
+					I think that's ...</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style47">asking whether someone knows or 
+					does not know something</td>
+					<td class="auto-style40"><em>Do you know ...<br />
+					Don't you understand ...</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style47">accepting an offer or invitation</td>
+					<td class="auto-style40"><em>Yes, please<br />
+					Thank you</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style47">declining an offer or invitation</td>
+					<td class="auto-style40"><em>No, thank you</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style47">inquiring about offers and 
+					invitations</td>
+					<td class="auto-style40"><em>Will you come?</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style47">offering to do something</td>
+					<td class="auto-style40"><em>Can I help?<br />
+					Shall I go?</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style47">expressing memory and forgetfulness</td>
+					<td class="auto-style40"><em>I (don't) remember that<br />
+					I have forgotten my passport</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style47">enquiring about memory and 
+					forgetfulness</td>
+					<td class="auto-style40"><em>Do you remember the book?<br />
+					Have you forgotten to write?</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style47">expressing ability and inability</td>
+					<td class="auto-style40"><em>The man can(not) do it<br />
+					It's not possible to do that<br />
+					This can be repaired</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style47">inquiring about ability and 
+					inability</td>
+					<td class="auto-style40"><em>Is it possible to get this 
+					changed?<br />
+					Aren't you able to help?</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style47">expressing deduction</td>
+					<td class="auto-style40"><em>So that's her brother<br />
+					She must be the teacher</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style47">inquiring about deduction</td>
+					<td class="auto-style40"><em>Is that necessarily the case?<br />
+					What do you think it must be?</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style47">expressing certainty and 
+					uncertainty</td>
+					<td class="auto-style40"><em>Positive: The house is 200 
+					years old<br />
+					Intermediate: I think the house is very old<br />
+					Weak: Perhaps the house is old<br />
+					Negative: I don't think (that) the house is very old</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style47">inquiring about certainty and 
+					uncertainty</td>
+					<td class="auto-style40"><em>Are you sure about that?<br />
+					Is that true?</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style47">expressing (lack of) obligation</td>
+					<td class="auto-style40"><em>I must get the next bus<br />
+					I don't have to be here</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style47">inquiring about obligation</td>
+					<td class="auto-style40"><em>Do I have to be here?<br />
+					Do you have to take an examination?</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style47">asking for and giving permission</td>
+					<td class="auto-style40"><em>May I / Can I go now?<br />
+					Yes, that's OK<br />
+					All right</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style47">inquiring about permission</td>
+					<td class="auto-style40"><em>Are you allowed to do that?</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style47">withholding permission</td>
+					<td class="auto-style40"><em>Please don't take that</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style47" rowspan="18" valign="top">
+					<ol>
+						<li value="3">expressing and finding out emotional 
+						attitudes</li>
+					</ol>
+					<p>
+					<img alt="emotion" height="133" src="../../images/woman_smoking200.jpg" width="200" /></p>
+					</td>
+					<td class="auto-style45">expressing pleasure and liking</td>
+					<td class="auto-style40"><em>That's nice<br/>
+					I like the weather (very much)</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style47">expressing displeasure and dislike</td>
+					<td class="auto-style40"><em>This is not very nice<br />
+					I don't like the hotel</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style47">inquiring about liking and 
+					disliking</td>
+					<td class="auto-style40"><em>Do you like the town?</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style47">expressing surprise</td>
+					<td class="auto-style40"><em>I'm surprised that it isn't 
+					here<br />
+					Fancy her being so kind</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style47">expressing hope</td>
+					<td class="auto-style40"><em>I hope he comes<br />
+					I hope so, too</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style47">expressing satisfaction</td>
+					<td class="auto-style40"><em>This is very good</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style47">expressing dissatisfaction</td>
+					<td class="auto-style40"><em>I don't like this</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style47">inquiring about satisfaction and 
+					dissatisfaction</td>
+					<td class="auto-style40"><em>Is this what you wanted?</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style47">expressing disappointment</td>
+					<td class="auto-style40"><em>What a pity / shame</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style47">expressing fear or worry</td>
+					<td class="auto-style40"><em>I'm concerned that he will get 
+					hurt</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style47">inquiring about fear or worry</td>
+					<td class="auto-style40"><em>Are you afraid he'll be angry?</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style47">expressing preference</td>
+					<td class="auto-style40"><em>I'd prefer the blue one<br />
+					I'd like the fish</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style47">expressing gratitude</td>
+					<td class="auto-style40"><em>Thanks</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style47">expressing sympathy</td>
+					<td class="auto-style40"><em>I'm sorry to hear that</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style47">expressing intention</td>
+					<td class="auto-style40"><em>I'm going to talk to him</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style47">enquiring about intention</td>
+					<td class="auto-style40"><em>Are you going to see her?</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style47">expressing want and desire</td>
+					<td class="auto-style40"><em>I'd like an ice cream, please<br />
+					May I have the coffee with cream?</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style47">inquiring about want and desire</td>
+					<td class="auto-style40"><em>Would you like / Do you want 
+					another cup?</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style47" rowspan="8" valign="top">
+					<ol>
+						<li value="4">expressing moral attitudes</li>
+					</ol>
+					<p>
+					<img alt="shock" height="133" src="../../images/man_shocked200.jpg" width="200" /></p>
+					</td>
+					<td class="auto-style45">apologising</td>
+					<td class="auto-style40"><em>I'm (very) sorry</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style47">granting forgiveness</td>
+					<td class="auto-style40"><em>That's OK</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style47">expressing approval</td>
+					<td class="auto-style40"><em>Good</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style47">expressing disapproval</td>
+					<td class="auto-style40"><em>You shouldn't talk like that</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style47">inquiring about approval or 
+					disapproval</td>
+					<td class="auto-style40"><em>Do you think this is OK?</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style47">expressing appreciation</td>
+					<td class="auto-style40"><em>It's very good</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style47">expressing regret</td>
+					<td class="auto-style40"><em>What a shame</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style47">expressing indifference</td>
+					<td class="auto-style40"><em>I don't care<br />
+					It doesn't matter to me</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style47" rowspan="8" valign="top">
+					<ol>
+						<li value="5">Getting things done (suasion)</li>
+					</ol>
+					<p>
+					<img alt="suasion" height="133" src="../../images/punch200.jpg" width="200" /></p>
+					</td>
+					<td class="auto-style45">requesting others to do something 
+					(hortation)</td>
+					<td class="auto-style40"><em>Please, take this to my room</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style47">inviting others to do something</td>
+					<td class="auto-style40"><em>What about going to the park?</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style47">advising others</td>
+					<td class="auto-style40"><em>You should / ought to go to the 
+					doctor</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style47">warning</td>
+					<td class="auto-style40"><em>Be careful<br />
+					Look out<br />
+					Don't do that</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style47">instructing and directing</td>
+					<td class="auto-style40"><em>Take this to the post office</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style47">offering help</td>
+					<td class="auto-style40"><em>Can I help you?</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style47">requesting help</td>
+					<td class="auto-style40"><em>Can you help me, please?</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style47">making suggestions</td>
+					<td class="auto-style40"><em>Let's go to the pizza house</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style48" rowspan="7" valign="top">
+					<ol>
+						<li value="6">socialising</li>
+					</ol>
+					<p>
+					<img alt="chatting" height="133" src="../../images/talk_cafe_two200.jpg" width="200" /></p>
+					</td>
+					<td class="auto-style45">greeting</td>
+					<td class="auto-style40"><em>Hello<br/>
+					Good morning (etc.)</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style47">when meeting</td>
+					<td class="auto-style40"><em>How are you<br />
+					I'm fine, thanks</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style47">introducing people</td>
+					<td class="auto-style40"><em>This is Mary<br />
+					How do you do<br />
+					Pleased to meet you</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style47">taking leave</td>
+					<td class="auto-style40"><em>Goodbye</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style47">attracting attention</td>
+					<td class="auto-style40"><em>Excuse me</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style47">proposing a toast</td>
+					<td class="auto-style40"><em>Cheers</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style48">beginning a meal</td>
+					<td class="auto-style49"><em>Bon appetit</em></td>
+				</tr>
+			</table>
+			<p>As you can see, the 68 functions that we need are unlikely to 
+			have changed since they were written although how we express some of 
+			these functions will change all the time.</p>
+			<p>The theory is that if you can do all these things in a foreign 
+			language, you will be able to communicate successfully.&nbsp; How 
+			well you can do them will determine how successfully you 
+			communicate.</p>
+			<p>The right-hand column is headed <em>Example exponents.&nbsp; </em>
+			An exponent of a function is the language which is used to realise 
+			it in use.&nbsp; For example, if I have a function of offering, I 
+			may choose two structural exponents:<br />
+			<em>&nbsp;&nbsp;&nbsp; Would you like ... ?<br />
+&nbsp;&nbsp;&nbsp; Can I tempt you to ... ?</em><br />
+			and a range of vocabulary items that will do the job for me such as:<br />
+			<em>&nbsp;&nbsp;&nbsp; some more<br />
+&nbsp;&nbsp;&nbsp; one of these<br />
+&nbsp;&nbsp;&nbsp; a bit more<br />
+&nbsp;&nbsp;&nbsp; more</em><br />
+			etc.<br />
+			Putting them together, I have a range of exponents for the function 
+			of offering.</p>
+			<hr />
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="relationship" height="166" src="../../images/animals_relationship_horse250.jpg" width="250" /></td>
+					<td class="auto-style22">
+					<h2>The relationship between form and function</h2>
+					</td>
+				</tr>
+			</table>
+			<p>We saw above that what we say is not necessarily what we mean.&nbsp; 
+			Here are some more examples of this.</p>
+			<ul class="redbullet">
+				<li><em>What about going for a walk?<br />
+				</em>could be<ul class="greybullet">
+					<li>a suggestion to act together</li>
+					<li class="greybullet">a piece of advice about getting 
+					rid of a headache</li>
+				</ul>
+				</li>
+				<li><em>Have you got any sugar?<br />
+				</em>could be<ul class="greybullet">
+					<li>an inquiry about facts</li>
+					<li>a request to borrow some</li>
+				</ul>
+				</li>
+				<li><em>That's my shirt<br />
+				</em>could be<ul class="greybullet">
+					<li>a statement of fact</li>
+					<li>a warning not to touch it</li>
+				</ul>
+				</li>
+				<li><em>It doesn't matter<br />
+				</em>could be<ul class="greybullet">
+					<li>an expression of indifference</li>
+					<li>a way of forgiving someone</li>
+				</ul>
+				</li>
+			</ul>
+			<p>and so on.</p>
+			<p>All is not lost because very often the form and function are 
+			closely aligned.&nbsp; For example,<br />
+			<em>&nbsp;&nbsp;&nbsp; Please tell me your name</em><br />
+			is unlikely to be anything but an inquiry about a fact and<br />
+			<em>&nbsp;&nbsp;&nbsp; I can't do this crossword</em><br />
+			is unlikely to be anything but an expression or personal inability 
+			(although it could be a plea for help).</p>
+			<p>However, there is, in no language, a consistently simple 
+			one-to-one relationship between the form of what is said or written 
+			and its communicative function.</p>
+			<p>As a short exercise, can you identify some of the functions that 
+			could be fulfilled by the examples in this table?<br />
+			Click on the
+		<img alt="eye open" class="auto-style15" height="16" src="../../../gfx/eyeopen.gif" width="16" /> 
+			when you have some ideas.</p>
+			<table cellpadding="3" class="tablebrownborder" style="width: 90%" cellspacing="0">
+				<tr>
+					<td class="auto-style44" style="width: 300px">Do you have a 
+					minute?<br />
+					<img alt="eye open" class="auto-style4" height="16" src="../../../gfx/eyeopen.gif" width="16" onclick="FP_changeProp(/*id*/'intel',0,'style.visibility','visible')" /></td>
+					<td class="auto-style27">
+					<div id="intel" style="visibility:hidden
+" > This looks like a question asking for information but, 
+						in fact, it often functions as a statement of desire, 
+						something like:<br />
+						<em>I would like to talk to you<br />
+						</em>It may also, of course, be a request for help and 
+						mean something like:<br /><em>If you aren't busy, can you help me?</em></div>
+					</td>
+				</tr>
+				<tr>
+					<td class="auto-style42" style="width: 300px">The restaurant 
+					closes in half an hour.<br />
+					<img alt="eye open" class="auto-style4" height="16" src="../../../gfx/eyeopen.gif" width="16" onclick="FP_changeProp(/*id*/'intel0',0,'style.visibility','visible')" /></td>
+					<td class="auto-style24">
+					<div id="intel0" style="visibility:hidden
+" > This looks like a simple statement of fact but could 
+						mean:<br />
+						<em>Hurry up, we'll be late!</em><br />
+						or<br />
+						<em>Please finish your meal</em><br />
+						or<br />
+						<em>It will soon be time to go home so cheer up</em><br />
+						depending on who is talking to whom, the setting and the 
+						intentions.</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="auto-style26" style="width: 300px">That cake 
+					looks delicious.<br />
+					<img alt="eye open" class="auto-style4" height="16" src="../../../gfx/eyeopen.gif" width="16" onclick="FP_changeProp(/*id*/'intel1',0,'style.visibility','visible')" /></td>
+					<td class="auto-style43">
+					<div id="intel1" style="visibility:hidden
+" > 
+						This looks like a statement of opinion but could equally 
+						mean:<br />
+						<em>Let's buy some<br />
+						Can I have some?<br />
+						Well done</em><br />
+						etc.</div>
+					</td>
+				</tr>
+				</table>
+			<p>If you would like to learn more about form and function, try
+			<a href="form_function.html">this guide</a>.<br />
+			Now we have laid the groundwork, if you like, you can go on to a 
+			more practical <a href="../teaching/teaching_functional_language.html">
+			guide to teaching functional language</a>.</p>
+			<hr />
+			</div>
+			<!-- #EndEditable -->
+		<!-- End Content -->
+	
+	<!-- Begin Footer -->
+	<div id="footer">
+		<p>
+		<a href="../../../contact.html">Contact</a> |
+		<a href="../../../faq.html">FAQs</a> |
+		<a href="../../../copyright_notice.html">Copyright notice</a> |
+		<a href="../../../documents/ELT_Concourse_Charter.pdf" target="_blank"> ELT Concourse charter</a> |
+		<a href="../../../disclaimer.html"> Disclaimer and Privacy statement </a>|
+		<a href="../../../search_the_site.html">Search <strong>
+		ELT Concourse</strong></a></p>
+	</div>
+	<!-- End Footer -->
+
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

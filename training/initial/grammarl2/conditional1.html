@@ -1,0 +1,726 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- #BeginTemplate "../../../styles/dwt/training.dwt" -->
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta http-equiv="Content-Language" content="en-gb" />
+<!-- #BeginEditable "doctitle" -->
+<title>ELT Concourse: conditionals</title>
+<script type="text/javascript">
+<!--
+function FP_changeProp() {//v1.0
+ var args=arguments,d=document,i,j,id=args[0],o=FP_getObjectByID(id),s,ao,v,x;
+ d.$cpe=new Array(); if(o) for(i=2; i<args.length; i+=2) { v=args[i+1]; s="o"; 
+ ao=args[i].split("."); for(j=0; j<ao.length; j++) { s+="."+ao[j]; if(null==eval(s)) { 
+  s=null; break; } } x=new Object; x.o=o; x.n=new Array(); x.v=new Array();
+ x.n[x.n.length]=s; eval("x.v[x.v.length]="+s); d.$cpe[d.$cpe.length]=x;
+ if(s) eval(s+"=v"); }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+// -->
+</script>
+<style type="text/css">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.auto-style4 {
+	font-size: small;
+}
+.auto-style5 {
+	color: #000000;
+}
+.auto-style7 {
+	text-align: left;
+	border: 1px solid #FDB415;
+}
+.auto-style8 {
+	text-align: left;
+	color: #000000;
+	border: 1px solid #FDB415;
+}
+.auto-style9 {
+	text-align: left;
+	color: #932d00;
+	border: 1px solid #FDB415;
+}
+.auto-style10 {
+	border-collapse: collapse;
+	border: 1px solid #932d00;
+}
+.auto-style11 {
+	text-align: center;
+	border-left: 2px solid #393939;
+	border-right: 2px solid #393939;
+}
+.auto-style12 {
+	text-align: center;
+}
+.auto-style13 {
+	color: #000000;
+	text-align: center;
+}
+.auto-style14 {
+	color: #932d00;
+}
+.auto-style15 {
+	border-collapse: collapse;
+}
+.auto-style16 {
+	padding-left: 5px;
+}
+.auto-style17 {
+	padding-left: 5px;
+	text-align: center;
+	color: #000000;
+}
+.auto-style18 {
+	padding-left: 5px;
+	text-align: center;
+}
+.auto-style19 {
+	border-left: medium none #FDB415;
+	border-right: medium none #FDB415;
+	border-top: medium none #FDB415;
+	border-bottom: 1px solid #FDB415;
+	padding-left: 2px;
+}
+.auto-style20 {
+	border-left: 1px solid #FDB415;
+	border-right: medium none #FDB415;
+	border-top: 1px solid #FDB415;
+	border-bottom: 1px solid #FDB415;
+	padding-left: 5px;
+	padding-right: 2px;
+}
+.auto-style21 {
+	border-left: medium none #FDB415;
+	border-right: 1px solid #FDB415;
+	border-top: 1px solid #FDB415;
+	border-bottom: 1px solid #FDB415;
+}
+.auto-style22 {
+	border-left: medium none #FDB415;
+	border-right: 1px solid #FDB415;
+	border-top: 1px solid #FDB415;
+	border-bottom: medium none #FDB415;
+}
+.auto-style23 {
+	border-left: 1px solid #FDB415;
+	border-right: medium none #FDB415;
+	border-top: 1px solid #FDB415;
+	border-bottom: medium none #FDB415;
+	padding-left: 5px;
+	padding-right: 2px;
+}
+.auto-style24 {
+	border-left: 1px solid #FDB415;
+	border-right: medium none #FDB415;
+	border-top: medium none #FDB415;
+	border-bottom: 1px solid #FDB415;
+	padding-left: 5px;
+	padding-right: 2px;
+}
+.auto-style25 {
+	list-style-type: lower-alpha;
+}
+</style>
+<!-- #EndEditable -->
+<meta content="eltconcourse,concourse,free English language teaching materials,CELTA,Delta,Trinity TESOL,free Delta training,free CELTA training,free ELT Training materials,teacher training,ELT,learning English,teaching English,English Language Teaching,ESOL,EFL,English as a Foreign Language,English" name="keywords" />
+<meta content="Free English language training materials for trainers and teachers with sections on Cambridge Delta, TKT and CELTA." name="description" />
+<link href="../../../styles/mainstyle.css" rel="stylesheet" type="text/css" />
+<link href="../../../styles/training.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+
+.auto-style1 {
+	text-align: left;
+}
+.masterheader {
+	margin-bottom: 0;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Begin Container -->
+<div id="container">
+	<!-- Begin Masthead -->
+	<div id="masthead" class="auto-style1">
+		<table style="width: 100%; border-bottom: #FDB415 solid">
+			<tr>
+				<td style="width: 135px">
+				<img alt="logo" height="49" src="../../../gfx/logo.png" width="80" />&nbsp;</td>
+				<td valign="bottom">
+				<span class="orangexxlargebold">ELT </span>
+				<span class="bluexxlargebold">Concourse teacher training</span></td>
+			</tr>
+		</table>
+	</div>
+	<!-- End Masthead -->
+	<!-- Begin Page Content -->
+	<div id="page_content">
+		<!-- Begin Sidebar -->
+		<div id="sidebartt">
+			<ul>
+				<li><a href="../../../index.html">ELT Concourse home</a></li>
+				<li><a href="../../ttindex.html">Teacher training index</a></li>
+				<li><a href="../../inservice/inserviceindex.html">In-service training</a></li>
+				<li><a href="../initialindex.html">Initial plus training</a></li>
+				<li><a href="../../../development/developmentindex.html">Teacher development</a></li>
+				<li><a href="../../../acman/acmanindex.html">Academic management</a></li>
+				<li><a href="../../../searchthesite.html">Search ELT Concourse</a></li>
+				<li><a href="../../a-ztrainingindex.html">A-Z training index</a></li>
+				<li><a href="../../../articles/articles.html">Articles</a></li>
+				
+				<li><a href="../../../questions/questions.html">Language questions</a></li>
+				
+			</ul>
+		</div>
+		<!-- End Sidebar -->
+		<!-- Begin Content -->
+		
+		<div id="toppicture "style="text-align: left; background-color: white; padding: 0px; margin-left: 140px;">
+				<img alt="Concourse 2" height="207" src="../../../images/concourse2blue.JPG" width="310" /></div>
+		
+		<div id="content">
+			<!-- #BeginEditable "content" -->
+	<div id="lessonbody">
+	<h1><a name="1"></a>Conditionals: the essentials</h1>
+		<p>
+		<img alt="if cloud" height="186" src="../../imagesgraphics/ifcloud.gif" width="350" /><br />
+		<span class="auto-style4">From "If" by Rudyard Kipling</span></p>
+		<p>Conditionals are a special form of sentences with a main and a 
+		subordinate clause (see the section on 
+		<a href="../lexis/conjunctionsessentials.html">conjunctions</a> in the word class 
+		area) which show how one event depends on another.&nbsp; Here are a few 
+		examples:</p>
+		<ol>
+			<li><em><a name="3"></a>If you see John, will you ask him?</em></li>
+			<li><em>I would not bother with it if I were you.</em></li>
+			<li><em>You wouldn't have had an accident if you had looked where you 
+			were going.</em></li>
+			<li><em>If it rains all night, the road'll be flooded by dawn.</em></li>
+			<li><em>He would come if you bothered to invite him.</em></li>
+			<li><em>If it hadn't been for the rain, we would have won the match.</em></li>
+		</ol>
+		<p>In this list, there are two examples of each of the three basic 
+		types.&nbsp; Divide up the list and think about what the sentences mean 
+		before you 
+		<a href="#3" onclick="FP_changeProp(/*id*/'cond1',0,'style.visibility','visible')">click for some comments</a>.</p>
+		<hr />
+		<div id="cond1" style="visibility: hidden">
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="traditional" height="166" src="../../images/parasol250.jpg" width="250" /></td>
+					<td class="auto-style16">
+					<h2>The traditional analysis</h2>
+					</td>
+				</tr>
+			</table>
+			<p><span class="auto-style14">This is the traditional way the area is handled in coursebooks 
+			and student grammars.</span></p>
+			<table cellpadding="3" class="auto-style10" style="width: 80%">
+				<tr>
+					<td class="auto-style8">Type of conditional</td>
+					<td class="auto-style7">Sentence</td>
+					<td class="auto-style9">Meaning</td>
+				</tr>
+				<tr>
+					<td class="auto-style8" rowspan="2">First conditional</td>
+					<td class="auto-style7"><em>If you see John, will you ask him?</em></td>
+					<td class="auto-style9">The speaker is not sure if the 
+					person will see John but is asking for a clear commitment to 
+					ask him if the event happens</td>
+				</tr>
+				<tr>
+					<td class="auto-style7"><em>If it rains all night, the road'll be flooded by dawn.</em></td>
+					<td class="auto-style9">The speaker is sure that the road 
+					will flood but <em>only if</em>  it rains all night</td>
+				</tr>
+				<tr>
+					<td class="auto-style8" rowspan="2">Second conditional</td>
+					<td class="auto-style7"><em>I would not bother with it if I were you.</em></td>
+					<td class="auto-style9">The speaker is not and can never be 
+					'you' so it's a way of making a hypothetical point and 
+					giving advice.&nbsp; This is an example of an 'unreal' or 
+					hypothetical 
+					conditional.</td>
+				</tr>
+				<tr>
+					<td class="auto-style7"><em>He would come if you bothered to invite him.</em></td>
+					<td class="auto-style9">The speaker is sure that he would 
+					come but less sure that he is likely to be invited.&nbsp; 
+					This is also hypothetical in that the speaker is reasonably 
+					sure that the events will not occur.</td>
+				</tr>
+				<tr>
+					<td class="auto-style8" rowspan="2">Third conditional</td>
+					<td class="auto-style7"><em>You wouldn't have had an accident if you had looked where you 
+			were going.</em></td>
+					<td class="auto-style9">The speaker is sure that if the 
+					hearer had acted differently the accident was avoidable but 
+					knows, of course, that it is speculation about the past and 
+					can never happen.</td>
+				</tr>
+				<tr>
+					<td class="auto-style7"><em>If it hadn't been for the rain, we would have won the match.</em></td>
+					<td class="auto-style9">The speaker is sure that the match 
+					would have been won but the rain prevented it.&nbsp; Again, 
+					this is speculation about the past.</td>
+				</tr>
+			</table>
+		<p class="style_brown">Did you get all that?</p><hr /></div>
+		
+		
+		<table cellpadding="0" class="auto-style15">
+			<tr>
+				<td rowspan="2">
+				<img alt="1st" height="83" src="../../imagesgraphics/1st.png" width="80" /></td>
+				<td class="auto-style16" rowspan="2">
+				<h2>First conditional</h2>
+				</td>
+				<td class="auto-style16">
+				<img alt="push" height="133" src="../../images/effort_stone200.jpg" width="200" /></td>
+			</tr>
+			<tr>
+				<td class="auto-style17">
+				<em>If you push hard, it will move</em></td>
+			</tr>
+		</table>
+		<p>The form of the first conditional is:</p><table cellpadding="3" class="auto-style10" style="width: 80%">
+			<tr>
+				<td class="auto-style13">If</td>
+				<td class="auto-style13">present tense</td>
+				<td class="auto-style13">will</td>
+				<td class="auto-style13">infinitive</td>
+				<td class="auto-style11" rowspan="2" style="width: 12px">or</td>
+				<td class="auto-style13">will</td>
+				<td class="auto-style13">infinitive</td>
+				<td class="auto-style13">if</td>
+				<td class="auto-style13">present tense</td>
+			</tr>
+			<tr>
+				<td class="auto-style12">If</td>
+				<td class="auto-style12">you come</td>
+				<td class="auto-style12">you will</td>
+				<td class="auto-style12">see</td>
+				<td class="auto-style12">You will</td>
+				<td class="auto-style12">see</td>
+				<td class="auto-style12">if</td>
+				<td class="auto-style12">you come</td>
+			</tr>
+		</table>
+		<p>
+		The form is easy 
+		enough and most learners get it quickly.&nbsp; It is analogous to lots 
+		of other similar forms in English such as<em><br />
+&nbsp;&nbsp;&nbsp; I will tell him when I see 
+		him</em>.<br />
+&nbsp;<em>&nbsp;&nbsp; I will ask her to marry me because I love her</em>.<br />
+		The concept is slightly more difficult.&nbsp; First conditional forms are 
+		concerned with future events and imply that if one condition is met 
+		(<em>coming, pushing hard</em>) the other event (<em>seeing, moving</em>) 
+		will follow.<em><br />
+		&nbsp;&nbsp;&nbsp;
+		If it rains, 
+		I'll take an umbrella.<br />
+		&nbsp;&nbsp;&nbsp;
+		If it doesn't snow again, I'll take the dogs out.<br />
+		&nbsp;&nbsp;&nbsp;
+		What will you do if it rains?</em></p>
+		<p>
+		We can use other modal auxiliary verbs to make the outcome less certain 
+		but the consequences of one action being followed by the other are still 
+		clear.&nbsp; For example,<em><br />
+		&nbsp;&nbsp;&nbsp;
+		If you come, you might see John.<br />
+		&nbsp;&nbsp;&nbsp;
+		If you come, 
+		you should see John.<br />
+&nbsp;&nbsp;&nbsp; If it stops snowing, I may take the dogs out.<br />
+&nbsp;&nbsp;&nbsp; If he comes at all, he should be here by six.</em></p><hr />
+		
+		
+		<table cellpadding="0" class="auto-style15">
+			<tr>
+				<td valign="middle">
+				<img alt="2nd" height="80" src="../../imagesgraphics/2nd.png" width="80" /></td>
+				<td class="auto-style16" rowspan="2">
+				<h2>Second conditional</h2>
+				</td>
+				<td class="auto-style16">
+				<img alt="earth" height="132" src="../../images/earth200.jpg" width="200" /></td>
+			</tr>
+			<tr>
+				<td valign="top">
+				&nbsp;</td>
+				<td class="auto-style17">
+				<em>If I flew to the moon,<br />
+				I would look back and wave</em></td>
+			</tr>
+		</table>
+		<p>The form of the second conditional is:</p><table cellpadding="3" class="auto-style10" style="width: 80%">
+			<tr>
+				<td class="auto-style13">If</td>
+				<td class="auto-style13"> <span class="auto-style5">past
+		</span>tense</td>
+				<td class="auto-style13">would</td>
+				<td class="auto-style13">infinitive</td>
+				<td class="auto-style11" rowspan="2" style="width: 13px">or</td>
+				<td class="auto-style13">would</td>
+				<td class="auto-style13">infinitive</td>
+				<td class="auto-style13">if</td>
+				<td class="auto-style13">past tense</td>
+			</tr>
+			<tr>
+				<td class="auto-style12">If</td>
+				<td class="auto-style12">you came</td>
+				<td class="auto-style12">you would</td>
+				<td class="auto-style12">see</td>
+				<td class="auto-style12">You would</td>
+				<td class="auto-style12">see</td>
+				<td class="auto-style12">if</td>
+				<td class="auto-style12">you came</td>
+			</tr>
+		</table>
+		<p>
+		Again, this is not too 
+		complicated but there are two possible concepts here.</p>
+		<ol>
+			<li><strong>Unlikely condition</strong>: the speaker does not believe there 
+		is a high likelihood of an event occurring but if it does, the follow-on 
+		event is certain:<br /><em>&nbsp;&nbsp;&nbsp; If I won the lottery I'd be happy (but I don't think I'll win it).<br />&nbsp;&nbsp;&nbsp;
+		If they gave me an extra holiday, I would be really happy (but I don't 
+		think they will)</em>.<strong><br /></strong><em>&nbsp;&nbsp;&nbsp; What would you do if you won the lottery? (but I don't 
+		think you'll win)</em></li>
+			<li><strong>Unreal condition:</strong> the speaker does not believe that an event is 
+		at all possible logically&nbsp;but is happy to speculate about the outcomes 
+		of an unreal event.<em><br />&nbsp;&nbsp;&nbsp;
+		If I were you, I'd buy it<br />&nbsp;&nbsp;&nbsp;
+		If I had a penny 
+		for every time I've said that, I'd be a wealthy woman.</em></li>
+		</ol>
+		<p>Both unlikely and unreal conditionals are called hypothetical 
+		conditionals in many analyses.<em><br /></em>Again, we can use other (past) modal 
+		auxiliary verbs to make the outcome 
+		less certain but the consequences of one action being followed by the 
+		other are still clear.&nbsp; For example:<em><br />&nbsp;&nbsp;&nbsp;
+		If you came, you might 
+		see her.<br />&nbsp;&nbsp;&nbsp;
+		If you came, you could see her.<br />
+&nbsp;&nbsp;&nbsp; If you went to the meeting you would have to explain the 
+		problem (so don't go)</em>.</p>
+		<hr />
+		
+		
+		<table cellpadding="0" class="auto-style15">
+			<tr>
+				<td rowspan="2">
+				<img alt="3rd" height="82" src="../../imagesgraphics/3rd.png" width="80" /></td>
+				<td class="auto-style16" rowspan="2">
+				<h2>Third conditional</h2>
+				</td>
+				<td class="auto-style16">
+				<img alt="broken" height="133" src="../../images/broken_jug200.jpg" width="200" /></td>
+			</tr>
+			<tr>
+				<td class="auto-style18">
+				If you had been more careful,<br />
+				it wouldn't have broken</td>
+			</tr>
+		</table>
+<p>The form of the third conditional is:</p><table cellpadding="3" class="auto-style10" style="width: 80%">
+			<tr>
+				<td class="auto-style13">If</td>
+				<td class="auto-style13"> <span class="auto-style5">past perfect
+		</span>tense</td>
+				<td class="auto-style13">would have</td>
+				<td class="auto-style13">past participle</td>
+				<td class="auto-style11" rowspan="2" style="width: 12px">or</td>
+				<td class="auto-style13">would have</td>
+				<td class="auto-style13">past participle</td>
+				<td class="auto-style13">if</td>
+				<td class="auto-style13">past perfect tense</td>
+			</tr>
+			<tr>
+				<td class="auto-style12">If</td>
+				<td class="auto-style12">you had come</td>
+				<td class="auto-style12">you would have</td>
+				<td class="auto-style12">seen</td>
+				<td class="auto-style12">You would have</td>
+				<td class="auto-style12">seen</td>
+				<td class="auto-style12">if</td>
+				<td class="auto-style12">you had come</td>
+			</tr>
+		</table>
+		<p>Now that <strong>is</strong> complicated and learners need lots of practice just to get 
+		the form right.<br />
+		This form refers only to the past and, therefore, in part to clearly 
+		unreal, impossible events.&nbsp; It is used for regrets, criticisms and 
+		speculation and a number of other meanings.&nbsp; Here are some 
+		examples:</p>
+		<dl>
+			<dt>regret</dt>
+			<dd><em>&nbsp;&nbsp;&nbsp;
+		If I'd had the money, I would have 
+		bought it<br />
+		</em>and I regret the fact that I didn't have the money.</dd>
+			<dt>criticism</dt>
+			<dd><em>&nbsp;&nbsp;&nbsp;
+		If you had driven more carefully, you wouldn't have dented 
+		the car<br />
+		</em>and I am suggesting that you <strong>should</strong> have driven 
+			more carefully.</dd>
+			<dt>speculation</dt>
+			<dd><em>&nbsp;&nbsp;&nbsp;
+		If Napoleon had won the battle of Waterloo, what would Europe have been 
+		like?<br />
+		</em>and I'm asking you to speculate about an impossible past situation.</dd>
+		</dl>
+		<p>Again, we can use other modal auxiliary verbs to alter the sense slightly.&nbsp; 
+		For example:<br /><em>&nbsp;&nbsp;&nbsp; If you had driven more carefully, you might not have 
+		dented the car<br />
+		</em>in which I may simply be speculating about the past rather than 
+		criticising<em>.<br />
+		&nbsp;&nbsp;&nbsp;
+		If I'd had the money, I could have bought it<br />
+		</em>in which I am expressing past inability rather than regret.</p>
+		<p><a name="2"></a>Click for a quick <a href="conditionalhp1.htm">test</a> to see if you have 
+		grasped this.&nbsp; It's important.</p>
+		<hr />
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="issues" height="165" src="../../images/cubes250.jpg" width="250" /></td>
+					<td class="auto-style16">
+					<h2>Other issues</h2>
+					</td>
+				</tr>
+			</table>
+		<dl>
+	<dt><strong>The so-called zero conditional</strong></dt>
+	<dd>A form such as<em><br />
+	&nbsp;&nbsp;&nbsp;
+	If you mix black and white you get grey<br />
+	</em>with a 
+	present tense in both halves and no <em>will</em> is sometime called a zero 
+	conditional.&nbsp; There's an argument that it isn't a conditional at all 
+	because <em>if</em> can be replaced with <em>whenever</em> or <em>when</em>.&nbsp; 
+	It is quite an easy form to learn and paralleled in some languages but some languages reserve a special word for <em>if</em> which is 
+	<strong>not</strong> 
+	interchangeable with <em>whenever</em> like this.</dd>
+			<dt><strong>Speaker / writer perception</strong></dt>
+			<dd>In particular when choosing between a 1st conditional and 2nd 
+			conditional form, it is the speaker's <strong>perception</strong> which matters most.&nbsp; 
+			Compare:<em><br />
+			&nbsp;&nbsp;&nbsp;
+			If I win the lottery, I'll buy a new house </em>with<em><br />
+			&nbsp;&nbsp;&nbsp;
+			If I won the lottery, I'd buy a new house<br />
+			</em>In the first, 
+			the speaker appears more optimistic than in the second.&nbsp; The 
+			second is an unreal condition because the speaker does not believe 
+			it will happen.</dd>
+			<dt><strong>Mixed conditionals</strong></dt>
+			<dd>When there is a time change from one half of the conditional to 
+			the other, the tenses no longer seem to make sense sometimes.<br />
+			There are two important forms of these sorts of mixed conditionals 
+			and they both mix second and third conditional structures:
+			<ol class="auto-style25">
+				<li>a past action with a present consequence.&nbsp; For example:<br />
+				<em>&nbsp;&nbsp;&nbsp;
+			If I had brought my car I would give you a lift<br />
+				</em>Here, the 
+			beginning<em><br />
+&nbsp;&nbsp;&nbsp; If I had brought<br />
+				</em>usually implies an end of<em><br />
+			&nbsp;&nbsp;&nbsp;
+			would have given<br />
+				</em>but in this case the fact that I didn't bring 
+			the car is in the past but the consequence of not being able to give a lift lies 
+			either now or in the future so the tenses shift to allow this.<em><br />
+				</em>Another example is:<em><br />
+&nbsp;&nbsp;&nbsp; If she had told me where it was I wouldn't be wasting time 
+				looking</em><br />
+				in which a past non-event has a present consequence.</li>
+				<li>a present fact with a past consequence.&nbsp; For example:<br />
+&nbsp;<em>&nbsp;&nbsp; If I weren't so busy this week, I would have taken the 
+				time to visit you</em><br />
+				in which the present state of being busy has an implication for 
+				an unrealized past act.<br />
+				Another example is:<br />
+&nbsp;&nbsp;&nbsp; <em>I would have finished by now if the boss didn't 
+				continually interrupt<br />
+				</em>in which the present event affects the past.</li>
+			</ol>
+			</dd>
+			<dt><strong>Modal verbs in conditional sentences</strong></dt>
+			<dd>We can use other modal verbs instead of <em>will</em> or <em>
+			would</em> to change the sense of a conditional.&nbsp; For example, 
+			we can change<em>:<br />
+			&nbsp;&nbsp;&nbsp;
+			If I go to the meeting, I will complain about it<br />
+			</em>to<em><br />
+			&nbsp;&nbsp;&nbsp;
+			If I go to the meeting, I might complain about it<br />
+			</em>This can happen in all the conditional types so we can get sentences 
+			such as:<em><br />
+			&nbsp;&nbsp;&nbsp;
+			If you had spoken more softly, she might have been more 
+			receptive<br />
+			&nbsp;&nbsp;&nbsp;
+			If I won the money I could buy the car<br />
+			</em>and 
+			so on.</dd><dt><strong>Other varieties of English</strong></dt>
+			<dd>In colloquial American English (and other standards) it is common 
+			to have a sentence like<em><br />
+			&nbsp;&nbsp;&nbsp;
+			If I would have known I would have said<br />
+			</em>or<br />
+			<em>&nbsp;&nbsp;&nbsp; I would tell you if I would know<br />
+			</em>and there's a famous 
+			song with the line<br />
+			&nbsp;&nbsp;&nbsp;
+			"<em>If I knew you were coming, I'd have baked a 
+			cake</em>".</dd>
+			<dt><strong>The meaning of <em>will</em></strong></dt>
+			<dd>Compare:<br />
+			<em>&nbsp;&nbsp;&nbsp; If you will give up smoking, I will stop complaining</em><br />
+			and<br />
+			<em>&nbsp;&nbsp;&nbsp; If you give up smoking, I will stop complaining.</em><br />
+			In the first of these (<em>If you will give up smoking</em>), the 
+			word <em>will</em> means <em>show willingness</em> and is <strong>
+			not</strong> a future form at all so the word appears in both parts 
+			of the sentence.&nbsp; It could be re-phrased as<em><br />
+&nbsp;&nbsp;&nbsp; If you commit 
+			to giving up smoking, I will commit to not complaining.</em><br />
+			The second example is the familiar 1st conditional form in which the 
+			second event is dependent on the first.</dd>
+			<dt><strong>Alternatives to <em>if</em></strong></dt>
+			<dd>A number of phrases can take the place of <em>if</em> and they change the 
+			style (usually making it more formal) but not the fundamental sense 
+			of the sentence.&nbsp; For example:<br />
+			&nbsp;&nbsp;&nbsp;
+			S<em>he'll come providing you invite her</em><br />
+			<em>&nbsp;&nbsp;&nbsp; They'd pay as long as they had the money<br />
+			&nbsp;&nbsp;&nbsp;
+			I'll do it on condition that you won't complain later</em></dd>
+			<dt><strong><em>unless</em></strong></dt>
+			<dd>This word is often understood to mean <em>if not </em>(i.e., 
+			it's the negative of <em>if</em>).&nbsp; That's not exactly right 
+			because it really means <em>only if ... not</em>.<br />
+			<em>&nbsp;&nbsp;&nbsp; Unless you have a car with you, I'll give you a lift home<br />
+			&nbsp;&nbsp;&nbsp;
+			I'll open the box unless you tell me not to</em></dd>
+			<dt><strong>Reversing the clauses</strong></dt>
+			<dd>We can, of course, have<br />
+			<em>&nbsp;&nbsp;&nbsp; If you came, you'd be able to talk to her</em><br />
+			and<br />
+			<em>&nbsp;&nbsp;&nbsp; You'd be able to talk to her if you came</em><br />
+			They mean fundamentally the same thing but the emphasis is slightly 
+			different.&nbsp; Speakers will generally put first what they 
+			consider most important.</dd>
+		</dl>
+		<p>There's a lot more to this area which hasn't been covered here but 
+		for most students, at most levels, that enough.</p>
+		<hr /><br />
+			<table id="iptrainingnav" cellpadding="0" cellspacing="0" class="tablebrownborder">
+				<tr>
+					<td class="auto-style19" colspan="2">Related guidestd>
+				</tr>
+				<tr>
+					<td class="auto-style21">
+		<a href="../../inservice/phrases_clauses_sentences/conditionconcession.html">
+					condition and concession</a></td>
+					<td class="auto-style24">for a more advanced guide to the 
+					area</td>
+				</tr>
+				<tr>
+					<td class="auto-style21">
+		<a href="../lexis/conjunctionsessentials.html">conjunctions</a></td>
+					<td class="auto-style20">an essential guide only with links 
+					to the more technical ones</td>
+				</tr>
+				<tr>
+					<td class="auto-style22">
+					<a href="modalityessentials.html">modal auxiliary verbs</a></td>
+					<td class="auto-style23">for a guide to the meanings of 
+					these special forms of verbs</td>
+				</tr>
+				</table>
+			<br />
+		<hr />
+			
+				</div>
+	
+			<!-- #EndEditable --></div>
+		<!-- End Content --></div>
+	<!-- End Page Content -->
+	<!-- Begin Footer -->
+	<div id="footer">
+		<p><a href="../../../index.html">ELT Concourse home</a> | 
+		<a href="../../ttindex.html">Teacher training</a> |
+		<a href="../../../development/developmentindex.html">Teacher development</a> |
+		<a href="../../../teachers/teachers.html">For teachers</a> |
+		<a href="../../../learners/learners.html">For learners</a> |
+		<a href="../../../articles/articles.html">Articles</a> | 
+		<a href="../../../contributetoELTC.html">Contribute</a> |
+		<a href="../../../contact.html">Contact</a> |
+		<a href="../../../questions/questions.html">Language questions</a> |
+		<a href="../../../faq.html">FAQs</a> |
+		<a href="../../../documents/ELT_Concourse_Charter.pdf" target="_blank"> ELT Concourse charter</a> |
+		<a href="../../../disclaimer.html"> Disclaimer and Privacy statement </a>|
+		<a href="../../../searchthesite.html">Search <strong>
+		ELT Concourse</strong></a></p>
+		</div>
+	<!-- End Footer --></div>
+<!-- End Container -->
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

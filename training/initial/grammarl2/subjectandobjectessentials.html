@@ -1,0 +1,901 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- #BeginTemplate "../../../styles/dwt/training.dwt" -->
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta http-equiv="Content-Language" content="en-gb" />
+<!-- #BeginEditable "doctitle" -->
+<title>ELT Concourse: subjects and objects</title>
+<style type="text/css">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.auto-style15 {
+	font-size: small;
+}
+.auto-style20 {
+	margin-left: 3px;
+}
+.auto-style21 {
+	border-collapse: collapse;
+	border: 1px solid #ff6300;
+}
+.auto-style22 {
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+.auto-style23 {
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+.auto-style24 {
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+.auto-style25 {
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-top-style: solid;
+	border-top-width: 1px;
+}
+.auto-style26 {
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-top-style: solid;
+	border-top-width: 1px;
+}
+.auto-style27 {
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-top-width: 1px;
+}
+.auto-style29 {
+	border-left-style: solid;
+	border-left-width: 1px;
+}
+.auto-style30 {
+	border-right-style: solid;
+	border-right-width: 1px;
+}
+.auto-style31 {
+	border-top: 1px solid #FDB415;
+}
+.auto-style32 {
+	text-align: center;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-top: 1px solid #FDB415;
+}
+.auto-style33 {
+	text-align: center;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-top: 1px solid #FDB415;
+}
+.auto-style34 {
+	text-align: center;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-right-width: 1px;
+}
+.auto-style35 {
+	text-align: center;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-top: 1px solid #FDB415;
+}
+.auto-style36 {
+	color: #808000;
+}
+.auto-style38 {
+	text-align: center;
+}
+.auto-style39 {
+	text-align: center;
+	border-left-style: solid;
+	border-left-width: 1px;
+}
+.auto-style40 {
+	text-align: center;
+	border-right-style: solid;
+	border-right-width: 1px;
+}
+.auto-style41 {
+	border-top-style: none;
+	border-top-width: 0px;
+	padding-top: 1px;
+}
+.auto-style42 {
+	border-collapse: collapse;
+	border: 1px solid #932d00;
+}
+.auto-style43 {
+	border-top-style: solid;
+	border-top-width: 1px;
+}
+.auto-style44 {
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+.auto-style45 {
+	text-transform: capitalize;
+}
+.auto-style46 {
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+.auto-style47 {
+	border-left: 1px solid #ff6300;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+.auto-style50 {
+	border-left: 1px solid #ff6300;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+.auto-style51 {
+	border-left-style: none;
+	border-top-style: none;
+	border-bottom-style: none;
+	padding: 0;
+}
+.auto-style52 {
+	color: #008000;
+}
+.auto-style53 {
+	padding-left: 5px;
+}
+.auto-style54 {
+	border-left: medium none #FF4500;
+	border-right: 1px solid #FF4500;
+	border-top: 1px solid #FF4500;
+	border-bottom: medium none #FF4500;
+}
+.auto-style55 {
+	border-left: medium none #FF4500;
+	border-right: 1px solid #FF4500;
+	border-top: 1px solid #FF4500;
+	border-bottom: 1px solid #FF4500;
+}
+.auto-style57 {
+	border-left: medium none #FF4500;
+	border-right: medium none #FF4500;
+	border-top: medium none #FF4500;
+	border-bottom: 1px solid #FF4500;
+	padding-left: 2px;
+}
+.auto-style58 {
+	border-left: 1px solid #FF4500;
+	border-right: medium none #FF4500;
+	border-top: medium none #FF4500;
+	border-bottom: 1px solid #FF4500;
+	padding-left: 5px;
+	padding-right: 2px;
+}
+.auto-style59 {
+	border-left: 1px solid #FF4500;
+	border-right: medium none #FF4500;
+	border-top: 1px solid #FF4500;
+	border-bottom: medium none #FF4500;
+	padding-left: 5px;
+	padding-right: 2px;
+}
+</style>
+<script type="text/javascript">
+<!--
+function FP_swapImg() {//v1.0
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+ elm.$src=elm.src; elm.src=args[n+1]; } }
+}
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+
+function FP_changeProp() {//v1.0
+ var args=arguments,d=document,i,j,id=args[0],o=FP_getObjectByID(id),s,ao,v,x;
+ d.$cpe=new Array(); if(o) for(i=2; i<args.length; i+=2) { v=args[i+1]; s="o"; 
+ ao=args[i].split("."); for(j=0; j<ao.length; j++) { s+="."+ao[j]; if(null==eval(s)) { 
+  s=null; break; } } x=new Object; x.o=o; x.n=new Array(); x.v=new Array();
+ x.n[x.n.length]=s; eval("x.v[x.v.length]="+s); d.$cpe[d.$cpe.length]=x;
+ if(s) eval(s+"=v"); }
+}
+
+function FP_preloadImgs() {//v1.0
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+}
+// -->
+</script>
+<!-- #EndEditable -->
+<meta content="language analysis,eltconcourse,English grammar,free English language teaching materials,CELTA,Delta,language guides,free Delta training,free CELTA training,free ELT Training materials,teacher training,ELT,learning English,teaching English,English Language Teaching,ESOL,EFL,English as a Foreign Language" name="keywords" />
+<meta content="Free English language training materials for trainers and teachers with sections on Cambridge Delta, TKT and CELTA." name="description" />
+<link href="../../../styles/mainstyle.css" rel="stylesheet" type="text/css" />
+<link href="../../../styles/training.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+
+.auto-style1 {
+	text-align: left;
+}
+.masterheader {
+	margin-bottom: 0;
+}
+</style>
+</head>
+
+<body>
+
+
+
+	<!-- Begin Masthead -->
+	<div id="masthead" class="auto-style1">
+		<table style="width: 100%; border-bottom: #FDB415 solid">
+			<tr>
+				<td style="width: 135px">
+				<img alt="logo" height="49" src="../../../gfx/logo.png" width="80" />&nbsp;</td>
+				<td valign="bottom">
+				<span class="orangexxlargebold">ELT </span>
+				<span class="bluexxlargebold">Concourse teacher training</span></td>
+			</tr>
+		</table>
+	</div>
+	<!-- End Masthead -->
+	<!-- Begin Content -->
+			<!-- Begin Sidebar -->
+		<div id="sidebartt">
+			<ul>
+				<li><a href="../../../index.html">ELT Concourse home</a></li>
+				<li><a href="../../ttindex.html">Teacher training index</a></li>
+				<li><a href="../../inservice/inserviceindex.html">In-service training</a></li>
+				<li><a href="../initialindex.html">Initial plus training</a></li>
+				<li><a href="../../bridge/bridge_index.html">The Bridge</a></li>
+				<li><a href="../../../development/developmentindex.html">Teacher development</a></li>
+				<li><a href="../../../acman/acmanindex.html">Academic management</a></li>
+				<li><a href="../../../searchthesite.html">Search ELT Concourse</a></li>
+				<li><a href="../../a-ztrainingindex.html">A-Z training index</a></li>
+				<li><a href="../../../questions/questions.html">Language questions</a></li>
+				
+			</ul>
+		</div>
+		<!-- End Sidebar -->
+		<!-- Begin Content -->
+		
+		<div id="toppicture "style="text-align: left; background-color: white; padding: 0px; margin-left: 140px;">
+				<img alt="Concourse 2" height="207" src="../../../images/concourse2blue.JPG" width="310" /></div>
+		
+		<div id="content">
+			<!-- #BeginEditable "content" -->
+	<div id="lessonbody" class="auto-style41">
+	<h1>Subjects and Objects: the essentials</h1>
+		<h2>What is the difference?</h2>
+		<table>
+			<tr>
+				<td>
+				<img alt="kiss" height="173" src="../../images/kiss250.jpg" width="250" /></td>
+				<td valign="middle">
+		<p class="auto-style20">In the English sentences:</p>
+		<ol>
+			<li><em>The man kissed the woman</em></li>
+			<li><em>The woman kissed the man</em></li>
+		</ol>
+				<p class="auto-style20">we only know who did what to whom by the 
+				order of the words.</p>
+				<p class="auto-style20">The subject comes first in both sentences so we know that is the doer of 
+		the action.&nbsp; The object follows the verb so we know that is the 
+		receiver of the action.&nbsp; If we reverse the order, we reverse the 
+		sense.</p>
+				</td>
+			</tr>
+		</table>
+		
+		<table cellpadding="3" class="auto-style21">
+			<tr>
+				<td class="auto-style23"><strong>In sentence 1</strong></td>
+				<td class="auto-style24"><em>the man</em> is the
+				<span class="style_black">subject</span> of the verb <em>kiss</em></td>
+				<td class="auto-style22"><em>the woman</em> is the
+				<span class="style_red">object</span> of the verb</td>
+			</tr>
+			<tr>
+				<td class="auto-style25"><strong>In sentence 2</strong></td>
+				<td class="auto-style26"><em>the woman </em>is the
+				<span class="style_black">subject</span> of the verb <em>kiss</em></td>
+				<td class="auto-style27"><em>the man</em> is the
+				<span class="style_red">object</span> of the verb</td>
+			</tr>
+		</table>
+		
+		<p>Usually, of course, we can understand what is the subject and what is 
+		the object of a verb by the meaning of the sentence:</p>
+		<ol>
+			<li value="3"><em><span class="style_black">Peter</span> drank
+			<span class="style_red">the water</span></em></li>
+		</ol>
+		<p>Cannot (sensibly) be changed to:</p>
+		<ol>
+			<li value="4"><em><span class="style_black">The water</span> drank
+			<span class="style_red">Peter</span></em></li>
+		</ol>
+		<p>Here's a little test.<br />
+		Identify the subjects and the objects of the verbs in this story and 
+		then click on the story for the answers.</p>
+		<table cellpadding="3" cellspacing="0" class="auto-style21" style="width: 100%">
+			<tr>
+				<td valign="top" style="width: 456px" class="auto-style30">
+				<p>
+				<img alt="case structure 1" height="198" src="../../imagesgraphics/cases2.png" width="450" id="img2" onclick="FP_changeProp(/*id*/'case1',0,'style.visibility','visible'); FP_swapImg(0,0,/*id*/'img2',/*url*/'../../imagesgraphics/cases1.png')" /></p>
+				</td>
+				<td id="case1" style="visibility:hidden" class="auto-style29">
+				<p>Notice that:</p>
+				<ol>
+					<li>The subjects are <span class="style_black">in black</span> 
+					and the objects are <span class="style_red">in red</span>.</li>
+					<li>All verbs have subjects.</li>
+					<li>Not all verbs have objects.&nbsp; Some verbs do not (or 
+					don't always) take an object.&nbsp; For example, in <em>John 
+					drove the car</em>, we have a verb with a subject (<span class="style_black"><em>John</em></span>) 
+					and an object (<span class="style_red"><em>the car</em></span>) 
+					but in <em>he came back</em>,
+					<span class="style_black"><em>he</em></span> is the subject 
+					of <em>came</em> and there is no object.</li>
+					<li>In the first sentence we have a bit
+					<span class="auto-style52">in green</span>.&nbsp; This is 
+					not the object of the verb because it's a clause.&nbsp; It 
+					is called the predicate.</li>
+				</ol>
+				</td>
+			</tr>
+			</table>
+		<p>
+		In grammar books, you will often see the term <strong>nominative 
+		(case)</strong> to refer to the subject and <strong>accusative (case)
+		</strong>to refer to the object.&nbsp; Most learners of English don't 
+		need to understand these terms (but you do).<br />
+		We have now identified two of the three <strong>cases</strong> in 
+		English (the third is the possessive or genitive which does not concern 
+		us here).</p>
+		<hr />
+		<table cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+				<img alt="hands" height="166" src="../../images/hands_map250.jpg" width="250" /></td>
+				<td class="auto-style53">
+				<h2>Other languages do things differently</h2>
+				</td>
+			</tr>
+		</table>
+		<h3>Languages which show case structure</h3>
+		<p>If you speak some German, the following will be familiar to you:</p>
+		<ol>
+			<li value="5"><em>Der Mann küsste die Frau</em></li>
+			<li><em>Die Frau küsste den Mann</em></li>
+		</ol>
+		<p>Sentences 5 and 6 are direct translations of sentences 1 and 2.&nbsp; 
+		Notice, however, that there is subtle difference: the definite article 
+		for<em> the man</em> changes from<em> der</em> to <em>den </em> in sentence 2.&nbsp; 
+		This is because German is one of many languages which distinguishes 
+		between cases by changing the form of words.&nbsp; It can also change 
+		the form of adjectives and nouns to reflect the case.&nbsp; In this 
+		example, the article for the woman is the same in both cases.<br />
+		The second thing to note is that reversing the word order does <strong>
+		not</strong> reverse the meanings of the sentences:</p>
+		<ol>
+			<li value="7"><em>Die Frau der Mann küsste</em></li>
+			<li><em>Den Mann die Frau küsste</em></li>
+		</ol>
+		<p>A German speaker might be mildly surprised by the word-order change 
+		but under no illusions about who did what to whom because the accusative 
+		form of the article is intact so we know that the man is the object in 
+		sentence 8 and it was she who did the kissing.</p>
+		<p>Exactly the same thing is possible in a whole range of languages 
+		including other Germanic languages, Slavic languages, Greek and so on.&nbsp; 
+		Some of these languages have very free ordering of elements of the 
+		clause because the changes to nouns, articles and so on tell us what the 
+		subject and object of the verb are.</p>
+		<hr />
+		
+		<table cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+				<img alt="ordering" height="166" src="../../images/four_birds_order250.jpg" width="250" /></td>
+				<td class="auto-style53">
+				<h2>Word order</h2>
+				</td>
+			</tr>
+		</table>
+		<p>In the example above, German, the word order is more or less the same 
+		as in English.&nbsp; That is Subject + Verb + Object.&nbsp; Not all 
+		languages are so accommodating.&nbsp; However, of the world's languages 
+		(especially the larger ones), 75% are either Subject + Object + Verb or, 
+		like English, Subject + Verb + Object.<br />
+		Here's a very short list to show what is meant.&nbsp; All languages can 
+		vary the word order for poetic effect, to show questions and so on but 
+		this is the <strong>usual</strong> ordering.</p>
+		<table cellpadding="3" class="auto-style42">
+			<tr>
+				<td class="auto-style44"><strong>Usual</strong> word order</td>
+				<td class="auto-style50">Languages</td>
+				<td class="auto-style50">Example</td>
+			</tr>
+			<tr>
+				<td class="auto-style46">Subject + Verb + Object</td>
+				<td class="auto-style47"><span class="auto-style45">*Arabic<br />
+				Chinese languages</span><br 
+/>
+				<span class="auto-style45">Czech, Polish</span>,
+				<span class="auto-style45">Russian</span> and most Slavic 
+				languages<br 
+/>
+				<span class="auto-style51">Danish, Norwegian, Swedish and 
+				related languages</span><span class="auto-style45"><br />
+				English</span><br 
+/>
+				*German<br 
+/>
+				<span class="auto-style45">Greek</span><br 
+/>
+				<span class="auto-style45">Indonesian</span><br 
+/>
+				<span class="auto-style45">French, Spanish, 
+				Italian </span>and other Italic languages<span class="auto-style45"><br />
+				Thai</span></td>
+				<td class="auto-style47">I love you</td>
+			</tr>
+			<tr>
+				<td class="auto-style46">Subject + Object + Verb</td>
+				<td class="auto-style47">Basque<br 
+ />
+				Bengali<br 
+ />
+				Farsi<br 
+ />
+				Hindi<br 
+ />
+				Hungarian<br 
+ />
+				&dagger;Japanese<br 
+ />
+				Korean<br 
+ />
+				Punjabi<br 
+ />
+				Turkish<br 
+ />
+				Urdu<br 
+ />
+				Welsh</td>
+				<td class="auto-style47">I you love</td>
+			</tr>
+			<tr>
+				<td class="auto-style43" colspan="3">*also Subject + Object + 
+				Verb (I you love) | &dagger;also Object + Subject + Verb (You I love)</td>
+			</tr>
+		</table>
+		For more, look at <a href="wordorder1.html">the essential guide to word 
+		order</a> on this site.<br />
+		<br />
+		<hr />
+		<h3><a name="1"></a>Why does this matter to English language teachers?</h3>
+		
+		
+		<p>Think for a moment and 
+		<a href="#1" onclick="FP_changeProp(/*id*/'subject1',0,'style.visibility','visible')">then click here</a>.</p>
+		<ol class="style_brown" id="subject1" style="visibility:hidden">
+			<li>It highlights the need to focus very clearly on word order.&nbsp; 
+			It is often word order <em><strong>alone</strong></em> which distinguishes 
+			the meaning of the sentence pairs in English and that may come as a 
+			surprise to many learners.</li>
+			<li>If you know how your learners' first languages operate in regard 
+			to case, it makes teaching things like pronouns much more 
+			straightforward.</li>
+			<li>A knowledge of case grammar will allow you to analyse language 
+			for your students and make relationships clear to them.&nbsp; (It 
+			will also make clear the difference between <em>who</em> and <em>
+			whom</em>.)</li>
+		</ol>
+		
+		<hr />
+		
+		
+		<table cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+				<img alt="identify" height="166" src="../../images/analyse_microscope250.jpg" width="250" /></td>
+				<td class="auto-style53">
+				<h2>Identifying the true Object</h2>
+				</td>
+			</tr>
+		</table>
+		<p>Students (and some teachers) can be confused by sentences such as <em>
+		He said the brakes were worn</em>, thinking that <em>the brakes</em> is 
+		the object of the verb <em>said</em>.&nbsp; It isn't and <em>say</em> is 
+		usually intransitive, by the way.<br />
+		The 
+		situation is slightly complex but for the purposes of this guide 
+		remember that <strong>objects</strong> in English are always either nouns (or noun 
+		phrases) or pronouns.&nbsp; In these sentences, the true objects are 
+		<span class="style_red">in 
+		red</span>.&nbsp; There is a description of the other items which are 
+		called <strong>complements</strong>.</p>
+		<ol>
+			<li value="9">The boy kicked <span class="style_red">the cat</span>.</li>
+			<li>The boy jumped <span class="auto-style36">over the fence</span>. 
+			(prepositional phrase complement, not the object)</li>
+			<li>She came <span class="auto-style36">early</span>. (adverb 
+			complement, not 
+			the object)</li>
+			<li>The man told <span class="style_red">a tall story</span>.</li>
+			<li>He is feeling <span class="auto-style36">extremely ill</span>. 
+			(adjectival complement, not object)</li>
+			<li>He is feeling <span class="style_red">the material's texture</span>.</li>
+			<li>He called <span class="style_red">me</span>.</li>
+			<li>He spoke <span class="auto-style36">to me</span>. (prepositional 
+			phrase complement, not the object)</li>
+		</ol>
+		<hr />
+		
+		
+		
+		<table cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+				<img alt="012" height="145" src="../../imagesgraphics/012.png" width="250" /></td>
+				<td class="auto-style53">
+				<h2><a name="transitivity"></a>Intransitivity Transitivity and 
+				Ditransitivity</h2>
+				</td>
+			</tr>
+		</table>
+		<p>We saw above that some verbs do not take an object and some do.&nbsp; 
+		Many verbs can do both (and sometimes change their meaning in one case 
+		or the other).</p>
+		<dl>
+			<dt>Verbs like <em>come</em> and <em>go </em>in English never take 
+			and object (they are always <strong>intransitive</strong>).</dt>
+			<dd>We can say<em><br />
+&nbsp;&nbsp;&nbsp; He came to the party<br />
+&nbsp;&nbsp;&nbsp; I came over the hill<br />
+&nbsp;&nbsp;&nbsp; She 
+			came to talk to me<br />
+			</em>etc. but we cannot have<em><br />
+&nbsp;&nbsp;&nbsp; *I came the 
+			party<br />
+&nbsp;&nbsp;&nbsp; *She came the hospital<br />
+&nbsp;&nbsp;&nbsp; * We came the beach<br />
+			</em>etc.&nbsp; 
+			We can say<em><br />
+&nbsp;&nbsp;&nbsp; I go on Thursdays<br />
+&nbsp;&nbsp;&nbsp; I went to the party<br />
+&nbsp;&nbsp;&nbsp; I will go now<br />
+			</em>but not<em><br />
+&nbsp;&nbsp;&nbsp; *I go London<br />
+&nbsp;&nbsp;&nbsp; I went the school<br />
+&nbsp;&nbsp;&nbsp; I will go the lesson</em> 
+			etc.</dd>
+			<dt>Verb like <em>take, enjoy</em> and <em>buy </em>in English always take 
+			an object (they are always <strong>transitive</strong>).&nbsp; When 
+			they only have one object, they are described as <strong>
+			monotransitive</strong>.&nbsp; The objects are
+			<span class="style_red">in red</span> in these examples.</dt>
+			<dd>We can say<em><br />
+&nbsp;&nbsp;&nbsp; She took <span class="style_red">the medicine</span><br />
+&nbsp;&nbsp;&nbsp; They took <span class="style_red">it</span> away from 
+			me<br />
+&nbsp;&nbsp;&nbsp; We took <span class="style_red">the bus </span>to London<br />
+			</em>etc. but things like<em><br />
+&nbsp;&nbsp;&nbsp; *He 
+			took<br />
+&nbsp;&nbsp;&nbsp; *They take<br />
+&nbsp;&nbsp;&nbsp; *Mary took<br />
+			</em>etc. are not usually possible.<br />
+			We can say<em><br />
+&nbsp;&nbsp;&nbsp; I bought <span class="style_red">a ticket</span><br />
+&nbsp;&nbsp;&nbsp; She'll buy <span class="style_red">a new car</span><br />
+&nbsp;&nbsp;&nbsp; They buy 
+			<span class="style_red">cigarettes</span> there<br />
+			</em>etc. but<em><br />
+&nbsp;&nbsp;&nbsp; *They buy<br />
+&nbsp;&nbsp;&nbsp; *She bought<br />
+&nbsp;&nbsp;&nbsp; *I'll be 
+			buying<br />
+			</em>etc. are not usually possible.<br />
+			(Note that even when we leave out the object as in something like<em><br />
+&nbsp;&nbsp;&nbsp; It's OK.&nbsp; I'll buy!<br />
+			</em>we are still using the verb 
+			transitively because we have the object [<em>the drinks, the food</em> etc.] 
+			in our heads.)</dd>
+			<dt>Verbs like <em>eat, smoke</em>, and <em>leave</em>, can be used 
+			with an object (<strong>transitively</strong>) or without (<strong>intransitively</strong>).</dt>
+			<dd>We can say<em><br />
+&nbsp;&nbsp;&nbsp; I ate early</em><span class="style_underline"><br />
+			and</span><em><br />
+&nbsp;&nbsp;&nbsp; I ate <span class="style_red">the fish</span><br />
+&nbsp;&nbsp;&nbsp; She smokes</em><span class="style_underline"><br />
+			and</span><em><br />
+&nbsp;&nbsp;&nbsp; She smoked <span class="style_red">a cigar</span></em></dd>
+			<dt>Transitive verbs, like <em>ask, give, owe</em> and <em>pay</em> 
+			can take two objects (they are <strong>ditransitive</strong>).&nbsp; 
+			In the following, the <span class="style_red">direct object is in 
+			red</span> and the indirect object is in black.</dt>
+			<dd>We can say<em><br />
+&nbsp;&nbsp;&nbsp; I asked <span class="style_red">a question</span></em><span class="style_underline"><br />
+			and</span><em><br />
+&nbsp;&nbsp;&nbsp; I asked <span class="style_black">him</span>
+			<span class="style_red">a question</span><br />
+&nbsp;&nbsp;&nbsp; 
+			I gave <span class="style_red">the money </span>away</em><span class="style_underline"><br />
+			and</span><em><br />
+&nbsp;&nbsp;&nbsp; I gave <span class="style_red">the money</span> to 
+			<span class="style_black">John</span><br />
+&nbsp;&nbsp;&nbsp; I owe <span class="style_red">€500</span></em><span class="style_underline"><br />
+			and</span><em><br />
+&nbsp;&nbsp;&nbsp; I owe <span class="style_black">her</span>
+			<span class="style_red">€500</span><br />
+&nbsp;&nbsp;&nbsp; I paid 
+			<span class="style_red">$400</span></em><span class="style_underline"><br />
+			and<br />
+			</span><em>&nbsp;&nbsp;&nbsp; I paid <span class="style_black">him</span><span class="style_red"> 
+			$400</span></em> etc.<br />
+			With ditransitive verbs, there are two objects: a <strong>direct 
+			object</strong> which must be present and an <strong>indirect object</strong> 
+			which usually comes first and may be present.&nbsp; The direct object in<em><br />
+&nbsp;&nbsp;&nbsp;
+			John asked me a question<br />
+			</em>is <span class="style_red"><em>a 
+			question</em></span> and <span class="style_black"><em>me</em></span> 
+			is the indirect object.<br />
+			A simple test to see which is which is to remove one of them and see 
+			if the sentence still makes the same sense.&nbsp; If it does, you 
+			have removed the indirect object.</dd>
+		</dl>
+		<p>One thing to be aware of is that the analysis here refers to English.&nbsp; 
+		Languages vary in how transitivity works and that can cause all sorts of 
+		error such as:<br />
+		<em>&nbsp;&nbsp;&nbsp; *I enjoy very much</em> (<em>enjoy</em> is always 
+		transitive)<br />
+		<em>&nbsp;&nbsp;&nbsp; *I arrived the hotel</em> (<em>arrive</em> is 
+		always intransitive)<br />
+&nbsp;<em>&nbsp;&nbsp; *I directed him the station</em> (<em>direct</em> is 
+		always monotransitive, never ditransitive)</p>
+		<hr />
+		<p>
+		<strong>The key terms and concepts</strong> you have learned in this guide are: 
+		subject, direct object, indirect object, nominative, accusative, transitive, intransitive, 
+		ditransitive, case.</p>
+		<p>
+		You have also learned how to identify the subject and the object of a 
+		verb and distinguish it from other ways to end the sentence.</p>
+		<p>
+		<a href="subjectorobjecthp.htm">Click here to take a test</a>.</p>
+		<hr />
+		<p>
+		For information, here's a classified list of some common verbs:</p>
+		<table cellpadding="3" class="auto-style21" style="width: 90%">
+			<tr>
+				<td class="auto-style40" style="width: 182px"><strong>generally 
+				transitive</strong></td>
+				<td class="auto-style34" style="width: 182px"><strong>usually 
+				intransitive</strong></td>
+				<td class="auto-style34" style="width: 182px"><strong>transitive 
+				and intransitive</strong></td>
+				<td class="auto-style39" style="width: 182px"><strong>can be 
+				ditransitive</strong></td>
+			</tr>
+			<tr>
+				<td class="auto-style33" style="width: 182px" valign="top">ask<br class="auto-style31" />
+				attend<br class="auto-style31" />
+				believe<br class="auto-style31" />
+				buy<br class="auto-style31" />
+				consider<br class="auto-style31" />
+				contact<br class="auto-style31" />
+				describe<br class="auto-style31" />
+				discuss<br class="auto-style31" />
+				emphasise<br class="auto-style31" />
+				enjoy<br class="auto-style31" />
+				find<br class="auto-style31" />
+				join<br />
+				lay<br class="auto-style31" />
+				like<br class="auto-style31" />
+				lose<br class="auto-style31" />
+				love<br class="auto-style31" />
+				make<br class="auto-style31" />
+				need<br class="auto-style31" />
+				raise<br class="auto-style31" />
+				receive<br class="auto-style31" />
+				take<br class="auto-style31" />
+				telephone<br class="auto-style31" />
+				use<br class="auto-style31" />
+				want<br class="auto-style31" />
+				watch</td>
+				<td class="auto-style35" style="width: 182px" valign="top">
+				appear<br class="auto-style31" />
+				arrive<br class="auto-style31" />
+				come<br class="auto-style31" />
+				cough<br class="auto-style31" />
+				die<br class="auto-style31" />
+				disappear<br class="auto-style31" />
+				fall<br class="auto-style31" />
+				happen<br class="auto-style31" />
+				lie<br class="auto-style31" />
+				live<br class="auto-style31" />
+				rain<br class="auto-style31" />
+				rise<br class="auto-style31" />
+				sneeze<br class="auto-style31" />
+				snow<br class="auto-style31" />
+				wait<br class="auto-style31" />
+				work<br class="auto-style31" />
+				</td>
+				<td class="auto-style35" style="width: 182px" valign="top">
+				<div class="auto-style38">
+					break<br class="auto-style31" />
+					close<br />
+				drive<br class="auto-style31" />
+					drop<br class="auto-style31" />
+					eat<br class="auto-style31" />
+					end<br />
+				enter<br class="auto-style31" />
+					explode<br class="auto-style31" />
+					finish<br class="auto-style31" />
+					fly<br class="auto-style31" />
+					leave<br />
+					manage<br class="auto-style31" />
+					call<br class="auto-style31" />
+					read<br class="auto-style31" />
+					smoke<br class="auto-style31" />
+					turn<br class="auto-style31" />
+					type<br class="auto-style31" />
+					win<br class="auto-style31" />
+					write</div>
+				<p class="auto-style1">These verbs often have a slightly 
+				different meaning in the two uses and take different sorts of 
+				subjects.&nbsp; Compare, e.g.:<br />
+				<em>She broke the chair</em> vs. <em>The chair broke</em>.<br />
+				<em>He called at six</em> vs. <em>He called his mother</em>.</p>
+				</td>
+				<td class="auto-style32" style="width: 182px" valign="top">ask<br class="auto-style31" />
+				bring<br class="auto-style31" />
+				charge<br class="auto-style31" />
+				find<br class="auto-style31" />
+				give<br class="auto-style31" />
+				hand<br class="auto-style31" />
+				leave<br class="auto-style31" />
+				lend<br class="auto-style31" />
+				make<br class="auto-style31" />
+				offer<br class="auto-style31" />
+				owe<br class="auto-style31" />
+				pay<br class="auto-style31" />
+				promise<br class="auto-style31" />
+				save<br class="auto-style31" />
+				send<br class="auto-style31" />
+				serve<br class="auto-style31" />
+				show<br class="auto-style31" />
+				teach<br class="auto-style31" />
+				tell<br class="auto-style31" />
+				wish</td>
+			</tr>
+		</table>
+		<br />
+		
+		<hr />
+		<br />
+		<table id="iptrainingnav" cellpadding="0" cellspacing="0" class="tablebrownborder">
+				<tr>
+					<td class="auto-style57" colspan="2" style="height: 17px">Related guides</td>
+				</tr>
+				<tr>
+					<td class="auto-style55">
+					<a href="../../inservice/verbs/verbtypes.html">verb and 
+					clause types</a></td>
+					<td class="auto-style58">for a more advanced guide to the 
+					area</td>
+				</tr>
+				<tr>
+					<td class="auto-style54">
+					<a href="wordorder1.html">word order</a></td>
+					<td class="auto-style59">an essential guide only with links 
+					to more technical guides</td>
+				</tr>
+				<tr>
+					<td class="auto-style54">
+					<a href="../../inservice/lexicogrammar/case.html">case</a></td>
+					<td class="auto-style59">a more technical guide to case in 
+					English</td>
+				</tr>
+				</table>
+			<br />
+		<hr />
+		<p class="auto-style15">References:<br />
+		Chalker, S, 1987, <em>Current English Grammar</em>, London: Macmillan<br />
+		<span class="smallfont">Campbell, GL, 1995, <em>Concise Compendium of the World's Languages,</em> 
+				London: Routledge<br />
+		Mallinson, G and Blake, BJ, 1981, <em>Language typology: crosslinguistic 
+		studies in syntax,</em> Amsterdam: North-Holland Linguistic Series<br />
+		Quirk, R, Greenbaum, S, Leech, G &amp; Svartvik, J, 1972, <em>A Grammar of 
+		Contemporary English</em>, 
+		Harlow: Longman<br />
+				Swan, M and Smith, B (Eds), 2001, <em>Learner English, </em>2nd Edition, 
+				Cambridge: Cambridge University Press</span></p>
+				<hr />
+				</div>
+	
+			<!-- #EndEditable --></div>
+		<!-- End Content -->
+	
+	<!-- Begin Footer -->
+	<div id="footer">
+		<p><a href="../../../index.html">ELT Concourse home</a> | 
+		<a href="../../ttindex.html">Teacher training</a> |
+		<a href="../../../development/developmentindex.html">Teacher development</a> |
+		<a href="../../../teachers/teachers.html">For teachers</a> |
+		<a href="../../../learners/learners.html">For learners</a> |
+		<a href="../../../articles/articles.html">Articles</a> | 
+		<a href="../../../contributetoELTC.html">Contribute</a> |
+		<a href="../../../contact.html">Contact</a> |
+		<a href="../../../questions/questions.html">Language questions</a> |
+		<a href="../../../faq.html">FAQs</a> |
+		<a href="../../../documents/ELT_Concourse_Charter.pdf" target="_blank"> ELT Concourse charter</a> |
+		<a href="../../../disclaimer.html"> Disclaimer and Privacy statement </a>|
+		<a href="../../../searchthesite.html">Search <strong>
+		ELT Concourse</strong></a></p>
+		</div>
+	<!-- End Footer -->
+
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

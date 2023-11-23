@@ -1,0 +1,1008 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- #BeginTemplate "../../../styles/dwt/training.dwt" -->
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta http-equiv="Content-Language" content="en-gb" />
+<!-- #BeginEditable "doctitle" -->
+<title>ELT Concourse: the essentials of modality</title>
+<script type="text/javascript">
+<!--
+function FP_changeProp() {//v1.0
+ var args=arguments,d=document,i,j,id=args[0],o=FP_getObjectByID(id),s,ao,v,x;
+ d.$cpe=new Array(); if(o) for(i=2; i<args.length; i+=2) { v=args[i+1]; s="o"; 
+ ao=args[i].split("."); for(j=0; j<ao.length; j++) { s+="."+ao[j]; if(null==eval(s)) { 
+  s=null; break; } } x=new Object; x.o=o; x.n=new Array(); x.v=new Array();
+ x.n[x.n.length]=s; eval("x.v[x.v.length]="+s); d.$cpe[d.$cpe.length]=x;
+ if(s) eval(s+"=v"); }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+// -->
+</script>
+<style type="text/css">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.auto-style4 {
+	text-align: center;
+}
+.auto-style5 {
+	text-align: center;
+	background-color: #FFFF00;
+}
+.auto-style6 {
+	margin-left: 40px;
+}
+.auto-style7 {
+	color: #932d00;
+}
+.auto-style15 {
+	color: #932d00;
+}
+.auto-style9 {
+	border-left: 1px solid #932d00;
+	color: #000000;
+	text-align: center;
+}
+.auto-style8 {
+	border-top: 1px solid #932d00;
+}
+.auto-style10 {
+	border-left: 1px solid #932d00;
+	border-top: 1px solid #932d00;
+	text-align: left;
+}
+.auto-style14 {
+	text-decoration: underline;
+}
+.auto-style12 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.auto-style11 {
+	margin-left: 40px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.auto-style16 {
+	text-align: left;
+	list-style-type: lower-alpha;
+}
+.auto-style17 {
+	font-size: small;
+}
+.auto-style18 {
+	color: black;
+	text-align: center;
+}
+.auto-style19 {
+	border-collapse: collapse;
+	border-color: #932d00;
+	border-width: 0;
+}
+.auto-style21 {
+	color: #932d00;
+	padding-left: 5px;
+}
+.auto-style22 {
+	font-family: Calibri, Arial, Trebuchet;
+	font-size: small;
+	color: #0005b3;
+	text-align: justify;
+	font-style: normal;
+}
+.auto-style23 {
+	font-family: Calibri, Arial, Trebuchet;
+	color: #0005b3;
+	text-align: justify;
+	margin-top: 0;
+}
+.auto-style24 {
+	margin-bottom: 0px;
+}
+.auto-style25 {
+	text-align: center;
+	background-color: #00FFFF;
+}
+.auto-style27 {
+	padding-left: 5px;
+}
+.auto-style40 {
+	border-left: medium none #FF6300;
+	border-right: medium none #FF6300;
+	border-top: medium none #FF6300;
+	border-bottom: 1px solid #FF6300;
+	border-collapse: collapse;
+	padding-left: 2px;
+}
+.auto-style41 {
+	border-bottom: medium none #FF6300;
+	border-left: medium none #FF6300;
+	border-right: 1px solid #FF6300;
+	border-top: 1px solid #FF6300;
+	color: #000000;
+}
+.auto-style43 {
+	border-bottom: medium none #FF6300;
+	border-right: medium none #FF6300;
+	border-left: 1px solid #FF6300;
+	border-top: 1px solid #FF6300;
+	padding-left: 4px;
+	padding-right: 2px;
+}
+.auto-style44 {
+	border-left: medium none #FF6300;
+	border-right: 1px solid #FF6300;
+	border-top: 1px solid #FF6300;
+	border-bottom: 1px solid #FF6300;
+	border-collapse: collapse;
+}
+.auto-style45 {
+	border-bottom: 1px solid #FF6300;
+	border-left: medium none #FF6300;
+	border-right: 1px solid #FF6300;
+	border-top: 1px solid #FF6300;
+	color: #000000;
+}
+.auto-style46 {
+	border-bottom: 1px solid #FF6300;
+	border-right: medium none #FF6300;
+	border-left: 1px solid #FF6300;
+	border-top: 1px solid #FF6300;
+	padding-left: 4px;
+	padding-right: 2px;
+}
+.auto-style47 {
+	padding-left: 4px;
+	padding-right: 2px;
+}
+</style>
+<!-- #EndEditable -->
+<meta content="language analysis,eltconcourse,English grammar,free English language teaching materials,CELTA,Delta,language guides,free Delta training,free CELTA training,free ELT Training materials,teacher training,ELT,learning English,teaching English,English Language Teaching,ESOL,EFL,English as a Foreign Language" name="keywords" />
+<meta content="Free English language training materials for trainers and teachers with sections on Cambridge Delta, TKT and CELTA." name="description" />
+<link href="../../../styles/mainstyle.css" rel="stylesheet" type="text/css" />
+<link href="../../../styles/training.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+
+.auto-style1 {
+	text-align: left;
+}
+.masterheader {
+	margin-bottom: 0;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Begin Container -->
+<div id="container">
+	<!-- Begin Masthead -->
+	<div id="masthead" class="auto-style1">
+		<table style="width: 100%; border-bottom: #FDB415 solid">
+			<tr>
+				<td style="width: 135px">
+				<img alt="logo" height="49" src="../../../gfx/logo.png" width="80" />&nbsp;</td>
+				<td valign="bottom">
+				<span class="orangexxlargebold">ELT </span>
+				<span class="bluexxlargebold">Concourse teacher training</span></td>
+			</tr>
+		</table>
+	</div>
+	<!-- End Masthead -->
+	<!-- Begin Page Content -->
+	<div id="page_content">
+		<!-- Begin Sidebar -->
+		<div id="sidebartt">
+			<ul>
+				<li><a href="../../../index.html">ELT Concourse home</a></li>
+				<li><a href="../../ttindex.html">Teacher training index</a></li>
+				<li><a href="../../inservice/inserviceindex.html">In-service training</a></li>
+				<li><a href="../initialindex.html">Initial plus training</a></li>
+				<li><a href="../../../development/developmentindex.html">Teacher development</a></li>
+				<li><a href="../../../acman/acmanindex.html">Academic management</a></li>
+				<li><a href="../../../searchthesite.html">Search ELT Concourse</a></li>
+				<li><a href="../../a-ztrainingindex.html">A-Z training index</a></li>
+				<li><a href="../../../articles/articles.html">Articles</a></li>
+				
+				<li><a href="../../../questions/questions.html">Language questions</a></li>
+				
+			</ul>
+		</div>
+		<!-- End Sidebar -->
+		<!-- Begin Content -->
+		
+		<div id="toppicture "style="text-align: left; background-color: white; padding: 0px; margin-left: 140px;">
+				<img alt="Concourse 2" height="207" src="../../../images/concourse2blue.JPG" width="310" /></div>
+		
+		<div id="content">
+			<!-- #BeginEditable "content" -->
+
+		<div id="content3">
+
+<!-- Begin Container -->
+<div id="lesson1">
+		<!-- Begin Page Content -->
+	
+	<div id="page_content1" style="left: 0px; top: 0px">
+
+			<div id="content2">
+
+<!-- Begin Container -->
+<div id="lesson0">
+	
+	<!-- Begin Page Content -->
+	
+	<div id="page_content0" style="left: 0px; top: 0px">
+			<div id="content0">
+	<div id="lessonbody">
+	<h1>Modality and modal auxiliary verbs: the essentials</h1>
+		<p>
+		<img height="179" src="../../imagesgraphics/modals_cloud310.PNG" width="310" alt="modals" /></p>
+		<p>What follows refers only to English.&nbsp; Languages deal with the 
+		modality in a bewildering variety of ways.</p>
+		<hr />
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td valign="top">
+					<img alt="define" height="166" src="../../images/dictionary_define250.jpg" width="250" /></td>
+					<td class="auto-style21" valign="top">
+			<h2>What is modality?</h2>
+		<p class="indentpara"><span class="style_black"><em>Modality differs from tense and aspect in that it does not refer 
+		directly to any characteristic of the event, but simply to the status of 
+		the proposition.<br />
+		</em></span>
+		<span class="auto-style22">(Palmer, 2001:1)</span></p>
+					<p><span class="concoursebluepara">In other words, modality concerns <strong>how the speaker / 
+		writer perceives a state of affairs</strong></span>.</p>
+					</td>
+				</tr>
+			</table>
+			<br />
+		<hr />
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="confusing" height="165" src="../../images/girl_confused250.jpg" width="250" /></td>
+					<td class="auto-style21">
+			<h2>Confusing modal verb terminology</h2>
+		<p class="concoursebluepara">Terminology in this area can get a bit 
+		confusing because authorities differ about the names we give to things.&nbsp; 
+		Here's a short glossary:</p>
+					</td>
+				</tr>
+			</table>
+			<ul class="redbulletlist">
+				<li><strong>modality</strong><br />
+				refers generally to the way speakers express their view of an 
+				event in terms of 
+				<span class="style_black">possibility, ability, probability, 
+				likelihood, certainty, permission</span> or 
+				<span class="style_black">prohibition</span>.&nbsp; For example, 
+				I can say:<br />
+				<span class="style_black">Permission / Prohibition</span><br />
+				<em>&nbsp;&nbsp;&nbsp; He must not do that<br />
+				&nbsp;&nbsp;&nbsp;
+				He is not allowed to do that<br />
+				&nbsp;&nbsp;&nbsp;
+				He is not supposed to do that<br />
+				&nbsp;&nbsp;&nbsp;
+				That is forbidden him<br />&nbsp;&nbsp;&nbsp;
+				I forbade him to do that<br />
+				</em><span class="style_black">Possibility</span><em><span class="style_black"> 
+				/ Ability</span><br />
+				&nbsp;&nbsp;&nbsp;
+				He might do that<br />&nbsp;&nbsp;&nbsp;
+				He isn't able to do that<br />
+				</em><span class="style_black">Probability / Likelihood</span><em><br />
+				&nbsp;&nbsp;&nbsp;
+				He will do that<br />&nbsp;&nbsp;&nbsp; I expect she'll be late<br />
+				</em><span class="style_black">Certainty</span><em><br />
+&nbsp;&nbsp;&nbsp; That must be the right answer<br />
+&nbsp;&nbsp;&nbsp; That's definitely wrong<br />
+				</em>and these are all examples of modality in one form or 
+				another expressing the speaker's view of the status of the 
+				event.</li>
+				<li><strong>modal auxiliary verbs</strong> are often called <strong>modal 
+				auxiliaries</strong> (or even plain <strong>modals</strong>) and come in three flavours:<ul class="greybulletlist">
+					<li><strong>pure modal auxiliary verbs</strong> are:<em><br />
+					could, might, 
+				may, should, would, must, can, will/shall, had better, ought to<br />
+					</em>but even here you will find verbs included in or excluded from this 
+				list.&nbsp; Some will call these <strong>central modal verbs</strong>.</li>
+					<li><strong>semi-modal auxiliary verbs</strong> are usually listed as<em><br />
+					need, have to, dare, used to<br />
+					</em>although some will exclude 
+					<em>have to</em> from that list and some will include <em>ought to</em> 
+				and <em>be able to</em> in the list.&nbsp; These are sometimes 
+				called <strong>marginal modal verbs</strong> although on this site 
+				that term is reserved for the next group.</li>
+					<li><strong>marginal modal verbs</strong> are verbs which 
+				express some form of modality but do not share the structural 
+				characteristics of pure or semi-modal verbs and there are lots 
+				of them including, e.g.:<em><br />
+					be supposed to, seem to, be likely 
+				to, be about to, tend to</em> etc.</li>
+				</ul>
+				</li>
+				<li><strong>modal adverbials and adjectives</strong> are often 
+				included in the list because they, too, express similar 
+				concepts.&nbsp; This area includes, for example<em><br />
+&nbsp;&nbsp;&nbsp; it is <span class="style_black">important</span> that<br />
+&nbsp;&nbsp;&nbsp; it is 
+				<span class="style_black">vital</span> that<br />
+&nbsp;&nbsp;&nbsp; it is <span class="style_black">unlikely</span> that<br />
+&nbsp;&nbsp;&nbsp; it is <span class="style_black">necessary</span> that<br />
+&nbsp;&nbsp;&nbsp; 
+				<span class="style_black">necessarily</span><br />
+&nbsp;&nbsp;&nbsp; <span class="style_black">importantly</span><br />
+&nbsp;&nbsp;&nbsp; <span class="style_black">vitally</span><br />
+&nbsp;&nbsp;&nbsp; <span class="style_black">crucially</span><br />
+				</em>and a host 
+				more.&nbsp; They are all ways of signalling the speaker's view 
+				of an event but do not use special verbs to do it.</li>
+				<li><strong>modal nouns</strong> are also sometimes included in 
+				the list.&nbsp; These are nouns often formed from modal 
+				adjectives and include, for example:<em><br />
+&nbsp;&nbsp;&nbsp; There is a <span class="style_black">possibility</span> 
+				that it will rain<br />
+&nbsp;&nbsp;&nbsp; I am making the <span class="style_black">assumption</span> that he's coming<br />
+&nbsp;&nbsp;&nbsp; 
+				There's a strong <span class="style_black">probability</span> that it will rain<br />
+				</em>and so on.</li>
+		</ul>
+		<hr />
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td valign="middle">
+					<img alt="unicorn" height="166" src="../../images/animals_unicorn250.jpg" width="250" /></td>
+					<td class="auto-style21" valign="middle">
+			<h2 class="auto-style24">It might be a unicorn</h2>
+		<p class="auto-style23">As you can see from the above, modality needn't 
+		be expressed using modal verbs.&nbsp; We can say, for example<em><br />
+&nbsp;&nbsp;&nbsp; It seems unlikely to me that she has 
+				seen a unicorn<br />
+		</em>which expresses our view of the event.<br />
+				We do use modal verbs for this kind of thing quite often, 
+				however, as in<em><br />
+		&nbsp;&nbsp;&nbsp;
+		She can't have / mightn't have / couldn't 
+				have / must've / 
+				may've seen a unicorn.</em></p>
+					</td>
+				</tr>
+			</table>
+		<p><a name="2"></a>See if 
+				you can match modal to function in <a href="modalityhp1.htm">this little test</a>.<a name="back1"></a></p>
+		<hr />
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td valign="middle">
+					<img alt="function" height="165" src="../../images/cogwheels_a250.jpg" width="250" /></td>
+					<td class="auto-style21" valign="middle">
+			<h2 class="auto-style24">Function</h2>
+					</td>
+				</tr>
+			</table>
+			<p>It's not always as simple as it seems.&nbsp; English uses modal verbs 
+		in a complicated way and the area causes endless problems for 
+		learners (and teachers).&nbsp; For example, what do these sentences 
+		imply about the perceptions of the speaker?&nbsp; Click 
+		<a href="#2" onclick="FP_changeProp(/*id*/'modality1',0,'style.visibility','visible')">here</a> when you 
+		know.</p>
+		<ol>
+			<li><em>He may choose a book.</em></li>
+			<li><em>He can open the door.</em></li>
+			<li><em>He should be in London.</em></li>
+		</ol>
+		<div id="modality1" style="visibility: hidden">
+			<p><span class="auto-style7"><strong>Sentence 1</strong> means either<em><br />
+&nbsp;&nbsp;&nbsp; He 
+			is allowed to choose a book<br />
+			</em>or<em><br />
+&nbsp;&nbsp;&nbsp; It is possible he will 
+			choose a book</em>.<br />
+			Without a context, it simply isn't 
+			possible to know<em> </em>which because the verb expresses 
+			obligation or permission as well as possibility.<br />
+		<strong>Sentence 2</strong> means either:<em><br />
+&nbsp;&nbsp;&nbsp; He is able 
+			to open the door<br />
+			</em>or<em><br />
+&nbsp;&nbsp;&nbsp; He is allowed to open the door</em>.<br />
+			Again, with no context, we do not know what is meant because the 
+			verb expresses both ability and permission.<br />
+		<strong>Sentence 3</strong> means either<em><br />
+&nbsp;&nbsp;&nbsp; He is supposed to be in 
+			London<br />
+			</em>or<em><br />
+&nbsp;&nbsp;&nbsp; He is likely to be in London</em>.<br />
+			And here the verb expresses either obligation or possibility / 
+			likelihood.</span></p>
+		
+		</div>
+
+		<p>So, issue number 1 for teachers of English is <em>always</em> to 
+		provide <strong>a clear context</strong> for modal verbs.&nbsp; If you 
+		don't do this, you will do more harm than good by confusing your 
+		learners.</p>
+		<hr />
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td valign="middle">
+					<img alt="form" height="165" src="../../images/form_pottery250.jpg" width="250" /></td>
+					<td class="auto-style21" valign="middle">
+			<h2 class="auto-style24">Form</h2>
+					</td>
+				</tr>
+			</table>
+			<p>Here's a list of some modal verbs in English.&nbsp; <a name="3"></a>What's 
+			different about the semi-modal verbs?<br />
+		Think about:</p>
+		<ul>
+			<li class="redbulletlist">How we make a negative with all of these verbs.</li>
+			<li class="redbulletlist">How we make a question with all of these verbs.</li>
+			<li class="redbulletlist">Whether we put an <em>-s</em> ending on the third person singular of 
+		the verbs.</li>
+		</ul>
+		
+		<table cellpadding="3" cellspacing="0" class="tablebrownborder">
+			<tr>
+				<td class="auto-style25">Pure modal verbs</td>
+			</tr>
+			<tr>
+				<td class="auto-style25">can | could | may | might | shall | should 
+				| will |would | must | ought to</td>
+			</tr>
+			<tr>
+				<td class="auto-style5">Semi-modal verbs</td>
+			</tr>
+			<tr>
+				<td class="auto-style5">used to | need | dare</td>
+			</tr>
+			</table>
+		
+		
+		
+		
+	
+		<p><a href="#3" onclick="FP_changeProp(/*id*/'modality2',0,'style.visibility','visible')">Click 
+		here when you've done that</a>.</p>
+		<div id="modality2" style="visibility: hidden">
+			<h3><span class="style_brown">For all 
+			pure modal verbs:</span></h3>
+			<dl class="style_brown">
+				<dt><strong>Negatives</strong>:</dt>
+				<dd>we make negative by putting <em>not </em>
+			after the verb so we get<em><br />
+&nbsp;&nbsp;&nbsp; He can go &rarr; He can't (cannot) go<br />
+				</em><strong>not:</strong><em><br />
+&nbsp;&nbsp;&nbsp; *He 
+			doesn't can go.</em></dd>
+				<dt><strong>Questions</strong>:</dt>
+				<dd>we make a question by simply reversing the order of verb and 
+			subject so we get<br />
+			<em>&nbsp;&nbsp;&nbsp; We can come</em> <em>&rarr;</em> <em>Can we come?<br />
+				</em><strong>not</strong><br />
+				<em> &nbsp;&nbsp;&nbsp; *Do we can come?</em></dd>
+				<dt>
+			<em><strong>-s</strong></em></dt>
+				<dd>We do not put an <em>-s</em> on the third person singular form:<br />
+			<em>&nbsp;&nbsp;&nbsp; He 
+			must<br />
+				</em><strong>not</strong><em><br />
+&nbsp;&nbsp;&nbsp; *He musts</em></dd>
+			</dl>
+			<h3><span class="style_brown">For semi-modal 
+			verbs</span></h3>
+			<p class="style_brown"><strong>Here, t<span class="auto-style7">he situation is more complicated because they 
+			sometimes act as 'normal', lexical verbs:</span></strong></p>
+			<dl class="style_brown">
+				<dt><strong>Negatives</strong>:</dt>
+				<dd>we can make a negative by putting <em>not
+			</em>after the verb<br />
+			<em>&nbsp;&nbsp;&nbsp; He needn't go<br />
+&nbsp;&nbsp;&nbsp; He use(d)n't to go<br />
+&nbsp;&nbsp;&nbsp; He daren't go<br />
+			</em>we can also treat them as normal verbs<em><br />
+&nbsp;&nbsp;&nbsp; He didn't need to go<br />
+&nbsp;&nbsp;&nbsp; He 
+			didn't use(d) to go<br />
+&nbsp;&nbsp;&nbsp; He didn't dare go</em></dd>
+				<dt><strong>Questions</strong>:</dt>
+				<dd>we can make a question by simply reversing the order of verb 
+			and subject<em><br />
+&nbsp;&nbsp;&nbsp; Need he come?<br />
+&nbsp;&nbsp;&nbsp; Used he to come?<br />
+&nbsp;&nbsp;&nbsp; Dare he come?<br />
+			</em>we can also treat them normally<em><br />
+&nbsp;&nbsp;&nbsp; Did he need to come?<br />
+&nbsp;&nbsp;&nbsp; Did 
+			he use(d) to go?<br />
+&nbsp;&nbsp;&nbsp; Did he dare go?</em></dd>
+				<dt><strong><em>-s</em></strong></dt>
+				<dd>we sometimes put an <em>-s</em> on the third person singular form 
+			of <em>dare</em> and<em> need<br />
+&nbsp;&nbsp;&nbsp; He dares to go<br />
+&nbsp;&nbsp;&nbsp; He needs the 
+			money</em>)<br />
+			but <strong>never</strong> on <em>used to</em>.</dd>
+			</dl>
+		
+		
+		<h3> Co-occurrence</h3>
+			<p> Whether the verbs are pure or semi-modal in nature they cannot 
+			co-occur.&nbsp; For example, we cannot have:<br />
+			&nbsp;&nbsp;&nbsp; <em>*He can must go</em><br />
+			&nbsp;&nbsp;&nbsp; <em>*She had better should be here</em><br />
+&nbsp;<em>&nbsp;&nbsp; *He dares need to ask</em><br />
+			etc.<br />
+			However, we do allow a pure modal to be followed by a semi-modal so, 
+			for example:<br />
+&nbsp;<em>&nbsp;&nbsp; He may have to talk to her<br />
+&nbsp;&nbsp;&nbsp; I should be able to get there</em><br />
+			are both possible.<br />
+			The reverse is not the case so:<br />
+			<em>&nbsp;&nbsp;&nbsp; *He has to may talk to her<br />
+&nbsp;&nbsp;&nbsp; *Is is able to should be here</em><br />
+			are not allowed.</p>
+			<p> You will be delighted to learn that the complications of 
+		semi- or marginal modal verbs is not our subject here but you should think 
+		for a moment about how the meaning changes depending on the grammar we 
+		use.&nbsp; There is a guide linked in the list at the end to semi-modal 
+		verbs which includes consideration of some marginal modal verbs.</p>
+			<p> Pure modal auxiliary verbs are often referred to a central modal 
+			auxiliary verbs.&nbsp; That makes some sense but means the same.</p>
+		</div>
+			<hr />
+			<table cellpadding="0" class="auto-style19">
+				<tr>
+					<td>
+					<img alt="explained" height="133" src="../../images/teacher_explain200.jpg" width="200" /></td>
+					<td class="auto-style27">
+					<h2>Some common modal verbs explained</h2>
+					</td>
+				</tr>
+			</table>
+			<p> This is a short and partial overview of the functions of some of 
+			the common modal verbs.<br />
+			For more, see 			the guide to modal auxiliary verbs one by one linked in the 
+			list at the end.</p>
+		<h3><em>can / could</em></h3>
+		<p>This verb can express:</p>
+		<ol>
+			<li>Ability:<br />
+			<em>&nbsp;&nbsp;&nbsp; He can read Italian but can't speak it well<br />
+			&nbsp;&nbsp;&nbsp;
+			He 
+			could play the piano well as a child</em></li>
+			<li>Permission (present and future):<br />
+			<em>&nbsp;&nbsp;&nbsp; Can I come in?<br />
+			&nbsp;&nbsp;&nbsp;
+			No, you can't yet<br />
+			&nbsp;&nbsp;&nbsp;
+			Could I talk to you tomorrow?</em></li>
+			<li>(Im)possibility:<em><br />
+			&nbsp;&nbsp;&nbsp;
+			Nobody can be sure<br />
+			&nbsp;&nbsp;&nbsp;
+			The train could be late</em></li>
+		</ol>
+		<h3><em>may / might</em></h3>
+		
+				
+		
+	
+			
+		<p>This verb can express:</p>
+		<ol>
+			<li>Permission:<em><br />
+			&nbsp;&nbsp;&nbsp;
+			You may ask a question now<br />
+			&nbsp;&nbsp;&nbsp;
+			May I smoke here? </em>(More rarely and more 
+			formally: <em>Might I speak to you?<span class="auto-style4">)</span></em></li>
+			<li>Possibility (present and future):<br />
+			<em>&nbsp;&nbsp;&nbsp; We may arrive a little 
+			late<br />
+			&nbsp;&nbsp;&nbsp;
+			He might come early</em></li>
+		</ol>
+		<h3><em>shall / should</em></h3>
+		<p><em>Shall</em> is arguably going out of fashion to express the future 
+		and there's a strong case to be made for not teaching it for that 
+		function, especially at lower levels.&nbsp; However, there are other 
+		uses of <em>shall</em> which are still not always replaceable with <em>
+		will.&nbsp; </em>Only the third (and, possibly, the fourth) in this list 
+		are common these days and 
+		then only in British English.</p>
+		<ol>
+			<li>In questions:<em><br />
+			&nbsp;&nbsp;&nbsp;
+			Shall I do my homework now?</em></li>
+			<li>Insistence:<em><br />
+			&nbsp;&nbsp;&nbsp;
+			You shall do what I tell you</em></li>
+			<li>Intention:<em><br />
+			&nbsp;&nbsp;&nbsp;
+			I shan't keep you long</em></li>
+			<li>Suggestions:<em><br />
+			&nbsp;&nbsp;&nbsp;
+			Shall we go?</em></li>
+		</ol>
+		<p><em>Should</em> is much more common and can express:</p>
+		<ol>
+			<li>Obligation:<em><br />
+			&nbsp;&nbsp;&nbsp;
+			You should write to your mother more often</em></li>
+			<li>Logical deduction:<em><br />
+			&nbsp;&nbsp;&nbsp;
+			He should be there by now</em></li>
+			<li>Advice:<em><br />
+			&nbsp;&nbsp;&nbsp;
+			You should take something for that cough</em></li>
+		</ol>
+		<p>What's the negative of the second example?&nbsp; Right, it's 
+		something like<em><br />
+&nbsp;&nbsp;&nbsp; He won't be there yet<br />
+		</em>or<em><br />
+&nbsp;&nbsp;&nbsp; He can't be there yet.</em></p>
+		<h3><em>will / would</em></h3>
+		<ol>
+			<li>Willingness:<em><br />
+			&nbsp;&nbsp;&nbsp;
+			I'll get the milk<br />
+			&nbsp;&nbsp;&nbsp;
+			Will you have another?<br />
+			</em>(The verb <em>would</em> can also express this sense in<em><br />
+&nbsp;&nbsp;&nbsp; Would you 
+			like another?<br />
+			</em>but can't be used to express personally 
+			willingness except in something like<em><br />
+&nbsp;&nbsp;&nbsp; I'd like another<br />
+			</em>or<em><br />
+&nbsp;&nbsp;&nbsp; 
+			I would be happy to help.</em>)</li>
+			<li>Intentions and promises:<em><br />
+			&nbsp;&nbsp;&nbsp;
+			I'll send you an email soon<br />
+			&nbsp;&nbsp;&nbsp;
+			We won't keep you<br />
+			&nbsp;&nbsp;&nbsp;
+			He told me he would write soon<br />
+			&nbsp;&nbsp;&nbsp;
+			I thought he'd be quick</em></li>
+			<li>Prediction (often based on past experience):<em><br />
+			&nbsp;&nbsp;&nbsp;
+			It'll probably 
+			rain soon; it often does in November<br />
+			&nbsp;&nbsp;&nbsp;
+			He knew it would rain<br />
+			&nbsp;&nbsp;&nbsp;
+			He 
+			believed I would come</em></li>
+			<li>Insistence (present and past):<br />
+			<em>&nbsp;&nbsp;&nbsp; He will keep arguing with me<br />
+			&nbsp;&nbsp;&nbsp;
+			He would keep 
+			changing the subject</em></li>
+			<li>Probability:<br />
+			<em>&nbsp;&nbsp;&nbsp; That will be him at the door now, That would be typical of 
+			him</em></li>
+			<li>Characteristic behaviour / habit:<br />
+			<em>&nbsp;&nbsp;&nbsp; We would often get up really 
+			early<br />
+			&nbsp;&nbsp;&nbsp;
+			When I was younger, I would ... </em>(Compare <em>used to </em>
+			for this function)</li>
+		</ol>
+		<h3><em><a name="1"></a>must</em></h3>
+		<ol>
+			<li>Obligation:<em><br />
+			&nbsp;&nbsp;&nbsp;
+			You mustn't speak to me like that<br />
+			&nbsp;&nbsp;&nbsp;
+			You must be 
+			home at 6</em></li>
+			<li>Logical necessity / deduction:<em><br />
+			&nbsp;&nbsp;&nbsp;
+			That must be his father; they are so alike<br />
+			&nbsp;&nbsp;&nbsp;
+			There must be an error in the data</em></li>
+		</ol>
+		<p>Negating these meanings is tricky.&nbsp; What's the negative of the 
+		following?&nbsp;  When you have a brief note of the answers, 
+		<a href="#1" onclick="FP_changeProp(/*id*/'must',0,'style.visibility','visible')">click 
+		
+		for comments</a>.</p>
+		<ol class="auto-style16" style="width: 300px">
+			<li><em>You must take the medicine every day.</em></li>
+			<li><em>The figure must be correct.</em></li>
+		</ol>
+		<div id="must" style="visibility: hidden"><p>
+			<span class="auto-style15">Sentence a. can be negated 4 ways with two different meanings:</span></p>
+		<p class="auto-style6"><span class="auto-style15"><em>You mustn't take the medicine every day </em>
+		(i.e., you are obliged not to)<br />
+		<em>You needn't / don't have to / are not obliged to take the medicine 
+		every day </em>(i.e., there is a lack of any obligation)</span></p>
+		<p><span class="auto-style15">Sentence b. can be negated two ways:</span></p>
+		<p class="auto-style6"><span class="auto-style15"><em>The figure mustn't be correct</em> (i.e., you 
+		are obliged to give the wrong answer)<br />
+		<em>The figure can't be correct</em> (i.e., the logical deduction is 
+		that it's wrong)</span></p></div><h3><em>ought to</em></h3>
+		<ol>
+			<li>Obligation (weaker than <em>must</em>):<em><br />
+			&nbsp;&nbsp;&nbsp;
+			She ought to ask if 
+			she doesn't know.</em></li>
+			<li>Logical deduction / expectation:<em><br />
+			&nbsp;&nbsp;&nbsp;
+			The bus ought to be here by 
+			now.</em></li>
+		</ol>
+		<p>The question and negative forms of <em>ought</em>, for example:<br />
+		<em>&nbsp;&nbsp;&nbsp; Ought I to come? </em>(= <em>Would it be best if I came</em>)<br />
+		<em>&nbsp;&nbsp;&nbsp; She oughtn't to speak to me like that</em> (= <em>It is her duty to be 
+		more polite</em>)<br />
+		are somewhat rare and considered formal.<br />
+		The forms are, however, parallel to all other pure modal verbs and hence, the 
+		verb is considered here.</p>
+		<hr />
+			<table cellpadding="0" class="auto-style19">
+				<tr>
+					<td>
+					<img alt="time" height="166" src="../../images/sundial250.jpg" width="250" /></td>
+					<td class="auto-style27">
+					<h2>Time and tense</h2>
+					</td>
+				</tr>
+			</table>
+		<p>Only some modal verbs have obvious past-tense forms.&nbsp; Here's a 
+		list.</p>
+		<table cellpadding="3" cellspacing="0" class="tablebrownborder" style="width: 25%">
+			<tr class="auto-style7">
+				<td style="width: 71px" class="auto-style18">Present</td>
+				<td class="auto-style9" style="width: 72px">Past</td>
+			</tr>
+			<tr class="auto-style7">
+				<td class="auto-style8" style="width: 71px" valign="top"><em>can</em></td>
+				<td class="auto-style10" style="width: 72px" valign="top"><em>could</em></td>
+			</tr>
+			<tr class="auto-style7">
+				<td class="auto-style8" style="width: 71px" valign="top"><em>may</em></td>
+				<td class="auto-style10" style="width: 72px" valign="top"><em>could / might</em></td>
+			</tr>
+			<tr class="auto-style7">
+				<td class="auto-style8" style="width: 71px" valign="top"><em>shall</em></td>
+				<td class="auto-style10" style="width: 72px" valign="top"><em>should</em></td>
+			</tr>
+			<tr class="auto-style7">
+				<td class="auto-style8" style="width: 71px" valign="top"><em>will</em></td>
+				<td class="auto-style10" style="width: 72px" valign="top"><em>would</em></td>
+			</tr>
+			<tr class="auto-style7">
+				<td class="auto-style8" style="width: 71px" valign="top"><em>must</em></td>
+				<td class="auto-style10" style="width: 72px" valign="top"><em>(had to)</em></td>
+			</tr>
+			<tr class="auto-style7">
+				<td class="auto-style8" style="width: 71px" valign="top"><em>----</em></td>
+				<td class="auto-style10" style="width: 72px" valign="top"><em>used to</em></td>
+			</tr>
+			<tr class="auto-style7">
+				<td class="auto-style8" style="width: 71px" valign="top"><em>ought to</em></td>
+				<td class="auto-style10" style="width: 72px" valign="top"><em>----</em></td>
+			</tr>
+			<tr class="auto-style7">
+				<td class="auto-style8" style="width: 71px" valign="top"><em>need</em></td>
+				<td class="auto-style10" style="width: 72px" valign="top"><em>----</em></td>
+			</tr>
+			<tr class="auto-style7">
+				<td class="auto-style8" style="width: 71px" valign="top"><em>dare</em></td>
+				<td class="auto-style10" style="width: 72px" valign="top"><em>dared</em></td>
+			</tr>
+		</table><p>There are two past forms of <em>may</em>: one for possibility, one for 
+		permission.&nbsp; We can say<em><br />
+		&nbsp;&nbsp;&nbsp;
+		I could ask questions<br />
+		</em>and<em><br />
+		&nbsp;&nbsp;&nbsp;
+		I 
+		might ask questions<br />
+		</em>The first means<em><br />
+&nbsp;&nbsp;&nbsp; I was able to ask 
+		questions<br />
+		</em>OR<em><br />
+&nbsp;&nbsp;&nbsp; It is possible I'll ask questions<br />
+		</em>The second 
+		<span class="auto-style14">only</span> means<em><br />
+		&nbsp;&nbsp;&nbsp;
+		It is possible that I will ask 
+		questions</em><br />
+		and cannot be used for ability<em class="auto-style4">.</em></p>
+		<p>The past of <em>must</em> is often <em>had to</em> but not in all 
+		its meanings.<br />
+		When we are referring to obligations, the past (and the future) are 
+		formed with <em>have to</em> as in, for example:<br />
+&nbsp;<em>&nbsp;&nbsp; I had to leave early<br />
+&nbsp;&nbsp;&nbsp; I will have to leave early</em><br />
+		etc.<br />
+		When we are referring to logical deduction, we use the perfect form of 
+		the verb to make a past tense as in, for example:<br />
+&nbsp;&nbsp;&nbsp; <em>That must have been his sister</em><br />
+		When we make a future tense, we use <em>have to</em>:<br />
+&nbsp; <em>&nbsp; The train will have to arrive soon</em></p>
+		<hr />
+			<table cellpadding="0" class="auto-style19">
+				<tr>
+					<td>
+					<img alt="aspect" height="165" src="../../images/aspect250.jpg" width="250" /></td>
+					<td class="auto-style27">
+					<h2>Aspect</h2>
+					</td>
+				</tr>
+			</table>
+		<p>Usually, when a modal verb's function is to express ability or permission, 
+		we can't use progressive or perfect aspects.&nbsp; For other functions 
+		we can use these aspects.<br />
+		(If any of the above confuses you, try doing
+		the guide to tense and aspect linked in the list at the end when you 
+		finish and then coming back to review this page.)</p>
+			<p>For example:</p>
+		<p class="auto-style12"><strong>Possibility</strong></p>
+		<p class="auto-style11"><em>They may have got lost<br />
+		They may have been driving too long<br />
+		They can't / couldn't have got lost<br />
+		They can't have been driving so long</em></p>
+		<p class="auto-style12"><strong>Deduction</strong></p>
+		<p class="auto-style11"><em>I must have left my keys on the table<br />
+		She must have been working on a solution<br />
+		You must be joking</em></p>
+		<p class="auto-style12"><strong>Prediction</strong></p>
+		<p class="auto-style11"><em>They will have driven that way<br />
+		John will still be driving at midnight</em></p>
+		<p>This part of the page is available as a <a href="../../../documents/ELT_Concourse_Modal_verbs_guide.pdf" target="_blank">PDF document</a>.&nbsp; 
+		There is also a
+		<a href="../../../documents/ELT_Concourse_modal_verbs_grid.pdf" target="_blank">reference grid 
+		of the common modal verbs</a>.</p>
+		<p>Here's a pictorial (and incomplete) summary of the pure modal verbs.&nbsp; 
+		Your task is to look through it and make sure you can devise an example 
+		of all the functions.</p>
+		<p>
+		<img alt="all pure modals" height="479" src="../../imagesgraphics/modalspureall.png" width="899" /></p>
+		<hr />
+		<p><a href="modalshp2.htm">Click here to do a short test</a>.</p>
+		<hr /><br />
+			<table id="iptrainingnav" cellpadding="0" cellspacing="0" class="tablebrownborder">
+				<tr>
+					<td class="auto-style40" colspan="2">Related guides</td>
+				</tr>
+				<tr>
+					<td class="auto-style44">
+		<a href="../../../documents/ELT_Concourse_modal_verbs_grid.pdf" target="_blank">grid 
+		of the common modal verbs</a></td>
+					<td class="auto-style47">for reference</td>
+				</tr>
+				<tr>
+					<td class="auto-style45">
+					<a href="../../../documents/ELT_Concourse_Modal_verbs_guide.pdf" target="_blank">PDF document</a></td>
+					<td class="auto-style46">a short PDF document covering some 
+					of the above</td>
+				</tr>
+				<tr>
+					<td class="auto-style45">
+		<a href="tenseaspect1.html" target="_blank">tense and aspect</a></td>
+					<td class="auto-style46">for some more information and the 
+					distinction</td>
+				</tr>
+				<tr>
+					<td class="auto-style45">
+					<a href="../../inservice/modality/modalitymap.html">modality</a></td>
+					<td class="auto-style46">for the in-service guides to 
+					modality and modal verbs</td>
+				</tr>
+				<tr>
+					<td class="auto-style41">
+					<a href="modals1by1.html">modal auxiliary verbs one by one</a></td>
+					<td class="auto-style43">for a traditional guide to pure (or 
+					central) modal auxiliary verbs</td>
+				</tr>
+				<tr>
+					<td class="auto-style41">
+					<a href="../../inservice/modality/semimodals.html">
+					semi-modal verbs</a></td>
+					<td class="auto-style43">the guide to semi- and marginal 
+					modal verbs</td>
+				</tr>
+				</table>
+			<br />
+			<hr />
+			<p><span class="auto-style17">Reference:</span><br />
+			<span class="auto-style17">Palmer, F. R, 2001, <em>Mood and Modality, 2nd 
+		ed.,</em> Cambridge: Cambridge University Press</span></p>
+		</div>
+		</div>
+		</div>
+		</div>
+		</div>
+		
+	<!-- End Content --></div>
+	
+<!-- End Container -->
+</div>
+	
+			</div>
+	
+			<!-- #EndEditable --></div>
+		<!-- End Content --></div>
+	<!-- End Page Content -->
+	<!-- Begin Footer -->
+	<div id="footer">
+		<p><a href="../../../index.html">ELT Concourse home</a> | 
+		<a href="../../ttindex.html">Teacher training</a> |
+		<a href="../../../development/developmentindex.html">Teacher development</a> |
+		<a href="../../../teachers/teachers.html">For teachers</a> |
+		<a href="../../../learners/learners.html">For learners</a> |
+		<a href="../../../articles/articles.html">Articles</a> | 
+		<a href="../../../contributetoELTC.html">Contribute</a> |
+		<a href="../../../contact.html">Contact</a> |
+		<a href="../../../questions/questions.html">Language questions</a> |
+		<a href="../../../faq.html">FAQs</a> |
+		<a href="../../../documents/ELT_Concourse_Charter.pdf" target="_blank"> ELT Concourse charter</a> |
+		<a href="../../../disclaimer.html"> Disclaimer and Privacy statement </a>|
+		<a href="../../../searchthesite.html">Search <strong>
+		ELT Concourse</strong></a></p>
+		</div>
+	<!-- End Footer --></div>
+<!-- End Container -->
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>
