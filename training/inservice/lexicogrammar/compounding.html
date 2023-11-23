@@ -1,0 +1,1352 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- #BeginTemplate "../../../styles/dwt/training.dwt" -->
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta http-equiv="Content-Language" content="en-gb" />
+<!-- #BeginEditable "doctitle" -->
+<title>ELT Concourse: compounding</title>
+<style type="text/css">
+
+
+
+
+
+
+
+
+
+
+
+.auto-style2 {
+	padding-left: 5px;
+}
+.auto-style25 {
+	text-align: center;
+	color: #000000;
+}
+.auto-style52 {
+	border-left: medium none #666666;
+	border-right: medium none #666666;
+	border-top: medium none #666666;
+	border-bottom: 1px solid #666666;
+	padding-left: 2px;
+}
+.auto-style53 {
+	border-left: medium none #666666;
+	border-right: 1px solid #666666;
+	border-top: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	text-align: left;
+}
+.auto-style54 {
+	border-left: 1px solid #666666;
+	border-right: medium none #666666;
+	border-top: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	padding-left: 3px;
+	padding-right: 2px;
+}
+.auto-style55 {
+	border-left: medium none #666666;
+	border-right: 1px solid #666666;
+	border-top: 1px solid #666666;
+	border-bottom: medium none #666666;
+	text-align: left;
+}
+.auto-style56 {
+	border-left: 1px solid #666666;
+	border-right: medium none #666666;
+	border-top: 1px solid #666666;
+	border-bottom: medium none #666666;
+	padding-left: 3px;
+	padding-right: 2px;
+}
+.auto-style57 {
+	border-left: 1px solid #666666;
+	border-right: medium none #666666;
+	border-top: medium none #666666;
+	border-bottom: 1px solid #666666;
+	padding-left: 3px;
+	padding-right: 2px;
+}
+.auto-style33 {
+	border-left: 1px solid #666666;
+	border-right: medium none #666666;
+	border-top: medium none #666666;
+	border-bottom: 1px solid #666666;
+	background-color: #F5F5F5;
+}
+.auto-style32 {
+	border-left: 1px solid #666666;
+	border-right: medium none #666666;
+	border-top: 1px solid #666666;
+	border-bottom: medium none #666666;
+}
+.auto-style59 {
+	font-style: normal;
+	font-size: small;
+}
+.auto-style61 {
+	border-right: 1px solid #666666;
+	border-top: medium none #666666;
+	border-bottom: 1px solid #666666;
+	text-align: center;
+	border-left: medium none #666666;
+}
+.auto-style63 {
+	border-right: 1px solid #666666;
+	border-top: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	text-align: center;
+	border-left: medium none #666666;
+}
+.auto-style64 {
+	border-right: medium none #666666;
+	border-top: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	text-align: center;
+	border-left: 1px solid #666666;
+}
+.auto-style65 {
+	border-right: 1px solid #666666;
+	border-top: 1px solid #666666;
+	border-bottom: medium none #666666;
+	text-align: center;
+	border-left: medium none #666666;
+}
+.auto-style66 {
+	border-right: medium none #666666;
+	border-top: 1px solid #666666;
+	border-bottom: medium none #666666;
+	text-align: center;
+	border-left: 1px solid #666666;
+}
+.auto-style67 {
+	border-right: medium none #666666;
+	border-top: medium none #666666;
+	border-bottom: 1px solid #666666;
+	text-align: center;
+	border-left: 1px solid #666666;
+}
+.auto-style68 {
+	border-right: medium none #666666;
+	border-top: 1px solid #666666;
+	text-align: center;
+	border-left: 1px solid #666666;
+	border-bottom-color: #666666;
+	border-bottom-width: 1px;
+}
+.auto-style71 {
+	border-right: 1px solid #666666;
+	border-top: 1px solid #666666;
+	text-align: center;
+	border-left: medium none #666666;
+	border-bottom-color: #666666;
+	border-bottom-width: 1px;
+}
+.auto-style73 {
+	border-left: medium none #666666;
+	border-right: 1px solid #666666;
+	border-top: medium none #666666;
+	border-bottom: 1px solid #666666;
+	background-color: #F5F5F5;
+}
+.auto-style74 {
+	border-left: medium none #666666;
+	border-right: 1px solid #666666;
+	border-top: 1px solid #666666;
+	border-bottom: medium none #666666;
+}
+.auto-style75 {
+	list-style-type: lower-alpha;
+}
+
+
+.auto-style3 {
+	padding-left: 5px;
+}
+</style>
+<meta content="ELT Concourse English language analysis and teaching guides. Compounding" name="description" />
+<script type="text/javascript">
+<!--
+function FP_changeProp() {//v1.0
+ var args=arguments,d=document,i,j,id=args[0],o=FP_getObjectByID(id),s,ao,v,x;
+ d.$cpe=new Array(); if(o) for(i=2; i<args.length; i+=2) { v=args[i+1]; s="o"; 
+ ao=args[i].split("."); for(j=0; j<ao.length; j++) { s+="."+ao[j]; if(null==eval(s)) { 
+  s=null; break; } } x=new Object; x.o=o; x.n=new Array(); x.v=new Array();
+ x.n[x.n.length]=s; eval("x.v[x.v.length]="+s); d.$cpe[d.$cpe.length]=x;
+ if(s) eval(s+"=v"); }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+// -->
+</script>
+<!-- #EndEditable -->
+<meta content="language analysis,eltconcourse,English grammar,free English language teaching materials,CELTA,Delta,language guides,free Delta training,free CELTA training,free ELT Training materials,teacher training,ELT,learning English,teaching English,English Language Teaching,ESOL,EFL,English as a Foreign Language" name="keywords" />
+<link href="../../../styles/mainstyle.css" rel="stylesheet" type="text/css" />
+<link href="../../../styles/training.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+</style>
+</head>
+
+<body>
+	<!-- Begin Masthead -->
+	<div id="masthead" >
+		<table style="width: 100%; border-bottom: #000080 solid">
+			<tr>
+				<td style="width: 135px">
+				<img alt="logo" height="49" src="../../../gfx/logo.png" width="78" /></td>
+				<td valign="bottom">
+				<span class="orangexxlargebold">ELT </span>
+				<span class="bluexxlargebold">Concourse teacher training</span></td>
+			</tr>
+		</table>
+	</div>
+	<!-- End Masthead -->
+	<!-- Begin Content -->
+			<!-- Begin Sidebar -->
+		<div id="sidebartt">
+			<ul>
+				<li><a href="../../../index.html">ELT Concourse home</a></li>
+				<li><a href="../../../a-z_index.html">A-Z site index</a></li>
+				<li><a href="../../training_index.html">Teacher training index</a></li>
+				<li><a href="../../../development/development_index.html">Teacher development</a></li>
+				<li><a href="../../../teachers/teachers.html">For teachers</a></li>
+				<li><a href="../../trainers/trainers_index.html">For trainers</a></li>
+				<li>
+				<a href="../../../academic_management/academic_management_index.html">For managers</a></li>
+				<li><a href="../../../learners/learners.html">For learners</a></li>
+				<li><a href="../../common/about_language.html">About language</a></li>
+				<li><a href="../../../questions/questions.html">Language questions</a></li>
+				<li class="whiteback">Other areas</li>
+				<li><a href="../indexes_is/eap_index_is.html">Academic English</a></li>
+				<li><a href="../indexes_is/be_index_is.html">Business English</a></li>
+				<li><a href="../../entering/introduction_to_elt.html">Entering ELT</a></li>
+				<li><a href="../../courses/courses_index.html">Courses index</a></li>
+				<li><a href="../../courses/basic/introduction_basic.html">Basic ELT course</a></li>
+				<li><a href="../../tkt/tkt_index.html">TKT</a></li>
+				<li><a href="../../bridge/bridge_index.html">The Bridge</a></li>
+				<li><a href="../../courses/lacourse/index_la_course.html">Language analysis</a></li>
+				<li>
+				<a href="../../courses/training_to_train/training_to_train_index.html">Training to train</a></li>
+				<li><a href="../../courses/transcription1/transcription.html">Transcription</a></li>
+				<li><a href="../../glossaries/glossary_index.html">Glossaries</a></li>
+				<li><a href="../../../articles/articles.html">Articles</a></li>
+			</ul>
+		</div>
+		<!-- End Sidebar -->
+		<!-- Begin Content -->
+		
+		<div id="toppicture" style="text-align: left; background-color: white; padding: 0px; margin-left: 140px;">
+				<img alt="Concourse 2" height="207" src="../../../images/concourse2blue.jpg" width="310" /></div>
+		
+			<!-- #BeginEditable "content" -->
+		
+			<!-- #BeginEditable "content" -->
+		
+		<div id="content">
+		<h1>Compounding</h1>
+		<p>
+		<img alt="h2o" height="207" src="../../images/compound_water310.jpg" width="310" /></p>
+		<p>If you have followed <a href="word_formation.html" target="_blank">the guide 
+		to word formation</a>, you will be aware 
+		that English makes new words in a variety of imaginative ways.&nbsp; 
+		Compounding is one of them.<br />
+		Here are some examples:</p>
+		<table cellpadding="3" cellspacing="0" class="tableblueborder" style="width: 365px">
+			<tr>
+				<td style="width: 181px" class="auto-style61"><em>candlestick</em></td>
+				<td class="auto-style67" style="width: 182px">noun + noun</td>
+			</tr>
+			<tr>
+				<td style="width: 181px" class="auto-style63"><em>mouse-click</em></td>
+				<td class="auto-style64" style="width: 182px">noun + verb</td>
+			</tr>
+			<tr>
+				<td style="width: 181px" class="auto-style63"><em>blackboard</em></td>
+				<td class="auto-style64" style="width: 182px">adjective + noun</td>
+			</tr>
+			<tr>
+				<td style="width: 181px" class="auto-style63"><em>heartbeat</em></td>
+				<td class="auto-style64" style="width: 182px">noun + verb</td>
+			</tr>
+			<tr>
+				<td style="width: 181px" class="auto-style63"><em>farfetched</em></td>
+				<td class="auto-style64" style="width: 182px">adverb + participle (<em>-ed</em>)</td>
+			</tr>
+			<tr>
+				<td style="width: 181px" class="auto-style63"><em>oceangoing</em></td>
+				<td class="auto-style64" style="width: 182px">noun + participle (<em>-ing</em>)</td>
+			</tr>
+			<tr>
+				<td style="width: 181px" class="auto-style65"><em>windmill</em></td>
+				<td class="auto-style66" style="width: 182px">noun + noun</td>
+			</tr>
+		</table>
+		<p>All of these example are written as one word but that is not 
+		necessarily true of all compounds.&nbsp; For example:</p>
+		<table cellpadding="3" cellspacing="0" class="tableblueborder" style="width: 365px">
+			<tr>
+				<td style="width: 181px" class="auto-style61"><em>whisky distillery</em></td>
+				<td class="auto-style67" style="width: 182px">noun + noun</td>
+			</tr>
+			<tr>
+				<td style="width: 181px" class="auto-style63"><em>bee-sting</em></td>
+				<td class="auto-style64" style="width: 182px">noun + verb</td>
+			</tr>
+			<tr>
+				<td style="width: 181px" class="auto-style63"><em>past tense</em></td>
+				<td class="auto-style64" style="width: 182px">adjective + noun</td>
+			</tr>
+			<tr>
+				<td style="width: 181px" class="auto-style63"><em>firing squad</em></td>
+				<td class="auto-style64" style="width: 182px">participle (<em>-ing</em>) + noun</td>
+			</tr>
+			<tr>
+				<td style="width: 181px" class="auto-style63"><em>quick frozen</em></td>
+				<td class="auto-style64" style="width: 182px">adjective + participle (<em>-ed</em>)</td>
+			</tr>
+			<tr>
+				<td style="width: 181px" class="auto-style63"><em>sea-green</em></td>
+				<td class="auto-style64" style="width: 182px">noun + adjective</td>
+			</tr>
+			<tr>
+				<td style="width: 181px" class="auto-style65"><em>washing machine</em></td>
+				<td class="auto-style66" style="width: 182px">noun + noun</td>
+			</tr>
+		</table>
+			<br />
+			<hr />
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="problem" height="166" src="../../images/problem_desk250.jpg" width="250" /></td>
+					<td class="auto-style2">
+					<h2>The problem of definition</h2>
+					</td>
+				</tr>
+				</table>
+			<p class="indentpara">There is no one formal criterion that can be 
+			used for a general definition of compounds in English<br />
+			<span class="auto-style59">(Quirk <em>et al</em>, 1972:1019)</span></p>
+			<p>And that is our problem.<br />
+			Many nouns, as we shall see, can be pre-modified by other nouns 
+			without necessarily forming what many would regard as a compound 
+			noun.&nbsp; However, constant use of such formulations sees the 
+			stress moving to the first element and forming the only stressed 
+			syllable in the expression (a signal characteristic, if not a 
+			defining one, of compound words).<br />
+			For example, it is clear that the following result in compound 
+			nouns:<br />
+			<em>&nbsp;&nbsp;&nbsp; a chair with arms = an armchair<br />
+&nbsp;&nbsp;&nbsp; a hanger for a coat = a coat hanger<br />
+&nbsp;&nbsp;&nbsp; a story about love = a love story</em><br />
+			<em>&nbsp;&nbsp;&nbsp; a meeting of a committee = a committee 
+			meeting</em><br />
+			and in all these cases, there is one stressed syllable only and it 
+			falls in the first element of the compound (not necessarily the 
+			first syllable, of course, as we see in the last example, but that is usually the way).<br />
+			In other cases, the situation is much less clear and it is a matter 
+			of choice whether certain combinations may be considered compounds 
+			proper or just nouns pre-modified by other items.&nbsp; For example:<br />
+			<em>&nbsp;&nbsp;&nbsp; a board to select a candidate = a selection 
+			board<br />
+&nbsp;&nbsp;&nbsp; a person who is both an actor and a director = an 
+			actor-director</em><br />
+			and in the first case, the stress falls on the second syllable of 
+			the first item and in the second case on the second syllable of the 
+			second item but it is not clear whether both or neither should be 
+			considered as compounds.</p>
+			<hr />
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="glass" height="166" src="../../images/glass_empty250.jpg" width="250" /></td>
+					<td class="auto-style2">
+					<h2>A single sense</h2>
+					</td>
+				</tr>
+				<tr>
+					<td class="auto-style25">
+					<em>wine glass, wine-glass </em>or<em> wineglass</em></td>
+					<td class="auto-style2">
+					&nbsp;</td>
+				</tr>
+				</table>
+		<p>Compounds, whether written as 
+		one word, hyphenated or as two words, represent a single <strong>sense</strong>.</p>
+		<p>They form discrete single-sense units and 
+		are treated as single lexemes grammatically.&nbsp; In this guide, some 
+		compounds are written as two words, some as one word and some are 
+		hyphenated.&nbsp; In many cases, it is the personal preference of the 
+		writer how such words are written and dictionaries often differ.&nbsp; 
+		You may be in the majority choosing to write <em>teacup</em> as one word 
+		but <em>coffee cup</em> as two.&nbsp; The senses and the way the 
+		compounds are used are parallel <strong>regardless</strong> of how you 
+		write them.</p>
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="link" height="133" src="../../images/link_rope_binding200.jpg" width="200" /></td>
+					<td class="auto-style2">
+		<h3>Hyphenation and single words</h3>
+					</td>
+				</tr>
+				</table>
+		<p>A further little wrinkle is that one person's compound 
+		is another person's double adjective and all double adjectives need a 
+		hyphen (we write <em>the wine-dark se</em>a, not <em>the wine dark sea</em> 
+		and <em>the brick-built house</em>, not <em>the brick built house</em>).</p>
+			<p>There is also some indication of a cline in the language as a concept 
+		becomes increasingly common and conceptualised as a single idea, for 
+		example:</p>
+		
+			<p>
+			<img alt="cline" height="177" src="../../imagesgraphics/compounding_cline.png" width="310" /></p>
+			<p>When gas for domestic lighting was first introduced, it was a noun-noun collocation 
+		with <em>gas</em> acting adjectivally (as a classifier or noun adjunct), but gradually, as the system became more 
+		common, the term changed until it is now considered a single compound 
+		lexeme.<br />
+		So, initially, the stress fell on the word <em>light</em> (as the small 
+			white square shows), then it moved 
+		to the word <em>gas</em>, then the hyphenated form became common and 
+		finally the one-word form of the compound became conventional as it now 
+		is in <em>gaslight </em>(/ˈɡæs.laɪt/).<br />
+		The same stress movement can be observed with terms such as <em>compact 
+		disc </em>which, when first introduced, had the stress on <em>disc </em>
+		(because <em>compact</em> was an adjective, stressed on its second 
+		syllable) but which is now a compound, stressed on the first syllable of<em> 
+		compact</em>, like this: <span class="style_black">/ˈkɒm.pækt dɪsk/</span> not 
+			<span class="style_black">/kəm.ˈpækt dɪsk/</span>.</p>
+			<p>It is possible, of course, that a reverse process may occur and, 
+			because gas lighting is now uncommon, that over time the stress will 
+			move again to the second element and the word <em>gas</em> will 
+			function again as a classifier rather than part of a compound.</p>
+		<p>A recent example you are familiar with is the term <em>
+		mouseclick</em> (a noun-verb compound making a noun) which appears to have entered the language quite 
+		rapidly.&nbsp; Each revision of standard dictionaries includes new 
+		compounds.</p>
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="pronunciation" height="133" src="../../images/pronunciation_mouth200.jpg" width="200" /></td>
+					<td class="auto-style2">
+					<h3>Pronunciation: stress</h3>
+					</td>
+				</tr>
+				</table>
+		<p>Nearly all true compounds are given a 
+		main stress on the first element and a secondary stress (if any is 
+		present) on the second 
+		element so we have, from the list above, e.g.:<br />
+		<em>&nbsp;&nbsp;&nbsp; c</em><strong><em>a</em></strong><em>ndlestick:</em><span class="style_black"> 
+		/ˈkændl.stɪk/</span><br /><em>&nbsp;&nbsp;&nbsp; bl</em><strong><em>ac</em></strong><em>kboard: </em>
+		<span class="style_black">/ˈblæk.bɔːd/</span><br /><em>&nbsp;&nbsp;&nbsp; f</em><strong><em>i</em></strong><em>ring 
+		squad: </em><span class="style_black">/ˈfaɪər.ɪŋ skwɒd/</span><br />
+		etc.<br />
+		What this means is that the word which determines meaning and word class 
+		is, in fact, usually unstressed in a compound and that runs slightly 
+		counter to people's general intuition because we usually expect 
+		significant meaning-carrying items to carry heavier stress than others.<br />
+		When we say:<br />
+		<em>&nbsp;&nbsp;&nbsp; My office has a green door</em><br />
+		for example, we would expect the stress to fall on the nouns because 
+		they are the most significant items and so it does.&nbsp; We get:<br />
+&nbsp;&nbsp; <span class="style_black">&nbsp;/maɪ.ˈɒf.ɪs.həz.ə.ɡriːn.ˈdɔː/</span><br />
+		with the two main stresses falling on the first syllable of <em>office</em> 
+		and on <em>door</em>.<br />
+		However, there is also a word <em>greenroom</em> which refers to the 
+		place where actors go when they are not on stage in the theatre and that 
+		is a true compound so the pronunciation of:<br />
+		<em>&nbsp;&nbsp;&nbsp; My office is next to the greenroom</em><br />
+		is:<br />
+&nbsp;&nbsp;&nbsp; <span class="style_black">/maɪ.ˈɒf.ɪs.ɪz.nekst.tə.ðə.ˈɡriːn.ruːm/</span><br />
+		in which we still have a main stress on the first syllable of <em>office</em> 
+		but the second stress in the clause now falls on the first syllable of
+		<em>greenroom</em> as the transcription shows.<br />
+		(It is also noticeable that the origin of the word is reference to the 
+		colour it was usually decorated in and in the 18th century, it was 
+		written as two words, in the 19th with a hyphen and today it is a single 
+		word.&nbsp; It is a fair bet that it was also pronounced as
+		<span class="style_black">/ɡriːn.ˈruːm/</span> when the expression was 
+		first used.&nbsp; Today's greenrooms are, incidentally, all sorts of 
+		colours.)</p>
+			<p>For more on how compounds and other words are stressed, see the 
+			guide to word stress, linked in the list of related guides at the 
+			end.</p>
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="huts" height="133" src="../../images/buildings_beach_huts200.jpg" width="200" /></td>
+					<td class="auto-style2">
+			<h3>Plurals</h3>
+					</td>
+				</tr>
+				</table>
+			<p>The other obvious characteristic of compounds is that when they 
+			are plural, the plural marker usually falls on the second element so we get, 
+			e.g.:<br />
+&nbsp;&nbsp;&nbsp; <em>beach huts</em> not <em>*beaches hut</em><br />
+&nbsp;&nbsp;&nbsp; <em>child minders </em>not <em>*children minder</em><br />
+&nbsp;&nbsp;&nbsp; <em>desk drawers </em>not <em>*desks drawer<br />
+			</em>In a lot of cases, of course, the first element is a mass noun 
+			which can take no plural so this makes good sense and we find:<br />
+&nbsp;&nbsp;&nbsp; <em>water works<br />
+&nbsp;&nbsp;&nbsp; sugar lumps<br />
+&nbsp;&nbsp;&nbsp; water board<br />
+			</em>etc.</p>
+			<p>Some noun classifiers are, however, irregularly marked for 
+			number.&nbsp; We can have:<br />
+			<em>&nbsp;&nbsp;&nbsp; a<span>&nbsp;</span><span class="style_black" style="color: black;">saloon</span><span>&nbsp;</span>car<br />
+			</em>but<br />
+			<em>&nbsp;&nbsp;&nbsp; a<span>&nbsp;</span><span class="style_black" style="color: black;">sport<span class="style_underline" style="text-decoration: underline;">s</span></span><span>&nbsp;</span>car<br />
+			&nbsp;&nbsp;&nbsp; a<span>&nbsp;</span><span class="style_black" style="color: black;">sport<span class="style_underline" style="text-decoration: underline;">s</span></span><span>&nbsp;</span>bag<br />
+			</em>but<br />
+			<em>&nbsp;&nbsp;&nbsp; a<span>&nbsp;</span><span class="style_black" style="color: black;">camera</span><span>&nbsp;</span>bag<br />
+			&nbsp;&nbsp;&nbsp; a<span>&nbsp;</span><span class="style_black" style="color: black;">complaint</span><span>&nbsp;</span>form<br />
+			</em>but<br />
+			<em>&nbsp;&nbsp;&nbsp; a<span>&nbsp;</span><span class="style_black" style="color: black;">complaint<span class="style_underline" style="text-decoration: underline;">s</span></span><span>&nbsp;</span>department<br />
+			</em>and so on.<br />
+			The way to bet is that they are singular so we have<br />
+			<em>&nbsp;&nbsp;&nbsp; model car collection</em><br />
+			&nbsp;&nbsp;&nbsp;<span>&nbsp;</span><em>portrait gallery<br />
+			&nbsp;&nbsp;&nbsp; landscape photography</em><br />
+			and so on.<br />
+			Learners who do not have parallel structures in their first 
+			languages will often be tempted to make all noun classifiers plural.</p>
+			<hr />
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="3" height="166" src="../../images/three_chocs250.jpg" width="250" /></td>
+					<td class="auto-style2">
+					<h2>Three writing choices</h2>
+					</td>
+				</tr>
+				</table>
+			<p>There are three ways to write compounds and much will depend on 
+			the variety of English you use, the commonness of the compound and 
+			personal choice.&nbsp; The three choices are:</p>
+			<ol>
+				<li>Solid, as one word<br />
+				For example:<br />
+				<em>&nbsp;&nbsp;&nbsp; bedroom<br />
+&nbsp;&nbsp;&nbsp; paperweight<br />
+&nbsp;&nbsp;&nbsp; loudspeaker<br />
+&nbsp;&nbsp;&nbsp; bookkeeper</em></li>
+				<li>Hyphenated (as all double adjectives must be)<br />
+				For example:<br />
+				<em>&nbsp;&nbsp;&nbsp; tree-felling<br />
+&nbsp;&nbsp;&nbsp; window-ledge<br />
+&nbsp;&nbsp;&nbsp; lawn-mower<br />
+&nbsp;&nbsp;&nbsp; paper-clip</em></li>
+				<li>Open, as two words<br />
+				For example:<br />
+&nbsp;<em>&nbsp;&nbsp; police officer<br />
+&nbsp;&nbsp;&nbsp; printing paper<br />
+&nbsp;&nbsp;&nbsp; living room<br />
+&nbsp;&nbsp;&nbsp; cellar bar</em></li>
+			</ol>
+			<p>It is likely that anyone reading this will not agree with the 
+			list above in its entirety.&nbsp; Dictionaries and spell-checkers 
+			will disagree.&nbsp; There is no hard-and-fast rule.</p>
+		<hr />
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="head" height="166" src="../../images/head_statue250.jpg" width="250" /></td>
+					<td class="auto-style2">
+					<h2>Headedness</h2>
+					</td>
+				</tr>
+			</table>
+		<p>In English, the second part of the compound usually determines two things:</p>
+		<ol>
+			<li>The word class<br />
+			<em>walking stick</em> is a noun not a 
+			verb<br />
+			<em> 
+			software</em> is a noun not an adjective<br /><em>tailor-made</em> is a participle adjective not a noun</li>
+			<li>The meaning<br />
+			<em>windmill</em> is a type of <em>mill</em> 
+			not a type of <em>wind<br />
+			bus driver</em> is a type 
+			of <em>driver</em> not a type of <em>bus<br />
+			police woman</em> is a type of <em>woman</em> not a type of <em>police</em></li>
+		</ol>
+		<p>The nature of English also requires the right-hand element to take 
+		any inflexion so a plural of a compound noun such as:<br />
+&nbsp;&nbsp;&nbsp; <em>bank book<br />
+		</em>will fall on <em>book</em>, not on <em>bank</em>.<br />
+		By the same token, any verbal inflexion for tense, aspect or derivation 
+		will only occur if the right-hand element is a verb so we get, e.g.:<br />
+		<em>&nbsp;&nbsp;&nbsp; sleep walker<br />
+&nbsp;&nbsp;&nbsp; homemade<br />
+&nbsp;&nbsp;&nbsp; baby sitting<br />
+&nbsp;&nbsp;&nbsp; chain smokes</em><br />
+		etc.</p>
+			<p>For this reason, English compounding is described as <strong>
+		right-headed</strong>.&nbsp; The headword in the compound lies to the 
+		right.&nbsp; Many related, especially Germanic, languages follow the 
+		same pattern of right-headedness as does, e.g., Turkish.</p>
+		<p>Other languages do things differently.<br />
+		In left-headed languages someone who drives a taxi is not a <em>taxi 
+		chauffeur</em> but a <em>chauffeur de taxi </em>(French).&nbsp; In 
+		French, a <em>postage stamp</em> is a <em>timbre-poste, </em>in Polish a
+		<em>znaczek pocztowy</em> and in Romanian a <em>timbru poștal</em> (<em>stamp 
+		postage</em> in all cases).&nbsp; Other left-headed languages include 
+		Vietnamese, Thai and Welsh.<br />
+		As we would expect, inflexions for plurality affect the left-hand 
+		element in such languages so the plural of <em>taxi driver</em> in 
+		French is <em>chauffeur<span class="styleredbold">s</span> de taxi.</em><br />
+		(This applies even to languages which usually have an adjective-noun 
+		ordering so, for example, in Polish, the adjective precedes the noun but 
+		the classifier follows it and<br />
+		<em>&nbsp;&nbsp;&nbsp; an expensive postage stamp</em><br />
+		translates as<br />
+		<em>&nbsp;&nbsp;&nbsp; drogi znaczek pocztowy</em>)</p>
+		<p>Many languages avoid compounding and will use a kind of genitive 
+		structure (<em>a driver of buses, a stamp of postage</em> etc.) or 
+		simply supply a different ending for someone who does something (as 
+		English can with <em>gardener, teacher </em>etc.) but, instead of 
+		deriving the person from the verb, they will derive the person from the 
+		noun and have <em>taxista </em>(Spanish) or <em>tassista</em> (Italian).</p>
+			Headedness is an issue which can be handled with 
+					comparative language work but to be able to do that well, 
+					you need to be aware of the characteristic(s) of your 
+					learners' language(s).&nbsp; Headedness applies to more than 
+					compounds of course but the forms are 
+					parallel.<br />
+					To help:<br />
+					<table cellpadding="3" class="tableblueborder" style="width: 75%">
+						<tr class="style_black">
+							<td class="auto-style73" style="width: 344px">
+							Right-headed</td>
+							<td class="auto-style33" style="width: 345px">Left-headed</td>
+						</tr>
+						<tr>
+							<td class="auto-style74" style="width: 344px">
+							English and most Germanic languages<br />
+							Scandinavian languages<br />
+							Japanese, Korean, Mandarin and Cantonese<br />
+							Turkish, Basque<br />
+							Most Indian languages</td>
+							<td class="auto-style32" style="width: 345px">Romance 
+							languages (French, Italian, Spanish etc.)<br />
+							Slavic languages and
+							Albanian<br />
+							South-East Asian languages (Thai, Burmese, 
+							Vietnamese etc.)<br />
+							Celtic languages<br />
+							Most African languages</td>
+						</tr>
+					</table>
+					<br />
+			<hr />
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="transparent" height="166" src="../../images/clear_water_book250.jpg" width="250" /></td>
+					<td class="auto-style2">
+					<h2>Transparency</h2>
+					</td>
+				</tr>
+			</table>
+			<p>Knowing that English is right-headed allows one to infer the 
+			meanings of many compound word because, e.g., it is clear that a <em>
+			doorman</em> is a type of <em>man</em>, not a type of <em>door</em> 
+			and an <em>ashcan</em> is a type of <em>can</em> not a type of <em>
+			ash</em>.&nbsp; This is true for thousands of compounds so simply 
+			alerting learners to the headedness of English is a worthwhile 5 
+			minutes of classroom time.</p>
+			<p>There are times, however, when the meaning of a morpheme in a 
+			compound is not readily evident.&nbsp; There are, in other words, 
+			levels of transparency which we can assign to the morphemes making 
+			up the compound.&nbsp; For example:</p>
+			<ol>
+				<li><em>notebook</em><br />
+				is wholly transparent: it is clearly a type of <em>book</em> 
+				(headedness tells us that) and in it one will find or make a <em>
+				note</em>.&nbsp; That's a case of both parts being transparent.</li>
+				<li><em>passbook</em><br />
+				is not completely transparent.&nbsp; It is, of course, a type of
+				<em>book</em>, but the relationship and meaning of the morpheme
+				<em>pass</em> is, in this case, not transparent and cannot 
+				easily be inferred.<br />
+				A word such as <em>sketchbook</em> falls into category 1. 
+				because it is clear that it is a <em>book</em> containing <em>
+				sketches</em> but the word <em>cookbook</em> is not analysable 
+				in the same way because it does not contain <em>cooks</em>.<br />
+				A compound such as <em>snowman</em>, exhibits a similar problem 
+				when compared, for example, to <em>dustman</em>.&nbsp; The 
+				latter is a man who collects dust or rubbish and is, again, only 
+				partially transparent because one needs to equate <em>dust</em> 
+				and <em>rubbish</em>.&nbsp; The former is, however, not someone 
+				who collects, or brings, <em>snow</em>, it is a man <em>made of 
+				snow</em>.&nbsp; A <em>doorman</em>, on the other hand, is not a
+				<em>man</em> made from a <em>door</em>.</li>
+				<li><em>drug-pushing</em><br />
+				exhibits a reverse phenomenon.&nbsp; This is clearly connected 
+				to the meaning of <em>drug</em> (in illicit narcotic) but it is 
+				not clear what the <em>pushing</em> refers to.&nbsp; 
+				Understanding right-headedness will not help much here although 
+				we can infer that it refers to a type of pushing, not a type of 
+				drug.</li>
+				<li><em>ladybird</em><br />
+				This is an example of doubly opaque compound because it is 
+				neither a <em>bird</em> nor connected particularly to <em>ladies</em>.&nbsp; 
+				The word exhibits, in the jargon, full non-compositionality and 
+				its meaning cannot be arrived at by understanding the meanings 
+				of the constituent parts.<br />
+				The term <em>gatecrasher</em> exhibits a similar phenomenon 
+				because it has little to do with <em>gates</em> or <em>crashing</em> 
+				but describes an uninvited guest.</li>
+			</ol>
+		<hr />
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="compound" height="166" src="../../images/compound_water250.jpg" width="250" /></td>
+					<td class="auto-style2">
+					<h2><a name="compound1"></a>Types of compounds</h2>
+					</td>
+				</tr>
+			</table>
+		<p>There are three to consider &ndash; compounds acting as <strong>nouns</strong>, 
+		compounds acting as <strong>adjectives or adverbs</strong> and compounds acting as
+		<strong>verbs</strong>.<br />
+		Within these categories there is, however, a good deal of diversity.</p>
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="handshake" height="133" src="../../images/handshake200.jpg" width="200" /></td>
+					<td class="auto-style2">
+					<h3>Noun compounds</h3>
+					</td>
+				</tr>
+				<tr>
+					<td class="auto-style25">
+					<em>handshake</em></td>
+					<td class="auto-style2">
+					&nbsp;</td>
+				</tr>
+			</table>
+			<p>There are three main types of these which differ structurally.&nbsp; 
+			It is worth analysing them carefully because it makes a good deal of 
+			sense to focus separately in the classroom on the different 
+			structures and word-class elements.</p>
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="1" height="68" src="../../../gfx/1blue.png" width="100" /></td>
+					<td class="auto-style2">
+					<h4><strong>Verb + Noun (or Noun + Verb)</strong></h4>
+					</td>
+				</tr>
+				</table>
+			<p>There are two fundamental types of these.&nbsp; Can you 
+		see the difference between the following pairs?&nbsp; Click 		<a href="#compound1" onclick="FP_changeProp(/*id*/'compounding1',0,'style.visibility','visible')">here when you have</a>.</p>
+		<table cellpadding="3" cellspacing="0" class="tableblueborder" style="width: 365px">
+			<tr>
+				<td class="auto-style61" style="width: 181px"><strong>Type 1</strong></td>
+				<td class="auto-style67" style="width: 182px"><strong>Type 2</strong></td>
+			</tr>
+			<tr>
+				<td class="auto-style71" style="width: 181px"><em>earthquake</em></td>
+				<td class="auto-style68" style="width: 182px"><em>dressmaking</em></td>
+			</tr>
+			<tr>
+				<td class="auto-style71" style="width: 181px"><em>washing machine</em></td>
+				<td class="auto-style68" style="width: 182px"><em>DVD-player</em></td>
+			</tr>
+			<tr>
+				<td class="auto-style65" style="width: 181px"><em>earache</em></td>
+				<td class="auto-style66" style="width: 182px"><em>window cleaner</em></td>
+			</tr>
+			</table>
+		<div id="compounding1" style="visibility: hidden">
+		
+		<p class="style_brown"><span class="style_brown">All of these are noun + verb 
+		or verb + noun compounds but ...</span></p>
+			<p class="style_brown"><span class="style_brown"><strong>Type 1</strong> compounds are <strong>subject + verb </strong>&ndash; </span>
+		<em><span class="style_blue">the earth quakes, the machine washes </span>
+		</em><span class="style_blue">and <em>the ear aches</em></span><span class="style_brown">.<br />
+		There are three distinct types of Subject + Verb compounds:</span></p>
+			<ol>
+				<li>
+				<span class="style_black"><strong>subject
+				noun + base form of the verb</strong></span><br />
+				For 
+				example:<br />
+				<em>landslide, earache, toothache, sunrise, frostbite, rainfall </em>etc.<br />
+				This is a very productive group and native speakers are apt to 
+				make them up as the need arises.&nbsp; The last two of these 
+				exhibit some non-compositionality insofar as the terms <em>bite</em> 
+				and <em>fall</em> are opaque.</li>
+				<li>
+				<span class="style_black"><strong>base form of the
+				verb + 
+				subject noun</strong></span><br />
+				For example:<br />
+				<em>driftwood, watchdog, watchmen, flashlight, tugboat, searchlight, 
+				hangman</em> etc.<br />
+				This is a far less productive group but all these examples are 
+				fully transparent.</li>
+				<li>
+				<span class="style_black"><strong>verb in </strong> <em>-<strong>ing</strong></em><strong> + subject noun</strong></span><br />
+				For example:<br />
+				<em>firing squad, working group, cleaning fluid, sticking 
+				plaster </em>etc.<br />
+				This is a moderately productive group and generally transparent 
+				in meaning although a term such as <em>rolling tobacco </em>is 
+				less so and would fall into transparency group 2. above.<br />
+				There is a temptation, succumbed to by some website writers out 
+				here, to group all <em>-ing</em> form participles and nouns as 
+				compound nouns.&nbsp; This is not the case because:<ol class="auto-style75">
+					<li>We should be careful to distinguish between -<em>ing</em> 
+				participles acting as simple adjectives and those forming real 
+				compound nouns.&nbsp; For example,<br /><em>&nbsp;&nbsp;&nbsp; dancing shoes</em><br />is a compound noun referring to shoes used for dancing and does 
+				not imply that the shoes are doing the dancing whereas,<br />
+					<em>&nbsp;&nbsp;&nbsp; boiling water</em><br />is water which is boiling, not water used for boiling.<br />The distinction is usually recognisable in the stress with 
+				compound nouns being stressed on the first element and 
+				combinations of -<em>ing</em> adjectives and nouns being 
+				stressed on the second element.</li>
+					<li>The other tell-tale characteristic of true compounds <em>
+					vs</em>. classified or modified nouns is the sense of a
+					<strong>permanent</strong> condition.&nbsp; For example:<br />
+					<em>&nbsp;&nbsp;&nbsp; a barking dog</em><br />
+					is a dog which happens to be currently making a noise 
+					whereas:<br />
+					<em>&nbsp;&nbsp;&nbsp; a hunting dog</em><br />
+					is a breed of dog used for hunting and the dog in question 
+					may be currently asleep in the sun.<br />
+					Equally:<br />
+					<em>&nbsp;&nbsp;&nbsp; an opening door</em><br />
+					is a door which is currently opening but<br />
+					<em>&nbsp;&nbsp;&nbsp; a sliding door</em><br />
+					is a compound referring to a type of door which can slide 
+					(but is probably static at the time of talking about it).</li>
+				</ol>
+				
+				</li>
+			</ol>
+			<p class="style_brown"><span class="style_brown"><strong>Type 2</strong> compounds are <strong>object + verb</strong> &ndash; </span>
+			<span class="style_blue">
+		<em>the dress is made, the DVD is played </em>and <em>the window is cleaned</em></span><span class="style_brown">.</span><br />
+			Whether the noun precedes or follows the verb is somewhat unpredictable.&nbsp; 
+		The <strong>most</strong> common way is noun first because of the nature 
+			of right-headedness.<br />
+			There are distinct groups of these, too:</p>
+			<ol>
+				<li><span class="style_black"><strong>object noun + base form of the verb</strong></span><br />
+				For example:<br />
+				<em class="style_brown">&nbsp;&nbsp;&nbsp; haircut, handshake, tax cut, 
+				self-control</em> etc.<br />
+				This is a moderately productive category.</li>
+				<li><span class="style_black"><strong>object noun + verb in 
+				</strong></span> <em><span class="style_black">-<strong>ing</strong></span><br />
+				</em>For example:<br />
+				<em class="style_brown">&nbsp;&nbsp;&nbsp; town planning, storytelling, 
+				brainwashing, air-conditioning</em> etc.<br />
+				This is a productive group.</li>
+				<li><span class="style_black"><strong>object + verb + </strong> <em>-<strong>er</strong></em></span> (i.e., the 
+				doer)<br />
+				For example:<br />
+				<em class="style_brown">&nbsp;&nbsp;&nbsp; fashion designer, songwriter, 
+				gatecrasher, window cleaner </em>etc.<br />
+				Some consider these to be noun + noun compounds and that's a 
+				point of view.<br />
+				This is a productive group and native speakers are apt to make 
+				them up as the need arises.</li>
+				<li><span class="style_black"><strong>base form of the verb + object noun</strong></span><br />
+				For example:<br />
+				<em class="style_brown">&nbsp;&nbsp;&nbsp; pushbutton, mincemeat, scarecrow, 
+				cutpurse</em> etc.<br />
+				This is a rarer group.</li>
+				<li><span class="style_black"><strong>verb in </strong> <em>-<strong>ing</strong></em><strong> + object noun</strong></span><br />
+				For example:<br />
+				<em class="style_brown">&nbsp;&nbsp;&nbsp; cooking apple, reading 
+				exercises, parking meter</em> etc.<br />
+				Native speakers are, again, apt to make these up as they go 
+				along.</li>
+				<li><span class="style_black"><strong>verb in </strong> <em>-<strong>ed / -en</strong></em><strong> + object noun</strong></span><br />
+				This is a 
+				rarer group in which the compound represents the finished state 
+				of something rather than the action performed on it.&nbsp; 
+				Usually, these can be alternatively analysed as classifiers + 
+				nouns and not true compounds because the stress frequently falls 
+				on the second element.&nbsp; However, we can find, for example:<br />
+				<em class="style_brown">left luggage, cut glass, spoken / 
+				written word, stolen property</em><br />
+				which are single concepts and may be stressed on the first 
+				element.<br />
+				As we saw above, to be considered compounds at all such items 
+				need to represent a permanent rather than temporary state so, 
+				for example:<br />
+				<em>&nbsp;&nbsp;&nbsp; fallen tree, stolen car, lost child<br />
+				</em>and so on are not compounds but phrases containing 
+				participle adjectives describing the current, not permanent, 
+				condition of a noun.&nbsp; Temporary state expressions like 
+				these are generally stressed on the noun.</li>
+			</ol>
+			</div>
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="2" height="69" src="../../../gfx/2blue.png" width="100" /></td>
+					<td class="auto-style2">
+					<h4><strong>Verb + Adverbial and Verb + Noun</strong></h4>
+					</td>
+				</tr>
+				</table>
+			<p>These are often lumped together with the verb + noun compounds we 
+			have just looked at but there is a distinction:</p>
+			<ul>
+				<li class="redbullet">In verb + noun compounds proper, the 
+				noun is either the subject or the object of the verb as we have 
+				just seen so:<ul class="greenbullet">
+					<li>When the noun is the subject, for example:<br />
+					In <em class="style_brown">rainfall</em>, the compound can be expanded to have 
+					<em>rain falls</em> 
+					(subject noun + verb)<br />
+					In <span class="style_brown"><em>turntable</em></span>, the compound can be expanded to 
+					<em>the table 
+					turns</em> (verb + subject noun)</li>
+					<li >When the noun is the object, for 
+					example:<br />
+					In <em class="style_brown">film review</em>, the compound can be expanded to 
+					<em>review a 
+					film</em> (verb + object noun)<br />
+					In <span class="style_brown"><em>handshake</em></span>, the compound can be expanded to 
+					<em>shake a hand</em> 
+					(object noun + verb)</li>
+				</ul>
+				</li>
+				<li class="redbullet">In verb + adverbial compounds, the 
+				noun is not the subject or the object of the verb but the 
+				compounds tell us where, when or what with the verb is intended.&nbsp; 
+				In other words, the compound is adverbial in nature.&nbsp; So:<ul class="greenbullet">
+					<li >Where:<br />
+					In <em class="style_brown">waiting room</em>, the room 
+					is not the object or subject of the verb <em>wait</em>, the compound 
+					tells us <strong>where</strong> the waiting takes place and can be expanded 
+					with a prepositional phrase to get <em>wait in a room</em>.&nbsp; 
+					Other examples include <em class="style_brown">hiding place</em> (<em>hide in a place</em>),
+					<span class="style_brown"><em>writing desk</em></span> (<em>write at a desk</em>) and so on.</li>
+					<li >When:<br />
+					In <span class="style_brown"><em>daydream</em></span>, the noun 
+					<em>day</em> is 
+					not the subject or object of the verb <em>dream</em> and the compound can 
+					be expanded to get <em>dream in the day</em>.</li>
+					<li >What with:<br />
+					In <em class="style_brown">handwriting</em>, the 
+					noun <em>hand</em> is not the subject or object of the verb <em>write</em> and 
+					the compound can be expanded to <em>write by hand</em>.</li>
+				</ul>
+				</li>
+			</ul>
+			<p>Many of these verb + adverbial compounds use a verb participle with
+			<em>-ing</em> + a noun.&nbsp; There 
+			are hundreds:<em><span class="style_brown"><br />
+&nbsp;&nbsp;&nbsp; printing paper, walking stick, babysitting, 
+			sunbathing</span></em> etc.<br />
+			The verb may follow or 
+			precede the noun but headedness applies so we know that <em>walking 
+			stick</em> is a type of <em>stick</em> and that <em>sunbathing</em> 
+			is a type of <em>bathing</em>.<br />
+			Other forms use the base of the verb plus a noun (again, following 
+			or preceding):<span class="style_brown"><br /><em>&nbsp;&nbsp;&nbsp; flashlight, daydream, homework, plaything</em></span> 
+			etc.<br />
+			Most of these are countable but <span class="style_brown"><em>homework</em></span> is not.</p>
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="3" height="65" src="../../../gfx/3blue.png" width="100" /></td>
+					<td class="auto-style2">
+					<h4><strong>Compounds without verbs</strong></h4>
+					</td>
+				</tr>
+				</table>
+			<p>Almost all of these are noun + noun: <span class="style_brown"> <em>oil well, sawdust, painkiller, 
+			ashtray, fire engine, shirtsleeve, motorbike, headlamp</em></span> etc.<br />
+			For teaching purposes, it's useful to note the large group of 
+			compounds using containers:<em><span class="style_brown"><br />
+			&nbsp;&nbsp;&nbsp;
+			matchbox, milk bottle, teacup, 
+			coffee cup, cigarette packet</span> </em>etc.<br />
+			and to help learners notice 
+			that the formation with <em>of</em> changes the meaning: 
+			<span class="style_brown"> <em>a 
+			teacup</em></span> vs. <span class="style_brown"> <em>a cup of tea</em></span> 
+			etc.</p>
+			<p>Some are adjective + noun: <em class="style_brown">handyman, 
+			whiteboard, softball, hardboard, smart-board, wet room, cold room, 
+			shortstop, close fielder </em>etc.</p>
+		<p>In most cases, the right-hand word determines meaning <strong>and</strong> word class:<br />
+		<em>printing paper</em> is a kind of paper not a kind of printing, a <em>
+		tax cut</em> is a type of cut, not a type of tax and so on.<br />
+		and <em>babysitting</em> is a verb (or a noun derived from the verb) and
+		<em>plaything</em> is a noun not a verb.</p>
+			<p>One oddity to note for teaching purposes concerns nouns which are 
+			always plural or which have a significantly different meaning when 
+			used in the singular or plural forms (also called paired nouns and <em>pluralia 
+			tantum </em>respectively).&nbsp; Examples are:<br />
+&nbsp;<em>&nbsp;&nbsp; scissors<br />
+&nbsp;&nbsp;&nbsp; trousers<br />
+&nbsp;&nbsp;&nbsp; arms (weaponry)</em><br />
+			and so on.<br />
+			When these words form part of verbless, noun + noun, compounds, they 
+			are often (not always) made singular so we get, e.g.:<br />
+&nbsp;<em>&nbsp;&nbsp; trouser press<br />
+&nbsp;&nbsp;&nbsp; scissor sharpener</em><br />
+			but<br />
+&nbsp;<em>&nbsp;&nbsp; arms race</em></p>
+		
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="liner" height="133" src="../../images/ship_liner200.jpg" width="200" /></td>
+					<td class="auto-style2">
+					<h3>Adjective and adverb compounds</h3>
+					</td>
+				</tr>
+				<tr>
+					<td class="auto-style25">
+					<em>ocean-going liner</em></td>
+					<td class="auto-style2">
+					&nbsp;</td>
+				</tr>
+			</table>
+		<p>As with noun compounds, these are often formed with an <strong>object 
+		+ verb</strong>.&nbsp; For example, in<br />
+		<em>
+		<span class="style_brown">&nbsp;&nbsp;&nbsp; a breathtaking view</span></em><span class="style_blue"><br />the breath is taken and in:<br /></span><span class="style_brown"> <em>&nbsp;&nbsp;&nbsp; a firefighting 
+		crew<br />
+		</em> 
+		</span><span class="style_blue">the fire is fought<br /></span>etc.</p>
+		<p>Other adjectives can be formed as follows:</p>
+		<ol>
+			<li><strong>Adverbial + Verb</strong><br />
+			<span class="style_brown"><em>&nbsp;&nbsp;&nbsp; backsliding, 
+			homecoming, easy 
+			listening</em></span> etc.</li>
+			<li><strong>Noun + Adjective</strong><br />
+			<em><span class="style_brown">&nbsp;&nbsp;&nbsp; homesick, travel weary, tax-free, 
+			battleship grey </span></em>etc.</li>
+			<li><strong>Adjective + Adjective</strong><br />
+			<span class="style_brown"><em>&nbsp;&nbsp;&nbsp; bittersweet, Franco-British, 
+			grey-green</em></span> etc.<br />
+			The first part of such compounds can contain a derived adjective 
+			which cannot usually stand alone.</li>
+		</ol>
+			
+			<p>See the guide to adjectives for a lot more on compounding to form 
+			adjectives.&nbsp; There are over ten ways in which this is done and 
+			they are set out in that guide.</p>
+			
+			<p>Again, headedness means that the right-hand word determines 
+			meaning and word class of the first two categories.<br />
+			Compounded adjectives, on the other hand sometimes imply a <strong>
+			combination</strong> of characteristics rather than depending solely 
+			on the right-hand element for their meaning.<br />
+			<em>&nbsp;&nbsp;&nbsp; sky-blue, lemon-yellow</em><br />
+			are respectively a type of blue and a type of yellow and both are right headed 
+			(or head final) in the normal way but<br />
+&nbsp;<em>&nbsp;&nbsp; Russo-Japanese</em><br />
+			refers to a combination of elements that are Russian and Japanese, 
+			not just Japanese.</p>
+			<p>Compound adverbs are much rarer than compound adjectives because 
+			an adverb form is uncommonly derivable from such adjectives.&nbsp; 
+			They do exist, however, so we may encounter:<br />
+			<em>&nbsp;&nbsp;&nbsp; A breathtakingly beautiful sunset<br />
+&nbsp;&nbsp;&nbsp; A heart-stoppingly exciting film<br />
+			</em>and so on.<br />
+			There is a range of adverbs now written as one word which qualify as 
+			compound adverbs however and the list includes words such as:<br />
+			<em>&nbsp;&nbsp;&nbsp; thereafter, hitherto, therefore, thereby, overnight, sometimes<br />
+			</em>and a few others.<br />
+			They began their careers in the language as two words usually but, 
+			over time have been compounded and are now written as single words.</p>
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="sightsee" height="133" src="../../images/sightsee200.jpg" width="200" /></td>
+					<td class="auto-style2">
+		<h3>Verb compounds</h3>
+					</td>
+				</tr>
+				<tr>
+					<td class="auto-style25">
+					<em>to sightsee</em></td>
+					<td class="auto-style2">
+					&nbsp;</td>
+				</tr>
+			</table>
+		<p>Verb compounds like <span class="style_brown"><em>sightsee</em>
+		</span>are often back formations from the noun 
+		compound (in this case <em class="style_brown">sightseeing</em>).<br />
+		There are two patterns:</p>
+		<ol>
+			<li><span class="style_black"><strong>object noun + verb</strong></span><br />
+			For example:<br />
+			<span class="style_brown"><em>
+			&nbsp;&nbsp;&nbsp;
+			lip-read, flat-hunt, pen push, clock watch</em></span><br />
+			In these compounds the first element is a noun which is the object, 
+			not the subject, of the verb.</li>
+			<li><span class="style_black"><strong>noun + verb</strong></span><br />
+			For example<br /><span class="style_brown"><em>
+			&nbsp;&nbsp;&nbsp;
+			sleepwalk, chain smoke, window-shop, spring clean</em></span><br />
+			These compounds are adverbial in nature because they refer not to 
+			the object of the verb but to how, when or where it occurs so we can 
+			expand them with prepositional phrases to:<br />
+			<em>&nbsp;&nbsp;&nbsp; walk in your sleep, smoke in a chain, shop by looking in the 
+			window, clean in the spring</em>.</li>
+		</ol>
+			
+			<p>Headedness is again apparent and the second element determines 
+			that the compound is a verb and it is the verb which carries the 
+			central meaning.<br />
+			This also means that any other word derived from such compounds is 
+			formed by changes to the second element so we get, e.g.:<br />
+&nbsp;&nbsp;&nbsp; <em>sleepwalking<br />
+&nbsp;&nbsp;&nbsp; window shopper<br />
+			</em>etc.<br />
+			And grammatical inflexions will also affect the right-hand element 
+			so we get:<br />
+			<em>&nbsp;&nbsp;&nbsp; sleepwalked<br />
+&nbsp;&nbsp;&nbsp; spring cleans</em><br />
+			etc.</p>
+			<hr />
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="rice" height="166" src="../../images/couple_rice250.jpg" width="250" /></td>
+					<td class="auto-style2">
+		<h2><a name="bahuvrihi"></a>Bahuvrihi compounds</h2>
+					</td>
+				</tr>
+				<tr>
+					<td class="auto-style25">
+					<em>much rice</em></td>
+					<td class="auto-style2">
+					&nbsp;</td>
+				</tr>
+				</table>
+			<p>This expression is derived from the Sanskrit word meaning <em>
+			much rice</em> and in that language, it means <em>a rich person</em>.<br />
+			The defining characteristic is that the compound so formed names an 
+			entire entity by specifying a feature of it.&nbsp; A rich person 
+			owns a lot of rice.<br />
+			English makes use of this form of compounding usually by referring 
+			to a particular characteristic of the entity and the result can be a 
+			noun (usually) or an adjective / classifier (more rarely).&nbsp; 
+			Here are some examples:<br />
+&nbsp;&nbsp;&nbsp; <em>bluebell</em> (with a flower like a blue bell)<br />
+&nbsp;&nbsp;&nbsp; <em>loudmouth</em> (with a mouth which is loud)<br />
+&nbsp;&nbsp;&nbsp; <em>blockhead</em> (with a head like a block)<br />
+&nbsp;&nbsp;&nbsp; <em>paperback</em> (with a paper back)<br />
+			etc.</p>
+			
+			<hr />
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="classify" height="166" src="../../images/classify_filing250.jpg" width="250" /></td>
+					<td class="auto-style2">
+		<h2>Classifiers</h2>
+					</td>
+				</tr>
+				</table>
+		<p>As we noted at the outset, there is a very fuzzy border between compound nouns and classified 
+		nouns.&nbsp; There is a guide to classifiers, partitives and group nouns on this site, linked in the list below to which you should refer for more 
+		information.<br />
+		Briefly, a classifier, or noun adjunct in some analyses, is distinguished from an adjective by being 
+		incapable of modification so, for example, while we can have:<br />
+		<em>&nbsp;&nbsp;&nbsp; an excellent student<br />
+&nbsp;&nbsp;&nbsp; the most excellent student<br />
+&nbsp;&nbsp;&nbsp; a really excellent 
+		student<br />
+		</em>etc.<br />
+		we cannot have<br />
+		<em>&nbsp;&nbsp;&nbsp; *a most university student<br />
+&nbsp;&nbsp;&nbsp; *a really university student<br />
+		</em>and so 
+		on.<br />
+		The word <em>excellent</em> is an adjective <strong>describing</strong> 
+		a characteristic of the student but the word <em>university</em> is a 
+		classifier which <strong>categorises</strong> the student.<br />
+		It is easy to see that it is a short step from classifier + noun to true 
+		compound nouns.&nbsp; Many of the examples cited above could equally 
+		well be analysed as a classifier plus a noun so we would have, e.g.<br />
+		<em>&nbsp;&nbsp;&nbsp; town planning<br />
+		&nbsp;&nbsp;&nbsp;
+		lesson planning<br />
+		&nbsp;&nbsp;&nbsp;
+		route planning<br />
+		&nbsp;&nbsp;&nbsp;
+		garden planning</em><br />
+		etc.<br />
+		all analysable either as compounding or as classifier + noun structures.<br />
+		Individual speakers will reveal how they are using some of these 
+		expressions by where they choose to let the main stress fall.&nbsp; If 
+		the speaker is considering the term as a single-sense compound, the 
+		first item will get the stress and when the speaker assumes that the 
+		first item simply classifies the second, there are two senses and the 
+		stress will usually be placed on the second element.<br />
+		So, for example, we may find:<br />
+		<em>&nbsp;&nbsp;&nbsp; What beautiful stained glass</em><br />
+		with the stress falling on <em>glass</em> as in:<br />
+&nbsp;&nbsp;&nbsp; /ˈwɒt.ˈbjuː.təf.l̩.steɪnd.ˈɡlɑːs/<br />
+		and then also find:<br />
+		<em>&nbsp;&nbsp;&nbsp; It's a stained-glass window</em><br />
+		with the stress falling on the first element as in:<br />
+&nbsp;&nbsp;&nbsp; /ɪts.ə.ˈsteɪnd.ɡlɑːs.ˈwɪn.dəʊ/<br />
+		revealing that the speaker considers the expression as classifier plus 
+		noun in the first example and as a compound classifier in the second.</p>
+			<hr />
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="summary" height="166" src="../../images/summary_pattern250.jpg" width="250" /></td>
+					<td class="auto-style2">
+		<h2>Pattern summary</h2>
+					</td>
+				</tr>
+				</table>
+			<p>
+			<img alt="summary" height="397" src="../../imagesgraphics/compounding_summary.png" width="465" /></p>
+			<hr />
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					
+					<img alt="coin" height="166" src="../../images/coin_on_book250.jpg" width="250" /></td>
+					<td class="auto-style3"><h2>Coinages</h2>
+					</td>
+				</tr>
+			</table>
+			<p>Compounding is a common way in which new words are coined and 
+			come in a variety of flavours:</p>
+			<ol>
+				<li>Blends<br />
+				in which part of either or both words is removed and the 
+				resulting morphemes compounded as in, for example:<br />
+&nbsp;&nbsp;&nbsp; <em>Oxbridge</em> [a blend of <em>Oxford</em> and <em>
+				Cambridge</em>]<br />
+&nbsp;&nbsp;&nbsp; <em>permafrost</em> [a blend of <em>permanent</em> and <em>
+				frost</em>]<br />
+&nbsp;&nbsp;&nbsp; <em>simulcast</em> [a blend of <em>simultaneous</em> and <em>
+				broadcast</em>]</li>
+				<li>True compounds<br />
+				in which both words are retained and simply combined to make a 
+				third as in, for example:<br />
+				<em>&nbsp;&nbsp;&nbsp; bloatware</em> [a verb-noun compound]<br />
+				<em>&nbsp;&nbsp;&nbsp; software</em> [an adjective-noun 
+				compound]<br />
+				<em>&nbsp;&nbsp;&nbsp; helpdesk</em> [a noun-noun compound or a 
+				verb-noun compound]<br />
+				etc.</li>
+				<li>Retronyms<br />
+				in which an additional classifier is seen as necessary because 
+				technology has overtaken the original meaning of a word as in, 
+				for example:<br />
+				<em>&nbsp;&nbsp;&nbsp; rotary telephone<br />
+&nbsp;&nbsp;&nbsp; valve radio<br />
+&nbsp;&nbsp;&nbsp; hand mower<br />
+&nbsp;&nbsp;&nbsp; hand drill</em><br />
+				<em>&nbsp;&nbsp;&nbsp; horse drawn carriage</em><br />
+				and so on.</li>
+			</ol>
+			<p>There is a good deal more on this in the guide to word formation.</p>
+			<hr /><br />
+		<table id="istrainingnav" cellpadding="0" cellspacing="0" class="tableblueborder">
+			<tr>
+				<td class="auto-style52" colspan="2">Related guides</td>
+			</tr>
+			<tr>
+				<td class="auto-style53"> 
+				<a href="word_formation.html" target="_blank">word formation</a></td>
+				<td class="auto-style57">for more on how this functions</td>
+			</tr>
+			<tr>
+				<td class="auto-style53"> 
+		<a href="../pronunciation/word_stress.html">word stress</a></td>
+				<td class="auto-style54">for more on considerations of word 
+				stress</td>
+			</tr>
+			<tr>
+				<td class="auto-style53"><a href="classifiers_partitives.html">classifiers, partitives and group nouns</a></td>
+				<td class="auto-style54">for a guide to a connected area</td>
+			</tr>
+			<tr>
+				<td class="auto-style53"><a href="adjectives.html">adjectives</a></td>
+				<td class="auto-style54">for more on the 10+ ways compound 
+				adjectives are formed</td>
+			</tr>
+			<tr>
+				<td class="auto-style55"> 
+				<a href="../teaching/teaching_word_formation.html">teaching word 
+				formation</a></td>
+				<td class="auto-style56">for the next logical step</td>
+			</tr>
+			</table>
+		<br />
+		<hr />
+		<p>Yes, <a href="compoundinghp.htm">there's a test</a>.</p>
+		<hr />
+		<p class="smallfont">References:<br />
+		There's a good deal more on this in
+		Quirk, R &amp; Greenbaum, S, 1973, <em>A University Grammar of English</em>, Harlow: 
+		Longman (pages 444 <em>et seq</em>.)<br />
+		Quirk, R, Greenbaum, S, Leech, G &amp; Svartvik, J, 1972, <em>A Grammar of 
+		Contemporary English</em>, 
+		Harlow: Longman</p>
+			<hr />
+		</div>
+			<!-- #EndEditable -->
+		<!-- End Content -->
+	
+	<!-- Begin Footer -->
+	<div id="footer">
+		<p>
+		<a href="../../../contact.html">Contact</a> |
+		<a href="../../../faq.html">FAQs</a> |
+		<a href="../../../copyright_notice.html">Copyright notice</a> |
+		<a href="../../../documents/ELT_Concourse_Charter.pdf" target="_blank"> ELT Concourse charter</a> |
+		<a href="../../../disclaimer.html"> Disclaimer and Privacy statement </a>|
+		<a href="../../../search_the_site.html">Search <strong>
+		ELT Concourse</strong></a></p>
+	</div>
+	<!-- End Footer -->
+
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

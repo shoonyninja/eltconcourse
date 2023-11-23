@@ -1,0 +1,1628 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- #BeginTemplate "../../../styles/dwt/training.dwt" -->
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta http-equiv="Content-Language" content="en-gb" />
+<!-- #BeginEditable "doctitle" -->
+<title>ELT Concourse: morphology</title>
+<style type="text/css">
+
+
+
+
+
+
+
+
+
+
+
+.auto-style2 {
+	padding-left: 5px;
+}
+.auto-style9 {
+	border: 1px solid #000080;
+	color: #000080;
+	font-weight: bold;
+}
+.auto-style11 {
+	border-left: 1px solid #666666;
+	border-right: medium none #666666;
+	border-top: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	margin-left: 6px;
+}
+.auto-style19 {
+	border-left: medium none #666666;
+	border-right: 1px solid #666666;
+	border-top: 1px solid #666666;
+	border-bottom: medium none #666666;
+	font-weight: normal;
+	color: #000000;
+	font-size: 0.875em;
+}
+.auto-style20 {
+	border-left: 1px solid #666666;
+	border-right: 1px solid #666666;
+	border-top: 1px solid #666666;
+	border-bottom: medium none #666666;
+	text-align: center;
+}
+.auto-style23 {
+	margin-bottom: -15px;
+	margin-top: 0;
+}
+.auto-style25 {
+	font-size: small;
+}
+.auto-style52 {
+	border-left: medium none #666666;
+	border-right: medium none #666666;
+	border-top: medium none #666666;
+	border-bottom: 1px solid #666666;
+	padding-left: 2px;
+}
+.auto-style53 {
+	border-left: medium none #666666;
+	border-right: 1px solid #666666;
+	border-top: 1px solid #666666;
+	border-bottom: medium none #666666;
+	text-align: left;
+}
+.auto-style54 {
+	border-left: medium none #666666;
+	border-right: 1px solid #666666;
+	border-top: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	text-align: left;
+}
+.auto-style55 {
+	border-left: 1px solid #666666;
+	border-right: medium none #666666;
+	border-top: 1px solid #666666;
+	border-bottom: medium none #666666;
+	padding-left: 5px;
+	padding-right: 2px;
+}
+.auto-style56 {
+	border-left: 1px solid #666666;
+	border-right: medium none #666666;
+	border-top: medium none #666666;
+	border-bottom: 1px solid #666666;
+	padding-left: 5px;
+	padding-right: 2px;
+}
+.auto-style58 {
+	border-left: 1px solid #666666;
+	border-right: medium none #666666;
+	border-top: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	padding-left: 5px;
+	padding-right: 2px;
+}
+.auto-style59 {
+	border-left: 1px solid #666666;
+	border-right: 1px solid #666666;
+	border-top: 1px solid #666666;
+	border-bottom: medium none #666666;
+}
+.auto-style49 {
+	border-left: medium none #666666;
+	border-right: 1px solid #666666;
+	border-top: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	text-align: left;
+}
+.auto-style61 {
+	list-style-type: lower-alpha;
+}
+.auto-style62 {
+	border-left: medium none #666666;
+	border-right: 1px solid #666666;
+	border-top: medium none #666666;
+	border-bottom: 1px solid #666666;
+	text-align: center;
+}
+.auto-style63 {
+	border-left: 1px solid #666666;
+	border-right: medium none #666666;
+	border-top: medium none #666666;
+	border-bottom: 1px solid #666666;
+	text-align: center;
+}
+.auto-style64 {
+	border-left: medium none #666666;
+	border-right: 1px solid #666666;
+	border-top: 1px solid #666666;
+	border-bottom: medium none #666666;
+	text-align: center;
+}
+.auto-style65 {
+	border-left: 1px solid #666666;
+	border-right: medium none #666666;
+	border-top: 1px solid #666666;
+	border-bottom: medium none #666666;
+	text-align: center;
+}
+.auto-style66 {
+	border-left: 1px solid #666666;
+	border-right: 1px solid #666666;
+	border-top: medium none #666666;
+	border-bottom: 1px solid #666666;
+	text-align: center;
+}
+.auto-style67 {
+	border-left: medium none #666666;
+	border-right: 1px solid #666666;
+	border-top: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	font-weight: normal;
+	color: #000000;
+	font-size: 0.875em;
+}
+.auto-style68 {
+	border-left: 1px solid #666666;
+	border-right: medium none #666666;
+	border-top: 1px solid #666666;
+	border-bottom: medium none #666666;
+	margin-left: 6px;
+}
+.auto-style69 {
+	border-left: medium none #666666;
+	border-right: 1px solid #666666;
+	border-top: medium none #666666;
+	border-bottom: 1px solid #666666;
+	font-weight: normal;
+	color: #000000;
+	font-size: 0.875em;
+}
+.auto-style70 {
+	border-left: 1px solid #666666;
+	border-right: medium none #666666;
+	border-top: medium none #666666;
+	border-bottom: 1px solid #666666;
+	margin-left: 6px;
+}
+.auto-style71 {
+	border-left: 1px solid #666666;
+	border-right: 1px solid #666666;
+	border-top: medium none #666666;
+	border-bottom: 1px solid #666666;
+	background-color: #F5F5F5;
+}
+.auto-style72 {
+	border-left: medium none #666666;
+	border-right: 1px solid #666666;
+	border-top: medium none #666666;
+	border-bottom: 1px solid #666666;
+	background-color: #F5F5F5;
+}
+.auto-style73 {
+	border-left: medium none #666666;
+	border-right: 1px solid #666666;
+	border-top: 1px solid #666666;
+	border-bottom: medium none #666666;
+}
+.auto-style74 {
+	border-left: 1px solid #666666;
+	border-right: medium none #666666;
+	border-top: medium none #666666;
+	border-bottom: 1px solid #666666;
+	background-color: #F5F5F5;
+}
+.auto-style75 {
+	border-left: 1px solid #666666;
+	border-right: medium none #666666;
+	border-top: 1px solid #666666;
+	border-bottom: medium none #666666;
+}
+</style>
+<meta content="ELT Concourse English language analysis and teaching guides. Morphology" name="description" />
+<script type="text/javascript">
+<!--
+function FP_changeProp() {//v1.0
+ var args=arguments,d=document,i,j,id=args[0],o=FP_getObjectByID(id),s,ao,v,x;
+ d.$cpe=new Array(); if(o) for(i=2; i<args.length; i+=2) { v=args[i+1]; s="o"; 
+ ao=args[i].split("."); for(j=0; j<ao.length; j++) { s+="."+ao[j]; if(null==eval(s)) { 
+  s=null; break; } } x=new Object; x.o=o; x.n=new Array(); x.v=new Array();
+ x.n[x.n.length]=s; eval("x.v[x.v.length]="+s); d.$cpe[d.$cpe.length]=x;
+ if(s) eval(s+"=v"); }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+
+function FP_swapImg() {//v1.0
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+ elm.$src=elm.src; elm.src=args[n+1]; } }
+}
+
+function FP_preloadImgs() {//v1.0
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+}
+// -->
+</script>
+<!-- #EndEditable -->
+<meta content="language analysis,eltconcourse,English grammar,free English language teaching materials,CELTA,Delta,language guides,free Delta training,free CELTA training,free ELT Training materials,teacher training,ELT,learning English,teaching English,English Language Teaching,ESOL,EFL,English as a Foreign Language" name="keywords" />
+<link href="../../../styles/mainstyle.css" rel="stylesheet" type="text/css" />
+<link href="../../../styles/training.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+</style>
+</head>
+
+<body>
+	<!-- Begin Masthead -->
+	<div id="masthead" >
+		<table style="width: 100%; border-bottom: #000080 solid">
+			<tr>
+				<td style="width: 135px">
+				<img alt="logo" height="49" src="../../../gfx/logo.png" width="78" /></td>
+				<td valign="bottom">
+				<span class="orangexxlargebold">ELT </span>
+				<span class="bluexxlargebold">Concourse teacher training</span></td>
+			</tr>
+		</table>
+	</div>
+	<!-- End Masthead -->
+	<!-- Begin Content -->
+			<!-- Begin Sidebar -->
+		<div id="sidebartt">
+			<ul>
+				<li><a href="../../../index.html">ELT Concourse home</a></li>
+				<li><a href="../../../a-z_index.html">A-Z site index</a></li>
+				<li><a href="../../training_index.html">Teacher training index</a></li>
+				<li><a href="../../../development/development_index.html">Teacher development</a></li>
+				<li><a href="../../../teachers/teachers.html">For teachers</a></li>
+				<li><a href="../../trainers/trainers_index.html">For trainers</a></li>
+				<li>
+				<a href="../../../academic_management/academic_management_index.html">For managers</a></li>
+				<li><a href="../../../learners/learners.html">For learners</a></li>
+				<li><a href="../../common/about_language.html">About language</a></li>
+				<li><a href="../../../questions/questions.html">Language questions</a></li>
+				<li class="whiteback">Other areas</li>
+				<li><a href="../indexes_is/eap_index_is.html">Academic English</a></li>
+				<li><a href="../indexes_is/be_index_is.html">Business English</a></li>
+				<li><a href="../../entering/introduction_to_elt.html">Entering ELT</a></li>
+				<li><a href="../../courses/courses_index.html">Courses index</a></li>
+				<li><a href="../../courses/basic/introduction_basic.html">Basic ELT course</a></li>
+				<li><a href="../../tkt/tkt_index.html">TKT</a></li>
+				<li><a href="../../bridge/bridge_index.html">The Bridge</a></li>
+				<li><a href="../../courses/lacourse/index_la_course.html">Language analysis</a></li>
+				<li>
+				<a href="../../courses/training_to_train/training_to_train_index.html">Training to train</a></li>
+				<li><a href="../../courses/transcription1/transcription.html">Transcription</a></li>
+				<li><a href="../../glossaries/glossary_index.html">Glossaries</a></li>
+				<li><a href="../../../articles/articles.html">Articles</a></li>
+			</ul>
+		</div>
+		<!-- End Sidebar -->
+		<!-- Begin Content -->
+		
+		<div id="toppicture" style="text-align: left; background-color: white; padding: 0px; margin-left: 140px;">
+				<img alt="Concourse 2" height="207" src="../../../images/concourse2blue.jpg" width="310" /></div>
+		
+			<!-- #BeginEditable "content" -->
+		
+			<!-- #BeginEditable "content" -->
+		
+		<div id="content">
+		
+			<h1>Morphology: the building blocks of language</h1>
+			<p>
+			<img alt="morphology" height="207" src="../../images/lego_bricks310.jpg" width="310" /></p>
+			<p>
+			This guide is concerned with the general theory of morphology rather 
+			than with how any one language forms words by combining morphemes.&nbsp; 
+			For more on that, in English, consult the guide to word formation, 
+			linked below.</p>
+			<hr />
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="define" height="166" src="../../images/dictionary_define250.jpg" width="250" /></td>
+					<td class="auto-style2">
+					<h2>What is morphology?</h2>
+					</td>
+				</tr>
+			</table>
+			<p>We'll start this guide with a definition of its subject matter.<br />
+			A morpheme is</p>
+			<p class="indentpara"><span class="style_black"><em>the smallest </em>
+			<strong><em>meaningful</em></strong><em> unit of a language</em></span>.</p>
+			<p>and the word <em><strong>meaningful</strong></em> is emphasised 
+			for a reason.<br />
+			In this phrase, we have these 10 morphemes:</p>
+			<p class="indentpara"><span class="style_black"><em><strong>the + small + est + mean + ing + ful + unit + of + a + language</strong></em></span>.</p>
+			<p>The term <em>meaningful</em> here does not refer to meaning standing 
+			alone (although it may) but to meaning in context or in combination 
+			with other words.<br />
+			For example, a function word such as <em>it</em> carries no meaning 
+			without a context and co-text but in a sentence such as:<br />
+			<em>&nbsp;&nbsp;&nbsp; I read the book and loved it</em><br />
+			the words <em>book</em> and <em>it</em> clearly carry meaning.<br />
+			And in<br />
+&nbsp;&nbsp;&nbsp; <em>John and Mary came to the show</em><br />
+			the word <em>and</em> carries a meaning to the hearer / reader 
+			relating to combining subjects although the word standing entirely 
+			alone has no discernible meaning.<br />
+			Both <em>it</em> and <em>and</em> are morphemes by this definition 
+			and so are <em>I, read, the, book, love, -d, John, Mary, came, to</em> 
+			and <em>show</em>.</p>
+			<p>Morphology, then, is the study of how languages form words.&nbsp; All languages do this and they do it in a 
+			bewildering and fascinating number of ways.</p>
+			<p>We are concerned here with how English functions in this respect but 
+			effective teaching in this area requires at least an outline 
+			knowledge of how your learners' language(s) function.&nbsp; For some 
+			information about that, see the guide to teaching word formation, 
+			linked below.&nbsp; Other languages employ morphemes in a variety of 
+			ways using, e.g.<br />
+&nbsp;&nbsp;&nbsp; infixes: a rare event in English exemplified by <em>spoon<span class="style_black"><strong>s</strong></span>ful</em> 
+			or <em>abso<span class="style_black"><strong>bloody</strong></span>lutely</em>.<br />
+&nbsp;&nbsp;&nbsp; circumfixes: unknown in English but used extensively in some 
+			languages which add affixes in pairs to the beginning and end of a 
+			lexeme to derive a single change in meaning or word class.</p>
+			<p>The guide to word formation, linked below, covers similar ground 
+			but extends it into other areas.&nbsp; This guide is concerned with 
+			understanding the theoretical bases for how words are formed in 
+			English.</p>
+			<hr />
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="words" height="166" src="../../images/grafitti250.jpg" width="250" /></td>
+					<td class="auto-style2">
+					<h2>Identifying words</h2>
+					</td>
+				</tr>
+			</table>
+			<p>Before we can sensibly look at what words are made of, we need to 
+			be clear about what a word actually is.&nbsp; This may seem a very 
+			simple question but it is actually rather difficult to define what a 
+			word is in any language.<br />
+			Here's a definition from Google:</p>
+			<p class="indentpara"><em><span class="style_black">a single distinct meaningful element of 
+			speech or writing, used with others (or sometimes alone) to form a 
+			sentence and typically shown with a space on either side when 
+			written or printed</span></em></p>
+			<p>As we shall see, that is not an adequate definition for 
+			our purposes.&nbsp; The definition is hedged with
+			<span class="style_black"><em>typically</em></span> and
+			<span class="style_black"><em>sometimes</em></span> and that is a 
+			sign that the definition is difficult.</p>
+			<table class="auto-style9" cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="think" height="60" src="../../../gfx/think60.jpg" width="60" /></td>
+					<td class="auto-style2"><span class="style_red"><strong>Task 1</strong></span><span class="style_black">: 
+					Here are some traditional tests for words in a language.<br />
+					Click on the table when you have filled in the right-hand 
+					column.</span></td>
+				</tr>
+			</table>
+			<p>
+			<img id="img1" alt="words" height="402" onclick="FP_swapImg(0,0,/*id*/'img1',/*url*/'../../imagesgraphics/wordtest2.png'); FP_changeProp(/*id*/'wordtest',0,'style.visibility','visible'); FP_changeProp(/*id*/'wordstable',0,'style.visibility','visible')" src="../../imagesgraphics/wordtest1.png" width="650" /><br />
+			<span class="auto-style25">(Based on Crystal, 1987:91)</span></p>
+			<p id="wordtest" style="visibility: hidden">Even the test for words 
+			are things which have a space at each end when they are written down 
+			doesn't work.&nbsp; (Is <em>doesn't</em> one word or two?)<br />
+			Some languages do not follow the convention at all and all words are 
+			written in a stream.&nbsp; For example,<br /><em>&nbsp;&nbsp;&nbsp; What will you have<br />
+			</em>in Thai looks like<br /><em>&nbsp;&nbsp;&nbsp; สิ่งที่คุณจะต้อง.<br />
+			</em>It is for these reasons that linguists prefer the term <strong>
+			lexeme</strong> or <strong>lexical item</strong> to the anguished 
+			word <em>word</em>.&nbsp; A lexeme is a basic unit which can be one 
+			word or a phrase which carries a single significance.<br />
+			By this definition, all of these are lexemes because the individual 
+			parts, where they exist, do not convey the whole meaning:</p>
+			<table cellpadding="2" cellspacing="0" class="tableblueborder" id="wordstable" style="visibility: hidden; width: 80%;">
+				<tr>
+					<td class="auto-style62" style="width: 85px"><em>house</em></td>
+					<td class="auto-style66" style="width: 85px"><em>terraced house</em></td>
+					<td class="auto-style66" style="width: 85px"><em>room</em></td>
+					<td class="auto-style66" style="width: 85px"><em>living room</em></td>
+					<td class="auto-style66" style="width: 85px"><em>classroom</em></td>
+					<td class="auto-style66" style="width: 86px"><em>party</em></td>
+					<td class="auto-style63" style="width: 86px"><em>the Labour Party</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style64" style="width: 85px"><em>America</em></td>
+					<td class="auto-style20" style="width: 85px"><em>The USA</em></td>
+					<td class="auto-style20" style="width: 85px"><em>scissors</em></td>
+					<td class="auto-style20" style="width: 85px"><em>fountain pen</em></td>
+					<td class="auto-style20" style="width: 85px"><em>garden</em></td>
+					<td class="auto-style20" style="width: 86px"><em>market gardener</em></td>
+					<td class="auto-style65" style="width: 86px"><em>omnishambles</em></td>
+				</tr>
+			</table>
+			
+			<p>Of course, one ordinary way to identify a word is to look it up 
+			in a dictionary.&nbsp; Unfortunately, that won't work, either.&nbsp; 
+			If you go to an online dictionary for something like <em>
+			inderivability</em>, you are very unlikely to find it but most 
+			native speakers of English would be happy to accept that it really 
+			is a word.<br />
+			The other issue with dictionaries is that, in order to save space, 
+			they usually list words by the root or lemma.&nbsp; For example, you 
+			will find <em>repeat</em> as a headword or lemma in a dictionary but
+			<em>repeated</em> and <em>repeating</em> will normally not be listed 
+			separately unless the words are used with a different significance.&nbsp; 
+			That doesn't mean they aren't words.</p>
+			<h3>So what actually is a word?</h3>
+			<p>For a morphologist, a word is any item which can be derived from 
+			the application of morphological rules.&nbsp; This means that even 
+			something like <em>computerhood</em>, which you will certainly not 
+			find in a dictionary, is a word because it can be derived from the 
+			three morphemes that make it up, following normal conventions in 
+			English.&nbsp; These are:<span class="style_black"><br /><em>&nbsp;&nbsp;&nbsp; compute</em></span> 
+			the verb<br />
+&nbsp;&nbsp;&nbsp; + <span class="style_black"><em>r</em></span> to make 
+			the noun doer of the verb (or, with words that do not already end in 
+			'<em>e</em>', '<em>er</em>')<br />
+&nbsp;&nbsp;&nbsp; + <span class="style_black"><em>hood</em></span> 
+			to make the noun signifying state of being a doer of the verb.</p>
+			<hr />
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="identify" height="166" src="../../images/analyse_microscope_a250.jpg" width="250" /></td>
+					<td class="auto-style2">
+					<h2>Identifying morphemes</h2>
+					</td>
+				</tr>
+			</table>
+			<br />
+			<table class="auto-style9" cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="think" height="60" src="../../../gfx/think60.jpg" width="60" /></td>
+					<td class="auto-style2"><span class="style_red"><strong>Task 
+					2</strong></span><span class="style_black">: 
+					Can you identify the morphemes in this list of lexemes?<br />
+					Click on the
+		<img alt="eye open" class="verticalalignmiddle" height="16" src="../../../gfx/eyeopen.gif" width="16" /> 
+					to reveal some comments when you have.</span></td>
+				</tr>
+			</table>
+			<br />
+			<table cellpadding="3" cellspacing="0" class="tableblueborder">
+				<tr>
+					<td class="auto-style69">SUGAR<br />
+					<img alt="eye open" height="16" src="../../../gfx/eyeopen.gif" width="16" onclick="FP_changeProp(/*id*/'intel',0,'style.visibility','visible')" /></td>
+					<td class="auto-style70">
+					<div id="intel" style="position: relative;  visibility: hidden"> <em>This is an easy one.&nbsp; The lexeme is a single 
+						morpheme which stands alone.&nbsp; We can add morphemes 
+						to it, of course, to make, e.g., </em>sugar<span class="style_black">y</span>, 
+						sugar<span class="style_black">iness</span> <em>etc</em>.<br />
+						<em>It is a <strong>free morpheme</strong> which needs 
+						no other morpheme to make sense.</em></div>
+					</td>
+				</tr>
+				<tr>
+					<td class="auto-style67">CLASSROOM<br />
+					<img alt="eye open" height="16" src="../../../gfx/eyeopen.gif" width="16" onclick="FP_changeProp(/*id*/'intel0',0,'style.visibility','visible')" /></td>
+					<td class="auto-style11">
+					<div id="intel0" style="visibility:hidden
+" class=""> <em>This is a <strong>compound</strong> formed from two 
+						free morphemes, </em><span class="style_black">class</span><em> 
+						and </em><span class="style_black">room</span><em>.&nbsp; 
+						Both are nouns and they combine to make a new noun with 
+						a new but transparent meaning.&nbsp; See
+						the guide to compounding, linked below, 
+						for more.</em></div>
+					</td>
+				</tr>
+				<tr>
+					<td class="auto-style67">UGLINESS<br />
+					<img alt="eye open"  height="16" src="../../../gfx/eyeopen.gif" width="16" onclick="FP_changeProp(/*id*/'intel1',0,'style.visibility','visible')" /></td>
+					<td class="auto-style11">
+					<div id="intel1" style="visibility:hidden
+" class=""> 
+						<em>This is an example of a free morpheme combining with 
+						a <strong>bound morpheme </strong>to make a new word 
+						class.<br />
+						We have taken the free morpheme, </em>
+						<span class="style_black">ugly</span><em>, and combined 
+						it with a bound morpheme suffix, </em>
+						<span class="style_black">ness</span><em>, to make the 
+						noun from the adjective.&nbsp; The suffix is a bound 
+						morpheme which cannot stand alone and carry meaning.&nbsp; 
+						Because the morpheme is used to derive a new word, it is 
+						called a <strong>derivational morpheme</strong>.<br />
+						(Do not worry about the spelling change.&nbsp; That is 
+						simply one of the orthographic conventions in English and makes no 
+						difference to meaning.&nbsp; Do not be concerned, 
+						either, with the fact that </em>
+						<span class="style_black">ness</span><em> can be a free 
+						morpheme meaning a </em><span class="style_black">
+						headland</span><em>.&nbsp; That is an example of 
+						homonymy.)</em></div>
+					</td>
+				</tr>
+				<tr>
+					<td class="auto-style67">TEACHERS<br />
+					<img alt="eye open"  height="16" src="../../../gfx/eyeopen.gif" width="16" onclick="FP_changeProp(/*id*/'intel2',0,'style.visibility','visible')" /></td>
+					<td class="auto-style11">
+					<div id="intel2" style="visibility:hidden
+" class=""> 
+						<em>This is an example of the same thing.&nbsp; A free 
+						morpheme, </em><span class="style_black">teach</span><em>, 
+						combining with a bound morpheme, </em>
+						<span class="style_black">er</span><em>, to make a 
+						personal noun from the verb</em>.&nbsp; 						<em>In other words, to derive a new word class.&nbsp; 
+						There is a second bound morpheme, </em>
+						<span class="style_black">s</span><em>, which forms the 
+						plural in English, part of how nouns <strong>decline</strong>.</em></div>
+					</td>
+				</tr>
+				<tr>
+					<td class="auto-style67">FLYING<br />
+					<img alt="eye open"  height="16" src="../../../gfx/eyeopen.gif" width="16" onclick="FP_changeProp(/*id*/'intel3',0,'style.visibility','visible')" /></td>
+					<td class="auto-style11">
+					<div id="intel3" style="visibility:hidden
+" class=""> <em>This, too, is an example of a free morpheme 
+						combining with a bound morpheme (</em><span class="style_black">fly</span><em> 
+						and </em><span class="style_black">ing</span><em>, 
+						respectively) but in this case we have a grammatical 
+						change, converting the base form of the verb into a 
+						participle or a gerund, depending on context.&nbsp; 
+						This is an <strong>inflexional morpheme</strong>, 
+						determining how verbs<strong> conjugate</strong>.</em></div>
+					</td>
+				</tr>
+				<tr>
+					<td class="auto-style67">REPEATED<br />
+					<img alt="eye open"  height="16" src="../../../gfx/eyeopen.gif" width="16" onclick="FP_changeProp(/*id*/'intel4',0,'style.visibility','visible')" /></td>
+					<td class="auto-style11">
+					<div id="intel4" style="visibility:hidden
+" class=""> <em>This is slightly problematic.&nbsp; Often, the bound 
+						morpheme prefix </em><span class="style_black">re</span><em> 
+						implies the act of doing something again, as in </em>
+						<span class="style_black">re</span>write<em>, </em>
+						<span class="style_black">re</span>inforce<em> etc.&nbsp; 
+						Here, however, analysing it that way would result in the 
+						morpheme </em><span class="style_black">peat</span><em> 
+						which, as a verb, carries no meaning so cannot, by 
+						definition, be a morpheme in English.&nbsp; It is, 
+						however, acceptable to analyse it that way because the 
+						verb derives from the Latin, via French, from </em>re<em>, [again] + </em>petere<em> 
+						[strive after; ask for].&nbsp; It occurs again in, e.g., </em>
+						<span class="style_black">pet</span>ition<em>.<br />
+						We have another inflexional morpheme here, </em>
+						<span class="style_black">ed</span><em>, which forms the 
+						regular past tense in English.</em></div>
+					</td>
+				</tr>
+				<tr>
+					<td class="auto-style67">HAMBURGER<br />
+					<img alt="eye open"  height="16" src="../../../gfx/eyeopen.gif" width="16" onclick="FP_changeProp(/*id*/'intel5',0,'style.visibility','visible')" /></td>
+					<td class="auto-style11">
+					<div id="intel5" style="visibility:hidden
+" class=""> <em>This, of course, can mean </em>a person from 
+						<span class="style_black">Hamburg</span><em> 
+						and that is an example of a free morpheme, called the
+						<strong>root</strong>, combining with a bound morpheme 
+						to form the name for a person's origin.&nbsp; Compare </em>
+						London<span class="style_black">er</span><em>, </em>
+						Paris<span class="style_black">ian</span><em> etc.<br />
+						In this case, however, the word probably derives from 
+						the name of a beef product from Hamburg and the morpheme </em>
+						<span class="style_black">burger</span><em> has taken on 
+						a life of its own as in </em>cheese<span class="style_black">burger</span>, 
+						beef<span class="style_black">burger</span> <em>and </em>
+						veggie<span class="style_black">burger</span><em>.</em></div>
+					</td>
+				</tr>
+				<tr>
+					<td class="auto-style67">DISRESPECT<br />
+					<img alt="eye open"  height="16" src="../../../gfx/eyeopen.gif" width="16" onclick="FP_changeProp(/*id*/'intel6',0,'style.visibility','visible')" /></td>
+					<td class="auto-style11">
+					<div id="intel6" style="visibility:hidden
+" class=""> <em>The function of the bound morpheme, </em>
+						<span class="style_black">dis</span><em>, as a prefix is 
+						clear; it means the negative.&nbsp; However, hidden in 
+						here is another Latin-derived meaning of </em>
+						<span class="style_black">re</span><em>.&nbsp; The word 
+						derives from </em>re<em> [back] + </em>
+						specere<em> [look].</em></div>
+					</td>
+				</tr>
+				<tr>
+					<td class="auto-style67">BLAIRITE<br />
+					<img alt="eye open"  height="16" src="../../../gfx/eyeopen.gif" width="16" onclick="FP_changeProp(/*id*/'intel7',0,'style.visibility','visible')" /></td>
+					<td class="auto-style11">
+					<div id="intel7" style="visibility:hidden
+" class=""> <em>This is an example of how new words are formed from 
+						the general rules of a language's morphology.&nbsp; We 
+						simply take the name or philosophy and add </em>
+						<span class="style_black">ite</span><em> or </em>
+						<span class="style_black">ist</span><em>.&nbsp; Compare </em>
+						Trotsky<span class="style_black">ite</span>, Marx<span class="style_black">ist</span>, commun<span class="style_black">ist</span>, sex<span class="style_black">ist</span>, Thatcher<span class="style_black">ite</span>, 
+						Bentham<span class="style_black">ite</span><em> etc.</em></div>
+					</td>
+				</tr>
+				<tr>
+					<td class="auto-style67">REAGANOMICS<br />
+					<img alt="eye open"  height="16" src="../../../gfx/eyeopen.gif" width="16" onclick="FP_changeProp(/*id*/'intel8',0,'style.visibility','visible')" /></td>
+					<td class="auto-style11">
+					<div id="intel8" style="visibility:hidden
+" class=""> <em>This is a less common way to form new words called a
+						<strong>blend</strong>.&nbsp; Two words have been 
+						fused to form a third meaning.&nbsp; Compare </em>smog<em> 
+						[from the free morphemes </em>smoke<em> + </em>fog<em>] 
+						or </em>motel<em> 
+						[from </em>motor<em> + </em>hotel<em>].</em></div>
+					</td>
+				</tr>
+				<tr>
+					<td class="auto-style67">DONATION<br />
+					<img alt="eye open"  height="16" src="../../../gfx/eyeopen.gif" width="16" onclick="FP_changeProp(/*id*/'intel11',0,'style.visibility','visible')" /></td>
+					<td class="auto-style11">
+					<div id="intel11" style="visibility:hidden
+" class=""> <em>You can be excused for thinking that this is a noun 
+						formed from the verb </em>donate<em> by dropping the '</em>e'<em> 
+						and adding the -</em><span class="style_black">tion</span><em> 
+						bound morpheme in the conventional way.&nbsp; However, 
+						in fact the noun entered the language much earlier than 
+						the verb which was formed later by analogy with more 
+						usually formed verb-noun pairs such as </em>
+						inflate-inflation<em> and many more.<br />
+						This is called a back formation and there is a short 
+						list in the guide to word formation of other back forms 
+						in English</em>.</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="auto-style67">INEPT<br />
+					<img alt="eye open"  height="16" src="../../../gfx/eyeopen.gif" width="16" onclick="FP_changeProp(/*id*/'intel9',0,'style.visibility','visible')" /></td>
+					<td class="auto-style11">
+					<div id="intel9" style="visibility:hidden
+" class=""> <em>This is interesting because the bound morpheme, </em>
+						<span class="style_black">in</span><em>, clearly carries 
+						a negative meaning.&nbsp; Unfortunately, the second 
+						morpheme, </em><span class="style_black">ept</span>,<em> 
+						carries no meaning.&nbsp; The word comes from 
+						Latin in- [not] + aptus [apt].<br />
+						The term for this kind of morpheme is a <strong>bound 
+						base </strong>(sometimes a <strong>bound root</strong>).&nbsp; 
+						It cannot exist alone but does not act as a prefix or 
+						suffix.&nbsp; Other examples are the
+						<span class="style_black">ver</span> in verity, the
+						<span class="style_black">doct</span> in doctor and the
+						<span class="style_black">dext</span> in dexterity.<br />
+						Many verbs are formed in this way, derived directly from 
+						Latin, Old French or Old English with a bound base which 
+						has no independent existence in the modern language.&nbsp; 
+						Examples include </em><span class="style_black">
+						desiccate, modify, indemnify, enlighten</span><em> 
+						and more.</em></div>
+					</td>
+				</tr>
+				<tr>
+					<td class="auto-style19">PESTICIDE<br />
+					BIOCHEMISTRY<br />
+					<img alt="eye open"  height="16" src="../../../gfx/eyeopen.gif" width="16" onclick="FP_changeProp(/*id*/'intel10',0,'style.visibility','visible')" /></td>
+					<td class="auto-style68">
+					<div id="intel10" style="visibility:hidden
+" class=""> <em>These are examples of <strong>combining forms</strong>.&nbsp; 
+						The suffix, </em>
+						-icide<em> does not alter the meaning of the word </em>
+						pest<em> or its word case (as is the case with, e.g., 
+						pester).&nbsp; The suffix instead adds a new layer of 
+						meaning to the word and denotes </em>killing agent<em>.<br />
+						The second example is similar but the combining form (</em>bio<em>-) 
+						is a prefix (the more common role of combining forms).&nbsp; 
+						Again, it does not alter the meaning of </em>chemistry<em> 
+						but it does add a new layer of meaning to it.<br />
+						In these cases, the words </em>pest<em> and </em>
+						chemistry<em> are free morphemes but in many cases of 
+						the use of combining forms in English, the base is not a 
+						free morpheme.&nbsp; Examples are: </em>democracy, 
+						ferroconcrete, astrology<em>.<br />
+						The roots here, </em>dem, ferro<em> and </em>astr<em> do 
+						not stand alone and are describable as bound bases which 
+						can be traced to the Latin or Greek roots.<br />
+						Combining differs from compounding in that the outcome 
+						is not a third meaning, it is an additional meaning 
+						grafted on to the base form.</em></div>
+					</td>
+				</tr>
+			</table>
+			<p>All the technical terms are <strong>in bold</strong> 
+			in this table.<br />
+			<a href="morphologyhp.htm">Click here to take a test to see if 
+			you can remember what they mean</a>.</p>
+			<hr />
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img height="166" src="../../images/roots250.jpg" width="250" alt="root" /></td>
+					<td class="auto-style2">
+					<h2>Derivational morphemes</h2>
+					</td>
+				</tr>
+			</table>
+			<p>As we saw above, there are two ways that derivational morphemes 
+			added to lexemes can change them.</p>
+			<ol>
+				<li>We can change the word class or category of a word but leave 
+				the base meaning unchanged.&nbsp; For example,<ul class="greybullet">
+					<li><em>entertain</em> (verb) &rarr;<em> entertain<span class="style_black">ment</span></em> (noun)</li>
+					<li><em>entertain</em> (verb) &rarr; <em>entertain</em><span class="style_black"><em>ing</em></span> (adjective)</li>
+					<li><em>elephant</em> (noun) &rarr; <em>elephant<span class="style_black">ine</span></em> (adjective)</li>
+				</ul>
+				</li>
+				<li>We can add morphemes which change the meaning but leave the 
+				word class unchanged.&nbsp; For example,<ol class="greybullet">
+					<li><em>pleasant</em> &rarr; <em><span class="style_black">un</span>pleasant</em> (adjectives, opposites)</li>
+					<li><em>do</em> &rarr; <em><span class="style_black">un</span>do</em> (verbs, reverse action)</li>
+				</ol>
+				</li>
+			</ol>
+			<p class="auto-style23">Sometimes, we can add morphemes which change 
+			both the meaning and the word class.&nbsp; For example,</p>
+			<ul class="greybullet">
+				<li class="greybullet">
+				<em>witch</em> (noun for a person) &rarr; <em>
+				<span class="style_black">be</span>witch</em> (verb meaning <em>enchant</em>)</li>
+				<li class="greybullet"><em>list</em> (noun) &rarr; <em>
+				<span class="style_black">en</span>list</em> (verb meaning <em>
+				put</em> or <em>put oneself</em> on a list of participants)</li>
+					<li><em>garden</em> (verb) &rarr; <em>garden<span class="style_black">er</span></em> (noun, 
+					verb changing to person who does the action)<br />
+					This is <strong>not</strong> the person being 
+					derived from the place but the person derived from the verb.&nbsp; 
+					We need to be careful to make this sort of thing clear to 
+					learners or they may think a <em>shopper</em> is someone who 
+					works in a <em>shop</em>.</li>
+			</ul>
+			<hr />
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="productivity" height="166" src="../../images/factory250.jpg" width="250" /></td>
+					<td class="auto-style2">
+					<h2><a name="product"></a>Productivity of derivational morphemes</h2>
+					</td>
+				</tr>
+			</table>
+			<p>A central concern of morphology is to investigate how productive 
+			a derivational morpheme actually is.&nbsp; This does not apply to 
+			inflexional morphemes because their role is generally fixed 
+			grammatically<br />
+			How is it, for example, that the morpheme <span class="style_black">
+			<em>th</em></span> can be attached to some adjectives to form the 
+			noun (<em>warm → warm<span class="style_black">th</span>, wide → wid<span class="style_black">th</span></em> 
+			etc.) but is almost completely unproductive in forming new words in 
+			English?<br />
+			We would not, for example, take the adjective <em>
+			windy</em> and form a noun such as <em>windi<span class="style_black">th</span></em>, 
+			preferring instead to choose the <span class="style_black"><em>ness</em></span> 
+			suffix and making <em>windiness</em>.<br />
+			There are some interesting factors in play.</p>
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="clear" height="133" src="../../images/clear_water_book200.jpg" width="200" /></td>
+					<td class="auto-style2">
+					<h3>Transparency</h3>
+					</td>
+				</tr>
+			</table>
+			<p>Some morphemes have an easy-to-see relationship between the form 
+			and meaning.&nbsp; Here are some examples:</p>
+			<ol>
+				<li><strong>-</strong><em><strong>ible</strong></em><strong> and 
+				-</strong><em><strong>able</strong></em><br />
+				It is easy to unpack a word like <em>recordable</em> by 
+				considering the suffix <span class="style_black"><em>able</em></span> 
+				and realising that it always produces an adjective from a
+				<strong>transitive</strong> base verb and that it exists as a 
+				free morpheme meaning <em>can</em>.&nbsp; You can quite easily 
+				make new adjectives like this from any number of verbs, 
+				providing they take an object.&nbsp; The fact is that it is the 
+				only way English can form a new adjective from a verb.&nbsp; We 
+				have, of course, the <span class="style_black"><em>ible</em></span> 
+				morpheme in words like <em>flexible, audible, comprehensible</em> 
+				and so on but if you try to form an adjective from unusual or 
+				phrasal verbs you will almost always opt for
+				<span class="style_black"><em>able</em></span>.&nbsp; Try it 
+				with:<br /><em>&nbsp;&nbsp;&nbsp;
+				prune, devolve, explode, derange, disturb, put off, turn down</em>.<br />
+				The morpheme <span class="style_black"><em>ible</em></span> is, 
+				therefore, unproductive.<br />
+				There are still many extant adjectives formed from verb which 
+				employ the -<em>ible</em> suffix.&nbsp; However, removing the suffix does 
+				not usually leave a recognisable word so, for example:<br />
+&nbsp;<em>&nbsp;&nbsp; audible<br />
+&nbsp;&nbsp;&nbsp; risible<br />
+&nbsp;&nbsp;&nbsp; incorrigible</em><br />
+				etc.<br />
+				Here, again, we have instances of a bound base or bound root 
+				which is no longer able to function alone.&nbsp; The words <em>
+				aud</em>, <em>ris</em> and <em>corr</em> simply do not exist 
+				although they can be traced to Latin.<br />
+				In nearly all cases, the -<em>ible</em> forms are more formal 
+				and less common so we have formal-informal pairings such as:<br />
+				<em>&nbsp;&nbsp;&nbsp; credible - believable<br />
+&nbsp;&nbsp;&nbsp; edible - eatable<br />
+&nbsp;&nbsp;&nbsp; potable - drinkable<br />
+&nbsp;&nbsp;&nbsp; risible - laughable<br />
+&nbsp;&nbsp;&nbsp; illegible - unreadable<br />
+&nbsp;&nbsp;&nbsp; comprehensible - understandable</em><br />
+				etc.</li>
+				<li><strong>nouns from adjectives</strong><br />
+				Another example is the ways in English that nouns are formed 
+				from adjectives.&nbsp; The two most common are:<br />
+				<span class="style_black"><em>&nbsp;&nbsp;&nbsp; ness</em></span>: <em>happy → happiness, sad → sadness, great → greatness</em> 
+				etc.<br />
+				<span class="style_black"><em>&nbsp;&nbsp;&nbsp; ity</em></span>: <em>insane → insanity, absurd → absurdity, acid → acidity</em> 
+				etc.<br />
+				However, if you try to form new nouns from these adjectives:<br />
+				<em>&nbsp;&nbsp;&nbsp; blue-green, airy, snowy, freezing, wet</em><br />
+				You will almost always opt for <span class="style_black"> <em>ness</em></span>, indicating that
+				<span class="style_black">
+				<em>ness</em></span> is more productive than 
+				<span class="style_black"> <em>ity</em></span> in this 
+				function.<br />
+				This is not to say that <span class="style_black"> <em>ity</em></span> is unproductive in the way 
+				that <span class="style_black"> <em>th</em></span> is, but that it is less productive.&nbsp; It 
+				can be very productive with adjectives ending in the 
+				<span class="style_black"> <em>able</em></span> 
+				morpheme.&nbsp; Try, e.g.,<br />
+				<em>&nbsp;&nbsp;&nbsp; openable, disturbable, derivable, pickupable</em><br />
+				and -<span class="style_black"><em>ability</em></span> seems to be the form of choice although it is 
+				certainly possible to form words like <em>openableness</em>.</li>
+				<li><strong>doers</strong><br />
+				Other derivational morphemes are also less productive than 
+				others.&nbsp; We can, e.g., form the doer of a verb by attaching 
+				the morpheme <span class="style_black"> <em>ant</em></span> as in<br />
+				<em>&nbsp;&nbsp;&nbsp; inhabit → inhabitant<br />
+				&nbsp;&nbsp;&nbsp;
+				assail → assailant<br />
+				&nbsp;&nbsp;&nbsp;
+				claim → claimant</em><br />
+				but this suffix is far less frequently used for this function 
+				than the ubiquitous <span class="style_black"> <em>er</em></span> suffix.&nbsp; Try forming the 
+				doer of the action from these verbs and you'll see how much more 
+				productive the <span class="style_black"> <em>er</em></span> morpheme is:<br />
+				<em>&nbsp;&nbsp;&nbsp; disturb, peruse, demand, accommodate</em><br />
+				The suffix <span class="style_black"> <em>ist</em></span> is even less productive in this sense 
+				although <em>typist</em> and <em>telephonist</em> exist.<br />
+				Just as we saw for the <span class="style_black"> <em>able/ible</em></span> distinction, the 
+				suffix <span class="style_black"> <em>or</em></span> is now almost completely unproductive and is 
+				frozen into words like <em>actor, transgressor</em> and <em>
+				doctor</em>.</li>
+				<li><strong>Nonce words</strong><br />
+				Speakers of English frequently make up words by the addition of 
+				a derivational suffix or a small range of prefixes.&nbsp; We 
+				get, therefore words such as:<br />
+				<em>&nbsp;&nbsp;&nbsp; speakable<br />
+&nbsp;&nbsp;&nbsp; screwability<br />
+&nbsp;&nbsp;&nbsp; framableness<br />
+&nbsp;&nbsp;&nbsp; writingless<br />
+&nbsp;&nbsp;&nbsp; misdecide<br />
+&nbsp;&nbsp;&nbsp; travelful</em><br />
+				<em>&nbsp;&nbsp;&nbsp; unframe<br />
+&nbsp;&nbsp;&nbsp; disharmonise</em><br />
+				and so on, none of which will appear in a dictionary and all of 
+				which are temporary (nonce) introductions.&nbsp; Nonce words are 
+				sometimes referred to as occasionalisms.</li>
+				<li><strong>Barbarisms</strong><br />
+				This term is used by language purists to describe formations 
+				which are disparaged because acceptable and derivationally purer 
+				forms already exist.&nbsp; Some will not become popular but many 
+				so-called barbarisms have already entered the language.&nbsp; 
+				For example:<br />
+&nbsp;&nbsp;&nbsp; <em>orientate</em> is a verb formation already covered by the 
+				verb <em>orient</em><br />
+&nbsp;&nbsp;&nbsp; <em>preventative</em> is an adjective whose meaning is not 
+				distinguishable from <em>preventive</em><br />
+&nbsp;&nbsp;&nbsp; <em>untactful</em> is an unnecessary addition to a language 
+				which already contains <em>tactless</em><br />
+&nbsp;&nbsp;&nbsp; <em>educationalist</em> is not clearly distinguishable from 
+				the current <em>educationist</em><br />
+&nbsp;&nbsp;&nbsp; <em>metrification</em> does not add anything useful not 
+				covered by <em>metrication</em>.&nbsp; In fact, it adds 
+				unnecessary suffixes because there is no verb <em>metrify or 
+				metrificate</em> but <em>metricate</em> certainly exists.<br />
+				and so on.<br />
+				In some cases, these questionable coinages will become the usual 
+				forms, in others, they will die out.<br />
+				As has been pointed out:<br />
+				<span class="style_black"><em>Ultimately, it is general usage, 
+				rather than etymological pedigree, that determines the survival 
+				of a word.</em></span> (Todd &amp; Hancock 1986:71).&nbsp; 
+				(Although they may, of course, mean <em>use</em> rather than <em>
+				usage</em>.)</li>
+				<li><strong>Combining forms</strong><br />
+				When an additional meaning is grafted on to a term by the 
+				addition of a suffix it does not usually change the word class 
+				so cannot be derivational in this sense.&nbsp; The guide to word 
+				formation contains more on this area and there is a list of such 
+				forms linked below.&nbsp; Words such as<br />
+				<em>&nbsp;&nbsp;&nbsp; thermometer<br />
+&nbsp;&nbsp;&nbsp; heliotropic<br />
+&nbsp;&nbsp;&nbsp; Francophone<br />
+&nbsp;&nbsp;&nbsp; herbicide</em><br />
+				are examples of the use of combining form suffixes which do not 
+				change the word class (even if they are appended to recognisable 
+				words at all, which many are not).<br />
+				Combining forms are, especially in academic and scientific 
+				writing, very productive indeed so recent formulations, such as
+				<em>anthropocene</em> (the current geological age) are coined at 
+				will and retain their existence for many years.</li>
+			</ol>
+			<p>For a much more complete list of the semantic functions of 
+			suffixes, see the guide to word formation, linked below.</p>
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="useful" height="133" src="../../images/functions_multiple200.jpg" width="200" /></td>
+					<td class="auto-style2">
+					<h3>Frequency and usefulness</h3>
+					</td>
+				</tr>
+			</table>
+			<p>Some suffixes are simply too constrained in the number of bases 
+			they can be attached to to make them very productive.<br />
+			We can make an adverb from some nouns with the suffixes 
+			<span class="style_black"> <em>wise</em></span> 
+			and <span class="style_black"> <em>wards</em></span> as in, e.g.,<br />
+			<em>&nbsp;&nbsp;&nbsp; crabwise, clockwise, northwards, citywards </em>etc.<br />
+			but the number of possibilities is very limited because of the 
+			infrequency of the resulting adverbs and the small usefulness the 
+			concepts have.</p>
+			<p>However, the adverb forming <span class="style_black"> <em>ly</em></span> is hugely productive in its 
+			ability to produce adverbs from adjectives because the results are 
+			both frequent and useful.&nbsp; It can also attach itself to the 
+			barely limited number of participle adjectives in English.&nbsp; So 
+			we can form, for example:<br />
+&nbsp;<em>&nbsp;&nbsp; stunningly, interestingly, swingingly, boringly, 
+			understandingly, reassuringly</em><br />
+			and so on.&nbsp; We can even make up new adverbs on the spur of the 
+			moment and be understood, for example:<br />
+			<em>&nbsp;&nbsp;&nbsp; She spoke praisingly.</em></p>
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="handcuffs" height="133" src="../../images/handcuffs200.jpg" width="200" /></td>
+					<td class="auto-style2">
+					<h3>Other constraints</h3>
+					</td>
+				</tr>
+			</table>
+			<dl>
+				<dt><strong>phonology</strong></dt>
+				<dd>some morphemes behave along phonological lines.&nbsp; For 
+				example:<br />
+				The verb forming <span class="style_black"><em>ize/ise</em></span> usually attaches to multisyllabic nouns 
+				and adjectives if the stress is not on the final syllable.&nbsp; 
+				So we get, e.g.:<br />
+				<em>&nbsp;&nbsp;&nbsp; random → randomize<br />
+&nbsp;&nbsp;&nbsp; real → realize<br />
+&nbsp;&nbsp;&nbsp; apology → apologize<br />
+				</em>Another verb-making suffix, <span class="style_black"><em>en</em></span>, attaches itself to single 
+				syllable adjectives but only if they end in certain phonemes 
+				(stops, and fricatives):<br />
+				<em>&nbsp;&nbsp;&nbsp; deep → deepen<br />
+&nbsp;&nbsp;&nbsp; light → lighten<br />
+&nbsp;&nbsp;&nbsp; broad → broaden<br />
+&nbsp;&nbsp;&nbsp; deaf → deafen<br />
+				</em>but not<br /><em>&nbsp;&nbsp;&nbsp; clear → *clearen<br />
+&nbsp;&nbsp;&nbsp; high → *highen<br />
+				</em>in fact, we insert a 't' to conform with the phonological 
+				rule and get
+				<em>heighten.<br />
+				</em>This applies to prefixes, too, as we see with the choice 
+				often of <em> <span class="style_black">im</span> </em>rather 
+				than <em> <span class="style_black">in</span> </em>before /m/ 
+				and /p/ and <span class="style_black"><em>ir</em></span> before 
+				/r/.</dd>
+				<dt> <strong>etymology</strong></dt>
+				<dd>The root of a word will often determine what derivational 
+				morpheme is possible.</dd>
+				<dd>For example, the adjective-forming suffix
+				<span class="style_black"><em>ic</em></span> will not attach to 
+				Anglo-Saxon bases but <span class="style_black"><em>en</em></span> 
+				will so we get:<br />
+				<em>&nbsp;&nbsp;&nbsp; vitriolic, metallic, dramatic<br />
+				</em>but<br /><em>&nbsp;&nbsp;&nbsp;
+				woollen, leaden, ashen</em></dd>
+				<dt><strong>meaning</strong></dt>
+				<dd>The prefixes <span class="style_black"><em>un, im, in</em></span> 
+				etc. do not attach to words with negative connotations so we 
+				can't have:<br />
+				<em>&nbsp;&nbsp;&nbsp; *unvile, *impernicious, *undoleful, *unhelpless<br />
+				</em>etc.
+				but we can have<br />
+				<em>&nbsp;&nbsp;&nbsp; unlovely, unappreciated, improper, unhelpful<br />
+				</em>etc.</dd>
+				
+			</dl>
+			<p>Derivational morphemes are dealt with in greater detail in 
+			the guide to word formation, linked below.</p>
+			<hr />
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="teaching" height="166" src="../../images/class_seminar250.jpg" width="250" /></td>
+					<td class="auto-style2">
+					<h2>Teaching implications of productivity and other 
+					constraints</h2>
+					</td>
+				</tr>
+			</table>
+			<br />
+			<table cellpadding="0" cellspacing="0" class="auto-style9">
+				<tr>
+					<td valign="top">
+					<img alt="think" height="60" src="../../../gfx/think60.jpg" width="60" /><a name="1"></a></td>
+					<td class="auto-style2"><span class="style_red"><strong>Task </strong>
+					3</span><span class="style_black">: 
+					Review the sections above on aspects of productivity and the 
+					constraints on word formation with derivational morphemes 
+					and consider for a moment what the implications are for 
+					teaching English.&nbsp; Consider, too, production <em>vs.</em> 
+					comprehension.<br />
+					<a href="#1" onclick="FP_changeProp(/*id*/'teachingimplications',0,'style.visibility','visible')">
+					Then click here</a>.</span></td>
+				</tr>
+			</table>
+			<dl id="teachingimplications" class="style_brown" style="visibility: hidden">
+				<dt><strong>transparency</strong></dt>
+				<dd>When introducing the concepts of word formation in English, 
+				it makes sense to start with those morphemes whose meaning is the 
+				most transparent.&nbsp; They also tend to be the most 
+				productive, of course, and therefore, the most useful.<br />
+				So, start with simple affixes which have a near one-to-one 
+				relationship between form and meaning:<br />
+				Suffixes like: <span class="style_black"><em>able, ness, ity, 
+				ize/ise</em></span> are good candidates.<br />
+				Prefixes such as<span class="style_black"><em> un, re, pre</em></span> 
+				are also good candidates.</dd>
+				<dt><strong>frequency and usefulness</strong></dt>
+				<dd>are considerations to bear in mind when deciding 
+				on the teaching of any lexis and it is sensible to exclude 
+				noun-making suffixes such as <span class="style_black"><em>th</em></span> 
+				and adjective-forming suffixes such as <span class="style_black">
+				<em>esque</em></span> because they are either wholly or nearly 
+				fully unproductive in English.&nbsp; In fact, singling out
+				<span class="style_black"><em>th</em></span> as a noun-former at 
+				all is probably a waste of time.&nbsp; Learners do not need to 
+				know that the noun <em>width</em> is formed from the adjective + 
+				the suffix because the suffix itself is no longer productive.<br />
+				It makes more sense to focus on:<br />
+				Noun-forming suffixes like <span class="style_black"><em>ness, 
+				er, ity, eer, ist</em></span> rather than
+				<span class="style_black"><em>ant, dom, ery, hood</em></span> 
+				etc.<br />
+				Adjective-forming suffixes like <span class="style_black"><em>
+				able, less, ful, ish, ist</em></span> rather than
+				<span class="style_black"><em>ous, ic, ian</em></span>.<br />
+				The adverb-forming <span class="style_black"><em>ly</em></span> 
+				rather than <span class="style_black"><em>wards</em></span> or
+				<span class="style_black"><em>wise</em></span>.<br />
+				The verb-forming <span class="style_black"><em>ise/ize</em></span> 
+				rather than <span class="style_black"><em>fy, en</em></span>.</dd>
+				<dt><strong>constraints</strong></dt>
+				<dd>Phonology and meaning are the two to focus on because 
+				etymology will only be useful in real time for learners with a 
+				narrow range of European first languages.<br />
+				It is, for example, predictable from the syllable number and 
+				stress pattern (two syllables or more, stress not at the end) 
+				that the verbs from<br /><em>&nbsp;&nbsp;&nbsp; computer, brutal, central, economy, 
+				familiar, national, personal<br />
+				</em>etc. will all end in -<span class="style_black"><em>ize</em></span> 
+				or -<span class="style_black"><em>ise</em></span>.<br />
+				The 
+				constraints on the use of <span class="style_black"><em>en</em></span> 
+				in this function are much less easily applied but 
+				phonologically, for example, deriving <em>quiet<span class="style_black">en</span></em> 
+				from <em>quiet</em> is not too challenging once you spot the /t/ 
+				ending and from there, it is a short step to forming <em>
+				tighten, flatten </em>etc.<br />
+				The fact that already-negative adjectives (like <em>ugly, vile, 
+				hateful, odious, helpless, antagonistic</em>) do not take 
+				antonym-making prefixes but positive ones (such as <em>kind, 
+				comfortable, generous, helpful, likeable</em>) do is easy to 
+				grasp and the knowledge will help learners avoid a good deal of 
+				potential error.</dd>
+				<dt><strong>comprehension vs. production</strong></dt>
+				<dd>Armed with a knowledge of the function of common affixes, 
+				learners can significantly increase their receptive lexicon.<br />
+				Production is harder, of course, but opting for the most 
+				productive affixes when speculating on word formation will 
+				usually pay dividends.&nbsp; If you want to make the opposites 
+				of these adjectives, what would you choose?<br />
+				<em>&nbsp;&nbsp;&nbsp; cut, read, quiet, easy, lived-in, organised, classified, 
+				worried</em><br />
+				Participle adjectives very frequently form their opposites with 
+				the simple <span class="style_black"><em>un</em></span>.<br />
+				Nouns formed from adjectives are overwhelmingly made with
+				<span class="style_black"><em>ness</em></span> (and less 
+				frequently <span class="style_black"><em>ity</em></span>) so 
+				that's the way to bet if you want to form nouns from adjectives 
+				from, e.g.,<br />
+				<em>&nbsp;&nbsp;&nbsp; delightful, malicious, rocky, thrifty, dark, clever</em><br />
+				then the natural selection is <em>ness</em> and you'll be right 
+				nearly all the time.<br />
+				If the adjective ends in <span class="style_black"><em>able</em></span>, 
+				opt for <span class="style_black"><em>ity</em></span>:<br />
+				<em>&nbsp;&nbsp;&nbsp; readable, drinkable, editable, pronounceable, describable
+				</em>etc.</dd>
+			</dl>
+			<hr />
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="rainbow" height="166" src="../../images/rainbow250.jpg" width="250" /></td>
+					<td class="auto-style2">
+					<h2>Inflexional morphemes</h2>
+					</td>
+				</tr>
+			</table>
+			<p>In English we can denote a number of grammatical constructions by 
+			using inflexional morphemes.&nbsp; We usually do this by changing 
+			the ending but, irregularly, we can also change the internal 
+			characteristic of the lexeme (a process called mutation or ablaut 
+			when it affects the vowel).&nbsp; Inflexional morphemes always, in 
+			English, follow derivational morphemes.&nbsp; We get, therefore, 
+			e.g.:<br />
+&nbsp;&nbsp;&nbsp; <em>nation+al+ise+d</em><br />
+			not<br />
+&nbsp;&nbsp;&nbsp; <em>nation+al+d+ise</em><br />
+			Inflexional morphemes include:</p>
+			<ol>
+				<li><strong>Tense</strong>:<br />
+				We saw above that the <span class="style_black"><em>-ed/-d</em></span> 
+				morpheme signals past tense but it also signals a past 
+				participle for regular verbs:<br />
+				<em>&nbsp;&nbsp;&nbsp; talk</em> → <em>talk<span class="style_black">ed</span></em><br />
+				<em>&nbsp;&nbsp;&nbsp; hope</em> → <em>hop<span class="style_black">ed</span></em><br />
+				and for some irregular verbs the past participle is also marked 
+				by a morpheme addition<br />
+				<em>&nbsp;&nbsp;&nbsp; forgot</em> → <em>forgot<span class="style_black">ten</span></em><br />
+				<em>&nbsp;&nbsp;&nbsp; broke</em> → <em>brok<span class="style_black">en</span></em><br />
+				Internal changes 
+				(mutations) are also morphemic but what usually occurs is that one bound 
+				morpheme is altered and becomes a slightly different bound 
+				morpheme as in, e.g.<br />
+				<em>&nbsp;&nbsp;&nbsp; understand → understood<br />
+				&nbsp;&nbsp;&nbsp; behold → beheld</em><br />
+				English is unusual among European languages in 
+				having only one past-tense form to apply to all persons.&nbsp; 
+				Most other languages in this family use different endings for 
+				most of the persons and number.<br />
+				It is also unusual in often having the same form for the past 
+				tense and the past participle.&nbsp; Other languages, such as 
+				Greek, distinguish the forms.</li>
+				<li><strong>Aspect</strong>:<br />
+				English signals progressive and other aspects by changes to the 
+				verb:<br />
+				<em>&nbsp;&nbsp;&nbsp; go, going, gone<br />
+				</em>Again, English is very limited in this respect having only 
+				one form of the past participle and only one of the -<em>ing</em> 
+				form.&nbsp; The -<em>ing</em> form, incidentally, has no irregularities.&nbsp; 
+				None.</li>
+				<li><strong>Person</strong>:<br />
+				Apart from the truly irregular verb <em>be</em>, English only 
+				signals person with the third-person <span class="style_black">
+				<em>-s</em></span> morpheme (and then only in the singular):<br />
+				<em>&nbsp;&nbsp;&nbsp; speak</em> → <em>speak<span class="style_black">s</span></em><br />
+				<em>&nbsp;&nbsp;&nbsp; hang</em> → <em>hang<span class="style_black">s<br />
+				</span></em>By European language 
+				standards, this is a very limited range.&nbsp; In some other European 
+				languages, for example, the translation works like this:<table cellpadding="3" cellspacing="0" class="tableblueborder" style="width: 90%">
+					<tr class="style_black">
+						<td class="auto-style72" style="width: 16%">English</td>
+						<td class="auto-style71" style="width: 16%">French</td>
+						<td class="auto-style71" style="width: 16%">German</td>
+						<td class="auto-style71" style="width: 17%">Polish</td>
+						<td class="auto-style74" style="width: 17%">Estonian</td>
+						<td class="auto-style74" style="width: 17%">Italian</td>
+					</tr>
+					<tr>
+						<td class="auto-style73" style="width: 16%"><em>I go<br />
+						you go<br />
+						she go<span class="style_black"><strong>es</strong></span><br />
+						we go<br />
+						they go</em></td>
+						<td class="auto-style59" style="width: 16%"><em>je vais<br />
+						tu vas<br />
+						elle va<br />
+						nous allons<br />
+						ils vont</em></td>
+						<td class="auto-style59" style="width: 16%"><em>ich gehe<br />
+						du gehst / Sie gehen<br />
+						sie geht<br />
+						wir gehen<br />
+						sie gehen</em></td>
+						<td class="auto-style59" style="width: 17%"><em>idę<br />
+						ty idź<br />
+						ona idzie<br />
+						idziemy<br />
+						idą</em></td>
+						<td class="auto-style75" style="width: 17%"><em>ma lähen<br />
+						sa lähed<br />
+						ta läheb<br />
+						me läheme<br />
+						nad lähevad</em></td>
+						<td class="auto-style75" style="width: 17%"><em>io vado<br />
+						</em><em>tu vai<br />
+						lei va<br />
+						andiamo<br />
+						vanno</em></td>
+					</tr>
+				</table>
+				This is not universal and, for example, all three Scandinavian 
+				languages (Norwegian, Swedish and Danish) have the same form for 
+				all the verbs in all persons (<em>går</em>).<br />
+				For this reason, many languages, such as Greek and Italian, 
+				routinely drop the pronoun because the person is signalled by 
+				the verb ending.&nbsp; The term for these languages is <strong>
+				pro-drop</strong> incidentally, and there is more on that in the 
+				guide to types of languages, linked below.</li>
+				<li><strong>Number</strong>:<br />
+				Although there are some irregularities, English uses the <em>
+				<span class="style_black">s/es</span> </em>morpheme to signal the 
+				plural.<br />
+				<em>&nbsp;&nbsp;&nbsp; class</em> → <em>class<span class="style_black">es</span></em><br />
+				<em>&nbsp;&nbsp;&nbsp; house</em> → <em>house<span class="style_black">s</span></em><br />
+				Almost all nouns function this way in English which is a simple 
+				system in comparison to many other languages (and more complex 
+				than many which do not signal the difference between singular 
+				and plural at all).</li>
+				<li><strong>Adjectives</strong>:<br />
+				English uses morphemic addition to change some adjectives from 
+				absolute to 
+				comparative or superlative:<br />
+				<em>&nbsp;&nbsp;&nbsp; long</em> → <em>long<span class="style_black">er</span></em><br />
+				<em>&nbsp;&nbsp;&nbsp; small</em> → <em>small<span class="style_black">est</span></em><br />
+				The morpheme <span class="style_black"><em>most</em></span> can also act as a suffix 
+				carrying a similar meaning of towards the extreme in words like <em>nether<span class="style_black">most</span>, upper<span class="style_black">most</span>, 
+				hind<span class="style_black">most</span></em> 
+				etc.&nbsp; The morpheme <span class="style_black"><em>more</em></span> 
+				can't do that and the suffix <span class="style_black"><em>most</em></span> 
+				is now unproductive.<br />
+				The added complication in English is that some adjectives cannot 
+				take the inflexion at all so we do not allow, e.g., <em>boredest</em> 
+				or <em>beautifuller</em>.&nbsp; The rules for when we inflect 
+				and when we use the periphrastic form are quite complex, in 
+				fact.<br />
+				Other languages are often simpler in this respect.&nbsp; Most 
+				Romance languages, French, Spanish, Romanian, Portuguese etc. 
+				employ the periphrastic form and some, such as German, usually employ 
+				only the inflected form (although the periphrastic form is 
+				available), others, Scandinavian languages and some Slavic 
+				languages, for example, work a little like English.<br />
+				Adjectives in English remain unchanged, whatever case, gender 
+				and number they are associated with.&nbsp; Other languages will 
+				often inflect the adjective to show case, gender and number.</li>
+				<li><strong>Case</strong>:<br />
+				Many languages, which take advantage of morphemes to signal 
+				case (nominative, accusative, dative, genitive, locative, 
+				ergative etc.) alter the nouns and other elements to show this.&nbsp; 
+				English generally does not do this with content words but has a 
+				slightly complex pronoun and determiner system which sometimes radically alters a morpheme to show case and 
+				sometimes simply adjusts it slightly:<table cellpadding="3" cellspacing="0" class="tableblueborder" style="width: 50%">
+					<tr class="style_black">
+						<td class="auto-style72" style="width: 16%">Nominative 
+						(subject)</td>
+						<td class="auto-style71" style="width: 16%">Accusative 
+						(object)</td>
+						<td class="auto-style71" style="width: 16%">Genitive 
+						(possessive)</td>
+						<td class="auto-style71" style="width: 17%">Genitive 
+						pronoun</td>
+					</tr>
+					<tr>
+						<td class="auto-style73" style="width: 16%" valign="top">
+						<em>I<br />
+						you<br />
+						she<br />
+						he<br />
+						they<br />
+						who</em></td>
+						<td class="auto-style59" style="width: 16%" valign="top">
+						<em>me<br />
+						you<br />
+						her<br />
+						him<br />
+						them<br />
+						whom</em></td>
+						<td class="auto-style59" style="width: 16%" valign="top">
+						<em>my<br />
+						your<br />
+						her<br />
+						his<br />
+						their<br />
+						whose</em></td>
+						<td class="auto-style59" style="width: 17%" valign="top">
+						<em>mine<br />
+						yours<br />
+						hers<br />
+						his<br />
+						theirs<br />
+						</em></td>
+					</tr>
+				</table>
+				and so on.&nbsp; A full list is available in the guide to 
+				personal pronouns.<br />
+				English also deploys the <span class="style_black"><em>'s</em></span> 
+				morpheme for the genitive:<br />
+				<em>&nbsp;&nbsp;&nbsp; John<span class="style_black">'s</span>, the dog<span class="style_black">'s</span>, the ship<span class="style_black">'s</span>, the government<span class="style_black">'s<br />
+				</span></em>The fact that English has two genitive structures (<em>the 
+				government's policy</em> vs. <em>the policy of the government</em>, 
+				for example) is an added complication which leads to a good deal 
+				of unnatural language in learners and some error.</li>
+			</ol>
+			<p>The technical term for the way in which words can have their 
+			grammatical function altered by changes to the morphology is <strong>accidence</strong>, incidentally.</p>
+			<p>Old English had many more (and much more complex) inflexions than Modern 
+			English has retained.&nbsp; The loss of inflexion is one of the 
+			most important changes to have occurred in the language.&nbsp; (As a 
+			matter of simple interest, Old English was made even more 
+			complicated by having a separate category for two people.&nbsp; So 
+			we had <em>ic</em> (<em>I</em>), <em>we</em> (<em>we</em>) and <em>
+			wit</em> (<em>we two</em>) for example and these changed in the 
+			accusative, dative and genitive, rather like modern German pronouns 
+			alter.)<br />
+			Many other languages, such as German, Polish, Finnish, and French 
+			deploy a much wider range of suffixes to denote number, person, case 
+			and gender.&nbsp; Other languages, such as the Chinese languages are 
+			even more limited than English in their use of inflexions and suffixation.</p>
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="supplement" height="133" src="../../images/pills_a200.jpg" width="200" /></td>
+					<td class="auto-style2">
+					<h3>Suppletion<br />
+					(n. /səˈpliːʃᵊn/)</h3>
+					</td>
+				</tr>
+			</table>
+			<p>Occasionally, we come across a form which is clearly not derived 
+			from what we would expect.&nbsp; For example, the words <em>larger</em> 
+			and <em>largest</em> are clearly connected to and derived from the 
+			base form <em>large</em> but that is not the case with the words <em>
+			worse</em> and <em>worst</em> acting as the comparative and 
+			superlative forms of the word <em>bad</em>.<br />
+			What we are dealing with is suppletion and the result is called a 
+			suppletive form.&nbsp; It refers to the fact that the forms are 
+			phonemically and (sometimes) etymologically distinct.&nbsp; The 
+			origin of the word <em>bad</em> is somewhat obscure but the words
+			<em>worse</em> and <em>worst</em> are traceable to Old English 
+			forms.<br />
+			Suppletion may be complete as in the example of <em>bad-worse</em> 
+			in which the words share no letters or sounds at all or it may be 
+			quite weak as in the case of <em>five-fifth</em> where the words are 
+			derived from the same root but the pronunciation has been altered so 
+			that the spoken forms may not be recognised as connected at all.<br />
+			Other common examples of suppletion in English are:</p>
+			<dl>
+				<dt><em>go, went gone</em></dt>
+				<dd>The past tense of this verb is clearly unconnected from the 
+				base form and the past participle.&nbsp; The latter two come 
+				from the Old English <em>gan</em> and there are cognates in most 
+				Germanic languages, <em>gehen</em> in German, <em>gaan</em> in 
+				Dutch and so on.<br />
+				The past tense of the verb, however, is derived from the 
+				irregular past tense of the verb <em>wend</em> and that verb has 
+				now taken on the regular past tense forms.</dd>
+				<dt><em>three, third</em></dt>
+				<dd>This is a weaker example because some letters and sounds are 
+				shared but hearing the words will not obviously alert people to 
+				their connection.</dd>
+				<dt><em>one, first; two, second</em></dt>
+				<dd>are both examples of much stronger suppletion because the 
+				word <em>first</em> derives from a different root from the word
+				<em>one</em> (although both are traceable to Old English) and 
+				the word <em>second</em> is an import <em>via</em> French from 
+				Latin and not connected with the numeral <em>two</em> at all.</dd>
+				<dt><em>far, further, farther, furthest, farthest</em></dt>
+				<dd>are all examples of quite weak suppletion because they all 
+				derive from the same Old English root.</dd>
+				<dt><em>be, am, is, are, was, were</em></dt>
+				<dd>is an example of really complex suppletion.&nbsp; The roots 
+				are traceable but all come from a different set of words in Old 
+				English and Proto-Indo European.&nbsp; It is a tangle of 
+				semantically connected forms with no discernible spelling and 
+				pronunciation commonalities.&nbsp; The word <em>be</em> derives 
+				from the Old English <em>beon</em> (<em>exist</em>), the word
+				<em>am</em> from <em>eom</em>, the word <em>are</em> from the 
+				plural form of <em>beon</em> and so on.&nbsp; The past tenses are 
+				traceable to the verb <em>wesan</em> (meaning <em>remain</em>).&nbsp; 
+				The verb has eight distinct parts in Modern English derived from 
+				at least two Old English dialects: <em>be, am, is, are, was, 
+				were, being, been</em>.</dd>
+				<dt><em>good, better, best</em></dt>
+				<dd>The first of these is traceable to Old English <em>gōd</em> 
+				but the two other forms come from a different source (Old 
+				English <em>beste</em>).</dd>
+				<dt><em>person, people</em></dt>
+				<dd>The first of these derives from the Old French <em>persone</em> 
+				and the latter from Old French <em>peupel</em> (itself from 
+				Latin <em>populus</em>).&nbsp; The plural <em>persons</em> is 
+				rare and formal.</dd>
+				<dt><em>cow, cattle</em></dt>
+				<dd>derive from separate roots but the latter is considered a 
+				plural collective version of the former.&nbsp; Other forms such 
+				as <em>ox-oxen</em> are referred to as suppletive affixes 
+				because they do not follow the normal morphological rules for 
+				making plurals.</dd>
+				<dt><em>wreak, wrought</em></dt>
+				<dd>This is a real oddity because <em>wrought</em> was 
+				originally the past tense of <em>work</em> (which is now regular 
+				in English).&nbsp; It still exists as a participle adjective in, 
+				e.g., <em>wrought iron</em>.&nbsp; The past forms of <em>wreak</em> 
+				are in principle regular (<em>wreaked, wreaked</em>) but it has 
+				become common to see <em>wrought</em> used as the past of that 
+				verb, perhaps by analogy to <em>teach</em> and <em>seek</em>.</dd>
+			</dl>
+			<hr />
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="prefix" height="166" src="../../images/prefix250.jpg" width="250" /></td>
+					<td class="auto-style2">
+					<h2>Prefixation</h2>
+					</td>
+				</tr>
+			</table>
+			<p>For a much more detailed look at prefixes and what they do, see 
+			the guide to word formation.&nbsp; Here, we will simply list some of 
+			the categories into which prefixes fall and the sorts of things the 
+			morphemes do.&nbsp; Nearly all prefixes are bound morphemes.<br />
+			Free morphemes which may look like prefixes are usually cases of 
+			compounding so, for example, the morpheme <em>house</em> in <em>
+			housemaster</em> is not considered here as an example of prefixing.<br />
+			See the guide to compounding for more on that, linked below.<br />
+			Prefixes come in three main sorts of which the second is the most 
+			productive by far:</p>
+			<ol>
+				<li><strong>derivational prefixes</strong><br />
+				are quite rare in English and almost wholly unproductive.&nbsp; 
+				In earlier forms of English they were very productive and many 
+				modern words such as <em>become, aforesaid, embolden </em>etc. 
+				can be traced to earlier prefixation.<br />
+				They include, e.g.,<ol class="auto-style61">
+					<li><em>en</em>-, <em>em</em>- or <em>im-</em> forming verbs as in:<br />
+&nbsp;<em>&nbsp;&nbsp; envisage<br />
+&nbsp;&nbsp;&nbsp; enslave<br />
+&nbsp;&nbsp;&nbsp; embrace<br />
+&nbsp;&nbsp;&nbsp; embroil<br />
+&nbsp;&nbsp;&nbsp; imprison</em></li>
+					<li><em>a</em>- forming adjectives such as<br />
+					<em>&nbsp;&nbsp;&nbsp; ablaze<br />
+&nbsp;&nbsp;&nbsp; amaze<br />
+&nbsp;&nbsp;&nbsp; asleep</em></li>
+					<li><em>be</em>- forming verbs such as<br />
+					<em>&nbsp;&nbsp;&nbsp; bewitch<br />
+&nbsp;&nbsp;&nbsp; bemire<br />
+&nbsp;&nbsp;&nbsp; bedevil<br />
+&nbsp;&nbsp;&nbsp; besmirch</em></li>
+				</ol>
+				</li>
+				<li><strong>meaning-converting prefixes</strong><br />
+				which alter the meaning, but not word class of many words.<br />
+				A full(er) list is available from the link below and in the 
+				guide to word formation.&nbsp; The list includes terms denoting:<ol class="auto-style61">
+					<li>attitude: <em>pseudoscience, dysfunctional </em>etc.</li>
+					<li>negative senses: <em>unbalanced, disbelieve, 
+					irresponsible, misuse</em> etc.</li>
+					<li>number: <em>monoglot, bipedal </em>etc.</li>
+					<li>reversal: <em>undo, decouple </em>etc.</li>
+					<li>location: <em>submarine, superstructure</em> etc.</li>
+					<li>temporal: <em>prewar, proto-language</em> etc.</li>
+					<li>degree or size: <em>supermarket, overdone</em> etc.</li>
+				</ol>
+				</li>
+				<li><strong>combining forms</strong><br />
+				which add a layer of meaning without change the meaning of the 
+				base.&nbsp; These include many scientific forms such as<br />
+&nbsp;&nbsp;&nbsp; <em>biochemistry<br />
+&nbsp;&nbsp;&nbsp; hydroelectric<br />
+&nbsp;&nbsp;&nbsp; petrochemical<br />
+				</em>Some words consist purely of combining forms with two bound 
+				morphemes.&nbsp; Examples include<br /><em>&nbsp;&nbsp;&nbsp; democrat<br />
+&nbsp;&nbsp;&nbsp; xenophobe<br />
+&nbsp;&nbsp;&nbsp; petrology</em></li>
+			</ol>
+			<hr /><br />
+		<table id="istrainingnav" cellpadding="0" cellspacing="0" class="tableblueborder" >
+			<tr>
+				<td class="auto-style52" colspan="2">Related guides</td>
+			</tr>
+			<tr>
+				<td class="auto-style54">
+			<a href="../discourse/semantics.html">semantics</a></td>
+				<td class="auto-style56">for more on meaning</td>
+			</tr>
+			<tr>
+				<td class="auto-style54">
+			<a href="../../common/types_of_languages.html">types of languages</a></td>
+				<td class="auto-style58">for a guide to how other languages do 
+				things differently</td>
+			</tr>
+			<tr>
+				<td class="auto-style49">
+				<a href="../../../documents/ELT_Concourse_prefixes_suffixes.pdf" target="_blank">
+				prefixes and suffixes</a></td>
+				<td class="auto-style55">a PDF-formatted list of prefixes and 
+				suffixes in English</td>
+			</tr>
+			<tr>
+				<td class="auto-style49">
+				<a href="../../../documents/ELT_Concourse_combining_forms.pdf" target="_blank">
+				combining forms</a></td>
+				<td class="auto-style55">a PDF formatted list of the most common 
+				combining forms in English</td>
+			</tr>
+			<tr>
+				<td class="auto-style54"> 
+						<a href="compounding.html">compounding</a></td>
+				<td class="auto-style58">for how this type of morpheme 
+				manipulation works</td>
+			</tr>
+			<tr>
+				<td class="auto-style53"> 
+			<a href="word_formation.html">word formation</a></td>
+				<td class="auto-style55">for more on how morphemes combine in 
+				English with links to PDF lists of affixes and consideration of 
+				combining forms</td>
+			</tr>
+			<tr>
+				<td class="auto-style53"> 
+				<a href="../teaching/teaching_word_formation.html">teaching word 
+				formation</a></td>
+				<td class="auto-style55">for a guide containing some 
+				consideration of how major language groups handle affixation and 
+				compounding</td>
+			</tr>
+			</table>
+			<br />
+			<hr />
+			<p class="auto-style25">References:<br />
+			There's rather a lot in this area which is a much-researched field 
+			and much of it is not relevant to teaching.<br />
+			Crystal, D, 1987, <em>The Cambridge Encyclopedia of Language</em>, 
+			Cambridge: Cambridge University Press<br />
+			Lieber, R, 2009, <em>Introducing Morphology</em>, Cambridge: 
+			Cambridge University Press<br />Todd, L &amp; Hancock, I, 1986, <em>International English Usage</em>, 
+			Beckenham: Croom Helm</p>
+			<hr />
+			</div>
+			<!-- #EndEditable -->
+		<!-- End Content -->
+	
+	<!-- Begin Footer -->
+	<div id="footer">
+		<p>
+		<a href="../../../contact.html">Contact</a> |
+		<a href="../../../faq.html">FAQs</a> |
+		<a href="../../../copyright_notice.html">Copyright notice</a> |
+		<a href="../../../documents/ELT_Concourse_Charter.pdf" target="_blank"> ELT Concourse charter</a> |
+		<a href="../../../disclaimer.html"> Disclaimer and Privacy statement </a>|
+		<a href="../../../search_the_site.html">Search <strong>
+		ELT Concourse</strong></a></p>
+	</div>
+	<!-- End Footer -->
+
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

@@ -1,0 +1,2723 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- #BeginTemplate "../../../styles/dwt/training.dwt" -->
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta http-equiv="Content-Language" content="en-gb" />
+<!-- #BeginEditable "doctitle" -->
+<title>ELT Concourse: ambiguity</title>
+<style type="text/css">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.auto-style1 {
+	font-style: normal;
+}
+.auto-style56 {
+	padding-left: 5px;
+}
+.auto-style50 {
+	border-left: medium none #666666;
+	border-right: medium none #666666;
+	border-top: medium none #666666;
+	border-bottom: 1px solid #666666;
+	padding-left: 2px;
+}
+.auto-style49 {
+	border-left: medium none #666666;
+	border-right: 1px solid #666666;
+	border-top: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	text-align: left;
+}
+.auto-style55 {
+	border-left: 1px solid #666666;
+	border-right: medium none #666666;
+	border-top: medium none #666666;
+	border-bottom: 1px solid #666666;
+	padding-left: 3px;
+	padding-right: 2px;
+}
+.auto-style53 {
+	border-left: 1px solid #666666;
+	border-right: medium none #666666;
+	border-top: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	padding-left: 3px;
+	padding-right: 2px;
+}
+.auto-style90 {
+	border-left: 1px solid #666666;
+	border-right: 1px solid #666666;
+	border-top: medium none #666666;
+	border-bottom: 1px solid #666666;
+	background-color: #F5F5F5;
+}
+.auto-style91 {
+	border: 1px solid #666666;
+}
+.auto-style92 {
+	border-left: medium none #666666;
+	border-right: 1px solid #666666;
+	border-top: medium none #666666;
+	border-bottom: 1px solid #666666;
+	background-color: #F5F5F5;
+}
+.auto-style93 {
+	border-left: medium none #666666;
+	border-right: 1px solid #666666;
+	border-top: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+}
+.auto-style94 {
+	border-left: 1px solid #666666;
+	border-right: medium none #666666;
+	border-top: medium none #666666;
+	border-bottom: 1px solid #666666;
+	background-color: #F5F5F5;
+}
+.auto-style95 {
+	border-left: 1px solid #666666;
+	border-right: medium none #666666;
+	border-top: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+}
+.auto-style96 {
+	border-left: medium none #666666;
+	border-right: 1px solid #666666;
+	border-top: 1px solid #666666;
+	border-bottom: medium none #666666;
+}
+.auto-style97 {
+	border-left: 1px solid #666666;
+	border-right: 1px solid #666666;
+	border-top: 1px solid #666666;
+	border-bottom: medium none #666666;
+}
+.auto-style98 {
+	border-left: 1px solid #666666;
+	border-right: medium none #666666;
+	border-top: 1px solid #666666;
+	border-bottom: medium none #666666;
+}
+.auto-style99 {
+	text-align: center;
+	color: #000000;
+}
+.auto-style100 {
+	list-style-type: lower-alpha;
+}
+.auto-style101 {
+	list-style-type: lower-roman;
+}
+.auto-style17 {
+	margin-left: 40px;
+}
+.auto-style18 {
+	text-align: center;
+}
+.auto-style19 {
+	text-align: center;
+	border-left: 3px solid #000000;
+	border-left-style: double;
+}
+
+
+
+
+
+
+
+
+
+
+
+.auto-style89 {
+	border-left: 1px solid #666666;
+	border-right: 1px none #666666;
+	border-top: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+}
+.auto-style104 {
+	border-left: 1px none #666666;
+	border-right: 1px solid #666666;
+	border-top: 1px none #666666;
+	border-bottom: 1px solid #666666;
+}
+.auto-style106 {
+	border-left: 1px solid #666666;
+	border-right: 1px solid #666666;
+	border-top: medium none #666666;
+	border-bottom: medium none #666666;
+	text-align: center;
+}
+.auto-style107 {
+	list-style-type: lower-roman;
+	border-left: 1px solid #666666;
+	border-right: medium none #666666;
+	border-top: 1px solid #666666;
+	border-bottom: medium none #666666;
+}
+.auto-style108 {
+	list-style-type: lower-alpha;
+	border-left-color: #666666;
+	border-left-width: 1px;
+	border-right-color: #666666;
+	border-right-width: 1px;
+	border-top-color: #666666;
+	border-top-width: 1px;
+	border-bottom: medium none #666666;
+}
+.auto-style110 {
+	border-left: 1px solid #666666;
+	border-right: medium none #666666;
+	border-top: 1px solid #666666;
+	border-bottom: 1px none #666666;
+}
+.auto-style111 {
+	border-left: medium none #000080;
+	border-right: 1px solid #666666;
+	border-top: 1px solid #666666;
+	border-bottom: 1px none #666666;
+}
+.auto-style114 {
+	border-left: 1px solid #666666;
+	border-right: 1px none #666666;
+	border-top: medium none #666666;
+	border-bottom: medium none #666666;
+	text-align: center;
+}
+.auto-style115 {
+	border-left: medium none #000080;
+	border-right: 1px solid #666666;
+	border-top: medium none #666666;
+	border-bottom: 1px solid #666666;
+}
+.auto-style116 {
+	border-left: medium none #000080;
+	border-right: 1px none #666666;
+	border-top: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+}
+.auto-style117 {
+	border-left: medium none #000080;
+	border-right: 1px solid #666666;
+	border-top: 1px solid #666666;
+	border-bottom: medium none #666666;
+}
+.auto-style118 {
+	border-left: 1px solid #666666;
+	border-right: 1px none #666666;
+	border-top: medium none #666666;
+	border-bottom: 1px solid #666666;
+}
+.auto-style119 {
+	border-left: 1px solid #666666;
+	border-right: medium none #666666;
+	border-top: medium none #666666;
+	border-bottom: 1px solid #666666;
+}
+.auto-style128 {
+	border-left: 1px solid #666666;
+	border-right: 1px solid #666666;
+	border-top: 1px solid #666666;
+	border-bottom: 1px none #666666;
+}
+.auto-style132 {
+	border-left: medium none #666666;
+	border-right: 1px solid #666666;
+	border-top: 1px solid #666666;
+	border-bottom: 1px none #666666;
+}
+.auto-style133 {
+	border-top-style: solid;
+	border-top-width: 1px;
+}
+.auto-style134 {
+	text-align: center;
+	border-top-style: solid;
+	border-top-width: 1px;
+}
+.auto-style135 {
+	text-align: center;
+	border-left: 3px double #000000;
+	border-top-style: solid;
+	border-top-width: 1px;
+}
+.auto-style136 {
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+.auto-style137 {
+	text-align: center;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+.auto-style138 {
+	text-align: center;
+	border-left: 3px double #000000;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+.auto-style139 {
+	text-align: center;
+	border-left: 3px double #000000;
+	background-color: #F5F5F5;
+}
+.auto-style140 {
+	text-align: center;
+	border-left: 3px double #000000;
+	border-top-style: solid;
+	border-top-width: 1px;
+	background-color: #F5F5F5;
+}
+.auto-style141 {
+	text-align: center;
+	border-left: 3px double #000000;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	background-color: #F5F5F5;
+}
+.auto-style88 {
+	border: 1px solid #666666;
+	list-style-type: lower-roman;
+}
+.auto-style144 {
+	border-left: medium none #666666;
+	border-right: 1px solid #666666;
+	border-top: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	list-style-type: lower-roman;
+}
+.auto-style145 {
+	border-left: 1px solid #666666;
+	border-right: medium none #666666;
+	border-top: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	list-style-type: lower-roman;
+}
+.auto-style146 {
+	border-left: medium none #666666;
+	border-right: 1px solid #666666;
+	border-top: 1px solid #666666;
+	border-bottom: medium none #666666;
+	list-style-type: lower-roman;
+}
+.auto-style147 {
+	border-left: 1px solid #666666;
+	border-right: 1px solid #666666;
+	border-top: 1px solid #666666;
+	border-bottom: medium none #666666;
+	list-style-type: lower-roman;
+}
+.auto-style148 {
+	border-left: medium none #666666;
+	border-right: 1px solid #666666;
+	border-top: medium none #666666;
+	border-bottom: 1px solid #666666;
+	list-style-type: lower-roman;
+}
+.auto-style149 {
+	border-left: 1px solid #666666;
+	border-right: 1px solid #666666;
+	border-top: medium none #666666;
+	border-bottom: 1px solid #666666;
+	list-style-type: lower-roman;
+}
+.auto-style150 {
+	border-left: 1px solid #666666;
+	border-right: medium none #666666;
+	border-top: medium none #666666;
+	border-bottom: 1px solid #666666;
+	list-style-type: lower-roman;
+}
+</style>
+<meta content="ELT Concourse English language analysis and teaching guides. Ambiguity in English" name="description" />
+<script type="text/javascript">
+<!--
+function FP_changeProp() {//v1.0
+ var args=arguments,d=document,i,j,id=args[0],o=FP_getObjectByID(id),s,ao,v,x;
+ d.$cpe=new Array(); if(o) for(i=2; i<args.length; i+=2) { v=args[i+1]; s="o"; 
+ ao=args[i].split("."); for(j=0; j<ao.length; j++) { s+="."+ao[j]; if(null==eval(s)) { 
+  s=null; break; } } x=new Object; x.o=o; x.n=new Array(); x.v=new Array();
+ x.n[x.n.length]=s; eval("x.v[x.v.length]="+s); d.$cpe[d.$cpe.length]=x;
+ if(s) eval(s+"=v"); }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+// -->
+</script>
+<!-- #EndEditable -->
+<meta content="language analysis,eltconcourse,English grammar,free English language teaching materials,CELTA,Delta,language guides,free Delta training,free CELTA training,free ELT Training materials,teacher training,ELT,learning English,teaching English,English Language Teaching,ESOL,EFL,English as a Foreign Language" name="keywords" />
+<link href="../../../styles/mainstyle.css" rel="stylesheet" type="text/css" />
+<link href="../../../styles/training.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+</style>
+</head>
+
+<body>
+	<!-- Begin Masthead -->
+	<div id="masthead" >
+		<table style="width: 100%; border-bottom: #000080 solid">
+			<tr>
+				<td style="width: 135px">
+				<img alt="logo" height="49" src="../../../gfx/logo.png" width="78" /></td>
+				<td valign="bottom">
+				<span class="orangexxlargebold">ELT </span>
+				<span class="bluexxlargebold">Concourse teacher training</span></td>
+			</tr>
+		</table>
+	</div>
+	<!-- End Masthead -->
+	<!-- Begin Content -->
+			<!-- Begin Sidebar -->
+		<div id="sidebartt">
+			<ul>
+				<li><a href="../../../index.html">ELT Concourse home</a></li>
+				<li><a href="../../../a-z_index.html">A-Z site index</a></li>
+				<li><a href="../../training_index.html">Teacher training index</a></li>
+				<li><a href="../../../development/development_index.html">Teacher development</a></li>
+				<li><a href="../../../teachers/teachers.html">For teachers</a></li>
+				<li><a href="../../trainers/trainers_index.html">For trainers</a></li>
+				<li>
+				<a href="../../../academic_management/academic_management_index.html">For managers</a></li>
+				<li><a href="../../../learners/learners.html">For learners</a></li>
+				<li><a href="../../common/about_language.html">About language</a></li>
+				<li><a href="../../../questions/questions.html">Language questions</a></li>
+				<li class="whiteback">Other areas</li>
+				<li><a href="../indexes_is/eap_index_is.html">Academic English</a></li>
+				<li><a href="../indexes_is/be_index_is.html">Business English</a></li>
+				<li><a href="../../entering/introduction_to_elt.html">Entering ELT</a></li>
+				<li><a href="../../courses/courses_index.html">Courses index</a></li>
+				<li><a href="../../courses/basic/introduction_basic.html">Basic ELT course</a></li>
+				<li><a href="../../tkt/tkt_index.html">TKT</a></li>
+				<li><a href="../../bridge/bridge_index.html">The Bridge</a></li>
+				<li><a href="../../courses/lacourse/index_la_course.html">Language analysis</a></li>
+				<li>
+				<a href="../../courses/training_to_train/training_to_train_index.html">Training to train</a></li>
+				<li><a href="../../courses/transcription1/transcription.html">Transcription</a></li>
+				<li><a href="../../glossaries/glossary_index.html">Glossaries</a></li>
+				<li><a href="../../../articles/articles.html">Articles</a></li>
+			</ul>
+		</div>
+		<!-- End Sidebar -->
+		<!-- Begin Content -->
+		
+		<div id="toppicture" style="text-align: left; background-color: white; padding: 0px; margin-left: 140px;">
+				<img alt="Concourse 2" height="207" src="../../../images/concourse2blue.jpg" width="310" /></div>
+		
+			<!-- #BeginEditable "content" -->
+		
+			<!-- #BeginEditable "content" -->
+		
+		<div id="content">
+	
+			<h1>Ambiguity</h1>
+			<p>
+			<img alt="escher" height="207" src="../../images/ambiguity_cube310.jpg" width="310" /></p>
+			<p>
+			This is quite a long guide with separate sections, not necessarily 
+			connected or following on from each other.<br />
+		If you are here for the first time, 
+			and just want to get an overview of the scope of ambiguity and the 
+			various classifications we can use, work through it 
+		sequentially but if you are returning to check something, here's a list 
+		of the contents to take you to its various sections.<br />
+			Links <strong>in bold</strong> are to major sections, others lead to 
+			subsections.<br />
+		Clicking on <span class="style_red">-top-</span> at the end of each section will 
+		bring you back to this menu.<a name="top"></a></p>
+			<table id="istrainingnav0" cellspacing="0" class="tableblueborder" cellpadding="0">
+				<tr>
+					<td class="auto-style148">
+					<a href="#sources"><strong>Sources of ambiguity</strong></a></td>
+					<td class="auto-style149">
+					<a href="#lexical"><strong>Lexical ambiguity</strong></a></td>
+					<td class="auto-style149">
+					<a href="#modals">modal auxiliaries</a></td>
+					<td class="auto-style149">
+					<a href="#adjectives">adjectives</a></td>
+					<td class="auto-style149">
+					<a href="#classifiers">classifiers</a></td>
+					<td class="auto-style149">
+					<a href="#compandsuper">comparative and superlative</a></td>
+					<td class="auto-style150">
+					<a href="#syntactical"><strong>Syntactical ambiguity</strong></a></td>
+				</tr>
+				<tr>
+					<td class="auto-style144">
+					<a href="#ing">-<em>ing</em> forms</a></td>
+					<td class="auto-style88">
+					<a href="#non-finite">other -<em>ing</em> forms</a></td>
+					<td class="auto-style88">
+					<a href="#adverbmodification">adverbial modification</a></td>
+					<td class="auto-style88">
+					<a href="#conjunctions">conjunctions</a></td>
+					<td class="auto-style88">
+					<a href="#clauseconstits">clause constituents</a></td>
+					<td class="auto-style88">
+					<a href="#causative">causative structures</a></td>
+					<td class="auto-style145">
+					<a href="#semantic"><strong>Semantic ambiguity</strong></a></td>
+				</tr>
+				<tr>
+					<td class="auto-style146">
+					<a href="#genitives">genitives</a></td>
+					<td class="auto-style147">
+					<a href="#negation">negation</a></td>
+					<td class="auto-style147">
+					<a href="#themerheme">theme and rheme</a></td>
+					<td class="auto-style147">
+					<a href="#case">case</a></td>
+					<td class="auto-style147">
+					<a href="#adjunctsetc">adjuncts, conjuncts, disjuncts</a></td>
+					<td class="auto-style147">
+					<a href="#limiters">limiters</a></td>
+					<td class="auto-style107">
+					<a href="#pragmatic">Pragmatic ambiguity</a></td>
+				</tr>
+			</table>
+			<p>Ambiguity is not, of course, a phenomenon which is confined to 
+			English.&nbsp; All languages can be used in a way that allows two 
+			possible interpretations, sometimes more, of what seems to be a 
+			simple enough statement or question.<br />
+			In English, for example, the following has recently occurred:</p>
+			<p class="indentpara"><span class="auto-style1">He: </span>Welcome 
+			home.&nbsp; I've saved you a job.<br />
+			<span class="auto-style1">She:</span> Thanks, that's good of you.<br />
+			<span class="auto-style1">He:</span> Don't be sarcastic.<br />
+			<span class="auto-style1">She: </span>What?!</p>
+			<table cellpadding="0" class="tableblueborder">
+				<tr>
+					<td>
+					<img alt="think" height="60" src="../../../gfx/think60.jpg" width="60" /></td>
+					<td class="auto-style56"><strong>Task</strong>:<br />
+					<a name="1"></a>What has gone wrong?<br />
+					<a href="#1" onclick="FP_changeProp(/*id*/'save',0,'style.visibility','visible')">Think for a minute and then click here</a>.</td>
+				</tr>
+			</table>
+			<div id="save" style="visibility: hidden">
+			<p>The answer lies in the polysemous nature of the verb <em>save</em>.&nbsp; 
+			It has more than one meaning although the meanings are clearly 
+			connected.</p>
+			<ol>
+				<li>It means <em>set aside for action or use in the future </em>
+				as in, for example:<br />
+				<em>&nbsp;&nbsp;&nbsp; I have saved enough money for my holiday<br />
+&nbsp;&nbsp;&nbsp; I have saved the best idea till last</em></li>
+				<li>It means <em>avoid having to use or do</em> as in, for 
+				example:<br />
+				<em>&nbsp;&nbsp;&nbsp; I have saved an hour's work by using the new program<br />
+&nbsp;&nbsp;&nbsp; She has saved the company lots of money</em></li>
+				<li>It also means <em>rescue</em> as in, for example:<br />
+				<em>&nbsp;&nbsp;&nbsp; She was saved from drowning<br />
+&nbsp;&nbsp;&nbsp; The castaways were saved by a passing fishing boat</em><br />
+				of course but that is not relevant here.</li>
+			</ol>
+				<p>What has happened in this little dialogue is:</p>
+				<ul class="bluebullet">
+					<li><em>He</em> is using the verb to mean 
+				<em>set aside or keep for later</em> (meaning 1., above) but <em>she</em> has understood that it 
+				meant <em>avoid having to do something</em> (meaning 2.).<br />Naturally, 
+					<em>he</em> expected <em>her</em> not to be delighted to be told there 
+				was a job waiting to be done, having been saved for her, so <em>he</em> 
+				interprets her thanks as being an attempt at sarcasm.</li>
+					<li><em>She</em>, on the other hand, have assumed that the second meaning of the verb
+					<em>save</em>, 
+				is understandably confused at being accused of sarcasm because 
+				the thanks were sincerely intended.<br /></li>
+				</ul>
+			<p>What we have is an example of lexical ambiguity inherent in the 
+				polysemous nature of the verb.</p>
+		</div>
+			<p>Many of the examples below are culled from other guides on this 
+			site in which ambiguity is considered almost in passing.&nbsp; Here, 
+			it is the focus.</p>
+			<p><a href="#top" style="color:#ff3300">-top-</a></p>
+			
+			<a name="sources"></a><hr />
+				
+		
+			<table cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+				<img alt="source" height="166" src="../../images/source250.jpg" width="250" /></td>
+				<td class="auto-style56">
+				<h2>Sources of ambiguity</h2>
+				</td>
+			</tr>
+		</table>
+		
+			<p>This guide considers three main possible sources of ambiguity, 
+			explains what the problem is and tries to suggest some ways to 
+			remove the ambiguity.&nbsp; The three are:</p>
+			<ol>
+				<li><strong>Lexical ambiguity</strong><br />
+				The source for this is the fact that some words have homonyms 
+				which look and sound the same but carry different meaning.<br />
+				In spoken language, homophones will have the same issues and in 
+				written language homographs may also be a source of ambiguity.<br />
+				The issue we saw above with the word <em>save</em> is not, 
+				however, to do with homonymy; it concerns polysemy, the 
+				phenomenon of words have different but connected meanings rather 
+				than different and unconnected meanings.&nbsp; The borderline 
+				between homonyms and polysemes is, however, somewhat blurred.<br />
+				There is a guide to the polysemy, linked below in the list of 
+				related guides at the end.<br />
+				Here are some examples of what is meant:<table cellpadding="3" class="tableblueborder" style="width: 95%">
+					<tr>
+						<td class="auto-style92" style="width: 16%">Issue</td>
+						<td class="auto-style90" style="width: 28%">Example</td>
+						<td class="auto-style90" style="width: 28%">Meaning 1.</td>
+						<td class="auto-style94" style="width: 28%">Meaning 2.</td>
+					</tr>
+					<tr>
+						<td class="auto-style93" style="width: 16%">homonymy</td>
+						<td class="auto-style91" style="width: 28%"><em>They found the quarry</em></td>
+						<td class="auto-style91" style="width: 28%">They found the animal they were 
+						hunting</td>
+						<td class="auto-style95" style="width: 28%">They found the source of 
+						building stone</td>
+					</tr>
+					<tr>
+						<td class="auto-style93" rowspan="2" style="width: 16%">polysemy</td>
+						<td class="auto-style91" style="width: 28%"><em>What did you read last 
+						year?</em></td>
+						<td class="auto-style91" style="width: 28%">What did you study at 
+						university?</td>
+						<td class="auto-style95" style="width: 28%">What reading did you do last 
+						year?</td>
+					</tr>
+					<tr>
+						<td class="auto-style93" style="width: 28%"><em>He may come</em></td>
+						<td class="auto-style91" style="width: 28%">He has permission to come</td>
+						<td class="auto-style95" style="width: 28%">It is possible he will come</td>
+					</tr>
+					<tr>
+						<td class="auto-style93" style="width: 16%">grey area</td>
+						<td class="auto-style91" style="width: 28%"><em>She took a taxi</em></td>
+						<td class="auto-style91" style="width: 28%">She used a taxi as transport</td>
+						<td class="auto-style95" style="width: 28%">She stole a taxi</td>
+					</tr>
+					<tr>
+						<td class="auto-style93" style="width: 16%">homophony</td>
+						<td class="auto-style91" style="width: 28%"><em>The border / boarder is 
+						here</em></td>
+						<td class="auto-style91" style="width: 28%">The edge / frontier is here</td>
+						<td class="auto-style95" style="width: 28%">The paying guest / tenant is 
+						here</td>
+					</tr>
+					<tr>
+						<td class="auto-style96" style="width: 16%">homography</td>
+						<td class="auto-style97" style="width: 28%"><em>He bought a new bow</em></td>
+						<td class="auto-style97" style="width: 28%">He bought a new violin 
+						accessory</td>
+						<td class="auto-style98" style="width: 28%">He bought a device for shooting 
+						arrows</td>
+					</tr>
+				</table>
+				It is unlikely that any of these examples set in context, will 
+				produce a great deal of ambiguity, of course, but, standing 
+				alone, they cannot be disambiguated.</li>
+				<li><strong>Syntactical ambiguity</strong><br />
+				There are a number of ways ambiguity can arise from the syntax 
+				of a sentence or clause and they are mostly to do with what 
+				modifies what or what qualifies as an independent constituent of a 
+				sentence or clause (related areas as we shall see).<br />
+				They can also be to do with how tense forms in English are 
+				understood and how subordination and coordination are understood.<br />
+				Here are some examples:<table cellpadding="3" class="tableblueborder" style="width: 95%">
+					<tr>
+						<td class="auto-style92" style="width: 16%">Issue</td>
+						<td class="auto-style90" style="width: 28%">Example</td>
+						<td class="auto-style90" style="width: 28%">Meaning 1.</td>
+						<td class="auto-style94" style="width: 28%">Meaning 2.</td>
+					</tr>
+					<tr>
+						<td class="auto-style93" rowspan="2" style="width: 16%">modification</td>
+						<td class="auto-style91" style="width: 28%"><em>I said I would come on 
+						Monday</em></td>
+						<td class="auto-style91" style="width: 28%">I said this on Monday</td>
+						<td class="auto-style95" style="width: 28%">I will come on Monday</td>
+					</tr>
+					<tr>
+						<td class="auto-style93" style="width: 28%"><em>Being honest, he was seen 
+						as rude</em></td>
+						<td class="auto-style91" style="width: 28%">My honest opinion is he was 
+						seen as rude</td>
+						<td class="auto-style95" style="width: 28%">Because he was honest he was 
+						seen as rude</td>
+					</tr>
+					<tr>
+						<td class="auto-style93" rowspan="2" style="width: 16%">independence</td>
+						<td class="auto-style91" style="width: 28%"><em>I washed the car in the 
+						corner</em></td>
+						<td class="auto-style91" style="width: 28%">I washed the car which was in 
+						the corner</td>
+						<td class="auto-style95" style="width: 28%">It was in the corner that I 
+						washed the car</td>
+					</tr>
+					<tr>
+						<td class="auto-style93" style="width: 28%"><em>I spoke to the man in my 
+						office</em></td>
+						<td class="auto-style91" style="width: 28%">I spoke to the man who was in 
+						my office</td>
+						<td class="auto-style95" style="width: 28%">It was in my office that I 
+						spoke to the man</td>
+					</tr>
+					<tr>
+						<td class="auto-style132" rowspan="2" style="width: 16%">tense form</td>
+						<td class="auto-style128" style="width: 28%"><em>I'm driving to London this 
+						week</em></td>
+						<td class="auto-style128" style="width: 28%">Sometime this week I will drive 
+						to London</td>
+						<td class="auto-style110" style="width: 28%">It is my temporary habit to 
+						drive to London</td>
+					</tr>
+					<tr>
+						<td class="auto-style132" style="width: 28%"><em>The professor is writing to 
+						the students</em></td>
+						<td class="auto-style128" style="width: 28%">The professor is currently 
+						writing</td>
+						<td class="auto-style110" style="width: 28%">The professor intends to write</td>
+					</tr>
+					<tr>
+						<td class="auto-style96" style="width: 16%" rowspan="2">conjunction</td>
+						<td class="auto-style97" style="width: 28%"><em>She was exhausted but Mary 
+						worked on</em></td>
+						<td class="auto-style97" style="width: 28%"><em>Mary</em> and <em>she</em> 
+						are the same person</td>
+						<td class="auto-style98" style="width: 28%"><em>Mary</em> and <em>she</em> 
+						are different people</td>
+					</tr>
+					<tr>
+						<td class="auto-style97" style="width: 28%"><em>Someone 
+						stole my car so that I had to take the train</em></td>
+						<td class="auto-style97" style="width: 28%">The <strong>
+						result</strong> of the theft was that I took the train</td>
+						<td class="auto-style98" style="width: 28%">The <strong>
+						purpose</strong> of the theft was to force me to take 
+						the train</td>
+					</tr>
+				</table>
+				Syntactical ambiguity arises from the phenomenon of syntactical 
+				homonymy and can sometimes be almost impossible to untangle 
+				without reconstructing the clause or sentence.</li>
+				<li><strong>Semantic ambiguity</strong><br />
+				Some see this as a subset of syntactical ambiguity but it is 
+				noticeably different because much depends on the shared 
+				knowledge and speaker perception rather than simply the syntax.&nbsp; 
+				It concerns what is meant, not what is necessarily understood by 
+				decoding the syntax.<br />
+				Here are some examples:<table cellpadding="3" class="tableblueborder" style="width: 95%">
+					<tr>
+						<td class="auto-style92" style="width: 16%">Issue</td>
+						<td class="auto-style90" style="width: 28%">Example</td>
+						<td class="auto-style90" style="width: 28%">Meaning 1.</td>
+						<td class="auto-style94" style="width: 28%">Meaning 2.</td>
+					</tr>
+					<tr>
+						<td class="auto-style93" style="width: 16%">who does?</td>
+						<td class="auto-style91" style="width: 28%"><em>John and Peter have a house 
+						in London</em></td>
+						<td class="auto-style91" style="width: 28%">John and Peter share a house in 
+						London</td>
+						<td class="auto-style95" style="width: 28%">John and Peter have separate 
+						houses in London</td>
+					</tr>
+					<tr>
+						<td class="auto-style93" style="width: 16%">what is the object?</td>
+						<td class="auto-style91" style="width: 28%"><em>John used his own car and 
+						so did Mary</em></td>
+						<td class="auto-style91" style="width: 28%">Mary and John used John's car</td>
+						<td class="auto-style95" style="width: 28%">Mary and John used their own 
+						cars</td>
+					</tr>
+					<tr>
+						<td class="auto-style93" style="width: 16%">limitation</td>
+						<td class="auto-style91" style="width: 28%"><em>The tiger is a dangerous 
+						animal</em></td>
+						<td class="auto-style91" style="width: 28%">This particular tiger is 
+						dangerous</td>
+						<td class="auto-style95" style="width: 28%">Tigers are dangerous</td>
+					</tr>
+					<tr>
+						<td class="auto-style96" style="width: 16%">what is the subject?</td>
+						<td class="auto-style97" style="width: 28%"><em>John saw the boss and he 
+						asked him to wait</em></td>
+						<td class="auto-style97" style="width: 28%">John asked the boss to wait</td>
+						<td class="auto-style98" style="width: 28%">The boss asked John to wait</td>
+					</tr>
+				</table>
+				The last example is called by some anaphoric ambiguity because 
+				it is impossible to know which referent is appropriate for <em>
+				he</em>.</li>
+			</ol>
+		
+			<p>At the end we will also consider a fourth source of ambiguity 
+			which is not dependent on language use but which stems from social 
+			and cultural sources.</p>
+			<p><a href="#top" style="color:#ff3300">-top-</a></p>
+			
+			<a name="lexical"></a>
+		
+			<hr />
+		
+			<table cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+				<img alt="words" height="166" src="../../images/words250.jpg" width="250" /></td>
+				<td class="auto-style56">
+				<h2>Lexical ambiguity</h2>
+				</td>
+			</tr>
+		</table>
+		
+			<p>It is quite rare for a lot of polysemes and homonyms, <strong>
+			especially those concerning content words</strong>, to cause a great 
+			deal of difficulty because the context almost always determines the 
+			meaning that is meant.<br />
+			We are unlikely to misinterpret, for example:<br />
+			<em>&nbsp;&nbsp;&nbsp; I took an aspirin<br />
+			</em>as<br />
+			<em>&nbsp;&nbsp;&nbsp; I stole an aspirin<br />
+			</em>or<br />
+			<em>&nbsp;&nbsp;&nbsp; She dug the garden<br />
+			</em>as<br />
+			<em>&nbsp;&nbsp;&nbsp; She appreciated the garden<br />
+			</em>although misunderstanding is always possible if the context is 
+			too thin.</p>
+			<p>Function words and auxiliary verbs are a very different matter because 
+			the meaning they convey relies on the co-text.<br />
+			Here are some examples but no guide to ambiguity can ever cover all 
+			the possible sources.</p>
+		
+			<table cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+				<img alt="will" height="133" src="../../images/marry_me200.jpg" width="200" /></td>
+				<td class="auto-style56">
+				<h3><em><a name="modals"></a>will </em>and other modal auxiliary verbs</h3>
+				</td>
+			</tr>
+			<tr>
+				<td class="auto-style99">
+				<em>Will you marry me?<br />
+				Well, will she?</em></td>
+				<td class="auto-style56">
+				&nbsp;</td>
+			</tr>
+		</table>
+		
+			<p>The verb <em>will</em> is polysemous because it applies to a future time 
+			in one sense and to a current willingness in another.&nbsp; So,<br />
+			<em>&nbsp;&nbsp;&nbsp; Will you marry me?<br />
+			</em>concerns the woman's current willingness to commit to something,
+			but<br />
+			<em>&nbsp;&nbsp;&nbsp; Will she marry him?<br />
+			</em>is a question requiring speculation about the future.<br />
+			In the first example, the modal auxiliary verb refers to dynamic 
+			modality (volition) and in the second to epistemic modality 
+			(propositional truth).<br />
+			That is the reason that <em>will </em>can appear in both parts of a 
+			conditional sentence such as:<br />
+			<em>&nbsp;&nbsp;&nbsp; I will give you a lift if you will share the 
+			petrol costs<br />
+			</em>Normally, the rule is not to use <em>will </em>in both clauses 
+			but it is correct here because the first incidence of <em>will</em> refers to the future 
+			and the second refers to the hearer's willingness to do something.<br />
+			It is only useful to tell learners that we cannot use <em>will</em> 
+			in both parts of a conditional sentence if we are clearly using the 
+			verb in one of its main meanings.&nbsp; In other words, being 
+			careful to avoid ambiguity.</p>
+			<p>A fundamental reason why modal auxiliary verbs cause so much 
+			trouble for learners is their polysemous nature.<br />
+			Here are some examples of what is meant:</p><table cellpadding="3" class="tableblueborder">
+					<tr>
+						<td class="auto-style92">Verb</td>
+						<td class="auto-style90">Example</td>
+						<td class="auto-style90">Meaning 1.</td>
+						<td class="auto-style94">Meaning 2.</td>
+					</tr>
+					<tr>
+						<td class="auto-style93">might</td>
+						<td class="auto-style91"><em>She said they might ask questions at the end</em></td>
+						<td class="auto-style91">She gave them permission to ask 
+						questions</td>
+						<td class="auto-style95">She thought it was possible 
+						they would ask questions</td>
+					</tr>
+					<tr>
+						<td class="auto-style93" rowspan="2">may</td>
+						<td class="auto-style91"><em>They may go</em></td>
+						<td class="auto-style91">They have permission to go</td>
+						<td class="auto-style95">They might go</td>
+					</tr>
+					<tr>
+						<td class="auto-style91"><em>He may not come</em></td>
+						<td class="auto-style91">I will allow him not to come</td>
+						<td class="auto-style95">He might not come</td>
+					</tr>
+					<tr>
+						<td class="auto-style93" rowspan="3">can</td>
+						<td class="auto-style91"><em>Can 
+						you help her with her homework?</em></td>
+						<td class="auto-style91">Please 
+						help her with her homework</td>
+						<td class="auto-style95">Are you 
+						able to help her with her homework?</td>
+					</tr>
+					<tr>
+						<td class="auto-style91"><em>You can talk to him</em></td>
+						<td class="auto-style91">I give you permission to talk 
+						to him</td>
+						<td class="auto-style95">He is approachable</td>
+					</tr>
+					<tr>
+						<td class="auto-style91"><em>&dagger;I can not smoke</em></td>
+						<td class="auto-style91">I have the ability not to smoke</td>
+						<td class="auto-style95">I am not allowed to smoke</td>
+					</tr>
+					<tr>
+						<td class="auto-style93">would</td>
+						<td class="auto-style91"><em>He would be rude to his 
+						mother if she asked a question</em></td>
+						<td class="auto-style91">He was habitually rude to his 
+						mother when she asked a question</td>
+						<td class="auto-style95">If his mother asks a question 
+						his response is likely to be rude</td>
+					</tr>
+					<tr>
+						<td class="auto-style93" rowspan="4">could</td>
+						<td class="auto-style91"><em>She could explain it more 
+						clearly</em></td>
+						<td class="auto-style91">She was able to explain it more 
+						clearly</td>
+						<td class="auto-style95">She should explain it more 
+						clearly</td>
+					</tr>
+					<tr>
+						<td class="auto-style91"><em>It could bend</em></td>
+						<td class="auto-style91">It has a flexible nature / 
+						ability</td>
+						<td class="auto-style95">It is possible that it will 
+						bend</td>
+					</tr>
+					<tr>
+						<td class="auto-style91"><em>I could have left it with John</em></td>
+						<td class="auto-style91">John gave me permission to 
+						leave it with him</td>
+						<td class="auto-style95">It is possible that I left it 
+						with John</td>
+					</tr>
+					<tr>
+						<td class="auto-style91"><em>If you come late you could miss 
+						the speeches</em></td>
+						<td class="auto-style91">It is possible you will miss 
+						the speeches</td>
+						<td class="auto-style95">You will be able to miss the 
+						speeches</td>
+					</tr>
+					<tr>
+						<td class="auto-style96">ought</td>
+						<td class="auto-style97"><em>He ought to be there</em></td>
+						<td class="auto-style97">I expect he is there</td>
+						<td class="auto-style98">He has an obligation to be 
+						there</td>
+					</tr>
+					<tr>
+						<td class="auto-style96">must</td>
+						<td class="auto-style97"><em>He must be at home</em></td>
+						<td class="auto-style97" rowspan="2">I am certain he is 
+						at home</td>
+						<td class="auto-style98" rowspan="2">He is obliged to be 
+						at home</td>
+					</tr>
+					<tr>
+						<td class="auto-style96">have to</td>
+						<td class="auto-style97"><em>He has to be at home</em></td>
+					</tr>
+				</table>
+				&dagger; This ambiguity cannot occur in writing because <em>can</em> 
+			and <em>not</em> are written separately in Meaning 1.<p>The moral is that all modal auxiliary verbs have the possibility 
+			to be interpreted in multiple ways.<br />
+			Elsewhere on the site, the verb <em>could</em> is shown to have 
+			eight possible meanings (present possibility, future possibility, 
+			past possibility, present ability, future ability, past ability, 
+			permission, complaint), <em>might</em> has six (present possibility, 
+			future possibility, past possibility, suggestion, permission, 
+			complaint) and even <em>should</em> has four (advice, obligation, 
+			conditional uses, logical deduction).<br />
+			Other modal auxiliary verbs, especially the central nine, suffer 
+			from the same ambiguity of modality type.</p>
+		
+			<p><a href="#top" style="color:#ff3300">-top-</a></p>
+			
+			<table cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+				<img alt="learners" height="133" src="../../images/learners_group200.jpg" width="200" /></td>
+				<td class="auto-style56">
+				<h3><a name="adjectives"></a>adjectives</h3>
+				</td>
+			</tr>
+			<tr>
+				<td class="auto-style99">
+				<em>The hardworking students passed</em></td>
+				<td class="auto-style56">
+				&nbsp;</td>
+			</tr>
+		</table>
+		
+			<h4>Scope<br />
+			<img alt="radio" height="133" src="../../images/radio_telscope200.jpg" width="200" /></h4>
+			<p>This sentence:<br />
+			<em>&nbsp;&nbsp;&nbsp;
+			The hardworking students passed the examination<br />
+			</em>is ambiguous because this may mean either:<br />
+			<em>&nbsp;&nbsp;&nbsp;
+			The students who worked hard passed the examination<br />
+			</em>&nbsp;&nbsp;&nbsp; (and other 
+			students, less hardworking, did not)<br />
+			or<br />
+			<em>&nbsp;&nbsp;&nbsp;
+			The students, who worked hard, passed the examination<br />
+			</em>&nbsp;&nbsp;&nbsp; (all of them were hardworking and all of 
+			them passed)<br />
+			Other adjectives are open to similar multiple interpretations.&nbsp; 
+			For example:<br />
+			<em>&nbsp;&nbsp;&nbsp; The available money is inadequate<br />
+			</em>in which the adjective <em>available</em> can mean:<br />
+&nbsp;&nbsp;&nbsp; <em>all the money</em> (with no more to come)<br />
+&nbsp;&nbsp;&nbsp; <em>the money available now </em>(with more to come)<br />
+			This can be disambiguated in two ways:</p>
+			<ol class="auto-style100">
+				<li>By making a relative pronoun clause and distinguishing 
+				between defining (restrictive) and non-defining (unrestricted) 
+				forms:<br />
+				<em>&nbsp;&nbsp;&nbsp; The money, which is available, is 
+				inadequate<br />
+				</em>(i.e., it is all available)<br />vs.<br />
+				<em>&nbsp;&nbsp;&nbsp; The money which is available is 
+				inadequate<br />
+				</em>(i.e., only the money which is available, not all of it)</li>
+				<li>By post-positioning the adjective:<br />
+				<em>&nbsp;&nbsp;&nbsp; The available money<br />
+				</em>&nbsp;&nbsp;&nbsp; all of it<br />
+				vs.<br />
+				<em>&nbsp;&nbsp;&nbsp; The money available now<br />
+				</em>&nbsp;&nbsp;&nbsp; some of it with more to come</li>
+			</ol>
+			<p>The second disambiguation trick works with other adjectives as 
+			in:<br />
+			<em>&nbsp;&nbsp;&nbsp; The visible stars<br />
+&nbsp;&nbsp;&nbsp; The stars visible tonight<br />
+&nbsp;&nbsp;&nbsp; The present staff<br />
+&nbsp;&nbsp;&nbsp; The staff present now<br />
+			</em>The first refers to all the visible stars, the second to only 
+			those visible tonight, the third to the entire staff at the moment 
+			and the fourth to only those employees who are here.</p>
+			<p>Determining how an adjective should be understood in the sense of 
+			what is included and what excluded is not always simple.&nbsp; It is 
+			not that we have a polysemous word acting as an adjective (although 
+			that happens) but where the scope of modification starts and stops.</p>
+			<p>The adjective <em>bad</em> is somewhat ambiguous in this respect.&nbsp; For 
+			example:<br />
+			<em>&nbsp;&nbsp;&nbsp; She felt bad<br />
+			</em>could imply that she felt unwell or that she felt guilty although 
+			this can be disambiguated with the use of the adverb so:<br />
+			<em>&nbsp;&nbsp;&nbsp; She felt badly<br />
+			</em>can only mean <em>unhappy</em> or <em>guilty</em>, not <em>unwell</em>.</p>
+			<h4><a name="classifiers"></a>Classifiers, epithets and punctuation<br />
+			<img alt="class" height="133" src="../../images/classify_birds200.jpg" width="200" /></h4>
+			<p>There is some ambiguity in written language whether a word is 
+			intended as an adjective (an epithet) or a classifier because:<br />
+			<em>&nbsp;&nbsp;&nbsp;
+			a senior school teacher<br />
+			</em>could be interpreted as<br />
+			&nbsp;&nbsp;&nbsp; <em>a teacher at any type of school who is 
+			experienced and older</em><br />
+			or<br />
+			&nbsp;&nbsp;&nbsp; <em>a teacher who happens to work in a senior school</em><br />
+			In the former, the word is adjectival and in the latter it is a 
+			classifier.</p>
+			<p>Commas are often optional but required when there is possible 
+			ambiguity.&nbsp; For example:<br />
+			<em>&nbsp;&nbsp;&nbsp; It's a large house plant<br />
+			</em>is unlikely to be misunderstood as a plant only for use in large 
+			houses but to avoid any ambiguity, it can be written as<br />
+			<em>&nbsp;&nbsp;&nbsp; It's a large, house plant<br />
+			</em>Compare:<br />
+			<em>&nbsp;&nbsp;&nbsp; It's a small garden plant<br />
+			</em>in which there is ambiguity which can be eradicated by punctuating 
+			it as<br />
+			<em>&nbsp;&nbsp;&nbsp; It's a small, garden plant<br />
+			</em>or<br />
+			<em>&nbsp;&nbsp;&nbsp; It's a small-garden plant</em></p>
+			<h4><em>old </em>and<em> new</em>: inherent and non-inherent 
+			meanings<br /><em><img alt="car" height="133" src="../../images/car_vintage_authentic200.jpg" width="200" /></em></h4>
+			<p>The adjective <em>old</em> may be applied to inanimate and animate nouns 
+			but when it is applied to animate nouns the meaning will vary 
+			depending on how it is used (attributively or predicatively).&nbsp; 
+			So, for example:<br />
+			<em>&nbsp;&nbsp;&nbsp; He is an old friend</em><br />
+			will be understood non-inherently as applying to a long-lasting 
+			friendship, not to the person but<br />
+&nbsp;<em>&nbsp;&nbsp; My friend is old</em><br />
+			will be understood as applying to the friend, not the friendship.<br />
+			Unfortunately the word <em>old</em> has two common antonyms: <em>new</em> 
+			and <em>young</em> and they are differently understood depending on 
+			the nature of the noun to which they are applied.<br />
+			So, for example:<br />
+&nbsp;<em>&nbsp;&nbsp; She's a new friend</em><br />
+			and<br />
+&nbsp;<em>&nbsp;&nbsp; All these students are new</em><br />
+			will not be seen as applying to the people but to their recent 
+			arrival whereas<br />
+			<em>&nbsp;&nbsp;&nbsp; She's a young friend</em><br />
+			or<br />
+			<em>&nbsp;&nbsp;&nbsp; The students are young</em><br />
+			can only be understood as applying to the people directly.<br />
+			However:<br />
+			<em>&nbsp;&nbsp;&nbsp; There's a new car in the car park<br />
+			</em>and<br />
+			<em>&nbsp;&nbsp;&nbsp; That car in the car park is new<br />
+			</em>are truly ambiguous and could mean<br />
+			<em>&nbsp;&nbsp;&nbsp; The car has only recently appeared in the car 
+			park<br />
+			</em>or<br />
+			<em>&nbsp;&nbsp;&nbsp; The car has recently been manufactured<br />
+			</em>and only context can disambiguate the meaning.</p>
+			<p>A further, connected source of ambiguity lies in the fact that 
+			some adjectives can apply to a person and to a relationship so, for 
+			example, while it is clear that:<br />
+			<em>&nbsp;&nbsp;&nbsp; She's a new friend<br />
+&nbsp;&nbsp;&nbsp; They are old rivals</em><br />
+			both apply to the friendship and the rivalry, not the people 
+			involved, it is less clear whether the adjectives in<br />
+			<em>&nbsp;&nbsp;&nbsp; He's a reliable friend<br />
+&nbsp;&nbsp;&nbsp; She's a remarkable friend<br />
+			</em>refer to a reliable / remarkable person or a reliable / 
+			remarkable friendship.<br />
+			Ambiguity can be avoided by using the adjective predicatively 
+			because then the assumption will always be that it applies to the 
+			person:<br />
+			<em>&nbsp;&nbsp;&nbsp; My friend is reliable<br />
+&nbsp;&nbsp;&nbsp; Her friend is remarkable</em></p>
+			<h4><a name="compandsuper"></a>Comparative forms<br />
+			<img alt="2" height="133" src="../../images/two_espresso200.jpg" width="200" /></h4>
+			<p>The question here is whether the words <em>more</em> and <em>less</em> 
+			are acting as adverbs modifying adjectives or as determiners 
+			modifying noun phrases.&nbsp; It matters because the meaning changes 
+			depending on the grammatical function of the word.&nbsp; In that 
+			sense, this straddles the boundary line between lexical and 
+			syntactical ambiguity.<br />
+			Here are three examples:</p>
+			<ol class="auto-style101">
+				<li><em>They provided more accurate figures</em><ol class="auto-style100">
+					<li><em>&nbsp;&nbsp;&nbsp; </em>= <em>They provided more 
+					figures which were as accurate as the old ones</em><br />
+					or</li>
+					<li>&nbsp;&nbsp;&nbsp; = <em>They provided figures which 
+					were more accurate than the old ones</em></li>
+				</ol>
+				</li>
+				<li><em>I want more useful work from you</em><ol class="auto-style100">
+					<li><em>&nbsp;&nbsp;&nbsp; = I want more work from you which 
+					is as useful as the work you have done<br />
+					</em>or</li>
+					<li><em>&nbsp;&nbsp;&nbsp; = I want work from you which is 
+					more useful than the work you have done</em></li>
+				</ol>
+				</li>
+				<li><em>She had less expensive work done</em><ol class="auto-style100">
+					<li><em>&nbsp;&nbsp;&nbsp; = She had less work done which 
+					was as expensive as the previous work<br />
+					</em>or</li>
+					<li><em>&nbsp;&nbsp;&nbsp; = She had work done which was not 
+					as expensive as the previous work</em></li>
+				</ol>
+				</li>
+			</ol>
+			<p>The ambiguity arises from the fact that in:<br />
+			i.a., ii.a. and iii.a., the words <em>more</em> and <em>less</em> 
+			are determiners referring to the noun phrases <em>accurate figures, 
+			useful work</em> and <em>expensive work</em><br />
+			but in:<br />
+			i.b., ii.b. and iii.b., the words <em>more</em> and <em>less</em> 
+			are adverbs modifying the adjectives <em>accurate, useful </em>and
+			<em>expensive</em></p>
+			<p>It is impossible to tell by looking at the sentences what the words 
+			<em>more</em> and <em>less</em> are doing grammatically.&nbsp; 
+			Rephrasing as above will remove the ambiguity.</p>
+			<h4>Superlative forms<br />
+			<img alt="Mountaineer, Mountain, Peak, Man, Climbing, Climber" height="133" src="../../images/man_top_mountain.jpg" width="200" /></h4>
+			<p>Compare<br />
+			<em>&nbsp;&nbsp;&nbsp; The girl is most intelligent<br />
+			</em>and<br />
+			<em>&nbsp;&nbsp;&nbsp; The most intelligent girl<br />
+			</em>both of which are possibly ambiguous because they can mean 
+			either:<br />
+			<em>&nbsp;&nbsp;&nbsp; The very intelligent girl<br />
+			</em>or<br />
+			<em>&nbsp;&nbsp;&nbsp; The girl who is more intelligent than the all 
+			the others<br />
+			</em>The use of the definite article determiner can disambiguate 
+			this because<br />
+			<em>&nbsp;&nbsp;&nbsp; The most intelligent girl<br />
+			</em>will only be understood in the second sense.<br />
+			The key here is not to word class because in all the examples, the 
+			word <em>most</em> is an adverb modifying the adjective.&nbsp; 
+			However, the word is polysemous because is means <em>very</em> or
+			<em>extremely</em> and it forms the superlative of an adjective 
+			expressing the uppermost degree.</p>
+			<p><a href="#top" style="color:#ff3300">-top-</a></p>
+			
+			<a name="syntactical"></a><hr />
+		
+		
+			<table cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+				<img alt="switch" height="166" src="../../images/switch250.jpg" width="250" /></td>
+				<td class="auto-style56">
+				<h2>Syntactical ambiguity</h2>
+				</td>
+			</tr>
+		</table>
+		
+			<p>Much of syntactical ambiguity arises from the possibility of, so 
+			to speak, throwing a mental switch to decide which line to take.<br />
+			Tense forms in English, or most languages, do not have a one-to-one 
+			relationship with time.&nbsp; We use, therefore, present and past 
+			tenses to talk about the future, past tenses to talk about the 
+			present and so on.<br />
+			There is a good deal more about this in the guides to time, tense 
+			and aspect, linked below, so some examples of the possible 
+			ambiguities will be enough here.</p>
+		
+			<table cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+				<img alt="driving" height="133" src="../../images/driving200.jpg" width="200" /></td>
+				<td class="auto-style56">
+				<h3><a name="ing"></a>-<em>ing</em> forms</h3>
+				</td>
+			</tr>
+			<tr>
+				<td class="auto-style99">
+				<em>He's driving</em></td>
+				<td class="auto-style56">
+				&nbsp;</td>
+			</tr>
+		</table>
+		
+			<p>At first sight, a sentences such as:<br />
+&nbsp;<em>&nbsp;&nbsp; He's driving</em><br />
+			is not ambiguous, especially when it's linked to an image as here.<br />
+			However it can mean:</p>
+			<ul class="bluebullet">
+				<li>Driving is what he is doing right this minute<br />
+&nbsp;&nbsp;&nbsp; <em>He won't answer his phone.&nbsp; He's driving.</em></li>
+				<li>Driving will be his preferred mode of travel for the 
+				foreseeable future<br />
+				<em>&nbsp;&nbsp;&nbsp; He's driving to work these days because 
+				the trains are so unreliable</em></li>
+				<li>Driving will be a temporarily habitual form of transport<br />
+&nbsp;&nbsp;&nbsp; <em>I don't need the car for a while so he's driving to work 
+				at the moment</em></li>
+				<li>Driving is what he has agreed to do in the future<br />
+				<em>&nbsp;&nbsp;&nbsp; I can have another beer because he's 
+				driving me home later</em></li>
+			</ul>
+			<p>This is where we encounter a famous Chomskyan concept.&nbsp; 
+			Chomsky, to whom there is a guide linked at the end, chose to 
+			demonstrate what he meant by deep structure with the example 
+			sentence:<br />
+			<em>&nbsp;&nbsp;&nbsp; Visiting aunts can be boring<br />
+			</em>because that can mean:<br />
+			<em>&nbsp;&nbsp;&nbsp; Aunts who visit can be boring<br />
+			</em>or<br />
+			<em>&nbsp;&nbsp;&nbsp; The activity of paying a visit to aunts can 
+			be boring</em></p>
+			<p>It is, in fact a bit of a four-way cheat in our terms here 
+			because the ambiguity relies on:</p>
+			<ol>
+				<li>Selecting a transitive verb so that there is manufactured 
+				ambiguity concerning subjects and objects.&nbsp; You cannot, for 
+				example, construct a similarly ambiguous sentence with verbs 
+				like <em>arrive</em> or <em>speak</em> because you get the 
+				unambiguous:<br />
+				<em>&nbsp;&nbsp;&nbsp; Speaking clocks can be irritating</em></li>
+				<li>Selecting a semantically allowable transitive verb.&nbsp; You 
+				cannot, for example, construct a similarly ambiguous sentence 
+				with verbs like <em>explain</em> or <em>show</em> because you 
+				get the unambiguous:<br />
+&nbsp;&nbsp;&nbsp; <em>Showing your anger can be inadvisable</em></li>
+				<li>Using the uninflected modal auxiliary verb, <em>can</em>, to 
+				disguise the verb-noun concord.&nbsp; You cannot, for example, 
+				construct a similarly ambiguous sentence without the modal 
+				auxiliary because that produces:<br />
+				<em>&nbsp;&nbsp;&nbsp; Visiting aunts bore me<br />
+&nbsp;&nbsp;&nbsp; Visiting aunts bores me</em><br />
+				which contain no ambiguity because the first has a plural noun 
+				as the subject and the second has a singular gerund as the 
+				subject.&nbsp; We don't need to think about deep structure to 
+				disambiguate the sentences, simply leaving out the modal 
+				auxiliary verb will do.</li>
+				<li>Selecting a verb which has a gerund form (a verbal noun) and 
+				a participle form which can act as an adjective.&nbsp; You 
+				cannot, for example, construct a similarly ambiguous sentence 
+				with verbs like <em>wear</em> or <em>repair</em> because neither 
+				<em>wearing</em> nor <em>repairing</em> can operate as participle adjectives 
+				although the verbs are transitive.&nbsp; 
+				We allow:<br />
+				<em>&nbsp;&nbsp;&nbsp; Wearing warm clothes can be useful<br />
+&nbsp;&nbsp;&nbsp; Repairing computers needs some care<br />
+				</em>but not:<br />
+				<em>&nbsp;&nbsp;&nbsp; *These are wearing clothes<br />
+&nbsp;&nbsp;&nbsp; *He is a repairing man</em></li>
+			</ol>
+			<p>It is quite difficult to make a parallel sentence to the one 
+			Chomsky used although:<br />
+&nbsp;<em>&nbsp;&nbsp; Eating apples can be healthy<br />
+&nbsp;&nbsp;&nbsp; Drinking water can be good<br />
+&nbsp;&nbsp;&nbsp; Cleaning materials may be expensive<br />
+&nbsp;&nbsp;&nbsp; Burning rubbish could be dangerous</em><br />
+			and just possibly<br />
+&nbsp;<em>&nbsp;&nbsp; Climbing plants can be dangerous<br />
+			</em>(if you are a field mouse)<br />
+			will show the same kind of ambiguity.<br />
+			The parlour game is to think of ten more.</p>
+			<p>In fairness, this was not the point that Chomsky was making.<br />
+			He used ambiguity as a way of revealing the inadequacies of a 
+			structuralist approach to grammatical analysis and was not concerned 
+			with communicative effect.</p>
+			<p>Tense-form ambiguity is a much more important issue for teaching.</p>
+		
+			<p><a href="#top" style="color:#ff3300">-top-</a></p>
+			
+			<table cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+				<img alt="infinite" src="../../images/infinity200.jpg" /></td>
+				<td class="auto-style56">
+				<h3><a name="non-finite"></a>Other non-finite -<em>ing</em> forms</h3>
+				</td>
+			</tr>
+			</table>
+		
+			<p>Misuse of the -<em>ing</em> participle in non-finite 
+				clauses often results in what is called a dangling or unattached 
+				participle.&nbsp; For example:<br />
+				<em>&nbsp;&nbsp;&nbsp; Getting on the bus, John's wallet fell 
+				from his pocket<br />
+			</em>is semantically and grammatically flawed because it was not the 
+				<em>wallet</em> that got on the bus.&nbsp; 
+				To avoid this kind of ambiguity, the participle and the main clause 
+				verb need to have the same subject.&nbsp; The use of a finite 
+				clause solves the issue:<br />
+				<em>&nbsp;&nbsp;&nbsp; While he was getting on the bus, John's 
+			wallet fell from his pocket<br />
+				</em>In this case, little ambiguity is caused because we know 
+			that wallets do not, of their own volition, take public transport.</p>
+			<p>However, there are times when the rule is not quite so clear cut.&nbsp; 
+			For example:<br />
+			<em>&nbsp;&nbsp;&nbsp; I saw Mary getting off the bus<br />
+			</em>is likely to be interpreted as:<br />
+			<em>&nbsp;&nbsp;&nbsp; I saw Mary while she was getting off the bus<br />
+			</em>but could mean:<br />
+			<em>&nbsp;&nbsp;&nbsp; While I was getting off the bus, I saw Mary<br />
+			</em>We need to be more careful here because both the possible 
+			subjects are able to take public transport.<br />
+			In order to repair the ambiguity, we have to rephrase the sentence 
+			as:<br />
+			<em>&nbsp;&nbsp;&nbsp; I saw Mary when she was getting off the bus<br />
+			</em>or<br />
+			<em>&nbsp;&nbsp;&nbsp; I saw Mary when I was getting off the bus</em></p>
+			<p>The rule of attachment to the same subject is often relaxed 
+				so we allow:<br />
+			<em>&nbsp;&nbsp;&nbsp; </em> <span class="style_black"><em>Being</em></span><em> Friday, the staff left 
+				early<br />
+			</em>which is not ambiguous because the staff cannot be Friday.<br />
+			On the other hand,<br /><em>&nbsp;&nbsp;&nbsp; <span class="style_black">Being</span> optimistic, Mary will 
+				be able to do the job<br />
+				</em>is ambiguous depending on whether the speaker 
+				or <em>Mary</em> is the optimist.<br />
+			The ambiguity here is explained a little more (and a little more 
+			clearly) below, under semantic ambiguity.</p>
+			<p>These sorts of non-finite clauses used to express temporal or causal 
+			relationships can give rise to some ambiguity of meaning.<br />
+			For 
+			example:<br />
+			<em>&nbsp;&nbsp;&nbsp;
+			Being in New York, she went to see him<br />
+			</em>could mean:<br />
+			<em>&nbsp;&nbsp;&nbsp; While she was in New York, she went to see him<br />
+			</em>or<br />
+			<em>&nbsp;&nbsp;&nbsp;
+			Because she was in New York, she went to see him.</em></p>
+			<p>In all such cases, rephrasing the thought using finite rather 
+			than non-finite verb forms solves the problem as can using the right 
+			subordinating conjunction as in the examples above.</p>
+		
+			<p><a href="#top" style="color:#ff3300">-top-</a></p>
+			
+			<table cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+				<img alt="hurry" height="133" src="../../images/man_hurry200.jpg" width="200" /></td>
+				<td class="auto-style56">
+				<h3><a name="adverbmodification"></a>Adverbial modification</h3>
+				</td>
+			</tr>
+			<tr>
+				<td class="auto-style99">
+				<em>He quickly got lunch</em></td>
+				<td class="auto-style56">
+				&nbsp;</td>
+			</tr>
+		</table>
+		
+			<p>It is often difficult to determine which verb an adverb modifies 
+			when there are two verbs in the same sentence.&nbsp; For example:<br />
+&nbsp;&nbsp;&nbsp; <em>The people who came quickly got lunch</em><br />
+			has two interpretations depending on which verb is being modified by
+			<em>quickly</em>:</p>
+			<ol class="auto-style100">
+				<li>The modified verb phrase is <em>came</em>, in which case we 
+				have:<br />
+				<em>&nbsp;&nbsp;&nbsp; People who were quick to arrive got lunch</em></li>
+				<li>The modification belongs with the verb <em>got</em>, in 
+			which case we have:<br /><em>&nbsp;&nbsp;&nbsp; The people who came 
+				got lunch quickly</em></li>
+			</ol>
+			<p>We can rephrase this to remove the ambiguity as we have done 
+			here.&nbsp; The key is to put the adverb in the right place.<br />
+			It can also be disambiguated by pausing in speech after <em>quickly</em> 
+			(and signalling sense 1.) or after <em>came</em> (and signalling 
+			sense 2.).<br />
+			That is straightforward with middle-position adverbs such as those 
+			of manner which are mobile but even easier with adverbs of 
+			indefinite frequency as in, e.g.:<br />
+			<em>&nbsp;&nbsp;&nbsp; The men who arrived late frequently missed 
+			lunch<br />
+			</em>vs.<br />
+			<em>&nbsp;&nbsp;&nbsp; The men who frequently arrived late missed 
+			lunch<br />
+			</em>because these adverbs conventionally precede the main verb.</p>
+			<p>There are also times when it is not clear whether an adverbial is 
+			functioning to modify a verb or its subject or object.<br />
+			For example, in:<br />
+			<em>&nbsp;&nbsp;&nbsp; His friends at that time were working<br />
+			</em>could mean:</p>
+			<ol class="auto-style100">
+				<li><em>His friends were working at that time</em><br />
+				which modifies the verb phrase, or</li>
+				<li><em>The friends he had at that time were working</em><br />
+				which modifies the noun phrase</li>
+			</ol>
+			<p>and unless we know whether the prepositional phrase is modifying 
+			the noun or the verb phrase,
+			we cannot arrive at the meaning.&nbsp; This is an example, arguably, 
+			of phrase constituent ambiguity, which is considered in much more 
+			detail later.&nbsp; The concepts of syntactical and 
+			phrase-constituent ambiguity overlap with blurred edges.<br />
+			Simple rephrasing (as above) will disambiguate the meanings.</p>
+			<p>Finally, there are times when an adverbial can apply to either of 
+			two verbs.&nbsp; When verbs form strings in the syntax (i.e., they 
+			catenate) some ambiguity sometimes arises in deciding which verb the 
+			adverbial is modifying so, for example, in:<br />
+&nbsp;<em>&nbsp;&nbsp; She undertook to do the work straightaway</em><br />
+			it is not apparent whether</p>
+			<ol class="auto-style100">
+				<li><em>the undertaking happened immediately</em><br />
+				in
+				which <em>straightaway</em> is modifying the verb <em>undertake</em>, or</li>
+				<li><em>the doing of the work will happen immediately</em><br />
+				in
+				which <em>straightaway</em> modifies <em>to do the work</em></li>
+			</ol>
+			<p>The intuitive response from many will be that the adverbial 
+			modifies the nearest verb so interpretation b. is probably inferred.&nbsp; 
+			We can disambiguate the sentence by moving the adverbial and 
+			producing:<br />
+			<em>&nbsp;&nbsp;&nbsp; Straightaway, she undertook to do the work</em><br />
+			which signals interpretation a.</p>
+		
+			<p><a href="#top" style="color:#ff3300">-top-</a></p>
+			
+			<table cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+				<img alt="link" height="133" src="../../images/link_chain200.jpg" width="200" /></td>
+				<td class="auto-style56">
+				<h3><a name="conjunctions"></a>Conjunctions</h3>
+				</td>
+			</tr>
+			</table>
+		
+			<p>Some conjunctions cause ambiguity issues.</p>
+			<h4><em>although</em> and <em>while</em></h4>
+			<p>Both <em>although</em> and <em>while</em> are subordinating 
+			conjunction of concession and occur unambiguously in, for example:<br />
+			<em>&nbsp;&nbsp;&nbsp; I like reading in the evening while my 
+			husband prefers watching TV<br />
+&nbsp;&nbsp;&nbsp; Although I like reading in the evening, my husband prefers 
+			watching TV<br />
+			</em>etc.</p>
+			<p>A little care is needed, however, because <em>while</em> is also 
+			a temporal subordinator so, for example:<br />
+			<em>&nbsp;&nbsp;&nbsp; Although it is raining, I'll take a walk<br />
+			</em>is unambiguous because <em>although</em> has only one function 
+			but<br />
+			<em>&nbsp;&nbsp;&nbsp; While it is raining, I'll take a walk<br />
+			</em>can mean:<br />
+			<em>&nbsp;&nbsp;&nbsp; Although it is raining I'll take a walk<br />
+			</em>or<br />
+			<em>&nbsp;&nbsp;&nbsp; As long as it is raining I'll take a walk<br />
+			</em>It could also mean:<br />
+			<em>&nbsp;&nbsp;&nbsp; Because it is raining I'll take a walk<br />
+			</em>because <em>while</em> sometimes carries the sense of causality 
+			usually signalled by <em>so</em> or <em>because</em>.</p>
+			<h4><em>but</em> and <em>although</em></h4>
+			<p>There is also scope for ambiguity with the distinction between 
+			coordinators and subordinators.<br />
+			In coordinated clauses 
+			we can omit the subject, providing it is common to both clauses so we get, for example:<br />
+			<em>&nbsp;&nbsp;&nbsp; Mary was exhausted but worked on till six<br />
+			</em>in which it is clear that <em>Mary</em> is the subject of both clauses.<br />
+			We cannot do this with subordination so we do not allow:<br />
+			<em>&nbsp;&nbsp;&nbsp; *Although Mary was very tired, worked on till six</em></p>
+			<p>There is, however, a little more to it than that because in a 
+			sentence such as:<br />
+			<em>&nbsp;&nbsp;&nbsp; He was exhausted but John worked on till six</em><br />
+			it is averred by some that <em>He</em> and <em>John</em> must refer 
+			to different people.&nbsp; In other words, <em>He</em> cannot be a 
+			cataphoric reference to <em>John</em> in a coordinated sentence.&nbsp; 
+			This is somewhat questionable and the sentence is at best ambiguous 
+			insofar as <em>He</em> and <em>John</em> could refer to the same 
+			person or to different people depending on context and co-text.<br />
+			With subordination, on the other hand, cataphoric reference is 
+			assumed so in:<br />
+			<em>&nbsp;&nbsp;&nbsp; Although he was exhausted, John worked on 
+			till six</em><br />
+			it is inevitable that <em>he</em> and <em>John</em> will be assumed 
+			to be the same person.</p>
+			<h4><em>so</em> and <em>so that</em>: purpose or result?</h4>
+			<p>The conjunction <em>so </em>also causes problems because it 
+			implies both a result and a cause.<br />
+			It is <strong>resultative</strong> in, for example:<br />
+			<em>&nbsp;&nbsp;&nbsp; The night was very clear so I could see the 
+			ships out to sea<br />
+			</em>It is <strong>causative</strong> in, for example:<br />
+			<em>&nbsp;&nbsp;&nbsp; I dug a deep hole so the tree was firmly 
+			planted<br />
+			</em>However, ambiguity can arise with a sentence such as:<br />
+&nbsp;&nbsp;&nbsp; <em>Someone stole my car so I couldn't get to work</em><br />
+			which means either:</p>
+			<ol class="auto-style100">
+				<li><em>The result of the theft of my car was that I couldn't 
+				get to work</em><br />
+				or</li>
+				<li><em>Someone stole my car to prevent me getting to work</em></li>
+			</ol>
+			<p>The way to disambiguate is to replace <em>so</em> with <em>because</em> when we are 
+			referring to result and then we get:<br />
+			<em>&nbsp;&nbsp;&nbsp; Because someone had stolen my car I couldn't 
+			get to work<br />
+			</em>which is unambiguous, or to rephrase the thought as in b.</p>
+			<p>The same consideration applies in these examples.&nbsp; 
+			It is <strong>resultative</strong> in:<br />
+			<em>&nbsp;&nbsp;&nbsp; The ground was icy so that I was careful how 
+			I walked<br />
+			</em>in which the care is a result of the ice and <em>so that</em> 
+			is acting as a coordinating conjunction.<br />
+			It is, however, <strong>purposive</strong> and a subordinating 
+			conjunction in:<br />
+			<em>&nbsp;&nbsp;&nbsp; I put salt on the driveway so that the ice 
+			would melt</em></p>
+			<p>This means that, e.g.:<br />
+			<em>&nbsp;&nbsp;&nbsp; He was standing in the light so that I could 
+			see him<br />
+			</em>is ambiguous and means either:</p>
+			<ol class="auto-style100">
+				<li><em>The result of his standing in the light was to make him 
+				visible</em><br />
+				(coordinating the clauses)<br />
+				<strong>or</strong></li>
+				<li><em>He stood in the light in order to make himself visible<br />
+				</em>(subordinating the second clause to the first)</li>
+			</ol>
+			<p>Again, we have to rephrase to exclude the possibility of 
+			ambiguity.</p>
+			<h4><em>before</em></h4>
+			<p>Temporal conjunctions can also cause ambiguity if handled 
+			carelessly.&nbsp; For example:<br />
+			<em>&nbsp;&nbsp;&nbsp;
+			I expected he would be happy with the figures before the meeting 
+			started<br />
+			</em>can be interpreted either as:</p>
+			<ol class="auto-style100">
+				<li><em>Before the meeting started, I expected he would be happy with the 
+			figures</em><br />or</li>
+				<li><em>That he would be happy with the figures before the meeting started 
+			was what I expected</em></li>
+			</ol>
+			<p>The ambiguity can be resolved by moving the temporal clause to 
+			the initial position as in a.</p>
+			<h4><em>if</em> and <em>when</em></h4>
+			<p>The conjunctions <em>if</em> and <em>when</em> also cause 
+			problems.&nbsp; In, for example:<br />
+			<em>&nbsp;&nbsp;&nbsp; When possible, the work should be completed 
+			without disturbing the residents<br />
+			</em>has two interpretations:</p>
+			<ol class="auto-style100">
+				<li><em>Whenever it is possible, the work should be completed 
+				without disturbing the residents<br />
+				</em>or</li>
+				<li><em>If it is possible, the work should be completed without 
+				disturbing the residents</em></li>
+			</ol>
+			<p>Resolving the ambiguity simply means being careful to use<em> if</em> 
+			when a conditional rather than temporal meaning is intended.</p>
+			<h4><em>if</em> and <em>whether</em></h4>
+			<p>Consider:<br />
+			<em>&nbsp;&nbsp;&nbsp; Tell me if you need any help<br />
+			</em>which has two interpretations:</p>
+			<ol class="auto-style100">
+				<li><em>Tell me if you need any help<br />
+				</em>as a true conditional in which the imperative depends on 
+				the need for help<br />or</li>
+				<li><em>Tell me whether you need any help</em><br />
+				which is not conditional and simply asks for the speaker to be 
+				informed</li>
+			</ol>
+			<p>Disambiguation again involves using <em>if</em> only in 
+			conditional senses.</p>
+			<h4><em>because</em></h4>
+			<p>Some ambiguity may arise with negative causality so, for example:<br />
+			<em>&nbsp;&nbsp;&nbsp; I didn't come because of the chance that she would be there</em><br />
+			may be interpreted either as:</p>
+			<ol class="auto-style100">
+				<li><em>The reason I didn't come was because there was a chance 
+				she would be there<br />
+				</em>or</li>
+				<li><em>The reason I came was not that there was a chance that 
+				she would be there</em></li>
+			</ol>
+			<p>Only context and intonation (stressing <em>because</em>) will disambiguate 
+			the meaning unless we rephrase the whole meaning as:<br />
+			<em>&nbsp;&nbsp;&nbsp; There was a chance she would be there so I 
+			didn't come<br />
+			</em>and<br />
+			<em>&nbsp;&nbsp;&nbsp; That there was a chance she would be there 
+			was not the reason I came.<br />
+			</em>This is also considered below when we come to the ambiguity 
+			that negative sentences can evince.</p>
+			<h4><em>to </em>and<em> in order to</em></h4>
+			<p>The word <em>to</em> is sometimes just an abbreviation 
+			of <em>in order to</em>.<br />
+			This can create some ambiguity.<br />
+			Compare for example:</p>
+			<ul class="bluebullet">
+				<li><em>I agreed to go to the restaurant</em></li>
+				<li><em>I agreed to get a bit of peace.</em></li>
+			</ul>
+			<p>In the first case, we have a <em>to-</em>infinitive doing its 
+			usual catenative job referring to a prospective event.<br />
+			In the second case, however, <em>to </em>is an abbreviation of <em>
+			in order to</em> and is not catenative.<br />
+			Here's a slightly different example:</p>
+			<ul class="bluebullet">
+				<li><em>I agreed to the proposal to finish the meeting early</em></li>
+			</ul>
+			<p>is ambiguous because it means either:</p>
+			<ul class="bluebullet">
+				<li><em>I agreed to the proposal that the meeting should finish 
+				early</em><br />
+				or</li>
+				<li><em>I agreed to the proposal in order to finish the meeting 
+				early</em></li>
+			</ul>
+			<p>and only rephrasing such as above can disambiguate the sentence.</p>
+		
+			<p><a href="#top" style="color:#ff3300">-top-</a></p>
+			
+			<table cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+				<img alt="ingredients" height="133" src="../../images/ingredients_a200.jpg" width="200" /></td>
+				<td class="auto-style56">
+				<h3><a name="clauseconstits"></a>Clause constituents</h3>
+				</td>
+			</tr>
+			</table>
+		
+			<p>This is a major area of ambiguity and the final one to tackle 
+			under syntactic ambiguity.<br />
+			There is a dedicated guide to disentangling clause constituents on 
+			this site, linked below, so here we will rely on a few examples of 
+			the sorts of ambiguity that can arise.<br />
+			Here are the examples:</p>
+			<h4>Instrumental phrases</h4>
+			<p>Many case-grammar languages have a way of marking instrumental 
+			case but English doesn't, preferring to rely on prepositional 
+			phrases.&nbsp; Unfortunately, prepositions themselves are 
+			polysemous.&nbsp; The preposition <em>with</em> carries the meaning of an 
+			instrument as in:<br />
+			<em>&nbsp;&nbsp;&nbsp; I cut down the tree with an axe<br />
+			</em>and of accompaniment as in:<br />
+			<em>&nbsp;&nbsp;&nbsp; The man in the corner with the dog.<br />
+			</em>This causes problems.</p>
+			<p>For example:<br />
+			<em>&nbsp;&nbsp;&nbsp; Anne hit the intruder with a chair<br />
+			</em>is probably not ambiguous at all (but it is conceivable that 
+			the intruder was carrying a chair).<br />
+			<em>&nbsp;&nbsp;&nbsp; Anne shot the intruder with a knife<br />
+			</em>is also unambiguous because you can't shoot someone with a 
+			knife so the only interpretation is that the intruder carried the 
+			knife.<br />
+			However,<br />
+			<em>&nbsp;&nbsp;&nbsp; Anne hit the intruder with a gun<br />
+			</em>is truly ambiguous because it can be interpreted as either:</p>
+			<ol class="auto-style100">
+				<li><em>Anne used a gun to hit the intruder</em><br />
+				or</li>
+				<li><em>Anne hit the intruder who was carrying a gun</em></li>
+			</ol>
+			<p>So rephrasing is necessary to make the sense clear.</p>
+			<h4>Prepositional phrases as modifiers of nouns or verbs</h4>
+			<p>Take:<br />
+			<em>&nbsp;&nbsp;&nbsp; I shouted to the man by the river<br />
+			</em>which has two interpretations:</p>
+			<ol class="auto-style100">
+				<li><em>By the river I shouted to the man</em><br />
+				or<br />
+				<em>It was by the river that I shouted to the man</em></li>
+				<li><em>I shouted to the man who was by the river<br />
+				</em>or<br />
+				<em>It was the man by the river that I shouted to</em></li>
+			</ol>
+			<p>It depends on whether we consider <em>by the river</em> to be an 
+			independent phrase or one which is attached to the noun.<br />
+			The subject of the sentence is clear: it is <em>I</em>.<br />
+			The object, however, can either be:</p>
+			<ol class="auto-style100">
+				<li><em>the man by the river</em><br />
+				or</li>
+				<li><em>the man</em></li>
+			</ol>
+			<p>The adverbial phrase which modifies the verb is then absent (if 
+			a. is the object) or is <em>by the river</em> if b. is the object.<br />
+			In other words, we have to decide whether the shouting happened by 
+			the river or not.<br />
+			We can use a diagram to make it clear:<br />
+			<img alt="river" height="107" src="../../imagesgraphics/ambiguity_phrases465.jpg" width="465" /></p>
+			<p>In the first case the verb phrase in blue has the blue adverbial 
+			modifying it with the verb's object in red.&nbsp; The phrase <em>by 
+			the river</em> is independent and can be moved to the beginning to 
+			get:<br />
+			<em>&nbsp;&nbsp;&nbsp; By the river I shouted to the man</em><br />
+			In the second case the verb phrase is unmodified and the object is 
+			in red but <em>by the river</em> is not an independent phrase 
+			because we cannot move it to the beginning and retain the same 
+			sense.</p>
+			<p>Here are some more examples taken from various guides on this 
+			site for you to untangle:</p>
+			<ul class="bluebullet">
+				<li><em>He used the computer in his office</em><ul class="greenbullet">
+					<li>Which computer did he use?</li>
+					<li>Where did he use the computer?</li>
+				</ul>
+				</li>
+				<li><em>The teacher shouted at the boy in room 13</em><ul class="greenbullet">
+					<li>Where did the shouting happen?</li>
+					<li>Which boy did the teacher shout at?</li>
+				</ul>
+				</li>
+				<li><em>He cut up the tree in the corner</em><ul class="greenbullet">
+					<li>Which tree did he cut up?</li>
+					<li>Where did the cutting up happen?</li>
+				</ul>
+				</li>
+				<li><em>John upset the lady in the garden</em><ul class="greenbullet">
+					<li>Who did John upset?</li>
+					<li>Where did the upsetting happen?</li>
+				</ul>
+				</li>
+				<li><em>He read the book on the island</em><ul class="greenbullet">
+					<li>Where did he read?</li>
+					<li>What was the subject of the book?</li>
+				</ul>
+				</li>
+			</ul>
+			<h4>Disambiguation in writing</h4>
+			<p>In written language, it is impossible to disentangle independent 
+			and mobile phrases so rephrasing is the option.&nbsp; This often 
+			means:</p>
+			<ol>
+				<li>Moving the prepositional phrase:<br />
+				<em>&nbsp;&nbsp;&nbsp; At his office he used the computer</em></li>
+				<li>Making a cleft sentence:<br />
+				<em>&nbsp;&nbsp;&nbsp; It was the boy in room 13 that the 
+				teacher shouted at</em></li>
+				<li>Otherwise defining the object:<br />
+&nbsp;<em>&nbsp;&nbsp; He cut up the corner tree</em></li>
+				<li>Making a passive:<br />
+				<em>&nbsp;&nbsp;&nbsp; The tree in the corner was cut up</em></li>
+				<li>Using a relative pronoun clause:<br />
+				<em>&nbsp;&nbsp;&nbsp; John upset the lady who was in the garden</em></li>
+				<li>Changing the prepositions and producing, e.g.:<br />
+				<em>&nbsp;&nbsp;&nbsp; He read the book about the island</em></li>
+			</ol>
+			<h4>Disambiguation in speaking</h4>
+			<p>In speaking we can deliberately move the tonic syllable to disambiguate what might otherwise be 
+			unclear.&nbsp; For example, the sentence:</p>
+			<p><em class="auto-style17">Anne hit the man with the chair</em></p>
+			<p>has two possible interpretations as we saw.</p>
+			<p>We can disambiguate this in speaking by paying 
+			attention to how the utterance is stressed.&nbsp; Like this:</p>
+			<table cellspacing="3" class="tableblueborder">
+				<tr>
+					<td rowspan="2" class="auto-style136">1</td>
+					<td class="auto-style18"><em>Anne</em></td>
+					<td class="auto-style19"><em>hit the</em></td>
+					<td class="auto-style139"><em><strong>MAN</strong></em></td>
+					<td class="auto-style19"><em>with a chair</em></td>
+				</tr>
+				<tr class="style_black">
+					<td class="auto-style137">pre-head</td>
+					<td class="auto-style138">head</td>
+					<td class="auto-style141">nucleus</td>
+					<td class="auto-style138">tail</td>
+				</tr>
+				<tr>
+					<td rowspan="2" class="auto-style133">2</td>
+					<td class="auto-style134"><em>Anne</em></td>
+					<td class="auto-style135"><em>hit the man with a </em></td>
+					<td class="auto-style140"><em><strong>CHAIR</strong></em></td>
+					<td class="auto-style135">&nbsp;</td>
+				</tr>
+				<tr class="style_black">
+					<td class="auto-style18">pre-head</td>
+					<td class="auto-style19">head</td>
+					<td class="auto-style139">nucleus</td>
+					<td class="auto-style19">-</td>
+				</tr>
+			</table>
+			<p>In case 1, the pitch movement is most obvious on the word <em>man</em> 
+			so that becomes the focus of attention.<br />
+			In case 2, <em>chair</em> is the focus because that is where the 
+			pitch movement occurs.<br />
+			Disambiguating which meaning is intended by pausing and tone shifts 
+			are what Wells refers to as the demarcative function of intonation, 
+			i.e., the separating off of the crucial data.</p>
+			<h4>Position and direction adjuncts</h4>
+			<p>The usual rule in English is that position adjuncts cannot 
+			co-occur with dynamic verbs of motion but directional adjuncts of 
+			place can so we do not allow:<br />
+			<em>&nbsp;&nbsp;&nbsp; *He is climbing at the top<br />
+			</em>because<em> at
+			</em>refers to place, not direction,<em>
+			</em>but we do allow<br />
+			<em>&nbsp;&nbsp;&nbsp; He is climbing to the top<br />
+			</em>and<br />
+			<em>&nbsp;&nbsp;&nbsp; He is sitting at the top.</em></p>
+			<p>An ambiguity can arise, therefore, concerning whether, for 
+			example:<br />
+			<em>&nbsp;&nbsp;&nbsp; The children were running outside<br />
+			</em>means:<br />
+			<em>&nbsp;&nbsp;&nbsp; When the children were outside, they were 
+			running<br />
+			</em>or<br />
+			<em>&nbsp;&nbsp;&nbsp; The children were in the process of moving 
+			from inside to outside<br />
+			</em>Usually, the assumption will be that direction of movement is 
+			the intended message but that is not always the case.<br />
+			Because some prepositional adjuncts are always directional, the 
+			ambiguity cannot arise, for example, with:<br />
+			<em>&nbsp;&nbsp;&nbsp; I'm going to walk into the garden<br />
+			</em>but can with the preposition <em>in</em> and <em>outside </em>
+			which refer to both direction and position so<br />
+			<em>&nbsp;&nbsp;&nbsp; He walked in the airport<br />
+			</em>might mean he did some walking in the airport or that he moved 
+			into the airport on foot and<br />
+			<em>&nbsp;&nbsp;&nbsp; They threw it outside the house<br />
+			</em>might mean they threw it from inside to outside or that it was 
+			outside the house before they threw it.<br />
+			The former is what people will usually understand.</p>
+			<h4><em>yes-no</em> questions</h4>
+			<p>Nearly all <em>yes-no</em> questions are, by their nature 
+			ambiguous in terms of what they are asking.&nbsp; Really simple 
+			questions such as:<br />
+			<em>&nbsp;&nbsp;&nbsp; Is John here?</em><br />
+			are not ambiguous because the direction of the question can only be 
+			John's presence or absence.<br />
+			However, a question such as:<br />
+			<em>&nbsp;&nbsp;&nbsp; Did Mary cook the turkey last night?</em><br />
+			contains four phrase elements (the subject, the verb phrase, the 
+			object and the adverbial of time).&nbsp; It means, therefore, that a
+			<em>yes-no</em> question could be directed at any of these 
+			constituents.&nbsp; Like this:<br />
+			<em>&nbsp;&nbsp;&nbsp; Was it Mary who cooked the turkey last night?<br />
+&nbsp;&nbsp;&nbsp; Was it last night that Mary cooked the turkey?<br />
+&nbsp;&nbsp;&nbsp; Was it the turkey that Mary cooked last night?<br />
+&nbsp;&nbsp;&nbsp; What did Mary do to the turkey last night?</em><br />
+			and only the co-text and context can disambiguate this in writing 
+			although sentence stress can make the sense clear in spoken 
+			language by stressing <em>Mary, last night, the turkey</em> and <em>
+			do</em> respectively.<br />
+			The disambiguation which the cleft forms allows is, incidentally, 
+			one of the motivations for their use although, as we see from the 
+			fourth question, the verb 
+			cannot be the focus of a cleft sentence form and the question is 
+			differently formed.&nbsp; We cannot allow:<br />
+			<em>&nbsp;&nbsp;&nbsp; *Was it cook that Mary did to the turkey last 
+			night?</em><br />
+			There is more on cleft sentences in the guide to them, linked below.</p>
+			<p><a href="#top" style="color:#ff3300">-top-</a></p>
+			
+			<table cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+				<img alt="butterfly" height="133" src="../../images/animals_butterfly_waves200.jpg" width="200" /></td>
+				<td class="auto-style56">
+				<h3><a name="causative"></a>Causative structures</h3></td>
+			</tr>
+			</table>
+		
+			<p>You are probably aware that two verbs in English, <em>have</em> 
+			and <em>get</em>, function in causative structures to place the 
+			focus on what is done rather than who did it.&nbsp; So, for example, 
+			it is easy to see that:<br />
+			<em>&nbsp;&nbsp;&nbsp; I got my house painted last year<br />
+			</em>and<br />
+			<em>&nbsp;&nbsp;&nbsp; I had the report re-written with the new 
+			figures<br />
+			</em>both signal the fact that the speakers / writers did not affect 
+			the action personally but persuaded, cajoled, required or paid for 
+			others to do it for them.&nbsp; (The guide to the causative which 
+			explains how this is achieved is linked below.)</p>
+			<p>Unfortunately, the structures themselves allow of multiple 
+			interpretations and, in many cases, only context and co-text can 
+			help us to the meaning.</p>
+			<p>Ambiguity arises because the structures themselves are used to 
+			signal different meanings so, for example:</p>
+			<ol>
+				<li>Often the meaning is transparent so, e.g.:<em><br />
+&nbsp;&nbsp;&nbsp; She had her car repaired by the garage at the end of the road<br />
+				</em>or<em><br />
+&nbsp;&nbsp;&nbsp; She got her car repaired by the garage at the end of the road<br />
+				</em>are both unambiguously causative structures which signal 
+				what she required the garage to do.</li>
+				<li><em>She had her car stolen for the insurance money</em><br />
+				and<br />
+				<em>She got her car stolen for the insurance money</em><br />
+				both refer to a fraudulent act.</li>
+				<li><em>She had her car stolen while she was on holiday</em><br />
+				and<br />
+				<em>She got her car stolen while she was on holiday</em><br />
+				both probably refer to an unfortunate event.</li>
+				<li><em>She had her foot caught in the lift doors</em><br />
+				refers to an unfortunate state <strong>or</strong> event and is 
+				not causative<br />
+				but<br />
+				<em>She got her foot caught in the lift doors</em><br />
+				can <strong>only</strong> refer to an unfortunate event not a 
+				state but is similarly not causative.</li>
+			</ol>
+			<p>So, standing alone, a sentence such as:<br />
+			<em>&nbsp;&nbsp;&nbsp; She got the safe broken open</em><br />
+			can carry three different senses (fraudulent act, misfortune or 
+			simple causative).<br />
+			Context is needed to know which is the correct interpretation.</p>
+			<p>Unfortunately, again, both verbs can signal the speaker's 
+			accomplishment, not the fact that the speaker did not perform the 
+			action personally.&nbsp; Further ambiguity arises because English 
+			does not distinguish the form of a participle used verbally and one 
+			used adjectivally.&nbsp; So, for example:<br />
+			<em>&nbsp;&nbsp;&nbsp; I got the report finished on time<br />
+			</em>will usually be interpreted as<br />
+			<em>&nbsp;&nbsp;&nbsp; I succeeded in getting the report finished on 
+			time<br />
+			</em>and<br />
+			<em>&nbsp;&nbsp;&nbsp; I had the report nearly finished when the new 
+			figures came in<br />
+			</em>signals the fact that the report writing was almost 
+			accomplished.&nbsp; In both cases, the word <em>finished</em> is 
+			interpretable as a participle adjective equal to <em>a (nearly) 
+			finished report .</em><br />
+			When the context and co-text do not help, however, ambiguity arises 
+			so, e.g.:<br />
+			<em>&nbsp;&nbsp;&nbsp; I need to get the car washed for the wedding<br />
+			</em>can mean:<br />
+			<em>&nbsp;&nbsp;&nbsp; I have to wash the car for the wedding<br />
+			</em>or<br />
+			<em>&nbsp;&nbsp;&nbsp; I have to have the car washed for the wedding<br />
+			</em>and only context and co-text can disambiguate the senses.<br />
+			Compare, too, for example:<br />
+			<em>&nbsp;&nbsp;&nbsp; I go the kitchen floor swept and mopped by 
+			six o'clock<br />
+			</em>which almost certainly refers to the speaker's achievement, 
+			with:<br />
+			<em>&nbsp;&nbsp;&nbsp; I got the kitchen floor swept and mopped by 
+			the maid<br />
+			</em>which is clearly causative.</p>
+			<p>No ambiguity can arise, therefore, when the adjective is not 
+			derived from a verb so:<br />
+			<em>&nbsp;&nbsp;&nbsp; I got the figures right<br />
+			</em>and<em><br />
+&nbsp;&nbsp;&nbsp; I had the figures right<br />
+			</em>are unambiguous, but<br />
+			<em>&nbsp;&nbsp;&nbsp; I got the figures worked out<br />
+			</em>and<br />
+&nbsp;&nbsp;&nbsp; <em>I had the figures worked out<br />
+			</em>are both ambiguous.<br />
+			These uses of ostensibly causative structures when no causal effect 
+			is implied is non-intuitive and confuses learners easily.</p>
+			<p><a href="#top" style="color:#ff3300">-top-</a></p>
+			
+			<a name="semantic"></a>
+			<hr />
+		
+			<table cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+				<img alt="talk" height="166" src="../../images/talk_to_statue250.jpg" width="250" /></td>
+				<td class="auto-style56">
+				<h2>Semantic ambiguity</h2>
+				</td>
+			</tr>
+		</table>
+		
+			<p>Now we come to semantic ambiguity caused mostly by the 
+			hearer's inability to understand what belongs to what in the 
+			utterance.</p>
+		
+			<table cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+				<img alt="shed" height="133" src="../../images/shed200.jpg" width="200" /></td>
+				<td class="auto-style56">
+				<h3><a name="genitives"></a>Genitives</h3>
+				</td>
+			</tr>
+			<tr>
+				<td class="auto-style99">
+				<em>the gardener's shed</em></td>
+				<td class="auto-style56">
+				&nbsp;</td>
+			</tr>
+			</table>
+		
+			<p>The genitive in English does more than refer to possession and 
+			therein lies a good deal of scope for ambiguity.</p>
+			<p>In the example above of the shed, for example, it is unclear 
+			whether the reference is to:</p>
+			<ol class="auto-style100">
+				<li><em>a particular gardener's workplace </em>(association)</li>
+				<li><em>a shed owned by a gardener </em>(possession)</li>
+				<li><em>the type of shed typically used by gardeners </em>(description)</li>
+			</ol>
+			<p>Additionally:</p>
+			<ul class="bluebullet">
+				<li><em>a young man's job</em><br />
+				does not necessarily refer to a job held by a young man but 
+				refers to a type of physically demanding work</li>
+				<li><em>a doctor's surgery</em><br />
+				does not usually refer to a surgery owned by a doctor but one in 
+				which a doctor (any doctor) carries out medical work</li>
+				<li><em>an agricultural worker's cottage</em><br />
+				is most unlikely to belong to a particular worker but describes 
+				a type of modest building</li>
+			</ul>
+			<p>Rephrasing is the only way to disambiguate but it is often a 
+			clumsy alternative and many prefer to leave the ambiguity standing 
+			and rely on the context to make it clear which meaning of the 
+			genitive is intended.</p>
+			<p>Another function of the genitive is described as 
+			objective insofar as it refers to the object of a verb.&nbsp; For example:<br />
+			<em>&nbsp;&nbsp;&nbsp; the woman's imprisonment<br />
+			</em>probably refers to the fact that the woman is the object and 
+			was imprisoned but it needn't because it can be a subject genitive 
+			as in:<br />
+			<em>&nbsp;&nbsp;&nbsp; the woman's imprisonment of the children<br />
+			</em>in which the woman is the subject and did the imprisoning.&nbsp; 
+			From that we can then abstract a genitive:<br />
+			<em>&nbsp;&nbsp;&nbsp; the children's imprisonment by the woman.<br />
+			</em>But, in order to disambiguate, we have to select a different 
+			form of the genitive and use the <em>of-</em>phrase, periphrastic 
+			structure instead of the <em>'s</em> inflexion.&nbsp; Then we can arrive at a distinction between:<br />
+			<em>&nbsp;&nbsp;&nbsp; the imprisonment of the woman<br />
+			</em>and<br />
+			<em>&nbsp;&nbsp;&nbsp; the woman's imprisonment<br />
+			</em>which is less ambiguous, although still not wholly unambiguous.</p>
+			<p>Another example is:<br />
+			<em>&nbsp;&nbsp;&nbsp; the man's investigation<br />
+			</em>which
+			could mean:</p>
+			<ol class="auto-style100">
+				<li><em>the investigation into the man</em><br />
+				or</li>
+				<li><em>the investigation done by the man</em></li>
+			</ol>
+			<p>If a. is intended then<br />
+			<em>&nbsp;&nbsp;&nbsp; the investigation of the man<br />
+			</em>is preferred (the man was investigated, not the man did the 
+			investigation).<br />
+			If b. is the preferred sense then<br />
+			<em>&nbsp;&nbsp;&nbsp; the man's investigation<br />
+			</em>will be preferred, but ambiguity remains.<br />
+			The rule of thumb is to reserve the <em>of</em>-formulation for objective 
+			genitives and keep with the '<em>s</em> formulation for humans in subjective 
+			genitive expressions whenever there is a need to avoid ambiguity.</p>
+		
+			<p><a href="#top" style="color:#ff3300">-top-</a></p>
+			
+			<table cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+				<img alt="no" height="133" src="../../images/no_hand200.jpg" width="200" /></td>
+				<td class="auto-style56">
+				<h3><a name="negation"></a>Negation</h3>
+				</td>
+			</tr>
+			</table>
+		
+			<p>What do you understand by the following negative statements?<br />
+			&nbsp;&nbsp;&nbsp; <em>He didn't speak to the girl in the red dress at the party.<br />
+			&nbsp;&nbsp;&nbsp;
+			She didn't meet the man who bought the house on Thursday.</em></p>
+			<p>Both sentences are ambiguous and mean either:</p>
+			<ol class="auto-style100">
+				<li><em>He didn't speak to the girl in the red dress</em><br />
+			or<br />
+				<em>He spoke to the girl in the red dress but not at the party</em></li>
+				<li><em>She didn't meet the man who bought the house</em><br />
+			or<br />
+				<em>She met the man who bought the house but not on Thursday</em><br />
+				(In this case, too, incidentally, we do not know whether the 
+				Thursday applies to when she didn't meet the man or whether the 
+				man bought the house on Thursday.)</li>
+			</ol>
+			<p>We can disambiguate these to some 
+			extent when speaking by stressing the element we want to negate:<br />
+			&nbsp;&nbsp;&nbsp; <em>He didn't speak to the girl in the red dress at the 
+			</em><span class="style_underline"><strong><em>PARTY</em></strong></span>.<br /><em>&nbsp;&nbsp;&nbsp; She didn't 
+			meet the man who bought the house on </em>
+			<span class="style_underline"><strong><em>THURSDAY</em></strong></span>.<br /><em>&nbsp;&nbsp;&nbsp;
+			He didn't speak to the girl in the red </em>
+			<span class="style_underline"><strong><em>
+			DRESS</em></strong></span><em> at the party.<br />
+&nbsp;&nbsp;&nbsp; She didn't 
+			meet the man who bought the </em><span class="style_underline">
+			<strong><em>HOUSE</em></strong></span><em> on Thursday.</em><br />
+			Or, as we saw above we can subtly alter where the tonic stress 
+			falls.<br />
+			So, in the first two, we have <em>party</em> and <em>Thursday</em> 
+			as the nucleus with no tail and in the second we move the nuclear 
+			stress to <em>dress</em> and <em>house</em> and have a falling tone 
+			on the tails, <em>at the party</em> and <em>on Thursday</em>.</p>
+			<p>In written language, 
+			no such resources are available so we have to alter the ordering of the elements to make meaning 
+			clearer.<br />
+			For example:<br />
+			&nbsp;<em>&nbsp;&nbsp;
+			At the party, he didn't speak to the girl in the red dress.<br />
+&nbsp;&nbsp;&nbsp; On 
+			Thursday, she didn't meet the man who bought the house.</em><br />
+			Even then, 
+			some ambiguity might remain so to be 100% clear, we need to rephrase 
+			entirely with something like:<br />
+			&nbsp;&nbsp; <em>&nbsp;He didn't speak to the girl in the red dress until after the 
+			party.<br />
+&nbsp;&nbsp;&nbsp; She didn't meet the man who bought the house until the 
+			following Friday.</em></p>
+			<p>As you see, the tendency in English to apply negation to phrases 
+			rather than words can lead to a considerable amount of ambiguity.<br />
+			A general, if sloppy, rule is:</p>
+			<p class="indentpara">If the negation is ambiguous, hearers will usually assume that it is 
+			the final part of the sentence that is being negated.</p>
+			<p>So for 
+			example:<br />
+			<em>&nbsp;&nbsp;&nbsp;
+			He didn't drive<br />
+			</em>means he travelled in a different way<br />
+			<em>&nbsp;&nbsp;&nbsp;
+			He didn't drive my car<br />
+			</em>implies he drove his own or someone else's car<br />
+			and<br />
+			<em>&nbsp;&nbsp;&nbsp;
+			He didn't drive my car carefully<br />
+			</em>will normally be understood to mean:<br />
+			<em>&nbsp;&nbsp;&nbsp;
+			He drove my car carelessly<br />
+			</em>rather than<br />
+			<em>&nbsp;&nbsp;&nbsp;
+			He didn't drive my car<br />
+			</em>In other words, to re-state the rule slightly differently</p>
+			<p class="indentpara">If there is a danger of some ambiguity, the scope of 
+			negation is confined to the final element of a negative utterance.</p>
+			<p>Occasionally, especially in writing where the use of emphasis, tone 
+			units and special sentence stress is less available, some negative 
+			statements can be ambiguous and must be rephrased to make the scope 
+			of negation clear.</p>
+			<table cellpadding="3" cellspacing="0" class="tableblueborder">
+				<tr>
+					<td class="auto-style115"><em>She didn't praise any of the 
+					children</em></td>
+					<td rowspan="5" class="auto-style106"><strong>could mean</strong></td>
+					<td class="auto-style118"><em>She praised no children at all</em></td>
+					<td class="auto-style114" rowspan="5" style="width: 60px">
+					<strong>or</strong></td>
+					<td class="auto-style119"><em>She praised only carefully 
+					selected children</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style116"><em>They didn't drink half the beer</em></td>
+					<td class="auto-style89"><em>Half the beer remains</em></td>
+					<td class="auto-style110"><em>More than half the beer remains</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style116"><em>This doesn't affect a few of you</em></td>
+					<td class="auto-style89"><em>A few of you are unaffected</em></td>
+					<td class="auto-style110"><em>All of you are affected</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style111"><em>He wasn't promoted due to his 
+					working style</em></td>
+					<td class="auto-style104"><em>There was another reason he was 
+					promoted</em></td>
+					<td class="auto-style110"><em>His working style was the reason 
+					he wasn't promoted</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style117"><em>I can't understand all of what 
+					he says</em></td>
+					<td class="auto-style108"><em>I understand nothing he says</em></td>
+					<td class="auto-style107"><em>I understand some of what he 
+					says</em></td>
+				</tr>
+			</table>
+			<p>In spoken language, the senses can be disambiguated by stressing 
+			the determiners <em>any</em> and <em>a few</em>, stressing the pre-determiners 
+			<em>half 
+			(of)</em> and <em>all (of)</em>, stressing the preposition <em>due to</em> and by placing a rising intonation contour 
+			on <em>his working style</em>.<br />
+			In written English, that form of disambiguation is not available so 
+			careful writers will rephrase to avoid the possible confusion.</p>
+			<p>English is unusual in forming what is called transferred negation 
+			(for much more, see the guide to negation, linked below).&nbsp; This 
+			means, for example, that we prefer:<br />
+			<em>&nbsp;&nbsp;&nbsp; I don't think he's coming</em><br />
+			over<br />
+&nbsp;<em>&nbsp;&nbsp; I think he's not coming</em><br />
+			even though the second of these is more logical.<br />
+			There is, however, a danger of some ambiguity when negation is 
+			transferred (or understood to be transferred). So, for example:<br />
+			&nbsp;<em>&nbsp;&nbsp;
+			John doesn't think his sister is happy</em><br />
+			can be interpreted two ways:</p>
+			<ol class="auto-style100">
+				<li><em>John believes his sister is unhappy</em><br />
+				or</li>
+				<li><em>John does not think his sister is happy, he knows she 
+				is.</em></li>
+			</ol>
+			<p>The second interpretation is rare and will be signalled as such, 
+			either by the insertion of an additional clause as above or by heavy 
+			emphasis being placed on the main verb.</p>
+		
+			<p><a href="#top" style="color:#ff3300">-top-</a></p>
+			
+			<table cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+				<img alt="theme" height="133" src="../../images/things_to_know200.jpg" width="200" /></td>
+				<td class="auto-style56">
+				<h3><a name="themerheme"></a>Theme and rheme</h3>
+				</td>
+			</tr>
+			</table>
+		
+			<p>Careless handling of theme and rheme often results in ambiguity 
+			or, at least, some confusion.<br />
+			For example, if we take the two alternative forms:</p>
+			<ol>
+				<li><em>She wanted to see her sister so she took the train to London</em></li>
+				<li><em>She took the train to London because she wanted to see her 
+				sister</em></li>
+			</ol>
+			<p>we need to understand that they are not synonymous and simply 
+			randomly selected alternative forms.</p>
+			<p>In sentence 1. the Theme is<em><span class="style_black"><br />
+			</span> &nbsp;&nbsp;&nbsp; <span class="style_black">She wanted 
+			to see her sister<br />
+			</span></em>and the rheme is <em>she took a train to London<br />
+			</em>In sentence 2. the theme is<br />
+			&nbsp;&nbsp;&nbsp; <span class="style_black"><em>She took the train to London</em></span><br />
+			and the rheme is <em>she wanted to see here sister</em><br />
+			The theme is the jumping off point and the rheme acts to 
+			complete the thought.</p>
+			<p>Now, because rhemes form the following themes in coherent 
+			English, naturally, the first sentence would be followed by a second 
+			saying something about <em>London</em> (the rheme of the first sentence), such as:<br />
+			&nbsp;&nbsp;&nbsp;
+			<em>While she was there, she took the opportunity to visit the British 
+			Museum</em><br />
+			and the second sentence would be more naturally followed by 
+			something about the <em>sister</em> such as:<br />
+			<em>&nbsp;&nbsp;&nbsp;
+			She was delighted to see her<br />
+			</em>If we follow the first sentence with something more appropriate to 
+			the second we get:<br />
+			<em>&nbsp;&nbsp;&nbsp;&nbsp;She wanted to see her sister so she took the 
+			train to London.&nbsp; She was delighted to see her.</em><br />
+			in which we are left in a state of ambiguity regarding who was 
+			delighted to see whom because we have been ambushed by the 
+			incoherent use of theme-rheme structure and expected to read or hear 
+			something about London.</p>
+			<p>Moral: rhemes are used as themes in following sentences to avoid 
+			ambiguity.</p>		
+			<p><a href="#top" style="color:#ff3300">-top-</a></p>
+			
+			<table cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+				<img alt="case" height="133" src="../../images/case200.jpg" width="200" /></td>
+				<td class="auto-style56">
+				<h3><a name="case"></a>Case pronouns&nbsp;</h3>
+				</td>
+			</tr>
+			</table>
+		
+			<p>Case is not evident in English except in the realm of pronouns 
+			where it is critical to understand what did what to whom or whose 
+			item was whose.</p>
+			<p>Consider these two sentences:</p>
+			<ol>
+				<li><em>She likes you more than I</em></li>
+				<li><em>She likes you more than me</em></li>
+			</ol>
+			<p>In sentence 1., the meaning is that<br />
+			<em>&nbsp;&nbsp;&nbsp; She likes you more than I like you<br />
+			</em>but in sentence 2. it is<br />
+			<em>&nbsp;&nbsp;&nbsp;
+			She likes you more than she likes me<br />
+			</em>It is only by insisting on the use of the correct case for the 
+			pronoun that the ambiguity can be avoided so the informal<br />
+			<em>&nbsp;&nbsp;&nbsp;
+			She likes you more than me<br />
+			</em>could carry either meaning.</p>
+			<p>The ambiguity is very common because in informal speech, the 
+			accusative (object) case of the pronoun is conventionally used so, 
+			e.g.:<br />
+			<em>&nbsp;&nbsp;&nbsp; He likes spicy food more than me<br />
+			</em>would normally be interpreted as:<br />
+			<em>&nbsp;&nbsp;&nbsp; He is more fond of spicy food than I am<br />
+			</em>although, because the accusative pronoun, <em>me</em>, has been 
+			used, it really means:<br />
+			<em>&nbsp;&nbsp;&nbsp; He is more fond of curry than he is fond of 
+			me<br />
+			</em>The only way to disambiguate is to use rather formal and 
+			correct language and say:<br />
+			<em>&nbsp;&nbsp;&nbsp; He likes spicy food more than I<br />
+			</em>to mean we are comparing tastes, and reserve<br />
+			<em>&nbsp;&nbsp;&nbsp; He likes spicy food more than me<br />
+			</em>to mean we are comparing taste for food with liking for a 
+			person.</p>
+			<p>An additional issue with pronoun forms concerns the fact that the 
+			English system is defective, not always distinguishing case, so, for 
+			example, the pronoun <em>you</em> serves for all cases in English.&nbsp; 
+			It is simply impossible in the following to decide what the sentence 
+			means:<br />
+			<em>&nbsp;&nbsp;&nbsp; He likes Mary more than you<br />
+			</em>could mean:<br />
+			<em>&nbsp;&nbsp;&nbsp; He likes Mary more than you like Mary<br />
+			</em>or<br />
+			<em>&nbsp;&nbsp;&nbsp; He likes Mary more than he likes you</em></p>
+		
+			<p><a href="#top" style="color:#ff3300">-top-</a></p>
+			
+			<table cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+				<img alt="2" height="133" src="../../images/two_jigsaw_bench200.jpg" width="200" /></td>
+				<td class="auto-style56">
+				<h3><a name="adjunctsetc"></a>Adjuncts, conjuncts and disjuncts</h3>
+				</td>
+			</tr>
+			</table>
+		
+			<p>There is on this site a guide to
+			adverbials, linked below.&nbsp; For now, we just need to know that 
+			adjuncts modify adjective, adverb and verb phrases, conjuncts 
+			link whole clauses and sentences together (which is why they 
+			are sometimes called linking adverbials) and disjuncts modify the 
+			whole of clauses, not just the verb phrase (which is why they are 
+			sometimes called sentence adverbials).</p>
+			<h4>Conjunct problems</h4>
+			<p>If the adverb is not separated by commas or by pausing between 
+			separate tone units from the rest of the clause, then some ambiguity 
+			arises.&nbsp; For example:<br />
+			&nbsp;&nbsp;&nbsp; <em>Her husband was displeased and she ended up similarly unhappy</em><br />
+			means that we are comparing her unhappiness with her husband's 
+			displeasure so the adverb is only modifying the adjective, which is 
+			commonly what adverbs do.<br />
+			However,<br />
+			&nbsp;&nbsp;&nbsp; <em>Her husband became displeased and she ended up, similarly, unhappy</em><br />
+			betokens that we are comparing her ending up unhappy with her 
+			husband's becoming displeased and the adverb is functioning as a 
+			conjunct linking the whole second 
+			clause to the first.<br />
+			</p>
+			<p>Fronting the adverbs removes the danger of ambiguity so the adverb 
+			in:<br />
+			&nbsp;<em>&nbsp;&nbsp;
+			Her husband became displeased.&nbsp; Similarly, she ended up unhappy</em><br />
+			is&nbsp;only interpretable as a conjunct.</p>
+			<h4>Disjunct problems</h4>
+			<p>One of the examples in the opening tables was:<br />
+&nbsp;&nbsp;&nbsp; <em>Being honest, he was seen 
+						as rude</em></p>
+			<p>Which is interpretable in two ways:</p>
+			<ol>
+				<li><em>My honest opinion is he was seen as rude</em><br />
+				or</li>
+				<li><em>Because he was honest he was seen as rude</em></li>
+			</ol>
+			<p>There, it was listed under syntactical ambiguity but it is also a 
+			semantic problem because the hearer does not know who is being 
+			referred to as <em>honest</em> so the issue considered here.<br />
+			If the speaker wishes to make it clear that he or she is trying to 
+			be honest then the phrase <em>Being honest</em> attaches to all that 
+			follows.&nbsp; It is a style disjunct because the speaker is 
+			signalling how the hearer should understand what is said.<br />
+			We can rephrase to remove the ambiguity, of course, as:<br />
+			<em>&nbsp;&nbsp;&nbsp; Because he was being honest he was seen as 
+			rude<br />
+			</em>or<br />
+			<em>&nbsp;&nbsp;&nbsp; If I may speak honestly, he was seen as rude</em></p>
+			<p>Other disjuncts can also be interpreted as adjuncts unless the 
+			phrasing in speech is carefully produced and punctuation is used 
+			successfully.&nbsp; Even then, however, ambiguity can remain without 
+			rephrasing the thought.&nbsp; For example:</p>
+			<ul class="bluebullet">
+				<li><em>To be fair, Mary treated everyone equally</em><ul class="bluebullet">
+					<li><span class="greenbullet">Who is or was being fair, the 
+					speaker or Mary?</span></li>
+				</ul>
+				</li>
+				<li><em>To balance the argument, the man was quite objective</em><ul class="bluebullet">
+					<li><span class="greenbullet">Who is or was doing the 
+					balancing, the speaker or the man?</span></li>
+				</ul>
+				</li>
+				<li><em>Speaking confidentially, the accountant has told me the 
+				truth</em><ul class="bluebullet">
+					<li><span class="greenbullet">Who is or was speaking 
+					confidentially, the speaker or the accountant?</span></li>
+				</ul>
+				</li>
+			</ul>
+			<p>and so on.<br />
+			All three examples have the disjunct separated off by commas at the 
+			beginning of the sentence as is conventional so they should be 
+			understood as disjuncts referring only to the speaker's style.&nbsp; 
+			They will, however, especially in rapid speech, often be 
+			misinterpreted as reference to the subject and verb phrase so rephrasing is 
+			often the only 
+			solution.<br />
+			Prepositional phrases, despite the polysemous nature of prepositions 
+			themselves, instead of non-finite verb forms often help so we could 
+			get, e.g.:<br />
+			<em>&nbsp;&nbsp;&nbsp; In fairness, Mary treated everyone equally<br />
+&nbsp;&nbsp;&nbsp; On balance, the man was quite objective<br />
+&nbsp;&nbsp;&nbsp; Between you and me, the accountant has told me the truth</em></p>
+		
+			<p><a href="#top" style="color:#ff3300">-top-</a></p>
+			
+			<table cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+				<img alt="limit" height="133" src="../../images/borderline_fence200.jpg" width="200" /></td>
+				<td class="auto-style56">
+				<h3><a name="limiters"></a>Limiters</h3></td>
+			</tr>
+			</table>
+		
+			<p>These adverbials (which are almost always adverbs) limit the range 
+			of the verb in some way.&nbsp; The usual list includes:<br />
+			&nbsp;&nbsp;&nbsp; <em>She only bought a shirt<br />
+			&nbsp;&nbsp;&nbsp; They even lied about 
+			the results<br />
+			&nbsp;&nbsp;&nbsp; They just left it where they found it<br />
+			&nbsp;&nbsp;&nbsp; I merely asked<br />
+			&nbsp;&nbsp;&nbsp; She nearly succeeded<br />
+			&nbsp;&nbsp;&nbsp; I simply want an answer</em></p>
+			<p>They need careful handling in terms of word ordering to avoid 
+			ambiguity.&nbsp; Some can act outside the adverb role and even when 
+			they are adverbs, placement is important.<br />
+			For example:<br />
+			&nbsp;&nbsp;&nbsp; <em>Only he came to the meeting</em> (nobody else came [determiner])<br />
+			&nbsp;&nbsp;&nbsp; <em>He only came to the meeting</em> (and did not speak [adverb])<br />
+			&nbsp;&nbsp;&nbsp; <em>He came only to the meeting</em> (and to nothing else [adverb])<br />
+			&nbsp;&nbsp;&nbsp; <em>He came to the only meeting</em> (and there was only one meeting 
+			[adjective])<br />
+			all mean something slightly different as do:<br />
+			&nbsp;&nbsp;&nbsp; <em>She just washed the shirt<br />
+			&nbsp;&nbsp;&nbsp; She washed just the shirt</em><br />
+			because the first implies that she did nothing else to the shirt and 
+			the second that she washed nothing except the shirt.<br />
+			In AmE the first sentence can also mean<br />
+			<em>&nbsp;&nbsp;&nbsp; She has recently washed the shirt.</em></p>
+			<p>Other examples of what happens when we move the limiters are:<br />
+			<em>&nbsp;&nbsp;&nbsp; They lied even about the results<br />
+&nbsp;&nbsp;&nbsp; They left it just where they found it </em>(in which the 
+			meaning of <em>just</em> changes from <em>only</em> to <em>exactly</em>)<br /><em>&nbsp;&nbsp;&nbsp; I want simply an answer</em><br />
+			The rule of 
+			thumb to avoid ambiguity is to place the limiter immediately before the item it 
+			modifies.</p>
+			<p><a href="#top" style="color:#ff3300">-top-</a></p>
+			
+			<a name="pragmatic"></a><hr />
+		
+			<table cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+				<img alt="talk" height="166" src="../../images/talk_tin_strings250.jpg" width="250" /></td>
+				<td class="auto-style56">
+				<h2>Pragmatic ambiguity</h2>
+				</td>
+			</tr>
+		</table>
+		
+			<p>All speakers of all languages, everywhere, occasionally 
+			misunderstand each other.&nbsp; Most will have some kind of idiom 
+			akin to <em>getting the wrong end of the stick</em> although 
+			whatever it is is unlikely to be about sticks.<br />
+			There is a guide on this site, linked below, to pragmatics which 
+			covers this area in a little more detail.&nbsp; Here, we will deal 
+			with two related concepts.</p>
+		
+			<table cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+				<img alt="punch" height="133" src="../../images/punch200.jpg" width="200" /></td>
+				<td class="auto-style56">
+				<h3>Illocutionary force</h3></td>
+			</tr>
+			</table>
+		
+			<p>This is to do with what it is the speaker's intention to 
+			communicate, independent of the form of the language used to realise 
+			the function.<br />
+			For example, a question such as:<br />
+			<em>&nbsp;&nbsp;&nbsp; Would you like to try that again?</em><br />
+			may, in fact, be an imperative meaning:<br />
+&nbsp;<em>&nbsp;&nbsp; That was not good enough.&nbsp; Try again</em><br />
+			but, if the hearer and speaker are at odds with what it means the 
+			preferred response of:<br />
+			<em>&nbsp;&nbsp;&nbsp; OK, sorry.&nbsp; I'll have another go</em><br />
+			might be replaced by the dispreferred<br />
+&nbsp;<em>&nbsp;&nbsp; No, not really.</em><br />
+			It may also be a threat along the lines of:<br />
+&nbsp;<em>&nbsp;&nbsp; If you try that again, I will retaliate</em><br />
+			but the hearer may not comprehend the intention behind the question 
+			and ambiguity and misunderstanding will occur.&nbsp; There is more 
+			on this in the guide to pragmatics, of course.</p>
+		
+			<table cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+				<img alt="cooperate" height="133" src="../../images/working_group200.jpg" width="200" /></td>
+				<td class="auto-style56">
+				<h3>The cooperative principle</h3></td>
+			</tr>
+			</table>
+		
+			<p>We owe this concept to Grice (who gets much more discussion in 
+			the guide to pragmatics) who was concerned to elucidate how people 
+			figure out what the illocutionary force is that lies behind the 
+			language they hear or read.<br />
+			He settled on four maxims, the breaking of any of which will signal 
+			some unexpected intention.&nbsp; The four are:</p>
+			<ol>
+				<li>Quality: Don't say what you believe to be false.<br />
+				Breaking this maxim can result in some ambiguity because saying, 
+				e.g.:<br />
+				<em>&nbsp;&nbsp;&nbsp; I don't see the argument<br />
+				</em>may be ambiguous if the speaker intends to say<br />
+				<em>&nbsp;&nbsp;&nbsp; I disagree<br />
+				</em>(i.e., does understand the argument but doesn't like it)<br />
+				but the hearer understands<br />
+				<em>&nbsp;&nbsp;&nbsp; Please explain again<br />
+				</em>and goes on to do so, reiterating the argument to the 
+				exasperation of the hearer.</li>
+				<li>Quantity: Be informative enough and don't over-inform.<br />
+				Breaking this maxim can also result in ambiguity because if a 
+				speaker says, e.g.:<br />
+				<em>&nbsp;&nbsp;&nbsp; There's someone at the door<br />
+				</em>the hearer (who has heard nothing) may take that to be 
+				simple information on which there is no need to act but the 
+				speaker may intend<br />
+				<em>&nbsp;&nbsp;&nbsp; I know you heard the doorbell and I'd 
+				like you to answer it<br />
+				</em>and is <strong>deliberately</strong> over-informing to make 
+				the point.</li>
+				<li>Relation: Be relevant.<br />
+				If, in a conversation about getting the car repaired one speaker 
+				suddenly intrudes with, e.g.:<br />
+				<em>&nbsp;&nbsp;&nbsp; By the way, do you have Anne's phone 
+				number?<br />
+				</em>the hearer may suffer from a good deal of ambiguity until 
+				the speaker makes it clear that Anne is a car mechanic.</li>
+				<li>Manner: Avoid obscurity.&nbsp; Avoid ambiguity.&nbsp; Be 
+				brief.&nbsp; Be orderly.<br />
+				Any of the many ways in which the language can exhibit ambiguity 
+				discussed in this guide, whether lexical, syntactical or 
+				semantic, can lead to breaking this maxim.<br />
+				If, for example, a speaker says:<br />
+				<em>&nbsp;&nbsp;&nbsp; I expected Mary would meet me before I 
+				got to the airport<br />
+				</em>the hearer may perceive ambiguity in terms of whether the 
+				meeting or the expecting happened before the speaker arrived at 
+				the airport and wonder if the speaker is being intentionally or 
+				accidentally ambiguous.&nbsp; It may take a little while to sort 
+				this out.</li>
+			</ol>
+			<p>For more, see the guide.</p>
+			<p><a href="#top" style="color:#ff3300">-top-</a></p>
+			<hr />
+			<h2>Summary</h2>
+			<p>Here's a diagram that considers the main areas only:</p>
+			<p>
+			<img alt="summary" height="418" src="../../imagesgraphics/ambiguity_summary.png" width="465" /></p>
+			
+			<hr /><br />
+			<table id="istrainingnav" cellpadding="0" cellspacing="0" class="tableblueborder">
+			<tr>
+				<td class="auto-style50" colspan="2" style="height: 18px">Related guides</td>
+			</tr>
+			<tr>
+				<td class="auto-style49">
+				<a href="polysemy.html">polysemy and homonymy</a></td>
+				<td class="auto-style55">for some discussion of the fuzziness of 
+				these concepts with more examples</td>
+			</tr>
+			<tr>
+				<td class="auto-style49">
+				<a href="../../tenses/tenses_aspects/time_tense_aspect_index.html">
+				time, tense and aspect</a></td>
+				<td class="auto-style55">for more on the mismatch between tense 
+				form and the time it refers to</td>
+			</tr>
+			<tr>
+				<td class="auto-style49">
+				<a href="adjectives.html">adjectives</a></td>
+				<td class="auto-style55">for more about post-positioning of 
+				adjectives and much else</td>
+			</tr>
+			<tr>
+				<td class="auto-style49">
+				<a href="lexicogrammar.html">lexicogrammar</a></td>
+				<td class="auto-style55">for some more about how attention to 
+				meaning affects syntax</td>
+			</tr>
+			<tr>
+				<td class="auto-style49">  
+				<a href="../background/chomsky.html">Chomsky</a></td>
+				<td class="auto-style53">for the guide considering his views on 
+				ambiguity and much more</td>
+			</tr>
+			<tr>
+				<td class="auto-style49">  
+				<a href="../phrases_clauses_sentences/constituents.html">clause 
+				constituents</a></td>
+				<td class="auto-style53">for the guide to a major area</td>
+			</tr>
+			<tr>
+				<td class="auto-style49">  
+				<a href="../phrases_clauses_sentences/clefts.html">cleft 
+				sentences</a></td>
+				<td class="auto-style53">for the guide to how particular clause 
+				constituents may be marked by alterations to the grammar</td>
+			</tr>
+			<tr>
+				<td class="auto-style49">  
+				<a href="../verbs/causative.html">causatives</a></td>
+				<td class="auto-style53">causatives are frequently ambiguous and 
+				interpretation depends on context and co-text</td>
+			</tr>
+			<tr>
+				<td class="auto-style49">  
+				<a href="negation.html">negation</a></td>
+				<td class="auto-style53">for much more about assertive and 
+				non-assertive forms and transferred negation&nbsp;</td>
+			</tr>
+			<tr>
+				<td class="auto-style49">  
+				<a href="adverbials.html">adverbials</a></td>
+				<td class="auto-style53">for much more about adjuncts and 
+				disjuncts (and other things)</td>
+			</tr>
+			<tr>
+				<td class="auto-style49">  
+				<a href="../discourse/pragmatics.html">pragmatics</a></td>
+				<td class="auto-style53">for the guide which contains 
+				consideration of the cooperative principle and more</td>
+			</tr>
+			</table>
+			<br />
+			<hr />
+			
+		<p class="smallfont">Reference:<br />
+		Wells, JC, 2006, <em>English Intonation: An Introduction</em>, Cambridge: Cambridge 
+		University Press</p>
+			
+			<hr />
+			</div>
+			<!-- #EndEditable -->
+		<!-- End Content -->
+	
+	<!-- Begin Footer -->
+	<div id="footer">
+		<p>
+		<a href="../../../contact.html">Contact</a> |
+		<a href="../../../faq.html">FAQs</a> |
+		<a href="../../../copyright_notice.html">Copyright notice</a> |
+		<a href="../../../documents/ELT_Concourse_Charter.pdf" target="_blank"> ELT Concourse charter</a> |
+		<a href="../../../disclaimer.html"> Disclaimer and Privacy statement </a>|
+		<a href="../../../search_the_site.html">Search <strong>
+		ELT Concourse</strong></a></p>
+	</div>
+	<!-- End Footer -->
+
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

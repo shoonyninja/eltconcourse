@@ -1,0 +1,1867 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- #BeginTemplate "../../../styles/dwt/training.dwt" -->
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta http-equiv="Content-Language" content="en-gb" />
+<!-- #BeginEditable "doctitle" -->
+<title>ELT Concourse: the article system</title>
+<meta content="ELT Concourse English language analysis and teaching guides. Articles and the article system" name="description" />
+<script type="text/javascript">
+<!--
+function FP_changeProp() {//v1.0
+ var args=arguments,d=document,i,j,id=args[0],o=FP_getObjectByID(id),s,ao,v,x;
+ d.$cpe=new Array(); if(o) for(i=2; i<args.length; i+=2) { v=args[i+1]; s="o"; 
+ ao=args[i].split("."); for(j=0; j<ao.length; j++) { s+="."+ao[j]; if(null==eval(s)) { 
+  s=null; break; } } x=new Object; x.o=o; x.n=new Array(); x.v=new Array();
+ x.n[x.n.length]=s; eval("x.v[x.v.length]="+s); d.$cpe[d.$cpe.length]=x;
+ if(s) eval(s+"=v"); }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+// -->
+</script>
+<style type="text/css">
+
+
+
+
+
+
+
+
+.auto-style3 {
+	text-align: left;
+	color: #000080;
+	padding-left: 5px;
+}
+.auto-style4 {
+	padding-left: 5px;
+}
+.auto-style5 {
+	list-style-type: lower-roman;
+}
+.auto-style6 {
+	list-style-type: lower-alpha;
+}
+.auto-style52 {
+	border-left: medium none #666666;
+	border-right: medium none #666666;
+	border-top: medium none #666666;
+	border-bottom: 1px solid #666666;
+	padding-left: 2px;
+}
+.auto-style54 {
+	border-left: medium none #666666;
+	border-right: 1px solid #666666;
+	border-top: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	text-align: left;
+}
+.auto-style56 {
+	border-left: 1px solid #666666;
+	border-right: medium none #666666;
+	border-top: medium none #666666;
+	border-bottom: 1px solid #666666;
+	padding-left: 3px;
+	padding-right: 2px;
+}
+.auto-style51 {
+	border-left: 1px solid #666666;
+	border-right: medium none #666666;
+	border-top: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	padding-left: 3px;
+	padding-right: 2px;
+}
+.auto-style57 {
+	padding-left: 5px;
+	padding-right: 2px;
+	padding-top: 0;
+	padding-bottom: 0;
+	border-right-style: none;
+	border-right-width: medium;
+	border-top-style: none;
+	border-top-width: medium;
+	border-bottom-style: none;
+	border-bottom-width: medium;
+}
+.auto-style58 {
+	border-left-style: none;
+	border-left-width: medium;
+	border-top-style: none;
+	border-top-width: medium;
+	border-bottom-style: none;
+	border-bottom-width: medium;
+}
+.auto-style60 {
+	padding-left: 2px;
+	padding-right: 2px;
+	border-top-style: none;
+	border-top-width: medium;
+	border-bottom-style: none;
+	border-bottom-width: medium;
+}
+.auto-style61 {
+	border-top-style: none;
+	border-top-width: medium;
+	border-bottom-style: none;
+	border-bottom-width: medium;
+}
+.auto-style64 {
+	border: 1px solid #666666;
+}
+.auto-style67 {
+	border-left: 1px solid #666666;
+	border-right: 1px solid #666666;
+	border-top: 1px solid #000080;
+	border-bottom: 1px solid #666666;
+	background-color: #F5F5F5;
+}
+.auto-style68 {
+	border-left: 1px solid #666666;
+	border-right: medium none #cccccc;
+	border-top: medium solid #cccccc;
+	border-bottom: 1px solid #666666;
+	background-color: #F5F5F5;
+}
+.auto-style69 {
+	border-left: 1px solid #666666;
+	border-right: medium none #cccccc;
+	border-top: 1px solid #666666;
+	border-bottom: medium none #cccccc;
+}
+.auto-style70 {
+	border-left: 1px solid #666666;
+	border-right: 1px solid #666666;
+	border-top: 1px solid #666666;
+	border-bottom: medium none #cccccc;
+	background-color: #F5F5F5;
+}
+.auto-style72 {
+	border-left: 0px solid #000080;
+	border-right: 1px solid #000080;
+	border-top: 0px solid #000080;
+	border-bottom: 1px solid #000080;
+	border-collapse: collapse;
+}
+.auto-style73 {
+	border-bottom: 1px solid #000080;
+	border-top-style: none;
+	border-top-width: medium;
+	border-left-style: none;
+	border-left-width: medium;
+}
+.auto-style74 {
+	background-color: #FFFFFF;
+}
+.auto-style27 {
+	padding-left: 5px;
+}
+</style>
+<!-- #EndEditable -->
+<meta content="language analysis,eltconcourse,English grammar,free English language teaching materials,CELTA,Delta,language guides,free Delta training,free CELTA training,free ELT Training materials,teacher training,ELT,learning English,teaching English,English Language Teaching,ESOL,EFL,English as a Foreign Language" name="keywords" />
+<link href="../../../styles/mainstyle.css" rel="stylesheet" type="text/css" />
+<link href="../../../styles/training.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+</style>
+</head>
+
+<body>
+	<!-- Begin Masthead -->
+	<div id="masthead" >
+		<table style="width: 100%; border-bottom: #000080 solid">
+			<tr>
+				<td style="width: 135px">
+				<img alt="logo" height="49" src="../../../gfx/logo.png" width="78" /></td>
+				<td valign="bottom">
+				<span class="orangexxlargebold">ELT </span>
+				<span class="bluexxlargebold">Concourse teacher training</span></td>
+			</tr>
+		</table>
+	</div>
+	<!-- End Masthead -->
+	<!-- Begin Content -->
+			<!-- Begin Sidebar -->
+		<div id="sidebartt">
+			<ul>
+				<li><a href="../../../index.html">ELT Concourse home</a></li>
+				<li><a href="../../../a-z_index.html">A-Z site index</a></li>
+				<li><a href="../../training_index.html">Teacher training index</a></li>
+				<li><a href="../../../development/development_index.html">Teacher development</a></li>
+				<li><a href="../../../teachers/teachers.html">For teachers</a></li>
+				<li><a href="../../trainers/trainers_index.html">For trainers</a></li>
+				<li>
+				<a href="../../../academic_management/academic_management_index.html">For managers</a></li>
+				<li><a href="../../../learners/learners.html">For learners</a></li>
+				<li><a href="../../common/about_language.html">About language</a></li>
+				<li><a href="../../../questions/questions.html">Language questions</a></li>
+				<li class="whiteback">Other areas</li>
+				<li><a href="../indexes_is/eap_index_is.html">Academic English</a></li>
+				<li><a href="../indexes_is/be_index_is.html">Business English</a></li>
+				<li><a href="../../entering/introduction_to_elt.html">Entering ELT</a></li>
+				<li><a href="../../courses/courses_index.html">Courses index</a></li>
+				<li><a href="../../courses/basic/introduction_basic.html">Basic ELT course</a></li>
+				<li><a href="../../tkt/tkt_index.html">TKT</a></li>
+				<li><a href="../../bridge/bridge_index.html">The Bridge</a></li>
+				<li><a href="../../courses/lacourse/index_la_course.html">Language analysis</a></li>
+				<li>
+				<a href="../../courses/training_to_train/training_to_train_index.html">Training to train</a></li>
+				<li><a href="../../courses/transcription1/transcription.html">Transcription</a></li>
+				<li><a href="../../glossaries/glossary_index.html">Glossaries</a></li>
+				<li><a href="../../../articles/articles.html">Articles</a></li>
+			</ul>
+		</div>
+		<!-- End Sidebar -->
+		<!-- Begin Content -->
+		
+		<div id="toppicture" style="text-align: left; background-color: white; padding: 0px; margin-left: 140px;">
+				<img alt="Concourse 2" height="207" src="../../../images/concourse2blue.jpg" width="310" /></div>
+		
+			<!-- #BeginEditable "content" -->
+		
+			<!-- #BeginEditable "content" -->
+		
+		<div id="content">
+		
+		
+	
+	<h1>The article system</h1>
+		<p>
+		<img alt="articles" height="207" src="../../images/bricabrac310.jpg" width="310" /></p>
+		<p>Articles in English form a sub-class of determiners.&nbsp; 
+		If you want the overview first, therefore, you should look at
+		<a href="determiners.html" target="_blank">the guide to determiners</a> 
+		(new tab).</p>
+			<p>Articles are unusual determiners in that they cannot stand alone 
+			in English and function as pronouns.&nbsp; Other determiners 
+			generally perform both functions as in, e.g.:<br />
+&nbsp;<em>&nbsp;&nbsp;I didn't lose any money<br />
+&nbsp;&nbsp;&nbsp; I didn't lose any<br />
+&nbsp;&nbsp;&nbsp; I want that book<br />
+&nbsp;&nbsp;&nbsp; I want that<br />
+&nbsp;&nbsp;&nbsp; I don't have many ideas<br />
+&nbsp;&nbsp;&nbsp; I don't have many<br />
+&nbsp;&nbsp;&nbsp; Give me some sugar<br />
+&nbsp;&nbsp;&nbsp; Give me some</em><br />
+			etc.<br />
+			but we do not allow:<br />
+			<em>&nbsp;&nbsp;&nbsp; *I have the<br />
+&nbsp;&nbsp;&nbsp; *She gave me a</em><br />
+			etc.<br />
+			Other languages, incidentally, do not necessarily have a parallel 
+			restriction.</p>
+			<p>There are three articles in English that we consider here:</p>
+			<ol>
+				<li><em>a / an</em>: the indefinite article</li>
+				<li><em>the</em>: the definite article</li>
+				<li><em>&Oslash;</em>: the zero article</li>
+			</ol>
+			<p>In what follows, we shall not be considering the negative article
+			<em>no</em> or the partitive article <em>some</em>.</p>
+			<hr />
+		
+		<table cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+				<a name="warning"></a>
+				<img alt="warning" height="166" src="../../images/flag_warning250.jpg" width="250" /></td>
+				<td class="auto-style27">
+				<h2><span class="style_red"><strong>Website </strong>warning</span></h2>
+				</td>
+			</tr>
+		</table>
+			<p>There is deep confusion out here on the web about how articles in 
+			English are used.&nbsp; There is also a good deal of uncertainty 
+			about what articles actually are.<br />
+			On many sites you will find a set of rules which, apart from being 
+			unnecessary and confusing, are, at times, plain wrong.<br />
+			The focus often seems to be on slightly interesting phenomena such 
+			as how articles are used with names of families, rivers and 
+			countries and so on at the expense of setting out the generally 
+			quite simple and transparent rules that we will cover in this guide.<br />
+			Guides which focus on quirks and exceptions 
+			which depress and confuse learners rather than shining a light on 
+			the concepts which underlie the use of articles in English are not 
+			very helpful.</p>
+			<p>What happens with that approach is that learners are encouraged 
+			to commit a range of pseudo-rules to memory and then asked to apply 
+			them to the language they know.&nbsp; They can't do that, of course, 
+			because the pseudo-rules themselves are obscure and inadequate so 
+			they make mistakes.&nbsp; It's a form of internet-induced error.</p>
+			<hr />
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="6" height="166" src="../../images/six_integer250.jpg" width="250" /></td>
+					<td class="auto-style3">
+					<h2>How many possible articles are there?</h2>
+					</td>
+				</tr>
+			</table>
+			<p>English does not use the full range of articles (and it is 
+			unlikely that any language does) but there are possibilities in all 
+			languages and some will use more or fewer of the possible articles 
+			to determine nouns.</p>
+			<p>Here they are, with a few comments:</p>
+			<ol>
+				<li><strong>The indefinite article</strong><br />
+				<img alt="snow" height="133" src="../../images/snow200.jpg" width="200" /><br />
+				In English this is either <em>a</em> or <em>an</em> but some 
+				will include <em>some</em> as a plural indefinite article.<br />
+				Example are:<br />
+				<em>&nbsp;&nbsp;&nbsp; This is an interesting book<br />
+&nbsp;&nbsp;&nbsp; He came to a halt<br />
+&nbsp;&nbsp;&nbsp; Give me some coins<br />
+&nbsp;&nbsp;&nbsp; We have wasted an hour<br />
+&nbsp;&nbsp;&nbsp; It's a(n) historic moment<br />
+				</em>The issue for some learners is that the article <em>an </em>
+				occurs slightly irregularly.<br />
+				The general rule is that we use<em> an </em>before a vowel 
+				sound, but we use <em>a </em>before a consonant sound and in 
+				both cases disregard how the word is spelled because this is a 
+				pronunciation issue.&nbsp; So we get, e.g.:<br /><em>&nbsp;&nbsp;&nbsp; an artist<br />
+&nbsp;&nbsp;&nbsp; a sculptor<br />
+&nbsp;&nbsp;&nbsp; a European issue<br />
+&nbsp;&nbsp;&nbsp; an honourable man<br />
+				</em>When the /h/ sound is weakly or not sounded, many BrE speakers will 
+				also use <em>an </em>instead of <em>a </em>so we have:<br /><em>&nbsp;&nbsp;&nbsp; an historic moment<br />
+				</em>etc.<br />
+				and some will choose to use <em>an</em> before <em>hotel</em> 
+				because the word is quite recently imported from French and the 
+				'h' is not sounded in that language.&nbsp; There is a bit more 
+				below on this.<br />
+				When the /h/ sound is clear, however, the choice falls on <em>a</em> 
+				as in, e.g.:<br />
+				<em>&nbsp;&nbsp;&nbsp; a horrible experience</em><br />
+				Both <em>a</em> and <em>an</em> are very often reduced to their 
+				weak forms and pronounced as /ə/ and /ən/ respectively.<br />
+				If, however, the speaker wishes to emphasise the fact that the 
+				article refers to only one instance of a specified set of items, 
+				then the article is pronounced in its full form as /eɪ/ or /æn/.&nbsp; 
+				In writing, this use will usually be shown as emphatic as in, 
+				e.g.:<br />
+				<em>&nbsp;&nbsp;&nbsp; That's <span class="style_underline">
+				<strong>a</strong></span> reason but not the only one<br />
+&nbsp;&nbsp;&nbsp; That's <span class="style_underline"><strong>an</strong></span> 
+				idea but not the best one<br />
+				</em>In quite a lot of languages which have an indefinite article, it 
+				is indistinguishable from the numeral one (and if not 
+				the same, then closely related to it).&nbsp; Unsurprisingly, the 
+				article <em>a/an</em> is derived from the word for <em>one</em> 
+				in English and is a reduced form of it.</li>
+				<li><strong>The definite article</strong><br />
+				<img alt="finger" height="133" src="../../images/finger_point_left200.jpg" width="200" /><br />
+				In English this is solely the word <em>the</em> because English 
+				does not have alternatives dependent on gender or number so we 
+				have e.g.:<br />
+				<em>&nbsp;&nbsp;&nbsp; The people all arrived late<br />
+&nbsp;&nbsp;&nbsp; The car went off the road<br />
+&nbsp;&nbsp;&nbsp; The choice is limited</em><br />
+				Again, there is a pronunciation issue.<br />
+				The article is pronounced /ði/ before a vowel sound and /ðə/ 
+				before a consonant sound, again, regardless of how a word is 
+				spelled.&nbsp; We have, e.g.:<br />
+				<em>&nbsp;&nbsp;&nbsp; the apple</em> (/ði.ˈjæp.l̩/)<br />
+				<em>&nbsp;&nbsp;&nbsp; the man</em> (/ðə.mæn/)<br />
+				<em>&nbsp;&nbsp;&nbsp; the Euro</em> (/ðə.ˈjʊə.rəʊ/)<br />
+				etc.<br />
+				And again, the weak or absent /h/ sound is slightly problematic 
+				because some will choose to pronounce<br />
+				<em>&nbsp;&nbsp;&nbsp; the historical facts</em><br />
+				as /ðə.hɪ.ˈstɒ.rɪk.l̩.fækts/<br />
+				and some will prefer /ði.hɪ.ˈstɒ.rɪk.l̩.fækts/.&nbsp; There is 
+				more below on this.<br />
+				The exception to this rule is when the article is stressed as 
+				in, for example:<br />
+				<em>&nbsp;&nbsp;&nbsp; That is <span class="style_underline">the</span> tool for the job</em><br />
+				as /ðət.s.ˈði.tuːl.fə.ðə.dʒɒb/<br />
+				in which case it is marked to signal that it means <em>the best, 
+				most appropriate </em>or <em>only</em> tool for the job.&nbsp; 
+				In written language, it is normally <em>italicised</em> or
+				<span class="style_underline">underlined</span> in the 
+				marked form.<br />
+				In a range of languages which do not have a definite article (or 
+				any article system at all) the equivalent of the definite 
+				article is often a demonstrative determiner roughly translatable 
+				as <em>this</em> or <em>that, these </em>or <em>those</em>.<br />
+				In fact, the definite article in English shares an etymology 
+				with the demonstrative determiners and can be seen as a reduced 
+				form of them in Modern English.&nbsp; In other words, <em>this, 
+				that, these</em> and <em>those</em> can be conceptualised as 
+				forms of the definite article marked for spatial relationships 
+				(near or far) and number (singular or plural).</li>
+				<li><strong>The proper article</strong><br />
+				<img alt="building" height="133" src="../../images/buildings_important200.jpg" width="200" /><br />
+				This is somewhat rare in English but occurs frequently in other 
+				languages leading some into error.<br />
+				For example, in Greek, Portuguese and Catalan, it is 
+				conventional to use an article before people's name (<em>the 
+				Peter, the Maria </em>etc.).&nbsp; This also happens in informal 
+				use in German, French, Italian and Spanish.<br />
+				The proper article occurs less often in English but examples 
+				are:<br />
+				<em>&nbsp;&nbsp;&nbsp; The Mr Jones I spoke to was very helpful<br />
+&nbsp;&nbsp;&nbsp; The Strand is a road in London<br />
+&nbsp;&nbsp;&nbsp; The Kremlin is in Moscow<br />
+&nbsp;&nbsp;&nbsp; The Gambia is in Africa</em><br />
+				etc.<br />
+				It is also possible for <em>a/an</em> to occur as a proper 
+				article although it is rare as in, for example:<br />
+				<em>&nbsp;&nbsp;&nbsp; A Mrs Jones telephoned</em><br />
+				in which the speaker is signalling that the person is unknown 
+				except by name.<br />
+				Usage varies over time and countries once conventionally referred to with 
+				the proper article are no longer referred to that way so we 
+				have, e.g., <em>Ukraine</em>, not <em>The Ukraine</em> and <em>
+				Argentina</em> not <em>The Argentine</em>.<br />
+				Modified country names conventional use the proper article:<br />
+				<em>&nbsp;&nbsp;&nbsp; The United States<br />
+&nbsp;&nbsp;&nbsp; The Soviet Union<br />
+&nbsp;&nbsp;&nbsp; The United Arab Emirates</em><br />
+				etc.<br />
+				In this guide, we consider proper articles in English as a 
+				subset of the definite article.</li>
+				<li><strong>The partitive article</strong><br />
+				<img alt="cake" height="120" src="../../images/cake_slice200.jpg" width="200" /><br />
+				This only occurs in English with the determiner <em>some</em> as 
+				in, e.g.:<br />
+				<em>&nbsp;&nbsp;&nbsp; Please give me some paper<br />
+&nbsp;&nbsp;&nbsp; Pass me some pens</em><br />
+				etc.<br />
+				However, other languages use the partitive article frequently 
+				and these include French, Greek, Italian and a range of others and in 
+				many of those languages 
+				they consist of a combination of the definite article with a 
+				preposition.&nbsp; For example, in French, <em>à + le </em>= <em>
+				au</em> and <em>de + le </em>= <em>du</em>.&nbsp; In Italian, 
+				the preposition <em>di</em> combines with the definite article 
+				to produce <em>dello</em>, <em>della</em> and other forms 
+				equivalent to <em>some</em> or <em>any</em> in English and 
+				called a partitive article.&nbsp; In Greek, the preposition <em>
+				se</em> (<em>at</em> or <em>in</em>) combines with articles to form <em>ston</em>, <em>sti</em> 
+				and so on.</li>
+				<li><strong>The negative article</strong><br />
+				<img alt="negative" height="133" src="../../images/negative_flowers200.jpg" width="200" /><br />In English, this role is taken by the word 
+				<em>no</em> which 
+				acts as a simple determiner.&nbsp; However, other languages may 
+				reserve an article-like item for this function.&nbsp; German, 
+				for example has the word <em>kein</em> which is inflected in the 
+				same way as the indefinite article to show gender and number.<br />Fundamentally, English does not use a negative article but for 
+				those whose languages do, comparing <em>no</em> to the 
+				indefinite article has some validity.</li>
+				<li><strong>Zero article</strong><br />
+				<img alt="0" height="133" src="../../imagesgraphics/zero200.gif" width="200" /><br />
+				As the name implies, this is an absence of an obvious article and is 
+				usually represented as &Oslash;.&nbsp; Because English has a definite 
+				article denoting specificity as in, e.g.:<br />
+				<em>&nbsp;&nbsp;&nbsp; Give me the money</em><br />
+				it also employs the zero article to denote an unspecified object 
+				before a count or mass noun as in:<br />
+				<em>&nbsp;&nbsp;&nbsp; Give me money<br />
+&nbsp;&nbsp;&nbsp; Take books with you</em><br />
+				The word <em>some</em> can be used as an indefinite plural 
+				article or to determine a mass noun as in, e.g.:<br />
+				<em>&nbsp;&nbsp;&nbsp; Give me some money<br />
+&nbsp;&nbsp;&nbsp; Take some books with you</em><br />
+				It is unhelpful to describe the lack of an article in languages 
+				which do not have an article system or those which have a 
+				reduced system as the zero article.<br />
+				It is also not the case that proper nouns in English usually take the 
+				zero article.&nbsp; Most actually take no article at all so, for 
+				example:<br />
+				<em>&nbsp;&nbsp;&nbsp; Peter is here</em><br />
+				is not an example of the use of the zero article because proper 
+				names do not normally take any article at all.&nbsp; However:<br />
+				<em>&nbsp;&nbsp;&nbsp; Rain fell overnight</em><br />
+				does contain an example of the zero article because that is 
+				often how we signal a mass noun non-specifically and should, if 
+				we are being strict be written as:<br />
+				<em>&nbsp;&nbsp;&nbsp; Ø Rain fell overnight.<br />
+				</em>Compare:<br /><em>&nbsp;&nbsp;&nbsp; The rain made the paths muddy<br />
+				</em>which is the use of the definite article to refer to a 
+				specific mass noun (i.e., the rain that both you and I know 
+				about).</li>
+			</ol>
+			<hr />
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="pron" height="166" src="../../images/pronunciation250.png" width="250" /></td>
+					<td class="auto-style3">
+					<h2><a name="pron"></a>Pronunciation</h2>
+					</td>
+				</tr>
+			</table>
+			<p>In common with other function words, articles are subject to 
+			weakening in connected speech in particular.&nbsp; This is what 
+			happens:</p>
+			<ol>
+				<li>Before vowel sounds:<ul class="smallredbullet">
+					<li>The indefinite article,<em> an</em>, is reduced 
+					in rapid speech to /ən/ as in:<br />
+&nbsp;&nbsp;&nbsp; <em>an orange</em> pronounced as /ən.ˈɒ.rɪndʒ/.</li>
+					<li>The definite article, <em>the</em>, retains a longer 
+					final sound as /ði/ (but is not as long as /ði:/) as in:<br />
+&nbsp;&nbsp;&nbsp; <em>the orange</em> pronounced as /ði.ˈjɒ.rɪndʒ/.</li>
+					<li>In both cases there is liaison so for example:<br />
+					<em>&nbsp;&nbsp;&nbsp; an apple</em><br />
+					sounds more like <em>a napple</em> and there is an intrusive 
+					/j/ sound in<br />
+					<em>&nbsp;&nbsp;&nbsp; the apple</em><br />
+					which can be transcribed as /ði.ˈjæp.l̩/, but not all 
+					speakers produce the intrusion and more careful speech 
+					usually avoids it.<br />
+					(Incidentally, the word <em>apron</em> in English was 
+					originally <em>a napron</em> but, by a process called 
+					misdivision it has become <em>an apron</em>.)</li>
+				</ul>
+				</li>
+				<li>Before /h/:<br />
+				As we saw above, /h/ is often pronounced very weakly so we get, 
+				e.g.:<ul class="smallredbullet">
+					<li><em><strong>a vs. an</strong> </em>(as /ə/ or /ən/)<em><br />
+					How the pronunciation varies when the article falls before 
+					/h/ varies</em>, as with many phenomena in connected speech, 
+					with the stress patterning.<br />
+					When the first syllable of a word beginning with /h/ carries 
+					stress, the choice falls on <em>a</em> (not <em>an</em>)<em>
+					</em>pronounced as /ə/ in as in<br />
+					<em>a history lesson</em> as /ə.ˈhɪ.str̩i.ˈles.n̩/<br />
+					When the first syllable is not stressed, however, the 
+					preferred form is <em>an </em>and the pronunciation is:<br />
+					<em>an historic moment </em>as /ən.hɪ.ˈstɒ.rɪk.ˈməʊ.mənt/<br />
+					In more careful speech, however, that might also be 
+					pronounced as /æn.hɪ.ˈstɒ.rɪk.ˈməʊ.mənt/ with the article in its full 
+					citation form.<br />
+					The reason lies in stress as we have said and the unstressed 
+					first syllables of words are often reduced.&nbsp; There is 
+					evidence to suggest that in earlier times an unstressed 
+					syllable with /h/ onset was not pronounced at all.&nbsp; 
+					Dialects and varieties vary.<br />
+					But when the /h/ is clearly sounded and the stress falls on 
+					the syllable it contains, we get, e.g.:<br />
+					<em>&nbsp;&nbsp;&nbsp; a horrible experience</em><br />
+					<em>&nbsp;&nbsp;&nbsp; a history lesson</em><br />
+					in which the article is reduced to /ə/.<br />
+					The British National Corpus of above 100 million words finds 
+					rather more incidents of <em>a historical</em> than <em>an 
+					historical</em> but not by much.&nbsp; It finds about equal 
+					numbers of <em>an habitual </em>as <em>a habitual</em> 
+					including dictionary entries, incidentally.</li>
+					<li><em>the</em> (as /ðə/ or /ði/)<br />
+					&nbsp;<em>&nbsp;&nbsp; the historic moment</em><br />
+					is
+					pronounced either as /ðə.hɪ.ˈstɒ.rɪk.ˈməʊ.mənt/ or /ði.hɪ.ˈstɒ.rɪk.ˈməʊ.mənt/ 
+					depending how careful the speaker is.&nbsp; This also 
+					is caused by the stress features set out above.&nbsp; 
+					First-syllable stressing usually requires the use of /ðə/ 
+					and non-first syllable stressing requires /ði/ so in the case of a clear /h/ as in:<br />
+					<em>&nbsp;&nbsp;&nbsp; the horrible experience</em><br />
+					the pronunciation remains as /ðə/ as in /ðə.ˈhɒ.rəb.l̩.ɪk.ˈspɪə.rɪəns/ 
+					and in the case of:<br />
+&nbsp;&nbsp;&nbsp; <em>the horrific experience</em> will usually be /ði.hə.ˈrɪ.fɪk.ɪk.ˈspɪə.rɪəns/<br />
+					simply because <em>horrific</em> takes second-syllable 
+					stress and <em>horrible</em> takes first-syllable stress.</li>
+				</ul>
+				</li>
+				<li>Before other consonants such as at the beginning of <em>
+				sound, bag, cake </em>etc.:<ul class="smallredbullet">
+					<li><em>a</em> is pronounced as /ə/ (/ə.ˈsaʊnd/, /ə.bæɡ/, 
+					/ə.keɪk/)</li>
+					<li><em>the</em> is pronounced as /ðə/ (/ðə.ˈsaʊnd/, /ðə.bæɡ/, 
+					/ðə.keɪk/)</li>
+				</ul>
+				</li>
+			</ol>
+			<hr />
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="gesture" height="166" src="../../images/woman_gesture250.jpg" width="250" /></td>
+					<td class="auto-style3">
+					<h2><a name="otherlangs"></a>How do other languages work?</h2>
+					</td>
+				</tr>
+			</table>
+			<p>Languages differ dramatically in the use of articles (and some 
+			don't use them at all).&nbsp; Here's a short list but you should 
+			rely on your own research into the language(s) of your learners.&nbsp; 
+			Asking them is often useful as it alerts them to differences.</p>
+			<dl>
+				<dt>Languages with no article system</dt>
+				<dd>These include most Slavic languages (Russian, Polish, 
+				Bosnian, Czech etc.) as well as Chinese languages, Indonesian, 
+				Japanese, Hindi and Urdu.<br />
+				For speakers of these languages, using the correct article in 
+				English is very challenging because they do not easily 
+				conceptualise the need to mark specificity and non-specificity 
+				or count <em>vs</em>. mass nouns.</dd>
+				<dt>Language with no indefinite article</dt>
+				<dd>These include most Celtic languages (Breton, Welsh, Gaelic, 
+				Irish etc.) and Turkish, Persian languages and Arabic (which often encodes 
+				the definite article as a prefix).</dd>
+				<dt>Languages using affixation for articles</dt>
+				<dd>Some languages do not have a separate word class of articles 
+				but may use a similar system by adding suffixes to nouns.&nbsp; 
+				These include Albanian, Macedonian, Bulgarian, Bengali, Romanian 
+				and Scandinavian languages.<br />
+				Other languages such as Hebrew and Maltese use prefixes to 
+				denote an article system akin to English.</dd>
+			</dl>
+			<p>Many languages alter articles to show gender (most European 
+			languages) and it is impossible to use any noun, even an invented 
+			one, without first considering its gender.&nbsp; European languages 
+			have two or three genders normally although more are possible.<br />
+			Some languages, such as Basque, Georgian and most Native American 
+			languages distinguish between animate and inanimate nouns through 
+			the use of gender inflexions on the articles (and elsewhere).</p>
+			<p>Languages which are traditionally described as being article-less 
+			such as Japanese and Cantonese often use classifiers (sometimes 
+			called counters) to denote a 
+			wide range of properties in the nouns such as animacy, flatness, 
+			stick-like appearance and so on.&nbsp; For more, see
+			the guide to classifiers, 
+			partitives and group nouns, linked in the list of related guides at 
+			the end.</p>
+			<hr />
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="3" height="166" src="../../images/three_glasses250.jpg" width="250" /></td>
+					<td class="auto-style3">
+					<h2>Three critical concepts</h2>
+					</td>
+				</tr>
+			</table>
+			<p>English has no gender marking on articles and we do not mark them 
+			for case or number either.<br />
+			However, there is a deeply important 
+			distinction between three related concepts which determine how the 
+			article system functions:</p>
+			<ol>
+				<li>definite and indefinite: <strong>particular</strong> or
+				<strong>general</strong></li>
+				<li>specific and 
+			non-specific (or generic): <strong>which</strong> or <strong>what</strong></li>
+				<li>mass and count: <strong>much</strong> or <strong>many</strong></li>
+			</ol>
+			<p>The three concepts are 
+			entirely lacking in many other languages.<br />
+			In some languages, it is necessary to decide 
+			what the shape of objects is and what other characteristics they exhibit 
+			before you can count them or speak about even a single incidence of 
+			them.&nbsp; In others, it is necessary to decide what gender to ascribe to a 
+			noun before attaching a correct article as well as sometimes what 
+			case the noun is in.<br />
+			In English, however, these concepts are lacking and it is necessary 
+			to decide in terms of these three ideas above before deciding which 
+			article is appropriate.</p>
+			<p>That is a serious conceptual challenge for many learners who, even 
+			at advanced levels, are unable to use the article system with 
+			consistent accuracy (or even consistent inaccuracy).<br />
+			<strong>You cannot successfully teach the article system in English without 
+			making these three ideas clear.</strong></p>
+			<hr />
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="police" height="166" src="../../images/woman_police250.jpg" width="250" /></td>
+					<td class="auto-style3">
+					<h2>The rules</h2>
+					</td>
+				</tr>
+			</table>
+			<p>The rules we follow arise from the three concepts we have 
+			identified.<br />
+			We will refer here in all that follows to the distinction between 
+			indefinite <span class="style_underline">but</span> specific and definite
+			<span class="style_underline">and</span> specific.&nbsp; That's the 
+			key to have in mind.</p>
+			<ol>
+				<li><strong>Indefinite <span class="style_underline">but</span> 
+				specific </strong>reference is to <strong>what</strong> we are 
+				talking about but not to <strong>which</strong> we have in mind.&nbsp; 
+				I know, for example, that when you say:<br />
+				<em>&nbsp;&nbsp;&nbsp; Pass me a pen</em><br />
+				or<br />
+				<em>&nbsp;&nbsp;&nbsp; Give me water</em><br />
+				that you are referring to something which uses ink for writing 
+				but I can pass you any pen that comes to hand because although 
+				you have been definite about what you want, you have not told me 
+				which you want.<br />
+				In the second case, I also know <strong>what</strong> you want 
+				but I have no notion of the quantity or source of the water you 
+				require.</li>
+				<li><strong>Definite </strong>
+			<span class="style_underline"><strong>and</strong></span><strong> 
+				specific</strong> reference gives me two types of information.&nbsp; 
+				So, when you say<br />
+				<em>&nbsp;&nbsp;&nbsp; Pass me the pen</em><br />
+				or<br />
+				<em>&nbsp;&nbsp;&nbsp; Give me the water</em><br />
+				then:<ol class="auto-style6">
+					<li>I know <strong>what</strong> you are talking about and 
+					will pass you a pen or give you water but ...</li>
+					<li>... I also know <strong>which</strong> instance you are 
+					talking about and will give you the specific pen or amount 
+					or container of water that you asked for.</li>
+				</ol>
+				</li>
+			</ol>
+			<p>Unless this distinction lies at the heart of article teaching, 
+			the enterprise is doomed.</p>
+		<hr />
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="1" height="68" src="../../../gfx/1blue.png" width="100" /></td>
+					<td class="auto-style3">
+					<h2>Rule 1: reference</h2>
+					</td>
+				</tr>
+			</table>
+		<p>Decide what you are talking about.&nbsp; There are <strong>only</strong> 
+		three choices:</p>
+		<ol>
+			<li>One of some of many – <strong>indefinite but specific reference</strong><br />
+			<img alt="delivery" height="133" src="../../images/delivery_flowers200.jpg" width="200" /><br />
+			<span class="style_black"><em>A man brought some flowers</em></span><br />
+			This means that the speaker / writer is referring to a specific 
+			<strong>class</strong> of nouns but not to the specific <strong>instance</strong> of the noun.&nbsp; 
+			In other words, the noun is not identifiable by the reader / hearer 
+			other than knowing the class of nouns to which reference is being 
+			made.&nbsp; The speaker / writer may or may not know more about the 
+			noun but this information is not being communicated to the hearer / 
+			reader.&nbsp; Compare this to the third point, below.<br />
+			For example:<br />
+&nbsp;&nbsp;&nbsp; <em>A man arrived<br />
+&nbsp;&nbsp;&nbsp; People arrived<br />
+&nbsp;&nbsp;&nbsp; Information got lost<br />
+			</em>In these examples, the hearer / reader only knows what sort of 
+			noun is in question (i.e., specific reference) but does not 
+			know any more about the noun (i.e., the reference is indefinite).<br />
+			The reference is <strong>indefinite <span class="style_underline">but</span> specific</strong>.</li>
+			<li>All of them, everywhere – <strong>indefinite
+			<span class="style_underline">but</span> generic reference</strong><br />
+			<img alt="wheel" height="133" src="../../images/wheel200.jpg" width="200" /><br />
+			<span class="style_black"><em>The wheel was an important invention</em></span><br />
+			This 
+			also means the speaker / writer is referring to a whole <strong>class</strong> of nouns, 
+			not a single <strong>instance</strong> of the class.&nbsp; For 
+			example:<br />
+			<em>&nbsp;&nbsp;&nbsp; A solicitor deals with legal matters<br />
+&nbsp;&nbsp;&nbsp; The sundial was invented thousands of years ago<br />
+&nbsp;&nbsp;&nbsp; Doctors charge a lot in my country<br />
+			</em>In these examples, the speaker / writer is referring not to 
+			single instances of the nouns but to the whole class of nouns in 
+			general.<br />
+			The reference is, then, <strong>indefinite
+			<span class="style_underline">but</span> generic</strong>.</li>
+			<li>This one exactly – <strong>definite 
+			<span class="style_underline">and</span> specific reference</strong><br />
+			<img alt="sun" height="133" src="../../images/sunrise200.jpg" width="200" /><br />
+			<span class="style_black"><em>The sun is our nearest star</em></span><br />
+			This 
+			means the speaker / writer is referring to a single, known instance 
+			of the noun.&nbsp; For 
+			example:<br />
+			<em>&nbsp;&nbsp;&nbsp; The man spoke to me.<br />
+			&nbsp;&nbsp;&nbsp; London lies on the Thames<br />
+&nbsp;&nbsp;&nbsp; The wind is getting stronger<br />
+			</em>Here, the reference is both specific (we know <strong>what</strong> 
+			sort of noun is 
+			being referred to) and definite (we know <strong>which</strong> noun is in 
+			question).&nbsp; Normally, both the writer / speaker and the reader 
+			/ hearer are aware of some or all of the noun's characteristics and 
+			can use that information to distinguish between instances of the 
+			noun in question.<br />
+			It will not, therefore, be surprising for you to discover that the 
+			definite article, <em>the</em>, is derived from the same source as 
+			the demonstrative determiners, <em>this, that </em>etc.<br />
+			The reference is <strong>definite <span class="style_underline">and</span> specific</strong> 
+			and contains <strong>two</strong> pieces of information.</li>
+		</ol>
+			
+			<table cellpadding="0" cellspacing="0" class="tableblueborder">
+				<tr>
+					<td class="auto-style58">
+					<img alt="test" height="60" src="../../../gfx/test60.jpg" width="60" /></td>
+					<td class="auto-style57">If you want to, you can try a quick test to see if you have this 
+					rule clear.<br />
+					<a href="../../initial/grammar_essentials/articles_check1hp.htm">Click here to do it</a>.</td>
+				</tr>
+			</table>
+			<br />
+			<hr />
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="2" height="69" src="../../../gfx/2blue.png" width="100" /></td>
+					<td class="auto-style3">
+					<h2>Rule 2: selection choices</h2>
+					</td>
+				</tr>
+			</table>
+		<p>Now we can start to select the right articles depending on what we 
+		are talking about.<br />
+		You will have noted above that there is no one-to-one relationship here 
+		between notions of definiteness and notions of specificity and the 
+		choice of article to use.&nbsp; Much depends on the type of noun in 
+		question and we are coming to that.</p>
+			<p>In each of these categories, there's a choice of which article to 
+		use.</p>
+			<ol>
+				<li>If we are talking about <strong>indefinite 
+				<span class="style_underline">but</span> specific</strong> reference (<strong>one of 
+		many or some of many</strong>), we can have, e.g.,<br />&nbsp;&nbsp;&nbsp; 
+				<em><span class="style_black"><strong>A</strong></span> man came in<br />&nbsp;&nbsp;&nbsp; <span class="style_black"><strong>&Oslash; </strong></span>Men 
+		came in<br />&nbsp;&nbsp;&nbsp; <span class="style_black"><strong>&Oslash; </strong></span>Good furniture is expensive</em></li>
+				<li>If we are talking about <strong>generic
+				<span class="style_underline">but</span> specific reference</strong> (<strong>all of 
+				them or it, everywhere</strong>), we can have<em>:<br />&nbsp;&nbsp;&nbsp; 
+				<span class="style_black"><strong>A</strong></span> car is useful in the country<br />
+				</em>or<br /><em>&nbsp;&nbsp;&nbsp; <span class="style_black"><strong>&Oslash; </strong></span>Cars pollute<br /></em>or<br /><em>&nbsp;&nbsp;&nbsp; <span class="style_black"><strong>&Oslash; </strong></span>Petrol is expensive<br />
+				</em>or<br /><em>&nbsp;&nbsp;&nbsp; <span class="style_black">
+				<strong>The</strong></span> cat is an independent animal</em></li>
+				<li>If we are talking about <strong>definite 
+				<span class="style_underline">and</span> specific </strong>reference (<strong>this 
+		one or this amount exactly</strong>), we can have:<br /><em>&nbsp;&nbsp;&nbsp; 
+				<span class="style_black"><strong>The</strong></span> car is outside<br />&nbsp;&nbsp;&nbsp; 
+				<span class="style_black"><strong>The</strong></span> sugar is 
+		in the cupboard<br />&nbsp;&nbsp;&nbsp; <span class="style_black">
+				<strong>The</strong></span> guests are here<br />&nbsp;&nbsp;&nbsp; <span class="style_black"><strong>&Oslash; </strong></span>Great Britain is an island</em></li>
+			</ol>
+			<table cellpadding="0" cellspacing="0" class="tableblueborder">
+				<tr>
+					<td class="auto-style58">
+					<img alt="test" height="60" src="../../../gfx/test60.jpg" width="60" /></td>
+					<td class="auto-style57">If you want to, you can try a quick test to see if you have this 
+					second rule clear.<br />
+					<a href="../../initial/grammar_essentials/articles_check2hp.htm">Click here to do it</a>.</td>
+				</tr>
+			</table>
+			<p>What are the choices of article in each category?</p>
+		<p>Here's the picture <strong>so far</strong>:</p>
+		<p>
+		<img alt="articles 1" height="414" src="../../imagesgraphics/articles1.png" width="620" />&nbsp;</p>
+			<p>
+			We shall refine that diagram later.</p>
+		
+			
+			<hr />
+		
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="3" height="65" src="../../../gfx/3blue.png" width="100" /></td>
+					<td class="auto-style3">
+					<h2>Rule 3: countability</h2>
+					</td>
+				</tr>
+			</table>
+			<p>It matters if the noun is countable or uncountable (i.e., a mass 
+			noun), singular or 
+		plural.<br />
+			English is not unique but it does have a fundamental and very 
+			important distinction between mass and count nouns.&nbsp; Languages 
+			which do not have this distinction (or in which the distinction is 
+			not grammatically significant) generally have much simpler article 
+			systems, or none at all.&nbsp; It is almost impossible to use a noun 
+			correctly in English unless one has first considered whether it is 
+			being used as a mass noun or a count noun.</p>
+			<p>Fortunately, Rule 3 is quite simple:</p>
+			<table cellpadding="3" cellspacing="0" class="auto-style72">
+				<tr>
+					<td class="auto-style73">&nbsp;</td>
+					<td class="auto-style68" style="border-top-color: #000080; border-top-width: 1px">Count nouns</td>
+					<td class="auto-style68" style="border-top-color: #000080; border-top-width: 1px">Mass nouns</td>
+				</tr>
+				<tr>
+					<td class="auto-style67" style="border-left-color: #000080">Singular</td>
+					<td class="auto-style64"><em>the picture<br />
+					a picture</em></td>
+					<td class="auto-style69" rowspan="2"><em>the paint<br />
+					&Oslash; 
+					paint</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style70" style="border-left-color: #000080">Plural</td>
+					<td class="auto-style69"><em>the pictures<br />
+					&Oslash; 
+					pictures</em></td>
+				</tr>
+			</table>
+			To put that table into words:<ol>
+				<li>Singular count nouns must be determined by <em>a/an</em> or <em>the</em>.&nbsp; 
+				We allow:<br />
+				<em>&nbsp;&nbsp;&nbsp; The parcel is here<br />
+&nbsp;&nbsp;&nbsp; A parcel is here</em><br />
+				but not:<br />
+&nbsp;<em>&nbsp;&nbsp; *Parcel is here</em></li>
+				<li>Plural count nouns must be determined by<em> the</em> or <em>&Oslash;.&nbsp;
+				</em>We allow:<br />
+				<em>&nbsp;&nbsp;&nbsp; The parcels are here<br />
+&nbsp;&nbsp;&nbsp; Parcels are here</em><br />
+				but not<br />
+				<em>&nbsp;&nbsp;&nbsp; *A parcels are here</em></li>
+				<li>Mass nouns must be determined by<em> the</em> or <em>&Oslash;</em>.&nbsp; We 
+				allow:<br />
+				<em>&nbsp;&nbsp;&nbsp; The packaging is expensive<br />
+&nbsp;&nbsp;&nbsp; Packaging is expensive</em><br />
+				but not<br />
+				<em>&nbsp;&nbsp;&nbsp; *A packaging is expensive</em></li>
+			</ol>
+			<p>Now we can refine our rules by applying them to specific 
+			instances of the language.</p>
+			
+			<hr />
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="many" height="166" src="../../images/blurred_colour_lights250.jpg" width="250" /></td>
+					<td class="auto-style3">
+					<a name="isr"></a><h2>Indefinite 
+					<span class="style_underline">but</span> specific reference (one of many)</h2></td>
+				</tr>
+			</table>
+			<br />
+			<table cellpadding="0" cellspacing="0" class="tableblueborder">
+				<tr>
+					<td class="auto-style58">
+					<img alt="write" height="60" src="../../../gfx/write.gif" width="60" /></td>
+					<td class="auto-style60">or</td>
+					<td class="auto-style61">
+					<img alt="think" height="60" src="../../../gfx/think60.jpg" width="60" /></td>
+					<td class="auto-style57">Here are three questions.&nbsp; You 
+					will probably need a pen and a piece of paper to hand.<br />
+					Make a note of the answers to the three questions and then click
+					<a href="#isr" onclick="FP_changeProp(/*id*/'art1',0,'style.visibility','visible')">here for some comments</a>.</td>
+				</tr>
+			</table>
+			<ol>
+			<li>If you use indefinite but specific reference and want to talk about 			
+			<strong>a mass noun</strong> such as <em>acid </em>or<em> furniture</em> 
+			what article do you use?<br />
+			Fill these gaps with <span class="style_black"><em>a(n), the</em></span> 
+			or <span class="style_black"><em>Ø</em></span>:<br />
+			<em>__________ tea contains as much __________ caffeine as __________ coffee<br />
+			I saw __________ ra<span class="auto-style74">in </span>had fallen</em></li>
+			<li>If you use indefinite but specific reference and want to talk about
+			<strong><span class="style_underline">one</span> of many countable 
+			nouns </strong>such as <em>houses </em>or <em>chairs</em>, what 
+			article do you use?<br />
+			Fill these gaps with <span class="style_black"><em>a(n), the</em></span> 
+			or <span class="style_black"><em>Ø</em></span>:<br />
+			<em>__________ room will be needed for the committee meeting.<br />
+			I saw __________ fox in the garden</em></li>
+			<li>If you use indefinite but specific reference and want to talk 
+			about <strong>many countable nouns</strong> such as <em>houses</em> 
+			or<em> chairs</em>, what article do you use?<br />
+			Fill these gaps with <span class="style_black"><em>a(n), the</em></span> 
+			or <span class="style_black"><em>Ø</em></span>:<br />
+			<em>__________ cars are expensive in my country<br />
+			We discovered __________ pollutants in the river water</em></li>
+			</ol>
+		<div id="art1" style="visibility: hidden"><ol class="style_brown">
+			<li>If you use indefinite but specific reference and want to talk about<strong> <span class="style_underline">some</span> of mass nouns</strong> such as <em>acid </em>or<em> furniture</em> 
+			you use the zero article &Oslash;.<br />
+			So you have, e.g.,<br /><em>&nbsp;&nbsp;&nbsp; Ø Tea contains as much Ø caffeine as Ø coffee<br />
+&nbsp;&nbsp;&nbsp; I saw Ø rain had fallen<br />
+			&nbsp;&nbsp;&nbsp;
+			Accurate Ø information is difficult to get<br />
+			&nbsp;&nbsp;&nbsp;
+			Ø Brown sugar is better in Ø coffee<br />
+			</em>etc.</li>
+			<li>If you use indefinite but specific reference and want to talk about 			<strong><span class="style_underline">one</span> of many countable 
+			things </strong>such as <em>rooms, foxes </em>or<em> chairs</em>, you use
+			<em>a(n).<br />
+			</em>So you have, e.g.,<br /><em>&nbsp;&nbsp;&nbsp; A room will be needed for the committee meeting.<br />
+&nbsp;&nbsp;&nbsp; I saw a fox in the garden<br />
+			&nbsp;&nbsp;&nbsp;
+			I need a chair to sit on<br />
+			</em>etc.<br />
+			(If you suggested <em><strong>The</strong> room will be needed for 
+			the committee meeting</em> you have used a definite specific rather 
+			than indefinite specific reference.)</li>
+			<li>If you use indefinite but specific reference and want to talk 
+			about <strong>many countable things</strong> such as <em>cars, 
+			pollutants, </em>or<em> chairs</em>, you use the zero article &Oslash;.<br />
+			So you have, e.g.,<br /><em>&nbsp;&nbsp;&nbsp; Ø Cars are expensive in my country<br />
+&nbsp;&nbsp;&nbsp; We discovered Ø pollutants in the river<br />
+			&nbsp;&nbsp;&nbsp;
+			Ø Chairs are in the next room<br />
+			</em>etc.</li>
+		</ol>
+			<p>One way of explaining and understanding indefinite but specific 
+			reference is to invoke the rule about what and which in English (if 
+			your learners understand it).&nbsp; Indefinite but specific reference means I do 
+			not know <strong>which</strong> item we are talking about but I do 
+			know <strong>what</strong> we are talking about.</p>
+			</div>
+			
+			<hr />
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="earth" height="166" src="../../images/earth_blue250.jpg" width="250" /></td>
+					<td class="auto-style3">
+					<h2><a name="gr"></a>Indefinite
+					<span class="style_underline">but</span> generic reference (all of them, everywhere)</h2>
+					</td>
+				</tr>
+			</table>
+			<br />
+			<table cellpadding="0" cellspacing="0" class="tableblueborder">
+				<tr>
+					<td class="auto-style58">
+					<img alt="write" height="60" src="../../../gfx/write.gif" width="60" /></td>
+					<td class="auto-style60">or</td>
+					<td class="auto-style61">
+					<img alt="think" height="60" src="../../../gfx/think60.jpg" width="60" /></td>
+					<td class="auto-style57">Here are three more questions.<br />
+					Make a note of the answers and then click
+					<a href="#gr" onclick="FP_changeProp(/*id*/'art2',0,'style.visibility','visible')">here for some comments</a>.</td>
+				</tr>
+			</table>
+		<ol>
+			<li>If you use generic reference and want to talk about <strong>
+			<span class="style_underline">all</span> uncountable (mass) things</strong> 
+			such as <em>money, love </em>or<em> water</em> what article do you use?<br />
+			Fill these gaps with <span class="style_black"><em>a(n), the</em></span> 
+			or <span class="style_black"><em>Ø</em></span>:<br />
+			<em>We all need __________ love<br />
+			We discovered __________ pollution in the water</em></li>
+			<li>If you use generic reference and want to talk about <strong>
+			<span class="style_underline">all</span> countable things in the 
+			plural </strong>such as <em>houses </em>or <em>animals</em>, what 
+			article do you use?<br />
+			Fill these gaps with <span class="style_black"><em>a(n), the</em></span> 
+			or <span class="style_black"><em>Ø</em></span>:<br />
+			<em>__________ houses are expensive everywhere<br />
+			I enjoy watching __________ animals</em></li>
+			<li>If you use indefinite but generic reference and want to talk about <strong>
+			<span class="style_underline">one</span> countable thing in the 
+			singular</strong> as <span class="style_underline">representative</span> of all such as
+			<em>unicorn</em> or<em> wheel</em>, what article 
+			do you use?<br />
+			Fill these gaps with <span class="style_black"><em>a(n), the</em></span> 
+			or <span class="style_black"><em>Ø</em></span>:<br />
+			<em>__________ train is usually cheaper than driving alone<br />
+			__________ smart phone has changed people's lives<br />
+			__________ dog is a faithful animal</em></li>
+		</ol>
+		<div id="art2" style="visibility: hidden"><ol class="style_brown">
+			<li>If you use generic reference and want to talk about <strong>
+			<span class="style_underline">all</span> uncountable things</strong> 
+			such as <em>money, love </em>or<em> water</em>, you use the zero article 
+			&Oslash;.<br />
+			So you have, e.g.<br /><em>&nbsp;&nbsp;&nbsp; We all need Ø love<br />
+&nbsp;&nbsp;&nbsp; Ø Coffee contains Ø caffeine<br />
+&nbsp;&nbsp;&nbsp; We discovered Ø pollution in the water<br />
+&nbsp;&nbsp;&nbsp; Ø Money makes the world go round<br />
+&nbsp;&nbsp;&nbsp; Ø Water is 
+			essential to life on earth<br />
+			</em>etc.</li>
+			<li>If you use generic reference and want to talk about <strong>
+			<span class="style_underline">all</span> countable things in the 
+			plural </strong>such as <em>tigers </em>or <em>chairs</em>, you 
+			use the zero article &Oslash;.<br />
+			So you have, e.g.<br /><em>&nbsp;&nbsp;&nbsp; Ø Children need love<br />
+&nbsp;&nbsp;&nbsp; Ø Houses are expensive everywhere<br />
+&nbsp;&nbsp;&nbsp; I enjoy watching animals<br />
+			&nbsp;&nbsp;&nbsp; Ø Tigers are large cats<br />
+&nbsp;&nbsp;&nbsp; Ø Chairs are 
+			seen everywhere<br />
+			</em>etc.</li>
+			<li>If you use indefinite but generic reference and want to talk about <strong>
+			<span class="style_underline">one</span> countable thing in the 
+			singular</strong> as <span class="style_underline">representative</span> of all such as <em>unicorn</em> 
+			or<em> wheel</em>, you use the definite article <em>the
+			</em>or the indefinite article <em>a(n).<br />
+			</em>So you have, e.g.<br /><em>&nbsp;&nbsp;&nbsp; The train is usually cheaper than driving alone<br />
+&nbsp;&nbsp;&nbsp; The smart phone has changed people's lives<br />
+			&nbsp;&nbsp;&nbsp; A dog is a faithful animal<br />
+&nbsp;&nbsp;&nbsp; The unicorn is a 
+			mythical beast<br />
+			</em>etc.<br />
+			The indefinite article may also be used to speak of generic and specific 
+			reference such as in<br />
+&nbsp;<em>&nbsp;&nbsp; A train is a comfortable way to travel</em><br />
+			The issue is often stylistic and we could equally say:<br />
+			<em>&nbsp;&nbsp;&nbsp; Trains are a comfortable way to travel</em><br />
+			which many might consider less formal and stilted.<br />
+			The use of the indefinite article to refer to a singular count noun 
+			as representative (i.e., generic) reference is formal and 
+			increasingly rare.</li>
+		</ol>
+		</div>
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="gorilla" height="133" src="../../images/animals_gorilla200.jpg" width="200" /></td>
+					<td class="auto-style3">
+					<h3>The power of generic reference</h3>
+					</td>
+				</tr>
+			</table>
+			<p>People are sometimes confused about which article to use when 
+			expressing generic reference because it seems we can use all of 
+			them.&nbsp; We allow, e.g.:<br />
+			<em>&nbsp;&nbsp;&nbsp; <span class="style_black"><strong>A</strong></span> 
+			computer is a useful thing to have<br />
+&nbsp;&nbsp;&nbsp; <span class="style_black"><strong>The</strong></span> 
+			computer has changed everyone's lives<br />
+&nbsp;&nbsp;&nbsp; <span class="style_black"><strong>&Oslash; </strong></span>Computers 
+			are getting cheaper<br />
+			</em>There is a reason for this.<br />
+			Providing we do not use the &Oslash; with a singular countable noun and 
+			reserve it for mass nouns as in:<br />
+			<em>&nbsp;&nbsp;&nbsp; <span class="style_black"><strong>&Oslash;</strong></span> 
+			Computer memory is now quite cheap</em><br />
+			all other possibilities are open to us because the sense of generic 
+			reference to every instance of an item everywhere makes 
+			considerations of specific <em>vs</em>. non-specific reference and 
+			definite <em>vs</em>. indefinite reference irrelevant.&nbsp; In 
+			other words, it overrides the necessity to think in those terms at 
+			all.</p>
+			<p>That is the reason we can say:<br />
+			<em>&nbsp;&nbsp;&nbsp; Gorillas are powerful animals<br />
+&nbsp;&nbsp;&nbsp; A gorilla is a powerful animal<br />
+&nbsp;&nbsp;&nbsp; The gorilla is a powerful animal</em><br />
+			with no difference in meaning.<br />
+			All that remains is to consider ambiguity and style:</p>
+			<ul class="greenbullet">
+				<li>If we use the article <em>a(n)</em> we may be assumed to be 
+				referring to an <strong>indefinite <span class="style_underline">
+				but</span> specific</strong> member of the class of 
+				primates called gorillas, as in:<br />
+				<em>&nbsp;&nbsp;&nbsp; There's a gorilla in the kitchen</em><br />
+				If we use <em>the</em> there is a possibility that we may be 
+				understood to be referring to a specific, definite gorilla, as in:<br />
+				<em>&nbsp;&nbsp;&nbsp; The gorilla is in the kitchen</em><br />
+				The safest and most common way of using count nouns as generic 
+				reference is the plural with zero article as in:<br />
+&nbsp;&nbsp; <em>&nbsp;Gorillas are not something I want in my kitchen</em>.</li>
+				<li>Stylistically, that is also the safest option because the 
+				use of the articles with count nouns for generic reference is 
+				often somewhat stilted and formal.<br />
+				It needs to be understood by learners but whether it needs to be 
+				taught except at high levels for learners who need to deploy 
+				very formal language is very questionable (although course book 
+				writers seem oddly attached to it).</li>
+			</ul>
+			<hr />
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="select" height="166" src="../../images/selection_finger250.jpg" width="250" /></td>
+					<td class="auto-style3">
+					<h2><a name="dsr"></a>Definite <span class="style_underline">and</span> specific reference (this one exactly)</h2>
+					</td>
+				</tr>
+			</table>
+			<br />
+			<table cellpadding="0" cellspacing="0" class="tableblueborder">
+				<tr>
+					<td class="auto-style58">
+					<img alt="write" height="60" src="../../../gfx/write.gif" width="60" /></td>
+					<td class="auto-style60">or</td>
+					<td class="auto-style61">
+					<img alt="think" height="60" src="../../../gfx/think60.jpg" width="60" /></td>
+					<td class="auto-style57">Here are three last questions.<br />
+					Make a note of the answers and then click
+					<a href="#dsr" onclick="FP_changeProp(/*id*/'art3',0,'style.visibility','visible')">here for some comments</a>.</td>
+				</tr>
+			</table>
+		<ol>
+			<li>If you use definite and specific reference and want to talk about
+			<strong><span class="style_underline">one</span> amount of a 
+			specific or particular mass</strong> <strong>noun</strong> such as <em>acid </em>or<em> sugar</em> 
+			what article do you use?<br />
+			Fill these gaps with <span class="style_black"><em>a(n), the</em></span> 
+			or <span class="style_black"><em>Ø</em></span>:<br />
+			<em>__________ cardboard is in the garage<br />
+			__________ grass needs cutting</em></li>
+			<li>If you use definite and specific reference and want to talk about
+			<strong><span class="style_underline">more than one</span> countable 
+			thing </strong>such as <em>men </em>or <em>cars</em>, what 
+			article do you use?<br />
+			Fill these gaps with <span class="style_black"><em>a(n), the</em></span> 
+			or <span class="style_black"><em>Ø</em></span>:<br />
+			<em>__________ men you spoke to have decided<br />
+			The officer directed __________ bus drivers to their parking spaces</em></li>
+			<li>If you use definite and specific reference and want to talk about
+			<strong><span class="style_underline">one</span> countable thing
+			</strong>such as <em>car </em>or <em>telephone</em>, what article do you 
+			use?<br />
+			Fill these gaps with <span class="style_black"><em>a(n), the</em></span> 
+			or <span class="style_black"><em>Ø</em></span>:<br />
+			<em>__________ car I bought was quite cheap<br />
+			__________ phone is ringing in the hallway</em></li>
+			<li>If you use definite and specific reference and want to talk 
+			about <strong>one particular proper noun</strong> such as <em>Berlin</em> 
+			or<em> Mary</em>, what article do you use?<br />
+			Fill these gaps with <span class="style_black"><em>a(n), the</em></span> 
+			or <span class="style_black"><em>Ø</em></span>:<br />
+			<em>__________ Napoleon was Emperor of France<br />
+			I gave the book to __________ Aunt Mary</em></li>
+		</ol>
+		<div id="art3" style="visibility: hidden"><ol class="style_brown">
+			<li>If you use definite and specific reference and want to talk about
+			<strong><span class="style_underline">one</span> amount of a 
+			specific or particular mass noun</strong> such as <em>acid </em>or<em> 
+			sugar</em>, you use the definite article <em>the.<br />
+			</em>So we have<br /><em>&nbsp;&nbsp;&nbsp; The cardboard is in the garage<br />
+&nbsp;&nbsp;&nbsp; The grass needs cutting<br />
+&nbsp;&nbsp;&nbsp; The sugar is behind the flour<br />
+&nbsp;&nbsp;&nbsp; The acid is on 
+			the bench<br />
+			</em>etc.</li>
+			<li>If you use definite and specific reference and want to talk about
+			<strong><span class="style_underline">more than one</span> countable 
+			thing </strong>such as <em>men </em>or <em>cars</em>, you use the 
+			definite article <em>the.<br />
+			</em>So we have, e.g.<br /><em>&nbsp;&nbsp;&nbsp; The men you spoke to have decided<br />
+&nbsp;&nbsp;&nbsp; The officer directed the bus drivers to their parking spaces<br />
+&nbsp;&nbsp;&nbsp; The tigers are upstairs<br />
+&nbsp;&nbsp;&nbsp; The cars are in the 
+			driveway<br />
+			</em>etc.</li>
+			<li>If you use definite and specific reference and want to talk about
+			<strong><span class="style_underline">one</span> countable thing
+			</strong>such as <em>ca<span class="auto-style74">r</span> </em>or 
+			<em>telephone</em>, you use the 
+			definite article <em>the</em>.<br />
+			So we have, e.g.<br /><em>&nbsp;&nbsp;&nbsp; The car I bought was quite cheap<br />
+&nbsp;&nbsp;&nbsp; The phone is ringing in the hallway<br />
+&nbsp;&nbsp;&nbsp; The tiger is behind you<br />
+&nbsp;&nbsp;&nbsp; The car is on the road<br />
+			</em>etc.</li>
+			<li>If you use definite and specific reference and want to talk 
+			about <strong>one particular proper noun</strong> such as <em>Berlin</em> 
+			or<em> Mary</em>, you use no article.&nbsp; We saw above that this 
+			is not really an instance the zero article (&Oslash;) but it is 
+			often the easiest way to explain it to learners.<br />
+			So we have, e.g.<br /><em>&nbsp;&nbsp;&nbsp; Napoleon was Emperor of France<br />
+&nbsp;&nbsp;&nbsp; I gave the book to Aunt Mary<br />
+&nbsp;&nbsp;&nbsp; Mary has arrived<br />
+&nbsp;&nbsp;&nbsp; It's raining in Berlin<br />
+			</em>etc.<br />
+			Warning: there are many exceptions to this rule (see below).</li>
+		</ol>
+			<p>Again, definite and specific reference can be explained by invoking 
+			the <em>what-which </em>distinction in English.&nbsp; The specific 
+			part means I know<strong> what</strong> we are talking about and the definite 
+			part means I know <strong>which</strong> item we are talking about.</p>
+		</div><hr />
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="summary" height="166" src="../../images/summary_pattern250.jpg" width="250" /></td>
+					<td class="auto-style3">
+					<h2>The summary refined</h2>
+					</td>
+				</tr>
+			</table>
+			<p>Now we can refine the picture we had above to include the notion of 
+		(un)countability.</p>
+		<p>
+		<img alt="articles summary 2" height="384" src="../../imagesgraphics/articles2.png" width="620" />&nbsp;</p>
+			<hr />
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="talking" height="166" src="../../images/talk_meeting250.jpg" width="250" /></td>
+					<td class="auto-style3">
+					<h2>Articles in discourse</h2>
+					</td>
+				</tr>
+			</table>
+			<p>
+			Articles have a discourse function and, as with much in connected 
+			discourse, a good deal depends on shared information.</p>
+			<p>
+			Course books for learners will often have simplified (and often 
+			inaccurate) 'rules' for article use and we have set out the main ones above.&nbsp; When these rules are apparently broken, the 
+			explanation often lies in the nature of the use of articles in 
+			discourse.<br />
+			Consider these examples:</p>
+			<ol>
+				<li><em>A car arrived outside my door and the 
+				driver got out and walked up the path.</em><ol class="auto-style6">
+					<li>If we follow the rule that the noun <em>car</em> here is 
+					<strong>indefinite <span class="style_underline">but</span> specific 
+					</strong>reference (i.e., it refers to one of 
+				many countable objects but the speaker and hearer both know
+					<strong>what</strong> sort of object it is but not <strong>
+					which</strong> one), then that happily explains the use of 
+				the indefinite article, <em>a</em>.<br />However, the noun <em>driver</em> is also specific indefinite 
+				reference, isn't it?&nbsp; We do not know which of the millions 
+				of drivers it is, just that it is one of them.&nbsp; So, why the definite article which in 
+				the chart above is not an option because that applies to 
+				definite and specific reference?<br />The answer lies in the shared information.&nbsp; We know that 
+				only one driver is permitted <em>per</em> car and we also know 
+				which car is in question (it is the one which arrived) so we 
+				are, in fact, talking about definite and specific reference and the 
+				rule above is not broken.&nbsp; It is:<br /><em>&nbsp;&nbsp;&nbsp; The driver of a car<br />
+					</em>just as we can have<br /><em>&nbsp;&nbsp;&nbsp; The mane of a lion<br />&nbsp;&nbsp;&nbsp; The teacher of a class<br />
+					</em>and so on.</li>
+					<li>This will also explain the use of <em>the path</em> because, 
+				again, the use of the definite article tells the hearer that the 
+				speaker has only one path from the car to the house (or, at 
+				least, that this path is only one that is relevant to what 
+				happened next).&nbsp; If the sentence had been<br /><em>&nbsp;&nbsp;&nbsp; A car arrived and a driver got out and 
+				walked up a path</em><br />then different messages will be sent:<br />In this case it means that this driver was not actually driving 
+				the car at all but is a member of a class of drivers so it then 
+				becomes indefinite but specific reference (just as the article in
+					<em>a car </em>is being used).&nbsp; It also means that there 
+				were more than one paths and the person chose one of them, not a 
+				definite one from those available so that, too, is indefinite 
+					but specific reference.</li>
+				</ol>
+				</li>
+				<li><em>We chose a present for my brother but it was 
+				not a present he wanted</em><br />
+				Here, we have <em>a present</em> chosen from innumerable 
+				possibilities so the first article follows the rule: we are 
+				talking about a single <strong>indefinite
+				<span class="style_underline">but</span> specific</strong> case so the 
+				indefinite article is valid.<br />
+				However, we then have <em>a present</em> again and this time it 
+				seems that the reference is definite <strong>and</strong> 
+				specific because we know what the present was (the one we 
+				chose).&nbsp; Should it not, then, be <em>the present</em>?<br />
+				It could be, of course, but that would imply that he had other 
+				presents in mind that he did want (a definite and specific 
+				present) and the use of the article <em>the</em> would imply 
+				that.<br />
+				However, here, two things are happening:<ol class="auto-style6">
+					<li>We have the dummy or existential <em>it</em>-clause in
+					<em>it was not a present he wanted</em> so that serves to 
+					denote the specific nature of the present.&nbsp; In other 
+					words, we know <strong>what</strong> we are talking about.</li>
+					<li>We then have an indefinite article implying that from a 
+					large number of possible presents, this one was not wanted 
+					and that is indefinite but specific reference so the rules are 
+					not broken, it is the discourse intentions of the statement 
+					that leads to the article choice.&nbsp; If we compare:<br />
+					<em>&nbsp;&nbsp;&nbsp; He said he didn't want a gift like 
+					this</em><br />
+					with<br />
+					<em>&nbsp;&nbsp;&nbsp; He said he didn't want the gift</em><br />
+					the difference becomes plain.&nbsp; The first is indefinite 
+					but specific reference and the second is definite and specific 
+					reference.</li>
+				</ol>
+				</li>
+				<li>&nbsp;<em>&nbsp;&nbsp; A cat can be good company for lonely people<br />
+&nbsp;&nbsp;&nbsp; A cat is an independent animal<br />
+&nbsp;&nbsp;&nbsp; Cats are independent animals<br />
+&nbsp;&nbsp;&nbsp; The domestic cat is descended from wild animals in the Middle 
+				East</em><br />
+				If these are all examples of generic reference to countable 
+				nouns, why the difference?<br />
+				Partly, as was said above, this is a stylistic issue.<br />
+				The use of the indefinite article to refer to a generic case of 
+				a countable noun requires the use of the singular form.&nbsp; It 
+				is generally considered to be stylistically rarer and more 
+				formal.<br />
+				The form of choice is usually the plural as in the third example 
+				but the second example is common enough.<br />
+				In the first example, we have a grey area because it may be 
+				assumed that the speaker is referring to indefinite but specific 
+				reference (on the left of the diagram above) and suggesting that 
+				lonely people should acquire a cat (<em>any</em> cat) for 
+				company rather than suggesting that all cats are suitable as 
+				company for all lonely people.&nbsp; In this case, however, the 
+				speaker probably has a singular cat (rather than lots) in mind and 
+				so uses the indefinite article in the way that many other 
+				languages would use a numeral.&nbsp; (In French, for example, 
+				that would be <em>un chat, </em>in German <em>eine Katze</em>, 
+				in Spanish <em>un gato</em> and so on for many other languages 
+				in which the indefinite article shares the same form with the 
+				numeral 1.)<br />
+				The final example, too, verges on definite reference (on the 
+				right of the diagram) because of the use of the classifier <em>
+				domestic</em>.&nbsp; Classifiers often have the function of 
+				moving the generic to the definite and specific in terms of reference so the 
+				use of the definite article is appropriate and the rule is not 
+				broken.</li>
+			</ol>
+		
+		<table cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+				<img alt="link" height="133" src="../../images/link_chain200.jpg" width="200" /></td>
+				<td class="auto-style4"><h3>Cohesion</h3></td>
+			</tr>
+		</table>
+		
+			<p>The overarching phenomenon that the examples in this section 
+			exhibit is cohesion.&nbsp; Article use contributes powerfully to 
+			textual cohesion (written and spoken) by signalling to the reader / 
+			hearer that the reference is to a known item or an instance 
+			signalling the only possible entity in context (as in the fact that 
+			cars only have one driver each).<br />
+			The definite article may also, as we saw, refer to something outside the 
+			text which is known to both speaker / writer and reader / hearer because 
+			they share a common cultural or social milieu.&nbsp; For example,<br />
+			<em>&nbsp;&nbsp;&nbsp; The minister has replied to our letter<br />
+			</em>Now, <em>minister</em> can mean a politician or a member of the 
+			clergy and there are many thousands of them around the 
+			world.&nbsp; It is clear, however, from the use of the definite 
+			article that a particular minister, known to both participants in 
+			the discourse, is meant here.<br />
+			Another example, of what is called homophoric reference is to 
+			entities such as <em>the government, the countryside, the north, the Queen, the President, the 
+			Czar</em> etc. when knowledge of the culture and national context precludes any other 
+			meaning.</p>
+		<hr />
+		
+		<table cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+				<img alt="exception" height="166" src="../../images/animals_proboscis250.jpg" width="250" /></td>
+				<td class="auto-style4"><h2>So-called quirks and so-called exceptions</h2></td>
+			</tr>
+		</table>
+		
+		<p>The English article system is often wrongly presented as an 
+		impossibly difficult area.&nbsp; As we saw, however, the rules are quite 
+		simple.&nbsp; There are, however, a few quirks concerned with the use of 
+		the some articles.<br />
+		As was explained at the beginning, many of the quasi-rules which infest 
+		the web are referenced to these quirks rather than explaining the 
+		general rules (see above).<br />
+		There are exceptions to grammatical rules in a number of areas of the 
+		grammar of all languages as anyone who has tried to learn a second or 
+		additional language knows only too well.<br />
+		However, labelling a phenomenon as an exception is sometimes the resort 
+		of people who have failed to analyse it properly.</p>
+			<h4>So-called exceptions with <em>the</em></h4>
+		<p>These can 
+		all be traced back to the rules above.&nbsp; We will note the rule
+		<strong>in bold</strong>.<br />
+		These aren't lesson topics &ndash; they should be taught as and when 
+		they arise.</p>
+		<ol>
+			<li>One teachable case of definite and specific reference (this one 
+			exactly) is when the noun has been mentioned or it can be assumed 
+			that a unique reference is intended <span class="style_underline">and understood</span>.<br />
+			So we get, e.g.<br /><em>&nbsp;&nbsp;&nbsp; A car drove by and the driver waved<br />
+&nbsp;&nbsp;&nbsp; The 
+			toilet's probably upstairs<br />
+			</em>etc.<br />
+			This is often referred to as the unknown-known rule and can easily 
+			be explained that way.&nbsp; The rule, so called, is actually just 
+			another way of referring to a <strong>definite and specific item or person 
+			and that is simply following the rules</strong>.<br />
+			An explanation of a 
+			sentence such as:<br />
+			<em>&nbsp;&nbsp;&nbsp; She bought <span class="style_underline">
+			<strong>a</strong></span> new car.&nbsp;
+			<span class="style_underline"><strong>The</strong></span> car broke 
+			down on her first journey</em>.<br />
+			does not require the invocation of a new rule and
+			is:<ol class="auto-style5">
+				<li>in the first instance, we are referring to an <strong>
+				indefinite but specific reference for a countable noun</strong> and that, as we saw, 
+				<strong>requires the indefinite article</strong>.</li>
+				<li>in the second instance, we are now referring to a <strong>definite 
+				and specific reference for a countable noun</strong> (because we now know 
+				that the car was hers) and that <strong>requires the 
+				use of the definite article</strong>.</li>
+			</ol>We do not need to invoke a special known-unknown rule to explain this.</li>
+			<li>When a noun is modified, it's also a sign of <strong>definite 
+			and specific reference</strong> and that <strong>requires the definite 
+			article </strong>again.<br />
+			So we get, e.g.<br /><em>&nbsp;&nbsp;&nbsp; The man who is married to the Minister<br />
+			&nbsp;&nbsp;&nbsp; The author of this guide<br />
+&nbsp;&nbsp;&nbsp; The girl in the corner<br />
+			</em>etc.<br />
+			Modification takes many forms:<ol class="auto-style5">
+				<li>Modification of country names<br />
+				Country names which are modified by an adjective such as 
+			<em>United, Islamic, Peoples'</em> or <em>Federal</em> require the definite 
+				article because we need to follow the definite and specific 
+				reference rule<br /><em>&nbsp;&nbsp;&nbsp; The United States<br />
+&nbsp;&nbsp;&nbsp; The Federal Republic of Germany<br />
+&nbsp;&nbsp;&nbsp; The United Arab Emirates<br />
+				</em>etc.<br />In other words we are using <strong>definite and specific reference</strong> 
+			and <strong>the use of the definite article is following the rule</strong>.<br />
+			Otherwise, nations and 
+			languages take no article as we would expect because <strong>proper 
+			nouns do not take articles</strong>.</li>
+				<li>Modification by name or topic<br />
+				We would expect words such as <em>theory, law</em> and <em>
+				effect</em> to be <strong>indefinite but specific reference</strong>s 
+				to types of ideas so we get, e.g.:<br />
+				<em>&nbsp;&nbsp;&nbsp; That a good theory<br />
+&nbsp;&nbsp;&nbsp; It's a new law<br />
+&nbsp;&nbsp;&nbsp; What an interesting effect!</em><br />
+				etc.<br />
+				When we modify the words, we need <strong>definite and specific 
+				reference</strong> so we shouldn't be surprised to find the use 
+				of the definite article as in, e.g.:<br />
+				<em>&nbsp;&nbsp;&nbsp; The Doppler Effect<br />
+&nbsp;&nbsp;&nbsp; The Theory of Relativity<br />
+&nbsp;&nbsp;&nbsp; Hook's Law<br />
+				</em>etc. all of which are acting as modifiers of the second nouns so
+				<strong>the rule is obeyed for definite and specific reference</strong>.<br />
+			When the possessive <em>'s</em> is used there is 
+			no article:<em> Einstein's Theory, Murphy's Law </em>and that
+				<strong>follows the rule of not using an article with proper nouns</strong>, 
+			of course.</li>
+				<li>Modification by inflexion or <em>most</em><br />
+				Superlative forms are by their nature unique and defined so we should not be 
+			surprised that we follow <strong>the rule for definite and specific 
+			reference</strong> and have<br /><em>&nbsp;&nbsp;&nbsp; the biggest building<br />
+&nbsp;&nbsp;&nbsp; the oldest
+			man<br />
+&nbsp;&nbsp;&nbsp; the most difficult question<br />
+				</em>etc.<br />
+				On the other hand, comparative forms are not unique so we follow 
+				the rules again and arrive at:<br />
+				<em>&nbsp;&nbsp;&nbsp; a bigger problem<br />
+&nbsp;&nbsp;&nbsp; a brighter light<br />
+&nbsp;&nbsp;&nbsp; a more interesting idea</em><br />
+				etc. and that follows <strong>the rules for indefinite but 
+				specific reference</strong>.<br />
+				However, if only two items are being compared, then we are 
+				signalling that one of them is unique and that requires the 
+				definite article rule so we get:<br />
+				<em>&nbsp;&nbsp;&nbsp; the better wine of the two<br />
+&nbsp;&nbsp;&nbsp; the more expensive choice of the two<br />
+				</em>and, because we are singling out only one of two things, we 
+				are referring to definite and specific reference so the use of 
+				the definite article follows the rules we have set out.</li>
+				<li>Omission of the modifier<br />
+			Geographical areas can be explained by noting that the unique 
+			identifying modifier has been omitted:<br /><em>&nbsp;&nbsp;&nbsp;
+			The Atlantic (Ocean)<br />
+&nbsp;&nbsp;&nbsp; The (River) Amazon<br />
+&nbsp;&nbsp;&nbsp; The Tate (Gallery)<br />
+&nbsp;&nbsp;&nbsp; The 
+			Alps (Range)<br />
+&nbsp;&nbsp;&nbsp; The Hilton (Hotel)</em><strong>.<br />
+				All of these follow 
+			the rule for definite and specific reference</strong> although the 
+				reference is ellipted.</li>
+			</ol>
+			</li>
+			<li>Unique objects (or objects unique in a certain shared setting):<br /><em>&nbsp;&nbsp;&nbsp; the sun<br />
+&nbsp;&nbsp;&nbsp; the moon<br />
+&nbsp;&nbsp;&nbsp; the Milky Way<br />
+&nbsp;&nbsp;&nbsp; the Queen<br />
+&nbsp;&nbsp;&nbsp; the President<br />
+			</em>etc.&nbsp;are all instances of <strong>definite and specific 
+			reference</strong> so no rule is broken.</li>
+			<li>Nationalities are <strong>definite and specific reference to plural concepts</strong> 
+			so the definite article is required:<br /><em>&nbsp;&nbsp;&nbsp; the Greeks<br />
+&nbsp;&nbsp;&nbsp; 
+			the French<br />
+&nbsp;&nbsp;&nbsp; the Spanish<br />
+			</em>etc<em>.</em> and no rule is broken<strong>.</strong></li>
+			<li>Plural countries always take the article:<br /><em>&nbsp;&nbsp;&nbsp; The Netherlands<br />
+&nbsp;&nbsp;&nbsp; 
+			The Bahamas<br />
+&nbsp;&nbsp;&nbsp; The Seychelles<br />
+			</em>etc. and that <strong>follows the rule 
+			of definite and specific reference t<span class="auto-style74">o
+			</span>a plural count noun</strong> so no rule is broken.</li>
+			<li>Families count as <strong>plural definite and specific reference</strong>:<br />
+			<em>&nbsp;&nbsp;&nbsp; Take 
+			tea with the Windsors<br />
+			</em>and no rule is broken.</li>
+			<li>Rivers always take the definite article<em> the</em>, even if 
+			they aren't unique because they are <strong>definite and specific reference</strong>:<br />
+			<em>&nbsp;&nbsp;&nbsp; The Stour<br />
+&nbsp;&nbsp;&nbsp; 
+			The Thames<br />
+&nbsp;&nbsp;&nbsp; The Nile<br />
+			</em>etc.<br />
+			In the first case here, there are, in Britain, at least five rivers 
+			called <em>The Stour</em> but the use of the definite article makes 
+			it plain that we are talking about a local instance of such a river 
+			so no rule is being broken.</li>
+			<li>Lakes are also proper nouns so having no article is following 
+			the rule for them.&nbsp; When they are modified and made unique in 
+			that way, we <strong>follow the rules</strong> and use the definite 
+			article as in<br /><em>&nbsp;&nbsp;&nbsp; Lake Chad<br />
+&nbsp;&nbsp;&nbsp; Lake Victoria<br />
+&nbsp;&nbsp;&nbsp; Loch Ness<br />
+&nbsp;&nbsp;&nbsp; Lake Windemere<br />
+			</em>but<br /><em>&nbsp;&nbsp;&nbsp; The Great Lakes</em>.<br />
+			If we ellipt the qualifier <em>Lake</em>, we maintain the rule that 
+			proper nouns take no article:<br />
+&nbsp;&nbsp;&nbsp; <em>Windemere</em></li>
+		</ol>
+		<h4>So-called exceptions with<em> &Oslash;</em></h4>
+			<p>It has been pointed out that the use of a singular count noun without an 
+			article is not usually allowed in English so we do not encounter, 
+			e.g.:<br />
+			<em>&nbsp;&nbsp;&nbsp; *Person is at the door<br />
+&nbsp;&nbsp;&nbsp; *Letter has been opened</em><br />
+			etc.<br />
+			Furthermore, we distinguish between indefinite but specific reference by 
+			using <em>a(n)</em> and definite and specific reference with <em>the</em>.<br />
+			That should all be clear by now.</p>
+			<p>The following four areas are, therefore, often despairingly labelled 
+			'exceptions' in course books and grammars for learners.</p>
+		<ol>
+			<li>Some common prepositional phrases often with verbs like <em>go, 
+			have, get, take, eat, </em>and <em>be </em>involve indefinite but 
+			specific reference:<br /><em>&nbsp;&nbsp;&nbsp; go by 
+			bus<br />
+&nbsp;&nbsp;&nbsp; be in school / church / prison / hospital<br />
+&nbsp;&nbsp;&nbsp; go to university<br />
+&nbsp;&nbsp;&nbsp; eat breakfast<br />
+&nbsp;&nbsp;&nbsp; have lunch<br />
+&nbsp;&nbsp;&nbsp; have appendicitis<br />
+&nbsp;&nbsp;&nbsp; get flu<br />
+&nbsp;&nbsp;&nbsp; travel by air<br />
+&nbsp;&nbsp;&nbsp; go to college<br />
+			</em>etc.<br />
+			The nouns are nearly always means of transport, meals, illnesses or 
+			institutions.</li>
+			<li>Parallel structures take &Oslash;:<br /><em>&nbsp;&nbsp;&nbsp; hand in hand<br />
+&nbsp;&nbsp;&nbsp; man to man<br />
+&nbsp;&nbsp;&nbsp; 
+			man and boy<br />
+&nbsp;&nbsp;&nbsp; pen in hand<br />
+			</em>etc.</li>
+			<li>Times with the prepositions<em> at, by, after, before</em> 
+			take &Oslash; but those following <em>during </em>and<em> in</em> 
+			take <em>the</em>:<br /><em>&nbsp;&nbsp;&nbsp; at dawn / sunset / night<br />
+&nbsp;&nbsp;&nbsp; by dusk / sunrise / 
+			evening<br />
+&nbsp;&nbsp;&nbsp; after dark<br />
+&nbsp;&nbsp;&nbsp; before nightfall<br />
+			</em> but<br /><em>&nbsp;&nbsp;&nbsp; during the day<br />
+&nbsp;&nbsp;&nbsp; in the 
+			morning<br />
+			</em>etc.</li>
+			<li>We use the &Oslash; article for abstract ideas such as<em> 
+			danger, joy, hatred, friendliness, friendship</em> etc. even when 
+			they are countable ideas.&nbsp; We get, therefore, e.g.:<br />
+			<em>&nbsp;&nbsp;&nbsp; He was brave in the face of danger<br />
+&nbsp;&nbsp;&nbsp; She values friendliness</em><br />
+			and so on.</li>
+		</ol>
+			<p>There is, however, a rule-based explanation for these so-called 
+			exceptions.&nbsp; We'll take them one at a time:</p>
+			<ol>
+				<li>Common prepositional phrases<br />
+				In all these cases the count nouns are being used 
+			not for reference to a singular or plural entity (that's why it is
+			<em>on foot</em>, not <em>on feet, by bus</em> not<em> by buses</em> etc.).&nbsp; The count nouns 
+			are being used as representatives of the <strong>abstract</strong> idea of something (i.e. a mass 
+			concept) rather than an incidence of something identifiable.&nbsp; That is why we 
+			can say, for example:<br />
+			<em>&nbsp;&nbsp;&nbsp; University is not for him, I suspect</em><br />
+			because the noun is being used to describe <em>university education</em> 
+			rather than having any specific reference to a particular university at all.<br />
+			The same considerations apply to other examples in the list.<br />
+			<em>&nbsp;&nbsp;&nbsp; to be in school</em><br />
+			refers to being in education<br />
+			<em>&nbsp;&nbsp;&nbsp; to go on foot</em><br />
+			refers to a type of mobility<br />
+			<em>&nbsp;&nbsp;&nbsp; to go by bus</em><br />
+			refers to a type of transport</li>
+				<li>Parallel structures<br />
+				Expressions like<br />
+				<em>&nbsp;&nbsp;&nbsp; arm in arm<br />
+&nbsp;&nbsp;&nbsp; pen in hand<br />
+&nbsp;&nbsp;&nbsp; woman to woman</em><br />
+				etc.<br />
+				do not refer to particular <em>hands, arms, pens, women </em>or 
+				whatever, they refer to concept of a type of association or 
+				relationship and the 
+				fact that we can select a mass noun to refer to the same 
+				concepts gives the game away: <em>friendliness, readiness, 
+				directness</em>.</li>
+				<li>Times with the prepositions<em> at, by, after, before<br />
+				</em> 
+				These are accountable in the same way.&nbsp; Expressions such as<br />
+			<em>&nbsp;&nbsp;&nbsp; after nightfall</em><br />
+			and so on refer to states not particular instances of countable 
+				events so we would expect a Ø article to be the one of choice 
+				and that is what we find.<br />
+			When the &Oslash; article is used with time expressions, the same 
+			abstraction of the time to a mass concept accounts for the use.&nbsp; 
+			The expressions:<br />
+			<em>&nbsp;&nbsp;&nbsp; at night<br />
+&nbsp;&nbsp;&nbsp; by day<br />
+&nbsp;&nbsp;&nbsp; in autumn</em><br />
+			etc. are slightly quirky prepositional uses but the article use is 
+			not.<br />
+				When the definite article is being used with time expressions, we are often referring to 
+			generic reference so:<br />
+			<em>&nbsp;&nbsp;&nbsp; I like to work during the night</em><br />
+			refers to all nights, not a specific night.<br />
+			and<br />
+			<em>&nbsp;&nbsp;&nbsp; He can't get out of bed in the morning</em><br />
+			refers to all mornings, not a particular one.<br />
+			This may be a slightly unusual use of a generic structure with the 
+			definite article but it follows the rule.</li>
+				<li>The &Oslash; article for abstract ideas<br />
+				This is a pseudo-rule, much favoured on the web, enjoining 
+				learners to use a &Oslash; article with abstract ideas and it 
+				simply doesn't stand up to scrutiny although it appears in many 
+				of the lists of rules you'll find out here.<ol class="auto-style6">
+					<li>Some of these words (e.g., <em>happiness, friendliness, 
+					hatred</em> etc.) are mass nouns so they just follow the 
+					rule we have set out.&nbsp; The reference is <strong>
+					indefinite and generic</strong> so the &Oslash; 
+					article use follows the rule.&nbsp; That leads 
+					to, e.g.:<br />
+					<em>&nbsp;&nbsp;&nbsp; Friendship is important<br />
+&nbsp;&nbsp;&nbsp; Happiness is hard to find</em><br />
+					and so on.</li>
+					<li>When these words refer to abstract ideas and are also 
+					usually countable, we need to look at how the word is used.&nbsp; 
+					So, for example:<br />
+					<em>&nbsp;&nbsp;&nbsp; He is in danger</em><br />
+					contains a use of the word <em>danger</em> as a <strong>mass</strong> 
+					noun.&nbsp; It is indefinite but specific use so we would 
+					expect a &Oslash; article to refer to a mass indefinite but 
+					specific concept and that is exactly what we get.</li>
+					<li>However, if we are referring to a <strong>
+					definite and specific</strong> <em>danger</em> we would 
+					expect (and get) the use of articles to follow the rules 
+					either for <strong>definite and specific</strong> reference 
+					or to <strong>indefinite but specific</strong> reference for
+					<strong>countable</strong> ideas and that leads to:<br />
+					<em>&nbsp;&nbsp;&nbsp; There is a danger in expecting too 
+					much from him<br />
+					</em>(indefinite but specific reference)<br /><em>&nbsp;&nbsp;&nbsp; The dangers with this procedure are obvious</em><br />
+					(definite and specific reference to a plural count noun)<br />
+					<em>&nbsp;&nbsp;&nbsp; The most obvious danger is the angry 
+					gorilla</em><br />
+					(definite and specific reference to singular count nouns in 
+					both cases)<br />
+					and nothing exceptional is happening here.</li>
+				</ol>The root of all this confusion is, naturally, that certain words can be used in mass and count senses with slightly different meanings.&nbsp;  Most of these are abstract concepts but that has nothing to do with article use and inventing yet another rule to deal with the phenomenon is unhelpful and wastes learners' time.<br />
+				To exemplify a little more, we can have, for example:<br />
+				<em>&nbsp;&nbsp;&nbsp; Friendship is important</em><br />
+				(mass noun used with indefinite but specific reference)<br />
+				<em>&nbsp;&nbsp;&nbsp; It is a friendship I value</em><br />
+				(count noun used with indefinite but specific reference)<br />
+				<em>&nbsp;&nbsp;&nbsp; The friendship you showed her was 
+				appreciated</em><br />
+				(singular count noun used with definite and specific reference)<br />
+				<em>&nbsp;&nbsp;&nbsp; The friendships I made at university have 
+				lasted a long time</em><br />
+				(plural count noun used with definite and specific reference)<br />
+				Many nouns work this way so there is a distinction between <em>
+				life / lives, hate / hates, danger / dangers, prejudice / 
+				prejudices, love / loves, delight / delights, sorrow / sorrows</em> 
+				and so on, all of which can be used as mass concepts, as 
+				singular count nouns and as plural count nouns and when they are 
+				used in those grammatical roles, they follow the rules for 
+				article use that we have identified.</li>
+			</ol>
+		<hr />
+		<p>There are a couple of exercises for more advanced learners on article 
+		use in the section for learners on this site.&nbsp;
+		<a href="../../../learners/exercises/indexpages/grammarc1c2.html" target="_blank">
+		Go to that index</a>, find the exercises and see if you can identify 
+		which rules from all of this are applicable (new tab).</p>
+		<hr />
+		<p>Click to take a <a href="articleshp.htm">test</a> in this area.</p>
+			<hr /><br />
+			<table id="istrainingnav" cellpadding="0" cellspacing="0" class="tableblueborder">
+			<tr>
+				<td class="auto-style52" colspan="2">Related guides</td>
+			</tr>
+			<tr>
+				<td class="auto-style54">
+				<a href="classifiers_partitives.html" target="_blank">
+				classifiers, partitives and group nouns</a></td>
+				<td class="auto-style56">for the guide to a related area which 
+				considers, <em>inter alia</em>, one way mass nouns are made 
+				countable</td>
+			</tr>
+				<tr>
+				<td class="auto-style54">
+				<a href="../teaching/articles_teaching.html">teaching the system</a></td>
+				<td class="auto-style51">If you are happy that you have 
+				understood the nature of the article system in English</td>
+				</tr>
+			<tr>
+				<td class="auto-style54">
+		<a href="../../../learners/lessons/a1a2lessons/a1a2grammar/a1a2articles.html" target="_blank">
+				lesson for elementary learners</a></td>
+				<td class="auto-style51">which focuses on <em>the</em> 
+		for unique use, <em>some</em> for mass nouns and plural count nouns and 
+		the known-unknown rule for using <em>a(n)</em> and <em>the</em>.&nbsp;</td>
+			</tr>
+			<tr>
+				<td class="auto-style54">
+				<a href="../../../documents/ELT_Concourse_article_system.pdf" target="_blank">
+				this guide</a></td>
+				<td class="auto-style51">this is an abbreviated version as a PDF 
+				document</td>
+			</tr>
+			<tr>
+				<td class="auto-style54">
+				<a href="../../initial/lexis/count_uncount.html">mass and count 
+				nouns</a></td>
+				<td class="auto-style51">this is an essential guide in the 
+				initial-plus section</td>
+			</tr>
+			<tr>
+				<td class="auto-style54"> 
+				<a href="nouns.html">nouns</a></td>
+				<td class="auto-style51">the guide in the in-service section</td>
+			</tr>
+			</table>
+			<br />
+			<hr />
+				</div>
+		
+			<!-- #EndEditable -->
+		<!-- End Content -->
+	
+	<!-- Begin Footer -->
+	<div id="footer">
+		<p>
+		<a href="../../../contact.html">Contact</a> |
+		<a href="../../../faq.html">FAQs</a> |
+		<a href="../../../copyright_notice.html">Copyright notice</a> |
+		<a href="../../../documents/ELT_Concourse_Charter.pdf" target="_blank"> ELT Concourse charter</a> |
+		<a href="../../../disclaimer.html"> Disclaimer and Privacy statement </a>|
+		<a href="../../../search_the_site.html">Search <strong>
+		ELT Concourse</strong></a></p>
+	</div>
+	<!-- End Footer -->
+
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>
