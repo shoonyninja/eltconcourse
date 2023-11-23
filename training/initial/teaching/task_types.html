@@ -1,0 +1,1142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- #BeginTemplate "../../../styles/dwt/training.dwt" -->
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta http-equiv="Content-Language" content="en-gb" />
+<!-- #BeginEditable "doctitle" -->
+<title>ELT Concourse: the essential guide to task types</title>
+<style type="text/css">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.auto-style3 {
+	padding-left: 5px;
+}
+.auto-style17 {
+	border-bottom: medium none #ff6600;
+	border-left: 1px solid #ff6600;
+	border-right: medium none #ff6600;
+	border-top: 1px solid #ff6600;
+}
+.auto-style18 {
+	border-left: 1px solid #ff6600;
+	border-right: medium none #ff6600;
+	border-top: medium none #ff6600;
+	border-bottom: 1px solid #ff6600;
+}
+.auto-style19 {
+	color: #000000;
+	border-left: 1px solid #ff6600;
+	border-right: 1px solid #ff6600;
+	border-top: 1px solid #ff6600;
+	border-bottom-color: #ff6600;
+	border-bottom-width: 1px;
+}
+.auto-style20 {
+	border-left: 1px solid #ff6600;
+	border-right: 1px solid #ff6600;
+	border-top: medium none #ff6600;
+	border-bottom: 1px solid #ff6600;
+	color: #000000;
+	}
+.auto-style21 {
+	border-left-style: solid;
+	border-left-width: 1px;
+}
+.auto-style22 {
+	border-right-style: solid;
+	border-right-width: 1px;
+}
+.auto-style25 {
+	border-left: medium none #ff6600;
+	border-right: medium none #ff6600;
+	border-top: medium none #ff6600;
+	border-bottom: 1px solid #ff6600;
+	padding-left: 2px;
+}
+.auto-style23 {
+	border-left: medium none #ff6600;
+	border-right: 1px solid #ff6600;
+	border-top: 1px solid #ff6600;
+	border-bottom: 1px solid #ff6600;
+}
+.auto-style26 {
+	border-left: 1px solid #ff6600;
+	border-right: medium none #ff6600;
+	border-top: medium none #ff6600;
+	border-bottom: 1px solid #ff6600;
+	padding-left: 5px;
+	padding-right: 2px;
+}
+.auto-style28 {
+	border-left: medium none #ff6600;
+	border-right: 1px solid #ff6600;
+	border-top: 1px solid #ff6600;
+	border-bottom: medium none #ff6600;
+}
+.auto-style29 {
+	border-left: 1px solid #ff6600;
+	border-right: medium none #ff6600;
+	border-top: 1px solid #ff6600;
+	border-bottom: medium none #ff6600;
+	padding-left: 5px;
+	padding-right: 2px;
+}
+.auto-style30 {
+	border-left: medium none #ff6600;
+	border-right: 1px solid #ff6600;
+	border-top: 1px solid #ff6600;
+	border-bottom-color: #ff6600;
+	border-bottom-width: 1px;
+}
+.auto-style31 {
+	border-left: 1px solid #ff6600;
+	border-right: medium none #ff6600;
+	border-top: 1px solid #ff6600;
+	border-bottom-color: #ff6600;
+	border-bottom-width: 1px;
+}
+.auto-style32 {
+	border-bottom: medium none #ff6600;
+	color: #000000;
+	border-left: 1px solid #ff6600;
+	border-right: 1px solid #ff6600;
+	border-top: 1px solid #ff6600;
+}
+.auto-style33 {
+	border-left: medium none #ff6600;
+	border-right: 1px solid #ff6600;
+	border-top: medium none #ff6600;
+	border-bottom: 1px solid #ff6600;
+}
+.auto-style88 {
+	border-left: medium none #000080;
+	border-right: 1px solid #ff6600;
+	border-top: medium none #cccccc;
+	border-bottom: 1px solid #ff6600;
+	color: #000000;
+	text-align: center;
+}
+.auto-style67 {
+	border-left: 1px solid #ff6600;
+	border-right: 1px solid #ff6600;
+	border-top: medium none #cccccc;
+	border-bottom: 1px solid #ff6600;
+	color: #000000;
+	text-align: center;
+}
+.auto-style62 {
+	border-left: 1px solid #ff6600;
+	border-right: medium none #cccccc;
+	border-top: medium none #cccccc;
+	border-bottom: 1px solid #ff6600;
+	color: #000000;
+	text-align: center;
+}
+.auto-style63 {
+	border-left: medium none #000080;
+	border-right: 1px solid #ff6600;
+	border-top: 1px solid #ff6600;
+	border-bottom: medium none #cccccc;
+}
+.auto-style64 {
+	border-left: 1px solid #ff6600;
+	border-right: 1px solid #ff6600;
+	border-top: 1px solid #ff6600;
+	border-bottom: medium none #cccccc;
+}
+.auto-style65 {
+	border-left: 1px solid #ff6600;
+	border-right: medium none #cccccc;
+	border-top: 1px solid #ff6600;
+	border-bottom: medium none #cccccc;
+}
+.auto-style89 {
+	margin: 0 50px;
+	color: #000000;
+	font-style: italic;
+}
+.auto-style90 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+</style>
+<meta content="ELT Concourse English language analysis and teaching guides. Task types" name="description" />
+<script type="text/javascript">
+<!--
+function FP_changeProp() {//v1.0
+ var args=arguments,d=document,i,j,id=args[0],o=FP_getObjectByID(id),s,ao,v,x;
+ d.$cpe=new Array(); if(o) for(i=2; i<args.length; i+=2) { v=args[i+1]; s="o"; 
+ ao=args[i].split("."); for(j=0; j<ao.length; j++) { s+="."+ao[j]; if(null==eval(s)) { 
+  s=null; break; } } x=new Object; x.o=o; x.n=new Array(); x.v=new Array();
+ x.n[x.n.length]=s; eval("x.v[x.v.length]="+s); d.$cpe[d.$cpe.length]=x;
+ if(s) eval(s+"=v"); }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+// -->
+</script>
+<!-- #EndEditable -->
+<meta content="language analysis,eltconcourse,English grammar,free English language teaching materials,CELTA,Delta,language guides,free Delta training,free CELTA training,free ELT Training materials,teacher training,ELT,learning English,teaching English,English Language Teaching,ESOL,EFL,English as a Foreign Language" name="keywords" />
+<link href="../../../styles/mainstyle.css" rel="stylesheet" type="text/css" />
+<link href="../../../styles/training.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+</style>
+</head>
+
+<body>
+	<!-- Begin Masthead -->
+	<div id="masthead" >
+		<table style="width: 100%; border-bottom: #000080 solid">
+			<tr>
+				<td style="width: 135px">
+				<img alt="logo" height="49" src="../../../gfx/logo.png" width="78" /></td>
+				<td valign="bottom">
+				<span class="orangexxlargebold">ELT </span>
+				<span class="bluexxlargebold">Concourse teacher training</span></td>
+			</tr>
+		</table>
+	</div>
+	<!-- End Masthead -->
+	<!-- Begin Content -->
+			<!-- Begin Sidebar -->
+		<div id="sidebartt">
+			<ul>
+				<li><a href="../../../index.html">ELT Concourse home</a></li>
+				<li><a href="../../../a-z_index.html">A-Z site index</a></li>
+				<li><a href="../../training_index.html">Teacher training index</a></li>
+				<li><a href="../../../development/development_index.html">Teacher development</a></li>
+				<li><a href="../../../teachers/teachers.html">For teachers</a></li>
+				<li><a href="../../trainers/trainers_index.html">For trainers</a></li>
+				<li>
+				<a href="../../../academic_management/academic_management_index.html">For managers</a></li>
+				<li><a href="../../../learners/learners.html">For learners</a></li>
+				<li><a href="../../common/about_language.html">About language</a></li>
+				<li><a href="../../../questions/questions.html">Language questions</a></li>
+				<li class="whiteback">Other areas</li>
+				<li><a href="../../inservice/indexes_is/eap_index_is.html">Academic English</a></li>
+				<li><a href="../../inservice/indexes_is/be_index_is.html">Business English</a></li>
+				<li><a href="../../entering/introduction_to_elt.html">Entering ELT</a></li>
+				<li><a href="../../courses/courses_index.html">Courses index</a></li>
+				<li><a href="../../courses/basic/introduction_basic.html">Basic ELT course</a></li>
+				<li><a href="../../tkt/tkt_index.html">TKT</a></li>
+				<li><a href="../../bridge/bridge_index.html">The Bridge</a></li>
+				<li><a href="../../courses/lacourse/index_la_course.html">Language analysis</a></li>
+				<li>
+				<a href="../../courses/training_to_train/training_to_train_index.html">Training to train</a></li>
+				<li><a href="../../courses/transcription1/transcription.html">Transcription</a></li>
+				<li><a href="../../glossaries/glossary_index.html">Glossaries</a></li>
+				<li><a href="../../../articles/articles.html">Articles</a></li>
+			</ul>
+		</div>
+		<!-- End Sidebar -->
+		<!-- Begin Content -->
+		
+		<div id="toppicture" style="text-align: left; background-color: white; padding: 0px; margin-left: 140px;">
+				<img alt="Concourse 2" height="207" src="../../../images/concourse2blue.jpg" width="310" /></div>
+		
+			<!-- #BeginEditable "content" -->
+		
+			<!-- #BeginEditable "content" -->
+		
+		<div id="content">
+		
+			<h1>Task types</h1>
+			
+			<p>
+			<img alt="tasks" height="207" src="../../images/four_tasks.png" width="310" /></p>
+			<p>You should follow <a href="activity_types.html" target="_blank">the guide to 
+			Activity Types</a> (new tab) before doing this.&nbsp; The assumption is that 
+			you have and know the difference between awareness-raising, 
+			skill-getting and skill-using activities.</p>
+			<p>This is not a guide to task-based learning.&nbsp; There is
+			one on this site, linked in the list of related guides at the end, 
+			and if you follow it, you will be aware that in that tradition, the 
+			term <em>task</em> is used in a special sense.<br />
+			In this guide, we are using the word to mean any exercise that 
+			you give learners at any stage in the lesson.&nbsp; It mostly excludes 
+			teacher-fronted activities and focuses on the kinds of things you 
+			can get students to do in class and why you should ask them to carry 
+			out some kind of task.</p>
+			<hr />
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="embed" height="166" src="../../images/embedding250.jpg" width="250" /></td>
+					<td class="auto-style3">
+					<h2>Embedding tasks in activities: the relationship between 
+					task and activity purpose</h2>
+					</td>
+				</tr>
+			</table>
+			<p>As you know if you have followed the guide to activity types, we 
+			need to focus on activities which are purely to raise people's 
+			awareness, those which help them acquire new language or a skill and 
+			those which give them the opportunity to put the language or skill 
+			into action.</p>
+			<p>Tasks can be classified in the same way but the picture is a 
+			little more complicated because single task types can be embedded in 
+			all three activity types.<br />
+			Here's an example of what is meant using a popular task type: 
+			<strong>the 
+			matching exercise</strong>.</p>
+			<table cellpadding="3" class="tablebrownborder">
+				<tr>
+					<td class="auto-style33"><em>Task</em></td>
+					<td class="auto-style20">Activity type</td>
+					<td class="auto-style18">Comment</td>
+				</tr>
+				<tr>
+					<td class="auto-style30"><em>Before watching a set of short 
+					video clips, students match a picture of a person with 
+					pictures of what sort of sports they play.&nbsp; There are 
+					clues in each picture.</em></td>
+					<td class="auto-style19">
+					<img alt="ar task" height="57" src="../../imagesgraphics/awareness_raising_task.png" width="150" /></td>
+					<td class="auto-style31">In this case, the&nbsp;task is designed 
+					to get the learners thinking about sports and activities and 
+					prepare them a little for what they will see in the video.&nbsp; 
+					There's no attempt to teach or practise the language.<br />
+					It's a controlled exercise but the outcomes are not as 
+					important as doing the task.</td>
+				</tr>
+				<tr>
+					<td class="auto-style30"><em>While and after listening to a 
+					short text about a man's life and the important things that 
+					happened to him, students cooperate to position events on a 
+					time-line of the man's life from early days to retirement.</em></td>
+					<td class="auto-style19">
+					<img alt="sg task" height="57" src="../../imagesgraphics/skill_getting_task.png" width="150" /></td>
+					<td class="auto-style31">In this case, the task is intended 
+					to give the learners a reason for listening and to get them 
+					to focus on the particular parts of what is said that allow 
+					them to complete the task.&nbsp; It encourages both 
+					listening for specific information and ignoring irrelevance 
+					and on understanding what's said and what happened.<br />
+					It is tightly controlled and outcomes will have to be 
+					checked carefully before the lesson can continue.</td>
+				</tr>
+				<tr>
+					<td class="auto-style28"><em>Students work individually to 
+					write important events that happened to them on pieces of 
+					card.&nbsp;
+					They also draw a blank time-line for their own lives with 
+					dates but no other information inserted.<br />
+					Then they swap events and time lines and 
+					interview each other asking questions to insert the events 
+					in the right order on the time line.</em></td>
+					<td class="auto-style32">
+					<img alt="su task" height="57" src="../../imagesgraphics/skill_using_task.png" width="150" /></td>
+					<td class="auto-style17">In this task, the object is to get 
+					the learners to use questioning language and narrative 
+					tenses in a freer and personalised way.&nbsp; They will also 
+					need to deploy language like, "So XXXX happened before YYYY, 
+					did it?" and so on.<br />
+					They are practising (i.e., using) speaking and listening 
+					skills along with the grammar and some quite unpredictable 
+					lexis.<br />
+					It is a free task with uncontrolled output from the 
+					students.</td>
+				</tr>
+			</table>
+			<p>It's important for you to see that in all three cases here, the 
+			task <strong>type</strong> is unchanged &ndash; they are all 
+			matching activities of some sort.&nbsp; What changes is the activity 
+			type into which the task is embedded and with it, the purpose of 
+			the task and the amount of feedback which is required.</p>
+			<hr />
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="task types" height="166" src="../../images/classify_masks250.jpg" width="250" /></td>
+					<td class="auto-style3">
+					<h2>Task types</h2>
+					</td>
+				</tr>
+			</table>
+			<p>
+			There is a huge range of task types that can be used in classrooms 
+			and a good place to look for ideas is in a variety of coursebooks to 
+			see what tasks the authors have designed.<br />
+			What follows is an introduction to some of the commonest.<br />
+			At 
+			the end of each description and example, you'll be asked to think 
+			about what activity types the tasks can be inserted into and what they 
+			do.<br />
+			<strong>Matching exercises</strong> have been covered in this respect so don't figure 
+			in what follows.</p>
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="gap" src="../../images/jigsaw_missing200.jpg" /></td>
+					<td class="auto-style3">
+					<h2>Gap filling</h2>
+					</td>
+				</tr>
+			</table>
+			<p>These are almost always very controlled tasks and frequently 
+			there is only one possibility per gap to be inserted.&nbsp; Here's 
+			an example:</p>
+			<p>
+			<img alt="gapfill" height="201" src="../../imagesgraphics/gapfill.png" width="465" /></p>
+			<p>
+			<a name="1"></a>To read about what gap-fill tasks are like,
+			<a href="task_typeshp.htm">click here to try a gap-fill test 
+			for yourself</a>.</p>
+			<p>
+			Gap fills can be quite versatile and you can design one with 
+			virtually any text, including dialogues and so on.&nbsp; The gaps 
+			can be as large or as limited as you like but the more words that 
+			have to be inserted, the more variable will be the possible 
+			solutions.<br />
+			Gap-fill tasks also work well for while-listening tasks at all 
+			levels if you want your learners to <strong>notice</strong> certain 
+			items in the text.&nbsp; You can also use gap-fill tasks in 
+			dictations for the same purpose.<br />
+			There is a guide to 
+			noticing on this site (linked below) in the in-service section but it is 
+			somewhat technical.</p>
+			<p>During what sorts of activities would you insert a gap-fill task 
+			and for what reason?<br />
+			<a href="#1" onclick="FP_changeProp(/*id*/'gapfill',0,'style.visibility','visible')">
+			Click here when you have a response to that</a>.</p>
+			<table id="gapfill" class="style_brown" style="position:relative; visibility: hidden"cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="sg task" height="57" src="../../imagesgraphics/skill_getting_task.png" width="150" /></td>
+					<td class="auto-style3">
+					
+					Gap-fills are usually part of skill getting activities 
+					because they are designed to focus the learners precisely 
+					and check that learning is taking place.&nbsp; Because they 
+					are so controlled, they are poor measures of skills using 
+					and are not helpful for awareness raising because they test 
+					rather than intrigue or energise.</td>
+				</tr>
+			</table>
+			<br />
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="marry me" height="133" src="../../images/roleplay_a200.jpg" width="200" /></td>
+					<td class="auto-style3">
+					<h2>Role play</h2>
+					</td>
+				</tr>
+			</table>
+			<p><a name="2"></a>Role play tasks come in a variety of flavours and are extremely 
+			versatile.</p>
+			<ol>
+				<li>Free role-play tasks<br />
+				In these, it is up to the learners to take the dialogue where it 
+				will go and only the sketchiest of instructions need be given.&nbsp; 
+				For example:<br />
+				<span class="style_black"><em>&nbsp;&nbsp;&nbsp; You're on a train and have just met a 
+				college-friend you haven't seen for five years.&nbsp; OK?&nbsp; 
+				Go.</em></span></li>
+				<li>Assigned role-play tasks<br />
+				In these, learners do not react as themselves but in a role or 
+				as a character that you give them.&nbsp; For example:<br />
+				<span class="style_black"><em>&nbsp;&nbsp;&nbsp; Student A is a very unhappy customer because the expensive 
+				camera he bought burst into flames in his car.<br />
+				&nbsp;&nbsp;&nbsp;
+				Student B is the manager of the shop and has had a very bad day.<br />
+&nbsp;&nbsp;&nbsp; 
+				His patience is thin and he thinks this customer is not telling 
+				the truth.</em></span></li>
+				<li>Controlled role-play tasks<br />
+				In these, the roles and the language to use may both be 
+				specified.&nbsp; For example, such a task might require learners 
+				to use particular tense forms and take on particular characters.&nbsp; 
+				Ask-and-answer scenarios are popular such as enquiring about 
+				future plans, advising a fellow student, encounters between 
+				strangers and locals etc.</li>
+				<li>Mixed role-play tasks<br />In these, there are 
+				possibilities:<ul class="greybullet">
+					<li>The roles may be assigned but not the language.</li>
+					<li>The language may be prescribed but students act as 
+					themselves.</li>
+				</ul>
+				</li>
+			</ol>
+			<p>In what kinds of activity phases are role-play tasks effective?<br />
+			<a href="#2" onclick="FP_changeProp(/*id*/'gapfill0',0,'style.visibility','visible')">
+			Click here when you have an answer</a>.</p>
+			<table id="gapfill0" class="style_brown" style="position:relative; visibility: hidden"cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="sg task" height="57" src="../../imagesgraphics/skill_getting_task.png" width="150" /></td>
+					<td class="auto-style3">
+					
+					Role-play tasks can be effectively used in skill-getting 
+					phases of lessons if they are sufficiently controlled.&nbsp; 
+					Types 3 and 4 above are best for this.</td>
+				</tr>
+				<tr>
+					<td>
+					<img alt="su task" height="57" src="../../imagesgraphics/skill_using_task.png" width="150" /></td>
+					<td class="auto-style3">
+					
+					Role-plays can also be used in skills-using stages.&nbsp; 
+					Providing the set-up of the role play is sufficiently clear, 
+					it can be focused on the sorts of language and skills we 
+					want the learners to use.&nbsp; Types 1 and 2 above work 
+					best in these phases.</td>
+				</tr>
+			</table>
+			<br />
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="skeletons" height="133" src="../../images/skeleton_fish200.jpg" width="200" /></td>
+					<td class="auto-style3">
+					<h2>Skeletons</h2>
+					</td>
+				</tr>
+			</table>
+			<p>Skeleton tasks are allied in some ways to gap-fill tasks but the 
+			gaps are not explicitly signposted.&nbsp; Usually, these tasks focus 
+			on structure, often tense forms, and are used to consolidate 
+			language learning and encourage noticing.<br />
+			As the name and the graphic imply, the learner is presented with a 
+			skeleton of the text and is asked to expand it by inserting words 
+			and, sometimes, changing words.<br />
+			They can be quite finely focused.<br />
+			Here are two examples:</p>
+			<dl>
+				<dt><a name="3"></a>Expansion only:</dt>
+				<dd>
+				<img alt="1" height="111" src="../../imagesgraphics/skeletonstory.png" width="465" /><br />
+				Learners can work alone or in small groups on tasks like these 
+				to come up with<br />
+				<em>&nbsp;&nbsp;&nbsp; Yesterday I was watching TV when my neighbour arrived to 
+				complain about the noise of/from my washing machine<br />
+				</em>and so on.</dd>
+				<dt>Expansion and alteration:</dt>
+				<dd>
+				<img alt="2" height="123" src="../../imagesgraphics/skeletonstory2.png" width="465" /><br />
+				Here the learners have to do a lot more work to end up with 
+				sentences such as<br />
+&nbsp;&nbsp;&nbsp; <em>I left her in a shop and went for a coffee 
+				before doing my own shopping.<br />
+				</em>This is a much harder exercise.</dd>
+			</dl>
+			<p>In what kinds of activity phases are skeleton tasks effective?<br />
+			<a href="#3" onclick="FP_changeProp(/*id*/'gapfill1',0,'style.visibility','visible')">Click here when you have an answer</a>.</p>
+			<table id="gapfill1" class="style_brown" style="position:relative; visibility: hidden"cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="sg task" height="57" src="../../imagesgraphics/skill_getting_task.png" width="150" /></td>
+					<td class="auto-style3">
+					
+					Expansion only tasks, like the first one, are useful to 
+					focus learners on particular areas of structure and, 
+					especially, sentence connectors.&nbsp; Because they are so 
+					controlled, they are associated with skill-getting 
+					activities.</td>
+				</tr>
+				<tr>
+					<td>
+					<img alt="su task" height="57" src="../../imagesgraphics/skill_using_task.png" width="150" /></td>
+					<td class="auto-style3">
+					
+					However, if the clues are sufficiently diminished in terms 
+					of how much has to be inserted to make sense, and the 
+					learners are obliged to change a good deal as well, they can 
+					be used for skill-using phases, especially when the focus is 
+					on writing skills.</td>
+				</tr>
+			</table>
+			<br />
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="listing" height="133" src="../../images/on_one_hand200.jpg" width="200" /></td>
+					<td class="auto-style3">
+					<h2>Listing and prioritising tasks</h2>
+					</td>
+				</tr>
+			</table>
+			<dl>
+				<dt><a name="4"></a>Listing</dt>
+				<dd>Listing tasks are simple and effective.&nbsp; For example:<br />
+				<span class="style_black"><em>&nbsp;&nbsp;&nbsp; Make a list of three things you 
+				are <strong>not</strong> going to do this evening.<br />
+				&nbsp;&nbsp;&nbsp;
+				List four sports you have never done.<br />
+				&nbsp;&nbsp;&nbsp;
+				List 5 things about your hometown that you like / don't like.<br />
+				&nbsp;&nbsp;&nbsp;
+				Make a list of all the words you know connected with zoos / cars 
+				/ kitchens / pets etc.<br />
+				&nbsp;&nbsp;&nbsp;
+				List four verbs / nouns / adjectives etc. you expect to find in 
+				a newspaper report of a road accident.</em></span></dd>
+				<dt>Prioritising</dt>
+				<dd>Prioritising tasks require a bit more thought.&nbsp; For 
+				example,<br />
+				<span class="style_black"><em>&nbsp;&nbsp;&nbsp; List 5 things you like about your 
+				own country in order of importance.<br />
+				&nbsp;&nbsp;&nbsp;
+				Make a list of six things you must not forget when you travel 
+				abroad in order of importance.<br />
+				&nbsp;&nbsp;&nbsp;
+				List five prepositional phrases you expect to find in an article 
+				reviewing a holiday resort and put them in the order you think 
+				they will come.</em></span></dd>
+			</dl>
+			<p>In what kinds of activity phases are listing and prioritising tasks effective?<br />
+			<a href="#4" onclick="FP_changeProp(/*id*/'gapfill2',0,'style.visibility','visible')">Click here when you have an answer</a>.</p>
+			<table id="gapfill2" class="style_brown" style="position:relative; visibility: hidden"cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="ar task" height="57" src="../../imagesgraphics/awareness_raising_task.png" width="150" /></td>
+					<td class="auto-style3">
+					
+					Simple listing tasks are frequently used to get learners 
+					thinking about a topic and prepared for whatever follows (a 
+					reading text, a video or whatever).<br />
+					Prioritising tasks are often used for the same purposes but 
+					require a bit more depth of thought (and are often 
+					considered more effective because of that).</td>
+				</tr>
+				<tr>
+					<td>
+					<img alt="sg task" height="57" src="../../imagesgraphics/skill_getting_task.png" width="150" /></td>
+					<td class="auto-style3">
+					
+					They are often followed up with comparing lists in pairs and 
+					noting similarities and differences and this can be a 
+					skill-getting task if learners are required to learn from 
+					each other's lists and acquire some new lexis.<br />
+					Listing the order in which you expect to find things in a 
+					text is a skills-getting task, encouraging students to 
+					notice how texts are conventionally ordered in English.</td>
+				</tr>
+				<tr>
+					<td>
+					<img alt="su task" height="57" src="../../imagesgraphics/skill_using_task.png" width="150" /></td>
+					<td class="auto-style3">
+					
+					Prioritising tasks, if done in pairs or groups, can require a 
+					good deal of negotiation and discussion, especially focusing 
+					on the language used for supplying reasons and 
+					justifications and in trying to persuade others.&nbsp; In 
+					this sense they are very often skill-using tasks.</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+					Much depends, of course, on what happens after the task is 
+					completed.&nbsp; If the task is purely for awareness 
+					raising, little extension is needed but if it is followed up 
+					more explicitly and learners are required to share 
+					information or compare their lists and priorities with what 
+					they see / hear / read, then they are true skills-getting 
+					tasks.</td>
+				</tr>
+			</table>
+			<br />
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="discuss" src="../../images/talk_discussion200.jpg" /></td>
+					<td class="auto-style3">
+					<h2>Discussion and debate tasks</h2>
+					</td>
+				</tr>
+			</table>
+			<p><a name="5"></a>Discussion tasks can be simple or complex and 
+			formalized.</p>
+			<dl>
+				<dt>Simple exchange of views</dt>
+				<dd>Tasks such as:<br /><em><span class="style_black">&nbsp;&nbsp;&nbsp; Talk to your partner / in your group 
+				about what you find difficult to learn in English.<br />
+				&nbsp;&nbsp;&nbsp;
+				Tell your partner about your favourite food and how to make it.<br />
+				&nbsp;&nbsp;&nbsp;
+				Explain to your partner why you are learning English.</span></em><br />
+				etc.</dd>
+				<dt>More complex discussion tasks</dt>
+				<dd>These can be formal debates with a motion and speakers on 
+				both sides at their most elaborate.&nbsp; They usually come in 
+				the conventional form of<em> This house believes ....<br />
+				</em>They can also be tasks such as:<br />
+				<span class="style_black"><em>&nbsp;&nbsp;&nbsp; Work in a group to decide on the 
+				three best ways to cut pollution in cities.<br />
+&nbsp;&nbsp;&nbsp; When you have 
+				done that, join with another group to discuss how far you agree 
+				and differ.<br />
+&nbsp;&nbsp;&nbsp; Persuade the other group that you have the 
+				best ideas.</em></span></dd>
+			</dl>
+			<p>In what kinds of activity phases are discussion tasks effective?<br />
+			<a href="#5" onclick="FP_changeProp(/*id*/'gapfill3',0,'style.visibility','visible')">Click here when you have an answer</a>.</p>
+			<table id="gapfill3" class="style_brown" style="position:relative; visibility: hidden"cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="ar task" height="57" src="../../imagesgraphics/awareness_raising_task.png" width="150" /></td>
+					<td class="auto-style3">
+					
+					The <em>talk-to-a-partner about ... </em>style of discussion is 
+					frequently used as a way to get learners thinking about the 
+					topic at the outset.&nbsp; This is purely an 
+					awareness-raising task.</td>
+				</tr>
+				<tr>
+					<td>
+					<img alt="su task" height="57" src="../../imagesgraphics/skill_using_task.png" width="150" /></td>
+					<td class="auto-style3">
+					
+					Discussion tasks, especially of the more elaborate kind, are 
+					skill-using tasks designed to allow learners to deploy 
+					language and speaking skills in a way that might simulate 
+					real-life conversations and discussions.</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+					It is worth noting here that discussion tasks do not work 
+					well in skill-getting activities because little that is new 
+					is being learned.&nbsp; Learners are using language they 
+					already command.</td>
+				</tr>
+			</table>
+			<br />
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="transfer" height="133" src="../../images/transfer_pylon200.jpg" width="200" /></td>
+					<td class="auto-style3">
+					<h2>Transformation and transfer tasks</h2>
+					</td>
+				</tr>
+			</table>
+			<dl>
+				<dt><strong>Transformation tasks</strong></dt>
+				<dd>These are generally severely form based and require learners 
+				to change one form into another.&nbsp; At their dullest and 
+				least useful they ask people to change all tenses from, say, 
+				present to past, or make all first conditionals into second 
+				conditional forms.<br />
+				Exercises like this are poor because speakers use forms to match 
+				communicative aims, not the other way around so if someone says, 
+				e.g.,<br />
+				<em>&nbsp;&nbsp;&nbsp; The door was opened very quietly<br />
+				</em>instead of<br />
+				<em>&nbsp;&nbsp;&nbsp; She opened the door very quietly</em><br />
+				there is a reason for the choice (to do with marking the theme, 
+				in fact).<br />
+				Simply transforming one structure into another is rarely a 
+				productive thing to do.<br />
+				There are times when it is a useful focusing and form-practice 
+				task, however.&nbsp; Here are two examples:<br />
+				<strong>Direct to indirect speech:</strong><br />
+				<span class="style_black"><em>&nbsp;&nbsp;&nbsp; Listen to the interview between 
+				the reporter and the police officers and then write the 
+				newspaper report.</em></span><br />
+				This actually does practise a real-life skill because we 
+				often report what someone has said to us directly into indirect 
+				speech along the lines of<br />
+&nbsp;&nbsp;&nbsp; <em>John told me that ...<br />
+				</em>Doing it in writing allows the learners to focus on form 
+				before they have to use it in spoken exchanges.<br />
+				<strong>Style shifting:</strong><br />
+				Transforming a text from an informal email to a formal one or 
+				vice versa is often a good way for learners to be made aware of 
+				and focus on the lexis and structure which is characteristic of 
+				the style.&nbsp; For example:<br />
+				<em>&nbsp;&nbsp;&nbsp; We made up our minds to put the do off<br />
+				</em>might become<br />
+				<em>&nbsp;&nbsp;&nbsp; It was decided to postpone the celebration</em></dd>
+				<dt><strong><a name="7"></a>Transfer tasks</strong></dt>
+				<dd>Given, for example, a graphical representation of data, 
+				learners need to transfer the information to another medium such 
+				as prose or a spoken presentation.&nbsp; For example, given 
+				this:<br />
+				<img alt="graph" src="../../imagesgraphics/graph.jpg" height="248" width="465" /><br />
+				learners might be required to summarise the data in speech or in 
+				writing.<br />
+				This is a skill demanded in some examinations such as IELTS and 
+				is also useful for those studying English for Academic Purposes.<br />
+				<strong>Picture stories</strong>, too, fall into this category 
+				because they are frequently used to provide a stimulus for 
+				speaking through the use of a set of images.&nbsp; (A search 
+				engine request for 'picture stories' or using images from the 
+				web will find plenty of material, incidentally.)</dd>
+			</dl>
+			<p>In what kinds of activity phases are discussion tasks effective?<br />
+			<a href="#7" onclick="FP_changeProp(/*id*/'gapfill5',0,'style.visibility','visible')">Click here when you have an answer</a>.</p>
+			<table id="gapfill5" class="style_brown" style="position:relative; visibility: hidden"cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="sg task" height="57" src="../../imagesgraphics/skill_getting_task.png" width="150" /></td>
+					<td class="auto-style3">
+					
+					Transformation tasks are very controlled practice and as 
+					such to do with checking understanding and the ability 
+					to manipulate form.<br />
+					Transfer tasks can also be used as part of skill-getting 
+					activities if they are clearly focused on the use of a 
+					limited range of language (e.g., <em>rising steadily, 
+					beginning to fall back</em> etc., in the example of the 
+					graph).</td>
+				</tr>
+				<tr>
+					<td>
+					<img alt="su task" height="57" src="../../imagesgraphics/skill_using_task.png" width="150" /></td>
+					<td class="auto-style3">
+					
+					Transformation tasks such as the reporting exercise above, 
+					can be used in skills-using phases but this is rarer and 
+					they have to be carefully designed if any authentic (or even 
+					semi-authentic) use is to be encouraged.<br />
+					Picture stories are also skills-using tasks.<br />
+					Transfer exercises can be skill-using tasks because, in 
+					certain settings, such as academic studies, the skill is a 
+					real one which has to be used.</td>
+				</tr>
+				</table>
+			<br />
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="information" height="133" src="../../images/sign_information200.jpg" width="200" /></td>
+					<td class="auto-style3">
+					<h2>Information-based tasks</h2>
+					</td>
+				</tr>
+			</table>
+			<p>There are two sorts of these:</p>
+			<dl>
+				<dt><strong>Information-gathering tasks</strong></dt>
+				<dd>Learners can gather information in a number of ways:<br />
+				<strong>From other learners</strong>: either in the same class 
+				or institution-wide, learners can be set tasks which require 
+				them to question, interview or interrogate others to gather data 
+				for later work.&nbsp; Simple mingling tasks in which learners
+				<span class="style_black"><em>find someone who ...</em></span> 
+				fall into this category.<br />
+				<strong>From other people</strong>: in some teaching 
+				environments, it is possible to ask learners to leave the 
+				classroom (or work outside class hours) to gather information 
+				from members of the public, retail outlets, advice bureaus and 
+				so on.<br />
+				From reference sources: learners can be set tasks that require 
+				them to research from text or internet-based resources and 
+				gather data for later treatment.</dd>
+				<dt><strong><a name="6"></a>
+				Information-gap tasks</strong></dt>
+				<dd>These tasks work by giving students part of the whole and 
+				requiring them to work with others to complete the picture.&nbsp; 
+				Here's an example.<br />
+				Learner A gets the map on the left, 
+				Learner B, the one on the right.<br />
+				Without showing each other their maps, the learners 
+				have to fill in the missing data by asking and answering 
+				questions about location and relative location.<table cellpadding="0" cellspacing="0" class="tablebrownborder">
+					<tr>
+						<td class="auto-style22">
+						<img alt="info gap 1" height="241" src="../../imagesgraphics/infogap1.png" width="250" /></td>
+						<td class="auto-style21">
+						<img alt="info gap 2" height="241" src="../../imagesgraphics/infogap2.png" width="250" /></td>
+					</tr>
+				</table>
+				Tasks like these do not have to be pictorial, of course.&nbsp; 
+				They can take the form of missing passages in a story, partial 
+				instructions in a recipe and many other forms.&nbsp; They can 
+				also be based around listening and/or video material.</dd></dl>
+			<p>In what kinds of activity phases are information-based tasks effective?<br />
+			<a href="#6" onclick="FP_changeProp(/*id*/'gapfill4',0,'style.visibility','visible')">Click here when you have an answer</a>.</p>
+			
+			<table id="gapfill4" class="style_brown" style="position:relative; visibility: hidden"cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="su task" height="57" src="../../imagesgraphics/skill_using_task.png" width="150" /></td>
+					<td class="auto-style3">
+					
+					These tasks are solely skill-using tasks designed to allow 
+					learners to deploy language and speaking skills in a way 
+					that might (just) simulate real-life situations.&nbsp; We 
+					communicate very often to fill in a partial understanding or 
+					complete partial information so the tasks can act as a kind 
+					of rehearsal for real-life encounters.<br />
+					We also use a range of sources, people we know, strangers, 
+					the web, books etc., to gather information that we need.</td>
+				</tr>
+			</table>
+			<br />
+			<hr />
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="effort" height="166" src="../../images/effort_stone250.jpg" width="250" /></td>
+					<td class="auto-style3">
+					<h2>Task difficulty</h2>
+					</td>
+				</tr>
+			</table>
+			<p class="nomarginbottom">Tasks come with instructions and one simple 
+			way to judge how hard a task is is to look at the instructions you 
+			intend people to follow when doing the task.<br />
+			For example, if the task simply involves remembering something quite 
+			easy, such as being able to make a list of all the nouns in a 
+			sentence, the instruction may just be something like:</p>
+			<p class="auto-style89">Please underline all the nouns in this 
+			paragraph.</p>
+			<p class="auto-style90">On the other hand, if a task requires an 
+			instruction such as:</p>
+			<p class="auto-style89">Organise your list into mass nouns and 
+			countable nouns and look at the articles we use with them.</p>
+			<p class="auto-style90">then it is clear that you are demanding a 
+			good deal more of your learners.</p>
+			<p class="auto-style90">At the most demanding level, a task may have 
+			an instruction such as:</p>
+			<p class="auto-style89">Write the procedure for a guest concerning 
+			how to use the heating controls in your house and what to do with 
+			the burglar alarm when they go out and come in.</p>
+			<p class="auto-style90">then you are being very demanding indeed and 
+			you cannot expect learners to be able to do that without a good deal 
+			of careful preparation.</p>
+			<p>Here's a checklist of instructional language organised, from left 
+			to right in terms of how demanding the task is likely to be.&nbsp; 
+			The further to the right you go, the more you are challenging your 
+			learners and the more you need to consider how much preparation is 
+			required.</p>
+			<table cellpadding="3" class="tablebrownborder">
+				<tr>
+					<td class="auto-style88" style="width: 73px"><strong>remember</strong></td>
+					<td class="auto-style67" style="width: 73px"><strong>understand</strong></td>
+					<td class="auto-style67" style="width: 73px"><strong>apply</strong></td>
+					<td class="auto-style67" style="width: 73px"><strong>analyse</strong></td>
+					<td class="auto-style67" style="width: 73px"><strong>evaluate</strong></td>
+					<td class="auto-style62" style="width: 74px"><strong>create</strong></td>
+				</tr>
+				<tr>
+					<td class="auto-style63" style="width: 73px"><em>Circle<br />
+					Count<br />
+					Identify<br />
+					Label<br />
+					List<br />
+					Match<br />
+					Name<br />
+					Pair<br />
+					Record<br />
+					Recall<br />
+					Relate<br />
+					Repeat<br />
+					State<br />
+					Tell<br />
+					Underline</em></td>
+					<td class="auto-style64" style="width: 73px"><em>Communicate<br />
+					Compare<br />
+					Describe<br />
+					Discuss<br />
+					Explain<br />
+					Express<br />
+					Identify<br />
+					Illustrate<br />
+					Recognize<br />
+					Rephrase<br />
+					Restate<br />
+					Talk about<br />
+					Tell<br />
+					Translate<br />
+					Understand</em></td>
+					<td class="auto-style64" style="width: 73px"><em>Apply<br />
+					Ask<br />
+					Complete<br />
+					Demonstrate<br />
+					Dramatise<br />
+					Employ<br />
+					Illustrate<br />
+					Interpret<br />
+					Join<br />
+					Operate<br />
+					Practise<br />
+					Relate<br />
+					Role-play<br />
+					Sketch<br />
+					Use</em></td>
+					<td class="auto-style64" style="width: 73px"><em>Analyse<br />
+					Arrange<br />
+					Categorize<br />
+					Compare<br />
+					Contrast<br />
+					Debate<br />
+					Diagram<br />
+					Differentiate<br />
+					Distinguish<br />
+					Examine<br />
+					Experiment<br />
+					Investigate<br />
+					Organize<br />
+					Question<br />
+					Test</em></td>
+					<td class="auto-style64" style="width: 73px"><em>Appraise<br />
+					Argue<br />
+					Assess<br />
+					Choose<br />
+					Conclude<br />
+					Evaluate<br />
+					Interpret<br />
+					Judge<br />
+					Justify<br />
+					Measure<br />
+					Rate<br />
+					Score<br />
+					Select<br />
+					Support<br />
+					Value</em></td>
+					<td class="auto-style65" style="width: 74px"><em>Assemble<br />
+					Collect<br />
+					Combine<br />
+					Compose<br />
+					Construct<br />
+					Create<br />
+					Design<br />
+					Devise<br />
+					Formulate<br />
+					Make<br />
+					Manage<br />
+					Plan<br />
+					Prepare<br />
+					Propose<br />
+					Setup</em></td>
+				</tr>
+			</table>
+			<p>If you would like to learn more about levels of challenge, try 
+			the guide to Bloom's taxonomy of educational objectives, linked in 
+			the list at the end.</p>
+			<hr />
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="task" height="166" src="../../images/work250.jpg" width="250" /></td>
+					<td class="auto-style3">
+					<h2>Test–Teach–Test and<br />
+					Task-based Learning</h2>
+					</td>
+				</tr>
+			</table>
+			<p>What tasks do depends to some extent on the lesson structure you 
+			use (and there's 			a guide to structuring lessons 
+			on this site, linked below).</p>
+			<p>In <strong>Test &ndash; Teach &ndash; Test</strong> lessons, skill using will 
+			often come before skill getting and then skill using will again be 
+			the focus.<br />
+			Awareness raising still usually comes first and what is described 
+			above as a skill-using task will often, in fact, be used as an 
+			awareness-raising task which alerts the learners to their need to 
+			acquire the language or skill they must have to do the task.</p>
+			<p>In <strong>Task-based Learning</strong> lessons, awareness raising has to come early but then the focus is on 
+				entwined skill using and skill getting.&nbsp; The theory is that 
+				skill using stimulates skill getting.</p>
+			<p>So there's no single right way to order the activities.&nbsp; We 
+			do, however, need to make sensible judgements about what sorts of 
+			tasks we need and into which kinds of activities they are embedded or lessons can 
+			become incoherent and procedures will not match aims.</p>
+			<hr /><br />
+			<table id="iptrainingnav" cellpadding="0" cellspacing="0" class="tablebrownborder">
+				<tr>
+					<td class="auto-style25" colspan="2" style="height: 18px">Related guides</td>
+				</tr>
+				<tr>
+					<td class="auto-style23">
+					<a href="classroom_organisation.html">
+					classroom organisation</a></td>
+					<td class="auto-style26">for the guide to the overall 
+					arrangement of the classroom</td>
+				</tr>
+				<tr>
+					<td class="auto-style28">
+		<a href="activity_types.html">activity types</a></td>
+					<td class="auto-style29">for a guide to the three essential 
+					forms of activities and what they do</td>
+				</tr>
+				<tr>
+					<td class="auto-style28">
+					<a href="structuring_lessons.html">structuring lessons</a></td>
+					<td class="auto-style29">for a guide to how you can see the 
+					overall structure of a lesson and insert appropriate 
+					activities into it</td>
+				</tr>
+				<tr>
+					<td class="auto-style28">
+			<a href="../../inservice/methodology/tbl.html">task-based learning</a></td>
+					<td class="auto-style29">for the in-service guide to 
+					task-based learning and teaching</td>
+				</tr>
+				<tr>
+					<td class="auto-style28">
+					<a href="../../inservice/teaching/noticing.html">noticing</a></td>
+					<td class="auto-style29">for the guide in the in-service 
+					section</td>
+				</tr>
+				<tr>
+					<td class="auto-style28">
+					<a href="../../inservice/background/bloom.html">Bloom's 
+					taxonomy</a></td>
+					<td class="auto-style29">this is a way of classifying the 
+					cognitive demands that tasks place on learners</td>
+				</tr>
+				</table>
+			<br />
+			<hr />
+			</div>
+			<!-- #EndEditable -->
+		<!-- End Content -->
+	
+	<!-- Begin Footer -->
+	<div id="footer">
+		<p>
+		<a href="../../../contact.html">Contact</a> |
+		<a href="../../../faq.html">FAQs</a> |
+		<a href="../../../copyright_notice.html">Copyright notice</a> |
+		<a href="../../../documents/ELT_Concourse_Charter.pdf" target="_blank"> ELT Concourse charter</a> |
+		<a href="../../../disclaimer.html"> Disclaimer and Privacy statement </a>|
+		<a href="../../../search_the_site.html">Search <strong>
+		ELT Concourse</strong></a></p>
+	</div>
+	<!-- End Footer -->
+
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

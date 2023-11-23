@@ -1,0 +1,693 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- #BeginTemplate "../../../styles/dwt/training.dwt" -->
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta http-equiv="Content-Language" content="en-gb" />
+<!-- #BeginEditable "doctitle" -->
+<title>ELT Concourse: the essentials of testing</title>
+<style type="text/css">
+
+
+
+
+
+
+
+.auto-style6 {
+	list-style-type: lower-alpha;
+}
+.auto-style8 {
+	border-collapse: collapse;
+	border: 1px
+ solid #932d00;
+}
+.auto-style9 {
+	border: 1px solid #ff6300;
+}
+.auto-style11 {
+	text-align: left;
+	color: #932d00;
+	border: 1px solid #ff6300;
+}
+.auto-style12 {
+	text-align: left;
+	color: #000000;
+	border: 1px solid #ff6300;
+}
+.auto-style3 {
+	padding-left: 5px;
+}
+.auto-style13 {
+	font-style: normal;
+	font-size: small;
+}
+.auto-style40 {
+	border-left: medium none #FF6300;
+	border-right: medium none #FF6300;
+	border-top: medium none #FF6300;
+	border-bottom: 1px solid #FF6300;
+	border-collapse: collapse;
+	padding-left: 2px;
+}
+.auto-style44 {
+	border-left: medium none #FF6300;
+	border-right: 1px solid #FF6300;
+	border-top: 1px solid #FF6300;
+	border-bottom: 1px solid #FF6300;
+	border-collapse: collapse;
+}
+.auto-style47 {
+	padding-left: 4px;
+	padding-right: 2px;
+}
+.auto-style41 {
+	border-bottom: medium none #FF6300;
+	border-left: medium none #FF6300;
+	border-right: 1px solid #FF6300;
+	border-top: 1px solid #FF6300;
+	color: #000000;
+}
+.auto-style43 {
+	border-bottom: medium none #FF6300;
+	border-right: medium none #FF6300;
+	border-left: 1px solid #FF6300;
+	border-top: 1px solid #FF6300;
+	padding-left: 4px;
+	padding-right: 2px;
+}
+</style>
+<script type="text/javascript">
+<!--
+function FP_swapImg() {//v1.0
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+ elm.$src=elm.src; elm.src=args[n+1]; } }
+}
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+
+function FP_changeProp() {//v1.0
+ var args=arguments,d=document,i,j,id=args[0],o=FP_getObjectByID(id),s,ao,v,x;
+ d.$cpe=new Array(); if(o) for(i=2; i<args.length; i+=2) { v=args[i+1]; s="o"; 
+ ao=args[i].split("."); for(j=0; j<ao.length; j++) { s+="."+ao[j]; if(null==eval(s)) { 
+  s=null; break; } } x=new Object; x.o=o; x.n=new Array(); x.v=new Array();
+ x.n[x.n.length]=s; eval("x.v[x.v.length]="+s); d.$cpe[d.$cpe.length]=x;
+ if(s) eval(s+"=v"); }
+}
+
+function FP_preloadImgs() {//v1.0
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+}
+// -->
+</script>
+<!-- #EndEditable -->
+<meta content="language analysis,eltconcourse,English grammar,free English language teaching materials,CELTA,Delta,language guides,free Delta training,free CELTA training,free ELT Training materials,teacher training,ELT,learning English,teaching English,English Language Teaching,ESOL,EFL,English as a Foreign Language" name="keywords" />
+<meta content="Free English language training materials for trainers and teachers with sections on Cambridge Delta, TKT and CELTA." name="description" />
+<link href="../../../styles/mainstyle.css" rel="stylesheet" type="text/css" />
+<link href="../../../styles/training.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+
+.auto-style1 {
+	text-align: left;
+}
+.masterheader {
+	margin-bottom: 0;
+}
+</style>
+</head>
+
+<body>
+
+
+
+	<!-- Begin Masthead -->
+	<div id="masthead" class="auto-style1">
+		<table style="width: 100%; border-bottom: #FDB415 solid">
+			<tr>
+				<td style="width: 135px">
+				<img alt="logo" height="49" src="../../../gfx/logo.png" width="80" />&nbsp;</td>
+				<td valign="bottom">
+				<span class="orangexxlargebold">ELT </span>
+				<span class="bluexxlargebold">Concourse teacher training</span></td>
+			</tr>
+		</table>
+	</div>
+	<!-- End Masthead -->
+	<!-- Begin Content -->
+			<!-- Begin Sidebar -->
+		<div id="sidebartt">
+			<ul>
+				<li><a href="../../../index.html">ELT Concourse home</a></li>
+				<li><a href="../../ttindex.html">Teacher training index</a></li>
+				<li><a href="../../inservice/inserviceindex.html">In-service training</a></li>
+				<li><a href="../initialindex.html">Initial plus training</a></li>
+				<li><a href="../../bridge/bridge_index.html">The Bridge</a></li>
+				<li><a href="../../../development/developmentindex.html">Teacher development</a></li>
+				<li><a href="../../../acman/acmanindex.html">Academic management</a></li>
+				<li><a href="../../../searchthesite.html">Search ELT Concourse</a></li>
+				<li><a href="../../a-ztrainingindex.html">A-Z training index</a></li>
+				<li><a href="../../../questions/questions.html">Language questions</a></li>
+				
+			</ul>
+		</div>
+		<!-- End Sidebar -->
+		<!-- Begin Content -->
+		
+		<div id="toppicture "style="text-align: left; background-color: white; padding: 0px; margin-left: 140px;">
+				<img alt="Concourse 2" height="207" src="../../../images/concourse2blue.JPG" width="310" /></div>
+		
+			<!-- #BeginEditable "content" -->
+	
+		<div id="content">
+	
+	<h1>Testing in the classroom: an essential guide</h1>
+		<p>
+		<img height="207" src="../../images/test_man_bottle_a310.jpg" width="310" alt="test" /></p>
+		<p class="indentpara"><span class="style_black"><em>You teach a child to read, and he or 
+		her will be able to pass a literacy test</em></span>.<br />
+		<span class="auto-style13">George W. Bush</span></p>
+		<p>Testing is a complex and technical area which is littered (some might 
+		say infested) with 
+		terminology.&nbsp; There is
+		<a href="../../inservice/background/testing.html">a more complete guide 
+		to the area</a> in the in-service section (most of which you don't need 
+		to know for the purposes of testing in the classroom).</p>
+		<hr />
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img height="166" src="../../images/dictionary_definition250.jpg" width="250" alt="Define" /></td>
+					<td class="auto-style3">
+					<h2>Defining terms</h2>
+					</td>
+				</tr>
+			</table>
+		<p>Which of following do you see as a test?&nbsp; Click on the table 
+		when you have an answer.</p>
+		<p>
+		<img id="img2" alt="testing task 1" height="240" onclick="FP_swapImg(0,0,/*id*/'img2',/*url*/'../../imagesgraphics/testingtask1ans.png')" src="../../imagesgraphics/testingtask1.png" width="350" /></p>
+		<p>Trick question?<br />
+		No, not really.&nbsp; The point is that any of these activities can be
+		<strong>seen</strong> as a form of testing.&nbsp; You are asking 
+		questions or setting tasks to find something out about the learners' 
+		abilities.<br />
+		We can take them one at a time:</p>
+		<dl>
+	<dt><em>a public examination</em></dt>
+	<dd>This sort of test is instantly recognisable to most of us.&nbsp; It is 
+	usually a very formal procedure with strict rules for its conduct.<br />
+	The obvious examples are tests such as IELTS, Cambridge First Certificate 
+	(and the other levels in that suite) and so on.</dd>
+			<dt><em>doing that exercise</em></dt>
+			<dd>In this case, the exercise is only marginally a test because the 
+			only person who will look at the result is you.&nbsp; However, in a 
+			classroom, you might set a task like this to find out what people already 
+			know.&nbsp; In this case is was not a test but an awareness-raising 
+			activity to get you thinking.</dd>
+			<dt><em>asking someone if she understands</em></dt>
+			<dd>this is a kind of test but it's a pretty poor one because the 
+			answer won't tell you a great deal.&nbsp; Learners from a range of 
+			cultural backgrounds will normally respond positively to a question 
+			like this because that's the least threatening thing to do.&nbsp; A test to avoid.</dd>
+			<dt><em>using a multiple-choice exercise</em></dt>
+			<dd>You may be using such an exercise as a teaching tool, to alert 
+			people to the range of choices, for example.&nbsp; However, most 
+			learners will see it as some kind of test and the outcomes will, 
+			presumably, be evaluated in some way.&nbsp; So it's a test.</dd>
+			<dt><em>saying, "Can you pronounce this word?"</em></dt>
+			<dd>This is a test if you want to hear the learner pronounce it 
+			rather than being satisfied with an answer like "Yes, thanks" or a 
+			nod.</dd>
+			<dt><em>using a role play exercise at the end of a lesson</em></dt>
+			<dd>The purpose of activities like this is twofold:<br />
+			a) they give the learners an opportunity to use the language in a 
+			freer way and make it a bit more personal to them but<br />
+			b) they also allow you to discover if they can actually use it in the 
+			way you hoped.<br />
+			So it's a test.</dd>
+			<dt><em>asking what a word means</em></dt>
+			<dd>This is clearly a test.&nbsp; You want to know if the person 
+			knows the word or not.&nbsp; Be aware, however, that giving an off-the-cuff definition of a word in a foreign language is very challenging (that's what keeps 
+			dictionary writers in business). &nbsp;It's perfectly possible to know all you need to know about a word and still not be able to give a neat, clear definition of it.</dd>
+			<dt><em>asking a learner to tell you about yesterday</em></dt>
+			<dd>This may just be a bit of social chit-chat but in a classroom, 
+			many learners will assume they are being tested and their production 
+			evaluated.&nbsp; Good teachers will be listening carefully to see 
+			how well the learner can do this.</dd>
+</dl>
+		<hr />
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img height="166" src="../../images/animals_thinking_ape250.jpg" width="250" alt="thinking" /></td>
+					<td class="auto-style3">
+					<h2><a name="1"></a>Some terms to help us think</h2>
+					</td>
+				</tr>
+			</table>
+		<p>If almost everything we do can be seen as some sort of test, what are 
+		the differences?&nbsp; The following is not meant to bamboozle you with 
+		terminology but to sort the wood from the trees and help us focus.&nbsp; 
+		There are only four terms to grasp and they are pretty self-explanatory.</p>
+		<p>Can you make a stab at what any of these mean?</p>
+		<ol>
+			<li>formal testing</li>
+			<li>informal testing</li>
+			<li>formative testing</li>
+			<li>summative testing</li>
+		</ol>
+		<p>
+		<a href="#1" onclick="FP_changeProp(/*id*/'testing1',0,'style.visibility','visible')">Click here when you have an answer</a>.</p>
+		<div id="testing1" style="visibility:hidden">
+			<ol class="style_brown">
+				<li><strong>formal testing</strong><ol class="auto-style6">
+					<li>this is what public examinations are but also what 
+					end-of-week or end-of-course tests usually are.</li>
+					<li>formal tests are very often written</li>
+					<li>formal tests are not frequent</li>
+					<li>formal tests are usually quite objective (or appear so)</li>
+					<li>formal tests often have a set marking scheme (two marks 
+					for this, three for that etc.)</li>
+					<li>the results are communicated to the learners</li>
+					<li>learners recognise such tests for what they are and 
+					respond accordingly, i.e., they take them seriously</li>
+					<li><strong>Example:</strong> at the end of every 20-hour 
+					teaching block, you construct a formal test of what you have 
+					covered.&nbsp; You mark the test as objectively as you can 
+					and communicate the scores to the learners.&nbsp; You can 
+					also rank the learners by how well they did.</li>
+				</ol>
+				</li>
+				<li><strong>informal testing</strong><ol class="auto-style6">
+					<li>happens frequently in classrooms</li>
+					<li>can be anything from a simple question to a complicated 
+					role play</li>
+					<li>requires the teacher and the learner to evaluate rather 
+					than assess by recording marks</li>
+					<li>does not rely on outcomes being given to the learners 
+					although feedback is often supplied somehow</li>
+					<li><strong>Example:</strong> in the middle of a lesson in 
+					which you have introduced some new words in a topic area, 
+					you give the learners and exercise requiring them to match 
+					definitions or pictures to the words you have targeted.&nbsp; 
+					This alerts both you and the learners to what needs revising 
+					or revisiting and allows you to have the confidence to go on 
+					to using the language in a freer and more personal way 
+					(providing the learners have responded satisfactorily).</li>
+				</ol>
+				</li>
+				<li><strong>formative testing </strong>can be formal or informal 
+				and is designed to aid the 
+				learning process by<ol class="auto-style6">
+					<li>telling the teacher what has been learnt well so far and 
+					what needs more work</li>
+					<li>focusing learners on what needs to be mastered</li>
+					<li>being often quite frequent and done at the beginning, in 
+					the middle or at the end of lessons</li>
+					<li><strong>Example: </strong>You are about to embark on a 
+					lesson on using <em>if-</em>clauses such as<br />
+					<em>If you get lost, call me and I'll come and get you</em><br />
+					At the beginning of the lesson, you show a short video clip 
+					of someone on the telephone giving directions to her house.&nbsp; 
+					In it, she uses expressions such as:<br />
+					<em>If you see the post-office on your left, you have gone 
+					too far<br />
+					If you can't see the turning, look for the sign to Margate 
+					and follow that<br />
+					</em>etc.<br />
+					You provide a test of their comprehension by asking some 
+					simple True / False questions such as<br />
+					<em>The visitor should look for a sign to Ramsgate<br />
+					The visitor should turn right at the post-office</em><br />
+					etc.<br />
+					to see how much they can understand already and evaluate 
+					their ability to understand the meaning of <em>if-</em>clauses.&nbsp; 
+					From what emerges, you amend the lesson plan accordingly.</li>
+				</ol>
+				</li>
+				<li><strong>summative testing</strong> is what happens at the 
+				end of a process and is designed to discover how well the 
+				targets have been learned.&nbsp; Examples are:<ol class="auto-style6">
+					<li>a public examination</li>
+					<li>an end-of-course written test</li>
+					<li>a final speaking exercise in a lesson</li>
+					<li>homework tasks</li>
+					<li><strong>Example: </strong>you are teaching a class 
+					preparing for a public examination and, at the end of the 
+					first semester, you give the whole class a full mock 
+					examination to do at home.<br />
+					They bring in their work and you spend a few lessons going 
+					through model / correct answers to the tasks so everyone can 
+					see how well they did.</li>
+				</ol>
+				</li>
+			</ol>
+			<p>It is, of course, not always so clear cut.&nbsp; Tests can be:</p>
+		<dl>
+	<dt class="style_brown"><strong>formative and formal</strong></dt>
+	<dd>end-of week tests<br />
+	written homework to be handed in and marked etc.</dd>
+			<dt class="style_brown"><strong>summative and informal</strong></dt>
+			<dd>tasks set at the end of lessons to see what progress has been 
+			made<br />
+			end-of-course activities which combine many aspects of what has been 
+			learned / taught</dd>
+			<dt class="style_brown"><strong>summative and formal</strong></dt>
+			<dd>end-of-course tests<br />
+			public examinations</dd>
+			<dt class="style_brown"><strong>formative and informal</strong></dt>
+			<dd>checking understanding (<em>Can you tell me what John said?</em>)<br />
+			checking pronunciation (<em>Where's the stress on this word?</em>)<br />
+			checking grammar (<em>What's the past of 'go'?</em>)</dd>
+</dl>
+			<p>The last of these is very frequently done because informal, 
+			formative testing goes on all the time in classrooms:<br />
+			whenever a teacher is asking a question and whenever a teacher is 
+			listening to the learners' production or reading what they have 
+			written, informal, formative testing is happening.</p>
+			<p>A graphical way of seeing this is:</p>
+			<p>
+			<img alt="testing summary" height="335" src="../../imagesgraphics/testinginitial.png" width="350" /></p>
+			<p><a href="testinghp.htm">Try this little test to see if you have a 
+			handle on all of this</a>.</p>
+			<hr />
+		</div>
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img height="166" src="../../images/talk_informal250.jpg" width="250" alt="informal" /></td>
+					<td class="auto-style3">
+					<h2>I<strong>nformal tests</strong></h2>
+					</td>
+				</tr>
+			</table>
+		<p>Good informal testing is something that comes with training and 
+		experience.&nbsp; It's not rocket science and one of the best ways to do 
+		it is to listen carefully to your learners and ask questions which 
+		target what you need to know.<br />
+		There's more on this in
+		<a href="checklearning.html">the guide to checking learning</a> and 
+		<a href="askingquestions.html">the 
+		guide to asking good questions</a>.<br />
+		What follows concerns more formal, often written, testing.</p>
+		<hr />
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img height="166" src="../../images/tie_bow250.jpg" width="250" alt="formal" /></td>
+					<td class="auto-style3">
+					<h2>Formal testing</h2>
+					</td>
+				</tr>
+			</table>
+		<p><strong>Validity</strong></p>
+		<p>This is a term you will often hear applied to testing.&nbsp; It means 
+		three things:</p>
+		<ol class="auto-style6">
+			<li><em>Does the test measure what we say it measures?</em><br />For example, if we set out to test someone's ability to 
+				participate in informal spoken transactions, do the test items 
+				we use actually test that ability or something else?</li>
+			<li><em>Does the test contain a relevant and representative sample 
+				of what it is testing?</em><br />For example, if we are testing someone's ability to write a 
+				formal email, are we getting them to deploy the sorts 
+				of language they actually need to do that?</li>
+			<li><em>Does the test look like a proper test?</em><br />
+			You want your learners to take it seriously so presentation is 
+			important.</li>
+		</ol>
+		<p>Simple.&nbsp; Of course, we want our test to be valid so here's a 
+		short guide to how to write a good test.</p>
+		<p>The test can be formative (in the middle of a course or even a 
+		lesson) or it can be summative (coming at the end of a course or series 
+		of lessons).</p>
+		<p>The process:</p>
+		<p>
+		<img alt="making a test" height="148" src="../../imagesgraphics/makeatest.png" width="700" /></p>
+		<h3>Deciding what to test, prioritising and organising</h3>
+		<p>This is where good record-keeping comes in handy.&nbsp; Briefly, this 
+		means</p>
+		<ul class="greybulletlist">
+			<li>looking back and selecting the areas you think need testing.&nbsp; 
+			You won't be able to test everything (unless you have taught very 
+			little) so</li>
+			<li>prioritise the list to make sure you are being fair to all your 
+			learners.&nbsp; They will better at some skills than at others so 
+			mix it up.</li>
+			<li>now break the list down into skills (reading, writing, speaking, 
+			listening), grammar and structures, pronunciation and lexis</li>
+		</ul>
+		<h3>Selecting test items and working out how to mark the test</h3>
+		<p>Now you have your list, you can decide how to test the items.</p>
+		<h4>Types of tests</h4>
+		<dl>
+	<dt><strong>true or false</strong></dt>
+	<dd>This called an alternate-answer test.&nbsp; You can expand it slightly 
+	to include True, False and Don't know (the answer isn't in the text).<br />
+	For example:<br />
+	<span class="style_black">In the list above there were three factors concerned with 
+	Validity:<br />
+	True: O<br />
+	False: O</span></dd>
+			<dt><strong>multiple-choice</strong></dt>
+			<dd>This is sometimes called a fixed-response test.&nbsp; Typically, 
+			the correct answer must be chosen from three or four alternatives.&nbsp; 
+			The 'wrong' items are called the distractors.<br />
+			For example:<br />
+			<span class="style_black">Choose the best answer:<br />
+			Summative testing is designed mainly to:<br />
+			A: help the learning process<br />
+			B: plan the rest of a lesson<br />
+			C: focus the learners on what they need to learn<br />
+			D: find out how well something has been learnt</span></dd>
+			<dt><strong>structured response</strong></dt>
+			<dd>In tests of this sort, you give a structure in which 
+			to form the answer.&nbsp; Skeleton sentence items of the sort 
+			which require the subject to expand a sentence are tests of this sort.<br />
+			For example:<br />
+			<span class="style_black">Use the words here to make a correct 
+			English sentence:<br />
+			He / come/ my 
+			house / yesterday / 9 o'clock<br />
+			______________________________________________________</span><br />
+			(Answer: <em>He came to my house at 9 
+			o'clock yesterday</em>)</dd>
+			<dt><strong>free response</strong></dt>
+			<dd>In these tests, no guidance is given other than the instructions 
+			(called the rubric, incidentally) and 
+			the learners are free to write or say what they like.&nbsp; A hybrid 
+			form of this and a structured response item is one where the subject 
+			is given a list of things to include in the response.<br />
+			For example (free response):<br />
+			<span class="style_black">Write 200 words about a good holiday 
+			experience.</span><br />
+			For example (hybrid):<br />
+			<span class="style_black">Write 200 words about what method of 
+			transport you prefer<br />
+			Say:<br />
+			What it is and when you last used it<br />
+			Why you like it<br />
+			List three advantages<br />
+			List two disadvantages<br />
+			Finish with a recommendation</span></dd>
+</dl>
+		<p>Have a look at this graphic and decide what goes in the columns on the 
+		right.&nbsp; Then click on it to compare your answers.</p>
+		<p>
+		<img id="img3" alt="test types" height="311" onclick="FP_swapImg(0,0,/*id*/'img3',/*url*/'../../imagesgraphics/testtypestaskans.png')" src="../../imagesgraphics/testtypestask.png" width="500" /></p>
+		<hr />
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img height="166" src="../../images/examples250.jpg" width="250" alt="examples" /></td>
+					<td class="auto-style3">
+					<h2>Some more examples</h2>
+					</td>
+				</tr>
+			</table>
+		<br />
+		<table cellpadding="3" class="auto-style8" style="width: 730px">
+			<tr>
+				<td class="auto-style9" style="width: 14px">&nbsp;</td>
+				<td class="auto-style9" style="width: 242px">Data</td>
+				<td class="auto-style12" style="width: 242px"><em>Task</em></td>
+				<td class="auto-style11" style="width: 242px">Comment</td>
+			</tr>
+			<tr>
+				<td class="auto-style9" style="width: 14px">1</td>
+				<td class="auto-style9" style="width: 242px">A text about 
+				someone's hobbies and interests.&nbsp; For example,<br />
+				<em class="style_black">I much enjoy walking and reading 
+				but have little time for sports and outdoor games which are 
+				just too energetic for me now that I'm getting on a bit.&nbsp; I 
+				don't watch much television these days because I find it all 
+				rather dull and depressing.</em></td>
+				<td class="auto-style12" style="width: 242px"><em>The writer 
+				states that she used to do a lot of sports.<br />
+				True or False?</em></td>
+				<td class="auto-style11" style="width: 242px">The longer the 
+				text and the more complex the sentence structure, the harder it 
+				is.<br />
+				The more the reader has to read between the lines, the harder it 
+				is.</td>
+			</tr>
+			<tr>
+				<td class="auto-style9" style="width: 14px">2</td>
+				<td class="auto-style9" style="width: 242px">The same as above.</td>
+				<td class="auto-style12" style="width: 242px"><em>Choose the 
+				best answer:<br />
+				a) She has never watched television much<br />
+				b) She dislikes depressing television programmes<br />
+				c) She never went in for outdoor activities<br />
+				d) She has never played sports</em></td>
+				<td class="auto-style11" style="width: 242px">The nearer the 
+				distractors are to the truth, the harder it is.<br />
+				The more different the words in the question are from the text, 
+				the harder it is (see c)).</td>
+			</tr>
+			<tr>
+				<td class="auto-style9" style="width: 14px">3</td>
+				<td class="auto-style9" style="width: 242px">She / sports / now 
+				/ she / getting</td>
+				<td class="auto-style12" style="width: 242px"><em>Expand the 
+				sentences making the necessary changes</em></td>
+				<td class="auto-style11" style="width: 242px">You usually need a 
+				bit of context to get reliable responses.&nbsp; With the text 
+				above, the response should be <em>She doesn't play much sports 
+				now because she is getting on a bit.</em></td>
+			</tr>
+			<tr>
+				<td class="auto-style9" style="width: 14px">4</td>
+				<td class="auto-style9" style="width: 242px">She _______ play 
+				_______ many ________ as she _______ to.</td>
+				<td class="auto-style12" style="width: 242px"><em>Fill the gaps 
+				with a single word.</em></td>
+				<td class="auto-style11" style="width: 242px">This is sometimes 
+				called a Cloze test although it isn't technically.&nbsp; A 
+				better term is a gap-fill test.</td>
+			</tr>
+			<tr>
+				<td class="auto-style9" style="width: 14px">5</td>
+				<td class="auto-style9" style="width: 242px">Same text as above.</td>
+				<td class="auto-style12" style="width: 242px"><em>Now write a 
+				similar paragraph about <strong>your</strong> hobbies and interests using the 
+				text as a guide.&nbsp; Write no more than 150 words.</em></td>
+				<td class="auto-style11" style="width: 242px">This is a hybrid 
+				between free and structured response.</td>
+			</tr>
+		</table>
+		<br />
+		<hr />
+		<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img height="166" src="../../images/marking_a250.jpg" width="250" alt="mark" /></td>
+					<td class="auto-style3">
+					<h2>Marking tests: reliability</h2>
+					</td>
+				</tr>
+			</table>
+		<p>Some of those test items require more judgement by the 
+		marker (usually you) than others.<br />
+		The more subjective the marking is, the less reliable will be the 
+		results.&nbsp; For example:</p>
+		<ul class="greybulletlist">
+			<li>Item 1 and 2 are either right or wrong so easy to mark but 
+			remember that you can get 50% by guessing in item 1, and 25% in item 
+			2.&nbsp; You can also get it right even if you don't understand most 
+			of the text.</li>
+			<li>In item 4, would you accept <em>She didn't play so many games as 
+			she wanted to</em> when what you actually wanted was <em>She doesn't 
+			play as many sports as she used to</em>?&nbsp; To get round the 
+			problem, you can give the learner a selection of words to choose 
+			from but that makes it easier, of course.&nbsp; The same issue 
+			arises with item 3.</li>
+			<li>Item 5 demands most of the marker because you will have to 
+			assess against a range of criteria, such as:
+			<ul class="smallgreybulletlist">
+				<li>use of lexis</li>
+				<li>accuracy of grammar</li>
+				<li>content</li>
+				<li>ordering</li>
+				<li>use of connectors<br /></li></ul>
+				etc.<br />
+		That's quite difficult to do and maintain 
+		fairness at the same time.</li></ul>
+		<p>There are, of course, many more variants and types of test item than 
+		we can cover here.&nbsp; Look at tests in coursebooks and be aware that 
+		most examination boards and ELT publishers have examples of tests and 
+		test types on their websites.&nbsp; Go there for more ideas.</p>
+		<hr /><br />
+			<table id="iptrainingnav" cellpadding="0" cellspacing="0" class="tablebrownborder">
+				<tr>
+					<td class="auto-style40" colspan="2">Related guides</td>
+				</tr>
+				<tr>
+					<td class="auto-style44">
+					<a href="../../inservice/background/testing.html">testing</a></td>
+					<td class="auto-style47">the fuller and more technical guide 
+					to this area in the in-service training section</td>
+				</tr>
+				<tr>
+					<td class="auto-style41">
+					<a href="askingquestions.html">asking good questions</a></td>
+					<td class="auto-style43">for a guide to how to check 
+					learning and use formative, informal testing in the 
+					classroom</td>
+				</tr>
+				<tr>
+					<td class="auto-style41">
+					<a href="checklearning.html">checking learning</a></td>
+					<td class="auto-style43">a related guide to informal 
+					formative and summative assessment</td>
+				</tr>
+				</table>
+			<br />
+		<hr />
+		<p><a href="testgapfillhp.htm">Of course, there's a test on all of this</a>: 
+		some formal, summative evaluation for you.</p>
+		<hr />
+		<p><span class="smallfont">Reference:<br />
+		A very accessible and clear text is:<br />
+		Hughes, A, 1989, <em>Testing for Language Teachers</em>. Cambridge: Cambridge 
+		University Press</span></p>
+				</div>
+	
+			<!-- #EndEditable -->
+		<!-- End Content -->
+	
+	<!-- Begin Footer -->
+	<div id="footer">
+		<p><a href="../../../index.html">ELT Concourse home</a> | 
+		<a href="../../ttindex.html">Teacher training</a> |
+		<a href="../../../development/developmentindex.html">Teacher development</a> |
+		<a href="../../../teachers/teachers.html">For teachers</a> |
+		<a href="../../../learners/learners.html">For learners</a> |
+		<a href="../../../articles/articles.html">Articles</a> | 
+		<a href="../../../contributetoELTC.html">Contribute</a> |
+		<a href="../../../contact.html">Contact</a> |
+		<a href="../../../questions/questions.html">Language questions</a> |
+		<a href="../../../faq.html">FAQs</a> |
+		<a href="../../../documents/ELT_Concourse_Charter.pdf" target="_blank"> ELT Concourse charter</a> |
+		<a href="../../../disclaimer.html"> Disclaimer and Privacy statement </a>|
+		<a href="../../../searchthesite.html">Search <strong>
+		ELT Concourse</strong></a></p>
+		</div>
+	<!-- End Footer -->
+
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

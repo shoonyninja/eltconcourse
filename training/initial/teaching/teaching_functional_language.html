@@ -1,0 +1,952 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- #BeginTemplate "../../../styles/dwt/training.dwt" -->
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta http-equiv="Content-Language" content="en-gb" />
+<!-- #BeginEditable "doctitle" -->
+<title>ELT Concourse: the essential guide to teaching functional language</title>
+<style type="text/css">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.auto-style3 {
+	color: #000000;
+	border: 1px solid #663300;
+	margin-left: 80px;
+	padding: 5px;
+	font-family: Calibri, Arial, "Trebuchet MS";
+}
+.auto-style18 {
+	font-size: small;
+}
+.auto-style19 {
+	color: #663300;
+	list-style-type: lower-alpha;
+}
+.auto-style20 {
+	border-collapse: collapse;
+	border: 1px solid #663300;
+}
+.auto-style21 {
+	border-top-style: solid;
+	border-top-width: 1px;
+}
+.auto-style22 {
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+.auto-style23 {
+	list-style-type: upper-alpha;
+	color: #000000;
+}
+
+
+.auto-style2 {
+	border-collapse: collapse;
+}
+.auto-style24 {
+	color: #000000;
+	border: 0 solid #FD7A15;
+	margin-left: 80px;
+	padding: 5px;
+}
+.auto-style25 {
+	border-width: 0;
+}
+.auto-style4 {
+	list-style-type: lower-alpha;
+}
+.auto-style5 {
+	border-collapse: collapse;
+	border: 1px solid #663300;
+}
+.auto-style10 {
+	text-align: center;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+.auto-style12 {
+	text-align: center;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+.auto-style8 {
+	text-align: center;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+.auto-style11 {
+	text-align: left;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-top-style: solid;
+	border-top-width: 1px;
+}
+.auto-style13 {
+	text-align: left;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-top-style: solid;
+	border-top-width: 1px;
+}
+.auto-style9 {
+	text-align: left;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-top-width: 1px;
+}
+.auto-style14 {
+	font-size: small;
+}
+.auto-style31 {
+	border-left: medium none #ff6600;
+	border-right: medium none #ff6600;
+	border-top: medium none #ff6600;
+	border-bottom: 1px solid #ff6600;
+}
+.auto-style32 {
+	border-left: medium none #ff6600;
+	border-right: 1px solid #ff6600;
+	border-top: 1px solid #ff6600;
+	border-bottom: 1px solid #ff6600;
+	list-style-type: upper-alpha;
+	color: #000000;
+}
+.auto-style34 {
+	border-left: 1px solid #ff6600;
+	border-right: medium none #ff6600;
+	border-top: 1px solid #ff6600;
+	border-bottom: medium none #ff6600;
+	padding-left: 5px;
+	padding-right: 2px;
+}
+.auto-style35 {
+	border-left: medium none #ff6600;
+	border-right: 1px solid #ff6600;
+	border-top: 1px solid #ff6600;
+	border-bottom: medium none #ff6600;
+}
+.auto-style37 {
+	border-left: 1px solid #ff6600;
+	border-right: medium none #ff6600;
+	border-top: 1px solid #ff6600;
+	border-bottom: 1px solid #ff6600;
+	padding-left: 5px;
+	padding-right: 2px;
+}
+.auto-style38 {
+	border-left: 1px solid #ff6600;
+	border-right: medium none #ff6600;
+	border-top: medium none #ff6600;
+	border-bottom: 1px solid #ff6600;
+	padding-left: 5px;
+	padding-right: 2px;
+}
+.auto-style39 {
+	background-color: #FFFFFF;
+}
+</style>
+<meta content="ELT Concourse English language analysis and teaching guides. Teaching functional language" name="description" />
+<script type="text/javascript">
+<!--
+function FP_changeProp() {//v1.0
+ var args=arguments,d=document,i,j,id=args[0],o=FP_getObjectByID(id),s,ao,v,x;
+ d.$cpe=new Array(); if(o) for(i=2; i<args.length; i+=2) { v=args[i+1]; s="o"; 
+ ao=args[i].split("."); for(j=0; j<ao.length; j++) { s+="."+ao[j]; if(null==eval(s)) { 
+  s=null; break; } } x=new Object; x.o=o; x.n=new Array(); x.v=new Array();
+ x.n[x.n.length]=s; eval("x.v[x.v.length]="+s); d.$cpe[d.$cpe.length]=x;
+ if(s) eval(s+"=v"); }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+// -->
+</script>
+<!-- #EndEditable -->
+<meta content="language analysis,eltconcourse,English grammar,free English language teaching materials,CELTA,Delta,language guides,free Delta training,free CELTA training,free ELT Training materials,teacher training,ELT,learning English,teaching English,English Language Teaching,ESOL,EFL,English as a Foreign Language" name="keywords" />
+<link href="../../../styles/mainstyle.css" rel="stylesheet" type="text/css" />
+<link href="../../../styles/training.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+</style>
+</head>
+
+<body>
+	<!-- Begin Masthead -->
+	<div id="masthead" >
+		<table style="width: 100%; border-bottom: #000080 solid">
+			<tr>
+				<td style="width: 135px">
+				<img alt="logo" height="49" src="../../../gfx/logo.png" width="78" /></td>
+				<td valign="bottom">
+				<span class="orangexxlargebold">ELT </span>
+				<span class="bluexxlargebold">Concourse teacher training</span></td>
+			</tr>
+		</table>
+	</div>
+	<!-- End Masthead -->
+	<!-- Begin Content -->
+			<!-- Begin Sidebar -->
+		<div id="sidebartt">
+			<ul>
+				<li><a href="../../../index.html">ELT Concourse home</a></li>
+				<li><a href="../../../a-z_index.html">A-Z site index</a></li>
+				<li><a href="../../training_index.html">Teacher training index</a></li>
+				<li><a href="../../../development/development_index.html">Teacher development</a></li>
+				<li><a href="../../../teachers/teachers.html">For teachers</a></li>
+				<li><a href="../../trainers/trainers_index.html">For trainers</a></li>
+				<li>
+				<a href="../../../academic_management/academic_management_index.html">For managers</a></li>
+				<li><a href="../../../learners/learners.html">For learners</a></li>
+				<li><a href="../../common/about_language.html">About language</a></li>
+				<li><a href="../../../questions/questions.html">Language questions</a></li>
+				<li class="whiteback">Other areas</li>
+				<li><a href="../../inservice/indexes_is/eap_index_is.html">Academic English</a></li>
+				<li><a href="../../inservice/indexes_is/be_index_is.html">Business English</a></li>
+				<li><a href="../../entering/introduction_to_elt.html">Entering ELT</a></li>
+				<li><a href="../../courses/courses_index.html">Courses index</a></li>
+				<li><a href="../../courses/basic/introduction_basic.html">Basic ELT course</a></li>
+				<li><a href="../../tkt/tkt_index.html">TKT</a></li>
+				<li><a href="../../bridge/bridge_index.html">The Bridge</a></li>
+				<li><a href="../../courses/lacourse/index_la_course.html">Language analysis</a></li>
+				<li>
+				<a href="../../courses/training_to_train/training_to_train_index.html">Training to train</a></li>
+				<li><a href="../../courses/transcription1/transcription.html">Transcription</a></li>
+				<li><a href="../../glossaries/glossary_index.html">Glossaries</a></li>
+				<li><a href="../../../articles/articles.html">Articles</a></li>
+			</ul>
+		</div>
+		<!-- End Sidebar -->
+		<!-- Begin Content -->
+		
+		<div id="toppicture" style="text-align: left; background-color: white; padding: 0px; margin-left: 140px;">
+				<img alt="Concourse 2" height="207" src="../../../images/concourse2blue.jpg" width="310" /></div>
+		
+			<!-- #BeginEditable "content" -->
+		
+			<!-- #BeginEditable "content" -->
+		
+		<div id="content">
+		
+			<h1>Teaching functional language</h1>
+			<p>
+			<img alt="communicate" height="207" src="../../images/talk_telephone310.jpg" width="310" /></p>
+			<hr />
+			
+			<table cellpadding="0" cellspacing="0" >
+				<tr>
+					<td class="auto-style25">
+					<img alt="definition" height="166" src="../../images/dictionary_define250.jpg" width="250" /></td>
+					<td class="auto-style24"><h2>Two definitions</h2>
+					</td>
+				</tr>
+			</table>
+			<p>If you have followed
+			<a href="../functions/form_function.html" target="_blank">the guide 
+			to form, function and meaning</a>, you will be familiar with the 
+			fact that a functional approach to analysing language is one which:</p>
+			<p class="auto-style3" style="width: 486px"><em>starts from the 
+			understanding that language is primarily a tool for getting meaning 
+			across and that it is best analysed by looking at the functions bits 
+			of the language actually perform.</em></p>
+			<p>A functional view of language lies at the heart of a 
+			communicative approach to teaching it.&nbsp; Communicative Language 
+			Teaching is defined elsewhere on this site as:</p>
+			<p class="auto-style3" style="width: 486px"><em>an approach to teaching which focuses more on successful 
+			communication than structural or formal accuracy.&nbsp; There are 
+			two forms:<br />
+			Weak form: in which the study of grammar is combined with a focus on 
+			function but communicative competence remains the objective.<br />
+			Strong form: in which there is no study of structure or form at all.&nbsp; 
+			Competence in this area is deemed to flow from authentic language 
+			use alone.</em></p>
+			
+			<hr />
+			
+			<table cellpadding="0" cellspacing="0" >
+				<tr>
+					<td class="auto-style25">
+					<img alt="warning" height="166" src="../../images/banana_skin250.jpg" width="250" /></td>
+					<td class="auto-style24"><h2>a word of caution</h2>
+					</td>
+				</tr>
+			</table>
+			<p>If you take the strong form of the approach, you may bewilder and 
+			worry your learners, many of whom take the view that, although they 
+			need above all to communicate effectively, learning the formal 
+			structures, grammar, lexical systems and pronunciation of the 
+			language is part and parcel of being able to do so.<br />
+			They would not be alone in thinking so.&nbsp; As Widdowson puts it:</p>
+			<p class="auto-style3" style="width: 486px"><em>&nbsp;... language learning is essentially learning how grammar 
+			functions in the achievement of meaning and it is a mistake to 
+			suppose otherwise.<br />
+			&nbsp;.... A communicative approach does not involve the rejection of 
+			grammar. On the contrary, it involves a recognition of its central 
+			mediating role in the use of and learning of language.<br />
+			</em>
+			<span class="auto-style18">Widdowson (1990: 97/8)</span></p>
+			<p>Add in lexical systems and pronunciation and you have (probably) the 
+			majority view.</p>
+			<hr />
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td class="auto-style25">
+			<img alt="analyse" height="166" src="../../images/analyse_chemistry250.jpg" width="250" /></td>
+					<td class="auto-style24"><h2><a name="1"></a>Analysing functions</h2>
+					</td>
+				</tr>
+			</table>
+			<p>This is not the place to repeat what has been said in the guide 
+			to form, function and meaning but two essential aspects stand out:</p>
+			<ol>
+				<li>Form and function do not exist in a one-to-one relationship.&nbsp; 
+				A single form can realise a number of functions and a single 
+				function can be realised in a number of linguistic ways.</li>
+				<li>Functions rarely occur in isolation.&nbsp; Communication is 
+				a two-way process and the participants need to respond to the 
+				other person's functions with those of their own.</li>
+			</ol>
+			<p>Think about those two statements a little and see if you can 
+			exemplify what they mean.<br />
+			<a href="#1" onclick="FP_changeProp(/*id*/'function1',0,'style.visibility','visible')">
+			Click here when you have done that</a>.</p>
+			<ol id="function1" style="position: relative;  visibility: hidden" class="style_brown">
+				<li>Form and function do not exist in a one-to-one relationship.<br />
+				For example:<ol class="auto-style19">
+					<li><em>Can I get the plates?<br />
+					</em>is a question form which 
+					could function as:<br />
+					A simple question: <em>Do I have the ability or permission 
+					to get the plates?</em><br />
+					An offer: <em>I will get the plates for you.</em><br />
+					A question about something else: <em>Is it time to get the 
+					plates?</em><br />
+					A statement as a reminder: <em>We need the plates now.</em><br />
+					A suggestion: <em>Should the plates be got?</em></li>
+					<li>The function of disagreeing with an opinion can be 
+					realised by:<br />
+					<em>Are you sure about that? </em>(an interrogative)<br />
+					<em>I'm unconvinced</em> (a statement)<br />
+					<em>Think that through a bit more</em> (an imperative or 
+					order)<br />
+					<em>Doesn't that make it nonsense?</em> (a negative 
+					question)<br />
+					<em>If you say so, I'll have to accept it but I'm still not 
+					too sure </em>(a complex conditional)<br />
+					<em>That can't be true!</em> (an exclamation with a modal 
+					auxiliary verb)</li>
+				</ol>
+				</li>
+				<li>Functions rarely occur in isolation.&nbsp; We have what are called <strong>adjacency pairs</strong>.<br /><em>Offering</em> is matched with <em>accepting</em> or <em>
+				declining</em>, <em>asking for information</em> is matched with
+				<em>giving information</em>, <em>excusing oneself</em> is 
+				matched by <em>accepting </em>or <em>rejecting an excuse</em> 
+				and so on.<br />
+				For example, if someone makes a suggestion, such as <em>Shall we 
+				go now?, </em>there are three possible response types:<ol  class="auto-style19">
+					<li>Agree to a suggestion: <em>OK, let's get our coats.</em></li>
+					<li>Reject a suggestion:<em> I'm happy where I am, thanks.</em></li>
+					<li>Temporise:<em> Let's stay a little longer.</em></li>
+				</ol>For a good deal more on adjacency pairs and a link to a list of some of them, refer to the guide in the in-service section, linked below.
+				</li>
+			</ol>
+			<p>It becomes obvious that we can't teach functions one at a time.&nbsp; 
+			There is very little point in being able to make an offer if you 
+			can't understand or produce the possible responses.</p>
+			<hr />
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td class="auto-style25">
+					<img alt="which" height="166" src="../../images/selection_finger_person250.jpg" width="250" /></td>
+					<td class="auto-style24"><h2>What to teach?</h2>
+					</td>
+				</tr>
+			</table>
+			<p>Two key publications listing lots of functions are from the Council of Europe and are available on 
+		the web:<br />
+		<a href="http://www.ealta.eu.org/documents/resources/Waystage_CUP.pdf" target="_blank">
+		Waystage 1990 by Van Ek and Trim</a><br />
+		<a href="http://www.ealta.eu.org/documents/resources/Threshold-Level_CUP.pdf" target="_blank">
+		Threshold 1990 by Van Ek and Trim</a></p>
+			<p>When we are teaching structure or lexis, it is quite 
+			straightforward to select by the level of the students what language 
+			to teach, building on previous knowledge to extend our learners' 
+			repertoire and lexicon.&nbsp; In other words, we teach the easy, 
+			common stuff first and leave the hard grammar and lexis till later.<br />
+			When it comes to choosing a function or set of functions to focus 
+			on, however, things get more difficult because it is harder to state 
+			that, e.g., apologising is more difficult than asking for directions 
+			or greeting people is easier than asking for their opinion.</p>
+			<p>For example, even an apparently simple function such as saying 
+			sorry can be realised linguistically at various levels of 
+			complexity:</p>
+			<p>
+			<img alt="complexity" height="234" src="../../imagesgraphics/function_complexity.png" width="310" /></p>
+			<p>So, much depends on the language we teach to allow our learners to 
+			realise the function.</p>
+			<p>Because, as you know, there is no one-to-one relationship between 
+			form and function, this means that the same function may be 
+			addressed a number of times, each time extending and developing the 
+			amount of subtlety and sophistication in language use.</p>
+			<p>However, it is possible to have a rough idea about which 
+			functions should be taught at each level based on:</p>
+			<ol class="auto-style4">
+				<li>how frequently they are likely to be needed and</li>
+				<li>how complex the language is that we need to express the 
+				function</li>
+			</ol>
+			<p>Here's a very rough guide related to the Common European 
+			Framework of language levels.</p>
+			<table cellpadding="3" class="auto-style5">
+				<tr>
+					<td class="auto-style10">A1 / A2</td>
+					<td class="auto-style12">B1 / B2</td>
+					<td class="auto-style8">C1/C2</td>
+				</tr>
+				<tr>
+					<td class="auto-style11" valign="top">agreeing/disagreeing<br />
+					apologising/accepting apologies<br />
+					asking/talking about ability<br />
+					asking about/talking about likes and dislikes<br />
+					asking for/giving/refusing permission<br />
+					asking about/talking about plans<br />
+					asking for/giving information<br />
+					asking for/giving opinion<br />
+					asking about/talking about wants<br />
+					asking for/giving directions<br />
+					greetings<br />
+					introductions<br />
+					inviting/accepting/declining<br />
+					making/suggesting arrangements<br />
+					offering/accepting/declining<br />
+					offering/accepting help<br />
+					phatic statements<br />
+					saying goodbye<br />
+					suasion*<br />
+					thanking/accepting thanks</td>
+					<td class="auto-style13" valign="top">
+					accusing/denying/admitting<br />
+					arrangements<br />
+					asking/talking about intellectual attitudes<br />
+					asking for/giving opinion<br />
+					asking/talking about obligation<br />
+					attracting attention<br />
+					expressing degrees of certainty<br />
+					expressing degrees of gratitude<br />
+					expressing remorse/regret<br />
+					expressing deductions<br />
+					expressing sympathy<br />
+					expressing (dis)interest<br />
+					expressing hope<br />
+					expressing surprise<br />
+					expressing fear<br />
+					expressing forgetfulness<br />
+					making/confirming/suggesting alternative arrangements<br />
+					socialising formally<br />
+					suasion*<br />
+					suggesting/responding to suggestion<br />
+					warning</td>
+					<td class="auto-style9" valign="top">beginning a meal<br />
+					correcting others<br />
+					expressing (dis)satisfaction<br />
+					expressing degrees of (dis)agreement<br />
+					expressing moral shock<br />
+					expressing indifference<br />
+					expressing desire<br />
+					expressing disappointment<br />
+					expressing worry<br />
+					expressing disbelief<br />
+					granting forgiveness<br />
+					inquiring whether invitation is accepted or declined<br />
+					inquiring about whether something is remembered<br />
+					proposing a toast<br />
+					suasion*<br />
+					recommending courses of action<br />
+					tact in declining</td>
+				</tr>
+			</table>
+			<span class="auto-style14">* The term <em>suasion</em> appears in 
+			all three columns.&nbsp; It has been defined as </span><span class="auto-style2"><em>
+			<span class="auto-style14">the category of utterance designed 
+			to affect the behaviour of others</span></em></span>
+			<span class="smallfont">(Wilkins, 1976: 46)</span><span class="auto-style14">.&nbsp; 
+			In other words, getting things done, and that's something we all need 
+			to be able to do.</span><span class="auto-style18">&nbsp; Go to the guide to suasion, 
+			linked below, 
+			on this site if you need to know more.</span><br />
+			<p>As was said, this is a very rough guide indeed.&nbsp; There's no 
+			doubt, for example, that learners at all levels may need many of the 
+			functions, such as expressing disbelief, which are listed under more 
+			advanced levels.&nbsp; It is also the case that learners' needs and 
+			settings vary and what is appropriate to teach to one learner may be 
+			unnecessary or inappropriate in another case.<br />
+			It is, however, somewhere to start.</p>
+			<hr />
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td class="auto-style25">
+					<img alt="asking" height="166" src="../../images/ask_for_information250.jpg" width="250" /></td>
+					<td class="auto-style24"><h2><a name="2"></a>Teaching functional language</h2>
+					</td>
+				</tr>
+			</table>
+			<h3>4 things to consider before you plan to teach</h3>
+			<dl>
+				<dt><strong>The intentions of the participants</strong></dt>
+				<dd>Learners need to be aware of what they 
+				want to <strong>do</strong> with the language.<br />
+&nbsp;&nbsp; <em>&nbsp;Am I 
+				offering something, demanding something, asking for something, 
+				persuading someone or what?</em><br />
+				There is a clear difference between <strong>interactional</strong> 
+				and <strong>transactional</strong> purposes.<br />
+				However, where the dividing lines are and how the terms are used 
+				in the profession are not quite so clear.<br />
+				Transactions have clear goals and often involve service 
+				encounters and communication in specific settings (shops, 
+				services, offices, factories etc.).<br />
+				Interactions, on the other hand, are concerned with oiling 
+				social wheels and getting along with other people.<br />
+				It is important to be aware that most encounters involve <strong>
+				both</strong> kinds of language.&nbsp; Even when you are only 
+				buying a sandwich some of what is said will be purely 
+				interactional (greetings, expressions of gratitude, politeness 
+				forms etc.) and some will be purely transactional (expressing 
+				needs and wants, giving information about price etc.).</dd>
+				<dt><strong>The context and setting</strong></dt>
+				<dd>You can't learn, use or understand language in a vacuum.&nbsp; 
+				Where people are talking and what they are doing are important 
+				data.&nbsp; For example, a conversation at work will differ from 
+				one in a caf&eacute;, a letter to a friend will differ from one 
+				to a landlord and so on.</dd>
+				<dt><strong>The relationships</strong></dt>
+				<dd>Who the people are, what the power relationships between 
+				them are and even what their ages and sexes are is important 
+				information.</dd>
+				<dt><strong>The medium</strong></dt>
+				<dd>Am I speaking, reading, texting, emailing, writing formally, 
+				scratching a quick note or what?&nbsp; All of these will affect 
+				what language I select and the style of what I say / write.</dd>
+			</dl>
+			<p>Think of examples of the way in which what we say is affected by 
+			these 4 considerations and
+			<a href="#2" onclick="FP_changeProp(/*id*/'function2',0,'style.visibility','visible')">
+			then click here</a>.</p>
+			<dl class="style_brown" id="function2" style="position: relative;  visibility: hidden">
+				<dt><strong>The intentions of the participants</strong></dt>
+				<dd>Here are just two examples.<br />
+				If I am asking for information, I have a number of means at my 
+				disposal.<br />
+				I can, for example, use a question form such as<br /><em>&nbsp;&nbsp;&nbsp; Do you have 
+				my address?<br />
+				</em>a question tag<br /><em>&nbsp;&nbsp;&nbsp; You have my address, don't 
+				you?<br />
+				</em>a statement with rising intonation<br /><em>&nbsp;&nbsp;&nbsp; You have my 
+				address?<br />
+				</em>and so on.<br />
+				If I am making an offer, I can also select from a range of 
+				forms:<br />
+				<em>&nbsp;&nbsp;&nbsp; Can I help?<br />
+				&nbsp;&nbsp;&nbsp;
+				Let me help.<br />
+				&nbsp;&nbsp;&nbsp;
+				I'll help.<br />
+				&nbsp;&nbsp;&nbsp;
+				You can't do that alone.<br />
+				</em>and so on.</dd>
+				<dt><strong>The context and setting</strong></dt>
+				<dd>Here the speaker / writer needs to consider style, i.e., the 
+				level of formality which is appropriate:<br />
+				<em>&nbsp;&nbsp;&nbsp; Open the window.<br />
+				&nbsp;&nbsp;&nbsp;
+				Please open the window.<br />
+				&nbsp;&nbsp;&nbsp;
+				Do you mind if we have the window open?<br />
+				&nbsp;&nbsp;&nbsp;
+				I wonder if you could open the window.<br />
+				&nbsp;&nbsp;&nbsp;
+				Dear Bill,<br />
+				&nbsp;&nbsp;&nbsp;
+				Dear Mr Williams,<br />
+				&nbsp;&nbsp;&nbsp;
+				I am writing to enquire whether ...<br />
+				&nbsp;&nbsp;&nbsp;
+				Tell me ...</em></dd>
+				<dt><strong>The relationships</strong></dt>
+				<dd>Style matters here, too but so does the level of directness 
+				and the type of function which is even appropriate at all.<br />
+				Boss to employee:<br /><em>&nbsp;&nbsp;&nbsp; Come and see me tomorrow and talk about 
+				your holiday dates, will you?<br />
+				</em>Employee to boss:<br /><em>&nbsp;&nbsp;&nbsp; Can you let me have a bit of time 
+				later on to discuss my holiday dates?<br />
+				</em>Employee to employee:<br /><em>&nbsp;&nbsp;&nbsp; Let's sort out my holiday dates 
+				today.</em></dd>
+				<dt><strong>The medium</strong></dt>
+				<dd>Spoken language tends, on the whole, to be less formal, come 
+				in shorter chunks, be characterised by hesitation and false 
+				starts, leaves understood information out and is less complex.&nbsp; 
+				Writing is more complex, more coherent and includes all the 
+				data.&nbsp; Prepared speech is more like written language spoken 
+				aloud.<br />
+				Spoken:<br /><em>&nbsp;&nbsp;&nbsp; There's he is!&nbsp; That's him ... the man, I mean.&nbsp; 
+				He was in the pub yesterday, wasn't he?&nbsp; He .. err you 
+				spoke to ... to him.&nbsp; Well, had an argument really.<br />
+				</em>Written:<br /><em>&nbsp;&nbsp;&nbsp;
+				Do you remember the man you spoke to, or 
+				rather argued with, who was in the pub yesterday?</em></dd>
+			</dl>
+			<p>Here's a cut-out-and-keep overview.&nbsp;
+			<a href="../../../documents/ELT_Concourse_Teaching_Functions.pdf" target="_blank">
+			Click here if you would like a copy as a PDF file</a>.</p>
+			<p>
+			<img alt="overview" height="332" src="../../imagesgraphics/function_overview.png" width="620" /></p>
+			<hr />
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td class="auto-style25">
+					<img alt="presenting" height="166" src="../../images/presenting250.jpg" width="250" /></td>
+					<td class="auto-style24"><h2>Presenting</h2>
+					</td>
+				</tr>
+			</table>
+			<p>Spoken language is often presented <em>via</em> a dialogue (read 
+			or heard) or some other kind of text.&nbsp; It can also be embedded 
+			in interaction in the classroom.&nbsp; Whether this is done after 
+			the learners have tried to express the target function for 
+			themselves (a Test–Teach–Test approach) or at the outset (a 
+			Present&ndash;Practise&ndash;Produce approach) is not our concern here.<br />
+			Visuals or other aids help to make the setting clear but learners 
+			still need the information under the 4 sections above to make sense 
+			of the input.</p>
+			<p>At lower levels such dialogues can be pretty short and simple, 
+			along the lines of:</p>
+			<p class="style_black">A tourist approaching strangers in the 
+			street.</p>
+			<ol>
+				<li><em>Excuse me, can you tell me where the Police Station is?<br />
+				I'm sorry, I'm a stranger here.<br />
+				Oh, well, thanks anyway.</em></li>
+				<li><em>Excuse me, can you tell me where the Tourist Information 
+				Office is?<br />
+				Err, I'm not too sure.&nbsp; I think it's in the 
+				station.&nbsp; Down there on the right but you should ask 
+				someone else.&nbsp; I may be wrong.<br />
+				OK.&nbsp; I'll try that.&nbsp; Thanks.</em></li>
+				<li><em>Excuse me, can you tell me where the City College is?<br />
+				Yes.&nbsp; It's just down here.&nbsp; Go to the end of the road, 
+				turn right and it's on your left.<br />
+				Thanks.</em></li>
+			</ol>
+			<p>This is a simple way to introduce how to use an indirect question 
+			to make a request for directions and the three ways to respond to 
+			it.&nbsp; The dialogues can be read, seen, heard or all three.</p>
+			<p>At higher levels, things can get a bit more sophisticated.&nbsp; 
+			For example,</p>
+			<table cellpadding="4" class="auto-style20">
+				<tr>
+					<td class="auto-style22" valign="top">
+					<img alt="speak" height="166" src="../../images/talk_cooler250.jpg" width="250" /></td>
+					<td class="auto-style22" valign="top"><strong>The situation:</strong><br />
+					John and Peggy are colleagues who have worked together for a 
+					long time.&nbsp; They do the same job.<br />
+					Julie is their boss.<br />
+					Peggy is single and lives alone.<br />
+					John is married to Angela who works in a hospital and has 
+					two school-age children.<br />
+					In their break, they are discussing holiday dates and trying 
+					to reach agreement.<br />
+					Listen to / read / watch the conversation and see how they 
+					try to persuade each other.</td>
+				</tr>
+				<tr>
+					<td class="auto-style21" colspan="2">
+					<span class="style_brown"><a name="3"></a>Peggy: <em>Fine.&nbsp; 
+					OK.&nbsp; Right.&nbsp; Head Office has asked me for my 
+					holiday dates this year, by the way.</em></span><br />
+					John: <em>I got the same email.&nbsp; They ask earlier every 
+					year.</em><br />
+					<span class="style_brown">Peggy: <em>Don't they, though? 
+					(laughs) Anyway, I was, well, thinking a bit about it and 
+					... err ... thought, you know, I'd like to get away in 
+					summer for a change.</em></span><br />
+					John: <em>Oh, that's a change for you.</em><br />
+					<span class="style_brown">Peggy: <em>Yes, well, actually, 
+					it's because someone's asked me to go with them to Greece.&nbsp; 
+					In August, actually.</em></span><br />
+					John: <em>I can see that's tempting but it's a bit awkward.&nbsp; 
+					We can't both be away.&nbsp; Julie will never stand for it.</em><br />
+					<span class="style_brown">Peggy: <em>I know.&nbsp; She's 
+					made that pretty clear.&nbsp; It's just that this is really 
+					important to me.&nbsp; And, well, I was thinking, you always 
+					get, I mean, nearly always, some time in August.&nbsp; I 
+					know that's because of the kids and all but I was wondering 
+					whether you could, like, erm, take July instead.&nbsp; Would 
+					that work for you?</em></span><br />
+					John: <em>It might I guess but Angela's already asked for 
+					time in August and it might be too late.&nbsp; They're 
+					pretty strict at the hospital nowadays.<br />
+					</em><span class="style_brown">Peggy: <em>I know it's a bit 
+					awkward and so on but could you see if Angela could change 
+					her dates?&nbsp; I don't need to go until the last two weeks 
+					of August.</em></span><br />
+					John: <em>Ouch.&nbsp; Angela's booked the first three weeks 
+					already and the kids aren't back from camp until the end of 
+					July.</em><br />
+					<span class="style_brown">Peggy: <em>I can see it's 
+					difficult but this matters to me, John.</em></span><br />
+					John: <em>I know it does.&nbsp; But what can I do?&nbsp; You 
+					know Angela.</em><br />
+					<span class="style_brown">Peggy: <em>Yeah, well, if that 
+					doesn't work, we could talk to Julie and see if we can 
+					overlap for a week.&nbsp; If we talk to her together, she 
+					might bend a bit.&nbsp; I can't see it'd matter all that 
+					much.</em></span><br />
+					John: <em>OK.&nbsp; Let's see if she's got some time this 
+					afternoon.&nbsp; OK?</em><br />
+					<span class="style_brown">Peggy: <em>Yeah, thanks John.</em></span></td>
+				</tr>
+			</table>
+			<p>What language in particular is being presented here?&nbsp;
+			<a href="#3" onclick="FP_changeProp(/*id*/'function3',0,'style.visibility','visible')">
+			Click here when you have an answer</a>.</p>
+			<p id="function3" style="position: relative;  visibility: hidden">
+			<span class="style_brown">A dialogue of this sort is intended to 
+			highlight the way we use a bit of <strong>give and take</strong> in negotiations and 
+			are careful to show we understand the other person's position with 
+			phrases like<br /><em><span class="auto-style39">&nbsp;&nbsp;&nbsp; </span>I can see it's difficult<br />
+&nbsp;&nbsp;&nbsp; I can see that's 
+			tempting<br />
+&nbsp;&nbsp;&nbsp; I know it does.<br />
+			</em>It shows how we <strong>appeal to outside people</strong> and pressures (Julie 
+			and Angela) to support our position.<br />
+			It shows how we <strong>back up requests </strong>and statements with reasons, e.g.,<br /><em><span class="auto-style39">&nbsp;&nbsp;&nbsp; </span>someone's asked me<br />
+&nbsp;&nbsp;&nbsp; they're pretty strict at the hospital<br />
+			</em>etc.<br />
+			It also shows that the language we use when we are <strong>persuading</strong> 
+			someone else to do something is slightly different from the language 
+			we use when we are trying to get them to <strong>cooperate</strong> with us.&nbsp; 
+			Compare, e.g.,<br /><em><span class="auto-style39">&nbsp;&nbsp;&nbsp; </span>Could you ...<br />
+			</em>with<br /><em>&nbsp;&nbsp;&nbsp; Let's ...<br />
+			</em>(There is more on this in the guide to 
+			suasion.)<br />
+			This whole exchange could, incidentally, be presented in written 
+			form as a series of emails between John and Peggy.&nbsp; The medium 
+			would change and with it the style but the functions would remain 
+			the same.<br />
+			It could then be contrasted with the way people talk to authority 
+			figures by going on to present the conversation between Peggy, John 
+			and Julie later that day.</span></p>
+			<hr />
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td class="auto-style25">
+					<img alt="practising" height="166" src="../../images/music_practice_piano250.jpg" width="250" /></td>
+					<td class="auto-style24"><h2>Practising</h2>
+					</td>
+				</tr>
+			</table>
+			<p>Before learners can effectively and confidently produce language, 
+			it needs to be highlighted and practised.&nbsp; There are lots of 
+			ways to do this, including:</p>
+			<ol>
+				<li>Listening to and repeating parts of the dialogue, aping 
+				intonation and so on.</li>
+				<li>Memorising the dialogue and acting it out together.</li>
+				<li>Reading the dialogue in a way that makes one or other of the 
+				characters aggressive or meek.</li>
+				<li>Using the dialogue as a model to construct one in a similar 
+				vein on a different subject.</li>
+				<li>Practising small parts of the dialogue focusing on the 
+				intonation and stress on the main verb in things like<br />
+				<em>
+				<span class="style_brown">&nbsp;&nbsp;&nbsp; I can <strong>see</strong> it's difficult<br />
+				&nbsp;&nbsp;&nbsp;
+				I can 
+				<strong>see</strong> 
+				that's tempting<br />
+				&nbsp;&nbsp;&nbsp;
+				I <strong>know</strong> it does.</span></em></li>
+			</ol>
+			<p>or any combination of these and other ways.</p>
+			<hr />
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td class="auto-style25">
+					<img alt="producing" height="166" src="../../images/product_olives250.jpg" width="250" /></td>
+					<td class="auto-style24"><h2>Producing</h2>
+					</td>
+				</tr>
+			</table>
+			<p>It isn't really difficult to set up a similar situation and then 
+			get the learners to do the negotiating.&nbsp; However, we must bear 
+			in mind that:</p>
+			<ul class="redbullet">
+				<li>the role relationships should be equal.</li>
+				<li>the participants are not close friends.</li>
+				<li>there are external pressures on both of them.&nbsp; We will 
+				need to identify what those pressures are, of course.</li>
+			</ul>
+			<p>For example:</p>
+			<p><span class="style_black">You share a flat with two friends and 
+			take it in turns to babysit once a week for your landlady (who 
+			reduces the rent).&nbsp; There are three roles (Learners A, B and 
+			C):</span></p>
+			<ol class="auto-style23">
+				<li>It is your turn tomorrow.&nbsp; You have a new 
+				boy/girlfriend who has invited you out so you don't want to 
+				babysit.&nbsp; This is important to you.</li>
+				<li>You know it is A's turn and you have done the babysitting 
+				for him/her twice this month already.&nbsp; You have an essay to 
+				write and want the evening to yourself.</li>
+				<li>You are free tomorrow evening but you want to go to the 
+				cinema to see a film you have read about.&nbsp; The last night 
+				of the film is tomorrow.</li>
+			</ol>
+			<p>This will have to be a carefully monitored exercise and the 
+			learners will need time to prepare it together before they act it 
+			out.&nbsp; They may need quite a lot of input and help.<br />
+			Then they can try again with no preparation and different partners 
+			(with the same or a different scenario).&nbsp; And again, probably.&nbsp; 
+			It may seem a bit dull to you to do the same thing three or four 
+			times but if you change the grouping and alter the scenario, it 
+			won't be for your learners.<br />
+			By the way, the learners may also need a nudge to realise that they 
+			can agree to appeal to the landlady and see how important 
+			babysitting actually is tomorrow (see the model dialogue and the 
+			agreement to appeal to Julie).</p>
+			<hr /><br />
+			<table id="iptrainingnav" cellpadding="0" cellspacing="0" class="tablebrownborder">
+				<tr>
+					<td class="auto-style31" colspan="2" style="height: 18px">Related guides</td>
+				</tr>
+				<tr>
+					<td class="auto-style32">
+			<a href="../functions/form_function.html" target="_blank">form, 
+					function and meaning</a></td>
+					<td class="auto-style38">for the essential guide to the 
+					differences</td>
+				</tr>
+				<tr>
+					<td class="auto-style32">
+					<a href="../../inservice/functions/suasion.html">suasion</a></td>
+					<td class="auto-style37">for the guide to a particular type 
+					of function: getting other people to do things</td>
+				</tr>
+				<tr>
+					<td class="auto-style32">
+					<a href="../../inservice/functions/requestives.html">
+					requestives</a></td>
+					<td class="auto-style37">for a guide in the in-service 
+					section to a teachable area of suasion</td>
+				</tr>
+				<tr>
+					<td class="auto-style32">
+					<a href="../../inservice/functions/adjacency_pairs.html">
+					adjacency pairs</a></td>
+					<td class="auto-style37">for a guide in the in-service 
+					section explaining what they are and supplying a list of 
+					common ones</td>
+				</tr>
+				<tr>
+					<td class="auto-style35">
+					<a href="../indexes_ip/functions_index_ip.html">the index to 
+					essential functions</a></td>
+					<td class="auto-style34">for the index to this area in the 
+					initial plus section</td>
+				</tr>
+				<tr>
+					<td class="auto-style35">
+					<a href="../../inservice/indexes_is/functions_index_is.html">
+					the in-service functions index</a></td>
+					<td class="auto-style34">this is where you will find links 
+					to more technical guides</td>
+				</tr>
+				</table>
+			<br />
+			<hr />
+			<p class="smallfont">References:<br />
+		Van Ek, J and Trim, J, <em>Waystage 1990</em>, Cambridge: Cambridge 
+		University Press<br />
+		Van Ek, J and Trim, J, <em>Threshold 1990</em>, Cambridge: Cambridge 
+		University Press<br />
+Widdowson, H, 1990, <em>Aspects of Language teaching</em>, Oxford: Oxford 
+University Press<br />
+		<span class="auto-style4">Wilkins, DA, 1972, <em>Linguistics and 
+		Language Teaching</em>, London: Edward Arnold</span></p>
+			<hr />
+			</div>
+			<!-- #EndEditable -->
+		<!-- End Content -->
+	
+	<!-- Begin Footer -->
+	<div id="footer">
+		<p>
+		<a href="../../../contact.html">Contact</a> |
+		<a href="../../../faq.html">FAQs</a> |
+		<a href="../../../copyright_notice.html">Copyright notice</a> |
+		<a href="../../../documents/ELT_Concourse_Charter.pdf" target="_blank"> ELT Concourse charter</a> |
+		<a href="../../../disclaimer.html"> Disclaimer and Privacy statement </a>|
+		<a href="../../../search_the_site.html">Search <strong>
+		ELT Concourse</strong></a></p>
+	</div>
+	<!-- End Footer -->
+
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>
