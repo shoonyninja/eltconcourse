@@ -1,0 +1,1798 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- #BeginTemplate "../../../styles/dwt/training.dwt" -->
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta http-equiv="Content-Language" content="en-gb" />
+<!-- #BeginEditable "doctitle" -->
+<title>ELT Concourse: methodology unpacked and refined</title>
+<style type="text/css">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.auto-style2 {
+	font-size: small;
+}
+.auto-style31 {
+	padding-left: 5px;
+}
+.auto-style33 {
+	border-left: medium none #666666;
+	border-right: 1px solid #666666;
+	border-top: 1px solid #666666;
+	border-bottom: medium none #666666;
+}
+.auto-style34 {
+	border-left: 1px solid #666666;
+	border-right: medium none #666666;
+	border-top: medium none #666666;
+	border-bottom: 1px solid #666666;
+	padding-left: 5px;
+	padding-right: 3px;
+}
+.auto-style35 {
+	text-align: center;
+}
+.auto-style49 {
+	border-left: 1px solid #666666;
+	border-right: medium none #666666;
+	border-top: 1px solid #666666;
+	border-bottom: medium none #666666;
+	padding-left: 5px;
+	padding-right: 3px;
+}
+.auto-style50 {
+	border-left: medium none #666666;
+	border-right: 1px solid #666666;
+	border-top: medium none #666666;
+	border-bottom: 1px solid #666666;
+}
+.auto-style51 {
+	border-left: medium none #666666;
+	border-right: 1px solid #666666;
+	border-top: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+}
+.auto-style53 {
+	border-left: 1px solid #666666;
+	border-right: medium none #666666;
+	border-top: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	padding-left: 5px;
+	padding-right: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.auto-style4 {
+	font-size: small;
+}
+.auto-style3 {
+	font-size: small;
+}
+.auto-style7 {
+	font-size: small;
+}
+.auto-style55 {
+	border-left: 1px solid #666666;
+	border-right: medium none #cccccc;
+	border-top: medium none #cccccc;
+	border-bottom: 1px solid #666666;
+	background-color: #F5F5F5;
+}
+.auto-style59 {
+	border-collapse: collapse;
+}
+.auto-style60 {
+	border-left: 1px solid #666666;
+	border-right: medium none #cccccc;
+	border-top: 1px solid #666666;
+	border-bottom: medium none #cccccc;
+}
+.auto-style61 {
+	border-left: medium none #cccccc;
+	border-right-color: #cccccc;
+	border-right-width: 1px;
+	border-top: 1px solid #666666;
+	border-bottom-color: #cccccc;
+	border-bottom-width: 1px;
+}
+.auto-style63 {
+	border-left: 1px solid #666666;
+	border-right: medium none #cccccc;
+	border-top: 1px solid #666666;
+	border-bottom-color: #cccccc;
+	border-bottom-width: 1px;
+}
+.auto-style64 {
+	border-left: medium none #cccccc;
+	border-right-color: #cccccc;
+	border-right-width: 1px;
+	border-top: 1px solid #666666;
+	border-bottom: medium none #cccccc;
+}
+.auto-style65 {
+	border-left: medium none #cccccc;
+	border-right: 1px solid #666666;
+	border-top: medium none #cccccc;
+	border-bottom: 1px solid #666666;
+	background-color: #F5F5F5;
+}
+.auto-style66 {
+	vertical-align: middle;
+}
+</style>
+<meta content="ELT Concourse English language analysis and teaching guides. Methodology unpacked" name="description" />
+<script type="text/javascript">
+<!--
+function FP_changeProp() {//v1.0
+ var args=arguments,d=document,i,j,id=args[0],o=FP_getObjectByID(id),s,ao,v,x;
+ d.$cpe=new Array(); if(o) for(i=2; i<args.length; i+=2) { v=args[i+1]; s="o"; 
+ ao=args[i].split("."); for(j=0; j<ao.length; j++) { s+="."+ao[j]; if(null==eval(s)) { 
+  s=null; break; } } x=new Object; x.o=o; x.n=new Array(); x.v=new Array();
+ x.n[x.n.length]=s; eval("x.v[x.v.length]="+s); d.$cpe[d.$cpe.length]=x;
+ if(s) eval(s+"=v"); }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+// -->
+</script>
+<!-- #EndEditable -->
+<meta content="language analysis,eltconcourse,English grammar,free English language teaching materials,CELTA,Delta,language guides,free Delta training,free CELTA training,free ELT Training materials,teacher training,ELT,learning English,teaching English,English Language Teaching,ESOL,EFL,English as a Foreign Language" name="keywords" />
+<link href="../../../styles/mainstyle.css" rel="stylesheet" type="text/css" />
+<link href="../../../styles/training.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+</style>
+</head>
+
+<body>
+	<!-- Begin Masthead -->
+	<div id="masthead" >
+		<table style="width: 100%; border-bottom: #000080 solid">
+			<tr>
+				<td style="width: 135px">
+				<img alt="logo" height="49" src="../../../gfx/logo.png" width="78" /></td>
+				<td valign="bottom">
+				<span class="orangexxlargebold">ELT </span>
+				<span class="bluexxlargebold">Concourse teacher training</span></td>
+			</tr>
+		</table>
+	</div>
+	<!-- End Masthead -->
+	<!-- Begin Content -->
+			<!-- Begin Sidebar -->
+		<div id="sidebartt">
+			<ul>
+				<li><a href="../../../index.html">ELT Concourse home</a></li>
+				<li><a href="../../../a-z_index.html">A-Z site index</a></li>
+				<li><a href="../../training_index.html">Teacher training index</a></li>
+				<li><a href="../../../development/development_index.html">Teacher development</a></li>
+				<li><a href="../../../teachers/teachers.html">For teachers</a></li>
+				<li><a href="../../trainers/trainers_index.html">For trainers</a></li>
+				<li>
+				<a href="../../../academic_management/academic_management_index.html">For managers</a></li>
+				<li><a href="../../../learners/learners.html">For learners</a></li>
+				<li><a href="../../common/about_language.html">About language</a></li>
+				<li><a href="../../../questions/questions.html">Language questions</a></li>
+				<li class="whiteback">Other areas</li>
+				<li><a href="../indexes_is/eap_index_is.html">Academic English</a></li>
+				<li><a href="../indexes_is/be_index_is.html">Business English</a></li>
+				<li><a href="../../entering/introduction_to_elt.html">Entering ELT</a></li>
+				<li><a href="../../courses/courses_index.html">Courses index</a></li>
+				<li><a href="../../courses/basic/introduction_basic.html">Basic ELT course</a></li>
+				<li><a href="../../tkt/tkt_index.html">TKT</a></li>
+				<li><a href="../../bridge/bridge_index.html">The Bridge</a></li>
+				<li><a href="../../courses/lacourse/index_la_course.html">Language analysis</a></li>
+				<li>
+				<a href="../../courses/training_to_train/training_to_train_index.html">Training to train</a></li>
+				<li><a href="../../courses/transcription1/transcription.html">Transcription</a></li>
+				<li><a href="../../glossaries/glossary_index.html">Glossaries</a></li>
+				<li><a href="../../../articles/articles.html">Articles</a></li>
+			</ul>
+		</div>
+		<!-- End Sidebar -->
+		<!-- Begin Content -->
+		
+		<div id="toppicture" style="text-align: left; background-color: white; padding: 0px; margin-left: 140px;">
+				<img alt="Concourse 2" height="207" src="../../../images/concourse2blue.jpg" width="310" /></div>
+		
+			<!-- #BeginEditable "content" -->
+		
+			<!-- #BeginEditable "content" -->
+		
+		<div id="content">
+		
+			<h1>Methodology unpacked and refined</h1>
+			<table cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+			<img height="207" src="../../images/way_a310.jpg" width="310" alt="path" /></td>
+			</tr>
+			<tr>
+				<td class="auto-style35">
+				<strong>Methodology: </strong> <span class="style_black"><em>
+				<strong>a way of getting from here to there</strong></em></span></td>
+			</tr>
+			</table>
+			
+			<p>
+			This guide reiterates some of the content of the essential guide to 
+			methodology but then extends the analysis to refine the concepts and 
+			make more links between principles and practice.<br />
+			It is linked from the Delta index because much of what follows 
+			bridges the links between a competent teacher and one whose practice 
+			is firmly based on principle.&nbsp; Click
+			<a href="../delta/delta_index.html">here</a> to go back to the Delta 
+			index.</p>
+			<p>
+			If you have already followed the essential guide to methodology, 
+			click <a href="#refined">here</a> to skip to what's new in this 
+			guide.</p>
+			<p>There are two common ways to define methodology in English 
+			Language Teaching and, graphically, this is how they look:</p>
+			<p>
+			<img alt="methodology" height="294" src="../../imagesgraphics/methodologies.png" width="310" /></p>
+			<p>The left-hand set was developed by Anthony in 1963.&nbsp; The 
+			right-hand set was developed from Anthony's definition later and 
+			appears in Richards and Rogers, 2001.&nbsp; Briefly:</p>
+			<dl>
+				<dt><strong>Approach</strong></dt>
+				<dd>For Anthony, an approach was simply a 
+				set of principles or ideas about the nature of language learning.&nbsp; 
+				In his words:<br />
+&nbsp;&nbsp;&nbsp; <span class="style_black"><em>An approach is axiomatic. It 
+				describes the nature of the subject matter to be taught</em></span><br />
+				For Richards and Rogers it was similar but explicitly divided 
+				into theories of what language is and theories of how learning a 
+				foreign language happens.<br />
+				The second of these definitions has the advantage of being quite 
+				explicit.</dd>
+				<dt><strong>Method or Design</strong></dt>
+				<dd>In this section are lesson designs such as 
+				Present&ndash;Practice&ndash;Produce or Test–Teach–Test.&nbsp; Those are not 
+				methods, they are ways of structuring lessons within methods.<br />
+				For Anthony, method described the plan for the presentation 
+				of language which is consistent with the approach.<br />
+				Richards and Rogers' concept of design is somewhat broader and 
+				covers the practical implications in the classroom: syllabus 
+				design, activities and the roles of teachers and students.<br />
+				These are not all that different but again, the latter one is 
+				more explicit.</dd>
+				<dt><strong>Technique or Procedure</strong></dt>
+				<dd>Technique, for Anthony, was just any teaching trick or way 
+				of doing something in the classroom such as eliciting, 
+				approaching a reading text, encouraging authentic speaking, 
+				drills and so on.<br />
+				For Richards and Rogers, too, the term procedure refers to what 
+				we see happening in the classroom when a particular approach and 
+				design are implemented.</dd>
+			</dl>
+			<p>It actually doesn't matter all that much which breakdown you 
+			accept.&nbsp; Both are fairly arbitrary and subjective ways of 
+			breaking down a complex area.</p>
+			<hr />
+			<table cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+				<img alt="practice" height="166" src="../../images/work250.jpg" width="250" /></td>
+				<td class="auto-style31">
+				<h2>Methodology in practice</h2>
+				</td>
+			</tr>
+			</table>
+			
+			<p>It is worth pointing out that not all methodologies will fit 
+			neatly into the categories above.<br />
+			For example, Communicative Language Teaching, the current dominant 
+			methodology, has a good theory of language but little to say 
+			concerning a theory of learning.&nbsp; Some earlier methodologies 
+			such as Situational Language Teaching were similarly deficient but 
+			some, audio-lingualism, for example, had very clear theories both of 
+			what language actually is and how people learn languages.</p>
+			<p>The extent to which, if at all, the various models and concepts 
+			of language and learning actually reflect the reality of classroom 
+			practices is, of course, 
+			quite another matter.</p>
+			<p>It is, however, often quite possible to work backwards from what 
+			is observed in the classroom (techniques and procedures) and deduce 
+			the approach a teacher favours (if any) or to work from the materials an 
+			institution uses (the method or design) to see what principles (the 
+			approach) the institution is favouring (if any).&nbsp; The Delta examination, 
+			e.g., explicitly asks you to do that.</p>
+			<hr />
+			<table cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+				<img alt="refined" height="207" src="../../images/woman_refined_tea310.jpg" width="310" /></td>
+				<td class="auto-style31">
+				<h2><a name="refined"></a>Methodology 
+				refined</h2>
+				</td>
+			</tr>
+			</table>
+			
+			<p>There are a number of provisos in the foregoing brief guide to 
+			what methodology is, including:</p>
+			<ol>
+				<li>It actually doesn't matter all that much which breakdown you 
+				accept.</li>
+				<li>Both Antony's and Richard and Roger's ways of defining 
+				methodology are arbitrary and subjective.</li>
+				<li>The extent to which, if at all, the various models and 
+				concepts of language and learning actually reflect reality is 
+				questionable.</li>
+				<li>We should beware of techniques or procedures which 
+				masquerade, or are falsely described, as methodologies.&nbsp; 
+				For example:<ul class="greybullet">
+					<li>A PPP vs. a TTT approach to lesson design are not 
+					competing methodologies; they are ways of structuring a 
+					lesson and can exist happily within a variety of methods.</li>
+					<li>Dictogloss is a technique, not even an approach and 
+					certainly not a method, as is any form of dictation.</li>
+					<li>A noticing exercise is not a method, it's a procedure 
+					based on a hypothesis about learning.</li>
+					</ul></li></ol>
+				<p>The following is an attempt to refine our definition of method or 
+			methodology (the terms are used interchangeably in most texts) to 
+			make it:</p>
+			<ol>
+				<li>More precise and usable</li>
+				<li>Less arbitrary and subjective</li>
+				<li>Easier to apply principles to practice in a consistent 
+				fashion.</li>
+			</ol>
+			<table cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+				<img alt="note" height="133" src="../../images/music_notes_wire200.jpg" width="200" /></td>
+				<td class="auto-style31">
+				<h3>A note on post-method methodology</h3>
+				</td>
+			</tr>
+			</table>
+			
+			<p>Beginning in the 1980s, there has been a movement away from 
+			methodology altogether because any methodology was seen as an 
+			inhibiting factor prescribing (and often proscribing) what was 
+			allowable in the classroom.<br />
+			There is a guide, elsewhere on this site, to post-method methodology 
+			as it has come to be known and there you will find the following 
+			criticisms of methodology restated on the left.&nbsp; On the right 
+			are some counter arguments that have been suggested.<br />
+			You may like to try to think of your own counter arguments before 
+			clicking on
+					<img alt="eye open" height="16" src="../../../gfx/eyeopen.gif" width="16" class="auto-style66" /> 
+			to reveal some ideas.</p>
+
+<table cellpadding="3" cellspacing="0" class="tableblueborder" style="width: 90%">
+				<tr>
+					<td class="auto-style65" style="width: 50%">Criticism</td>
+					<td class="auto-style55" style="width: 50%">Counter argument</td>
+				</tr>
+				<tr>
+					<td class="auto-style61">There is a lack of any sound empirical evidence that any method 
+			works any better than any other<br />
+					<img alt="eye open" height="16" src="../../../gfx/eyeopen.gif" width="16" onclick="FP_changeProp(/*id*/'intel',0,'style.visibility','visible')" /></td>
+					<td class="auto-style63">
+					<div id="intel" style="visibility: hidden"> <em>The evidence is 
+					growing that some approaches are more effective.&nbsp; In 
+					any case, if one only carried out classroom activities and 
+					designed lessons based on those approaches for which there 
+					is sound empirical evidence of effectiveness, there would be 
+					almost nothing to draw on.</em></div>
+					</td>
+				</tr>
+				<tr>
+					<td class="auto-style61">The whole concept of method limits teachers and learners and 
+			prevents them reaching their true potential<br />
+					<img alt="eye open" height="16" src="../../../gfx/eyeopen.gif" width="16" onclick="FP_changeProp(/*id*/'intel0',0,'style.visibility','visible')" /></td>
+					<td class="auto-style63">
+					<div id="intel0" style="visibility: hidden"> <em>Well, it does if 
+					the methodology is applied unthinkingly and to the exclusion 
+					of anything else.&nbsp; Part of the true potential of 
+					teachers is, arguably, a principled approach to what they do 
+					which they can articulate logically.</em></div>
+					</td>
+				</tr>
+				<tr>
+					<td class="auto-style61">Methods imposed on teachers and learners stifle creativity and 
+			autonomy<br />
+					<img alt="eye open" height="16" src="../../../gfx/eyeopen.gif" width="16" onclick="FP_changeProp(/*id*/'intel1',0,'style.visibility','visible')" /></td>
+					<td class="auto-style63">
+					<div id="intel1" style="visibility: hidden">
+						<em>Maybe with some 
+					methodologies, especially those based on imitation and 
+					repetition, but within other approaches there is ample room 
+					for creativity and innovation.&nbsp; That's part of being a 
+					good teacher.</em></div>
+					</td>
+				</tr>
+				<tr>
+					<td class="auto-style61">There was a noticeable disenchantment with the idea that the 
+			application of some kind of scientific method could have the 
+			outcomes it promised<br />
+					<img alt="eye open" height="16" src="../../../gfx/eyeopen.gif" width="16" onclick="FP_changeProp(/*id*/'intel3',0,'style.visibility','visible')" /></td>
+					<td class="auto-style63">
+					<div id="intel3" style="visibility: hidden">
+						<em>This kind of 
+					anti-technology / anti-theory argument isn't really an 
+					argument at all.&nbsp; In fact, the world is littered with 
+					devices based on sound scientific principles that work 
+					extremely well.&nbsp; The fact that you are reading this is 
+					evidence of more than one.</em></div>
+					</td>
+				</tr>
+				<tr>
+					<td class="auto-style61">Methods ignore the huge range of learners' needs, settings, 
+			personalities and cultures<br />
+					<img alt="eye open" height="16" src="../../../gfx/eyeopen.gif" width="16" onclick="FP_changeProp(/*id*/'intel4',0,'style.visibility','visible')" /></td>
+					<td class="auto-style63">
+					<div id="intel4" style="visibility: hidden">
+						<em>Only if they are 
+					applied unthinkingly and insensitively.&nbsp; More than one 
+					method, so called, may be effective and we can choose the 
+					one that fits the learners.</em></div>
+					</td>
+				</tr>
+				<tr>
+					<td class="auto-style64">Methods lead to disempowerment of both learners and teachers and 
+			contribute to dominance by society's power holders and the 
+			de-skilling of teachers<br />
+					<img alt="eye open" height="16" src="../../../gfx/eyeopen.gif" width="16" onclick="FP_changeProp(/*id*/'intel6',0,'style.visibility','visible')" /></td>
+					<td class="auto-style60">
+					<div id="intel6" style="visibility: hidden">
+						<em>Empowerment to 
+					do what, exactly?&nbsp; If this means that teachers are free 
+					to do anything that takes their fancy in the classroom, 
+					where is the power of the learners?&nbsp; Teacher will only 
+					be de-skilled if they are undertrained and training of the 
+					best sort demands a critical understanding of principles.</em></div>
+					</td>
+				</tr>
+				</table>
+		
+			<p>While these criticisms are partially valid (in one view, taken 
+			here), they are not the line taken because a post-method methodology 
+			may easily have the effect of allowing teaching to drift into 
+			unprincipled eclecticism with lessons and courses being designed on 
+			the basis of what seems attractive and engaging rather than what 
+			might actually help the learners acquire the targets they have had 
+			set or set for themselves.<br />
+			There is no suggestion here that materials, procedures, tasks and 
+			lessons should not be designed to be attractive and engaging, just 
+			that this is not <span class="style_underline"><strong>all</strong></span> 
+			they should be.</p>
+			<hr />
+			<table cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+				<img alt="story" height="166" src="../../images/once_upon250.jpg" width="250" /></td>
+				<td class="auto-style31">
+				<h2>Refining methodology</h2>
+				</td>
+			</tr>
+			</table>
+			
+			<p>We will start with the scheme set out by Richards and Rogers 
+			although we could have used a range of other schemes with the same 
+			effect.&nbsp; Their scheme, as we saw above, has just three levels: 
+			Approach, Design and Procedure, akin to Anthony's Approach, Method 
+			and Technique.<br />
+			We'll have 5 levels and, as we shall see, that allows a good deal more 
+			precision (at the cost of some blurred edges because that is what 
+			you get when you try to draw lines on a continuum) and, crucially, allows 
+			the principled application of theories and hypotheses about language 
+			learning to the classroom.</p>
+			<hr />
+			<table cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+				<img alt="level" height="166" src="../../images/level_spirit250.jpg" width="250" /></td>
+				<td class="auto-style31">
+				<h2>Level 1: Major theories</h2>
+				</td>
+			</tr>
+			</table>
+			
+			<p>These are what both Anthony and Richards and Rogers refer to as Approaches and 
+			concern fundamental theories about:</p>
+			<ol>
+				<li>How learning happens</li>
+				<li>What language is</li>
+			</ol>
+			<p>Many people have made respectable academic careers from the study 
+			of either or, indeed, parts of either of these areas, so this is not 
+			the place to provide details of all the possible theories of 
+			learning and language that have been suggested.&nbsp; We'll look at 
+			some popular choices.</p>
+			<table cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+				<img alt="1" height="68" src="../../../gfx/1blue.png" width="100" /></td>
+				<td class="auto-style31">
+				<h3>How learning happens</h3>
+				</td>
+			</tr>
+			</table>
+			
+			<p>It will suffice here to point out four popular schools of thought 
+			concerning how learning happens.<br />
+			This does not refer explicitly to language learning (we have yet to 
+			get to the next level) but <span class="style_underline"><strong>all</strong></span> 
+			learning &ndash; formal, informal and plain incidental.</p>
+			<dl>
+				<dt><strong>Behaviourism<br />
+				</strong>
+				<img alt="rat" height="133" src="../../images/animals_rat200.jpg" width="200" /></dt>
+				<dd>This theory rests on the premise that learning is mostly to 
+				do with acquiring habits of thought and absorbing facts.&nbsp; 
+				It is a theory of conditioning that makes no claims to consider 
+				thoughts or feelings.<br />
+				It can be summarised (as it is elsewhere on this site) like 
+				this:<br />
+				<img alt="behaviourism" height="105" src="../../imagesgraphics/behaviourism310.png" width="310" /><br />
+				Very briefly:<br />
+				the process, which is known in the trade as<strong> operant 
+				conditioning</strong>, by the way, starts with a stimulus, say, a question from a&nbsp;teacher such<br />
+				<em>&nbsp;&nbsp;&nbsp; What is the formula for Ammonia?</em><br />
+				The stimulus can elicit a variety of responses, including<br />
+				<em>&nbsp;&nbsp;&nbsp; Huh?<br />
+&nbsp;&nbsp;&nbsp; NO</em><sub><em>2</em></sub><br />
+				and<br />
+				<em>&nbsp;&nbsp;&nbsp; NH</em><sub><em>4</em></sub><br />
+				but only the right one will be reinforced.&nbsp; So, if the 
+				student responds with the third response that will be reinforced 
+				by the teacher's enthusiastic approval whereas the first two responses will 
+				be negatively reinforced by disapproval or silence.<br />
+				Enough Stimulus &gt; Response &gt; Reinforcement cycles will see the 
+				habit instilled and the fact(s) acquired.</dd>
+				<dt><strong>Cognitivism<br />
+				</strong>
+				<img alt="think" height="133" src="../../images/man_thinking_silhouette200.jpg" width="200" /></dt>
+				<dd>Cognitivism is based on the theory that conscious thought 
+				and decision-making are essential to learning.&nbsp; In other 
+				words, learning is not a process of acquiring facts and habitual 
+				behaviours, it is a process of understanding.<br />
+				It is also not an unconscious process.<br />
+				A second thread to cognitivism is the assertion that people can 
+				integrate new knowledge into their current knowledge, hence 
+				building progressively greater understanding and ability.&nbsp; 
+				This is sometimes referred to as <strong>assimilation</strong>.<br />
+				In this case, learning might happen something like this:<br />
+				<em>&nbsp;&nbsp;&nbsp; What is the formula for Ammonia?</em><br />
+				<em>&nbsp;&nbsp;&nbsp; Huh?<br />
+&nbsp;&nbsp;&nbsp; Well, we know it contains Nitrogen<br />
+&nbsp;&nbsp;&nbsp; NO</em><sub><em>2</em></sub>?<br />
+				&nbsp;<em>&nbsp;&nbsp; and it contains Hydrogen, doesn't it?</em><br />
+				<em>&nbsp;&nbsp;&nbsp; NH<sub>2</sub>?<br />
+				&nbsp;&nbsp;&nbsp; Good.&nbsp;
+				Now we need to get the valency right.&nbsp; Think about how many 
+				bonds Nitrogen can form&nbsp;with Hydrogen<br />
+&nbsp;&nbsp;&nbsp; Ah, NH</em><sub><em>4</em></sub><em>!<br />
+&nbsp;&nbsp;&nbsp; Right.&nbsp; Well done.<br />
+				</em><strong>Within</strong> a cognitivist theory we find four 
+				major hypotheses concerning how cognition actually works: Active 
+				rule construction, Constructivism or Social interactionism, 
+				Connectionism and (rather less importantly) Connectivism.<br />
+				All these will be considered below under hypotheses because they 
+				are situated within a generally cognitive overarching theory.</dd>
+			</dl>
+			<table cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+				<img alt="2" height="69" src="../../../gfx/2blue.png" width="100" /></td>
+				<td class="auto-style31">
+				<h3>What language is</h3>
+				</td>
+			</tr>
+			</table>
+			
+			<p>Where you come from determines where you go with theories of what 
+			language is.&nbsp; Theories of language are of interest not only to 
+			linguists and language teachers, they are also the concern of 
+			archaeologists, anthropologists, evolutionary biologists and computer 
+			program theorists among others.<br />
+			There are two major strands of thought here and two subsidiary 
+			strands:</p>
+			<dl>
+				<dt><strong>Language as a system<br />
+				</strong>
+				<img alt="system" height="133" src="../../images/system_earth_moon200.jpg" width="200" /></dt>
+				<dd>If you view language as a system of lexemes, structures and 
+				grammar, which it is, of course, then you will emphasise what 
+				Chomsky refers to as competence (i.e., the language that in 
+				theory can be formed) over performance (what people actually say 
+				and write).<br />
+				In other words, you will proceed from a structuralist theory of 
+				language.<br />
+				In this realm, we will encounter grammarians, morphologists, 
+				phoneticians, lexicographers and a range of other specialists.&nbsp; 
+				A number of language guides on this site are also concerned with 
+				language, English in particular, as a system of interlocking 
+				structures.<br />
+				We can also view language slightly differently as a hierarchy of 
+				elements from phonemes up through morphemes, words, phrases and 
+				clauses to sentences (which is where that analysis stops).<br />
+				People who write huffy letters to newspapers complaining about 
+				bad grammar and poor lexical choice fall into this camp, too, as 
+				do language purists bemoaning what they see as the decline in 
+				standards and the baleful influences of other varieties of a 
+				language or other languages altogether.<br />
+				More serious and informed people will investigate how languages grow adapt, 
+				change and develop, of course.</dd>
+				<dt><strong>Language as a communicative mechanism<br />
+				</strong>
+				<img alt="talk" height="133" src="../../images/talk_tin_strings200.jpg" width="200" /></dt>
+				<dd>If you view language as a way of communicating 
+				ideas between people, which it is, of course, then you will 
+				emphasise performance over competence.&nbsp; You will be taking 
+				a communicative or ethnological approach.<br />
+				Most 
+				theories of communicative competence will state that formal 
+				linguistic competence (the ability to produce well-formed 
+				utterances) is <em>part</em> of the ability to use language to 
+				communicate.&nbsp; The focus is, however, on functional grammar: 
+				what the grammatical structures actually mean.<br />
+				The focus of analysis now shifts not to how something is said or 
+				written but to why, where and to whom it is directed.<br />
+				The focus here, too, is on notions as well as the functions of 
+				speech acts.<br />
+				Functional theories of grammar such as the one proposed by 
+				Halliday are in this realm too because of the emphasis which is 
+				placed on the Context of Situation: the Field or topic, the 
+				Tenor or relationships between users and the Mode or way the 
+				text is produced.&nbsp; For more on this, see the guide to 
+				genre, linked below.<br />
+				In this realm, we find another zoo of specialists: 
+				psychologists, anthropologists, educationalists, ethnographers, 
+				functionalists, semanticists, interactionists and so on.</dd>
+				<dt><strong>Language as a marker of identity<br />
+				</strong>
+				<img alt="who me" height="133" src="../../images/woman_who_me200.jpg" width="200" /></dt>
+				<dd>Here you will find political theorists and psychologists as 
+				well as a few ethnographers and anthropologists.&nbsp; The view 
+				here, which does not compete with the first two views is that 
+				the language we speak confirms in part who we are or think we 
+				are.&nbsp; People have long reported that speaking another 
+				language makes them feel differently about themselves.&nbsp; Bi- 
+				and multi-lingual individuals, too, may hold views compatible 
+				with one language when they speak it but which are absent when 
+				they speak their alternate language(s).</dd>
+				<dt><strong>Language as a cultural artefact<br />
+				</strong>
+				<img alt="culture" height="133" src="../../images/culture_easterisland200.jpg" width="200" /></dt>
+				<dd>Here there's another group of specialists in anthropology, 
+				ethnology, ethnography, typology and so on.&nbsp; The view here, 
+				again, not incompatible with the previous three views, is that 
+				language is a culturally formed system of meanings which determines 
+				how we think about the world and is determined by the needs of 
+				the society in which the language developed.&nbsp; This view is 
+				taken by those approaching language from an ethnographical 
+				tradition.<br />
+				English 
+				speakers, for example, may need only one word to describe a <em>yak</em> 
+				but people for whom the animal is central to their lives and who 
+				depend upon its products may have many words to describe the 
+				same animal at various stages of development, of various 
+				appearances and either sex.<br />
+				It doesn't stop with lexis, although that is where the system is 
+				most obvious, but can affect appropriacy and grammar as well as 
+				pronunciation.</dd>
+			</dl>
+			<table cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+				<img alt="link" height="133" src="../../images/link200.jpg" width="200" /></td>
+				<td class="auto-style31">
+				<h3>Linkage</h3>
+				</td>
+			</tr>
+			</table>
+			
+			<p>These views do not form either / or distinctions or necessarily 
+			compete in a mutually exclusive manner.&nbsp; It is not in doubt 
+			that language, any language, is a system of interlocking structures 
+			and it is similarly not arguable that it is also a means of 
+			communication.&nbsp; Those theories are simply two sides of the same 
+			coin and holders of both views will usually agree that language is a 
+			marker of identity and a culturally formed phenomenon.&nbsp; The 
+			emphasis they place on each aspect will, however, vary 
+			significantly.<br />
+			Grammarians, for example, no longer stop as describing and 
+			prescribing what is conventionally produced by native speakers but 
+			are concerned, too, to explore subtleties of meaning and 
+			communicative intention.&nbsp; Whereas once the distinction 
+			between, for example:<br />
+			<em>&nbsp;&nbsp;&nbsp; John broke the glass</em><br />
+			and<br />
+&nbsp;<em>&nbsp;&nbsp; The glass was broken by John</em><br />
+			would have been analysed purely as a grammatical form differences 
+			(which was, for example, Chomsky's approach), the focus these days 
+			is more likely to be on why and how the theme is shifted from <em>
+			John</em> to <em>the glass</em> and what communicative effect that 
+			has.<br />
+			There are two allied concepts:</p>
+			<ol>
+				<li><strong>Usage</strong>:<br />
+				which concerns the formal accuracy of grammar, lexis, morphology 
+				and phonology and concerns the <strong>significance</strong> of 
+				a piece of language.</li>
+				<li><strong>Use</strong>:<br />
+				which concerns the communicative function of a language items 
+				and focuses on its <strong>value</strong>.</li>
+			</ol>
+			<p>For example, if the response to:<br />
+&nbsp;<em>&nbsp;&nbsp; I've got a headache</em><br />
+			is<br />
+			<em>&nbsp;&nbsp;&nbsp; Try taking an aspirin</em><br />
+			and we analyse the dialogue, such as it is, in the form of 
+			Initiation (informative, expressing a complaint) and Response 
+			(preferred, making a suggestion) and the whole dialogue as an 
+			example of a complaint-suggestion adjacency pair, then we are concerned with use 
+			rather than usage.<br />
+			If, however, we analyse the language of the first utterance as:<br />
+			declarative mood statement with contraction of the main verb, 
+			British English insertion of the past participle of <em>get</em>, a 
+			determiner indefinite article and countable noun consisting of two 
+			free morphemes<br />
+			And we analyse the second utterance as:<br />
+			a clause in the imperative mood 
+			with a main verb followed by a verbal noun, an indefinite article 
+			determiner and a mass noun made countable (ellipting the partitive 
+			expression <em>tablet of</em>)<br />
+			then we are analysing usage.<br />
+			The distinction becomes rather clearer if the response is:<br />
+			<em>&nbsp;&nbsp;&nbsp; Avoid shooting a wine</em><br />
+			which, unless we are dealing with a bizarre situation, has 
+			significance (we know what it means) but no discernible 
+			communicative value although the analysis of usage is parallel 
+			(imperative + verbal noun + article + mass noun made countable with 
+			ellipsis of a partitive).<br />
+			There is, naturally enough, no barrier to using both types of 
+			analysis simultaneously and, in the second case, searching for a 
+			possible communicative function to do with <em>shoot a wine</em>.<br />
+			That is, in fact, what teachers do all the time when they focus on 
+			form, function and meaning in the same lesson.</p>
+			<hr />
+			<table cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+				<img alt="level" height="166" src="../../images/level_spirit_a250.jpg" width="250" /></td>
+				<td class="auto-style31">
+				<h2>Level 2: Hypotheses</h2>
+				</td>
+			</tr>
+			</table>
+			
+			<p>Main hypotheses occupy part of what Richards and Rogers refer to 
+			as Approaches as well as overlapping the category of Design 
+			(Anthony's Approach and Method).<br />
+			Under the consideration of cognitivist theory above, we referred to 
+			four hypotheses concerning how the process of active thought may be 
+			applied to learning.<br />
+			This is where life gets a bit more interesting.<br />
+			There are guides on this site, linked in the list of related guides 
+			at the end, to all of these so a brief description of these 
+			hypotheses is all that's needed here.<br />
+			This list is not meant to be exhaustive and you can probably add to 
+			it with a little research.&nbsp; It is also true that what in this 
+			analysis will be placed in level three (the next stage down the 
+			road) of the scheme will often be 
+			elevated to this category, especially by those who see the 
+			procedures as important.<br />
+			The first four areas concern cognitivist theories of language 
+			learning and some would elevate them to the major theories section, 
+			above.&nbsp; However, because they are all hypotheses which are 
+			cognitivist in nature, we will demote them here to this category.<br />
+			There are rather too many of these hypotheses and there is a guide 
+			on this site, linked below, which discusses the most important 
+			ones.&nbsp; That guide covers behaviourist theories, cognitivist theories 
+			and more.<br />
+			Essentially, the split here is between those, like Krashen and TPR 
+			enthusiasts who believe that second-language learning parallels 
+			first-language acquisition and those who see it as a distinct 
+			process.<br />
+			One hypothesis, the first one, is actually a behaviourist theory of 
+			learning and belongs as a subsection of that major theory of 
+			learning.<br />
+			Which hypothesis appeals will depend where one comes from at Level 1 
+			on this scheme.<br />
+			Behaviourists will have little time for active grammar construction 
+			theorists, relying more on imitation and repetition theory but 
+			cognitivists might conclude that language is learned through the 
+			application of a mix of active grammar construction, connectionism 
+			and social interaction.&nbsp; See below for what is meant by those 
+			terms.</p>
+			<dl>
+				<dt><strong>Imitation theory<br />
+				</strong>
+				<img alt="parrot" height="133" src="../../images/birds_parrot200.jpg" width="200" /></dt>
+				<dd>This hypothesis underlies a good deal of classroom 
+				procedures and many activities which involve modelling and 
+				drilling (spoken and written).&nbsp; The learner's starting 
+				point is:<br />
+				<em>&nbsp;&nbsp;&nbsp; I say what I hear; I write what I read</em><strong>.<br />
+				</strong>The idea is that certain 
+				skills will become automatic and unconscious with enough 
+				repetition of their use so, for example, people's pronunciation 
+				will improve if they are presented with a good model and, 
+				through repetition and correction, come to an adequate 
+				approximation in their own production.&nbsp; In writing, too, 
+				the presentation of a model sentence whose form and structure 
+				the learners are required to duplicate using different phrases 
+				and lexemes is a form of imitation theory in action but may have 
+				elements of cognitive approaches because the learners are 
+				expected to perceive the patterns they are copying and may even 
+				have to analyse them in some way.<br />
+				Behaviourists would add, naturally, that for imitation to work 
+				well, the correct behaviour needs to be reinforced so the 
+				operant conditioning can proceed.&nbsp; How reinforcement 
+				happens is a technique issue and can be a reward such as the 
+				teacher's approval or something less tangible such as the 
+				learner's own perceived success.</dd>
+				<dt><strong>Active construction of rules<br />
+				</strong>
+				<img alt="construct" height="133" src="../../images/woman_construction200.jpg" width="200" /></dt>
+				<dd>The hypothesis suggests that people form working rules or 
+				hypotheses based on the structure of the information they are 
+				exposed to.&nbsp; In other words:<br />
+&nbsp;&nbsp;&nbsp; <em>I make hypotheses about the language I am learning and 
+				refine them, discard them or make new ones as I encounter new 
+				data</em>.<br />
+				So, to continue the example above that we gave under cognitivism, a learner 
+				may have noted that hydrogen forms two bonds with oxygen and 
+				hence we arrive at the formula for water: H<sub>2</sub>O.&nbsp; 
+				Applied indiscriminately, this little fact will only work for 
+				elements of a certain valency so, later, the learner will need 
+				to refine the theory to account for elements of different 
+				valencies such as nitrogen and then be able to arrive at a 
+				correct formula based on a better theory.&nbsp; What has 
+				happened here is that the learner has used the data to refine a 
+				rule so that it applies more widely.<br />
+				In terms of language learning this means that learners are also 
+				forming hypotheses based on the language they hear and 
+				read.<br />
+				For example, having noted that we form a plural in English by 
+				the addition of <em>-s</em> or -<em>es</em> to the base form, many learners at 
+				early stages will produce <em>womans</em> before noting the 
+				restriction to the rule and refining their output accordingly.<br />
+				In other words a working hypothesis will be applied indiscriminately and then later amended to 
+			account for exceptions.<br />
+				This will also explain how the past of <em>go</em> may be 
+				correctly learned as <em>went</em> and then, once a learner has 
+				acquired a rule-based approach to forming past tenses, be 
+				changed to <em>goed</em> before the exceptions are noted and <em>
+				went</em> is once more used.<br />
+				This U-shaped learning curve (right-wrong-right) has been 
+				frequently observed as children acquire their first language.</dd>
+				<dt><strong>Constructivism or Social Interactionist theory<br />
+				</strong>
+				<img alt="talk" height="133" src="../../images/talk_silhouette200.jpg" width="200" /></dt>
+				<dd>Constructivism or Social interactionism stresses social influences and consciousness.&nbsp; 
+				Learning is, in other words, socially constructed through 
+				discussion and interaction with others.&nbsp; The learner begins 
+				from the premise that:<br />
+&nbsp;&nbsp;&nbsp; <em>I use the rich data provided by interaction with others 
+				to learn to use language in a socially appropriate manner</em>.<br />
+				In terms of language learning, we use the language we have 
+				mastered (at least partially) and note the responses and 
+				reactions of others, refining or amending our own production to 
+				match what others do (imitation, in other words) or to make what 
+				we say and write more effective on the basis of the social 
+				feedback we get.<br />
+				We can use our own or others' experiences to enhance the process 
+				of learning and thereby gain greater knowledge and insight into 
+				the world around us.<br />
+				Those wedded to a fully communicative theory of language will 
+				emphasise social interaction theories over any others and may 
+				attempt to manipulate the classroom setting to encourage this 
+				form of learning (Dogme approaches spring to mind).</dd>
+				<dt><strong>Connectionism<br />
+				</strong>
+				<img alt="link" height="133" src="../../images/link200.jpg" width="200" /></dt>
+				<dd>Connectionism is a theory which focuses on humans' ability 
+				to see patterns in data.&nbsp; The learner's starting point is:<br />
+&nbsp;&nbsp;&nbsp; <em>My brain makes new neural networks responding to the 
+				statistical likelihood of something being correct.</em><br />
+			It has been suggested that humans make neural connections in 
+			the brain based on the <strong>frequency</strong> of what they hear rather than 
+			making rules based on the <strong>structure</strong> of what they hear.&nbsp; 
+				In this way it differs from the Active construction of rules 
+				hypothesis because, instead of forming and applying a rule, the 
+				learner will estimate the chances of a form or functional 
+				realisation being correct on the basis of statistical 
+				likelihood.<br />
+				It explains, for example, why many people will suggest that the 
+				past tense of the nonsense verb <em>fring</em> would be <em>
+				frang</em> rather than <em>fringed</em> because they are not 
+				drawing on a rule they have internalised but are operating 
+				statistically on the likelihood of something being parallel to 
+				another form (quite possibly <em>ring</em> or <em>sing</em>, in this 
+				case) which they already know.<br />
+				It also explains why people suggest that the plural of <em>
+				frouse</em> will be <em>frice</em> not <em>frouses</em>.</dd>
+				<dt><strong>Connectivism<br />
+				</strong>
+				<img alt="connect" height="133" src="../../images/connectionist200.jpg" width="200" /></dt>
+				<dd>Connectivism is somewhat more recent and is not, yet, a 
+				full-blown hypothesis concerning learning, let alone a theory.<br />
+				It suggests, in essence, that it is partially what you are doing 
+				now, using the internet and other digital resources to learn.<br />
+				The theory asserts that new technologies have created new 
+				opportunities so people can now share, research and exchange 
+				views in ways that were not possible before.&nbsp; It is, in 
+				these terms, a qualitative rather than simply quantitative 
+				change to the way learning happens.<br />
+				Technologies, including websites such as this one, online 
+				discussion forums, wikis and social networks, may all be 
+				involved.<br />
+				MOOCs (Massive Open Online Courses) are a good examples of 
+				connectivist theory in action.<br />
+				You will not be the first to point out that connectivism and 
+				constructivism are more or less the same thing in different 
+				settings insofar as they both require collaborative action on 
+				the part of the learners.<br />
+				Connectivism should not be confused with connectionist theory.</dd>
+				<dt><strong>Motivation</strong><br />
+				<img alt="motive" height="133" src="../../images/animals_donkey_carrot200.jpg" width="200" /></dt>
+				<dd>There is a range of theories of motivation as a short web 
+				search will reveal.&nbsp; For the purposes of language teaching, 
+				two have been preferred.<br />
+				Gardner and Lambert (1972) proposed four sorts of motivation 
+				concerning language learning:<ul class="smallgreybullet">
+					<li>Instrumental motivation: learning a language to gain 
+					another goal</li>
+					<li>Integrative motivation: learning a language to integrate 
+					into a culture</li>
+					<li>Intrinsic motivation: learning a language for the fun of 
+					it and personal satisfaction</li>
+					<li>Extrinsic motivation: learning a language under external 
+					duress in hope of a reward or under the threat of a sanction</li>
+				</ul>
+				It is not suggested that these are mutually exclusive 
+				categories.&nbsp; People may be motivated by a wide range of 
+				factors.<br />
+				Vroom (1964) proposes three factors which together are a measure 
+				of motivation (this is called Expectancy Theory):<ul class="smallgreybullet">
+					<li>Valence: the value attached to an outcome: how strong is 
+					the learner's need to acquire the knowledge?</li>
+					<li>Expectancy: the individual's perceived ability to 
+					achieve the goals set: how strongly do the learners rate 
+					their own ability?</li>
+					<li>Instrumentality: the likelihood that the effort will be 
+					rewarded with a successful outcome: how strongly do the 
+					learners feel that what they are asked to do will be 
+					successful and effective?</li>
+				</ul>
+				Both of these hypotheses, and many more ideas about what motivation is, how 
+				it can be measured and how it can be manipulated are all simply 
+				hypotheses rather than theories but they will relate (if they are 
+				even partially correct) to whatever overarching theory of language and theory 
+				of learning one adheres to.</dd>
+				<dt><strong>Acquisition </strong> <em><strong>vs</strong></em><strong>. learning and Input + 1</strong><br />
+				<img alt="learn" height="133" src="../../images/learners_children200.jpg" width="200" /></dt>
+				<dd>Both of these hypotheses are linked to the name of Krashen.</dd>
+				<dd>Krashen distinguishes learning, which is a formal, classroom-based 
+				endeavour focused on form and accuracy, with acquisition, which 
+				is an 
+				informal, unconscious process similar to the way in which 
+				children acquire their first language(s).<br />
+				Krashen also posited the idea that what is required for 
+				acquisition (or learning) to take place is that the input a 
+				learner receives for optimum effect should be a) comprehensible 
+				and b) just above the level of the learner.<br />
+				For more, see the link to the guide at the end.<br />
+				If either of these hypotheses is correct, then they are 
+				particularly relevant to those whose adherence is to a theory of 
+				learning which is constructivist, emphasising the social nature 
+				of language acquisition / learning.&nbsp; The hypotheses will not be 
+				relevant to those approaching from a purely cognitive or 
+				behaviourist position.</dd>
+				<dt><strong>Interlanguage<br />
+				</strong>
+				<img alt="broken" height="133" src="../../images/broken_cup200.jpg" width="200" /></dt>
+				<dd>You will also find this concept referred to as a learner's 
+				approximative system.<br />
+			The analysis of learners' errors starts with seminal work by Pit Corder (1981) who set out to investigate how the errors that learners make 
+			reflect their internal mental processes.<br />
+				The key concept is interlanguage, concerning
+				where the learner's current knowledge lies somewhere on a 
+				continuum from knowing nothing about the target language to full 
+				mastery.<br />
+			What studies showed was that although <strong>some</strong> errors 
+			were the result of applying first-language rules to the target 
+			language (which would indicate the transfer of language habits), 
+			some errors indicated that learners were 
+			<span class="style_underline">creatively</span> constructing 
+			rules and hypotheses to explain the data to which they were exposed 
+				(which would indicate an active construction of grammar approach).<br />
+				The conclusion is that we should address the positive 
+			role of error and ensure an adequate supply of data for the learners' cognitive processes to work 
+			on.<br />
+				The concept of interlanguage is relevant for those 
+				who take a cognitive view of language learning but anathema to 
+				those whose view a behaviourist or audio-lingual view and 
+				are constrained thereby to avoid error at all costs.&nbsp; It is 
+				particularly relevant to Active construction of grammar and 
+				Connectionist hypotheses because Pit Corder's data seem to back 
+				up the idea that some errors are caused by overgeneralising a 
+				rule which needs refining and limiting or by assuming that one 
+				language structure will be analogous to one the learner already 
+				knows.<br />
+				For more, see the links below.</dd>
+				<dt><strong>Zone of Proximal Development</strong><br />
+				<img alt="zone" height="133" src="../../images/zone200.jpg" width="200" /></dt>
+				<dd>This is an important hypothesis but one not tied to 
+				any single overarching theory of learning or language.&nbsp; 
+				The hypothesis is that learning can only be effective when the 
+				learner is operating in a narrow band of challenge in which 
+				tasks are not too easy (and so no help is needed and no progress 
+				is made) or too difficult (where too much help is required to 
+				make any progress at all and the learner is overwhelmed by too 
+				much data).&nbsp; Between these zones, lies the one concerned 
+				with <em>proximal</em> development, i.e., almost mastering the 
+				data but needing a little help from someone more knowledgeable 
+				(the teacher, a peer or the materials).<br />
+				Audio-lingual approaches, based on a behaviourist theory of 
+				learning will ensure this by a strict structural syllabus in which 
+				incremental small steps are made as the language resources of 
+				the learners grow.<br />
+				Cognitivists of whichever stripe will try to ensure this by 
+				leading learners to refine hypotheses based on small but finely 
+				targeted amounts of 
+				new data and so on.</dd>
+			</dl>
+				
+			<p>All these important hypotheses are 
+			related to which overall theory of learning and language one adopts.&nbsp; 
+			That's why, in this scheme, they are described as level 2 
+			hypotheses.</p>
+			<hr />
+			<table cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+				<img alt="story" height="166" src="../../images/woman_red_riding250.jpg" width="250" /></td>
+				<td class="auto-style31">
+				<h2>The story so far</h2>
+				</td>
+			</tr>
+			</table>
+			
+			<p>We can summarise the story so far like this but we should bear in 
+			mind that any diagram of this sort will disguise cross-overs between 
+			theories and overlapping concepts.<br />
+			It is the case, for example, that one can take a structuralist view 
+			of language as a hierarchy of elements but still employ a 
+			cognitivist rather than behaviourist approach.&nbsp; It is also the 
+			case that one may assume that learning is based on social 
+			interactions but still use a good deal of repetition and drilling in 
+			an effort to make language form automatic and easier to deploy in 
+			interactions.&nbsp; Many proponents of a communicative view of 
+			language will still spend a good deal of time focusing on grammar in 
+			the context of its functional value.<br />
+			Nothing is forbidden but some mixtures will be internally 
+			contradictory.</p>
+			<p>
+			<img alt="so far" height="352" src="../../imagesgraphics/sla_theories_2.png" width="620" /></p>
+			<p>If you would like to try two little matching tests concerning these 
+			theories and hypotheses, <a href="refined_level_1hp1.htm">click here</a>.</p>
+			<a name="level3"></a>
+			<hr />
+			<table cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+				<img alt="bricklayer" height="166" src="../../images/man_bricklayer250.jpg" width="250" /></td>
+				<td class="auto-style31">
+				<h2>Level 3: Procedures</h2>
+				</td>
+			</tr>
+			</table>
+			
+			<p>There is some overlap here between Richards and Rogers 
+			identification of Design and Procedure (and Anthony's Method and 
+			Technique).&nbsp; However, this category 
+			lies, in this scheme, above the level of technique but below the 
+			level of the hypotheses about learning and language we have just 
+			encountered.<br />
+			There are five of these major procedures to consider (although more 
+			could be added depending on your personal preferences for raising 
+			techniques above their station).</p>
+			<dl>
+				<dt><strong>Noticing</strong><br />
+				<img alt="notice" height="133" src="../../images/woman_doubtful200.jpg" width="200" /></dt>
+				<dd>There is a guide to noticing on this site, linked below.&nbsp;
+				Briefly:<br />
+				Noticing is an individual cognitive process (so those coming 
+				from a social constructivist, or behaviourist position will have 
+				less use for the idea).&nbsp; It is also a procedure which 
+				depends on <em>active</em> discovery of language (so acquisition 
+				theorists will not have much time for it).<br />
+				The essence is that learners need to have their attention drawn 
+				to specific features of the language so they can notice either 
+				how the language works or how their own productions differs 
+				from, and is probably inferior to, a native-speaker model (or 
+				near offer).&nbsp; In other words, noticing the language and 
+				noticing the gap.<br />
+				Only when features have been noticed, the idea is, will the 
+				learner be able to apply a cognitive process of constructing or 
+				amending mental pictures of how the target language works so 
+				noticing procedures fit well with cognitivist theories such as 
+				active construction of grammar but less well with social 
+				interaction theories which focus more on communicative 
+				appropriacy.<br />
+				A minor facet of noticing procedures is problematising an issue.&nbsp; 
+				Part of noticing, it can be argued, is noticing that something 
+				is worth noticing.&nbsp; Raising an issue and suggesting that it 
+				may be a problem for the learners is, therefore, a way of 
+				leading the learners to notice features they previously were 
+				unaware of.</dd>
+				<dt><strong>Inferring</strong><br />
+				<img alt="holmes" height="133" src="../../images/deductive_holmes200.jpg" width="200" /></dt>
+				<dd>This is about as far as one can get from a behaviourist 
+				approach in which inferring (or guessing) is not allowable 
+				because it will necessarily lead to error.<br />
+				The idea of inferring meaning or structure from the data that 
+				are presented does, however, sit well with a cognitivist view of 
+				learning and a communicative (use-based) view of language.&nbsp; 
+				The former because it depends on a mental process of deduction 
+				and inspired guesswork, the latter because it depends on the 
+				assumption that what is being said or written has some 
+				communicative message to relay.&nbsp; Figuring out what that is 
+				is a combination of cognitive processing with a communicative 
+				task.</dd>
+				<dt><strong>Scaffolding</strong><br />
+				<img alt="scaffold" height="133" src="../../images/scaffolding200.jpg" width="200" /></dt>
+				<dd>This is more than helping or assisting as the guide to it 
+				tries to make clear.&nbsp; It is inextricably linked to the idea 
+				of the Zone of Proximal Development because it is here that the 
+				teacher can engage the learner(s) in recognising the usefulness 
+				of targets, maintaining interest in their acquisition and 
+				supplying just enough help, but no more, for them to be able to 
+				achieve a task.<br />
+				Motivation is a key idea here, too, because scaffolding has to 
+				be more helpful than supplying answers and more useful and 
+				acceptable than simply working alone to puzzle something out.<br />
+				There is a guide, linked below, to scaffolding and the ZPD.</dd>
+				<dt><strong>Input and Intake</strong><br />
+				<img alt="doors" height="133" src="../../images/two_doors_a200.jpg" width="200" /></dt>
+				<dd>Cognitivists will have a lot to say about the ways in which 
+				input is converted to intake (and, eventually, output) through a 
+				process of engaging attention, lodging the item in short-term 
+				memory and then working on it in order that it can find its 
+				place in the long-term memory store.<br />
+				It is also not an idea that behaviourist theories will have much 
+				trouble with because underlying an audio-lingual approach is a 
+				process of drawing the learners' attention to a language item 
+				and, through a combination of imitation and repetition 
+				(rehearsal and retrieval is another ways of saying that) lodging 
+				the data in the learners' long-term memories, ready to be 
+				retrieved and produced as the occasion arises for it.<br />
+				Those who adhere to the distinction between learning and 
+				acquisition may also feel that an input-intake procedure is 
+				efficacious because acquisition occurs when the learner is 
+				focused on meaning rather than form and attending to what is 
+				heard or seen in some way.</dd>
+				<dt><strong>Structuring lessons</strong><br />
+				<img alt="structure" height="133" src="../../images/structure_staircase200.jpg" width="200" /></dt>
+				<dd>How lessons are structured is not, or at least should not 
+				be, a random exercise intended only to inject variety into a 
+				teaching programme.<br />
+				For example, a Test–Teach–Test (TTT) approach may be just the 
+				ticket for a class of learners who need to notice the gaps in their own 
+				ability and be able to polish and refine their production in the 
+				second test phase.<br />
+				A task-based (TBL) approach to a lesson will fit well with a 
+				constructivist view of language learning because it usually 
+				demands a good deal of collaboration and interaction.&nbsp; Such 
+				a lesson may be less useful, from a cognitivist point of view, 
+				because the accomplishment of the task is the motivating factor 
+				and the vehicle for learning which leaves too little space, 
+				arguably, for the learners' cognitive processes to function at 
+				the optimum level where analysis of language and skills is at a 
+				premium.<br />
+				A behaviourist would not be in favour of either a Task-Based or 
+				a Test–Teach–Test approach because the fundamental assumption is 
+				that the learners need to see the targets, repeat them and then 
+				produce them in a controlled manner so there is little or no 
+				point in asking people to use language they do not fully grasp 
+				because error is inevitable.&nbsp; For them a 
+				Present–Practise–Produce (PPP) structure is more likely to seem 
+				the way forward.<br />
+				One the other hand, a PPP approach would not sit well with 
+				theories of social constructivist learning of language because there is 
+				little that can be called social construction in the 
+				presentation phase of such a lesson and by the time it comes to 
+				the production phase, it is too late.<br />
+				There's a little more on how lessons may be constructed in the 
+				guide linked below.</dd>
+				<dt><strong>Inductive and deductive approaches to tasks<br />
+				</strong>
+				<img alt="baker" height="133" src="../../images/baker_street200.jpg" width="200" /></dt>
+				<dd>This distinction could well be regarded as a hypothesis and 
+				categorised there but, because the processes are easy enough to 
+				demonstrate and apply, we'll place the approaches in the 
+				category of procedure.&nbsp; (The words <em>process</em> and <em>
+				procedure</em> share a Latin root in <em>processus, going 
+				forward</em> although the latter comes to us from French not 
+				Latin directly.)<br />
+				Briefly, inductive processing of data involves figuring out a 
+				rule from examples of it is action so, for example, having been 
+				shown:<br />
+				<em>&nbsp;&nbsp;&nbsp; 1 fish, 2 fishes, 1 apple, 2 apples, 1 
+				car, 2 cars, 1 match, a box of matches, 1 cigarette, 20 
+				cigarettes, 1 speaker, 3 speakers</em><br />
+				and so on, a learner may arrive at a rule for forming plurals 
+				with words ending in -<em>e</em>, those ending in consonants and those 
+				ending in certain consonant sounds such as /ʃ/ and /tʃ/.<br />
+				A deductive approach involves being told the rule or having figured out 
+				the rule inductively, a learner can then proceed to apply it to 
+				a more examples, such as:<br />
+				<em>&nbsp;&nbsp;&nbsp; clash, chair, bunch, table</em><br />
+				etc. and arrive at the correct forms.<br />
+				This could be extended, of course, to giving the learner 
+				examples of how the words are pronounced (ending in /z/ or /ɪz/) 
+				and getting them firstly to induce the rule and then apply it, 
+				deductively, to further examples.<br />
+				In order for inductive learning to happen, many insist on 
+				combining the procedure with some kind of noticing task, 
+				highlighting the feature that the learner should use to form the 
+				rule.<br />
+				Much nonsense is spoken about taking <strong>either</strong> an 
+				inductive <strong>or</strong> a deductive approach to learning.&nbsp; 
+				This is not an either-or distinction.&nbsp; Even if one starts 
+				with a purely inductive approach in the classroom, the aim has 
+				to be for the learners to hypothesise a rule (preferably the 
+				right one) and then apply it to further examples of the target 
+				language.&nbsp; The second procedure is, of course, purely 
+				deductive.&nbsp; There is little point in putting learners to 
+				the trouble of constructing a rule from exemplification if they 
+				are not then encouraged to apply it.<br />
+				On the other hand, starting with a deductive approach and 
+				supplying a rule from the outset nearly always results in the 
+				need to refine the rule later to take account of more complex 
+				forms.&nbsp; Even if we knew what they are, it would not be 
+				possible to supply all the rules for using, say, verb tenses in 
+				English so any rule which is presented to learners has to be no 
+				more than an approximation or a working hypothesis, if you 
+				prefer.<br />
+				The situation looks like this:<br />
+				<img alt="rules" height="349" src="../../imagesgraphics/rules.png" width="465" /><br />
+				and nobody knows what's in the outer ring, no matter how 
+				confident and sure they may sound.</dd>
+			</dl>
+			<p>If you would like to try a little matching 
+				test concerning these procedures,
+			<a href="refined_level_3hp1.htm">click here</a>.</p>
+			<hr />
+			<table cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+				<img alt="technique" height="166" src="../../images/man_break_bricks250.jpg" width="250" /></td>
+				<td class="auto-style31">
+				<h2>Level 4: Techniques</h2>
+				</td>
+			</tr>
+			</table>
+			
+			<p>This area and the next are parts of what Richards and Rogers call 
+			Procedure and Anthony refers to as Techniques but this scheme recognises two levels of Technique: 
+			multi-purpose techniques and classroom-based solutions to specific 
+			issues or language or skills.<br />
+			Whether you place certain techniques in this category or the next is 
+			slightly arbitrary because it depends to an extent on what you are 
+			using the techniques for and how they are linked to your view of 
+			levels 1 to 3 above.<br />
+			However, here's a possible list of Level 4 techniques which can be 
+			applied to a range of issues and lodged within grander and more 
+			overarching theories, hypotheses and procedures.</p>
+			<dl>
+				<dt><strong>Dictation</strong><br />
+				<img alt="dictation" height="133" src="../../images/write_dictation200.jpg" width="200" /></dt>
+				<dd>Most dictation techniques are most closely aligned to some kind 
+				of cognitive approach because writing down what you hear (as you 
+				hear it traditionally or later by reconstructing it in various Dictogloss techniques) 
+				involves the application of deduction and inference, both 
+				high-level cognitive processes.<br />
+				Such a technique needs to be adapted to fit with a 
+				constructivist theory to allow collaboration and texts need to 
+				be carefully designed if they are to fall into the optimum ZPD 
+				and contribute to incremental progress in the learners' 
+				interlanguage.<br />
+				Even in an audio-lingual, behaviourist approach such techniques 
+				may be useful providing reinforcement through successful 
+				completion if a simple enough text is used.<br />
+				Social interaction theorists will have little time for this 
+				technique unless it is adapted to be a mutual support task because it focuses on form rather than appropriate 
+				communication strategies.</dd>
+				<dt><strong>Elicitation, questioning and IRF (Initiation, Response and 
+				Follow-up) sequences</strong><br />
+				<img alt="listen" height="133" src="../../images/teaching_elicit200.jpg" width="200" /></dt>
+				<dd>These sorts of techniques usually involve leading a learner to the right answer by careful 
+				questioning and listening hard to the responses.<br />
+				Anathematic to behaviourist approaches for the most part, 
+				because it involves responses to learner error, such a 
+				technique fits well with ideas of scaffolding and noticing as 
+				well as the application of a cognitive approach.<br />
+				IRF sequences are meat and drink to social interaction theorists 
+				because they focus on appropriate ways of providing initiations, 
+				acceptable response forms and ways of maintaining social 
+				interactions.</dd>
+				<dt><strong>Error</strong><br />
+				<img alt="error" height="133" src="../../images/error_nail200.jpg" width="200" /></dt>
+				<dd>It is noted elsewhere on this site that one's approach to 
+				handling error depends largely on one's understanding of the 
+				learning process.&nbsp; The existence of error is a sign of 
+				failure in audio-lingual approaches but an opportunity for 
+				scaffolding and hypothesis building in a cognitivist approach.<br />
+				In the first case, error will either be ignored, disparaged or 
+				briefly corrected (and never emphasised or used as a focus 
+				point) but in the second errors will be expected and used as a 
+				valuable source of noticing, problematising and an opportunity 
+				for the refinement and upgrading of the learners' output.</dd>
+				<dt><strong>Communicative </strong> <em><strong>vs</strong></em><strong>. form-focused activities</strong><br />
+				<img alt="talk" height="133" src="../../images/talk_roleplay_graphic200.jpg" width="200" /></dt>
+				<dd>How these are designed and whether they are used will largely 
+				depend on whether the emphasis lies on a structuralist approach 
+				to language or an interactionist / communicative view.&nbsp; The 
+				latter will focus (or should) on use and the former on usage.<br />
+				They can be combined in a lesson but mixing them up in a single 
+				activity is perilous because it is extremely cognitively 
+				challenging to focus simultaneously on successful message 
+				transmission and the form of the message..</dd>
+				<dt><strong>Skills</strong><br />
+				<img alt="skill" height="133" src="../../images/man_skill_ball200.jpg" width="200" /></dt>
+				<dd>If one takes a robustly structural view of language, skills work 
+				will not represent a large proportion of lessons.&nbsp; However, 
+				the combination of a functional and a structural view of 
+				language, as in a genre approach, may pay dividends in getting 
+				the best of both worlds.&nbsp; It involves, therefore, a 
+				systematic approach to skills work rather than confining skills 
+				and systems to their own sealed compartments.&nbsp; And a 
+				systematic approach to skills work implies teaching the skills, 
+				not merely providing an opportunity to practise the skills.<br />
+				Much skills work is premised on an unproven (and often unstated) 
+				hypothesis that language learners, being foreigners, poor 
+				things, are unable to apply reading, listening, speaking and 
+				writing skills that they routinely use in their first languages 
+				to working with a foreign or additional language.</dd>
+				<dt><strong>Monitoring</strong><br />
+				<img alt="monitor" height="133" src="../../images/monitoring200.jpg" width="200" /></dt>
+				<dd>As the guide to monitoring states, <span class="style_black"><em>People are often told to monitor but 
+				rarely told how and when</em></span>.&nbsp; What a teacher is doing when 
+				monitoring will depend a good deal on what that teacher 
+				understands the learning process to be.&nbsp; If the concern is 
+				to identify and immediately correct language errors before they 
+				become embedded, the approach is audio-lingual.&nbsp; If the 
+				monitoring is concerned to scaffold learners' efforts and help 
+				them arrive at better and more refined hypotheses about language 
+				and skills use, then the concern is more with cognitive learning 
+				theories.</dd>
+				<dt><strong>Feedback</strong><br />
+				<img alt="feedback" height="133" src="../../images/feedback_board200.jpg" width="200" /></dt>
+				<dd>How feedback is given and what is elicited from the learners 
+				will betray a good deal about where the teaching is coming from.&nbsp; 
+				The focus may be on form, on task achievement, on gauging 
+				interlanguage level, on communicative success or on how 
+				well collaborative procedures have functioned and all of these will 
+				reflect some of the major theories and hypotheses covered in 
+				this summary.</dd>
+			</dl>
+			<p>If you would like to try a little matching 
+				test concerning these techniques,
+			<a href="refined_level_4hp1.htm">click here</a>.</p>
+			<hr />
+			<table cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+				<img alt="solve" height="166" src="../../images/man_thinking250.jpg" width="250" /></td>
+				<td class="auto-style31">
+				<h2>Level 5: Solutions</h2>
+				</td>
+			</tr>
+			</table>
+			
+			<p>This is what Richards and Rogers mean when they identify as 
+			Procedure what we see happening in the classroom when an 
+			approach and design are implemented.</p>
+			<p>We reserve this area for classroom-specific solutions to 
+			issues that arise.<br />
+			These solutions are not, however, selected at random because 
+			overarching theories and hypotheses to which the teacher adheres (or 
+			which seem reasonable) will affect which solutions are deemed 
+			appropriate.<br />
+			For example, someone coming from a cognitivist view of learning may 
+			well use task design in a way that forces learners to operate 
+			inductively and one whose overriding interest is in meaning before 
+			form will deploy considerably more concept checking than someone who 
+			is more interested in form than meaning.<br />
+			All of these and more are affected by where the teacher is coming 
+			from and how he or she sees language and language learning:</p>
+			<table class="auto-style59" cellpadding="3" cellspacing="0" style="width: 90%">
+				<tr>
+					<td valign="top" style="width: 50%">
+			<ul class="redbullet">
+				<li>Planning: for what targets?<ul class="greybullet">
+					<li>systems (taking a structuralist approach)</li>
+					<li>communicative 
+				effectiveness (taking a communicative approach)</li>
+					<li>task-based skills work&nbsp; (taking an interactionist 
+					and communicative approach)</li>
+					<li>lesson structures (matching procedure to hypotheses 
+					about learning)<br />
+					etc.</li>
+				</ul>
+				</li>
+				<li>Grouping learners: for what reasons?<ul class="greybullet">
+					<li>communicative 
+				practice (taking a communicative and interactionist approach)</li>
+					<li>collaboration and social construction of language&nbsp; 
+					(taking an interactionist approach)</li>
+					<li>swapping ideas and peer teaching in the ZPD (taking an 
+					interactionist approach and combining it with a theory of 
+					cognition)<br />
+					etc.</li>
+				</ul>
+				</li>
+				<li>Nomination: for what purpose?<ul class="greybullet">
+					<li>to check formal 
+				knowledge (structuralism)</li>
+					<li>to integrate learners socially (interactionism)</li>
+					<li>to check meaning (communicative pressure)<br />
+					etc.</li>
+				</ul>
+				</li>
+				<li>Management: to what end?<ul class="greybullet">
+					<li>to keep people centred in the 
+				ZPD (cognitivism)</li>
+					<li>to engage and motivate (social interactionism)</li>
+					<li>to drill and repeat (audiolingualism)<br />
+					etc.</li>
+				</ul>
+				</li>
+				<li>Comparative language work: to what end?<ul class="greybullet">
+					<li>to notice 
+				differences (noticing and cognition)</li>
+					<li>to compare structures (interlingual approaches)</li>
+					<li>to decode and encode meaning (input and intake 
+					hypotheses)<br />
+					etc.</li>
+				</ul>
+				</li>
+			</ul>
+					</td>
+					<td valign="top" style="width: 50%">
+			<ul class="redbullet">
+				<li>Practice tasks: to practise what?<ul class="greybullet">
+					<li>systems (structuralism)</li>
+					<li>skills (genre theory and task-based approaches)</li>
+					<li>communicative strategies (interactionism)</li>
+					<li>inferring (cognition and problematisation)</li>
+					<li>noticing (cognitivism)</li>
+					<li>repeating (audiolingualism)</li>
+					<li>rehearsing (input and intake hypotheses)<br />
+					etc.</li>
+				</ul>
+				</li>
+				<li>Instructions: to do what?<ul class="greybullet">
+					<li>notice (cognitivism)</li>
+					<li>repeat (audiolingualism)</li>
+					<li>imitate (imitation theory)</li>
+					<li>manipulate (structuralism)</li>
+					<li>explain (interactionism)</li>
+					<li>extend (ZPD hypothesis)</li>
+					<li>rephrase (structuralism)<br />
+					etc.</li>
+				</ul>
+				</li>
+				<li>Concept checks: of what?<ul class="greybullet">
+					<li>forms (structuralism)</li>
+					<li>meanings (communicative theories)</li>
+					<li>speaker 
+				intentions (social anthropology)</li>
+					<li>subskill application (cognitivism)<br />
+					etc.</li>
+				</ul>
+				</li>
+			</ul>
+					</td>
+				</tr>
+			</table>
+			<hr />
+			<table cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+				<img alt="summary" height="166" src="../../images/reading_summary250.jpg" width="250" /></td>
+				<td class="auto-style31">
+				<h2>The Summary</h2>
+				</td>
+			</tr>
+			</table>
+			
+			<p>Here is all of the above in a handy cut-out-and-keep form:</p>
+			<p>
+			<img alt="summary" height="290" src="../../imagesgraphics/methodology_refined.png" width="620" /></p>
+			<hr />
+			<table cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+				<img alt="morals" height="166" src="../../images/three_masked250.jpg" width="250" /></td>
+				<td class="auto-style31">
+				<h2>The Morals</h2>
+				</td>
+			</tr>
+			</table>
+			
+			<ol>
+				<li>There should not be randomness.</li>
+				<li>Hypotheses should be evaluated against your own experience 
+				and your own view of how languages are learned and what they 
+				are, not quietly accepted.</li>
+				<li>Procedures should be consistently based on theories and hypotheses, not 
+				chosen at random because they just might 'work'.</li>
+				<li>Techniques should be chosen that fit the targets and comply 
+				with the accepted hypotheses (whichever you choose, after some 
+				critical thought, to accept).</li>
+				<li>Classroom solutions should bear in mind how you think people 
+				learn and what you think language is.</li>
+			</ol>
+			<p>Much more is available by following the links below.</p>
+			<hr /><br />
+			<table id="istrainingnav0" cellpadding="0" class="tableblueborder" cellspacing="0">
+				<tr>
+					<td class="auto-style50">
+			<a href="../background/history_development.html">the history 
+			and development of ELT</a></td>
+					<td class="auto-style34">which includes a review of some 
+					Level 1 ideas 
+					and a good deal more</td>
+				</tr>
+				<tr>
+					<td class="auto-style50">
+					<a href="../background/fla_sla.html">
+					first- and second-language acquisition</a></td>
+					<td class="auto-style34">which considers differences and 
+					similarities</td>
+				</tr>
+				<tr>
+					<td class="auto-style50">
+					<a href="post-method.html">post-method methodology</a></td>
+					<td class="auto-style34">for a consideration of why and how 
+					some have rejected the concept of methodology altogether</td>
+				</tr>
+				<tr>
+					<td class="auto-style50">
+					<a href="../../common/language_thought.html">language, 
+					thought and culture</a></td>
+					<td class="auto-style34">for some consideration of how 
+					methodology may be influenced by theories concerning the 
+					connection between thought, language and culture</td>
+				</tr>
+				<tr>
+					<td class="auto-style50">
+					<a href="../background/l2_acquisition.html">
+					second-language acquisition theories</a></td>
+					<td class="auto-style34">which looks at how second languages 
+					are learned or acquired</td>
+				</tr>
+				<tr>
+					<td class="auto-style50">
+					<a href="../background/motivation.html">motivation</a></td>
+					<td class="auto-style34">for the guide to a second-level 
+					hypothesis or three</td>
+				</tr>
+				<tr>
+					<td class="auto-style50">
+					<a href="krashen_natural_approach.html">Krashen and the 
+					natural approach</a></td>
+					<td class="auto-style34">for the guide including Input + 1 
+					and the learning / acquisition distinction</td>
+				</tr>
+				<tr>
+					<td class="auto-style50">
+					<a href="../background/l2_acquisition.html#interlanguage">
+					interlanguage</a></td>
+					<td class="auto-style34">for the section of the guide to L2 
+					acquisition which specifically focuses on this concept</td>
+				</tr>
+				<tr>
+					<td class="auto-style50">
+					<a href="../teaching/noticing.html">noticing</a></td>
+					<td class="auto-style34">for the guide to a key Level 3 
+					procedure</td>
+				</tr>
+				<tr>
+					<td class="auto-style50">
+					<a href="../skills/inferencing.html">inferencing</a></td>
+					<td class="auto-style34">how it's done and why with an 
+					emphasis on skills work</td>
+				</tr>
+				<tr>
+					<td class="auto-style50">
+					<a href="../teaching/scaffolding_zpd.html">scaffolding and 
+					the ZPD</a></td>
+					<td class="auto-style34">for the guide to intertwined ideas</td>
+				</tr>
+				<tr>
+					<td class="auto-style50">
+					<a href="../background/input.html">input and intake</a></td>
+					<td class="auto-style34">for the guide to what makes the 
+					first the second</td>
+				</tr>
+				<tr>
+					<td class="auto-style50">
+					<a href="../../initial/teaching/structuring_lessons.html">
+					structuring lessons</a></td>
+					<td class="auto-style34">for the guide in the initial plus 
+					section setting out some major procedural options</td>
+				</tr>
+				<tr>
+					<td class="auto-style50">
+					<a href="../../../development/strand5_techniques_development/strand5_techniques.html#dict">
+					some dictation techniques</a></td>
+					<td class="auto-style34">for the development guide which 
+					considers various forms of dictation</td>
+				</tr>
+				<tr>
+					<td class="auto-style50">
+					<a href="../../initial/teaching/asking_questions.html">
+					questioning</a></td>
+					<td class="auto-style34">for the initial plus guide to 
+					asking good questions</td>
+				</tr>
+				<tr>
+					<td class="auto-style50">
+					<a href="../background/error.html">error</a></td>
+					<td class="auto-style34">for the guide to what it is, why it 
+					happens, what causes it and how to treat it</td>
+				</tr>
+				<tr>
+					<td class="auto-style50">
+					<a href="../discourse/genre.html">genre approach</a></td>
+					<td class="auto-style34">which takes a functional systematic 
+					view of language</td>
+				</tr>
+				<tr>
+					<td class="auto-style50">
+					<a href="../teaching/monitoring.html">monitoring</a></td>
+					<td class="auto-style34">for the guide&nbsp;to what you should, 
+					or could be doing when working with the learners</td>
+				</tr>
+				<tr>
+					<td class="auto-style51"> 
+					<a href="../teaching/feedback_learner_production.html">feedback</a></td>
+					<td class="auto-style53">for the guide to giving and getting 
+					feedback</td>
+				</tr>
+				<tr>
+					<td class="auto-style33">
+					<a href="../../initial/teaching/learning.html">
+					how learning happens</a></td>
+					<td class="auto-style49">which covers some learning theory</td>
+				</tr>
+				<tr>
+					<td class="auto-style33">
+					<a href="../delta/mod2/unlocking_learning.html">unlocking 
+					learning</a></td>
+					<td class="auto-style49">this guide lives in the Delta 
+					section and considers some practical implications of 
+					hypotheses about learning</td>
+				</tr>
+			</table>
+			<br />
+			<hr />
+			<p><span class="auto-style2">References:</span><br />
+			<span class="auto-style2">Anthony, EM, 1963, <em>Approach, 
+			Method, and Technique</em>, ELT Journal (2): 63–67, Oxford: Oxford 
+			University Press<br />
+			<span class="auto-style4">Corder, SP, 1981, <em>Error analysis and interlanguage</em>, Oxford: 
+		Oxford University Press</span><br />
+			<span class="auto-style4">Gardner, RC, &amp; Lambert, WE, 1972, <em>Attitudes and motivation in 
+		second language learning,</em> Rowley, MA: Newbury House<br />
+		Krashen, S, 2002, <em>Second Language Acquisition and Second Language 
+		Learning</em>, First internet edition, retrieved from 
+		http://www.sdkrashen.com/content/books/sl_acquisition_and_learning.pdf<br />
+			</span>Richards, J, and Rodgers, T, 2001, <em>Approaches and Methods in 
+			Language Teaching,</em> Cambridge: Cambridge University Press<br />
+			<span class="auto-style3">Schmidt, R, 1990, <em>The role of consciousness in second language 
+			learning</em>, Applied Linguistics 11: 129-158</span><br />
+			<span class="auto-style7">Skinner, BF, 1948, <em>Verbal Behavior</em>, 
+			retrieved from http://www.behavior.org/resources/595.pdf</span><span class="auto-style4"></span><br />
+			<span class="auto-style7">Tsui, ABM, 1994, <em>English 
+		Conversation,</em> Oxford: Oxford University Press</span><br />
+			<span class="auto-style4">Vroom, VH, 1964, <em>Work and Motivation,</em> New York: McGraw Hill<br />
+			Widdowson, HG, 1978, <em>Teaching Language as Communication</em>, 
+			London: Oxford University Press<br />
+			and a whole lot more.</span></span></p>
+			<hr />
+			</div>
+			<!-- #EndEditable -->
+		<!-- End Content -->
+	
+	<!-- Begin Footer -->
+	<div id="footer">
+		<p>
+		<a href="../../../contact.html">Contact</a> |
+		<a href="../../../faq.html">FAQs</a> |
+		<a href="../../../copyright_notice.html">Copyright notice</a> |
+		<a href="../../../documents/ELT_Concourse_Charter.pdf" target="_blank"> ELT Concourse charter</a> |
+		<a href="../../../disclaimer.html"> Disclaimer and Privacy statement </a>|
+		<a href="../../../search_the_site.html">Search <strong>
+		ELT Concourse</strong></a></p>
+	</div>
+	<!-- End Footer -->
+
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

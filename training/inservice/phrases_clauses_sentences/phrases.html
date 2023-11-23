@@ -1,0 +1,1087 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- #BeginTemplate "../../../styles/dwt/training.dwt" -->
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta http-equiv="Content-Language" content="en-gb" />
+<!-- #BeginEditable "doctitle" -->
+<title>ELT Concourse: phrase structures</title>
+<style type="text/css">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.auto-style2 {
+	text-align: center;
+	border: 1px solid #666666;
+}
+.auto-style6 {
+	text-align: center;
+	font-size: large;
+	color: #000000;
+}
+.auto-style7 {
+	margin-left: 40px;
+}
+.auto-style8 {
+	padding-left: 5px;
+}
+.auto-style9 {
+	border-left: 1px solid #666666;
+	border-right: medium none #666666;
+	border-top: 1px solid #666666;
+	border-bottom: medium none #666666;
+}
+.auto-style12 {
+	color: black;
+	text-align: center;
+}
+.auto-style50 {
+	border-left: medium none #666666;
+	border-right: medium none #666666;
+	border-top: medium none #666666;
+	border-bottom: 1px solid #666666;
+	padding-left: 2px;
+}
+.auto-style49 {
+	border-left: medium none #666666;
+	border-right: 1px solid #666666;
+	border-top: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	text-align: left;
+}
+.auto-style55 {
+	border-left: 1px solid #666666;
+	border-right: medium none #666666;
+	border-top: medium none #666666;
+	border-bottom: 1px solid #666666;
+	padding-left: 3px;
+	padding-right: 2px;
+}
+.auto-style53 {
+	border-left: 1px solid #666666;
+	border-right: medium none #666666;
+	border-top: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	padding-left: 3px;
+	padding-right: 2px;
+}
+.auto-style54 {
+	border-left: medium none #666666;
+	border-right: 1px solid #666666;
+	border-top: 1px solid #666666;
+	border-bottom: medium none #666666;
+	text-align: left;
+}
+.auto-style51 {
+	border-left: 1px solid #666666;
+	border-right: medium none #666666;
+	border-top: 1px solid #666666;
+	border-bottom: medium none #666666;
+	padding-left: 3px;
+	padding-right: 2px;
+}
+.auto-style56 {
+	color: black;
+	text-align: left;
+}
+.auto-style57 {
+	color: #000000;
+	margin-left: 50px;
+	margin-right: 50px;
+	font-style: italic;
+	font-size: large;
+}
+.auto-style59 {
+	border-left: medium none #666666;
+	border-right: 1px solid #666666;
+	border-top: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+}
+.auto-style60 {
+	border-left: 1px solid #666666;
+	border-right: medium none #666666;
+	border-top: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+}
+.auto-style61 {
+	border-left: medium none #666666;
+	border-right: 1px solid #666666;
+	border-top: 1px solid #666666;
+	border-bottom: medium none #666666;
+}
+.auto-style62 {
+	border-left: 1px solid #666666;
+	border-right: medium none #666666;
+	border-top: medium none #666666;
+	border-bottom: 1px solid #666666;
+}
+.auto-style63 {
+	border-left: medium none #666666;
+	border-right: 1px solid #666666;
+	border-top: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	text-align: center;
+}
+.auto-style64 {
+	border-left: 1px solid #666666;
+	border-right: medium none #666666;
+	border-top: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	text-align: center;
+}
+.auto-style65 {
+	border-left: medium none #666666;
+	border-right: 1px solid #666666;
+	border-top: 1px solid #666666;
+	border-bottom: medium none #666666;
+	text-align: center;
+}
+.auto-style66 {
+	border-left: 1px solid #666666;
+	border-right: 1px solid #666666;
+	border-top: 1px solid #666666;
+	border-bottom: medium none #666666;
+	text-align: center;
+}
+.auto-style67 {
+	border-left: 1px solid #666666;
+	border-right: medium none #666666;
+	border-top: 1px solid #666666;
+	border-bottom: medium none #666666;
+	text-align: center;
+}
+.auto-style68 {
+	border-left: medium none #666666;
+	border-right: 1px solid #666666;
+	border-top: medium none #666666;
+	border-bottom: 1px solid #666666;
+	text-align: center;
+}
+.auto-style69 {
+	border-left: 1px solid #666666;
+	border-right: 1px solid #666666;
+	border-top: medium none #666666;
+	border-bottom: 1px solid #666666;
+	text-align: center;
+}
+</style>
+<meta content="ELT Concourse English language analysis and teaching guides. Phrase structures" name="description" />
+<script type="text/javascript">
+<!--
+function FP_changeProp() {//v1.0
+ var args=arguments,d=document,i,j,id=args[0],o=FP_getObjectByID(id),s,ao,v,x;
+ d.$cpe=new Array(); if(o) for(i=2; i<args.length; i+=2) { v=args[i+1]; s="o"; 
+ ao=args[i].split("."); for(j=0; j<ao.length; j++) { s+="."+ao[j]; if(null==eval(s)) { 
+  s=null; break; } } x=new Object; x.o=o; x.n=new Array(); x.v=new Array();
+ x.n[x.n.length]=s; eval("x.v[x.v.length]="+s); d.$cpe[d.$cpe.length]=x;
+ if(s) eval(s+"=v"); }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+
+function FP_swapImg() {//v1.0
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+ elm.$src=elm.src; elm.src=args[n+1]; } }
+}
+
+function FP_preloadImgs() {//v1.0
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+}
+// -->
+</script>
+<!-- #EndEditable -->
+<meta content="language analysis,eltconcourse,English grammar,free English language teaching materials,CELTA,Delta,language guides,free Delta training,free CELTA training,free ELT Training materials,teacher training,ELT,learning English,teaching English,English Language Teaching,ESOL,EFL,English as a Foreign Language" name="keywords" />
+<link href="../../../styles/mainstyle.css" rel="stylesheet" type="text/css" />
+<link href="../../../styles/training.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+</style>
+</head>
+
+<body>
+	<!-- Begin Masthead -->
+	<div id="masthead" >
+		<table style="width: 100%; border-bottom: #000080 solid">
+			<tr>
+				<td style="width: 135px">
+				<img alt="logo" height="49" src="../../../gfx/logo.png" width="78" /></td>
+				<td valign="bottom">
+				<span class="orangexxlargebold">ELT </span>
+				<span class="bluexxlargebold">Concourse teacher training</span></td>
+			</tr>
+		</table>
+	</div>
+	<!-- End Masthead -->
+	<!-- Begin Content -->
+			<!-- Begin Sidebar -->
+		<div id="sidebartt">
+			<ul>
+				<li><a href="../../../index.html">ELT Concourse home</a></li>
+				<li><a href="../../../a-z_index.html">A-Z site index</a></li>
+				<li><a href="../../training_index.html">Teacher training index</a></li>
+				<li><a href="../../../development/development_index.html">Teacher development</a></li>
+				<li><a href="../../../teachers/teachers.html">For teachers</a></li>
+				<li><a href="../../trainers/trainers_index.html">For trainers</a></li>
+				<li>
+				<a href="../../../academic_management/academic_management_index.html">For managers</a></li>
+				<li><a href="../../../learners/learners.html">For learners</a></li>
+				<li><a href="../../common/about_language.html">About language</a></li>
+				<li><a href="../../../questions/questions.html">Language questions</a></li>
+				<li class="whiteback">Other areas</li>
+				<li><a href="../indexes_is/eap_index_is.html">Academic English</a></li>
+				<li><a href="../indexes_is/be_index_is.html">Business English</a></li>
+				<li><a href="../../entering/introduction_to_elt.html">Entering ELT</a></li>
+				<li><a href="../../courses/courses_index.html">Courses index</a></li>
+				<li><a href="../../courses/basic/introduction_basic.html">Basic ELT course</a></li>
+				<li><a href="../../tkt/tkt_index.html">TKT</a></li>
+				<li><a href="../../bridge/bridge_index.html">The Bridge</a></li>
+				<li><a href="../../courses/lacourse/index_la_course.html">Language analysis</a></li>
+				<li>
+				<a href="../../courses/training_to_train/training_to_train_index.html">Training to train</a></li>
+				<li><a href="../../courses/transcription1/transcription.html">Transcription</a></li>
+				<li><a href="../../glossaries/glossary_index.html">Glossaries</a></li>
+				<li><a href="../../../articles/articles.html">Articles</a></li>
+			</ul>
+		</div>
+		<!-- End Sidebar -->
+		<!-- Begin Content -->
+		
+		<div id="toppicture" style="text-align: left; background-color: white; padding: 0px; margin-left: 140px;">
+				<img alt="Concourse 2" height="207" src="../../../images/concourse2blue.jpg" width="310" /></div>
+		
+			<!-- #BeginEditable "content" -->
+		
+			<!-- #BeginEditable "content" -->
+		
+		<div id="content">
+		
+			<h1>Phrase structures<a name="1"></a></h1>
+			<p>
+			<img alt="phrases" height="59" src="../../imagesgraphics/phrasestructure.png" width="620" /></p>
+			<p>Analysing phrases is a basic language analysis skill.</p>
+			<p>Can you understand what is meant by the graphic above if you are 
+			given this example?<br />
+			<em>&nbsp;&nbsp;&nbsp; The old man almost certainly had lived through very interesting 
+			times</em><br />
+			<a href="#1" onclick="FP_changeProp(/*id*/'phrases1',0,'style.visibility','visible')">
+			Click here for an answer</a>.</p>
+			<table id="phrases1" cellpadding="0" cellspacing="0" class="tableblueborder" style="width: 85%; position:relative; visibility: hidden;">
+				<tr>
+					<td class="auto-style68" style="width: 95px">
+					<img alt="NP" src="../../imagesgraphics/NP.jpg" /></td>
+					<td class="auto-style69" style="width: 95px">
+					<img alt="AdvP" src="../../imagesgraphics/AdvP.jpg" /></td>
+					<td class="auto-style69" style="width: 95px">
+					<img alt="VP" src="../../imagesgraphics/VP.jpg" /></td>
+					<td class="auto-style69" colspan="3">
+					<img alt="PP" src="../../imagesgraphics/PP.jpg" /></td>
+				</tr>
+				<tr class="style_black">
+					<td class="auto-style63" style="width: 95px">Noun phrase</td>
+					<td class="auto-style2" style="width: 95px">Adverb phrase</td>
+					<td class="auto-style2" style="width: 95px">Verb phrase</td>
+					<td class="auto-style2" colspan="3">Prepositional 
+					phrase</td>
+				</tr>
+				<tr class="style_black">
+					<td class="auto-style63" style="width: 95px">&nbsp;</td>
+					<td class="auto-style2" style="width: 95px">&nbsp;</td>
+					<td class="auto-style2" style="width: 95px">&nbsp;</td>
+					<td class="auto-style2" style="width: 96px">
+					<img alt="p" height="80" src="../../imagesgraphics/p.jpg" width="80" /></td>
+					<td class="auto-style2" style="width: 96px">
+					<img alt="AP" src="../../imagesgraphics/AP.jpg" /></td>
+					<td class="auto-style64" style="width: 96px">
+					<img alt="NP" src="../../imagesgraphics/NP.jpg" /></td>
+				</tr>
+				<tr class="style_black">
+					<td class="auto-style63" style="width: 95px">&nbsp;</td>
+					<td class="auto-style2" style="width: 95px">&nbsp;</td>
+					<td class="auto-style2" style="width: 95px">&nbsp;</td>
+					<td class="auto-style2" style="width: 96px">Preposition</td>
+					<td class="auto-style2" style="width: 96px">Adjective phrase</td>
+					<td class="auto-style64" style="width: 96px">Noun phrase</td>
+				</tr>
+				<tr>
+					<td class="auto-style65" style="width: 95px"><em>The old man</em></td>
+					<td class="auto-style66" style="width: 95px"><em>almost 
+					certainly</em></td>
+					<td class="auto-style66" style="width: 95px"><em>had lived</em></td>
+					<td class="auto-style66" style="width: 96px"><em>through</em></td>
+					<td class="auto-style66" style="width: 96px"><em>very 
+					interesting</em></td>
+					<td class="auto-style67" style="width: 96px"><em>times</em></td>
+				</tr>
+			</table>
+			<p>You will see that two of these phrases consist of only one word.&nbsp; 
+			In language analysis, <strong>one word counts as a phrase</strong>.</p>
+			<hr />
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="structure" height="166" src="../../images/structure250.jpg" width="250" /></td>
+					<td class="auto-style8">
+					<h2>The structure of a phrase</h2>
+					</td>
+				</tr>
+			</table>
+			
+			<p>To explain this, we will take a simple noun phrase:</p>
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="boat" height="166" src="../../images/man_in_boat250.jpg" width="250" /></td>
+				</tr>
+				<tr>
+					<td class="auto-style6">
+			<em>the old man in the boat</em></td>
+				</tr>
+			</table>
+			<p>Phrases come in three parts like this:</p>
+			<dl>
+				<dt><strong>The Head</strong></dt>
+				<dd>In a noun phrase this will be the noun, in a Verb phrase it 
+				will be the verb, in an Adjective phrase, it will be the 
+				adjective and so on.&nbsp; This is the part of the phrase which 
+				cannot be omitted.&nbsp; In one-word phrases, this is the only 
+				part.<br />
+				In our example, the Head is <em><strong>man</strong>.</em></dd>
+				<dt><strong>The pre-Head string</strong></dt>
+				<dd>This is a pre-modifier and is optional.<br />
+				In our 
+				example, the pre-Head string is made up of a determiner (<em><strong>the</strong></em>) 
+				and an adjective (<em><strong>old</strong></em>).</dd>
+				<dt><strong>The post-Head string</strong></dt>
+				<dd>This is also optional and is a post-modifier.<br />
+				In our 
+				example, the post-Head string is a prepositional phrase made up of a preposition (<em><strong>in</strong></em>) plus a 
+				noun phrase which consists of a determiner (<em><strong>the</strong></em>) plus a noun (<em><strong>boat</strong></em>).</dd>
+			</dl>
+			<p>Removing the pre-Head or post-Head strings is 
+			possible because you end up with a simple noun, <em>man</em> which can 
+			function alone as the subject of a verb.&nbsp; Removing the Head leaves nonsense:<br />
+			<em>&nbsp;&nbsp;&nbsp; *the old in the boat</em><br />
+			It is true 
+			that removing the determiner often leaves an inaccurate phrase in 
+			English but that is to do with how articles are used in the 
+			language.&nbsp; Other languages, such as Russian and the Chinese 
+			languages, manage quite well without them.</p>
+			<p>Now we can look briefly at each sort of phrase and see how it is 
+			constructed.</p>
+			<hr />
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="noun" height="166" src="../../images/things250.jpg" width="250" /></td>
+					<td class="auto-style8"><h2>The noun phrase</h2></td>
+				</tr>
+			</table>
+			
+			<p>The noun phrase normally functions as the subject or object of a 
+			verb.&nbsp; In our first example,<br />
+			<em>&nbsp;&nbsp;&nbsp; The old man almost certainly had lived through very interesting 
+			times<br />
+			</em>we have two noun phrases:</p>
+			<ul>
+				<li class="greybullet"><em>the old man </em>&ndash; a 
+				pre-modified noun (determiner plus adjective) with no post-modification</li>
+				<li class="greybullet"><em>very interesting times &ndash; </em>one plural 
+				noun with pre-modification by an adjective phrase, made up of an 
+				adverb and an adjective</li>
+			</ul>
+			<p>Noun phrases can be much more complex than this and be very long.&nbsp; 
+			For example:</p>
+			<p class="auto-style7"><em><span class="style_black">The 
+			long-awaited train for London and the airport which was very late</span> 
+			finally arrived at <span class="style_black">the over-crowded 
+			platform under the bridge</span></em></p>
+			<p>In this sentence, we have two examples of noun phrases, both of 
+			which have pre-Head strings and post-Head strings.&nbsp; In other 
+			words the Heads (<em>train </em>and<em> platform</em>) are both pre- and 
+			post-modified.<br />
+			The noun <em>train</em> is pre-modified by:<br />
+			<span class="style_black"><em>&nbsp;&nbsp;&nbsp; The long-awaited</em></span> 
+			(determiner plus adjective)<br />
+			and post-modified by:<br />
+			<span class="style_black"><em>&nbsp;&nbsp;&nbsp; for London</em></span> 
+			(preposition and its noun-phrase complement, <em>London</em>)<br />
+			The noun <em>platform</em> is pre-modified in the same way with:<br />
+			<span class="style_black"><em>&nbsp;&nbsp;&nbsp; the over-crowded</em></span> 
+			(determiner plus adjective)<br />
+			and post-modified by:<br />
+			<span class="style_black"><em>&nbsp;&nbsp;&nbsp; under the bridge</em></span> 
+			(preposition plus its complement noun phrase)<br />
+			For more on modification of noun phrases, see
+			<a href="modification_nouns.html" target="_blank">the guide</a>.</p>
+			<p>The Head of a noun phrase is not always a noun:</p>
+			<ul>
+				<li class="greybullet"><em><span class="style_black">He</span> 
+				arrived late </em>&ndash; a simple, unmodified pronoun as the 
+				noun phrase</li>
+				<li class="greybullet"><em><span class="style_black">Those</span> 
+				are what I want </em>&ndash; a demonstrative pronoun as the noun 
+				phrase</li>
+				<li class="greybullet"><span class="style_black"><em>These 
+				with the blue pattern</em></span> are better &ndash; a 
+				post-modified demonstrative pronoun as the noun phrase</li>
+				<li class="greybullet"><em><span class="style_black">Four</span> 
+				arrived together </em>&ndash; a numeral as a noun phrase</li>
+				<li class="greybullet"><em><span class="style_black">Anyone 
+				who needs help </span>will get it </em>&ndash; a post-modified 
+				pronoun as the noun phrase</li>
+				<li class="greybullet"><em><span class="style_black">Those 
+				two </span>don't need to wait </em>&ndash; a numeral 
+				pre-modified with a demonstrative as the noun phrase</li>
+				<li class="greybullet"><em><span class="style_black">My 
+				brother, James, </span>is not here </em>&ndash; a complex noun 
+				phrase with two nouns in apposition, the first pre-modified by a 
+				genitive</li>
+			</ul>
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="elements" height="133" src="../../images/molecule200.jpg" width="200" /></td>
+					<td class="auto-style8">
+					<h3>Elements of the noun phrase</h3>
+					</td>
+				</tr>
+			</table>
+			
+			<p>Apart from the Head of the phrase, which must be a noun or a 
+			pronoun and which must be present, we can find a variety of elements 
+			included in an analysis of the noun phrase.</p>
+			<ul class="greybullet">
+				<li>Determiners<ul class="smallgreybullet">
+					<li>Articles as in:<br />
+					<em>&nbsp;&nbsp;&nbsp; the money<br />
+&nbsp;&nbsp;&nbsp; a woman</em></li>
+					<li>Demonstratives as in:<br />
+					<em>&nbsp;&nbsp;&nbsp; this house<br />
+&nbsp;&nbsp;&nbsp; those problems</em></li>
+					<li>Interrogatives as in:<br />
+					<em>&nbsp;&nbsp;&nbsp; whose car<br />
+&nbsp;&nbsp;&nbsp; which table</em></li>
+					<li>Possessives as in:<br />
+					<em>&nbsp;&nbsp;&nbsp; my question<br />
+&nbsp;&nbsp;&nbsp; their furniture</em></li>
+					<li>Quantifiers (and distributives) as in:<br />
+					<em>&nbsp;&nbsp;&nbsp; some money<br />
+&nbsp;&nbsp;&nbsp; every child</em></li>
+				</ul>
+				</li>
+				<li>Adjective phrases<ul class="smallgreybullet">
+					<li>before the noun as in:<br />
+					<em>&nbsp;&nbsp;&nbsp; the poor old fishermen</em></li>
+					<li>after the noun as in:<br />
+					<em>&nbsp;&nbsp;&nbsp; the chairman elect</em></li>
+				</ul>
+				</li>
+				<li>Prepositional phrases, which may be multiple, as in:<br />
+				<em>&nbsp;&nbsp;&nbsp; the house by the river near the bridge</em></li>
+				<li>Whole sentences which modify as in:<br />
+				<em>&nbsp;&nbsp;&nbsp; the money we took out of the bank</em></li>
+			</ul>
+			<p>(Guides to all these sorts of modification of the head noun are 
+			on this site for those who look.)</p>
+			<p>These can be combined into complex noun phrases such as:<br />
+			<em>&nbsp;&nbsp;&nbsp; this spacious and well ordered house recently 
+			on the market and overlooking the park in a quiet road<br />
+&nbsp;&nbsp;&nbsp; half the children waiting for their test results<br />
+&nbsp;&nbsp;&nbsp; their old car in the car park outside the school</em><br />
+			and so on.<br />
+			This leads us to the next question.</p>
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="question" height="133" src="../../images/question_street200.jpg" width="200" /></td>
+					<td class="auto-style8">
+					<h3><a name="2"></a>Why is it important to find the Head?</h3>
+					</td>
+				</tr>
+			</table>
+			
+			<p>Take a moment to think about that 			<a href="#2" onclick="FP_changeProp(/*id*/'nounphrase',0,'style.visibility','visible')">
+			and then click here</a>.</p>
+			<p id="nounphrase" class="style_brown" style="visibility: hidden">
+			This is important for learners because noun phrases function as 
+			single nouns in the syntax of the language.&nbsp; They are the 
+			subjects and objects of verbs and determine the form of 
+			the verb among other things.&nbsp; Identifying them is a key skill 
+			to unwrapping meaning.<br />
+			In academic and technical texts in particular, long pre- and 
+			post-modified noun phrases are common and the ability to access the 
+			meaning of such texts requires identification of the Head of the 
+			noun phrase.&nbsp; Much of the pre- and post-modification can often 
+			be ignored if the general meaning is all you want.<br />
+			For example, if we have a noun phrase such as<br />
+			<em>&nbsp;&nbsp;&nbsp; the holiday money they had saved up for a 
+			year in the box on the mantelpiece in their living room</em><br />
+			we can ignore most of the modification if we can locate the Head <em>
+			money</em> and then we can move on to the verb.<br />
+			The ability to do this (which comes, of course, with a little 
+			directed practice) saves the learner from trying to understand other 
+			items such as <em>mantelpiece, save up</em> and so on which 
+			potentially block comprehension.<br />
+			Giving your learners this sort of practice is often a quicker way to 
+			instill good reading and listening habits than just having lots of 
+			random practice of the skills.</p>
+			<hr />
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="walking" height="166" src="../../images/walking_away250.jpg" width="250" /></td>
+					<td class="auto-style8"><h2>The adverb phrase</h2></td>
+				</tr>
+				<tr>
+					<td class="auto-style12">
+					<em>walking slowly away</em></td>
+					<td class="auto-style8">&nbsp;</td>
+				</tr>
+			</table>
+			
+			<p>If you have followed the guide to word class, you'll know what 
+			adverbs do.&nbsp; There are also guides to adverbs and adverbials on 
+			this site so this is not the place to explain the difference.</p>
+			<p>Commonly, adverb phrases consist of an unmodified Head.&nbsp; 
+			Pre-modification is also quite common and post-modification is 
+			possible but rarer:</p>
+			<ul>
+				<li class="greybullet"><em>She ran <span class="style_black">
+				quite quickly</span> – </em>a pre-modified adverb phrase of 
+				manner post-modifying the verb phrase</li>
+				<li class="greybullet"><em>That's <span class="style_black">
+				completely</span> idiotic – </em>a single-word adverb phrase 
+				pre-modifying an adjective</li>
+				<li class="greybullet"><em><span class="style_black">Luckily 
+				for her</span>, the train arrived <span class="style_black">early</span> – </em>an adverb phrase with 
+				a post-modifying post-Head prepositional phrase (<span class="style_black"><em>for 
+				her</em></span>).&nbsp; There is also the post-modification of 
+				the verb with the adverb phrase, <span class="style_black"><em>
+				early</em></span>.</li>
+				<li class="greybullet"><em>He spoke </em>
+				<span class="style_black"><em>loudly but wholly incoherently</em></span><em> 
+				– </em>an adverb coordinated with the conjunction <em>but</em> 
+				to an adverb phrase</li>
+			</ul>
+			<p>Adverb phrase pre-Head strings are usually other adverbs and 
+			adverb phrase post-Heads are often prepositional phrases.</p>
+			<hr />
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="verbp " height="166" src="../../images/dive250.jpg" width="250" /></td>
+					<td class="auto-style8"><h2>The verb phrase</h2></td>
+				</tr>
+				<tr>
+					<td class="auto-style12">
+					<em>He bravely dived into the freezing water</em></td>
+					<td class="auto-style56">
+					&nbsp;</td>
+				</tr>
+			</table>
+			
+			<p>Verb phrases often consist of single verbs but can get quite 
+			complicated with pre-modifying adverb phrases and post-modifying 
+			adverbials, often prepositional phrases:</p>
+			<ul>
+				<li class="greybullet"><em>He 
+				<span class="style_black">arrived</span> – </em>a one-word verb phrase</li>
+				<li class="greybullet"><em>She <span class="style_black">
+				slowly realised the truth</span> – </em>a verb phrase (<span class="style_black"><em>realised</em></span>) with an 
+				adverb phrase pre-Head (<span class="style_black"><em>slowly</em></span>) and a noun-phrase post-Head 
+				as its object (<span class="style_black"><em>the truth</em></span>)</li>
+				<li class="greybullet"><em>He <span class="style_black">
+				can't come at that time</span> – </em>a verb phrase,
+				<span class="style_black"><em>come</em></span>, with a 
+				pre-Head consisting of a modal auxiliary verb (<span class="style_black"><em>can</em></span>) and a negator 
+				(<span class="style_black"><em>n't</em></span>) and a 
+				post-Head prepositional phrase (<span class="style_black"><em>at 
+				that time</em></span>)</li>
+				<li class="greybullet"><em><span class="style_black">Never 
+				talk like that again</span>! – </em>a verb phrase with a 
+				pre-Head negator (<span class="style_black"><em>Never</em></span>) and two post-Head adverbials 
+				(<span class="style_black"><em>like that</em></span> and
+				<span class="style_black"><em>again</em></span>)</li>
+				<li class="greybullet"><em>He <span class="style_black">
+				eventually started to enjoy himself at the party</span> – </em>a 
+				verb phrase with a pre-Head adverb phrase (<span class="style_black"><em>eventually</em></span>) and a post-Head 
+				non-finite verb phrase (<span class="style_black"><em>to enjoy 
+				himself</em></span>) followed by a second post-Head 
+				prepositional phrase (<span class="style_black"><em>at the party</em></span>)<br />
+				Strictly, the word <em>himself</em> is the object of the verb, 
+				not part of the verb phrase itself.</li>
+			</ul>
+			<p>We should note here that, strictly speaking, a verb phrase 
+			consists only of verb forms but such phrases may be considered 
+			single constituents inclusive of any adverbials because the 
+			adverbial is so often embedded in the verb phrase.&nbsp; So, 
+			therefore, <em>is enjoying, may be enjoying, has been enjoying</em> 
+			etc. are all verb phrases but <em>has eventually enjoyed </em>is a 
+			verb phrase with an embedded adverbial phrase.</p>
+			<p>Many verbs <strong>require</strong> a post-head noun 
+			phrase.&nbsp; They are always transitive.&nbsp; Some, ditransitive, 
+			verbs can take two post-Head noun phrases.&nbsp; For example:<br />
+			<em>&nbsp;&nbsp;&nbsp; I gave him the money </em>(two post-Head noun phrases, <em>him</em> 
+			and <em>the money</em>)<br /><em>&nbsp;&nbsp;&nbsp; She 
+			lit the fire in the living room</em> (one post-Head noun phrase, as 
+			the object of the verb, <em>the fire</em>) and 
+			a post-Head prepositional phrase, <em>in the living room</em>)<br />
+			Some verbs cannot have a post-Head noun phrase because they are 
+			intransitive.&nbsp; For example,<br />
+			<em>&nbsp;&nbsp;&nbsp; He yawned loudly</em> (a post-Head adverbial 
+			phrase only)<br /><em>&nbsp;&nbsp;&nbsp;
+			He dived into the pool </em>(a post-Head prepositional phrase, not a 
+			noun phrase)<br />
+			Some verbs can do both.&nbsp; For example,<br />
+			<em>&nbsp;&nbsp;&nbsp; She smoked rapidly </em>(an intransitive verb phrase with a post-Head 
+			adverb phrase, <em>rapidly</em>)<br /><em>&nbsp;&nbsp;&nbsp;
+			She rapidly smoked a cigarette </em>(a 
+			transitive use of the verb with a pre-Head adverbial modifier, <em>
+			rapidly</em>, and a 
+			post-Head noun phrase, <em>a cigarette</em>)<br />
+			There is
+			a guide to transitivity on this site, linked below.</p>
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="electronic" height="133" src="../../images/electronic200.jpg" width="200" /></td>
+					<td class="auto-style8">
+					<h3>Elements of the verb phrase</h3>
+					</td>
+				</tr>
+			</table>
+			
+			<p>As with all phrases, the Head must be present and, of course, it 
+			must be a verb.&nbsp; The verb does not, however, have to be finite.<br />
+			In many analyses, such as ones used elsewhere on this site, a verb 
+			phrase is defined as <strong>only</strong> containing verbs but 
+			other analyses will include additional elements, like this:</p>
+			<ul class="greybullet">
+				<li>Noun phrases as in e.g.:<br />
+				<em>&nbsp;&nbsp;&nbsp; play the piano</em></li>
+				<li>Prepositional phrases as in e.g.:<br />
+				<em>&nbsp;&nbsp;&nbsp; walk to the corner</em></li>
+				<li>Sentences as in e.g.:<br />
+				<em>&nbsp;&nbsp;&nbsp; did what he told me to do</em></li>
+				<li>Auxiliary verbs:<ul class="smallgreybullet">
+					<li>primary as in:<br /><em>&nbsp;&nbsp;&nbsp; have argued<br />&nbsp;&nbsp;&nbsp; didn't like<br />&nbsp;&nbsp;&nbsp; was repaired</em></li>
+					<li>modal as in:<br /><em>&nbsp;&nbsp;&nbsp; can understand<br />&nbsp;&nbsp;&nbsp; must go<br />&nbsp;&nbsp;&nbsp; used to enjoy</em></li>
+				</ul>
+				</li>
+				<li>Adverbs as in:<br />
+				<em>&nbsp;&nbsp;&nbsp; boldly go<br />
+&nbsp;&nbsp;&nbsp; drive carefully</em></li>
+				<li>Noun phrases as in:<br />
+				<em>&nbsp;&nbsp;&nbsp; opening the box<br />
+&nbsp;&nbsp;&nbsp; to eat the chocolates</em></li>
+			</ul>
+			<p>Whether we allow a verb phrase to contain this additional 
+			elements and still be a verb phrase <em>per se</em> is a matter of choice but 
+			there is some sense in such an analysis because the phrases form 
+			single sense units and language chunks which can be prefabricated 
+			for use in fluent speech.</p>
+			<hr />
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="preposition" height="166" src="../../images/sign_address250.jpg" width="250" /></td>
+					<td class="auto-style8"><h2>The prepositional phrase</h2></td>
+				</tr>
+			</table>
+			
+			<p>There is a separate
+			guide to 
+			prepositional phrases on this site, linked below.<br />
+			Here, it's enough to note that these phrases usually consist of a 
+			Head (the preposition) and the post-Head string (usually a noun 
+			phrase) that is called the preposition complement here but in some 
+			analyses, it is referred to as the object of the preposition 
+			because, slightly unusually, a prepositional phrase contains both 
+			the preposition and its object / complement obligatorily.<br />
+			Some 
+			examples will do:</p>
+			<ul>
+				<li class="greybullet"><em>He waited
+				<span class="style_black">at the station on the South bank
+				</span></em>– two prepositional phrases containing the 
+				preposition itself (<em>at / on</em>) and the noun complements (<em>the 
+				station / the South bank</em>)</li>
+				<li class="greybullet"><em>He lives
+				<span class="style_black">at 350, 22nd Street</span> – </em>a 
+				prepositional phrase with the preposition, <em>at</em>, and a compound noun 
+				complement (<em>22nd Street</em>)</li>
+				<li class="greybullet"><em><span class="style_black">At four 
+				o'clock</span>, the fun begins – </em>this prepositional time 
+				phrase pre-modifies the verb but is separated from it by the 
+				noun phrase.&nbsp; It can be shifted to the end with no loss in 
+				meaning but users of the language may front it for emphasis.</li>
+			</ul>
+			<p>In our analyses on this site, we do not define a phrase such as 
+			the word <em>outside</em> as in<br />
+			<em>&nbsp;&nbsp;&nbsp; we waited outside</em><br />
+			as a preposition but as an adverb modifying the verb because there 
+			is no complement or object.<br />
+			In:<br />
+&nbsp;&nbsp;&nbsp; <em>we waited outside the restaurant</em><br />
+			we do have a proper prepositional phrase, naturally.<br />
+			In less strict analyses, the word <em>outside</em> in the first 
+			example may be called an intransitive preposition.</p>
+			<hr />
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="eyes" height="166" src="../../images/eyes_cat_green_blue250.jpg" width="250" /></td>
+					<td class="auto-style8"><h2>The adjective phrase</h2></td>
+				</tr>
+			</table>
+			
+			<p>Adjective phrases are often single adjectives but they can have a 
+			pre-Head (usually an adverb phrase) and may have a post-Head&nbsp;(often 
+			an adverbial or a prepositional phrase but sometimes a non-finite 
+			verb phrase):</p>
+			<ul>
+				<li class="greybullet"><em>Jean was 
+				<span class="style_black">happy</span> – </em>a one-word 
+				adjective phrase, <em>happy</em>, used predicatively (after the noun 
+				and linked to it by a copular verb)</li>
+				<li class="greybullet"><em>A <span class="style_black">truly enormous</span> aeroplane came into 
+				land – </em>an adjective phrase pre-modified by the pre-Head 
+				adverb phrase</li>
+				<li class="greybullet"><em>He is <span class="style_black">oddly afraid of
+				</span>cats – </em>
+				this adjective phrase has the pre-Head adverb phrase, <em>oddly</em>, but it <strong>must</strong> have a post-Head 
+				noun phrase.&nbsp; There are 
+				a few adjectives that do this and they include: <em>fond (of), 
+				conscious (of), uncertain (of), tantamount (to) </em>etc.</li>
+				<li class="greybullet"><em>I'm <span class="style_black">pleased to say that he has 
+				arrived</span> –</em> an adjective phrase with a non-finite verb-phrase 
+				post-Head</li>
+			</ul>
+			<hr />
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="wheels within wheels" height="166" src="../../images/cogwheels_in_wheels250.jpg" width="250" /></td>
+					<td class="auto-style8"><h2><a name="3"></a>Phrases within phrases</h2></td>
+				</tr>
+			</table>
+			
+			<p>Many of the examples in this guide contain wheels within wheels.<br />
+			For example, a sentence such as:</p>
+			<p class="auto-style57"><em>The obviously completely crazy woman with the flaming 
+				red hair is clearly going to make a very long speech to us all</em></p>
+			<p>contains phrases within phrases.&nbsp; When you have sorted it 
+			all out, 
+			<a href="#3" onclick="FP_changeProp(/*id*/'phrasewithinphrase',0,'style.visibility','visible')">click here</a>.</p>
+			<table cellpadding="3" cellspacing="0" class="tableblueborder" id="phrasewithinphrase" style="position:relative; visibility: hidden">
+				<tr>
+					<td class="auto-style59" colspan="2">It looks like this:</td>
+				</tr>
+				<tr>
+					<td class="auto-style59"><em>The obviously completely crazy woman 
+					with the flaming red hair</em></td>
+					<td class="auto-style62">
+						is the subject noun phrase consisting of:<ol>
+						<li>The Head noun, <em>woman</em>, 
+						which, apart from the pre-Head determiner,<em> the</em>,
+						has a pre-Head adjective phrase <em>
+						obviously
+						completely</em> <em>crazy</em></li>
+						<li>The adjective phrase contains the pre-modifying adverb 
+						phrase, <em>obviously completely</em></li>
+						<li>The noun phrase is post-modified with the post-Head 
+						prepositional phrase <em>with the flaming red hair</em>, 
+						and that phrase has an embedded adjective phrase, <em>
+						flaming red</em>.</li>
+					</ol>
+					</td>
+				</tr>
+				<tr>
+					<td class="auto-style59"><em>is clearly going to make</em></td>
+					<td class="auto-style60">is the 
+					verb phrase consisting of the verb <em>make</em> which has a pre-Head adverb phrase
+					<em>clearly</em> as well as the split pre-Head <em>is going to</em> 
+					formulation to denote tense.<br />
+					Technically, verb phrases only include verb forms such as, 
+					e.g., <em>is going to make</em> but, for teaching purposes, 
+					it often makes sense to consider an embedded adverb as part 
+					of the verb phrase.</td>
+				</tr>
+				<tr>
+					<td class="auto-style61"><em>a very long speech to us all</em></td>
+					<td class="auto-style9">is the object noun phrase consisting 
+					of<ol>
+						<li>The Head noun <em>speech</em> 
+						which, apart from the pre-Head determiner,<em> a</em>,
+						has a pre-Head adjective phrase <em>very long</em></li>
+						<li>The adjective phrase is pre-modified by an adverb 
+						phrase, <em>very</em></li>
+						<li>The noun phrase is post-modified with the post-Head 
+						prepositional phrase <em>to us all</em></li>
+					</ol>
+					</td>
+				</tr>
+			</table>
+			<p>That's all quite complicated and not the level of analysis that 
+			most learners need.&nbsp; Teachers, however, need to be able to do 
+			this in order to present language clearly and at a level of 
+			complexity that the learners can manage.<br />
+			Unpacking all the data is something native speakers do almost 
+			unconsciously, of course.</p>
+			<hr />
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="stress" height="166" src="../../images/man_scream250.jpg" width="250" /></td>
+					<td class="auto-style8"><h2>Stress</h2></td>
+				</tr>
+			</table>
+			
+			<p>This guide is mostly to do with phrase structure but would be 
+			incomplete without some mention of stress.</p>
+			<p>We can, of course, stress any of the words in a phrase to signal 
+			its importance.&nbsp; For example, compare:</p>
+			<ol>
+				<li>I went to <strong><span class="style_underline">Lon</span>don</strong> 
+				with my brother</li>
+				<li>I went to London with my <strong>
+				<span class="style_underline">bro</span>ther</strong></li>
+			</ol>
+			<p>In sentence 1., the stress falls on the first syllable of <em>
+			London</em> signifying that the speaker considers this the most 
+			important (i.e., probably new) information.&nbsp; In sentence 2., 
+			the stress falls on the first syllable of <em>brother</em> because 
+			the speaker wants to emphasise the importance of that piece of 
+			information.<br />
+			We can, naturally, stress any of the elements in the sentence to 
+			show its significance:</p>
+			<ul class="greybullet">
+				<li><em><strong>I </strong>went to London </em>(not <em>she)</em></li>
+				<li><em>I </em><strong><em>went</em></strong><em> to London with 
+				my brother </em>(not <em>am going</em>)</li>
+				<li><em>I went <strong>to</strong> London with my brother </em>
+				(not<em> from</em>)</li>
+				<li><em>I went to <strong>London</strong> with my brother </em>
+				(not <em>Amsterdam</em>)</li>
+				<li><em>I went to London </em><strong><em>with</em></strong><em> 
+				my brother</em> (not <em>separately</em> from him)</li>
+				<li><em>I went to London with <strong>my</strong> brother </em>
+				(not <em>his brother</em>)</li>
+				<li><em>I went to London with my <strong>brother</strong></em> 
+				(not <em>my sister</em>)</li>
+			</ul>
+			<p>These are examples of special stress used for emphasis and, as such 
+			phenomena occur in all languages, most learners do not find it too 
+			challenging.<br />What we need is some kind of general, canonical rule for our 
+			learners so they know which bit of the phrase to stress.</p>
+			<p>If you have followed the 
+			guide to intonation on this site, linked below, you will be familiar with the 
+			concept of tonic stress which usually falls towards the end of a 
+			tone unit.&nbsp; Where would you put the stress normally (not for 
+			special emphasis) on the following?&nbsp; Click on the graphic when 
+			you have an answer.</p>
+			<p>
+			<img id="img1" alt="phrase stress 1" height="142" onclick="FP_swapImg(0,0,/*id*/'img1',/*url*/'../../imagesgraphics/phrasestress2.png'); FP_changeProp(/*id*/'premodifiedrule',0,'style.visibility','visible')" src="../../imagesgraphics/phrasestress1.png" width="350" /></p>
+			<p id="premodifiedrule" class="style_brown" style="visibility: hidden">
+			The general rule is that in a pre-modified phrase, the stress will 
+			fall on the Head.</p>
+			<p>Now try this set.&nbsp; Where would you normally expect the 
+			stress to fall?</p>
+			<p>
+			<img id="img2" alt="phrase stress 3" height="143" onclick="FP_changeProp(/*id*/'phrasestress2',0,'style.visibility','visible'); FP_swapImg(0,0,/*id*/'img2',/*url*/'../../imagesgraphics/phrasestress4.png')" src="../../imagesgraphics/phrasestress3.png" width="350" /></p>
+			<p id="phrasestress2" class="style_brown" style="visibility: hidden">
+			In post-modified phrases the natural stress will fall on the Head of 
+			the modifier (<em><strong>spoke, suddenly, help</strong></em>).<br />
+			As most prepositional phrases contain a 
+			post-Head noun or pronoun complement, that means the stress falls on the noun.&nbsp; 
+			That explains the stressing of <em><strong>us</strong></em> and <em>
+			<strong>road</strong></em>.</p>
+			<p>What happens when a phrase contains both a pre- and a 
+			post-modifier?</p>
+			<p>
+			<img id="img3" alt="phrase stress5" height="143" onclick="FP_changeProp(/*id*/'both',0,'style.visibility','visible'); FP_swapImg(0,0,/*id*/'img3',/*url*/'../../imagesgraphics/phrasestress6.png')" src="../../imagesgraphics/phrasestress5.png" width="350" /></p>
+			<p id="both" class="style_brown" style="visibility: hidden">In line 
+			with the tendency to place tonic stress towards the end, the main 
+			stress is as shown but note that a secondary, lighter stress occurs 
+			on the Head of the preceding, post-modified phrase.</p>
+			<p>Unless you can recognise Heads, pre-Heads and post-Heads, of 
+			course, you can't identify any of this.&nbsp; That means you can't 
+			teach it consistently and your learners won't stress things 
+			appropriately.</p>
+			<hr />
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="teaching" height="166" src="../../images/teaching_monitor250.jpg" width="250" /></td>
+					<td class="auto-style8"><h2>Teaching implications</h2></td>
+				</tr>
+			</table>
+			
+			<p>All the above is not just an exercise in categorisation and 
+			nitpicking; it actually has significant implications for the way we 
+			present language.</p>
+			<ol>
+				<li><strong>All</strong> languages exhibit these fundamental units of meaning 
+				and learners will actively look for patterns in the language we 
+				present.&nbsp; If we present overly complex phrase structures, 
+				especially at lower levels, we make that identification harder 
+				and less productive.</li>
+				<li>Phrases, rather than individual words, are, arguably, the 
+				units we use to put language together in our heads.&nbsp; If 
+				that's the case, being able to distinguish between phrase types 
+				will be a key skill when it comes to using a language.</li>
+				<li>Being able to parse a sentence into its constituent phrases 
+				makes understanding it much simpler because we know what or who 
+				is doing what to what or whom.<br />
+				For example, if we encounter:<br />
+				<img alt="grumpy man" height="112" src="../../images/man_grumpy150.jpg" width="150" /><br />
+				<em>The grumpy old man in the deckchair suddenly and for no 
+				reason shouted at the kids with the football</em><br />
+				and we know about phrase structure, we can reduce the sentence 
+				to:<br />
+				<em>The man shouted at the kids</em><br />
+				and then it's simple to get the gist of what we read or hear.&nbsp; 
+				And that's often all we need to function effectively in English.</li>
+				<li>Knowing that a simple noun will be the Head of a noun 
+				phrase, a verb the Head of a verb phrase and so on allows 
+				learners to decide what in the pre- and post-modifying text can 
+				safely be ignored for the purposes of understanding the gist.</li>
+				<li>Knowing what the head of a phrase is allows learners to 
+				stress the elements accurately in speech.</li>
+			</ol>
+			<hr />
+			<p><a href="phraseshp.htm">There is a test on this</a>.</p>
+			<hr /><br />
+			<table id="istrainingnav" cellpadding="0" cellspacing="0" class="tableblueborder">
+			<tr>
+				<td class="auto-style50" colspan="2">Related guides</td>
+			</tr>
+			<tr>
+				<td class="auto-style49">
+				<a href="../pronunciation/intonation.html">intonation</a></td>
+				<td class="auto-style55">for an explanation of tonic stress</td>
+			</tr>
+			<tr>
+				<td class="auto-style49"> 
+			<a href="modification_nouns.html">modification</a></td>
+				<td class="auto-style53">for more on modification of noun 
+				phrases</td>
+			</tr>
+			<tr>
+				<td class="auto-style49"> 
+				<a href="../lexicogrammar/adverbs.html">adverbs</a></td>
+				<td class="auto-style53">for a guide to this word class</td>
+			</tr>
+			<tr>
+				<td class="auto-style49"> <a href="clauses.html">clauses</a></td>
+				<td class="auto-style53">for a general guide to clause 
+				structures</td>
+			</tr>
+			<tr>
+				<td class="auto-style49"> <a href="nominal_clauses_phrases.html">nominal 
+				clauses and phrases</a></td>
+				<td class="auto-style53">for an analysis of the ways clauses can 
+				act as noun phrases</td>
+			</tr>
+			<tr>
+				<td class="auto-style54"> 
+			<a href="../../initial/grammar_essentials/subject_and_object_essentials.html" target="_blank">
+				transitivity</a></td>
+				<td class="auto-style51">for some consideration of types of 
+				verbs</td>
+			</tr>
+			<tr>
+				<td class="auto-style54"> 
+				<a href="syntax.html">syntax</a></td>
+				<td class="auto-style51">for the general guide to phrase and 
+				clause analysis which focuses on the elements within phrases</td>
+			</tr>
+			<tr>
+				<td class="auto-style54"> 
+			<a href="prepositional_phrases.html" target="_blank">prepositional 
+				phrases</a></td>
+				<td class="auto-style51">for more on these with links to other 
+				guides</td>
+			</tr>
+			<tr>
+				<td class="auto-style54"> <a href="constituents.html">
+				constituents</a></td>
+				<td class="auto-style51">for a guide to how phrases can be 
+				ambiguous and how to disambiguate them</td>
+			</tr>
+			</table>
+			<br />
+			<hr />
+			</div>
+			<!-- #EndEditable -->
+		<!-- End Content -->
+	
+	<!-- Begin Footer -->
+	<div id="footer">
+		<p>
+		<a href="../../../contact.html">Contact</a> |
+		<a href="../../../faq.html">FAQs</a> |
+		<a href="../../../copyright_notice.html">Copyright notice</a> |
+		<a href="../../../documents/ELT_Concourse_Charter.pdf" target="_blank"> ELT Concourse charter</a> |
+		<a href="../../../disclaimer.html"> Disclaimer and Privacy statement </a>|
+		<a href="../../../search_the_site.html">Search <strong>
+		ELT Concourse</strong></a></p>
+	</div>
+	<!-- End Footer -->
+
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

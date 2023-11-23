@@ -1,0 +1,1817 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- #BeginTemplate "../../../styles/dwt/training.dwt" -->
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta http-equiv="Content-Language" content="en-gb" />
+<!-- #BeginEditable "doctitle" -->
+<title>ELT Concourse: syntax</title>
+<style type="text/css">
+
+
+
+
+
+
+
+
+
+
+
+.auto-style1 {
+	padding-left: 5px;
+}
+.auto-style2 {
+	vertical-align: middle;
+}
+.auto-style3 {
+	border-collapse: collapse;
+	border-color: #000080;
+	border-width: 0;
+	background-color: #ffffff;
+}
+.auto-style4 {
+	text-align: center;
+	border-right-style: solid;
+	border-right-width: 1px;
+}
+.auto-style5 {
+	text-align: center;
+	border-left-style: solid;
+	border-left-width: 1px;
+}
+.auto-style6 {
+	border-left-style: solid;
+	border-left-width: 1px;
+	padding-left: 2px;
+}
+.auto-style7 {
+	border-right-style: solid;
+	border-right-width: 1px;
+	padding-right: 2px;
+}
+.auto-style8 {
+	list-style-type: lower-alpha;
+}
+.auto-style9 {
+	background-color: #FFFFFF;
+}
+.auto-style10 {
+	color: #000000;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.auto-style13 {
+	border: 1px solid #666666;
+	background-color: #CCFFCC;
+}
+.auto-style14 {
+	border: 1px solid #666666;
+	background-color: #CCFF99;
+}
+.auto-style15 {
+	border-left: 1px solid #666666;
+	border-right: 1px solid #666666;
+	border-top: 1px solid #666666;
+	border-bottom: medium none #666666;
+	background-color: #F5F5F5;
+}
+.auto-style16 {
+	border-left: 1px solid #666666;
+	border-right: 1px solid #666666;
+	border-top: medium none #666666;
+	border-bottom: 1px solid #666666;
+}
+.auto-style17 {
+	border-left: medium none #666666;
+	border-right: 1px solid #666666;
+	border-top: medium none #666666;
+	border-bottom: 1px solid #666666;
+}
+.auto-style18 {
+	border-left: medium none #666666;
+	border-right: 1px solid #666666;
+	border-top: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	background-color: #CCFFCC;
+}
+.auto-style19 {
+	border-left: medium none #666666;
+	border-right: 1px solid #666666;
+	border-top: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	background-color: #CCFF99;
+}
+.auto-style20 {
+	border-left: medium none #666666;
+	border-right: 1px solid #666666;
+	border-top: 1px solid #666666;
+	border-bottom: medium none #666666;
+	background-color: #F5F5F5;
+}
+.auto-style21 {
+	border-left: 1px solid #666666;
+	border-right: medium none #666666;
+	border-top: medium none #666666;
+	border-bottom: 1px solid #666666;
+}
+.auto-style22 {
+	border-left: 1px solid #666666;
+	border-right: medium none #666666;
+	border-top: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	background-color: #CCFFCC;
+}
+.auto-style23 {
+	border-left: 1px solid #666666;
+	border-right: medium none #666666;
+	border-top: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	background-color: #CCFF99;
+}
+.auto-style24 {
+	border-left: 1px solid #666666;
+	border-right: medium none #666666;
+	border-top: 1px solid #666666;
+	border-bottom: medium none #666666;
+	background-color: #F5F5F5;
+}
+.auto-style88 {
+	border-width: 0;
+}
+</style>
+<meta content="ELT Concourse English language analysis and teaching guides. Syntax" name="description" />
+<script type="text/javascript">
+<!--
+function FP_changeProp() {//v1.0
+ var args=arguments,d=document,i,j,id=args[0],o=FP_getObjectByID(id),s,ao,v,x;
+ d.$cpe=new Array(); if(o) for(i=2; i<args.length; i+=2) { v=args[i+1]; s="o"; 
+ ao=args[i].split("."); for(j=0; j<ao.length; j++) { s+="."+ao[j]; if(null==eval(s)) { 
+  s=null; break; } } x=new Object; x.o=o; x.n=new Array(); x.v=new Array();
+ x.n[x.n.length]=s; eval("x.v[x.v.length]="+s); d.$cpe[d.$cpe.length]=x;
+ if(s) eval(s+"=v"); }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+// -->
+</script>
+<!-- #EndEditable -->
+<meta content="language analysis,eltconcourse,English grammar,free English language teaching materials,CELTA,Delta,language guides,free Delta training,free CELTA training,free ELT Training materials,teacher training,ELT,learning English,teaching English,English Language Teaching,ESOL,EFL,English as a Foreign Language" name="keywords" />
+<link href="../../../styles/mainstyle.css" rel="stylesheet" type="text/css" />
+<link href="../../../styles/training.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+</style>
+</head>
+
+<body>
+	<!-- Begin Masthead -->
+	<div id="masthead" >
+		<table style="width: 100%; border-bottom: #000080 solid">
+			<tr>
+				<td style="width: 135px">
+				<img alt="logo" height="49" src="../../../gfx/logo.png" width="78" /></td>
+				<td valign="bottom">
+				<span class="orangexxlargebold">ELT </span>
+				<span class="bluexxlargebold">Concourse teacher training</span></td>
+			</tr>
+		</table>
+	</div>
+	<!-- End Masthead -->
+	<!-- Begin Content -->
+			<!-- Begin Sidebar -->
+		<div id="sidebartt">
+			<ul>
+				<li><a href="../../../index.html">ELT Concourse home</a></li>
+				<li><a href="../../../a-z_index.html">A-Z site index</a></li>
+				<li><a href="../../training_index.html">Teacher training index</a></li>
+				<li><a href="../../../development/development_index.html">Teacher development</a></li>
+				<li><a href="../../../teachers/teachers.html">For teachers</a></li>
+				<li><a href="../../trainers/trainers_index.html">For trainers</a></li>
+				<li>
+				<a href="../../../academic_management/academic_management_index.html">For managers</a></li>
+				<li><a href="../../../learners/learners.html">For learners</a></li>
+				<li><a href="../../common/about_language.html">About language</a></li>
+				<li><a href="../../../questions/questions.html">Language questions</a></li>
+				<li class="whiteback">Other areas</li>
+				<li><a href="../indexes_is/eap_index_is.html">Academic English</a></li>
+				<li><a href="../indexes_is/be_index_is.html">Business English</a></li>
+				<li><a href="../../entering/introduction_to_elt.html">Entering ELT</a></li>
+				<li><a href="../../courses/courses_index.html">Courses index</a></li>
+				<li><a href="../../courses/basic/introduction_basic.html">Basic ELT course</a></li>
+				<li><a href="../../tkt/tkt_index.html">TKT</a></li>
+				<li><a href="../../bridge/bridge_index.html">The Bridge</a></li>
+				<li><a href="../../courses/lacourse/index_la_course.html">Language analysis</a></li>
+				<li>
+				<a href="../../courses/training_to_train/training_to_train_index.html">Training to train</a></li>
+				<li><a href="../../courses/transcription1/transcription.html">Transcription</a></li>
+				<li><a href="../../glossaries/glossary_index.html">Glossaries</a></li>
+				<li><a href="../../../articles/articles.html">Articles</a></li>
+			</ul>
+		</div>
+		<!-- End Sidebar -->
+		<!-- Begin Content -->
+		
+		<div id="toppicture" style="text-align: left; background-color: white; padding: 0px; margin-left: 140px;">
+				<img alt="Concourse 2" height="207" src="../../../images/concourse2blue.jpg" width="310" /></div>
+		
+			<!-- #BeginEditable "content" -->
+		
+			<!-- #BeginEditable "content" -->
+		
+		<div id="content">
+			<h1>Syntax: what it is and why we need to know about it</h1>
+			<p>
+			<img alt="syntax" height="207" src="../../images/seven_beads310.jpg" width="310" /></p>
+			<p>Many of the guides on this site are to do with syntax, i.e., the 
+			way words are combined in a language (English will be our focus) to 
+			make well-formed phrases, clauses and sentences.<br />
+			Syntax has been studied in one way or another for thousands of years 
+			and there are active scholars today spending honourable and long 
+			careers studying just how syntax operates.&nbsp; This is a short(ish) 
+			guide to the area for English language teachers and has no ambitions 
+			to be an original contribution to the topic.<br />
+			The relationships to which the term syntax refers are syntagmatic 
+			and, before we begin, we need to discover just what that means.&nbsp; 
+			Both terms derive from the Greek <em>syntaxis</em> which means a <em>
+			putting together or in order</em>.</p>
+			<hr />
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="explain" height="166" src="../../images/hands_explain250.jpg" width="250" /></td>
+					<td class="auto-style1">
+					<h2>An explanation of syntagmatic vs. paradigmatic 
+					relationships</h2>
+					</td>
+				</tr>
+			</table>
+			<p>Take the sentence:</p>
+		<ol>
+			<li><em>He bought a hat.</em></li>
+		</ol>
+		<p>In this sentence,<em> hat</em> can be replaced by almost any noun but it <strong>must</strong> 
+		be a noun or a noun phrase.&nbsp; Likewise,
+		<em>bought</em> can be replaced by many verbs but they <strong>must</strong> 
+		be verbs or a verb phrase.&nbsp; So we can get, e.g.:</p>
+		<ol start="2">
+			<li><em>He sold a hat.</em></li>
+			<li><em>He bought a car.</em></li>
+			<li><em>He stole a gadget.</em></li>
+		</ol>
+		<dl>
+	<dt><strong>Syntagmatic relationship</strong></dt>
+			<dd>This describes the relationship between, e.g., <em>He, bought</em> 
+			and <em>a hat </em>in <strong>Sentence 1</strong>, <em>He, sold</em> and
+			<em>a hat</em> in <strong>Sentence 2</strong>, <em>He, bought</em> 
+			and <em>a car</em> in <strong>sentence3 </strong> and <em>He</em> and <em>stole</em> 
+			and <em>a gadget</em> in <strong>Sentence 4</strong>.<br />
+			These relationships work horizontally between words.&nbsp; Subjects 
+			use Verbs, Verbs sometimes take Objects, Adjectives modify Nouns, 
+			Adverbs modify Verbs and so on.&nbsp; The relationship is to do with
+			<strong>syntax</strong> (hence the name).</dd>
+			<dt><strong>Paradigmatic relationships</strong></dt>
+			<dd>These are exemplified by the changes we have made between the 
+			sentences and describe the relationships between:<br />
+			<em>&nbsp;&nbsp;&nbsp; bought, sold </em>and <em>stole</em><br />
+			<em>&nbsp;&nbsp;&nbsp; car, gadget </em>and <em>hat<br />
+			</em>These relationships work vertically in the sense that Noun 
+			phrases can be replaced by other Noun phrases, Verb phrases by other 
+			Verb phrases, Adjectives by other Adjectives, Adverbs by other 
+			Adverbs and so on.&nbsp; The relationship is to do with <strong>word 
+			and phrase class</strong>.</dd>
+</dl>
+			<p>It all works like this:</p>
+			<p>
+			<img alt="relationships" height="226" src="../../imagesgraphics/syntagmatic.png" width="620" /></p>
+			<p>The words <strong>in</strong> each box have paradigmatic relationships to each 
+			other.&nbsp; The red <strong>arrows</strong> show the syntagmatic relationships 
+			and it is those with which this guide is concerned.<br />
+			It is simple to see that we can combine the seven words in each 
+			section in many thousands of ways, not all of which will make sense 
+			but all of which will grammatically flawless.</p>
+			<hr />
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="talk" height="166" src="../../images/talk_meeting250.jpg" width="250" /></td>
+					<td class="auto-style1">
+					<h2>Human language and the power of syntax</h2>
+					</td>
+				</tr>
+			</table>
+			<p>One of the defining characteristics of language rather than mere 
+			communication is that it is rule bound.&nbsp; All human languages 
+			combine sounds into morphemes, morphemes into words, words into phrases 
+			and phrases into clauses according to abstract and 
+			often very complex rules.&nbsp; To see what this means, take these 
+			five words:</p>
+			<ol>
+				<li><em>unicorn</em></li>
+				<li><em>woman</em></li>
+				<li><em>a</em></li>
+				<li><em>the</em></li>
+				<li><em>saw</em></li>
+			</ol>
+			<p>There are in mathematical theory 120 ways in which these words 
+			can be combined (expressed as 5! for the mathematicians among you) yet, in English, only four of the possibilities are 
+			normally permitted with the remaining 116 forming combinations which 
+			are not allowed by the rules of English syntax.&nbsp; (If we add one 
+			more word, the possible combinations grow to 720, adding a seventh 
+			results 5040 possibilities and an eighth brings the total up to 
+			40,320 but of those only a very small proportion of combinations are 
+			allowed by the rules of English syntax.)<br />
+			If you want to try combining the 5 words into well-formed sentences for yourself do so now.&nbsp; Otherwise, 
+			click
+			<img alt="eye" class="auto-style2" height="16" src="../../../gfx/eyeopen.gif" width="16" onclick="FP_changeProp(/*id*/'first',0,'style.visibility','visible')" /> 
+			to reveal the four possibilities.</p>
+			<div id="first" style="position: relative;  visibility: hidden">
+			<p>They are:</p>
+			<ol>
+				<li><em>A unicorn saw the woman</em></li>
+				<li><em>The unicorn saw a woman</em></li>
+				<li><em>The woman saw a unicorn</em></li>
+				<li><em>A woman saw the unicorn</em></li>
+			</ol>
+			<p>(It is, just, possible also to have<br />
+&nbsp;&nbsp;&nbsp; <em>The unicorn, saw a woman<br />
+&nbsp;&nbsp;&nbsp; The woman, saw a unicorn</em><br />
+			but neither of those sentences is likely to be the topic of our 
+			teaching and even if we allow them, that still leaves only six out 
+			of 120 possible combinations which are permissible in English.)<br />
+			So, syntax severely restricts what is possible.</p></div>
+			<p>However, at the same time it does exactly the opposite: using the
+			<strong>finite</strong> number of rules of syntax, we can create an
+			<strong>infinite</strong> number of acceptable, grammatical 
+			sentences.&nbsp; To demonstrate the power of syntax to create as 
+			well as restrict, consider the following possible sentences:<br />
+			<em>&nbsp;&nbsp;&nbsp; The old woman in the red hat saw a contented 
+			unicorn in her garden yesterday<br />
+&nbsp;&nbsp;&nbsp; My contented unicorn saw an old woman in a red hat in its 
+			garden last week<br />
+			</em>Now, it is a reasonable bet that neither of those sentences has 
+			ever been said or written before now.&nbsp; Not rarely, never.<br />
+			Nevertheless, the assumption here is that you will have no 
+			difficulty understanding the sentences (even if they seem unlikely 
+			to be true).&nbsp; You can do that because you are able to apply the 
+			rules of syntax in English and extract the significance of what the 
+			string of words means.&nbsp; What's more, you can do it yourself and 
+			create an infinite number of grammatically flawless sentences using 
+			the same syntactical rules we have used up to now.&nbsp; It will not 
+			take much effort for you to produce sentences such as the ones above 
+			which are extremely unlikely to have been written or uttered by 
+			anyone else ever in the entire history of the human race.<br />
+			All you need to do is apply the rules which we will now consider.</p>
+			<hr />
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="magnify" height="166" src="../../images/magnifying250.jpg" width="250" /></td>
+					<td class="auto-style1">
+					<h2>Discovering rules</h2>
+					</td>
+				</tr>
+			</table>
+			<p>While we know there are rules governing a language, it is less 
+			simple to discover and then explain what they are.<br />
+			For our original four sentences above, however, we can hypothesise 
+			what the rules might be and then test the hypotheses and refine them 
+			if need be.&nbsp; The process may work something like this:</p>
+			<ol>
+				<li>We know that:<br />
+&nbsp;&nbsp;&nbsp; <em>A unicorn saw the woman<br />
+				</em>is a well-formed sentence (because our intuition as 
+				speakers of the language tells us so) and we know that:<br />
+				<em>&nbsp;&nbsp;&nbsp; Unicorn a saw the woman</em><br />
+				is not acceptable.<br />
+				We also know that<br />
+				<em>&nbsp;&nbsp;&nbsp; The unicorn saw a woman</em><br />
+				is acceptable but neither<br />
+&nbsp;<em>&nbsp;&nbsp; Unicorn the saw a woman</em><br />
+				nor<br />
+&nbsp;<em>&nbsp;&nbsp; Unicorn the saw woman a</em><br />
+				is acceptable.<br />
+				Therefore, our hypothesis is that <span class="style_black">
+				<strong>articles must precede nouns (1)</strong></span>.</li>
+				<li>We can also hypothesise other rules because we know (again 
+				from intuition) that in:<br />
+				<em>&nbsp;&nbsp;&nbsp; The woman saw a unicorn</em><br />
+				it is the woman who did the seeing and in<br />
+				<em>&nbsp;&nbsp;&nbsp; The unicorn saw a woman</em><br />
+				it is the unicorn which did the seeing.<br />
+				We can hypothesise from this that the rule is
+				<span class="style_black"><strong>subjects precede verbs (2)</strong></span>.</li>
+				<li>Finally, we can hypothesise from the four acceptable 
+				sentences that the objects of the seeing come after the verbs so 
+				the rule for that is <span class="style_black"><strong>objects 
+				follow verbs (3)</strong></span>.</li>
+			</ol>
+			<p>Now we can test our three hypotheses with some other data to see 
+			if they hold up.&nbsp; We are fine with:<br />
+			<em>&nbsp;&nbsp;&nbsp; A sparrow has eaten the seeds<br />
+&nbsp;&nbsp;&nbsp; A storm had destroyed the crops<br />
+&nbsp;&nbsp;&nbsp; The man owned a boat</em><br />
+			and many thousands of other simple sentences.<br />
+			So far all our hypotheses are supported by the evidence.<br />
+			However, when we encounter:<br />
+			<em>&nbsp;&nbsp;&nbsp; *A sparrow has nested the house<br />
+&nbsp;&nbsp;&nbsp; *A storm had arrived the country<br />
+&nbsp;&nbsp;&nbsp; *The man went the boat</em><br />
+			our intuition is that something has gone astray with hypothesis 3 
+			because none of those is acceptable.<br />
+			We have to refine hypothesis three to <span class="style_black">
+			<strong>objects follow <span class="style_underline">transitive</span> 
+			verbs</strong></span>.<br />
+			Similarly, with:<br />
+			<em>&nbsp;&nbsp;&nbsp; Has a sparrow eaten the seeds?<br />
+&nbsp;&nbsp;&nbsp; Had the storm destroyed the crops?<br />
+&nbsp;&nbsp;&nbsp; Did the man own a boat?</em><br />
+			we run into a problem with hypothesis 2 because the subject is now 
+			sandwiched between verbs and we have to refine it to:
+			<span class="style_black"><strong>subjects precede verbs 			<span class="style_underline">in declarative sentences</span></strong></span> 
+			and questions follow different syntactical rules (which we can 
+			investigate another time).<br />
+			Finally, we can try to find example in which hypothesis 1 (that 
+			articles precede nouns) is refuted and we find:<br />
+			<em>&nbsp;&nbsp;&nbsp; The old man owned a fishing boat</em><br />
+			and that single example is enough to cause us to refine hypothesis 1 
+			to <span class="style_black"><strong>articles are the first element 
+			in noun
+			<span class="style_underline">phrases</span></strong></span>.</p>
+			<p>What we have done here is something like what many believe our 
+			students are doing when they encounter examples of language: forming 
+			and refining hypotheses as more data become available by a process 
+			of inductive reasoning.</p>
+			<p>Now we can take our rules and see how productive they can be.&nbsp; 
+			Like this:</p>
+			<ol>
+				<li>Take a noun phrase and precede it with a determiner and an 
+				adjective so we can generate, e.g.:<br />
+				<em>&nbsp;&nbsp;&nbsp; a tall person<br />
+&nbsp;&nbsp;&nbsp; some old elephants<br />
+&nbsp;&nbsp;&nbsp; few difficult problems</em><br />
+				and so on.</li>
+				<li>Take a transitive verb such as:<br />
+&nbsp;<em>&nbsp;&nbsp; smoke<br />
+&nbsp;&nbsp;&nbsp; truncate<br />
+&nbsp;&nbsp;&nbsp; visualise</em><br />
+				and put that next.</li>
+				<li>Take another noun phrase and precede it with a determiner 
+				and an adjective to generate, e.g.:<br />
+				<em>&nbsp;&nbsp;&nbsp; the running vicar<br />
+&nbsp;&nbsp;&nbsp; his beautiful cat<br />
+&nbsp;&nbsp;&nbsp; that unpleasant rubbish</em><br />
+				and so on.</li>
+			</ol>
+			<p>Now take one item from each of the three sections and combine 
+			them syntactically to make a clause and we might generate, for 
+			example:<br />
+			<em>&nbsp;&nbsp;&nbsp; A tall person truncated his beautiful cat<br />
+			</em>or<br />
+			<em>&nbsp;&nbsp;&nbsp; Some old elephants visualised that unpleasant 
+			rubbish<br />
+			</em>and so on.</p>
+			<p>Our troubles are not solved completely, of course, because there 
+			are rules concerning what sorts of determiners modify what sorts of 
+			nouns (so we can't have, e.g., <em>several rubbish</em> or <em>a 
+			problems</em>) but these are refinements we can apply once we have 
+			the general syntax right.<br />
+			You will also have noticed that many of the possible clauses we can 
+			produce are simply impossible or obviously untrue.&nbsp; That, 
+			however, has nothing to do with grammar because it's a lexical issue 
+			and that is one reason that we may refer not just to grammar but to 
+			lexicogrammar when we want to investigate the syntactical rules of 
+			English.&nbsp; There is a guide to lexicogrammar linked from the 
+			syntax index on this site.</p>
+			<hr />
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="classify" height="166" src="../../images/classify_birds250.jpg" width="250" /></td>
+					<td class="auto-style1">
+					<h2>Discovering categories</h2>
+					</td>
+				</tr>
+			</table>
+			<p>We have begged a question up to now and that is:<span class="style_black"><br />
+			<em>&nbsp;&nbsp;&nbsp; Just how do we 
+			know that words and phrases belong to the categories we are dealing 
+			with?</em><br />
+			</span>We have encountered three categories so far: nouns (and 
+			noun phrases), verbs and articles (determiners of a particular 
+			kind).&nbsp; We can extend that list to speak of adverbs, 
+			adjectives, prepositions, other types of determiner, pronouns and so 
+			on.<br />
+			How we determine which item fits into which class is an essential 
+			step to forming the rules of English syntax (and the syntax of any 
+			other human language).<br />
+			There are three ways we can do this:</p>
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="maen" height="133" src="../../images/meaning_woman_a200.jpg" width="200" /></td>
+					<td class="auto-style1">
+					<h3>Meaning</h3>
+					</td>
+				</tr>
+			</table>
+			<p>We can start with what words mean and form our categories 
+			accordingly so we can state, for example:</p>
+			<ol>
+				<li>Words that refer to actions are verbs</li>
+				<li>Words that refer to people or other entities are nouns</li>
+				<li>Words that refer to the property of something are adjectives</li>
+				<li>Words which refer to the frequency, time, place or 
+				manner of an action are adverbs</li>
+			</ol>
+			<p>This will work as a definition for many words and from a set of 
+			rules 
+			like that it is possible to classify an alphabetic list like this:<br />
+			<em>dig, extremely, go, great, happily, house, Mary, often, potato, 
+			read, trivial, yellow<br />
+			</em>into a classified list like this:</p><table cellpadding="2" cellspacing="0" class="auto-style3">
+				<tr>
+					<td>Verbs:</td>
+					<td> <em>dig, go, read</em></td>
+				</tr>
+				<tr>
+					<td>Nouns:</td>
+					<td> <em>house, Mary, potato</em></td>
+				</tr>
+				<tr>
+					<td>Adjectives:</td>
+					<td><em>great, trivial, yellow</em></td>
+				</tr>
+				<tr>
+					<td>Adverbs:</td>
+					<td> <em>extremely, happily, often</em></td>
+				</tr>
+			</table>
+			<p>Unfortunately, however, it does not help us to classify words 
+			such as:<br /><em>exist, loss, installation, openness<br />
+			</em>and thousands 
+			more because such words do not fit the meaning (or semantic) 
+			categories.&nbsp; In that list we have:<br />
+			<em>exist</em> which is a verb that does not represent an action<br />
+			<em>loss</em> which is a noun that cannot be used to represent an 
+			entity<br />
+			<em>installation</em> which is a noun that refers to an action<br />
+			<em>openness </em>which is a noun that refers to a property of 
+			something or someone<br />
+			and the list goes on.</p>
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="form" height="133" src="../../images/form_forge200.jpg" width="200" /></td>
+					<td class="auto-style1">
+					<h3>Form</h3>
+					</td>
+				</tr>
+			</table>
+			<p>If meaning categories don't work, we can try categorising words 
+			by their form so we have lists such as:</p>
+			<ol>
+				<li>Nouns take plurals in -<em>s</em> or -<em>es</em> and can take a genitive 
+				ending in <em>'s</em></li>
+				<li>Adjectives take comparative forms in -<em>er</em> and -<em>est</em></li>
+				<li>Verbs take -<em>s</em> on the third person singular and -<em>ed</em> to signal 
+				a past tense</li>
+				<li>Adverbs end in -<em>ly</em> and are formed from adjectives</li>
+			</ol>
+			<p>and that will allow us to categorise, for example:<br />
+			<em>biggest, coldly, computer’s, corrected, crocodiles, cups, 
+			enjoys, exceptionally, fairest, fortunately, goes, hoped, longer, 
+			older, Peter's, wilfully<br />
+			</em>and then we get:<table cellpadding="2" cellspacing="0" class="auto-style3">
+				<tr>
+					<td>Verbs:</td>
+					<td> <em>corrected, enjoys, goes, hoped</em></td>
+				</tr>
+				<tr>
+					<td>Nouns:</td>
+					<td> <em>computer's, crocodiles, cups, Peter's</em></td>
+				</tr>
+				<tr>
+					<td>Adjectives:</td>
+					<td><em>biggest, fairest, longer, older</em></td>
+				</tr>
+				<tr>
+					<td>Adverbs:</td>
+					<td> <em>coldly, exceptionally, fortunately, wilfully</em></td>
+				</tr>
+			</table>
+			</p>
+			<p>But will not work with many words because:</p>
+			<ol>
+				<li>not all adjectives 
+			form comparative and superlative forms like this or at all (e.g., <em>
+				fascinating, absent, sunken, lost</em>)</li>
+				<li>some adjectives end in -<em>ly</em> (e.g., <em>likely, motherly</em>)</li>
+				<li>some adverbs don't end in -<em>ly</em> (e.g., <em>outside, 
+				often</em>)</li>
+				<li>lots of verbs are irregular (e.g., <em>go, went, gone, put, 
+				put, put</em>)</li>
+				<li>some 
+			verbs take no -<em>s</em> for the third person singular (e.g., <em>can, must, 
+			should</em>)</li>
+				<li>some nouns have 
+			irregular plurals or no plurals at all (e.g., <em>information, 
+			sheep, mice</em>)</li>
+			</ol>
+			<p>Form is, in other words, an inconsistent way 
+			to categorise words.&nbsp; It is not unusable, of course, because 
+			many words we encounter can be categorised by looking at the form.</p>
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="cogs" height="133" src="../../images/cogs_machinery200.jpg" width="200" /></td>
+					<td class="auto-style1">
+					<h3>Grammatical function</h3>
+					</td>
+				</tr>
+			</table>
+			<p>Here we are on safer ground and it is here that the concepts of 
+			syntax and word or phrase categorisation feed off one another.&nbsp; 
+			We are considering the possible <strong>distribution</strong> of 
+			items within the syntax of a language.<br />
+			The way to determine an item's function is to place it in a 
+			syntactical environment so, for example, if we are faced with the 
+			gaps in these sentences:</p>
+			<ol>
+				<li><em>She has lots of __________</em><br />
+				we can only insert a noun or noun phrase into the gap such a <em>
+				large dogs</em>.<br />
+				We 
+				cannot, for example, insert <em>in, happy, many, do </em>and 
+				more.</li>
+				<li><em>She can __________</em><br />
+				we can only insert a verb phrase and no other category such as
+				<em>dance well</em>.&nbsp; We 
+				cannot, for example, insert <em>without, sad, because, radios </em>
+				and more.</li>
+				<li><em>I saw the very __________ unicorn</em><br />
+				we can only insert an adjective or adjective phrase such as <em>
+				happy</em>.&nbsp; We 
+				cannot, for example, insert <em>in front of, extremely, lots, 
+				smoke </em>and more.</li>
+				<li><em>She walked __________ the road</em><br />
+				we can only insert a preposition such as <em>over</em>.&nbsp; We cannot, for example, 
+				insert <em>because, yellow, and, ca<span class="auto-style9">rried</span> </em>and more.</li>
+				<li><em>They have not __________ enjoyed the food</em><br />
+				we can only insert an adverb or adverb phrase such as <em>
+				greatly, often</em>.&nbsp; We cannot, 
+				for example, insert <em>beforehand, delicious, some, read </em>and more.</li>
+				<li><em>She came __________ I asked her nicely</em><br />
+				we can only insert a conjunction such as <em>because</em>.&nbsp; We cannot, for example, 
+				insert <em>in, bicycle, however, do </em>and more.</li>
+				<li><em>I discovered that __________ student was late</em><br />
+				we can only insert a determiner such as <em>a</em>.&nbsp; We cannot, for example, 
+				insert <em>back, disconnect, although, perhaps, do </em>and more.</li>
+				<li><em>When I dropped __________, the glass broke</em><br />
+				we are constrained to insert a pronoun (and in this case, 
+				only one pronoun, <em>it</em>) although a noun phrase such as <em>the thing</em> 
+				is a possibility.&nbsp; As nouns and pronouns perform identical 
+				syntactic functions, however, this is not damaging to the case.&nbsp; 
+				We cannot insert, for example, <em>happily, only, before, 
+				association</em> and more.</li>
+			</ol>
+			<p>This way of assigning words to word classes, while being the most difficult to apply, is the one 
+			that unequivocally works to categorise the lexemes of the language.&nbsp; It is independent of meaning and form.</p>
+			
+			<hr />
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="category" height="166" src="../../images/classify_masks250.jpg" width="250" /></td>
+					<td class="auto-style1">
+					<h2>Alternative categorisations</h2>
+					</td>
+				</tr>
+			</table>
+			<p>In this guide and in most other guides on this site where word 
+			class is a relevant issue, the following categories of words and 
+			phrases are considered:</p>
+			<table cellpadding="3" class="tableblueborder">
+				<tr>
+					<td class="auto-style17">Category</td>
+					<td class="auto-style16">Word class</td>
+					<td class="auto-style21">Examples</td>
+				</tr>
+				<tr>
+					<td class="auto-style18" rowspan="4">Open-class content 
+					words</td>
+					<td class="auto-style13">Nouns</td>
+					<td class="auto-style22"> <em>house, place, happiness, Mary, 
+			Botswana, paper, luggage</em> etc.</td>
+				</tr>
+				<tr>
+					<td class="auto-style18">Verbs</td>
+					<td class="auto-style22"> <em>go, arrive, take, put, must, be, enjoy, like </em>etc.</td>
+				</tr>
+				<tr>
+					<td class="auto-style18">Adjectives</td>
+					<td class="auto-style22"> <em>pretty, helpful, blue, astonishing, alive, outside</em> 
+			etc.</td>
+				</tr>
+				<tr>
+					<td class="auto-style18">Adverbs</td>
+					<td class="auto-style22"> <em>happily, soon, frequently, greatly, noisily, so, very, 
+			accordingly</em> etc.</td>
+				</tr>
+				<tr>
+					<td class="auto-style19" rowspan="4">Closed-class function 
+					words</td>
+					<td class="auto-style14">Conjunctions</td>
+					<td class="auto-style23"> <em>and, so, because, but, 
+					although, so that </em>etc.</td>
+				</tr>
+				<tr>
+					<td class="auto-style19">Pronouns</td>
+					<td class="auto-style23"> <em>he, she, it, mine, his, theirs, I, you, we </em>etc.</td>
+				</tr>
+				<tr>
+					<td class="auto-style19">Prepositions</td>
+					<td class="auto-style23"> <em>in, out, below, in front of, beside, between, 
+					underneath </em>
+			etc.</td>
+				</tr>
+				<tr>
+					<td class="auto-style19">Determiners</td>
+					<td class="auto-style23"> <em>the, an, some, many, each, 
+					both, every, those, these </em>
+			etc.</td>
+				</tr>
+				<tr>
+					<td class="auto-style20">The grey area</td>
+					<td class="auto-style15">Interjections</td>
+					<td class="auto-style24"> <em>whoa, wow, gosh, damn, ouch, my my </em>etc.</td>
+				</tr>
+			</table>
+			<p>Of these, the first four are considered open-class content word 
+			classes to which additions are readily made and which, standing 
+			alone, carry a signification which members of the speech community 
+			can readily explain.&nbsp; These four categories also, it seems, are 
+			common to most if not all human languages.<br />
+			The second four are considered members of closed-class, functional 
+			words 
+			to which additions are very rarely made and which, standing alone, 
+			defy clear definition and whose significance is only clear when they 
+			function in the syntax of the language.<br />
+			The final class falls into a grey area because, although the words carry some 
+			kind of meaning in context, standing alone they do not and they also 
+			do not perform a distinct grammatical function.</p>
+			<p>There are problems with any categorisation of reality because 
+			items have an annoying tendency to slide between classes.&nbsp; For 
+			example:</p>
+			<ol>
+				<li>The words <em>this, that, these</em> and <em>those</em> are 
+				determiners in:<br />
+				<em>&nbsp;&nbsp;&nbsp; Take this glass <br />
+&nbsp;&nbsp;&nbsp; I want that pen<br />
+&nbsp;&nbsp;&nbsp; Try these glasses<br />
+&nbsp;&nbsp;&nbsp; Pass me those bags</em><br />
+				but function very differently in:<br />
+				<em>&nbsp;&nbsp;&nbsp; Try this<br />
+&nbsp;&nbsp;&nbsp; Take that<br />
+&nbsp;&nbsp;&nbsp; Give him these<br />
+&nbsp;&nbsp;&nbsp; I want those</em><br />
+				where they are all pronouns.<br />
+				Other determiners such as <em>one, each, all, both</em> display 
+				the same slipperiness.<br />
+				(The word <em>that</em> also appears as a subordinating 
+				conjunction in, e.g.:<br />
+&nbsp;&nbsp;&nbsp; <em>She told me that was the case)</em></li>
+				<li>The word <em>outside </em>is given as an example of an 
+				adjective which it is in:<br />
+				<em>&nbsp;&nbsp;&nbsp; This is outside furniture</em><br />
+				but in<br />
+				<em>&nbsp;&nbsp;&nbsp; She went outside</em><br />
+				it is an adverb</li>
+				<li>The word <em>since </em>is<br />
+				a conjunction in:<br />
+				<em>&nbsp;&nbsp;&nbsp; Since she wasn't invited to his party, 
+				she didn't invite him to hers</em><br />
+				a preposition in<br />
+				<em>&nbsp;&nbsp;&nbsp; I haven't seen her since the meeting</em><br />
+				and an adverb in<br />
+				<em>&nbsp;&nbsp;&nbsp; I saw her this morning but not since.</em></li>
+			</ol>
+			<p>There are plenty of other examples of this categorical 
+			indeterminacy in
+			<a href="../lexicogrammar/gradience.html" target="_blank">the guide 
+			to gradience</a> (new tab).</p>
+			<p>A further difficulty lies in the fact that although words may 
+			fall quite neatly into major classes, the function they perform, 
+			syntactically, grammatically and communicatively may be very 
+			variable.&nbsp; There is no doubt, for example, that the word <em>
+			could </em>should be categorised as a verb but it is one of a very 
+			different order from verbs such as <em>cook</em> and different again 
+			from a verb like <em>be.</em></p>
+			<p>We should remember, therefore, that this is not by any means the 
+			only way to categorise the lexemes of the language.<br />
+			Traditionally, what we have categorised above as determiners, for 
+			example, have previous been dealt with as separate categories for possessive adjectives: <em>my, your, her</em> etc.; 
+			demonstrative adjectives: <em>this, that, these, those</em>; 
+			quantifiers: <em>many, a few, a good deal of, some</em> etc.; articles: <em>a, an, the</em>,
+			<em>&Oslash;</em> (sometimes including <em>some</em>) and so on.<br />
+			Quirk and Greenbaum (1973:18) also distinguish demonstratives and 
+			articles as separate word classes.</p>
+			<p>Other more recent categorisations, notably that of Huddleston <em>
+			et al</em> (2002:22), follow something broadly similar to what is 
+			used here, although the preferred description is<strong> lexical 
+			category</strong> rather than<strong> word class</strong>,<strong>
+			</strong>but with significant differences:</p>
+			<ol>
+				<li>The first four content-word categories are parallel.</li>
+				<li>Pronouns are demoted from a separate category and subsumed 
+				as a subset of nouns (because that is how they act).</li>
+				<li>The category of conjunctions is removed and replaced with 
+				two distinct classes:<ol class="auto-style8">
+					<li>Subordinators: <em>that, for, to, whether, if </em>etc.</li>
+					<li>Coordinators: <em>and, or, but, nor </em>etc.</li>
+				</ol>
+				</li>
+				<li>A new category, determinative, is proposed to include: <em>
+				the, this, that, a(n), some, all, every, each </em>etc.<br />
+				This is to separate the grammatical function of determination 
+				from the lexical category of determinative.&nbsp; So, for 
+				example, while the word <em>that</em> in:<br />
+&nbsp;&nbsp;&nbsp; <em>that car<br />
+				</em>is a determinative<em>, </em>the same word functions 
+				differently in, e.g.:<br />
+&nbsp;&nbsp;&nbsp; <em>it was that close<br />
+				</em>where it occurs as part of an adjective phrase.<br />
+				Determinatives considered in this way may <strong>only</strong> 
+				occur as part of a noun phrase whereas the function of 
+				determination can be achieved in many ways.</li>
+			</ol>
+			<p>This may seem, and is, a somewhat minor and theoretical 
+			distinction but, because word class (or lexical category) is such a 
+			fundamental aspect of any understanding of syntax, it is, in 
+			reality, quite important.</p>
+			<p>We shall persist here and in other guides with the 9-part 
+			identification of word class that is set out above but that is more 
+			from considerations of usability in the classroom and familiarity 
+			than theoretical judgements concerning the sustainability of the 
+			concepts.</p>
+			<p>In the essential guide to word class, the relationships and 
+			examples are illustrated like this.&nbsp; You can click on any of 
+			the green boxes to go to the essentials-only guide to that word 
+			class:</p>
+			<p>
+			<map id="ImgMap2" name="ImgMap2">
+				<area alt="" coords="299, 81, 458, 123" href="../../initial/lexis/prepositions_essentials.html" shape="rect" />
+				<area coords="298, 158, 461, 203" href="../../common/pronouns_proforms_overview.html" shape="rect" />
+				<area alt="" coords="301, 251, 461, 295" href="../../initial/lexis/determiners_essentials.html" shape="rect" />
+				<area alt="" coords="300, 343, 461, 384" href="../../initial/lexis/conjunctions_essentials.html" shape="rect" />
+				<area coords="298, 420, 459, 465" href="../../initial/grammar_essentials/verbs_essentials.html" shape="rect" />
+				<area alt="" coords="303, 8, 462, 52" href="../../initial/grammar_essentials/verbs_essentials.html" shape="rect" />
+				<area alt="" coords="300, 531, 462, 573" href="../../initial/lexis/nouns_essentials.html" shape="rect" />
+				<area alt="" coords="299, 623, 462, 664" href="../../initial/lexis/adjectives_essentials.html" shape="rect" />
+				<area alt="" coords="301, 716, 463, 758" href="../../initial/lexis/adverbs_essentials.html" shape="rect" />
+			</map>
+			<img alt="summary" class="auto-style88" height="804" src="../../imagesgraphics/word_class_summary.png" usemap="#ImgMap2" width="930" /></p>
+			<p>You can get it as a PDF document by clicking
+			<a href="../../../documents/ELT_Concourse_word_class_summary.pdf" target="_blank">
+			here</a>.</p>
+			<p>An alternative, simpler classification might look like this:<br />
+			<img alt="categories" height="490" src="../../imagesgraphics/lexical_categories.png" width="465" /></p>
+			<p>and it would be possible to graft onto that diagram the various 
+			sub-categories of most of the classes.&nbsp; We have not done so 
+			here in the interests of clarity but that is set out more 
+			comprehensively in the guide to word and phrase class.</p>
+			<p>It is worth noting at this point that the classifications used in 
+			this section refer to the English lexicon.&nbsp; Other languages 
+			differ in having, for example, nominal classifiers as a discernible 
+			closed class of words (e.g., Chinese languages, Korean, Japanese and 
+			Thai) and in subdividing other classes (such as adjectives).&nbsp; 
+			Many languages make no distinction between adjectives and adverbs 
+			and some rely on verb modifications and have few or no prepositions 
+			or even post-positions.<br />
+			In some languages, such as Japanese, adjectives may inflect for 
+			tense and the borderline between them and verbs is somewhat blurred.<br />
+			Even the distinction between closed- and open-class items is not a 
+			universal because, for example, in Japanese, adjectives and verbs 
+			are members of closed classes (with new items being formed in other 
+			ways) whereas pronouns are open class items (as they are in some 
+			other East Asian languages).<br />
+			The only truly universal word classes seem to be those of nouns and 
+			verbs and words in other languages will be classified differently.</p>
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="school" height="133" src="../../images/sign_shcool200.jpg" width="200" /></td>
+					<td class="auto-style1">
+					<h3>Spelling and grammar checkers</h3>
+					</td>
+				</tr>
+			</table>
+			<p>If you are reading this, it is a reasonable bet that you are also 
+			able to use a word processor to create texts of your own and part of 
+			your word processor package will normally be a spelling and grammar 
+			checker.&nbsp; How does that work?</p>
+			<p>A spelling checker will, of course, be able to detect whether a set 
+			of characters between two spaces corresponds to any of the entries 
+			in its dictionary and it is possible, indeed routine, for users to 
+			add unusual or personally relevant items to that list.<br />
+			For example, if we type <em>shcool</em>, the program can instantly 
+			recognise that this is a misspelling and will suggest the correct
+			<em>school</em> as a replacement.&nbsp; That works for words which 
+			only have a single spelling.<br />
+			However, it will not be able to detect what is wrong in all these:<br />
+			<em>&nbsp;&nbsp;&nbsp; That child has groan quickly</em><br />
+			<em>&nbsp;&nbsp;&nbsp; We need to cheque the grammar</em><br />
+			<em>&nbsp;&nbsp;&nbsp; I tried to catch it but mist</em><br />
+			because there is no misspelling, just a misuse of homophones (<em>groan/grown, 
+			cheque/check, mist/missed</em>).&nbsp; If you enter that text into 
+			most word-processing programs, nothing will alert you to the error.<br />
+			Speakers of the language will, however, be able to recognise that
+			<em>groan</em> is the base form of a verb which cannot occur after 
+			the auxiliary verb, <em>has</em>, in a present perfect tense form, 
+			<em>cheque</em> is a British English word for a 
+			money order and not a verb at all and <em>mist</em> is a noun describing thin fog.</p>
+			<p>A grammar checker uses the rules of syntax that it knows to flag up 
+			a possible word choice error by noting that <em>groan</em> is both a 
+			verb and a noun and cannot be used in that slot in the sentence as 
+			it stands.&nbsp; However, <em>mist</em> is a noun and cannot be used 
+			in a verb slot but Microsoft Word's built-in grammar 
+			checker failed to spot the second two examples altogether, not 
+			understanding that<em> mist</em> and <em>cheque</em> are nouns that cannot be used in 
+			this kind of construction in that slot in the clause.<br />
+			An example often produced by learners of an ill-formed sentence is:<br />
+			<em>&nbsp;&nbsp;&nbsp; *She is know about the prices</em><br />
+			and the grammar checker correctly identified it as a possible misuse 
+			of the verb <em>know</em>.&nbsp; However, its suggestion for a 
+			correction is <em>known</em> which is also erroneous.&nbsp; The 
+			program can detect a possible passive-voice clause, therefore, and 
+			note that the verb <em>be</em> is followed conventional by the 
+			participle<em> -ed / -en </em>form but cannot assign word or phrase 
+			class accurately.<br />
+			As yet, none of the programs is close to being able consistently and 
+			accurately to check the syntax of English because:</p>
+			<ol class="auto-style8">
+				<li>Words in a natural language may occur in more than one word 
+				class.&nbsp; For example:<br />
+				<em>&nbsp;&nbsp;&nbsp; The tickets are free<br />
+&nbsp;&nbsp;&nbsp; She wants to free herself of any influence<br />
+&nbsp;&nbsp;&nbsp; This is the land of the free<br />
+&nbsp;&nbsp;&nbsp; The area is now disease-free</em><br />
+				In the first case, the word <em>free</em> is an adjective, in 
+				the second a verb, in the third a noun and in the last a 
+				combining form morpheme.&nbsp; Any grammar checker has to 
+				include all four word classes in its dictionary to be able to 
+				decide whether the word is being used correctly.&nbsp; Then it 
+				has to apply all the rules of English syntax (which are not yet 
+				known, incidentally) to decide if what is written is well formed 
+				or not.</li>
+				<li>Words themselves have grammatical aspects which most 
+				programs will also miss so for sentences such as:<br />
+				<em>&nbsp;&nbsp;&nbsp; The children has arrived<br />
+&nbsp;&nbsp;&nbsp; The furniture are interesting</em><br />
+				no warning will be evinced even though the recognition of a 
+				plural noun <em>vs</em>. a singular noun should be easy enough 
+				to arrange.&nbsp; It is, of course, but the recognition of 
+				concord and agreement between noun and verb is much harder.&nbsp; 
+				If we take a sentence such as:<br />
+				<em>&nbsp;&nbsp;&nbsp; The friend of my mother and my father are 
+				coming to the party<br />
+				vs.<br />
+&nbsp;&nbsp;&nbsp; The friend of my mother and my father is coming to the party</em><br />
+				then an electronic grammar checker will be wholly at a loss to 
+				explain what's right and wrong because it is unclear to it how 
+				many people are involved.&nbsp; Humans can recognise it 
+				instantly.</li>
+			</ol>
+			<p>The grail of designers of such programs is to make them 
+			sophisticated enough to check such things and for that, they need a
+			<strong>complete</strong> grammar checker and a grammar checker is 
+			just baby talk for a syntax checker.<br />
+			Word class is fundamental to syntax and that is the reason that 
+			grammar checkers are, as yet, so inconsistent and frustrating.&nbsp; 
+			Often, such programs will flag perfectly correct sentences as flawed 
+			(and applying any suggestions will usually make matters considerably 
+			and sometimes laughably worse) and yet ignore clearly flawed 
+			constructions altogether.<br />
+			It's just hard.</p>
+			<hr />
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="truck" height="166" src="../../images/truck_delivery250.jpg" width="250" /></td>
+					<td class="auto-style1">
+					<h2>Using the categories</h2>
+					</td>
+				</tr>
+			</table>
+			<p>Once we have the categories of words and phrases in place, we can 
+			start to formulate our rules of syntax more precisely and, some 
+			claim, scientifically.&nbsp; This means being able to construct 
+			paradigms from what we know are well formed sentences, inserting 
+			word class into the patterns we have perceived.&nbsp; It works a bit 
+			like this:</p>
+			<p>Given a set of correctly formed sentences such as:<br />
+			<em>&nbsp;&nbsp;&nbsp; The truck delivered some boxes<br />
+&nbsp;&nbsp;&nbsp; The old truck delivered some boxes<br />
+&nbsp;&nbsp;&nbsp; The truck delivered some large boxes<br />
+&nbsp;&nbsp;&nbsp; The old truck delivered some large boxes<br />
+&nbsp;&nbsp;&nbsp; That truck delivered those very large boxes</em><br />
+			and so on, we can construct the pattern as:<br />
+			<span class="style_black"><strong>S &rarr; Det (A) N V Det (A) N</strong></span><br />
+			in which:<br />
+&nbsp;&nbsp;&nbsp; S = Sentence<br />
+&nbsp;&nbsp;&nbsp; Det = Determiner<br />
+&nbsp;&nbsp;&nbsp; A = Adjective<br />
+&nbsp;&nbsp;&nbsp; V = Verb<br />
+&nbsp;&nbsp;&nbsp; N = Noun<br />
+			and in which the items (in brackets) are optional elements.&nbsp; We 
+			can visualise it like this:</p>
+			<p>
+			<img alt="syntax" height="58" src="../../imagesgraphics/syntax1.png" width="310" /></p>
+			<p>and from that simple diagram, we can generate thousands upon 
+			thousands of correctly formed sentences.&nbsp; The number is not 
+			infinite but it approaches infinity especially if we are prepared to 
+			construct long adjective phrases such as <em>large, blue, 
+			interesting, Chinese, diesel </em>etc.<br />
+			For example:<br />
+			<em>&nbsp;&nbsp;&nbsp; My green dog ate her yellow cat<br />
+&nbsp;&nbsp;&nbsp; Those large, vicious moles attacked that helpless, old man<br />
+			</em>and so on.<br />
+			Furthermore, because syntax is, in theory at least, separate from 
+			semantics, it does not matter if the sentences make any kind of 
+			sense so:<br />
+			<em>&nbsp;&nbsp;&nbsp; Someone's screaming concept devoured my 
+			unhappy car</em><br />
+			is also derivable from the simple syntactical rule we have 
+			established.</p>
+			<p>We can do this kind of thing to form the basis of many different 
+			sentences so, for example, starting with<br />
+			<em>&nbsp;&nbsp;&nbsp; Do you always have lunch in this room?</em><br />
+			we can arrive at:</p>
+			<p>
+			<img alt="syntax 2" height="79" src="../../imagesgraphics/syntax2.png" width="465" /></p>
+			<p>in which we have:<br />
+			<span class="style_black"><strong>S &rarr; Aux + N + (Adv) + V + (N 
+			+ P + Det + N)</strong></span><br />
+			in which the adverb is an optional part and (in the case of verbs 
+			which can be or are intransitive) so is the entire object noun 
+			phrase.&nbsp; That pattern will generate:<br />
+			<em>&nbsp;&nbsp;&nbsp; Can you sometimes see people in the street?<br />
+&nbsp;&nbsp;&nbsp; Must he frequently drive buses on his holidays?</em><br />
+			and lots more sentences, some of which may even make sense.</p>
+			<hr />
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="ingredients" height="166" src="../../images/ingredients_a250.jpg" width="250" /></td>
+					<td class="auto-style1">
+					<h2>Constituents</h2>
+					</td>
+				</tr>
+			</table>
+			<p>There are times, however, when generating the pattern is less 
+			straightforward because two possible patterns (and sometimes more 
+			than two) are possible.<br />
+			For example, sentences such as:</p>
+			<ol>
+				<li><em>The neighbour of the woman and the man is complaining</em></li>
+				<li><em>The neighbour of the woman and the man are complaining</em></li>
+			</ol>
+			<p>have a single representation as:</p>
+			<p>
+			<img alt="syntax 3" height="69" src="../../imagesgraphics/syntax3.png" width="465" /></p>
+			<p>but a glance at the two sentences tells us that the constituents 
+			of each part are not the same.<br />
+			In sentence 1. only one person is complaining and he or she is <em>
+			the neighbour of the woman and the man</em>.&nbsp; In sentence 2., 
+			two people are complaining: <em>the neighbour of the woman</em> and
+			<em>the man</em>.&nbsp; The sentences can be written to show this by 
+			putting the constituents in square brackets, conventionally, like 
+			this:</p>
+			<ol>
+				<li><em>[The neighbour of the woman and the man] is complaining</em></li>
+				<li><em>[The neighbour of the woman] and [the man] are 
+				complaining</em></li>
+			</ol>
+			<p>Similar things frequently happen with prepositional phrases so, 
+			for example, in:<br />
+			<em>&nbsp;&nbsp;&nbsp; He photographed the house by the river</em><br />
+			we have two possible constituent analyses:</p>
+			<ol>
+				<li><em>[He] photographed [the house by the river]</em></li>
+				<li><em>[He] photographed [the house] [by the river]</em></li>
+			</ol>
+			<p>because in sentence 1., the prepositional phrase modifies <em>the 
+			house</em> and tells us where it was but in sentence 2. the phrase 
+			modifies the verb <em>photographed</em> and tells us where the 
+			photographing happened.</p>
+			<p>Word and phrase class analysis alone is, therefore not enough for 
+			us to form rules for acceptable sentences in a language.&nbsp; We 
+			need to consider the phrase constituents of clauses and the elements 
+			of the phrases themselves as well.</p>
+			<hr />
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="identify" height="166" src="../../images/finger_point_light250.jpg" width="250" /></td>
+					<td class="auto-style1">
+					<h2>Identifying constituents</h2>
+					</td>
+				</tr>
+			</table>
+			<p>There are six main ways to identify the constituents of clauses 
+			and sentences.<br />
+			We will use the same example sentence to show what they are:</p>
+			<p class="indentpara"><em><strong>He photographed the house by the 
+			river</strong></em></p>
+			<ol>
+				<li><strong>Making a cleft</strong><br />
+				<img alt="cleft" height="133" src="../../images/cut_avocado200.jpg" width="200" /><br />
+				There is a guide on this site linked from the syntax index to cleft sentences so 
+				this is not the place to explain what they are, how they are 
+				formed and why they are used.<br />
+				This is how they may identify the constituents of the example 
+				sentence, however:<ul class="bluebullet">
+					<li><em>It was the house that he photographed by the river</em><br />
+					identifies <em>the house </em>and <em>by the river </em>as 
+					separate constituents</li>
+					<li><em>It was by the river that he photographed the house</em><br />
+					identifies where the photographing occurred</li>
+					<li><em>It was the house by the river that he photographed</em><br />
+					identifies <em>the house by the river</em> as a single 
+					constituent.</li>
+				</ul>
+				</li>
+				<li><strong>Questions</strong><br />
+				<img alt="?" height="133" src="../../images/question_girl200.jpg" width="200" /><br />
+				When we pose questions concerning the content of a sentence, we 
+				do so by referring to the constituents so, for example:<ol class="bluebullet">
+					<li><em>Where did he photograph the house?</em><br />
+					refers to the prepositional phrase as the modifier of the 
+					verb and identifies it as an independent constituent so the 
+					short answer would be<br />
+&nbsp;&nbsp;&nbsp; <em>by the river</em></li>
+					<li><em>What did he photograph by the river?</em><br />
+					assumes <em>the house</em> is a separate constituent so the 
+					short answer would be<br />
+					<em>&nbsp;&nbsp;&nbsp; the house</em></li>
+					<li><em>Which house did he photograph?</em><br />
+					refers to the prepositional phrase modifying <em>the house</em> 
+					and identifies it as an independent constituent<br />
+					<em>&nbsp;&nbsp;&nbsp; the house by the river</em></li>
+				</ol>
+				</li>
+				<li><strong>Pro-form substitution</strong><br />
+				<img alt="bird" height="133" src="../../images/birds_cat_bird200.jpg" width="200" /><br />
+				We can use the trick of substituting a constituent with a 
+				pro-form to determine its role in the sentences, like this:<ul class="bluebullet">
+					<li><em>He photographed it by the river</em><br />
+					means that <em>the house </em>is a stand-alone constituent</li>
+					<li><em>He photographed it</em><br />
+					means <em>the house by the river</em> is the object</li>
+					<li><em>He photographed the house there</em><br />
+					establishes <em>by the river</em> as the separate 
+					constituent phrase</li>
+				</ul>
+				</li>
+				<li><strong>Coordination</strong><br />
+				<img alt="juggler" height="133" src="../../images/man_juggler200.jpg" width="200" /><br />
+				We can use a conjunction to coordinate a phrase to another and 
+				use that test to identify the constituents of the clause.&nbsp; 
+				For example:<ul class="bluebullet">
+					<li><em>He photographed the house by the river and the boat</em><br />
+					establishes that <em>the house by the river</em> is a single 
+					constituent</li>
+					<li><em>He photographed the house by the river and from the 
+					bridge</em><br />
+					establishes that <em>by the river</em> modifies the verb 
+					phrase and that <em>the house</em> is an independent 
+					constituent</li>
+					<li><em>He photographed and later bought the house by the 
+					river</em><br />
+					establishes that <em>the house by the river</em> is a single 
+					constituent</li>
+				</ul>
+				</li>
+				<li><strong>Making a passive</strong><br />
+				<img alt="cat" height="133" src="../../images/animals_cat_sleep200.jpg" width="200" /><br />
+				Passive-voice clauses rely on raising the object of a verb to 
+				the subject slot in the clause (and we rename it as the patient 
+				with the erstwhile subject now the agent).&nbsp; To identify our 
+				phrase constituents in the example sentence, therefore, we can 
+				produce either:<br />
+				<em>&nbsp;&nbsp;&nbsp; The house by the river was photographed</em><br />
+				or<br />
+&nbsp;<em>&nbsp;&nbsp; The house was photographed by the river</em><br />
+				and in the first case, we know that <em>the house by the river</em> 
+				constitutes the patient of the clause and in the second that 
+				only <em>the house</em> is the patient.&nbsp; It also 
+				establishes <em>by the river</em> as a modifier of the verb, not 
+				the noun.</li>
+				<li><strong>Mobility</strong><br />
+				<img alt="mobile" height="133" src="../../images/man_mobile200.jpg" width="200" /><br />
+				We can determine what constitutes a phrase by the simple trick 
+				of seeing if we can move it and retain the sense of the original 
+				clause.&nbsp; Grammatically, this is what we have done above to 
+				form passive-voice clauses and cleft sentences.&nbsp; The 
+				simpler way is just to move an element, like this:<br />
+				<em>&nbsp;&nbsp;&nbsp; By the river he photographed the house</em><br />
+				retains the sense of the prepositional phrase modifying the verb 
+				but not the sense of it modifying the noun.&nbsp; However,<br />
+				<em>&nbsp;&nbsp;&nbsp; The house by the river is what he 
+				photographed</em><br />
+				can only mean that the prepositional phrase modifies the noun 
+				and<br />
+				<em>&nbsp;&nbsp;&nbsp; The house is what he photographed by the 
+				river</em><br />
+				retains the sense of the first example here.</li>
+			</ol>
+			<p>There is a guide to clause constituents on this site, accessible 
+			from the syntax index, linked below.</p>
+			<hr />
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="structure" height="166" src="../../images/structure_leaf250.jpg" width="250" /></td>
+					<td class="auto-style1">
+					<h2>Phrase structure</h2>
+					</td>
+				</tr>
+			</table>
+			<p>Once we can define what constitutes a clause we can look a bit 
+			more closely at what constitutes a phrase and examine the rules of 
+			English syntax for making well-formed phrases which we can then 
+			combine into well-formed clauses and sentences.<br />
+			To decide what the constituent parts of any type of phrase are, we 
+			need consider what is its Head.<br />
+			Here is how we do that.</p>
+			<ol>
+				<li><strong>Noun phrases</strong><br />
+				<img alt="things" height="133" src="../../images/things_to_know200.jpg" width="200" /><br />
+				If we consider what we can insert in the gap in:<br />
+				<em>&nbsp;&nbsp;&nbsp; __________ enjoyed the play</em><br />
+				it is immediately clear that it could be any of:<br />
+				<em>he, she, that man, my friends, people, the woman in black, 
+				all of us, the people who waited in the rain for hours on end<br />
+				</em>and so on, but the gap cannot be filled with:<br />
+				<em>happily, green, shoot, up the road, has probably benefited</em><br />
+				and so on.<br />
+				This is because a noun phrase must contain a Head noun or 
+				pronoun (and for this analysis, following Huddleston<em> et al</em>, we'll combine those two classes 
+				as their grammatical functions are parallel).<br />
+				We can also see that a noun phrase can contain a number of 
+				optional elements.&nbsp; Breaking down a noun phrase is written 
+				like this:<br />
+				NP &rarr; (Det*) (A*) N (PP*/S*)<br />
+				in which:<br />
+				NP = Noun phrase<br />
+				Det = Determiner<br />
+				A = Adjective<br />
+				N = Noun<br />
+				PP = a modifying Prepositional phrase<br />
+				S = a modifying Sentence<br />
+				* = may be repeated<br />
+				From that we can see that only the N is obligatory so all of the 
+				following will count as noun phrases:<br />
+				<em>&nbsp;&nbsp;&nbsp; the man who came to the party with his 
+				sister </em>(Det + N + S)<br />
+&nbsp;&nbsp;&nbsp; <em>she</em> (N [subset Pronoun])<br />
+				<em>&nbsp;&nbsp;&nbsp; the woman in the corner, by the fireplace 
+				in the red coat </em>(Det + PP*)<br />
+				<em>&nbsp;&nbsp;&nbsp; the nice, shiny, new, diesel, delivery 
+				truck</em> (Det + A* + N)<br />
+				The rule we have will not generate:<br />
+				<em>the happily man, go house, many pretty </em>etc. because 
+				they break the rules for forming noun phrases and cannot fill 
+				the gap in the sentence.</li>
+				<li><strong>Verb phrases</strong><br />
+				<img alt="action" height="133" src="../../images/action_people200.jpg" width="200" /><br />
+				By the same token, verb phrases must contain a Head verb but 
+				other elements are optional.&nbsp; So, to fill the gap in:<br />
+				<em>&nbsp;&nbsp;&nbsp; My mother __________</em><br />
+				we could have:<br />
+				<em>wanted some cake, rang, has tried to get her money back, 
+				told me she was getting married again, arrived by car</em><br />
+				and so on but we cannot fill the gap with:<br />
+				<em>happy, in London, the garden</em><br />
+				and so on.<br />
+				Thus a verb phrase is:<br />
+				VP → V (NP) (PP*/S*)<br />
+				in which only the V is obligatory.&nbsp; The following do not 
+				qualify as verb phrases:<br />
+				<em>very happy, the wide road, the building, under the carpet</em><br />
+				because they do not contain the obligatory V.<br />
+				We can also see, incidentally, that in order to form a correct 
+				sentence in English the VP is an obligatory element.<br />
+				From that we can see that only the V is obligatory so all of the 
+				following will count as verb phrases:<br />
+				<em>&nbsp;&nbsp;&nbsp; left </em>(V)<br />&nbsp;&nbsp;&nbsp; <em>left the house </em>(V + NP)<br /><em>&nbsp;&nbsp;&nbsp; came to the party which was arranged 
+				by the company </em>(V + PP+ S)<br />
+				However, verb phrases do not stop there because we can also fill 
+				the gap in our example sentence with:<br />
+				<em>can play the piano, spoke too loudly, watched from the 
+				balcony</em><br />
+				and in these cases, we can further define a verb phrase as:<br />
+				VP → (Aux) V (NP)<br />
+				or<br />
+				VP → V (Adv/PP)<br />
+				where Adv = modifying adverbial.<br />
+				It is worth pausing here to consider finite and non-finite verb 
+				forms, both of which can appear in VPs.&nbsp; A finite verb form 
+				is marked for tense or person (even when that marking is, as is 
+				often the case in English, zero or &Oslash;) so a finite verb 
+				phrase might be:<br />
+				<em>&nbsp;&nbsp;&nbsp; she </em><span class="style_black"><em>
+				<strong>work</strong></em><strong><em>s</em></strong></span><br />
+				with the <em>s</em> ending on the verb marking it for person or:<br />
+				<em>&nbsp;&nbsp;&nbsp; they </em><span class="style_black">
+				<strong><em>work</em></strong></span><br />
+				with a &Oslash; inflexion on the verb.<br />
+				A non-finite verb phrase might be<br />
+				<em>&nbsp;&nbsp;&nbsp; </em><span class="style_black"><strong>
+				<em>to open</em></strong></span><em> the window</em><br />
+				in which the verb is unmarked and a non-finite form.<br />
+				Some verbs, including the central modal auxiliaries, have no 
+				non-finite forms, incidentally.</li>
+				<li><strong>Adjective phrases</strong><br />
+				<img alt="alone" height="133" src="../../images/alone_beach200.jpg" width="200" /><br />
+				must contain at least one adjective as the Head but may contain 
+				other elements.<br />
+				To fill the gap in:<br />
+				<em>&nbsp;&nbsp;&nbsp; Mary seemed __________</em><br />
+				we can select elements such as:<br />
+				<em>tired, happy to be there, aware of the problem, happy that 
+				her son was going to university</em><br />
+				and so on but not<br />
+				<em>the house, enjoy, in the garden</em><br />
+				and so on.<br />
+				So an adjective phrase is:<br />
+				AP → A (PP/VP/S)<br />
+				denoting that these are adjective phrases:<br />
+				<em>happy in herself, delighted that she could be there, pleased to 
+				help</em><br />
+				but not<br />
+				<em>over the road, want to come</em><br />
+				because the Head is missing.</li>
+				<li><strong>Adverb phrases</strong><br />
+				<img alt="accurately" height="133" src="../../images/accuracy_dart200.jpg" width="200" /><br />
+				must contain at least one adverb as the Head but may be quite 
+				complex.<br />
+				To fill the gap in:<br />
+				<em>&nbsp;&nbsp;&nbsp; John spoke very __________</em><br />
+				we can select:<br />
+				<em>loudly, frequently, privately, persuasively, almost endlessly, 
+				twice, again and again</em><br />
+				and so on but we cannot select:<br />
+				<em>happy, in the garden, the house</em><br />
+				because the syntactical rules of English forbid this.<br />
+				Thus:<br />
+				AdvP → (AdvP) Adv<br />
+				Which willgenerate:<br />
+&nbsp;&nbsp;&nbsp; <em>movingly </em>(Adv)<br />
+&nbsp;&nbsp;&nbsp; <em>lengthily at the meeting</em> (Adv + AdvP)<br />
+				and so on.&nbsp; In the second example, we have a prepositional 
+				phrase, of course, but, because it is adverbial in nature, we 
+				can represent it as AdvP.</li>
+				<li><strong>Prepositional phrases</strong><br />
+				<img alt="box" height="133" src="../../images/box_table200.jpg" width="200" /><br />
+				are even simpler and we can fill the gap in:<br />
+				<em>&nbsp;&nbsp;&nbsp; Mary arrived __________</em><br />
+				with an adverb phrase as we saw above but also with a 
+				prepositional phrase such as:<br />
+				<em>at the hotel, before six, by car, with her mother</em><br />
+				and so on but not with<br />
+				<em>the hotel, goes, who wanted to see her</em><br />
+				Thus:<br />
+				PP → P NP<br />
+				which means that both the P and the NP are obligatory 
+				constituents.<br />
+				(In some analyses, a preposition may stand alone and be 
+				designated as an intransitive preposition so, by that analysis:<br />
+				<em>&nbsp;&nbsp;&nbsp; She went outside</em><br />
+				is represented as<br />
+&nbsp;&nbsp;&nbsp; N + V + P<br />
+				but that is not the line taken here.&nbsp; We would analyse that 
+				as:<br />
+&nbsp;&nbsp;&nbsp; N + V + Adv<br />
+				with <em>outside</em> categorised as an adverb.)</li>
+			</ol>
+			<p><a name="return"></a>If you like, you can take
+			<a href="syntaxhp1.htm">two little matching tests</a> to see if you 
+			have understood this section.</p>
+			<p>An alternative classification of phrase classes is reasonably 
+			similar to what has been discussed here and, based on Huddleston <em>et 
+			al</em> (2002:23), looks like this:</p>
+			<p>
+			<img alt="phrases" height="397" src="../../imagesgraphics/phrase_classes_huddleston.png" width="465" /></p>
+			<p>Elsewhere on this site, this is not the categorisation which is 
+			generally followed and, although it is stated that a verb phrase may 
+			only contains verbs, it is conceded that, for teaching purposes, the 
+			verb plus any modifiers, the object and the adverbials may be 
+			considered together as a single phrase.</p>
+			<p>There is one other category in that classification that has not 
+			yet been explained: the nominal.<br />
+			Most analyses will not see a nominal as a separate and distinct form 
+			of phrase but doing so has some utility.&nbsp; Almost any phrase in 
+			English may be nominalised and therefore act as if it was a noun 
+			phrase in terms of syntax so, for example, in the following we have:<br />
+			<em>&nbsp;&nbsp;&nbsp; In the corner is the best place for that</em><br />
+			in which the prepositional phrase is nominalised.<br />
+			<em>&nbsp;&nbsp;&nbsp; Only the young and fit are able to do that</em><br />
+			in which we have a nominalised adjective phrase.<br />
+			<em>&nbsp;&nbsp;&nbsp; Being criticised irritated her</em><br />
+			in which we have a nominalised non-finite verb phrase.<br />
+			<em>&nbsp;&nbsp;&nbsp; Enthusiastically is how they responded</em><br />
+			in which the adverb is nominalised.<br />
+			<em>&nbsp;&nbsp;&nbsp; That he was allowed to go home was a sensible 
+			decision</em><br />
+			in which we have a nominalised subordinate clause.<br />
+			<em>&nbsp;&nbsp;&nbsp; They got married which pleased her mother</em><br />
+			in which we have a nominalised finite verb phrase (including the 
+			subject noun).<br />
+			There are guides to nominalisation linked from the syntax index.</p>
+			<hr />
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="nuts" height="166" src="../../images/nuts_bolts_b250.jpg" width="250" /></td>
+					<td class="auto-style1">
+					<h2>The nuts and bolts: putting it all together</h2>
+					</td>
+				</tr>
+			</table>
+			<p>We have now reached the stage where we can recap and see how it 
+			all works in combination.&nbsp; So far, we have established that:</p>
+			<ol>
+				<li>A sentence in its minimal form consists of&nbsp;a noun phrase 
+				plus a verb phrase or:<br />
+				S → NP VP<br />
+				and that will generate, for example:<br />
+				<em>&nbsp;&nbsp;&nbsp; They went home</em><br />
+				and verb phrases, as we saw have a number of optional potential 
+				elements (see 3., below).</li>
+				<li>A noun phrase consists minimally of a noun but may have 
+				optional elements like this:<br />
+				NP &rarr; (Det*) (A*) N (PP*/S*)<br />
+				and that pattern will generate, for example:<br />
+				<em>&nbsp;&nbsp;&nbsp; women<br />
+&nbsp;&nbsp;&nbsp; the woman<br />
+&nbsp;&nbsp;&nbsp; the young woman</em><br />
+&nbsp;&nbsp;&nbsp; <em>the old car in the garage with the broken windscreen<br />
+&nbsp;&nbsp;&nbsp; his old computer I repaired last week</em></li>
+				<li>A verb phrase consists minimally of a verb but may have 
+				optional elements like this:<br />
+				VP → V (NP) (PP*/S*)<br />
+				which might generate:<br />
+				<em>&nbsp;&nbsp;&nbsp; has left the keys under the mat</em><br />
+				<em>&nbsp;&nbsp;&nbsp; went to London along with his sister to 
+				see the changing of the guard</em><br />
+				or it may appear as:<br />
+				VP → (Aux) V (NP)<br />
+				which could generate:<br />
+				<em>&nbsp;&nbsp;&nbsp; can cook dinner</em><br />
+				<em>&nbsp;&nbsp;&nbsp; had a late lunch</em><br />
+				or<br />
+				VP → V (Adv/PP)<br />
+				which will generate, for example:<br />
+&nbsp;<em>&nbsp;&nbsp; go frequently to the shops<br />
+&nbsp;&nbsp;&nbsp; lie in the sun</em></li>
+				<li>An adjective phrase consists minimally of an adjective but 
+				may have optional elements like this:<br />
+				AP → (Adv) A (PP/VP/S)<br />
+				which could generate:<br />
+				<em>&nbsp;&nbsp;&nbsp; very happy in my new home<br />
+&nbsp;&nbsp;&nbsp; delighted you could make it<br />
+&nbsp;&nbsp;&nbsp; probably happy to help</em></li>
+				<li>An adverb phrase consists minimally of an adverb but may 
+				have an optional extra adverb phrase like this:<br />
+				AdvP → Adv (AdvP)<br />
+				which could generate:<br />
+				<em>&nbsp;&nbsp;&nbsp; very quickly but very carefully</em></li>
+				<li>A prepositional phrase must consist of the preposition plus 
+				a noun phrase, like this:<br />
+				PP → P NP<br />
+				and that could generate:<br />
+&nbsp;&nbsp;&nbsp; <em>into the old suitcase</em></li>
+			</ol>
+			<p>If we add all these elements into the structure of a complete 
+			sentence we can generate something like:</p>
+			<p class="indentpara"><strong>The young man from London could 
+			buy the most expensive car in the showroom</strong></p>
+			<p>which looks complicated but is actually not because we can 
+			represent it this way:</p>
+			<p>
+			<img alt="syntax 4" height="291" src="../../imagesgraphics/syntax4.png" width="930" /></p>
+			<p>
+			It is also possible to break down the adjective phrase (into Adv [<em>most</em>] 
+			and Adj [<em>expensive</em>]) and the final noun phrase (into N [<em>car</em>], 
+			P [<em>in</em>], Det [<em>the</em>] and N [<em>showroom</em>]) but 
+			that is not necessary once we know how to do it.</p>
+			<p>
+			In theory, all sentences and clauses in any language can be 
+			generated by applying the rules for what forms a sentence and what 
+			forms the components of its constituent phrases.<br />
+			However, what we have done here applies to English syntax and it is 
+			unlikely that other languages will work in the same way although the 
+			assumption made by many is that all languages contain the basic 
+			building blocks.</p>
+			<p>
+			Now, armed with our ability to identify the functions of phrases 
+			within clauses and sentences, we can disambiguate our previous 
+			example:<br />
+			<em>&nbsp;&nbsp;&nbsp; He photographed the house by the river</em><br />
+			without recourse to square brackets and so on to say what the 
+			phrases are doing.&nbsp; It will work like this:</p>
+			<table cellpadding="0" class="auto-style3">
+				<tr class="style_black">
+					<td class="auto-style4">Interpretation 1<br />
+					<em>[He] photographed [the house by the river]</em></td>
+					<td class="auto-style5">Interpretation 2<br />
+					<em>[He] photographed [the house] [by the river]</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style7">
+					<img alt="syntax 7" height="206" src="../../imagesgraphics/syntax7.png" width="310" /></td>
+					<td class="auto-style6">
+					<img alt="syntax 8" height="196" src="../../imagesgraphics/syntax8.png" width="310" /></td>
+				</tr>
+			</table>
+			<p>
+			and it is simple to see that in interpretation 1, the noun phrase 
+			includes the prepositional phrase but in interpretation 2, the verb 
+			phrase includes the prepositional phrase.</p>
+			<hr />
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="cogs" height="166" src="../../images/cogs_blue250.jpg" width="250" /></td>
+					<td class="auto-style1">
+					<h2>Recursion</h2>
+					</td>
+				</tr>
+			</table>
+			<p>One of the most important features of human language which 
+			distinguishes it from any other form of communication is 
+			recursiveness which means we can apply the same rules for forming 
+			acceptable syntax again and again.&nbsp; We saw this in the last 
+			example in which a prepositional phrase was included within the 
+			final noun phrase.<br />
+			Now we'll consider these sentence:</p>
+			<ol>
+				<li><em>John believes Mary is going to be angry</em></li>
+				<li><em>I know John believes Mary is going to be angry</em></li>
+			</ol>
+			<p>In the first sentence we have a simple structure like this:<br />
+			S → N + VP<br />
+			and we have the verb phrase like this:<br />
+			VP → V + S<br />
+			so we can represent that as:</p>
+			<p>
+			<img alt="syntax 5" height="299" src="../../imagesgraphics/syntax5.png" width="310" /></p>
+			<p>Sentence 2. is formed by applying the same rule recursively and 
+			looks like this:</p>
+			<p>
+			<img alt="syntax 6" height="401" src="../../imagesgraphics/syntax6.png" width="465" /></p>
+			<p>and we can, of course go on with the process without end (the 
+			sentence could be infinitely long) so we might have:<br />
+			<em>&nbsp;&nbsp;&nbsp; Some people have guessed that you think I know 
+			John believes 
+			Mary is going to be angry</em><br />
+			but we won't.<br />
+			We can also break down the final S at the bottom right of the tree 
+			into:<br />
+			<img alt="mary" height="195" src="../../imagesgraphics/syntax9.png" width="310" /><br />
+			and that could be appended to our diagram quite easily but exactly 
+			how one analyses the verb phrase is open to some debate.&nbsp; Some 
+			recognise <em>be going to</em> as a constituent auxiliary verb 
+			phrase and some would append the <em>to</em> to the verb <em>be</em>.&nbsp; 
+			For teaching purposes, it matters little which approach you take, 
+			providing you are consistent.</p>
+			<hr />
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="teaching" height="166" src="../../images/teaching_overview250.jpg" width="250" /></td>
+					<td class="auto-style1">
+					<h2>In the classroom</h2>
+					</td>
+				</tr>
+			</table>
+			<p>The second part of the title of this guide is <em>
+			<span class="style_black"><strong>and why we need to know about it</strong></span>.<br />
+			</em>Here's why:</p>
+			<dl>
+				<dt><strong>Guesswork</strong><br />
+				<img alt="blind" height="133" src="../../images/man_blindfolded200.jpg" width="200" /></dt>
+				<dd>We can, of course, try to teach the rules of English syntax 
+				purely inductively and hope that our learners are alert enough 
+				to be able to figure out three things for each type of phrase they 
+				encounter:<ol class="auto-style8">
+				<li>What the obligatory Head is for each phrase type</li>
+					<li>What the optional constituents are and whether they can be 
+				repeated</li>
+					<li>What elements are forbidden by the rules of English 
+					syntax for each phrase type</li>
+			</ol>However,
+				it is somewhat unlikely that they will be able to do this in 
+				every case because, as we saw above, phrases may contain a range 
+				of optional and obligatory elements and, to make things worse, 
+				the elements they contain may vary from language to language.<br />
+				We can help a little with the process by making sure that the 
+				phrases we present together contain the same elements in the 
+				same order so that it makes some kind of pattern sense and we 
+				can start with the easiest elements before adding in longer and 
+				more complex ones.<br />
+				This means, for example, presenting phrases like this:
+				<ol class="auto-style8">
+				<li>NP: present as<ul class="smallredbullet">
+					<li>N<br />such as in:<br /><em><span class="style_black">
+					<strong>She</strong></span> 
+					came home<br /><span class="style_black"><strong>Mary</strong></span> 
+					arrived</em><br />etc.
+					before</li>
+					<li>Det N<br />such as in:<br /><em>
+					<span class="style_black"><strong>The weather</strong></span> 
+					is terrible<span class="style_black"><strong><br />A man 
+					</strong></span>arrived</em><br />etc. before</li>
+					<li>Det Adj N<br />such as in:<br /><em>
+					<span class="style_black"><strong>That old Ford car</strong></span> 
+					is cheap<br /><span class="style_black"><strong>Those beautiful, fresh 
+					flowers </strong></span>are for her</em><br />etc. before</li>
+					<li>Det Adj N PP<br />such as in:<br /><em>
+					<span class="style_black"><strong>The wonderful pictures 
+					on the walls in the gallery</strong></span> are very 
+					valuable<br /><span class="style_black"><strong>Some interesting ideas 
+					from the meeting about the new road</strong></span> were 
+					suggested</em><br />etc.</li>
+				</ul>
+					</li>
+					<li>VP: present as:<ul class="smallredbullet">
+						<li>VP → V NP<br />such as in:<br /><em>She 
+						<span class="style_black"><strong>read a book</strong></span><br />We 
+						<span class="style_black"><strong>enjoyed the meal</strong></span></em><br />etc. or<br />VP → V Adv<br />such as in:<br />
+						<em>I <span class="style_black"><strong>walked slowly</strong></span></em><br />
+						<em>Please <span class="style_black"><strong>smoke outside</strong></span></em><br />etc. or<br />VP → V PP<br />such as in:<br />
+						<em>She <span class="style_black"><strong>sat in the corner<br /></strong></span>
+						<span class="style_blue">She</span><span class="style_black"><strong> went to school</strong></span></em><br />etc. before</li>
+						<li>VP → Aux V NP<br />such as in:<br /><em>Mary 
+						<span class="style_black"><strong>has finished her breakfast</strong></span><br />We 
+						<span class="style_black"><strong>c</strong><span class="auto-style9"><strong>an 
+					answer the questions</strong></span></span></em><br />etc. before</li>
+						<li>VP → V NP PP<br />such as in:<br /><em>I 
+						<span class="style_black"><strong>have put the old chairs in the 
+					corner</strong></span><br />Mary <span class="style_black">
+						<strong>must arrive before six o'clock</strong></span></em><br />etc. before</li>
+						<li>VP → V NP S<br />such as in:<br />
+						<em>I</em><span class="style_black"><strong><em>'ll buy 
+						the book John recommended to me</em></strong></span><br /><em>Angela </em><span class="style_black"><strong><em>
+						printed out the instructions we have followed to get 
+						here</em></strong></span><br />
+					etc.</li>
+					</ul>
+					</li>
+			</ol>and so on for other phrase types, starting with the minimal 
+				obligatory elements (i.e., the Head of each phrase) and moving 
+				on to adding in optional constituents as learners become more 
+				confident and able to cope with additions to the structure.</dd>
+				<dt><strong>Presentation</strong><br />
+				<img alt="present" height="133" src="../../images/present_hand_flowers_a200.jpg" width="200" /></dt>
+				<dd>It makes sense when the focus in a lesson is on acceptable 
+				syntactic structures, to focus any presentation on just one or 
+				two so that the learners are able to notice the patterns or, 
+				indeed, have them pointed out.<br />
+				For example, if noun phrases are presented with and without 
+				adjectives or modifying prepositional phrases, with and without 
+				suitable determiners and so on in the same lesson, it will not 
+				be surprising if our learners fail to notice any of the patterns we have 
+				analysed in this guide.<br />
+				Equally, if verb phrase patterns are mixed to include those with 
+				and without adverb phrases, using transitive and intransitive 
+				verbs randomly (so with and without NP constituents) and some 
+				with prepositional phrase modifiers and others without, then the 
+				learners will not have the data from which to realise which 
+				patterns are acceptable and which forbidden.<br />
+				Adjective phrases, too, despite being usually quite simple can 
+				contain large quantities of text functioning as a prepositional 
+				phrase, a verb phrase or a whole sentence.<br />
+				These are wasted opportunities which could easily lead to errors 
+				such as:<br />
+				<em>&nbsp;&nbsp;&nbsp; *She is know about the prices</em><br />
+				rather than the intended:<br />
+				<em>&nbsp;&nbsp;&nbsp; She is sure about the prices</em><br />
+				because the learner has not been led to understand how adjective 
+				phrases function in English.</dd>
+				<dt><strong>Unpacking complexity</strong><br />
+				<img alt="unpack" height="133" src="../../images/case_unpack200.jpg" width="200" /></dt>
+				<dd>A great strength of some syntactical analysis in classrooms 
+				is that it can empower learners armed with a little knowledge to 
+				unpack seemingly complex and otherwise impenetrable sentences 
+				because they are alert to the fundamental constituents of 
+				clauses and can strip out the optional elements to leave the 
+				core.<br />
+				We can, for example, take something like:<p class="auto-style10">
+				<strong><em>The storm that swept in last night from the sea 
+				almost completely destroyed the villagers' fragile and 
+				unprotected fishing boats</em></strong></p>
+				and bring some phrase analysis to bear on it, stripping out the 
+				optional constituents of the two noun phrases and the verb 
+				phrase so we are left with:<p class="auto-style10"><strong><em>
+				The storm destroyed the boats</em></strong></p>
+				which is all that is required for adequate comprehension in most 
+				circumstances.<br />
+				The ability to recognise clause elements and then to recognise 
+				the next level down of phrase elements is a skill well worth 
+				encouraging and nurturing in your learners because it can make 
+				them independent readers and listeners more quickly than any 
+				amount of skills work practice.</dd>
+				<dt><strong>Correction</strong><br />
+				<img alt="mark" height="133" src="../../images/mark_red200.jpg" width="200" /></dt>
+				<dd>When correcting spoken or written work, it pays dividends on 
+				many occasions to be alert to ill-formed or incomplete phrase 
+				constituents so, for example, errors such as:<br />
+&nbsp;<em>&nbsp;&nbsp; *He proud to be here<br />
+&nbsp;&nbsp;&nbsp; *That in the corner was broken<br />
+&nbsp;&nbsp;&nbsp; *My mother in the garden<br />
+&nbsp;&nbsp;&nbsp; *In the house is decorated</em><br />
+				and so on are all easily correctable, of course, but they will 
+				recur unless the learners can be brought to the understanding 
+				(by telling, by elicitation or by exemplification) that certain 
+				types of phrases require certain elements in English.&nbsp; In 
+				these cases, the focus needs to be on the syntactical 
+				constituents of adjective phrases, noun phrases, verb phrases 
+				and noun phrases (again) respectively.</dd>
+			
+				
+			</dl>
+			<hr />
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="teaching" height="166" src="../../images/teaching_overview250.jpg" width="250" /></td>
+					<td class="auto-style1">
+					<h2>More on syntax</h2>
+					</td>
+				</tr>
+			</table>
+			<p>It is usual for guides on this site to end with a table of links 
+			to related guides.&nbsp; That's not happening here because syntax is 
+			related to just about <strong>everything</strong> to do with grammar 
+			and language analysis so, for more in the area, go to
+			<a class="highlightlink" href="../indexes_is/syntax_index_is.html">
+			the in-service syntax index</a> and select where you want to go from 
+			there.</p>
+			<hr />
+			<p class="smallfont">References:<br />
+			Huddleston, R and Pullum, GK <em>et al</em>, 2002, <em>The Cambridge 
+			Grammar of the English Language</em>, Cambridge: Cambridge University Press<br />
+			Quirk, R and Greenbaum, S, 1973, <em>A University Grammar of English</em>, 
+			Harlow: Longman</p>
+			<hr />
+			</div>
+			<!-- #EndEditable -->
+		<!-- End Content -->
+	
+	<!-- Begin Footer -->
+	<div id="footer">
+		<p>
+		<a href="../../../contact.html">Contact</a> |
+		<a href="../../../faq.html">FAQs</a> |
+		<a href="../../../copyright_notice.html">Copyright notice</a> |
+		<a href="../../../documents/ELT_Concourse_Charter.pdf" target="_blank"> ELT Concourse charter</a> |
+		<a href="../../../disclaimer.html"> Disclaimer and Privacy statement </a>|
+		<a href="../../../search_the_site.html">Search <strong>
+		ELT Concourse</strong></a></p>
+	</div>
+	<!-- End Footer -->
+
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

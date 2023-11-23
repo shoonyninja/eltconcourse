@@ -1,0 +1,1317 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- #BeginTemplate "../../../styles/dwt/training.dwt" -->
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta http-equiv="Content-Language" content="en-gb" />
+<!-- #BeginEditable "doctitle" -->
+<title>ELT Concourse: fronting</title>
+<style type="text/css">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.auto-style4 {
+	text-align: right;
+}
+.auto-style12 {
+	list-style-type: lower-alpha;
+}
+.auto-style14 {
+	vertical-align: middle;
+}
+.auto-style17 {
+	border: 1px solid #666666;
+	text-align: center;
+}
+.auto-style19 {
+	border-left: medium none #666666;
+	border-right: 1px solid #666666;
+	border-top: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	text-align: left;
+	color: #663300;
+}
+.auto-style20 {
+	color: #009900;
+}
+.auto-style22 {
+	padding-left: 5px;
+}
+.auto-style23 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.bluefont {
+	color: #000080;
+}
+.auto-style24 {
+	font-size: large;
+}
+.auto-style25 {
+	border-collapse: collapse;
+	border: 1px solid #000080;
+}
+.auto-style26 {
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-top-style: solid;
+	border-top-width: 1px;
+}
+.auto-style27 {
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-top-width: 1px;
+}
+.auto-style28 {
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+.auto-style29 {
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+.auto-style33 {
+	border-left: 1px solid #666666;
+	border-top: medium none #666666;
+	border-right: medium none #666666;
+	border-bottom: 1px solid #666666;
+	color: #663300;
+}
+.auto-style50 {
+	border-left: medium none #666666;
+	border-right: medium none #666666;
+	border-top: medium none #666666;
+	border-bottom: 1px solid #666666;
+	padding-left: 2px;
+}
+.auto-style49 {
+	border-left: medium none #666666;
+	border-right: 1px solid #666666;
+	border-top: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	text-align: left;
+}
+.auto-style55 {
+	border-left: 1px solid #666666;
+	border-right: medium none #666666;
+	border-top: medium none #666666;
+	border-bottom: 1px solid #666666;
+	padding-left: 3px;
+	padding-right: 2px;
+}
+.auto-style53 {
+	border-left: 1px solid #666666;
+	border-right: medium none #666666;
+	border-top: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	padding-left: 3px;
+	padding-right: 2px;
+}
+.auto-style54 {
+	border-left: medium none #666666;
+	border-right: 1px solid #666666;
+	border-top: 1px solid #666666;
+	border-bottom: medium none #666666;
+	text-align: left;
+}
+.auto-style51 {
+	border-left: 1px solid #666666;
+	border-right: medium none #666666;
+	border-top: 1px solid #666666;
+	border-bottom: medium none #666666;
+	padding-left: 3px;
+	padding-right: 2px;
+}
+.auto-style57 {
+	border-left: 1px solid #666666;
+	border-top: 1px solid #666666;
+	border-right: medium none #666666;
+	border-bottom: 1px solid #666666;
+	color: #663300;
+}
+.auto-style58 {
+	border-left: medium none #666666;
+	border-right: 1px solid #666666;
+	border-top: 1px solid #666666;
+	border-bottom: medium none #666666;
+	text-align: left;
+	color: #663300;
+}
+.auto-style59 {
+	border-left: 1px solid #666666;
+	border-top: 1px solid #666666;
+	border-right: medium none #666666;
+	border-bottom: medium none #666666;
+	color: #663300;
+}
+.auto-style60 {
+	border-left: medium none #666666;
+	border-right: 1px solid #666666;
+	border-top: medium none #666666;
+	border-bottom: 1px solid #666666;
+	text-align: left;
+	color: #663300;
+}
+.auto-style61 {
+	border-right: medium none #666666;
+	border-top: medium none #666666;
+	border-bottom: 1px solid #666666;
+	border-left: 1px solid #666666;
+}
+.auto-style66 {
+	border-left: 1px solid #666666;
+	border-right: medium none #666666;
+	border-top: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	text-align: left;
+}
+.auto-style67 {
+	border-right: 1px solid #666666;
+	border-top: medium none #666666;
+	border-bottom: 1px solid #666666;
+	border-left: medium none #666666;
+}
+.auto-style68 {
+	border-right: 1px solid #666666;
+	border-top: 1px solid #666666;
+	border-bottom: medium none #666666;
+	border-left: 1px solid #666666;
+	text-align: center;
+}
+.auto-style69 {
+	border-left: 1px solid #666666;
+	border-right: medium none #666666;
+	border-top: 1px solid #666666;
+	border-bottom: medium none #666666;
+	text-align: left;
+}
+.auto-style70 {
+	border-right: 1px solid #666666;
+	border-top: medium none #666666;
+	border-bottom: 1px solid #666666;
+	border-left: 1px solid #666666;
+	text-align: center;
+}
+</style>
+<meta content="ELT Concourse English language analysis and teaching guides. Fronting in English" name="description" />
+<script type="text/javascript">
+<!--
+function FP_changeProp() {//v1.0
+ var args=arguments,d=document,i,j,id=args[0],o=FP_getObjectByID(id),s,ao,v,x;
+ d.$cpe=new Array(); if(o) for(i=2; i<args.length; i+=2) { v=args[i+1]; s="o"; 
+ ao=args[i].split("."); for(j=0; j<ao.length; j++) { s+="."+ao[j]; if(null==eval(s)) { 
+  s=null; break; } } x=new Object; x.o=o; x.n=new Array(); x.v=new Array();
+ x.n[x.n.length]=s; eval("x.v[x.v.length]="+s); d.$cpe[d.$cpe.length]=x;
+ if(s) eval(s+"=v"); }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+// -->
+</script>
+<!-- #EndEditable -->
+<meta content="language analysis,eltconcourse,English grammar,free English language teaching materials,CELTA,Delta,language guides,free Delta training,free CELTA training,free ELT Training materials,teacher training,ELT,learning English,teaching English,English Language Teaching,ESOL,EFL,English as a Foreign Language" name="keywords" />
+<link href="../../../styles/mainstyle.css" rel="stylesheet" type="text/css" />
+<link href="../../../styles/training.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+</style>
+</head>
+
+<body>
+	<!-- Begin Masthead -->
+	<div id="masthead" >
+		<table style="width: 100%; border-bottom: #000080 solid">
+			<tr>
+				<td style="width: 135px">
+				<img alt="logo" height="49" src="../../../gfx/logo.png" width="78" /></td>
+				<td valign="bottom">
+				<span class="orangexxlargebold">ELT </span>
+				<span class="bluexxlargebold">Concourse teacher training</span></td>
+			</tr>
+		</table>
+	</div>
+	<!-- End Masthead -->
+	<!-- Begin Content -->
+			<!-- Begin Sidebar -->
+		<div id="sidebartt">
+			<ul>
+				<li><a href="../../../index.html">ELT Concourse home</a></li>
+				<li><a href="../../../a-z_index.html">A-Z site index</a></li>
+				<li><a href="../../training_index.html">Teacher training index</a></li>
+				<li><a href="../../../development/development_index.html">Teacher development</a></li>
+				<li><a href="../../../teachers/teachers.html">For teachers</a></li>
+				<li><a href="../../trainers/trainers_index.html">For trainers</a></li>
+				<li>
+				<a href="../../../academic_management/academic_management_index.html">For managers</a></li>
+				<li><a href="../../../learners/learners.html">For learners</a></li>
+				<li><a href="../../common/about_language.html">About language</a></li>
+				<li><a href="../../../questions/questions.html">Language questions</a></li>
+				<li class="whiteback">Other areas</li>
+				<li><a href="../indexes_is/eap_index_is.html">Academic English</a></li>
+				<li><a href="../indexes_is/be_index_is.html">Business English</a></li>
+				<li><a href="../../entering/introduction_to_elt.html">Entering ELT</a></li>
+				<li><a href="../../courses/courses_index.html">Courses index</a></li>
+				<li><a href="../../courses/basic/introduction_basic.html">Basic ELT course</a></li>
+				<li><a href="../../tkt/tkt_index.html">TKT</a></li>
+				<li><a href="../../bridge/bridge_index.html">The Bridge</a></li>
+				<li><a href="../../courses/lacourse/index_la_course.html">Language analysis</a></li>
+				<li>
+				<a href="../../courses/training_to_train/training_to_train_index.html">Training to train</a></li>
+				<li><a href="../../courses/transcription1/transcription.html">Transcription</a></li>
+				<li><a href="../../glossaries/glossary_index.html">Glossaries</a></li>
+				<li><a href="../../../articles/articles.html">Articles</a></li>
+			</ul>
+		</div>
+		<!-- End Sidebar -->
+		<!-- Begin Content -->
+		
+		<div id="toppicture" style="text-align: left; background-color: white; padding: 0px; margin-left: 140px;">
+				<img alt="Concourse 2" height="207" src="../../../images/concourse2blue.jpg" width="310" /></div>
+		
+			<!-- #BeginEditable "content" -->
+		
+			<!-- #BeginEditable "content" -->
+		
+		<div id="content">
+	<h1>Fronting</h1>
+		<p>
+		<img alt="fronting" height="207" src="../../images/front_car310.jpg" width="310" /></p>
+			<br />
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="front" height="166" src="../../images/man_front_building250.jpg" width="250" /></td>
+					<td class="auto-style22">
+					<h2>Defining fronting</h2>
+					</td>
+				</tr>
+			</table>
+		<p><strong><em>Fronting</em></strong><em> at sentence level means moving 
+		a part of a clause to the front of the sentence before the usual 
+		subject–verb structure.</em></p>
+		<ul class="greenbullet">
+			<li>It is <strong>not</strong> the same as simply changing the 
+			subject of the verb.</li>
+			<li>The effect is to emphasise the fronted item.&nbsp; This is a 
+			form of marking and for more, you should consult the guide to 
+			markedness linked in the list of related guides at the end.</li>
+		</ul>
+		<p>Other terms are regularly used to describe what is here treated as 
+		fronting:</p>
+		<ul class="greenbullet">
+			<li ><strong>Topicalisation</strong> implies that the fronted item 
+			has been made into the topic of the sentence which will then be 
+			followed by a comment.&nbsp; Many languages, including most Chinese 
+			ones are adept at fronting the topic of the sentence.&nbsp; For example:<br />
+			<em>&nbsp;&nbsp;&nbsp; That restaurant, it's awful.</em><br />
+			In English, that would usually be rendered as:<br />
+			<em>&nbsp;&nbsp;&nbsp; That restaurant?&nbsp; It's awful.</em><br />
+			but a number of other languages will do this without any hint of a 
+			question.</li>
+			<li ><strong>Thematic identification</strong> is another way to 
+			describe fronting.&nbsp; In systemic functional grammar, a sentence 
+			can be broken into two parts.&nbsp; For example, in:<br />
+			<em>&nbsp;&nbsp;&nbsp; Mary and John went to the cinema and ate popcorn by the kilo</em><br />
+			The theme is <em>Mary and John</em> and there are two rhemes: <em>
+			went to the cinema</em> and <em>and ate popcorn by the kilo</em><br />
+			One of the rhemes is then often subsequently promoted to the role of 
+			the next theme as in, for example:<br />
+			<em>&nbsp;&nbsp;&nbsp; So much popcorn</em> (the new theme) <em>made them feel ill</em> 
+			(the new rheme)<br />
+			or<br />
+			<em>&nbsp;&nbsp;&nbsp; The cinema </em>(new theme) <em>was almost empty </em>(new 
+			rheme) <em>so they had no trouble getting in</em> (new rheme 2)<br />
+			Then a rheme can become the theme of the next sentence and so on.<br />
+			However, the speaker or writer can choose a different theme from the 
+			same event depending on what is perceived as the most important 
+			element.&nbsp; We could have, therefore:<br />
+&nbsp;&nbsp;&nbsp; <em>The amount of popcorn John and Mary ate when they went to 
+			the cinema made them feel ill</em><br />
+			and in that, the theme is now focused on the popcorn and not on the 
+			people or the act of going to the cinema.<br />
+			The theme of the next sentence is likely to be quite different, too, 
+			as it will follow on from feeling ill and might be:<br />
+			<em>&nbsp;&nbsp;&nbsp; Consequently, they went straight home and 
+			went to bed<br />
+			</em>In this analysis, the function of fronting is to state what the 
+			speaker / writer understands by the theme of the sentence.&nbsp; 
+			That's really just another way of saying that it shows what the 
+			speaker / writer wants to emphasise.<br />
+			For more on theme and rheme structures, see the guide linked in the list of related guides at the end.</li>
+		</ul>
+		<hr />
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="marked" height="166" src="../../images/write_highlight250.jpg" width="250" /></td>
+					<td class="auto-style22">
+					<h2>The concept of markedness</h2>
+					</td>
+				</tr>
+			</table>
+			<p>This is the first concept to get clear.</p>
+		<p>Do these mean the same?</p>
+		<ol>
+			<li><em>I saw him in the garden only last week.</em></li>
+			<li><em>Only last week I saw him in the garden.</em></li>
+		</ol>
+		<p><strong>Sentence 1</strong> is <span class="style_underline">unmarked</span> 
+		because the normal word ordering in English is <span class="style_black">
+		Subject</span> + <span class="style_red">Verb</span> +
+		<span class="auto-style20">Object</span> + <span class="style_brown">
+		Complement Adverbials</span> (in this case, <em>
+		<span class="style_black">I</span> + <span class="style_red">saw</span> 
+		+ <span class="auto-style20">him</span> +<span class="style_brown"> in 
+		the garden + only last week</span></em>).<br />
+		<strong>Sentence 2</strong> has non-canonical word ordering and is, 
+		therefore, <span class="style_underline">marked</span>.&nbsp; Placing 
+		the time adverbial in the initial position serves to emphasise the 
+		element.<br />
+		We can, of course shift other elements to the front of the sentence and 
+		thus break the canonical SVOC word ordering in English to produce 
+		various effects on our listener / reader, as we shall see.</p>
+		<hr />
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="analyse" height="166" src="../../images/analyse_chemistry250.jpg" width="250" /></td>
+					<td class="auto-style22">
+					<h2>Analysis: how fronting happens</h2>
+					</td>
+				</tr>
+			</table>
+			<br />
+		<table cellpadding="0" cellspacing="0">
+					<tr>
+						<td valign="top">
+						<img alt="think" height="60" src="../../../gfx/think60w.jpg" width="67" /></td>
+						<td valign="top">
+						<img alt="write" height="60" src="../../../gfx/write60.jpg" width="60" /></td>
+						<td class="auto-style22"><p class="nomarginbottom">
+						<strong><span class="style_red">Task 1:</span> </strong>Identify the fronted elements 
+						in these examples and then click on the
+		<img alt="eye open" class="auto-style14" height="16" src="../../../gfx/eyeopen.gif" width="16" /> 
+						to reveal some comments.<br />
+						Think too (and make a note before you click for the 
+						answers) about:</p>
+						<ol>
+							<li>
+							<p class="auto-style23">the syntax of the rest of the clause or 
+						sentence</p>
+							</li>
+							<li>
+							<p class="auto-style23">the effect on meaning that 
+							fronting has</p>
+							</li>
+						</ol>
+						</td>
+					</tr>
+				</table>
+		<br />
+		<table cellpadding="4" cellspacing="0" class="tableblueborder" style="width: 90%">
+				<tr>
+					<td class="auto-style60" style="width: 300px" valign="middle">
+					<em>Never have I seen such a beautiful tree.<br />
+					</em>
+					<img alt="eye open" class="auto-style4" height="16" src="../../../gfx/eyeopen.gif" width="16" onclick="FP_changeProp(/*id*/'intel',0,'style.visibility','visible')" /></td>
+					<td class="auto-style33">
+					<div id="intel" style="visibility:hidden
+" class="auto-style14"> <em><strong>Never</strong> have I seen such 
+				a beautiful tree.<br />
+						</em><span class="bluefont">There are a number of other adverbials 
+				which require an inversion of the subject and object when they are fronted.&nbsp; 
+				Generally, these have some kind of negative or exclusive sense.&nbsp; They 
+				include, e.g., <em>Not only, Rarely, Seldom, Hardly ... than, 
+				No sooner ... than, Scarcely ... when, Only then, At no time, Neither, 
+						Under no circumstances</em> etc.&nbsp; 
+				See the notes below on inversion.</span></div>
+					</td>
+				</tr>
+				<tr>
+					<td class="auto-style19" style="width: 300px" valign="middle">
+					<span class="style_black"><em><strong>Yesterday, he went to London.</strong></em></span><br />
+					<img alt="eye open" class="auto-style4" height="16" src="../../../gfx/eyeopen.gif" width="16" onclick="FP_changeProp(/*id*/'intel0',0,'style.visibility','visible')" /></td>
+					<td class="auto-style57">
+					<div id="intel0" style="visibility:hidden
+" class="auto-style14"> <em><strong>Yesterday</strong>, he went to 
+				London.<br />
+						</em><span class="bluefont">Fronting the time adverbial emphasises its importance.&nbsp; 
+						All time adverbials can be fronted for emphasis and they 
+						are separated off, in writing, by a comma.</span></div>
+					</td>
+				</tr>
+				<tr>
+					<td class="auto-style19" style="width: 300px" valign="middle"><em>
+					<span class="style_black"><strong>That factory is where I used to work.</strong></span><br />
+					</em>
+					<img alt="eye open" class="auto-style4" height="16" src="../../../gfx/eyeopen.gif" width="16" onclick="FP_changeProp(/*id*/'intel1',0,'style.visibility','visible')" /></td>
+					<td class="auto-style57">
+					<div id="intel1" style="visibility:hidden
+" class="auto-style14"> 
+						<em><strong>That factory </strong>is where 
+				I used to work.<br />
+						</em><span class="bluefont">This is quite an unusual example 
+						of an adverb relative clause used to establish a marked 
+						element and less likely to appear in formal written language.&nbsp; Many languages do 
+				this more comfortably than English and it's a source of much error 
+				such as:<br /><em>*That factory, it is where I worked</em></span></div>
+					</td>
+				</tr>
+				<tr>
+					<td class="auto-style19" style="width: 300px" valign="middle">
+					<span class="style_black"><em><strong>There is one thing you should always remember.</strong></em></span><br />
+					<img alt="eye open" class="auto-style4" height="16" src="../../../gfx/eyeopen.gif" width="16" onclick="FP_changeProp(/*id*/'intel2',0,'style.visibility','visible')" /></td>
+					<td class="auto-style57">
+					<div id="intel2" style="visibility:hidden
+" class="auto-style14"> 
+						<em><strong>There is one thing</strong> you 
+				should always remember.<br />
+						</em><span class="bluefont">The existential, or empty, <em>there</em> is 
+				very commonly fronted.&nbsp; See also the 
+				guide to cleft sentences, linked below, for more on this.</span></div>
+					</td>
+				</tr>
+				<tr>
+					<td class="auto-style19" style="width: 300px" valign="middle"><em>So badly did he play that I was embarrassed.</em><br />
+					<em>So brilliant was the sun that I could hardly focus.</em><br />
+					<em>Such experience did he have that few argued with him.</em><br />
+					<img alt="eye open" class="auto-style4" height="16" src="../../../gfx/eyeopen.gif" width="16" onclick="FP_changeProp(/*id*/'intel5',0,'style.visibility','visible')" /></td>
+					<td class="auto-style57">
+					<div id="intel5" style="visibility:hidden
+" class="auto-style14"> <em><strong>So badly did he play </strong> 
+				that I was embarrassed.<strong><br />
+						So brilliant was the sun </strong> 
+				that I could hardly focus.<strong><br />
+						Such experience did he have</strong> 
+				that few argued with him.<br />
+						</em><span class="bluefont">These adverbials generally 
+				require the inversion structure.</span></div>
+					</td>
+				</tr>
+				<tr>
+					<td class="auto-style19" style="width: 300px" valign="middle"><em>Only under exceptional circumstances can you open this door.</em><br />
+					<img alt="eye open" class="auto-style4" height="16" src="../../../gfx/eyeopen.gif" width="16" onclick="FP_changeProp(/*id*/'intel6',0,'style.visibility','visible')" /></td>
+					<td class="auto-style57">
+					<div id="intel6" style="visibility:hidden
+" class="auto-style14"> <em><strong>Only under exceptional 
+				circumstances </strong>can you open this door.<br />
+						</em><span class="bluefont">This, too, is an example of a negative 
+				adverbial requiring inversion.&nbsp; Here, the adverbial is a 
+						longer phrase rather than a single word, as we saw 
+						above, but the rules are the same.</span></div>
+					</td>
+				</tr>
+				<tr>
+					<td class="auto-style19" style="width: 300px" valign="middle">
+					<span class="style_black"><em><strong>Having told the truth, he had to live with the consequences.</strong></em></span><br />
+					<img alt="eye open" class="auto-style4" height="16" src="../../../gfx/eyeopen.gif" width="16" onclick="FP_changeProp(/*id*/'intel7',0,'style.visibility','visible')" /></td>
+					<td class="auto-style57">
+					<div id="intel7" style="visibility:hidden
+" class="auto-style14"> <em><strong>Having told the truth, </strong>
+				he had to live with the consequences.<br />
+						</em><span class="bluefont">The non-finite verb phrase <em>having 
+						told</em>, plus the object,<em> the truth</em> is 
+				fronted for effect.</span></div>
+					</td>
+				</tr>
+			<tr>
+					<td class="auto-style19" style="width: 300px" valign="middle">
+					<span class="style_black"><em><strong>Unnoticed, he slipped into the room.</strong></em></span><br />
+					<img alt="eye open" class="auto-style4" height="16" src="../../../gfx/eyeopen.gif" width="16" onclick="FP_changeProp(/*id*/'intel8',0,'style.visibility','visible')" /></td>
+					<td class="auto-style57">
+					<div id="intel8" style="visibility:hidden
+" class="auto-style14"> <em><strong>Unnoticed,</strong> he slipped 
+				into the room.<br />
+						</em><span class="bluefont">This is an example of a participle 
+				adjective being fronted (probably in written English) for 
+				effect.&nbsp; Most <em>-ed</em> participle adjectives can be 
+						treated in a similar way.</span></div>
+					</td>
+				</tr>
+			<tr>
+					<td class="auto-style19" style="width: 300px" valign="middle">
+					<span class="style_black"><em><strong>Crossing the road, I noticed the bus.</strong></em></span><br />
+					<img alt="eye open" class="auto-style4" height="16" src="../../../gfx/eyeopen.gif" width="16" onclick="FP_changeProp(/*id*/'intel9',0,'style.visibility','visible')" /></td>
+					<td class="auto-style57">
+					<div id="intel9" style="visibility:hidden
+" class="auto-style14"> <em><strong>Crossing the road,</strong> I 
+				noticed the bus.<br />
+						</em><span class="bluefont">The effect here is twofold:<br />
+						a) the use 
+				of the non-finite <em>crossing</em> suggests simultaneous events 
+				and<br />
+						b) the fronting means that the conjunction (<em>when, as</em> 
+				or <em>while</em>) can be omitted.</span></div>
+					</td>
+				</tr>
+			<tr>
+					<td class="auto-style19" style="width: 300px" valign="middle">
+					<span class="style_black"><em><strong>A short walk I can handle.</strong></em></span><br />
+					<img alt="eye open" class="auto-style4" height="16" src="../../../gfx/eyeopen.gif" width="16" onclick="FP_changeProp(/*id*/'intel10',0,'style.visibility','visible')" /></td>
+					<td class="auto-style57">
+					<div id="intel10" style="visibility:hidden
+" class="auto-style14"> <em><strong>A short walk</strong> I can 
+				handle.<br />
+						</em><span class="bluefont">This is a slightly unusual example of fronting the 
+				object which would only occur in spoken or informal written English.&nbsp; 
+				If you transform the sentence into its 'normal' spoken form, 
+						the object or its adjective must be stressed to retain the effect.</span></div>
+					</td>
+				</tr>
+			<tr>
+					<td class="auto-style19" style="width: 300px" valign="middle">
+					<em><span class="style_brown">In the garden sat a huge toad.</span><br />
+					</em>
+					<img alt="eye open" class="auto-style4" height="16" src="../../../gfx/eyeopen.gif" width="16" onclick="FP_changeProp(/*id*/'intel11',0,'style.visibility','visible')" /></td>
+					<td class="auto-style57">
+					<div id="intel11" style="visibility:hidden
+" class="auto-style14"> <em><strong>In the garden </strong>sat a 
+				huge toad.<br />
+						</em><span class="bluefont">Here the adverbial is a 
+						prepositional phrase, but, as we saw above, fronting 
+						adverbials is common practice.<br />
+						When we front prepositional phrases, we often, not 
+						always, invert the positions of the verb and its 
+						subject:<br />
+						<em>On the other side stood his house</em><br />
+						is more natural than:<br />
+						<em>On the other sire his house stood</em><br />
+						although both are possible.<br />
+						We <strong>never</strong> reverse the ordering when the 
+						subject is a pronoun so we cannot have:<br />
+						<em>*At the meeting spoke he persuasively</em></span></div>
+					</td>
+				</tr>
+			<tr>
+					<td class="auto-style19" style="width: 300px" valign="middle">
+					<span class="style_black"><em><strong>Winter I can put up with but spring I like the most.</strong></em></span><br />
+					<img alt="eye open" class="auto-style4" height="16" src="../../../gfx/eyeopen.gif" width="16" onclick="FP_changeProp(/*id*/'intel12',0,'style.visibility','visible')" /></td>
+					<td class="auto-style57">
+					<div id="intel12" style="visibility:hidden
+" class="auto-style14"> <em><strong>Winter I can put up with</strong> 
+				but spring I like the most.<br />
+						</em><span class="bluefont">Many 
+				languages front the object more comfortably than does English.&nbsp; 
+				Would you correct a learner who produced this?</span></div>
+					</td>
+				</tr>
+				<tr>
+					<td class="auto-style58" style="width: 300px" valign="middle">
+					<span class="style_black"><em><strong>That woman 
+					sitting in the corner with a book, she's my friend's mother.</strong></em></span><br />
+					<img alt="eye open" class="auto-style4" height="16" src="../../../gfx/eyeopen.gif" width="16" onclick="FP_changeProp(/*id*/'intel13',0,'style.visibility','visible')" /></td>
+					<td class="auto-style59">
+					<div id="intel13" style="visibility:hidden
+" class="auto-style14"> <em><strong>That woman sitting in the corner with a book</strong>, 
+						she's my friend's mother.<br />
+						</em><span class="bluefont">When we have a long noun 
+						phrase such as this, there is a distinct tendency to 
+						front it and then use a pro-form (<em>she</em>, in this 
+						case) to refer to the noun phrase.&nbsp; The usual format is 
+						for the noun phrase to be the complement of a copular 
+						verb, rather than an object <em>per se</em>.</span></div>
+					</td>
+				</tr>
+		</table>
+		<br />
+				<table cellpadding="0" cellspacing="0">
+					<tr>
+						<td valign="top">
+						<img alt="write" height="60" src="../../../gfx/write60.jpg" width="60" /></td>
+						<td class="auto-style22"><p class="nomarginbottom">
+						<strong><span class="style_red">Task 2:</span> </strong>
+						Some of these examples are <span class="style_black">
+						<strong>in black</strong></span>.&nbsp; 
+		What's different about them apart from that?<br />
+						Look at the syntax.<br />
+		Click 
+		<a href="#1" onclick="FP_changeProp(/*id*/'frontingclefts1',0,'style.visibility','visible')">here</a> when you have an answer.</p>
+						</td>
+					</tr>
+				</table>
+		<div id="frontingclefts1" style="visibility: hidden">
+			<p class="style_brown">Only the sentences in black do <strong>not</strong> require you to 
+			change the structure of the sentence when you remove the 
+			fronting.</p>
+			</div><p><strong>Notes on inversion:</strong></p>
+		<ol class="auto-style12">
+			<li>The generally accepted term is 'inversion' but that can be 
+			misleading.&nbsp; The example:<br />
+			<strong><em>&nbsp;&nbsp;&nbsp; Only under exceptional circumstances </em> </strong><em>can you open 
+			this door.</em><strong><br />
+			</strong>is a true inversion 
+			of verb and subject but that's because it uses the modal <em>can</em>.&nbsp; 
+			In other examples, using either present or past simple forms, English requires a question formation 
+			with the <em>do</em> operator, not simply the inversion of 
+			subject and verb as in, e.g.:<br />
+			<em>&nbsp;&nbsp;&nbsp; Rarely does she argue very much<br />
+&nbsp;&nbsp;&nbsp; Only yesterday did I get the work finished</em></li>
+			<li>True inversion of subject and verb, with no <em>do</em>-operator, occurs when we front 
+			prepositional phrases.&nbsp; See the guide to place adjuncts for 
+			more linked in the list of related guides at the end.<br />
+			This is the example above regarding the toad.&nbsp; It would be 
+			wrong to produce:<br />
+			<em>&nbsp;&nbsp;&nbsp; *In the garden did sit a huge toad<br />
+			</em>although the inversion is not always needed so we can have:<br />
+			<em>&nbsp;&nbsp;&nbsp; In the garden a huge toad sat</em></li>
+			<li>English only <strong>requires</strong> this structure with some 
+			phrase adverbials (incomplete list above of some negative ones) although it can <strong>
+			optionally</strong> be done with others.&nbsp; They are usually 
+			negative or limiting in meaning.</li>
+			<li>Prepositional phrases of place often result in an inversion of 
+			word ordering&nbsp;so, for example:<br /><em>&nbsp;&nbsp;&nbsp;
+			Out of the room ran the lady<br />
+			</em>vs.<br /><em>&nbsp;&nbsp;&nbsp; Out of the room the lady 
+			ran<br />
+			</em>and<br /><em>&nbsp;&nbsp;&nbsp; Up the hill walked the four of us<br />
+&nbsp;&nbsp;&nbsp; Into the room came Mary<br />
+			</em>and so on.<br />
+			Prepositional phrases of time do not usually lead to the same types 
+			of ordering although they are regularly fronted so we have:<br />
+			<em>&nbsp;&nbsp;&nbsp; At 6 John arrived</em><br />
+			rather than<br />
+			<em>&nbsp;&nbsp;&nbsp; *At 6 arrived John</em><br />
+			but it is possible to use the inversion in very formal language and 
+			produce, e.g.:<br />
+&nbsp;<em>&nbsp;&nbsp; At the stroke of noon arrived the guests</em></li>
+			<li>The form is witness to English's origins.&nbsp; German, for 
+			example, requires the inversion with <strong>all</strong> fronted 
+			adverbials, e.g., <em>Gestern habe ich ihn gesehen </em>(<em>I saw 
+			him yesterday </em>[literally: <em>Yesterday have I him seen</em>]). &nbsp;German is not alone and this is, of course, a source of difficulty 
+			for many learners.</li>
+		</ol>
+				<table cellpadding="0" cellspacing="0">
+					<tr>
+						<td valign="top">
+						<img alt="write" height="60" src="../../../gfx/write60.jpg" width="60" /></td>
+						<td class="auto-style22"><p class="nomarginbottom">
+						<strong><span class="style_red">Task 3:<br />
+						</span> </strong><a name="2"></a>Why is this sentence unlikely:<br />
+		<em>&nbsp;&nbsp;&nbsp; A film I want to see.</em><br />
+		but this is quite possible?<br />
+		<em>&nbsp;&nbsp;&nbsp; That film I want to see.</em><br />
+		Click 
+		<a href="#2" onclick="FP_changeProp(/*id*/'frontingclefts2',0,'style.visibility','visible')">here when you have an answer</a>.</p>
+						</td>
+					</tr>
+				</table>
+		<div id="frontingclefts2" style="visibility: hidden">
+		
+		<p class="style_brown">Because the fronted item has to be distinguished in some way; here by 
+		the use of the demonstrative <em>that</em>.&nbsp; Other distinguishing words, 
+		usually determiners of one kind or another, are 
+		possible &ndash; <em>this, those, three, whichever</em> etc.<br />
+		There is a reason for this.&nbsp; The marked (fronted) item is usually 
+		concerns given rather than new information and in the examples above, 
+		that means that the film has already ben a topic of the exchange.&nbsp; 
+		Compare:<br />
+&nbsp;<em>&nbsp;&nbsp; I want to see a film</em><br />
+		with<br />
+&nbsp;<em>&nbsp;&nbsp; I want to see that film.</em></p></div>
+				<table cellpadding="0" cellspacing="0">
+					<tr>
+						<td valign="top">
+						<img alt="write" height="60" src="../../../gfx/write60.jpg" width="60" /></td>
+						<td class="auto-style22"><p>
+						<strong><span class="style_red">Task 4:<br />
+						</span> </strong><a name="3"></a>
+						<span class="auto-style24"><strong>What can we front?</strong></span></p>
+						</td>
+					</tr>
+				</table>
+		<p>Download 
+		<a href="../../../documents/ELT_Concourse_Fronting_Worksheet.pdf" target="_blank">this worksheet</a>, fill it in and then click 
+		<a href="#3" onclick="FP_changeProp(/*id*/'frontingclefts3',0,'style.visibility','visible')">here</a>.</p>
+		
+		<div id="frontingclefts3" style="visibility: hidden">
+				<p>Clearly your examples will be different and, if you have
+				<img alt="x" class="auto-style14" height="15" src="../../../gfx/cross.png" width="16" /> 
+		in the second column where the word 'Rare' appears, that's OK.&nbsp; 
+		They <em>are</em> rare and there's a case to be made not to teach them.</p>
+		<table cellpadding="3" cellspacing="0" class="tableblueborder" style="width: 70%">
+			<tr>
+				<td style="width: 170px" class="auto-style67">Item</td>
+				<td class="auto-style70">
+				<img alt="tick cross" height="20" src="../../../gfx/tick-cross-icons-1.gif" width="30" /></td>
+				<td class="auto-style61">Example</td>
+			</tr>
+			<tr>
+				<td class="auto-style49" style="width: 170px">Prepositional 
+				phrases (place)</td>
+				<td class="auto-style17">Yes</td>
+				<td class="auto-style66"><em>In the garden … On the other side … 
+				</em> </td>
+			</tr>
+			<tr>
+				<td class="auto-style49" style="width: 170px">Prepositional 
+				phrases (time)</td>
+				<td class="auto-style17">Yes</td>
+				<td class="auto-style66"><em>In the evening, ..., During the 
+				break, ...</em></td>
+			</tr>
+			<tr>
+				<td class="auto-style49" style="width: 170px">Finite verbs</td>
+				<td class="auto-style17">Rare</td>
+				<td class="auto-style66"><em>Hope, that is all I can do.</em></td>
+			</tr>
+			<tr>
+				<td class="auto-style49" style="width: 170px">Present 
+				participles</td>
+				<td class="auto-style17">Yes</td>
+				<td class="auto-style66"><em>Opening the box, he …</em></td>
+			</tr>
+			<tr>
+				<td class="auto-style49" style="width: 170px">Past participles</td>
+				<td class="auto-style17">Yes</td>
+				<td class="auto-style66"><em>Opened, the box revealed its secrets.</em></td>
+			</tr>
+			<tr>
+				<td class="auto-style49" style="width: 170px">Infinitives as 
+				disjuncts</td>
+				<td class="auto-style17">Yes</td>
+				<td class="auto-style66"><em>To be honest, I don’t care.</em></td>
+			</tr>
+			<tr>
+				<td class="auto-style49" style="width: 170px">Infinitives as 
+				conjuncts</td>
+				<td class="auto-style17">Yes</td>
+				<td class="auto-style66"><em>To summarise, ...</em></td>
+			</tr>
+			<tr>
+				<td class="auto-style49" style="width: 170px">Adverbs</td>
+				<td class="auto-style17">Yes</td>
+				<td class="auto-style66"><em>Unfortunately, …</em></td>
+			</tr>
+			<tr>
+				<td class="auto-style49" style="width: 170px">Adjectives</td>
+				<td class="auto-style17">Rare</td>
+				<td class="auto-style66"><em>Pretty, that’s what I'd call it.</em></td>
+			</tr>
+			<tr>
+				<td class="auto-style49" style="width: 170px">Conjunctions</td>
+				<td class="auto-style17">Yes</td>
+				<td class="auto-style66"><em>So I could be sure, …</em></td>
+			</tr>
+			<tr>
+				<td class="auto-style49" style="width: 170px">Direct object</td>
+				<td class="auto-style17">Yes</td>
+				<td class="auto-style66"><em>My cigarettes are what he smoked</em></td>
+			</tr>
+			<tr>
+				<td class="auto-style54" style="width: 170px">Indirect objects</td>
+				<td class="auto-style68">Rare</td>
+				<td class="auto-style69"><em>Me is who he gave the book to</em></td>
+			</tr>
+		</table>
+		</div>
+		<br />
+		<hr />
+		<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="4" height="166" src="../../images/four_beatles250.jpg" width="250" /></td>
+					<td class="auto-style22">
+					<h2>4 other forms of fronting</h2>
+					</td>
+				</tr>
+			</table>
+		<p>Fronting in many languages is not confined to moving parts of the 
+		sentence or clause from their usual position.<br />
+		There are a number of syntactical structures in English which allow 
+		speakers / writers to select that which is most important to them and 
+		front it.&nbsp; Here are four popular ones:</p>
+		<dl>
+			<dt><strong>Conditional sentences</strong></dt>
+			<dd>Learners are sometimes, unforgivably, told that there is no 
+			difference in meaning between:<br />
+			<em>&nbsp;&nbsp;&nbsp; She can come on condition that you pay for her lunch</em><br />
+			and<br />
+			<em>&nbsp;&nbsp;&nbsp; On condition that you pay for her lunch, she can come</em><br />
+			That is obviously not true.&nbsp; The speaker / writer has clearly 
+			chosen one ordering over another to suggest what she/he wants to 
+			emphasise.<br />
+			This is the case with all conditional conjunctions, such as <em>if, 
+			unless, supposing, providing that</em> etc., of course.</dd>
+			<dt><strong>Passive structures</strong></dt>
+			<dd>There is a clear difference in meaning among these:<br />
+			<em>&nbsp;&nbsp;&nbsp; John broke the window<br />
+			&nbsp;&nbsp;&nbsp;
+			The window was broken<br />
+			&nbsp;&nbsp;&nbsp;
+			The window was broken by John</em><br />
+&nbsp;&nbsp;&nbsp; <em>The window got broken</em><br />
+			To suggest otherwise and tell learners that they all mean much the 
+			same thing is misleading and error inducing.</dd>
+			<dt><strong>Subordination</strong></dt>
+			<dd>A central characteristic of subordinators is that they can move 
+			with their clauses so we can have, for example:<br />
+			<em>&nbsp;&nbsp;&nbsp; So that he could see over the wall, he stood on a chair<br />
+			&nbsp;&nbsp;&nbsp;
+			He stood on a chair so that he could see over the wall<br />
+			&nbsp;&nbsp;&nbsp;
+			Because my train was late, I missed the meeting<br />
+			&nbsp;&nbsp;&nbsp;
+			I missed the meeting because my train was late</em><br />
+			In these cases, although the central meaning is unchanged, the 
+			speaker's perception of what is important is clear.</dd>
+			<dt><strong>Coordination</strong></dt>
+			<dd>Unlike subordinators, coordinators proper are fixed in position 
+			between the clauses or other items they connect.&nbsp; The items 
+			can, however, often be reversed so we can have:<br />
+			<em>&nbsp;&nbsp;&nbsp; They cooked curry and rice for lunch<br />
+			&nbsp;&nbsp;&nbsp;
+			They cooked rice and curry for lunch</em><br />
+			Users of English will usually put the most important of two items at 
+			the front.<br />
+			<em>&nbsp;&nbsp;&nbsp; She did her homework and spent some time gardening<br />
+			&nbsp;&nbsp;&nbsp;
+			She spent some time gardening and did her homework</em></dd>
+			<dd>The chronological ordering when connecting clauses with <em>and</em> is 
+			often implied.<br />
+			<em>&nbsp;&nbsp;&nbsp; You can come with me in the car or (you can) catch the bus home<br />
+			&nbsp;&nbsp;&nbsp;
+			You can catch the bus home or (you can) come with me in the car</em><br />
+			There is a tendency for users of English to put their preferred 
+			option first when connecting clauses with <em>or</em>.</dd>
+		</dl>
+		<p>With both coordination and subordination, there are times 
+		when reversing the clauses makes nonsense or provides an unusual 
+		connection:<br />
+		<em>&nbsp;&nbsp;&nbsp; She cooked dinner and came home<br />
+		</em>vs.<br /><em>&nbsp;&nbsp;&nbsp; She came home and 
+		cooked dinner<br />
+		</em>and<br /><em>&nbsp;&nbsp;&nbsp;
+		I rained so I took a coat<br />
+		</em>vs.<br />
+		<em>&nbsp;&nbsp;&nbsp; I didn't take a coat so it rained<br />
+		</em>and<br /><em>&nbsp;&nbsp;&nbsp;
+		The glass broke and he cut himself<br />
+		</em>vs.<br /><em>&nbsp;&nbsp;&nbsp; He cut himself and the 
+		glass broke</em></p>
+		<hr />
+		<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="teaching" height="166" src="../../images/teaching_hand_board250.jpg" width="250" /></td>
+					<td class="auto-style22">
+					<h2>Teaching in this area</h2>
+					</td>
+				</tr>
+			</table>
+		<p>The first thing to note is that other languages do things very 
+		differently.</p>
+		<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="lion" height="133" src="../../images/animals_lion200.jpg" width="200" /></td>
+					<td class="auto-style22">
+					<h2>Subject-dominant languages</h2>
+					</td>
+				</tr>
+			</table>
+		<p>Most 
+		European languages are known as 'subject dominant' languages because the 
+		subject of the sentence is normally placed at the beginning.&nbsp; As we 
+		have seen above, however, all these languages, including English, can 
+		topicalise or front items for effect.<br />
+		In subject dominant languages, such as English, fronting is generally 
+		reserved for emphasising particular items in a clause or sentence and it 
+		is signalled by a deviation from the canonical (i.e., normal) word 
+		ordering in the language.</p>
+		<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="gorilla" height="133" src="../../images/animals_gorilla_a200.jpg" width="200" /></td>
+					<td class="auto-style22">
+					<h2>Topic-dominant or topic-comment languages</h2>
+					</td>
+				</tr>
+			</table>
+		<p>Other languages, notably, but not confined to, East Asian ones 
+		including, for example, Japanese, Lolo–Burmese, Korean, Tagalog, the 
+		Chinese languages (and, incidentally, Turkish and a variety of sign 
+		languages) are sometimes known as Topic-Comment languages because they 
+		routinely drop the subject altogether when it is obvious or remove it to 
+		the clause following the topic.&nbsp; This does not mean that the topic 
+		is being emphasised unduly as it would in subject-dominant languages.&nbsp; 
+		Fronting is the normal, unmarked, way of producing sentences and is not 
+		particularly marked for prominence.&nbsp; We get, therefore, for example:<br />
+		<em>&nbsp;&nbsp;&nbsp; As for restaurants, my favourite one is just here<br />
+&nbsp;&nbsp;&nbsp; To her next week frequently I'll talk<br />
+&nbsp;&nbsp;&nbsp; Mary I have already seen today</em><br />
+		all of which would be unusual if not plain wrong in English.</p>
+		<p>This is a source of two forms of error:</p>
+		<ul class="bluebullet">
+			<li >Syntactical errors such as<br />
+			<em>&nbsp;&nbsp;&nbsp; *That factory that is where I worked when I was a student</em></li>
+			<li >Receptive errors in which the speaker's emphasis on, for 
+			example, the fronted prepositional phrase adverbial in<br />
+			<em>&nbsp;&nbsp;&nbsp; In his new Rolls Royce he came</em> <em>to my house</em><br />
+			is simply not recognised.</li>
+		</ul>
+		<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="angry" height="133" src="../../images/woman_grumpy200.jpg" width="200" /></td>
+					<td class="auto-style22">
+					<h2>Speaker attitude</h2>
+					</td>
+				</tr>
+			</table>
+		<p>Speakers and writers choose structures for a reason.&nbsp; Fronting 
+		is no exception and is not a random phenomenon.<br />
+		Any presentation, therefore, needs to include some awareness raising of 
+		the speakers attitude to the utterance in terms of what they see as 
+		the most important information to convey.&nbsp; Fairly simple tasks such 
+		as this can help:</p>
+		<table cellpadding="3" class="auto-style25">
+			<tr>
+				<td class="style_black" colspan="2" style="border-top-color: #000080; border-top-width: 1px">
+				What's the most important information in these sentences?</td>
+			</tr>
+			<tr>
+				<td class="auto-style29">Sentence</td>
+				<td class="auto-style28">Important information&nbsp;</td>
+			</tr>
+			<tr>
+				<td class="auto-style29"><em>John went home early yesterday&nbsp;</em></td>
+				<td class="auto-style28">&nbsp;</td>
+			</tr>
+			<tr>
+				<td class="auto-style26"><em>Yesterday, John went home early&nbsp;</em></td>
+				<td class="auto-style27">&nbsp;</td>
+			</tr>
+			<tr>
+				<td class="auto-style26"><em>I like to eat at the restaurant on the 
+				corner&nbsp;</em></td>
+				<td class="auto-style27">&nbsp;</td>
+			</tr>
+			<tr>
+				<td class="auto-style26"><em>The restaurant on the corner is where I 
+				like to eat&nbsp;</em></td>
+				<td class="auto-style27">&nbsp;</td>
+			</tr>
+			<tr>
+				<td class="auto-style26"><em>You must never speak like that to her 
+				again&nbsp;</em></td>
+				<td class="auto-style27">&nbsp;</td>
+			</tr>
+			<tr>
+				<td class="auto-style26"><em>Never must you speak to her like that 
+				again&nbsp;</em></td>
+				<td class="auto-style27">&nbsp;</td>
+			</tr>
+			<tr>
+				<td class="auto-style26"><em>If you do that, it'll break</em></td>
+				<td class="auto-style27">&nbsp;</td>
+			</tr>
+			<tr>
+				<td class="auto-style26"><em>It'll break if you do that&nbsp;</em></td>
+				<td class="auto-style27">&nbsp;</td>
+			</tr>
+		</table>
+		etc.<br />
+		<br />
+		<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="level" height="133" src="../../images/stairwell200.jpg" width="200" /></td>
+					<td class="auto-style22">
+					<h2>Level and structural complexity</h2>
+					</td>
+				</tr>
+			</table>
+		<p>As we saw above, many instances of fronting require quite complicated 
+		changes in the following syntax.&nbsp; Some don't and the fronting of attitude adverbials such as <em>unfortunately</em> 
+		or adverbs of manner such as <em>carefully</em>, along with adjuncts 
+		such as <em>honestly, frankly, possibly </em>etc. is a good choice to 
+		introduce the concept at lower levels because it is 
+		structurally simple.</p>
+		<p>Above A2, the approach needs to be a bit more challenging.&nbsp; One 
+		way to start is to take an exercise like the one above and include some 
+		specific noticing of both meaning and structure.&nbsp; Like this:</p>
+		<table cellpadding="3" class="auto-style25">
+			<tr>
+				<td class="style_black" colspan="2" style="border-top-color: #000080; border-top-width: 1px">
+				What's the most important information in these sentences?</td>
+				<td class="style_black" style="border-top-color: #000080; border-top-width: 1px">
+				What changes to the grammar do you see?</td>
+			</tr>
+			<tr>
+				<td class="auto-style29">Sentence</td>
+				<td class="auto-style28">Important information&nbsp;</td>
+				<td class="auto-style28">Grammar changes</td>
+			</tr>
+			<tr>
+				<td class="auto-style29"><em>John went home early yesterday&nbsp;</em></td>
+				<td class="auto-style28">&nbsp;</td>
+				<td class="auto-style28">&nbsp;</td>
+			</tr>
+			<tr>
+				<td class="auto-style26"><em>Yesterday, John went home early&nbsp;</em></td>
+				<td class="auto-style27">&nbsp;</td>
+				<td class="auto-style27">&nbsp;</td>
+			</tr>
+			<tr>
+				<td class="auto-style26"><em>I like to eat at the restaurant on the 
+				corner&nbsp;</em></td>
+				<td class="auto-style27">&nbsp;</td>
+				<td class="auto-style27">&nbsp;</td>
+			</tr>
+			<tr>
+				<td class="auto-style26"><em>The restaurant on the corner is where I 
+				like to eat&nbsp;</em></td>
+				<td class="auto-style27">&nbsp;</td>
+				<td class="auto-style27">&nbsp;</td>
+			</tr>
+			<tr>
+				<td class="auto-style26"><em>You must never speak like that to her 
+				again&nbsp;</em></td>
+				<td class="auto-style27">&nbsp;</td>
+				<td class="auto-style27">&nbsp;</td>
+			</tr>
+			<tr>
+				<td class="auto-style26"><em>Never must you speak to her like that 
+				again&nbsp;</em></td>
+				<td class="auto-style27">&nbsp;</td>
+				<td class="auto-style27">&nbsp;</td>
+			</tr>
+			<tr>
+				<td class="auto-style26"><em>If you do that, it'll break</em></td>
+				<td class="auto-style27">&nbsp;</td>
+				<td class="auto-style27">&nbsp;</td>
+			</tr>
+			<tr>
+				<td class="auto-style26"><em>It'll break if you do that&nbsp;</em></td>
+				<td class="auto-style27">&nbsp;</td>
+				<td class="auto-style27">&nbsp;</td>
+			</tr>
+			<tr>
+				<td class="auto-style26"><em>He resigned and that's 
+				understandable</em></td>
+				<td class="auto-style27">&nbsp;</td>
+				<td class="auto-style27">&nbsp;</td>
+			</tr>
+			<tr>
+				<td class="auto-style26"><em>It's understandable that he 
+				resigned</em></td>
+				<td class="auto-style27">&nbsp;</td>
+				<td class="auto-style27">&nbsp;</td>
+			</tr>
+			<tr>
+				<td class="auto-style26"><em>The lights went out</em></td>
+				<td class="auto-style27">&nbsp;</td>
+				<td class="auto-style27">&nbsp;</td>
+			</tr>
+			<tr>
+				<td class="auto-style26"><em>Out went the lights</em></td>
+				<td class="auto-style27">&nbsp;</td>
+				<td class="auto-style27">&nbsp;</td>
+			</tr>
+			<tr>
+				<td class="auto-style26"><em>John broke the window</em></td>
+				<td class="auto-style27">&nbsp;</td>
+				<td class="auto-style27">&nbsp;</td>
+			</tr>
+			<tr>
+				<td class="auto-style26"><em>The window was broken</em></td>
+				<td class="auto-style27">&nbsp;</td>
+				<td class="auto-style27">&nbsp;</td>
+			</tr>
+			<tr>
+				<td class="auto-style26"><em>Just around the corner a pub 
+				appeared</em></td>
+				<td class="auto-style27">&nbsp;</td>
+				<td class="auto-style27">&nbsp;</td>
+			</tr>
+			<tr>
+				<td class="auto-style26"><em>A pub appeared just around the 
+				corner</em></td>
+				<td class="auto-style27">&nbsp;</td>
+				<td class="auto-style27">&nbsp;</td>
+			</tr>
+		</table>
+		<p>However and whenever the idea of fronting is introduced, a key issue 
+		is to ensure that learners are aware of the communicative effects of the 
+		strategy.&nbsp; This is especially important, naturally, for learners 
+		whose first languages are topic-dominant or topic-comment based for they 
+		will have the most difficulty understanding the shifts in meaning that 
+		fronting produces.</p>
+		<hr />
+		<p>There is <a href="frontinghp.htm">a very brief matching exercise</a> 
+		on some of the above.</p>
+		<hr />
+		<br />
+		<table id="istrainingnav" cellpadding="0" cellspacing="0" class="tableblueborder">
+			<tr>
+				<td class="auto-style50" colspan="2">Related guides</td>
+			</tr>
+			<tr>
+				<td class="auto-style49">
+				<a href="word_order_map.html">the word order map</a></td>
+				<td class="auto-style55">for links to other guides in this area</td>
+			</tr>
+			<tr>
+				<td class="auto-style49">
+				<a href="clefts.html">cleft sentences</a></td>
+				<td class="auto-style55">explaining how we get from, e.g., <em>She liked the hotel</em> to <em>What she liked 
+		was the hotel</em></td>
+			</tr>
+			<tr>
+				<td class="auto-style49">
+				<a href="../lexicogrammar/markedness.html">markedness</a></td>
+				<td class="auto-style55">for a guide to how items may be 
+				distinguished in English (including but not limited to fronting)</td>
+			</tr>
+			<tr>
+				<td class="auto-style49"> <a href="../lexicogrammar/circumstances.html">circumstances</a></td>
+				<td class="auto-style53">analysing prepositional and adverbial 
+				phrases somewhat differently</td>
+			</tr>
+			<tr>
+				<td class="auto-style49"> 
+				<a href="coordination.html">
+		coordination</a></td>
+				<td class="auto-style53" rowspan="3">which all consider the 
+				ordering of clauses</td>
+			</tr>
+			<tr>
+				<td class="auto-style49"> <a href="subordination.html">subordination</a></td>
+			</tr>
+			<tr>
+				<td class="auto-style49">
+		<a href="conjunction.html">conjunctions</a></td>
+			</tr>
+			<tr>
+				<td class="auto-style54"> 
+				<a href="existential_there_it.html">existential <em>it</em> 
+				and <em>there</em> </a></td>
+				<td class="auto-style51">for an analysis of what are sometimes 
+				called 'dummy' subjects</td>
+			</tr>
+			<tr>
+				<td class="auto-style54"> 
+				<a href="../lexicogrammar/place_adjuncts.html">place adjuncts</a></td>
+				<td class="auto-style51">for more on what happens when these are 
+				fronted</td>
+			</tr>
+			<tr>
+				<td class="auto-style54"> 
+				<a href="../lexicogrammar/negation.html">negation</a></td>
+				<td class="auto-style51">for more on negative adverbial fronting 
+				and the structures they demand</td>
+			</tr>
+			<tr>
+				<td class="auto-style54"> 
+				<a href="../discourse/theme_rheme.html">theme and rheme</a></td>
+				<td class="auto-style51">for a more detailed guide to how 
+				fronting elements in clauses raises their status to theme</td>
+			</tr>
+			<tr>
+				<td class="auto-style54"> 
+		<a href="postponement.html">postponement and extrapositioning</a></td>
+				<td class="auto-style51">which explains how items can be moved 
+				to the end of a clause or sentence for effect</td>
+			</tr>
+		</table>
+		<br />
+		<hr />
+		
+				</div>
+	
+			<!-- #EndEditable -->
+		<!-- End Content -->
+	
+	<!-- Begin Footer -->
+	<div id="footer">
+		<p>
+		<a href="../../../contact.html">Contact</a> |
+		<a href="../../../faq.html">FAQs</a> |
+		<a href="../../../copyright_notice.html">Copyright notice</a> |
+		<a href="../../../documents/ELT_Concourse_Charter.pdf" target="_blank"> ELT Concourse charter</a> |
+		<a href="../../../disclaimer.html"> Disclaimer and Privacy statement </a>|
+		<a href="../../../search_the_site.html">Search <strong>
+		ELT Concourse</strong></a></p>
+	</div>
+	<!-- End Footer -->
+
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

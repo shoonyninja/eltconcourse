@@ -1,0 +1,1170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- #BeginTemplate "../../../styles/dwt/training.dwt" -->
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta http-equiv="Content-Language" content="en-gb" />
+<!-- #BeginEditable "doctitle" -->
+<title>ELT Concourse: constituent analysis</title>
+<style type="text/css">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.auto-style8 {
+	padding-left: 5px;
+}
+.auto-style12 {
+	border: 1px solid #000080;
+	border-collapse: collapse;
+}
+.auto-style17 {
+	border-left: 1px solid #000080;
+	border-right: 1px none #000080;
+	border-top: 1px solid #000080;
+	border-bottom: 1px solid #000080;
+	text-align: center;
+}
+.auto-style19 {
+	border-left: 1px solid #000080;
+	border-right: 1px solid #000080;
+	border-top: 1px solid #000080;
+	border-bottom: 1px none #000080;
+	text-align: center;
+}
+.auto-style20 {
+	border-left: 1px solid #000080;
+	border-right: 1px none #000080;
+	border-top: 1px solid #000080;
+	border-bottom: 1px none #000080;
+	text-align: center;
+}
+.auto-style22 {
+	border-left: 1px solid #000080;
+	border-right: 1px solid #000080;
+	border-top: 1px none #000080;
+	border-bottom: 1px solid #000080;
+	text-align: center;
+}
+.auto-style23 {
+	border-left: 1px solid #000080;
+	border-right: 1px none #000080;
+	border-top: 1px none #000080;
+	border-bottom: 1px solid #000080;
+	text-align: center;
+}
+.auto-style24 {
+	text-align: center;
+	border: 1px solid #000080;
+}
+.auto-style26 {
+	border-left-style: solid;
+	border-left-width: 1px;
+}
+.auto-style27 {
+	border-right-style: solid;
+	border-right-width: 1px;
+}
+.auto-style28 {
+	list-style-type: lower-alpha;
+}
+.auto-style50 {
+	border-left: medium none #666666;
+	border-right: medium none #666666;
+	border-top: medium none #666666;
+	border-bottom: 1px solid #666666;
+	padding-left: 2px;
+}
+.auto-style49 {
+	border-left: medium none #666666;
+	border-right: 1px solid #666666;
+	border-top: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	text-align: left;
+}
+.auto-style55 {
+	border-left: 1px solid #666666;
+	border-right: medium none #666666;
+	border-top: medium none #666666;
+	border-bottom: 1px solid #666666;
+	padding-left: 3px;
+	padding-right: 2px;
+}
+.auto-style53 {
+	border-left: 1px solid #666666;
+	border-right: medium none #666666;
+	border-top: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	padding-left: 3px;
+	padding-right: 2px;
+}
+.auto-style54 {
+	border-left: medium none #666666;
+	border-right: 1px solid #666666;
+	border-top: 1px solid #666666;
+	border-bottom: medium none #666666;
+	text-align: left;
+}
+.auto-style51 {
+	border-left: 1px solid #666666;
+	border-right: medium none #666666;
+	border-top: 1px solid #666666;
+	border-bottom: medium none #666666;
+	padding-left: 3px;
+	padding-right: 2px;
+}
+.auto-style88 {
+	padding-left: 5px;
+	padding-right: 2px;
+}
+.auto-style89 {
+	color: black;
+	font-size: small;
+}
+</style>
+<meta content="ELT Concourse English language analysis and teaching guides. Constituent analysis" name="description" />
+<script type="text/javascript">
+<!--
+function FP_changeProp() {//v1.0
+ var args=arguments,d=document,i,j,id=args[0],o=FP_getObjectByID(id),s,ao,v,x;
+ d.$cpe=new Array(); if(o) for(i=2; i<args.length; i+=2) { v=args[i+1]; s="o"; 
+ ao=args[i].split("."); for(j=0; j<ao.length; j++) { s+="."+ao[j]; if(null==eval(s)) { 
+  s=null; break; } } x=new Object; x.o=o; x.n=new Array(); x.v=new Array();
+ x.n[x.n.length]=s; eval("x.v[x.v.length]="+s); d.$cpe[d.$cpe.length]=x;
+ if(s) eval(s+"=v"); }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+// -->
+</script>
+<!-- #EndEditable -->
+<meta content="language analysis,eltconcourse,English grammar,free English language teaching materials,CELTA,Delta,language guides,free Delta training,free CELTA training,free ELT Training materials,teacher training,ELT,learning English,teaching English,English Language Teaching,ESOL,EFL,English as a Foreign Language" name="keywords" />
+<link href="../../../styles/mainstyle.css" rel="stylesheet" type="text/css" />
+<link href="../../../styles/training.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+</style>
+</head>
+
+<body>
+	<!-- Begin Masthead -->
+	<div id="masthead" >
+		<table style="width: 100%; border-bottom: #000080 solid">
+			<tr>
+				<td style="width: 135px">
+				<img alt="logo" height="49" src="../../../gfx/logo.png" width="78" /></td>
+				<td valign="bottom">
+				<span class="orangexxlargebold">ELT </span>
+				<span class="bluexxlargebold">Concourse teacher training</span></td>
+			</tr>
+		</table>
+	</div>
+	<!-- End Masthead -->
+	<!-- Begin Content -->
+			<!-- Begin Sidebar -->
+		<div id="sidebartt">
+			<ul>
+				<li><a href="../../../index.html">ELT Concourse home</a></li>
+				<li><a href="../../../a-z_index.html">A-Z site index</a></li>
+				<li><a href="../../training_index.html">Teacher training index</a></li>
+				<li><a href="../../../development/development_index.html">Teacher development</a></li>
+				<li><a href="../../../teachers/teachers.html">For teachers</a></li>
+				<li><a href="../../trainers/trainers_index.html">For trainers</a></li>
+				<li>
+				<a href="../../../academic_management/academic_management_index.html">For managers</a></li>
+				<li><a href="../../../learners/learners.html">For learners</a></li>
+				<li><a href="../../common/about_language.html">About language</a></li>
+				<li><a href="../../../questions/questions.html">Language questions</a></li>
+				<li class="whiteback">Other areas</li>
+				<li><a href="../indexes_is/eap_index_is.html">Academic English</a></li>
+				<li><a href="../indexes_is/be_index_is.html">Business English</a></li>
+				<li><a href="../../entering/introduction_to_elt.html">Entering ELT</a></li>
+				<li><a href="../../courses/courses_index.html">Courses index</a></li>
+				<li><a href="../../courses/basic/introduction_basic.html">Basic ELT course</a></li>
+				<li><a href="../../tkt/tkt_index.html">TKT</a></li>
+				<li><a href="../../bridge/bridge_index.html">The Bridge</a></li>
+				<li><a href="../../courses/lacourse/index_la_course.html">Language analysis</a></li>
+				<li>
+				<a href="../../courses/training_to_train/training_to_train_index.html">Training to train</a></li>
+				<li><a href="../../courses/transcription1/transcription.html">Transcription</a></li>
+				<li><a href="../../glossaries/glossary_index.html">Glossaries</a></li>
+				<li><a href="../../../articles/articles.html">Articles</a></li>
+			</ul>
+		</div>
+		<!-- End Sidebar -->
+		<!-- Begin Content -->
+		
+		<div id="toppicture" style="text-align: left; background-color: white; padding: 0px; margin-left: 140px;">
+				<img alt="Concourse 2" height="207" src="../../../images/concourse2blue.jpg" width="310" /></div>
+		
+			<!-- #BeginEditable "content" -->
+		
+			<!-- #BeginEditable "content" -->
+		
+		<div id="content">
+		
+			<h1>Constituent analysis</h1>
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="telescope" height="207" src="../../images/telescope_silhouette310.jpg" width="310" /></td>
+					<td class="auto-style8"><h3><em>I spotted the man with a 
+					telescope</em></h3>
+					</td>
+				</tr>
+			</table>
+			
+			<p>This guide concerns how we unravel what is meant by that 
+			sentence.<br />
+			We cannot be sure whether this means:<br /><em>&nbsp;&nbsp;&nbsp; I used a telescope to spot the man<br />
+			</em>or<br /><em>&nbsp;&nbsp;&nbsp; I spotted the man who had a telescope</em></p>
+			<p>If you have not yet followed 
+			<a href="phrases.html" target="_blank">the guide to 
+			phrases</a> on this site, now's a good time to do that (new tab).&nbsp; If, 
+			however, you are comfortable with identifying Noun phrases, Adverb 
+			phrases, Verb phrases and Prepositional phrases, read on.</p>
+			<hr />
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="constituents" height="166" src="../../images/ingredients250.jpg" width="250" /></td>
+					<td class="auto-style8"><h2>What makes a constituent?</h2></td>
+				</tr>
+			</table>
+			
+			<p>
+			The issue here is often one of ambiguity.&nbsp; Take, for example, an 
+			apparently simple sentence such as:</p>
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+			<em><a name="4"></a></em>
+					<img alt="shout" height="133" src="../../images/shout200.jpg" width="200" /></td>
+					<td class="auto-style8">
+					<h3>
+					<em>The teacher shouted at the boy in room 13</em></h3></td>
+				</tr>
+			</table>
+			
+			<table cellpadding="0" class="tableblueborder">
+				<tr>
+					<td>
+					<img alt="think" height="60" src="../../../gfx/think60.jpg" width="60" /></td>
+					<td class="auto-style88"><strong>Task</strong>:<br />
+			A moment's thought will reveal that there are two possible ways 
+			to understand this sentence.<br />
+			<a href="#4" onclick="FP_changeProp(/*id*/'contituent1',0,'style.visibility','visible')">
+			Click here when you have figured out what they are</a>.</td>
+				</tr>
+			</table>
+			<ol id="contituent1" class="style_brown" style="visibility: hidden">
+				<li><em>The teacher shouted at the boy who came from, is or is 
+				normally in room 13<br />
+				</em><span class="style_black">(i.e. <em>in room 13</em> tells 
+				us about the boy)</span><br />
+				<span class="style_red"><strong>OR</strong></span></li>
+				<li><em>The place where the teacher shouted at the boy is room 
+				13<br />
+				</em><span class="style_black">(i.e. <em>in room 13 </em>tells 
+				where the shouting happened)</span></li>
+			</ol>
+			<p>We can only understand which interpretation is the correct one by 
+			identifying the <strong>constituent</strong> parts of each clause, 
+			like this:</p>
+			<p><strong>Interpretation 1: the object of the shouting is </strong> <em>
+			<strong>the boy in room 13</strong></em></p>
+			<table class="auto-style12" style="width: 50%">
+				<tr>
+					<td class="auto-style24" style="width: 101px">Constituent 1</td>
+					<td class="auto-style22" style="width: 101px">Constituent 2</td>
+					<td class="auto-style23" style="width: 102px">Constituent 3</td>
+				</tr>
+				<tr class="style_black">
+					<td class="auto-style24" style="width: 101px"><em>The teacher</em></td>
+					<td class="auto-style24" style="width: 101px"><em>shouted at</em></td>
+					<td class="auto-style17" style="width: 102px"><em>the boy in 
+					room 13</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style19" style="width: 101px">noun phrase</td>
+					<td class="auto-style19" style="width: 101px">verb phrase</td>
+					<td class="auto-style20" style="width: 102px">modified noun phrase</td>
+				</tr>
+			</table>
+			<p><strong>Interpretation 2: the shouting happened </strong> <em>
+			<strong>in room 13</strong></em></p>
+			<table class="auto-style12" style="width: 50%">
+				<tr>
+					<td class="auto-style24" style="width: 101px">Constituent 1</td>
+					<td class="auto-style24" style="width: 101px">Constituent 2</td>
+					<td class="auto-style24" style="width: 101px">Constituent 3</td>
+					<td class="auto-style24" style="width: 102px">Constituent 4</td>
+				</tr>
+				<tr class="style_black">
+					<td class="auto-style24" style="width: 101px"><em>The teacher</em></td>
+					<td class="auto-style24" style="width: 101px"><em>shouted at</em></td>
+					<td class="auto-style24" style="width: 101px"><em>the boy</em></td>
+					<td class="auto-style24" style="width: 102px"><em>in room 13</em></td>
+				</tr>
+				<tr>
+					<td class="auto-style24" style="width: 101px">noun phrase</td>
+					<td class="auto-style24" style="width: 101px">verb phrase</td>
+					<td class="auto-style24" style="width: 101px">noun phrase</td>
+					<td class="auto-style24" style="width: 102px">prepositional 
+					phrase</td>
+				</tr>
+			</table>
+			<p>The trick is to decide, in this case, whether the prepositional 
+			phrase, <em>in room 13</em>, is a constituent in its own right, in 
+			which case Interpretation 2 applies, or whether it forms a part of 
+			the constituent noun phrase, <em>the boy in room 13</em>, in 
+			which case Interpretation 1 applies.</p>
+			<p>If you prefer a diagram, it looks like this.&nbsp; The subject 
+			noun phrase is in green, the verb phrase and accompanying adverbial in blue and the object noun 
+			phrase in red.&nbsp; The question to answer is<br />
+			<strong><em>Does the prepositional phrase tell us about the verb (in 
+			which case it is an independent constituent) or does it modify the 
+			noun (in which case it forms part of the constituent noun phrase)?</em><br />
+			<img alt="constituents" height="85" src="../../imagesgraphics/constituents7.png" width="465" /></strong></p>
+			<p>If you yearn for a neat technical term for this kind of 
+			phenomenon, it's called syntactic ambiguity.</p>
+			<hr />
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="ambiguity" height="166" src="../../images/directions_giving250.jpg" width="250" /></td>
+					<td class="auto-style8"><h2>Levels of ambiguity</h2></td>
+				</tr>
+			</table>
+			
+			<p>There are many times, of course, when no, or very little, 
+			ambiguity exists and in these cases we can normally rely on our 
+			intuition to decide what qualifies as an independent constituent.&nbsp; 
+			For many learners, intuition alone is not always enough so 
+			we need to be clear in our presentation.<br />
+			At other times, various levels of ambiguity exist.&nbsp;
+			For example:</p>
+			<ul class="redbullet">
+				<li><em>John upset the lady in the red dress</em><br />
+				Here, it seems reasonable to suppose that the constituent (in 
+				this case the object noun phrase, <em>the lady in the red dress</em>) 
+				cannot be broken into two elements or we end up with the 
+				unlikely, but just possible:<br />
+				<em>&nbsp;&nbsp;&nbsp; In the red dress, John upset the lady<br />
+				</em>which means that John was wearing the red dress.&nbsp; That 
+				is not a conclusion to which people would naturally come on 
+				hearing / reading the sentence with no other context so the 
+				level of ambiguity is quite low.&nbsp; The reason for this is 
+				purely semantic: the fact that, generally speaking, it is 
+				unusual for people called John to wear dresses.<br />
+				However, the level of ambiguity is higher when semantic issues 
+				are stripped out and we consider:<br />
+				<em>&nbsp;&nbsp;&nbsp; John upset the lady in the garden</em><br />
+				in which we truly do not know, without context to help, whether 
+				the lady whom John upset is identified as being the one in the 
+				garden or whether the place in which John upset her was the 
+				garden.</li>
+				<li><em>He cut down the tree in the corner</em><br />
+				Here, too, the noun phrase, <em>the tree in the corner</em>, 
+				logically forms a single constituent but a small change can 
+				introduce a degree of ambiguity as in:<br />
+				<em>&nbsp;&nbsp;&nbsp; He cut up the tree in the corner</em><br />
+				in which we cannot be sure whether it was <em>the tree in the 
+				corner</em> that he cut up or the place where he cut up the 
+				tree was <em>in the corner</em>.</li>
+				<li><em>She promised to talk to the boss today</em><br />
+				When verbs come in pairs like this (i.e., they are catenative) 
+				some ambiguity concerning the direction of the adverbial is 
+				created.&nbsp; This sentence could mean:<br />
+				<em>&nbsp;&nbsp;&nbsp; Today, she promised to talk to the boss</em><br />
+				or<br />
+				<em>&nbsp;&nbsp;&nbsp; At some other time, she promised to talk 
+				to the boss today</em><br />
+				so, we need to disentangle whether the adverbial is modifying
+				<em>promise</em> or <em>to talk</em>.</li>
+				<li><em>He read his book on the train</em><br />
+				Here, we intuitively identify four constituents:<br />
+				<em>He</em> (the subject noun phrase)<br />
+				<em>read</em> (the verb phrase)<br />
+				<em>his book</em> (object noun phrase)<br />
+				and<br />
+				<em>on the train</em> (prepositional phrase)<br />
+				so it is logical to form, e.g.:<br />
+				<em>&nbsp;&nbsp;&nbsp; On the train, he read his book</em><br />
+				Again, however, a small change can produce some ambiguity as to 
+				what we understand as the constituents, as in, e.g.:<br />
+				<em>&nbsp;&nbsp;&nbsp; He read his book on the philosopher</em><br />
+				where our intuition is not that he rested his book on a 
+				philosopher but that <em>his book on the philosopher</em> forms 
+				a single constituent noun phrase telling us what the book was 
+				about, rather than where he read it.<br />
+				It is wholly impossible, without context, to decide if<br />
+				<em>&nbsp;&nbsp;&nbsp; He read his book on the island</em><br />
+				means <em>the island </em>was where he read the book or the 
+				subject of the book was <em>the island</em>.</li>
+				<li><em>They provided more accurate figures</em><br />
+				You may have understood this to mean one of two possibilities:<br />
+				<em>&nbsp;&nbsp;&nbsp; The figures they provided were more 
+				accurate than the existing ones</em><br />
+				or<br />
+				<em>&nbsp;&nbsp;&nbsp; The figures they provided were accurate 
+				and additional to the accurate ones already existing</em><br />
+				In spoken language, there would be a very slight pause after <em>
+				more</em> (which would also be stressed) to signify the second 
+				meaning.&nbsp; The first meaning would be signified by no 
+				pausing and the stress falling on <em>accurate</em> rather than
+				<em>more</em>.<br />
+				The issue here is whether <em>more</em> is an adverb modifying 
+				the adjective <em>accurate</em> (the first meaning) or whether 
+				it is a determiner relating to the noun phrase <em>accurate 
+				figures</em> (the second meaning).&nbsp; The key to unravelling it, which cannot be 
+				done from the written form, is to see whether the object is <em>
+				figures</em> (the first meaning) or <em>accurate figures </em>
+				(the second meaning).</li>
+				<li>From CNN news:<br /><span class="style_black">&nbsp;&nbsp;&nbsp; 
+				<em>We are now actively investigating the Trump Organization 
+				in a criminal capacity, along with the Manhattan DA," ... Fabien 
+				Levy told CNN.</em></span><br />which has two prepositional phrases:<br />
+				<em>&nbsp;&nbsp;&nbsp; in a criminal capacity</em><br />and<br />
+				<em>&nbsp;&nbsp;&nbsp; along with the Manhattan DA</em><br />and it takes the reader a moment to figure out that the 
+				sentences should be:<br />&nbsp;&nbsp;&nbsp; <em>We, along with the Manhattan DA, are now actively 
+				investigating the Trump Organization in a criminal capacity</em><br />or it reads as if the Manhattan DA is being investigated rather 
+				than being part of the investigating team.<br />
+				<span class="auto-style89">(https://edition.cnn.com/2021/05/18/politics/new-york-attorney-general-trump-organization-criminal-probe/index.html, 
+				[accessed 21 May 2021])</span></li>
+			</ul>
+			<p>It is not only noun and prepositional phrases which need to be disambiguated.&nbsp; 
+			The same phenomenon of trying to decide what belongs where can occur 
+			with verb phrases:&nbsp; For example, the sentence:<br />
+&nbsp; <em>&nbsp; The people who came quickly got lunch</em><br />
+			has two interpretations:</p>
+			<ol>
+				<li>The verb phrase is <em>came</em>, with the modifying 
+				adjunct,<em> quickly</em>, in which case we 
+				have:<br />
+				<img alt="1" height="34" src="../../imagesgraphics/constituents_verb_phrase1.png" width="310" /></li>
+				<li>The verb phrase is <em>got</em>, pre-modified by the 
+				adverbial, <em>quickly</em>, in which case we 
+				have:<br />
+				<img alt="2" height="34" src="../../imagesgraphics/constituents_verb_phrase2.png" width="310" /></li>
+			</ol>
+			<p>The only way that can properly be disambiguated is by pausing in 
+			speech after <em>quickly</em> (and signalling sense 1.) or after <em>
+			came</em> (and signalling sense 2.).<br />
+			In writing, only  rephrasing the sentences will completely remove 
+			the ambiguity although inserting commas (after <em>quickly</em> and
+			<em>came</em> respectively) may help.&nbsp; Moving the adverb 
+			settles the matter but for many, <em>quickly came</em> sounds 
+			clumsy.&nbsp; We might  rephrase, then, as:</p>
+			<ol>
+				<li><em>The people who were quick to arrive got lunch</em></li>
+				<li><em>The people who came got lunch quickly.</em></li>
+			</ol>
+			<p>As you can see, the situation is not at all obvious so we need to 
+			have some tests to determine which phrases in a clause actually form 
+			independent constituents.</p>
+			<hr />
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="testing" height="166" src="../../images/test_tubes250.jpg" width="250" /></td>
+					<td class="auto-style8"><h2>Testing for constituents</h2></td>
+				</tr>
+			</table>
+			
+			<p>There are a number of tests we can apply to see if our intuitions 
+			about what is really an independent constituent and what is a phrase 
+			forming part of a constituent are correct.<br />
+			Authorities vary on how many of 
+			these tests there are and whether they are all valid but we will 
+			content ourselves with six well known ones and a seventh which is 
+			based on grammatical analysis.</p>
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="links" height="133" src="../../images/link_anchor_chain250.jpg" width="200" /></td>
+					<td class="auto-style8"><h3>Test 1: joining another 
+					constituent (the coordination test)</h3></td>
+				</tr>
+			</table>
+			
+			<p>Depending on the function of the phrase, we have to use a 
+			different sort of language if we want to add to the phrase in 
+			question.&nbsp; 
+			For our example:</p>
+			<ul class="redbullet">
+				<li><em>The teacher shouted at </em><span class="style_black">
+				<em>the boy in room 13</em></span><em> 
+				and </em><span class="style_red"><em>all his friends</em></span><em>
+				</em>(this follows interpretation 1)</li>
+				<li><em>The teacher shouted at the boy</em><span class="style_black"><em> 
+				in room 13</em></span><em> and </em><span class="style_red"><em>
+				in the corridor</em></span> (this follows 
+				interpretation 2)</li>
+			</ul>
+			<p>In the first case, we have to add another noun phrase (<span class="style_red"><em>all 
+			his friends</em></span>) to perform the same function and in the 
+			second case we have to add another prepositional phrase (<span class="style_red"><em>in 
+			the corridor</em></span>) to perform the same function.</p>
+			<p>We can do this, too, with some of the examples above and extend a 
+			sentence such as:<br />
+			<em>&nbsp;&nbsp;&nbsp; He read his book on the island</em><br />
+			to<br />
+			<em>&nbsp;&nbsp;&nbsp; He read his book on the island 
+			<span class="style_red">and its people</span></em><br />
+			where it becomes obvious that the subject of the book is in 
+			question, not where he read it so the object noun phrase is <em>his 
+			book on the island and its people</em>.</p>
+			<p>Extending other constituents is also revealing, so<br />
+			<em>&nbsp;&nbsp;&nbsp; He read his book on the island
+			<span class="style_red">and on the way home</span></em><br />
+			makes it clear where the reading took place so <em>on the island</em> 
+			can only be interpreted as a prepositional phrase which is a 
+			constituent in its own right.<br />
+			It is also possible to have:<br />
+			<em>&nbsp;&nbsp;&nbsp; He cut up the tree in the corner 
+			<span class="style_red">and the old 
+			shed</span></em><br />
+			so we know that what he cut up was <em>the tree in the corner and 
+			the old shed </em>
+			and that in the corner does not refer necessarily to where the 
+			cutting took place.&nbsp; But,<br />
+&nbsp;<em>&nbsp;&nbsp; He cut up the tree in the corner <span class="style_red">
+			near the garage</span></em><br />
+			makes it clearer that we are talking about position.</p>
+			<p>However, this test will not work with one of the examples above 
+			because:<br />
+			<em>&nbsp;&nbsp;&nbsp; They provided more accurate figures</em><br />
+			can be extended as<br />
+			<em>&nbsp;&nbsp;&nbsp; They provided more accurate figures 
+			<span class="style_red">and lots 
+			of other information</span></em><br />
+			but we still do not know whether <em>more</em> is an adverb 
+			modifying <em>accurate</em> or a determiner relating to <em>accurate 
+			figures</em>.</p>
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="passive" height="133" src="../../images/animals_fox_passive200.jpg" width="200" /></td>
+					<td class="auto-style8"><h3>Test 2: making a passive</h3></td>
+				</tr>
+			</table>
+			
+			<p>When we make a passive, we keep constituents together.&nbsp; For 
+			our main example, two passive sentences are possible and they reveal 
+			which interpretation is the right one:</p>
+			<ul class="redbullet">
+				<li><em><span class="style_red">The boy in room 13</span> was shouted at (by the teacher) </em>
+				(interpretation 1)</li>
+				<li><em><span class="style_red">The boy</span> was shouted at (by the teacher) 
+				<span class="style_red">in room 13</span> </em>
+				(interpretation 2)</li>
+			</ul>
+			
+			<p>Again, we can apply this test to the sentences we used above and 
+			disambiguate the meaning by converting:<br />
+			<em>&nbsp;&nbsp;&nbsp; He read his book on the island<br />
+			</em>to<br /><em>&nbsp;&nbsp;&nbsp; <span class="style_red">His book on the island</span> was read</em><br />
+			which refers to the subject of the book, or<br />
+			<em>&nbsp;&nbsp;&nbsp;<span class="style_red"> His book</span> was read 
+			<span class="style_red">on the island</span></em><br />
+			which refers to where it was read.<br />
+			It is also possible to convert:<br />
+&nbsp;&nbsp;&nbsp; <em>He cut up the tree in the corner</em><br />
+			to<br />
+			<em>&nbsp;&nbsp;&nbsp; <span class="style_red">The tree in the corner
+			</span>was cut up<br />
+			</em>and<br /><em>&nbsp;&nbsp;&nbsp; <span class="style_red">The tree</span> was cut up
+			<span class="style_red">in the corner</span></em><br />
+			so we know that what he cut up was <em>the tree in the corner </em>
+			in the first and where it was cut up in the second.</p>
+			<p>However, again, this test will not work with one of the examples 
+			above, because, although:<br />
+			<em>&nbsp;&nbsp;&nbsp; They provided more accurate figures</em><br />
+			can be rendered as<br />
+			<em>&nbsp;&nbsp;&nbsp; More accurate figures were provided </em>(<em>by 
+			them</em>)<br />
+			we still do not know whether <em>more</em> is an adverb 
+			modifying <em>accurate</em> or a determiner relating to <em>accurate 
+			figures</em>.</p>
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="cleft" height="133" src="../../images/cut_pears200.jpg" width="200" /></td>
+					<td class="auto-style8"><h3>Test 3: making a cleft</h3></td>
+				</tr>
+			</table>
+			
+			<p>There are a number of ways to make a cleft sentence (there's
+			a guide on this site, linked below in the list of related guides at 
+			the end) 
+			but one example will do to show how the results differ depending on 
+			the nature of the phrase.&nbsp; This is called an <em>it</em>-cleft, 
+			incidentally.</p>
+			<ul class="redbullet">
+				<li><em>It was<span class="style_red"> the boy in room 13</span> that was shouted at by the 
+				teacher </em>
+				(interpretation 1)</li>
+				<li><em>It was <span class="style_red">in room 13</span> that 
+				<span class="style_red">the boy </span>was shouted at by the 
+				teacher </em>
+				(interpretation 2)</li>
+			</ul>
+			
+			<p>This will also work as a test for some of the other examples so, 
+			for example:<br />
+			<em>&nbsp;&nbsp;&nbsp; He cut up the tree in the corner</em><br />
+			can be rendered as:<br />
+			<em>&nbsp;&nbsp;&nbsp; It was <span class="style_red">the tree in the corner</span> 
+			that he cut up</em><br />
+			or<br />
+			<em>&nbsp;&nbsp;&nbsp; It was<span class="style_red"> in the corner</span> that he cut up 
+			<span class="style_red">the tree</span></em><br />
+			and in the first case we know the object noun phrase is <em>the tree 
+			in the corner </em>but in the second it is simply <em>the tree</em> 
+			and <em>in the corner</em> refers to where the cutting took place.</p>
+			<p>We can also render<br />
+			<em>&nbsp;&nbsp;&nbsp; He read his book on the island</em><br />
+			as<br />
+			<em>&nbsp;&nbsp;&nbsp; It was <span class="style_red">on the island</span> that he read 
+			<span class="style_red">his book</span></em><br />
+			and as<br />
+			<em>&nbsp;&nbsp;&nbsp; It was <span class="style_red">his book on the island</span> that he read</em><br />
+			which succeeds in disambiguating the sentence.</p>
+			<p>Other <em>wh</em>-cleft forms can be used so we can also 
+			disambiguate with, e.g.:<br />
+			<em>&nbsp;&nbsp;&nbsp; Where he read his book was on the island<br />
+&nbsp;&nbsp;&nbsp; What he read on the island was his book<br />
+&nbsp;&nbsp;&nbsp; Where he cut up the tree was in the corner<br />
+&nbsp;&nbsp;&nbsp; What he cut up was the tree in the corner</em></p>
+			<p>Making a cleft also disentangles the ambiguity caused by 
+			catenating verbs and our example above:<br />
+			<em>&nbsp;&nbsp;&nbsp; She promised to talk to the boss today</em><br />
+			can be clarified by making either:<br />
+			<em>&nbsp;&nbsp;&nbsp; It was today that she promised to talk to the 
+			boss</em><br />
+			or<br />
+			<em>&nbsp;&nbsp;&nbsp; What she promised today was to talk to the 
+			boss</em></p>
+			<p>Unfortunately, this test will also not work again with:<br />
+&nbsp;<em>&nbsp;&nbsp; They provided more accurate figures<br />
+			</em>because<br />
+			<em>&nbsp;&nbsp;&nbsp; It was more accurate figures that they 
+			provided</em><br />
+			can have exactly the same dual meaning.</p>
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="question" height="133" src="../../images/question_woman200.jpg" width="200" /></td>
+					<td class="auto-style8"><h3>Test 4: questions</h3></td>
+				</tr>
+			</table>
+			
+			<p>We can, of course, form questions from our first example sentence but, 
+			depending on the nature of the constituents, the questions and 
+			answers will 
+			differ:</p>
+			<ul class="redbullet">
+				<li><em>Who was shouted at by the teacher?&nbsp;&rarr;
+				<span class="style_red">The boy in room 13</span> </em>
+				(interpretation 1)</li>
+				<li><em>Where was the boy shouted at by the teacher? &rarr;
+				<span class="style_red">In room 13 </span> </em>(interpretation 2)</li>
+			</ul>
+			
+			<p>This test will work to disambiguate:<br />
+&nbsp;<em>&nbsp;&nbsp; He read his book on the island</em><br />
+			because the two questions are<br />
+&nbsp;<em>&nbsp;&nbsp; What did he read?&nbsp;→ <span class="style_red">His book on 
+			the island</span><br />
+&nbsp;&nbsp;&nbsp; Where did he read his book?&nbsp;→ <span class="style_red">On the 
+			island</span></em></p>
+			<p>And<br /><em>&nbsp;&nbsp;&nbsp; He cut up the tree in the corner<br />
+			</em>also generates two questions:<br />
+			<em>&nbsp;&nbsp;&nbsp; What did he cut up?&nbsp;→ <span class="style_red">The tree in 
+			the corner</span><br />
+&nbsp;&nbsp;&nbsp; Where did he cut it up?&nbsp;→ <span class="style_red">In the 
+			corner</span></em></p>
+			
+			<p>This test will not necessarily disambiguate issues caused by 
+			catenative verbs so from:<br />
+			<em>&nbsp;&nbsp;&nbsp; She promised to talk to the boss today</em><br />
+			we can make two questions<br />
+			<em>&nbsp;&nbsp;&nbsp; When did she promise to talk to the boss?</em><br />
+			or<br />
+			<em>&nbsp;&nbsp;&nbsp; What did she promise?</em><br />
+			and both arrive at the same answer with the ambiguity still present 
+			because the <em>wh-</em>question word can apply to either verb.</p>
+			<p>This is the first test that will partially disambiguate:<br />
+&nbsp;&nbsp;&nbsp; <em>They provided more accurate figures</em><br />
+			because there are two possible questions:<br />
+&nbsp;<em>&nbsp;&nbsp; What did they provide?&nbsp;→ <span class="style_black">More</span> <span class="style_red">
+			accurate figures</span><br />
+&nbsp;&nbsp;&nbsp; What sort of figures did they provide?&nbsp;→ <span class="style_red">More 
+			accurate ones</span></em><br />
+			but we still do not know in the first answer whether <em>more</em> is an adverb 
+			modifying <em>accurate</em> or a determiner relating to <em>accurate 
+			figures</em> so disambiguation is not fool proof.</p>
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="pronoun" height="133" src="../../images/nut_bolt200.jpg" width="200" /></td>
+					<td class="auto-style8"><h3>Test 5: pro forms</h3></td>
+				</tr>
+			</table>
+			
+			<p>Pro-forms include many pronouns but the one we select will depend 
+			on how we have understood the constituent parts of the sentence.&nbsp; We 
+			can have, therefore:</p>
+			<ul class="redbullet">
+				<li><em>The teacher shouted at <span class="style_red">him</span></em>
+				(interpretation 1)</li>
+				<li><em>The teacher shouted at the boy <span class="style_red">
+				there</span> </em>(interpretation 2)</li>
+			</ul>
+			
+			<p>This will also work as a test for some of the other examples so, 
+			for example:<br />
+			<em>&nbsp;&nbsp;&nbsp; He cut up the tree in the corner</em><br />
+			can be rendered as:<br />
+			<em>&nbsp;&nbsp;&nbsp; He cut <span class="style_red">it </span>up in the corner</em><br />
+			or<br />
+			<em>&nbsp;&nbsp;&nbsp; He cut the tree up <span class="style_red">there</span></em><br />
+			and in the first case we know the object noun phrase is <em>it</em> 
+			(<em>the tree in the corner</em>) but in the second it is 
+			simply <em>the tree</em> and <em>there </em>refers to where the 
+			cutting took place.</p>
+			<p>We can also render<br />
+			<em>&nbsp;&nbsp;&nbsp; He read his book on the island</em><br />
+			as<br />
+			<em>&nbsp;&nbsp;&nbsp; He read his book <span class="style_red">there</span></em><br />
+			and as<br />
+			<em>&nbsp;&nbsp;&nbsp; He read <span class="style_red">it </span>on the island</em><br />
+			which succeeds in disambiguating the sentence.</p>
+			<p>Fortunately, this test will also work with:<br />
+&nbsp;<em>&nbsp;&nbsp; They provided more accurate figures<br />
+			</em>because, although<br />
+			<em>&nbsp;&nbsp;&nbsp; They provided <span class="style_red">them</span></em><br />
+			can have exactly the same dual meaning,<br />
+&nbsp;&nbsp;&nbsp; <em>They provided <span class="style_red">more</span></em><br />
+			and<br />
+&nbsp;&nbsp;&nbsp; <em>They provided more accurate <span class="style_red">ones</span></em><br />
+			does partially disambiguate because in the first <em>more</em> is 
+			obviously a pronoun.&nbsp; This is only partially disambiguated, 
+			however, because we still do not know the grammatical role of <em>
+			more</em> in the last example.</p>
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="front" height="133" src="../../images/buildings_beach_huts200.jpg" width="200" /></td>
+					<td class="auto-style8"><h3>Test 6: fronting</h3></td>
+				</tr>
+			</table>
+			
+			<p>Certain types of phrases allow fronting (i.e., moving to the 
+			start of the sentence).&nbsp; We can have, therefore:</p>
+			<ul class="redbullet">
+				<li><em><span class="style_red">The boy in room 13</span> (whom) 
+				the teacher shouted at </em>(interpretation 1)</li>
+				<li><em><span class="style_red">In room 13,</span> the teacher 
+				shouted at <span class="style_red">the boy</span> </em>(interpretation 
+				2)</li>
+			</ul>
+			
+			<p>We can apply this test to the sentences we used above and 
+			disambiguate:<br />
+			<em>&nbsp;&nbsp;&nbsp; He read his book on the island</em><br />
+			by moving the prepositional phrase:<br />
+			<em>&nbsp;&nbsp;&nbsp; <span class="style_red">On the island</span> he read his book</em><br />
+			which can only refer to where it was read.</p>
+			<p>It is also possible to have:<br />
+			<em>&nbsp;&nbsp;&nbsp; <span class="style_red">In the corner</span> he cut the tree up<br />
+			</em>so we know that what he cut up was <em>the tree </em>
+			and the prepositional phrase provides the location.</p>
+			<p>However, again, this test will not work with:<br />
+			<em>&nbsp;&nbsp;&nbsp; They provided more accurate figures</em><br />
+			because we cannot move any constituent to the front unless we make a 
+			cleft or a passive (see above) which do not disambiguate, as we saw.</p>
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="front" height="133" src="../../images/buildings_beach_huts200.jpg" width="200" /></td>
+					<td class="auto-style8"><h3>Test 7: Grammatical gradience</h3></td>
+				</tr>
+			</table>
+			
+			<p>A problem we have identified so far lies with the example of<br />
+			<em>&nbsp;&nbsp;&nbsp; They provided more accurate figures</em><br />
+			which is ambiguous because of the indeterminate function of the word
+			<em>more</em>:</p>
+			<ul class="greybullet">
+				<li>If it is an adverb, then it is modifying the adjective <em>accurate</em> 
+			and the sentence refers to the figures being more accurate than the 
+			existing ones.</li>
+				<li>If it is a determiner, then it must be modifying the phrase 
+				<em>accurate figures </em>and the sentence means that they provided 
+			additional, equally accurate, figures.</li>
+			</ul>
+			<p>We have also seen that none of the tests we apply wholly successfully 
+			disambiguates the sentence.<br />We can, however, apply a special test in this case and recognise 
+			that the word <em>more</em> itself is the root of the problem, not 
+			the constituents of the phrase in which it resides, because it slips 
+			between word-class categories (in this case, adverb to determiner 
+			but we also saw that it can be a pronoun).&nbsp; The indeterminate 
+			nature of some words regarding their word class is an example of 
+			gradience.</p>
+			<p>The simple way is to use an alternative and render the sentence as<br />
+			<em>&nbsp;&nbsp;&nbsp; They provided additional accurate figures</em><br />which can only be interpreted as their providing accurate figures in 
+			addition to the existing accurate ones.</p>
+			<p>By the same token, we can  rephrase  the sentence using the adjective 
+			predicatively as:<br /><em>&nbsp;&nbsp;&nbsp; The figures they provided were more accurate</em><br />which can only mean that 
+			<em>more</em> is being used as an adverb to 
+			modify the adjective and that the existing figures were less 
+			accurate.<br />We can also note that we can substitute the determiner 
+			<em>more</em> 
+			in a predicative form as:<br /><em>&nbsp;&nbsp;&nbsp; The (accurate) figures they provided were 
+			additional</em></p>
+			<p>The word <em>less</em> suffers from the same categorical 
+			indeterminacy so<br /><em>&nbsp;&nbsp;&nbsp; I want less expensive work done</em><br />can be interpreted as:<br />
+			<em>&nbsp;&nbsp;&nbsp; I want less work which is expensive</em> <em>done</em><br />or<br />
+			<em>&nbsp;&nbsp;&nbsp; I want cheaper work</em> <em>done</em><br />Rephrasing is the only option available successfully to disambiguate 
+			the sense.&nbsp; That can be achieved by the use of a relative 
+			pronoun clause, like this:<br /><em>&nbsp;&nbsp;&nbsp; They provided figures that were more accurate<br />
+			</em>or<br />
+&nbsp;&nbsp;&nbsp; <em>I want work which is less expensive done<br />
+			</em>or<br />
+			<em>&nbsp;&nbsp;&nbsp; I want less work which is expensive done</em></p>
+			
+			<hr />
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="limitation" height="166" src="../../images/barrier_bollards250.jpg" width="250" /></td>
+					<td class="auto-style8"><h2>Limitations and problems</h2></td>
+				</tr>
+			</table>
+			
+			<h3>Limitations</h3>
+			<p>Not all of the first six tests can always be applied because English 
+			resists certain types of structure.&nbsp; For example, using <em>who</em> 
+			in cleft sentences is not normally allowed (<em>*Who the teacher 
+			shouted at was the boy in room 13</em>).<br />
+			However, if we can apply two or more of these tests and come 
+			up with grammatically acceptable forms, then we have, almost 
+			certainly, successfully identified the real constituent phrases.</p>
+			<h3>Problems</h3>
+			<p>Constituent analysis works very neatly when the constituents know 
+			their places and keep to them.&nbsp; For our main example sentence, we 
+			can draw two tree diagrams to show the interpretations we can 
+			put on the clause.&nbsp; Like this:</p>
+			<table>
+				<tr>
+					<td class="auto-style27">
+					<img alt="interpretation 1" height="290" src="../../imagesgraphics/constituents1.png" width="465" /></td>
+					<td class="auto-style26">
+					<img alt="interpretation 2" height="290" src="../../imagesgraphics/constituents2.png" width="481" /></td>
+				</tr>
+			</table>
+			<p>On the left, you'll note, the Object noun phrase is a single 
+			constituent and on the right, it is made up of two independent 
+			constituents.&nbsp; So, Interpretation 1 is that the object of the 
+			verb is <em>the boy in room 13</em> and Interpretation 2 is that the 
+			object of the verb is <em>the boy</em> with additional adverbial 
+			information concerning where the event took place.<br />
+			We can refine the analysis by going down a step and analysing the 
+			Verb phrase as Verb + Past marker + Prepositional particle and analysing the 
+			object noun phrases more carefully as Determiner + Noun etc. but for 
+			our purposes here, we won't.<br />
+			Unfortunately, constituents don't always know their places and move 
+			around as discrete units.&nbsp; Take for example:</p>
+			<ol>
+				<li><em>Did the teacher shout at the boy in room 13?</em></li>
+				<li><em>The teacher woke the boy in room 13 up</em></li>
+				<li><em>The teacher woke the boy up in room 13</em></li>
+			</ol>
+			<p>In these case, the verb phrases have become separated by the noun 
+			phrases and the tree diagrams now look very messy if we try to draw 
+			them so we are reduced to having something like:</p>
+			<p>
+			<img alt="constituents" height="306" src="../../imagesgraphics/constituents6.png" width="500" /></p>
+			<p>because traditional branching tree diagrams just won't work.</p>
+			<p>For more concerning this and other objections to constituent 
+			analysis, see the guide to 
+			Chomsky and transformational functional grammar, linked below.</p>
+			<hr />
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="rhythm" height="166" src="../../images/music_cymbal250.jpg" width="250" /></td>
+					<td class="auto-style8"><h2>Rhythm</h2></td>
+				</tr>
+			</table>
+			
+			<p>In spoken English, constituents can often be identified by the 
+			fact that speakers tend, unless they are speaking very quickly, to 
+			insert a slight pause between phrases they perceive as constituents 
+			and to create a nuclear stress on each sense or tone unit.<br />
+			We can compare our two original interpretations of <em>The teacher 
+			shouted at the boy in room 13</em> and split the clause in two 
+			possible ways:</p>
+			<ol class="auto-style28">
+				<li>|| <em>The teacher </em>| <span class="style_black"><em>
+				shouted at</em></span> | <span class="style_red"><em>the <strong>boy</strong> in 
+				room 13</em></span> ||<br />
+				and</li>
+				<li>|| <em>The teacher</em> | <span class="style_black"><em>
+				shouted at</em></span> | <em><span class="style_red">the <strong>boy</strong></span>
+				</em>| <span class="style_brown"><em>in room <strong>13</strong></em></span> ||</li>
+			</ol>
+			<p>In a., a speaker will tend to keep the rhythm of the sentence 
+			intact with the voice tone falling towards the end.<br />
+			In this case, the sentence forms a single tone unit with the nucleus 
+			on <strong><em>boy</em></strong> and an unstressed tail, <em>in room 
+			13</em>.<br />
+			In b., by contrast, most speakers will insert a very slight pause 
+			between <em>the boy</em> and <em>in room 13</em> and add an 
+			additional stress on <em>13</em>.<br />
+			In this case there are two tone units, the first with a nucleus on
+			<em><strong>boy</strong></em> and the second with a nucleus on <em>
+			<strong>13</strong></em>.<br />
+			This is by no means easy for learners to hear without a good deal of 
+			practice (and is not consistent across all speakers) but it can be 
+			illustrated with something like:</p>
+			<table cellpadding="2" cellspacing="0">
+				<tr>
+					<td>a.&nbsp;</td>
+					<td>
+					<img alt="1" height="80" src="../../imagesgraphics/constituentintonation1.png" width="300" /></td>
+				</tr>
+				<tr>
+					<td>b.&nbsp;</td>
+					<td>
+					<img alt="2" height="86" src="../../imagesgraphics/constituentintonation2.png" width="300" /></td>
+				</tr>
+			</table>
+			<p>In the case of b., there is a stress on <strong><em>13</em></strong> but that is 
+			absent in case a.<br />
+			For more, see the 
+			guide to sentence stress, linked below.</p>
+			<hr />
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="teaching" height="166" src="../../images/teaching_monitor250.jpg" width="250" /></td>
+					<td class="auto-style8"><h2>Teaching implications</h2></td>
+				</tr>
+			</table>
+			
+			<p>The first thing to note is that languages will have different 
+			ways of ordering the constituents of sentences and will even have 
+			different tests for identifying constituents so it's not the case 
+			that learners can simply transfer their intuitions from their first 
+			languages to English.&nbsp; That's one reason we get errors such as:<br />
+			<em>&nbsp;&nbsp;&nbsp; *In the room with energy worked the people<br />
+			&nbsp;&nbsp;&nbsp;
+			*The working in the factory people<br />
+			&nbsp;&nbsp;&nbsp;
+			*I like reading and play tennis<br />
+			&nbsp;&nbsp;&nbsp;
+			*He looked the children after</em></p>
+			<p>The ability to recognise what is and is not a constituent phrase 
+			allows learners to develop a sense for what can qualify as the 
+			subjects, verbs and objects in sentences and set up mental templates 
+			for how acceptable sentences are constructed.&nbsp; This may help 
+			them avoid, e.g.:</p>
+			<ul class="greybullet">
+				<li class="redbullet"><em>In the corner the person is 
+				staring at me </em>(instead of <em>The person in the corner is 
+				staring at me</em>)<br />
+				This kind of error can be shown up by applying almost any of the 
+				tests above and avoiding producing, e.g.<ul class="greybullet">
+					<li><em>*It's in the corner that the person is staring at me<br />
+					</em>noting that<br /><em>It's the person in the corner who is 
+					staring at me<br />
+					</em>is the correct interpretation</li>
+					<li><em>*I'm being stared at in the corner by the person<br />
+					</em>noting that<br /><em>I'm being stared at by the person in the 
+					corner<br />
+					</em>is meaningful</li>
+					<li><em>Where is the person staring at me?<br />
+					</em>noting that<br /><em>Who is staring at me?<br />
+					</em>is the correct question form</li>
+				</ul>
+				</li>
+				<li class="redbullet"><em>I don't know her who is wearing the 
+				red dress</em> which can be avoided by looking at the natural 
+				pro-form:<ul class="greybullet">
+					<li><em>I don't know her</em><br />
+					or the full form of three constituents (subject pronoun, 
+					verb phrase, object noun phrase)</li>
+					<li><em>I don't know the woman who is wearing the red dress</em></li>
+				</ul>
+				</li>
+			</ul>
+			<p>Perversely (to some), one simple way of doing this and getting 
+			your learners to recognise what the constituents of a clause 
+			actually are is to use precisely the sorts of messy diagrams we saw 
+			above.&nbsp; For example, using:<br />
+			<img alt="example constituents" height="87" src="../../imagesgraphics/constituents4.png" width="500" /><br />
+			can alert people visually to the fact that the verb-phrase 
+			constituent comes in two parts and the object noun-phrase 
+			constituent is not just <em>the boy</em> but <em>the boy in room 13</em>.<br />
+			Contrasting that diagram with:<br />
+			<img alt="example constituents" height="87" src="../../imagesgraphics/constituents5.png" width="500" /><br />
+			can alert people to the fact that now the prepositional phrase is an 
+			independent constituent which has a separate meaning and can be 
+			moved around to give<br /><em>&nbsp;&nbsp;&nbsp; In room 13, the teacher woke the boy up</em>.<br />
+			The obvious follow-up exercise is to get your learners to draw their 
+			own block diagrams to show which bits of the clause do what.&nbsp; 
+			How complex and interesting these are is dependent on the level of 
+			the learners, of course, but a few suitable candidates are:</p>
+			<ul class="greybullet">
+				<li><em>&nbsp;&nbsp;&nbsp; He waited on the platform near the entrance for the train 
+				for London</em><br />
+				in which the issue is whether there are two constituent 
+				prepositional phrases or whether <em>the platform near the 
+				entrance</em> is a constituent noun phrase in itself.&nbsp; 
+				Compare:<br />
+				<em>&nbsp;&nbsp;&nbsp; On the platform near the entrance, he waited for the train 
+				to London</em><br />
+				with<br />
+				<em>&nbsp;&nbsp;&nbsp; On the platform, he waited near the entrance for the train 
+				to London</em><br />
+				with<br />
+				<em>&nbsp;&nbsp;&nbsp; On the platform, he waited for the train to London near the 
+				entrance</em></li>
+				<li><em>&nbsp;&nbsp;&nbsp; She hit the man with a gun<br />vs.<br />&nbsp;&nbsp;&nbsp; She shot the man with a gun<br />vs.<br />&nbsp;&nbsp;&nbsp; She stabbed the man with a gun<br />
+				</em>in which the obvious issue is whether <em>the man with a 
+				gun</em> is the constituent noun phrase or whether <em>with a 
+				gun</em> is a prepositional phrase telling us about the 
+				instrument she used.</li>
+				<li><em>&nbsp;&nbsp;&nbsp; They left the money on the table</em><br />
+				subject + verb + object + prepositional phrase or subject + verb 
+				+ object noun phrase?<br />
+				To check the concept, ask:<br />
+				<em>&nbsp;&nbsp;&nbsp; Did they put the money on the table?<br />
+				&nbsp;&nbsp;&nbsp;
+				Did they take the money?<br />
+				&nbsp;&nbsp;&nbsp;
+				Did they have the money when they arrived?</em></li>
+			</ul>
+			<p>The sentence stress and intonation issue mentioned above is probably not something 
+			with which you will wish to trouble learners at lower levels but 
+			with more advanced learners, the ability to hear the slight pause 
+			gives valuable information concerning the speaker's understanding of 
+			what is and is not a constituent of the clause.<br />
+			For more, see the 
+			guide to sentence stress.</p>
+			<p>The final important issue is that doing a little constituent 
+			analysis on the target language we have in mind to teach will often 
+			pay dividends and prevent us from falling into some obvious traps 
+			and actually inducing errors.</p>
+			<hr /><br />
+		<table id="istrainingnav" cellpadding="0" cellspacing="0" class="tableblueborder">
+			<tr>
+				<td class="auto-style50" colspan="2">Related guides</td>
+			</tr>
+			<tr>
+				<td class="auto-style49">
+				<a href="../lexicogrammar/ambiguity.html">ambiguity</a></td>
+				<td class="auto-style55">this is a general guide which includes 
+				but is not limited to clause constituents</td>
+			</tr>
+			<tr>
+				<td class="auto-style49">
+				<a href="clefts.html">cleft sentences</a></td>
+				<td class="auto-style55">explaining how we get from, e.g., <em>She liked the hotel</em> to <em>What she liked 
+		was the hotel</em></td>
+			</tr>
+			<tr>
+				<td class="auto-style49"> <a href="../pronunciation/sentence_stress.html">
+				sentence stress</a></td>
+				<td class="auto-style53">for more on how constituents are 
+				stressed and tone units</td>
+			</tr>
+			<tr>
+				<td class="auto-style49"> <a href="phrases.html">phrases</a></td>
+				<td class="auto-style53">for a general guide to phrase 
+				structures</td>
+			</tr>
+			<tr>
+				<td class="auto-style49"> 
+				<a href="../pronunciation/intonation.html">intonation</a></td>
+				<td class="auto-style53">this guide considers how intonation may 
+				be used to disambiguate the constituents of clauses</td>
+			</tr>
+			<tr>
+				<td class="auto-style49"> 
+				<a href="../lexicogrammar/gradience.html">gradience</a></td>
+				<td class="auto-style53">for a guide to the issues posed by <em>
+				more</em> and <em>less</em> above concerning categorical 
+				indeterminacy</td>
+			</tr>
+			<tr>
+				<td class="auto-style54"> <a href="../background/chomsky.html">
+				Chomsky</a></td>
+				<td class="auto-style51">for some consideration of objections to 
+				this kind of analysis</td>
+			</tr>
+			</table>
+			<br />
+			<hr />
+			</div>
+			<!-- #EndEditable -->
+		<!-- End Content -->
+	
+	<!-- Begin Footer -->
+	<div id="footer">
+		<p>
+		<a href="../../../contact.html">Contact</a> |
+		<a href="../../../faq.html">FAQs</a> |
+		<a href="../../../copyright_notice.html">Copyright notice</a> |
+		<a href="../../../documents/ELT_Concourse_Charter.pdf" target="_blank"> ELT Concourse charter</a> |
+		<a href="../../../disclaimer.html"> Disclaimer and Privacy statement </a>|
+		<a href="../../../search_the_site.html">Search <strong>
+		ELT Concourse</strong></a></p>
+	</div>
+	<!-- End Footer -->
+
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>
