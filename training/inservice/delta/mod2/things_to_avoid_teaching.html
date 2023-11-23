@@ -1,0 +1,960 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- #BeginTemplate "../../../../styles/dwt/deltaguides.dwt" -->
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta http-equiv="Content-Language" content="en-gb" />
+<!-- #BeginEditable "doctitle" -->
+<title>ELT Concourse Delta: what to avoid in the Delta classroom</title>
+<style type="text/css">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.auto-style2 {
+	padding-left: 5px;
+}
+.auto-style3 {
+	list-style-type: lower-alpha;
+}
+.auto-style22 {
+	border-left: medium none #ccccff;
+	border-right: medium none #ccccff;
+	border-top: medium none #ccccff;
+	border-bottom: 1px solid #ccccff;
+	padding-left: 2px;
+}
+.auto-style24 {
+	border-left: medium none #ccccff;
+	border-right: 1px solid #ccccff;
+	border-top: 1px solid #ccccff;
+	border-bottom: 1px solid #ccccff;
+	text-align: left;
+}
+.auto-style29 {
+	border-left: 1px solid #ccccff;
+	border-right: medium none #ccccff;
+	border-top: medium none #ccccff;
+	border-bottom: 1px solid #ccccff;
+	padding-left: 3px;
+	padding-right: 2px;
+}
+.auto-style30 {
+	border-left: medium none #ccccff;
+	border-right: 1px solid #ccccff;
+	border-top: 1px solid #ccccff;
+	border-bottom: medium none #ccccff;
+	text-align: left;
+}
+.auto-style31 {
+	border-left: 1px solid #ccccff;
+	border-right: medium none #ccccff;
+	border-top: 1px solid #ccccff;
+	border-bottom: medium none #ccccff;
+	padding-left: 3px;
+	padding-right: 2px;
+}
+.auto-style72 {
+	border: 1px solid #0099CC;
+	border-collapse: collapse;
+}
+.auto-style73 {
+	border-left: 1px solid #ccccff;
+	border-right: medium none #ccccff;
+	border-top: 1px solid #ccccff;
+	border-bottom: 1px solid #ccccff;
+	padding-left: 3px;
+	padding-right: 2px;
+}
+.auto-style76 {
+	border-left: 1px solid #ccccff;
+	border-right: medium none #ccccff;
+	border-top: 1px solid #ccccff;
+	border-bottom: 1px none #ccccff;
+}
+.auto-style77 {
+	border-left: medium none #CCCCFF;
+	border-right: 1px solid #CCCCFF;
+	border-top: 1px solid #CCCCFF;
+	border-bottom: 1px solid #CCCCFF;
+}
+.auto-style78 {
+	border-left: medium none #ccccff;
+	border-right: 1px solid #ccccff;
+	border-top: 1px solid #ccccff;
+	border-bottom: 1px none #ccccff;
+}
+.auto-style79 {
+	border-left: 1px solid #CCCCFF;
+	border-right: medium none #CCCCFF;
+	border-top: 1px solid #CCCCFF;
+	border-bottom: 1px solid #CCCCFF;
+}
+.auto-style80 {
+	border-left: medium none #CCCCFF;
+	border-right: 1px solid #CCCCFF;
+	border-top: 1px solid #CCCCFF;
+	border-bottom: medium none #CCCCFF;
+}
+.auto-style81 {
+	border-left: 1px solid #CCCCFF;
+	border-right: medium none #CCCCFF;
+	border-top: 1px solid #CCCCFF;
+	border-bottom: medium none #CCCCFF;
+}
+.auto-style82 {
+	border-left: medium none #CCCCFF;
+	border-right: 1px solid #CCCCFF;
+	border-top: medium none #CCCCFF;
+	border-bottom: 1px solid #CCCCFF;
+}
+.auto-style83 {
+	border-left: 1px solid #CCCCFF;
+	border-right: medium none #CCCCFF;
+	border-top: medium none #CCCCFF;
+	border-bottom: 1px solid #CCCCFF;
+}
+</style>
+<meta content="Cambridge Delta Module Two free guides and materials. Things to avoid in the classroom." name="description" />
+<script type="text/javascript">
+<!--
+function FP_changeProp() {//v1.0
+ var args=arguments,d=document,i,j,id=args[0],o=FP_getObjectByID(id),s,ao,v,x;
+ d.$cpe=new Array(); if(o) for(i=2; i<args.length; i+=2) { v=args[i+1]; s="o"; 
+ ao=args[i].split("."); for(j=0; j<ao.length; j++) { s+="."+ao[j]; if(null==eval(s)) { 
+  s=null; break; } } x=new Object; x.o=o; x.n=new Array(); x.v=new Array();
+ x.n[x.n.length]=s; eval("x.v[x.v.length]="+s); d.$cpe[d.$cpe.length]=x;
+ if(s) eval(s+"=v"); }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+// -->
+</script>
+<!-- #EndEditable -->
+<meta content="Delta,preparing for Delta,free Delta help,online Delta,eltconcourse,TELF,tefl diploma,ELT diploma" name="keywords" />
+<link href="../../../../styles/mainstyle.css" rel="stylesheet" type="text/css" />
+<link href="../../../../styles/delta.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+</style>
+</head>
+
+<body>
+
+
+
+	<!-- Begin Masthead -->
+	<div id="masthead">
+		<table style="width: 100%; border-bottom: #0099cc
+ solid">
+			<tr>
+				<td style="width: 135px">
+				<img alt="logo" height="49" src="../../../../gfx/logo.png" width="78" /></td>
+				<td valign="bottom">
+				<span class="orangexxlargebold">ELT </span>
+				<span class="bluexxlargebold">Concourse teacher training for </span>
+				<span class="deltabluexxlargebold">Delta</span></td>
+			</tr>
+		</table>
+	</div>
+	<!-- End Masthead -->
+	<!-- Begin Content -->
+			<!-- Begin Sidebar -->
+		<div id="sidebardelta">
+			<ul>
+				<li><a href="../../../../index.html">ELT Concourse home</a></li>
+				<li><a href="../../../../a-z_index.html">A-Z site index</a></li>
+				<li><a href="../delta_index.html">Delta index</a></li>
+				<li><a href="../../../training_index.html">Teacher training index</a></li>
+				<li><a href="../../../../development/development_index.html">Teacher development</a></li>
+				<li><a href="../../../../teachers/teachers.html">For teachers</a></li>
+				<li><a href="../../../trainers/trainers_index.html">For trainers</a></li>
+				<li>
+				<a href="../../../../academic_management/academic_management_index.html">For managers</a></li>
+				<li><a href="../../../../learners/learners.html">For learners</a></li>
+				<li><a href="../../../../questions/questions.html">Language questions</a></li>
+				<li class="whiteback">Other areas</li>
+				<li><a href="../../indexes_is/eap_index_is.html">Academic English</a></li>
+				<li><a href="../../indexes_is/be_index_is.html">Business English</a></li>
+				<li><a href="../../../entering/introduction_to_elt.html">Entering ELT</a></li>
+				<li><a href="../../../courses/courses_index.html">Courses index</a></li>
+				<li><a href="../../../courses/basic/introduction_basic.html">Basic ELT course</a></li>
+				<li><a href="../../../tkt/tkt_index.html">TKT</a></li>
+				<li><a href="../../../bridge/bridge_index.html">The Bridge</a></li>
+				<li><a href="../../../courses/lacourse/index_la_course.html">Language analysis</a></li>
+				<li>
+				<a href="../../../courses/training_to_train/training_to_train_index.html">Training to train</a></li>
+				<li>
+				<a href="../../../courses/transcription1/transcription.html">Transcription</a></li>
+				<li><a href="../../../glossaries/glossary_index.html">Glossaries</a></li>
+				<li><a href="../../../common/about_language.html">About language</a></li>
+				<li><a href="../../../../articles/articles.html">Articles</a></li>
+			</ul>
+		</div>
+		<!-- End Sidebar -->
+		<!-- Begin Content -->
+		
+		<div id="toppicture" style="text-align: left; background-color: white; padding: 0px; margin-left: 140px;">
+				<img alt="pic" height="207" src="../../../../images/concourse_full_blue_delta.jpg" width="310" /></div>
+		
+			<!-- #BeginEditable "content" -->
+		
+		<div id="content">
+			<h1>What to avoid in the classroom (especially on a 
+			<span class="deltablue">Delta </span>course)</h1>
+			<p>
+			<img alt="avoid" height="207" src="../../../images/woman_shark310.jpg" width="310" /></p>
+			<p>Nobody (whatever their 
+			claims to pedagogic omniscience) has a monopoly on 'the right way' to 
+			teach English or any other language.<br />
+			However, although there may be lots of the right ways to do things, 
+			there are almost infinitely more ways for things to go wrong.</p>
+			<p>This guide is not linked explicitly to the teaching criteria and 
+			how to meet them (for that,
+			<a href="meeting_delta_teaching_criteria/meeting_delta_criteria_index.html" target="_blank">start at 
+			the index page for that set of guides</a>).<br />
+			This guide is concerned with some of 
+			the behaviours which <strong>underlie</strong> the ability to achieve 
+			the 
+			teaching criteria.</p>
+			<p>The following is drawn from comments made by tutors and assessors 
+			concerning the most irritating and dysfunctional classroom 
+			behaviours that it is well worth avoiding if only for the sake of 
+			the assessor's and the learners' sanity.</p>
+			<hr />
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="shout" height="166" src="../../../images/shout_gull250.jpg" width="250" /></td>
+					<td class="auto-style2" valign="middle">
+			<h2>Relying on the strongest or most voluble learners</h2>
+					</td>
+				</tr>
+			</table>
+			<p>All groups of learners contain people with various degrees of 
+			willingness to contribute.&nbsp; While the most voluble learners can 
+			be of benefit to a lesson because they mean that the lesson's pace 
+			and dynamic is maintained, avoiding silences which may embarrass, we 
+			need to make sure that everyone has an equal chance to speak, ask 
+			questions and make contributions.<br />
+			It is also true that all groups of learners contain stronger 
+			students and weaker students.&nbsp; No group can ever be entirely 
+			homogenous in terms of ability in any one skill or in 
+			terms of their strengths across various skills.<br />
+			If you rely on the loudest, the&nbsp;most forthcoming or the 
+			strongest learners in much of the lesson, you will be criticised for 
+			one of the following:</p>
+			<ol class="auto-style3">
+				<li>not teaching with sensitivity to the learners’ needs</li>
+				<li>not providing equal opportunities for participation</li>
+				<li>not engaging and involving <strong>all </strong>the<strong>
+				</strong>learners</li>
+			</ol>
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+			<img alt="dodge" height="133" src="../../../images/avoid_waves200.jpg" width="200" /></td>
+					<td class="auto-style2" valign="middle">
+			<h3>How to avoid the problem</h3>
+					</td>
+				</tr>
+			</table>
+			<ul class="bluebullet">
+				<li>Know your learners.&nbsp; Make a list of all the learners by 
+				name and score them in terms of strengths across all four skills 
+				and language and in terms of their willingness to contribute.</li>
+				<li>Make sure you know who the most outspoken members of the 
+				class are and have a plan to deal with them gently while 
+				allowing them to contribute usefully.</li>
+				<li>Make sure you direct the most difficult prompts to the 
+				strongest and the easiest questions to the weakest.</li>
+				<li>Nominate learners by name.</li>
+				<li>Use more wait time.&nbsp; Ask a question or invite a 
+				contribution but make sure you wait in silence for 15 seconds or 
+				so before nominating who is to answer.&nbsp; That way, everybody 
+				has the time to consider a response before they are asked to 
+				contribute.&nbsp; Do not let people shout out an answer except 
+				by invitation.</li>
+				<li>Differentiate.&nbsp; Make sure that you have follow-up tasks 
+				for the strong learners who finish quickly so that they are not 
+				sitting idly.</li>
+				<li>Be demanding.&nbsp; Most classes contain some learners for 
+				whom finishing a task quickly is more important than getting 
+				everything right.&nbsp; If this describes some of your learners, 
+				make sure you have the space to go to them during tasks and ask 
+				a bit more of them than just completing a task.</li>
+			</ul>
+			<hr />
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="down" height="166" src="../../../images/birds_hawk250.jpg" width="250" /></td>
+					<td class="auto-style2" valign="middle">
+			<h2>Talking down to your learners</h2>
+					</td>
+				</tr>
+			</table>
+			<p>Nobody likes to be patronised.&nbsp; Avoid foreigner-speak and 
+			pidgin English at all costs.<br />
+			Some students are elementary learners, but that does not mean they 
+			are elementary thinkers.<br />
+			It is, in fact, easier to understand properly formed language, 
+			albeit spoken more slowly and simplified in terms of structure and 
+			lexis, than it is to understand non-standard pidgin English.<br />
+			The same is true of the temptation to use something akin to 
+			carer-speak with over-enthusiastic intonation patterns more suitable 
+			(possibly) to a primary school.</p>
+			<p>If you talk down or use pidgin English, will be criticised for 
+			one of the following:</p>
+			<ol class="auto-style3">
+				<li>not teaching with sensitivity to the learners’ backgrounds</li>
+				<li>not using language which is accurate and appropriate for the 
+				teaching and learning context</li>
+				<li>not adapting your use of language to the level of the group 
+				and individuals in the group</li>
+				<li>not giving accurate and appropriate models of language form, 
+				use and pronunciation</li>
+			</ol>
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+			<img alt="avoid" height="133" src="../../../images/sign_exit200.jpg" width="200" /></td>
+					<td class="auto-style2" valign="middle">
+			<h3>How to avoid the problem</h3>
+					</td>
+				</tr>
+			</table>
+			<ul class="bluebullet">
+				<li>Use natural English, including contractions and weak forms, 
+				but be careful to keep the lexical content and grammatical 
+				structures within your learners' competence.&nbsp; This may well 
+				mean scripting your instructions and explanations at the 
+				lesson-planning stage for lower-level groups.</li>
+				<li>Exploit redundancy.&nbsp; Make your language accessible by 
+				sending multiple signals.&nbsp; If, for example, you have a 
+				class of elementary learners who are unlikely to understand:<br />
+				<em>&nbsp;&nbsp;&nbsp; When did he go?</em><br />
+				because they don't yet understand past-tense questions, rephrase 
+				it as:<br />
+				<em>&nbsp;&nbsp;&nbsp; Did he go yesterday or is he going today?</em><br />
+				The words <em>yesterday</em> and <em>today</em> make the tense 
+				forms redundant because they signal the time of the action.&nbsp; 
+				They are easy to understand and don't require learners to unpack 
+				the grammar.<br />
+				You have, in other words, maintained naturalness and accuracy 
+				but still got the meaning across and that is very much better 
+				than:<br />
+				<em>&nbsp;&nbsp;&nbsp; When he go?</em><br />
+				which may be comprehensible but is hardly a good model for your 
+				learners.</li>
+				<li>Although you will, at almost all levels, need to simplify your 
+				output to some extent, especially for key ideas and instructions, there is no 
+				need to overdo this.&nbsp; In context, even language ostensibly 
+				beyond the learners' ability may be easily comprehended 
+				providing you accompany it with lots of context, demonstration 
+				of tasks and some 
+				gesturing.</li>
+				<li>When demonstration of a task is a viable alternative to 
+				explaining it, do that instead of trying to explain something 
+				complicated when you have a limited language range at your 
+				disposal.</li>
+			</ul>
+			<hr />
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="yourself" height="166" src="../../../images/talk_self250.jpg" width="250" /></td>
+					<td class="auto-style2" valign="middle">
+			<h2>Talking to yourself, mumbling, talking to the board and being 
+			unclear</h2>
+					</td>
+				</tr>
+			</table>
+			<p>When you are nervous and stressed (as most teachers are when they 
+			are being assessed), there is a natural tendency to talk to yourself 
+			and give some kind of commentary on what is going on.&nbsp; For 
+			example, people have been observed saying things like:</p>
+			<ul class="greybullet">
+				<li class="style_black"><em>Right, now, I need to move on to the practice stage</em></li>
+				<li class="style_black"><em>I need to give out this worksheet now</em></li>
+				<li class="style_black"><em>This is the freer practice stage</em></li>
+				<li class="style_black"><em>I hope everyone's on task.&nbsp; Let's see ...</em></li>
+			</ul>
+			<p>and so on.<br />
+			All of this is unnecessary teacher speak and may actually serve to 
+			raise the level of ambiguity in the room because learners will be 
+			tempted to try to understand everything the teacher says, whether it 
+			is relevant or not.&nbsp; You may know that something you have said 
+			is not something the learners need to know but they may well be 
+			asking themselves:<br />
+&nbsp;<span class="style_black">&nbsp; <em>&nbsp;How do I know if I need to know this until I know what 
+			this is?</em></span></p>
+			<p>If you pepper your teacher talk with comments on what's happening 
+			and asides to yourself, you will be criticised for:</p>
+			<ol class="auto-style3">
+				<li>not setting up activities appropriately</li>
+				<li>not ensuring that the learners remain focused</li>
+				<li>not using language which is accurate and appropriate for the 
+				teaching and learning context</li>
+			</ol>
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+			<img alt="avoid" height="133" src="../../../images/man_jump_gap200.jpg" width="200" /></td>
+					<td class="auto-style2" valign="middle">
+			<h3>How to avoid the problem</h3>
+					</td>
+				</tr>
+			</table>
+			<ul class="bluebullet">
+				<li>Before opening mouth, engage brain.&nbsp; Think before you 
+				speak and ask yourself if what you are going to say is relevant.&nbsp; 
+				If it isn't, don't say it.</li>
+				<li>Focus yourself on the purposes of teacher talk and make sure 
+				it is confined to one of the following:<ul class="smallgreybullet">
+					<li><strong>managing</strong> the learners and the classroom</li>
+					<li><strong>teaching</strong> (not necessarily telling) and modelling</li>
+					<li><strong>maintaining relationships</strong> between the 
+					you and the learners and between the learners</li>
+				</ul>
+				</li>
+				<li>Think <strong>C L E A R</strong>:<ul class="smallgreybullet">
+					<li><strong>C</strong>lear: not mumbled, spoken facing the 
+					board or spoken too quickly.</li>
+					<li><strong>L</strong>imited: too much teacher talk is often 
+					criticised and it is true that the more the teacher talks, 
+					the less the students can say.&nbsp; However, the quality of 
+					teacher talk is what is really critical.</li>
+					<li><strong>E</strong>xplicit: learners need to be aware of 
+					the teacher's intentions.&nbsp; If a learner is thinking (or 
+					saying):<br />
+					<span class="style_black">
+					<em>&nbsp;&nbsp;&nbsp; Is this an instruction, some information or just a chat?</em></span><br />
+					then the teacher talk has not been explicit.<br />
+					Developing tones to make intention clear is a key skill so 
+					that the learners are aware by your tone of voice what your 
+					intentions are.<br />
+					Don't mix intentions in the same utterance.&nbsp; Don't say:<br />
+					<span class="style_black">
+					<em>&nbsp;&nbsp;&nbsp; That's really good, isn't it but you need to write it on 
+					the board and correct the spelling problem</em></span><br />
+					because that mixes social talk with instruction with 
+					teaching and is very confusing.&nbsp; Prefer then:<br />
+					<span class="style_black">
+					<em>&nbsp;&nbsp;&nbsp; Good! [Pause for student response] Check the spelling of 
+					this word, please. [Pause for student response] Now go and 
+					write it on the board, please.</em></span></li>
+					<li><strong>A</strong>ppropriate: teacher talk should 
+					tell learners what they need to know and no more.&nbsp; You may 
+					know, e.g., that something is an example of an ungradable 
+					adjective but your learners may not want or need to be 
+					burdened with this knowledge right now because it has 
+					nothing to do with the lesson focus.</li>
+					<li><strong>R</strong>elevant: this just means maintaining 
+					your focus and not using teacher talk to fill silences or go 
+					off on tangents.</li>
+				</ul>
+				</li>
+			</ul>
+			<p>If you aren't sure whether to say something, don't say it.</p>
+			<hr />
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="faff" height="166" src="../../../images/woman_hesitate250.jpg" width="250" /></td>
+					<td class="auto-style2" valign="middle">
+			<h2>Being hesitant, unorganised and generally faffing around</h2>
+					</td>
+				</tr>
+			</table>
+			<p>If you aren't a native British English speaker, you may want to 
+			know that the verb <em>faff around</em> means to engage in  
+			ineffectual and pointless activity before getting on with something.&nbsp; 
+			If you do this in the classroom you will appear disorganised and 
+			unprepared.&nbsp; You need to focus on what you are doing with the 
+			absolute minimum of fuss.<br />
+			Faffing around wastes time, increases ambiguity and lowers the 
+			learners' confidence in you.<br />
+			Being well organised, purposeful and deliberate has the opposite 
+			effect.</p>
+			<p>If you are hesitant and fussy in the classroom you will be 
+			criticised for:</p>
+			<ol class="auto-style3">
+				<li>not setting up activities appropriately</li>
+				<li>not using procedures to support learning</li>
+				<li>not ensuring that the learners remain focused</li>
+				<li>not delivering a coherent lesson</li>
+			</ol>
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+			<img alt="avoid" height="133" src="../../../images/woman_jump_umbrella200.jpg" width="200" /></td>
+					<td class="auto-style2" valign="middle">
+			<h3>How to avoid the problem</h3>
+					</td>
+				</tr>
+			</table>
+			<ul class="bluebullet">
+				<li>Make sure you do the 
+				<a href="visualisation_lesson.html" target="_blank">pre-lesson visualisation task</a> on this site 
+				(new tab) so you have a 
+				clear picture in your head of each stage of the lesson and can 
+				move neatly from stage to stage without referring to a plan or 
+				hesitating.</li>
+				<li>If you are using technology of any kind, practise 
+				beforehand.&nbsp; An assessed lesson (or any lesson) is not the time to fiddle with volume 
+				controls, find out how to work the projector or hunt the folders on your laptop for the file you 
+				want.</li>
+				<li>Plan exactly how transitions between phases of the lesson 
+				will happen and what you will say to signal the end of one 
+				phases and the beginning of the next.&nbsp; This maintains an 
+				air of purposeful development.</li>
+			</ul>
+			<hr />
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="error" height="166" src="../../../images/error_nail250.jpg" width="250" /></td>
+					<td class="auto-style2" valign="middle">
+			<h2>Giving false information</h2>
+					</td>
+				</tr>
+			</table>
+			<p>You will, naturally, have checked all your handouts, tasks, 
+			projector slides and so on to make sure they are free from errors.&nbsp; 
+			That's a given.</p>
+			<p>One of the reasons you are obliged to analyse the target(s) of 
+			the lesson in your plan is to prepare you to handle presenting, 
+			explaining and responding to questions in the classroom.<br />
+			In your everyday teaching, you may find it enough to rely on your 
+			ability to think on your feet and come up with examples and 
+			explanations impromptu.&nbsp; In an observed and assessed lesson, 
+			this may not be enough.</p>
+			<p>In an assessed lesson for Delta, you want at least to appear 
+			confident and well informed and the better informed you are, the 
+			more confident you will be.&nbsp; If you aren't both confident and 
+			well informed, you will be criticised for:</p>
+			<ol class="auto-style3">
+				<li>not giving accurate models</li>
+				<li>not giving accurate information about language form or 
+				language skills</li>
+				<li>not being able to notice and exploit learners' language 
+				output</li>
+			</ol>
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+			<img alt="avi" height="133" src="../../../images/avoid_bull200.jpg" width="200" /></td>
+					<td class="auto-style2" valign="middle">
+			<h3>How to avoid the problem</h3>
+					</td>
+				</tr>
+			</table>
+			<ul class="bluebullet">
+				<li>When you do the 
+				<a href="visualisation_lesson.html" target="_blank">pre-lesson visualisation task</a> on this site, try to imagine 
+				how you will respond to learners' questions and think about how 
+				you will give extra examples of the lesson's targets so you are 
+				prepared for that when it happens.</li>
+				<li>Know your subject.&nbsp; Re-read the analysis in your 
+				background essay so you are prepared for the off-the-wall 
+				question.</li>
+				<li>Before the lesson (preferably just before it), re-read the 
+				analysis you did in the plan so it's fresh in your mind.</li>
+				<li>In a systems lesson, listen carefully to what your learners 
+				are producing and react to it if they are getting the target 
+				language wrong.</li>
+				<li>In a skills lesson, watch carefully what the learners are 
+				doing to make sure they are deploying the subskill you intend.&nbsp; 
+				If they aren't, you need to stop the activity and step in.</li>
+			</ul>
+			<hr />
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="steamroller" height="166" src="../../../images/steamroller250.jpg" width="250" /></td>
+					<td class="auto-style2" valign="middle">
+			<h2>Steamrollering, chasing red herrings and the sunk-cost fallacy</h2>
+					</td>
+				</tr>
+			</table>
+			<p>(If you are unfamiliar with the phrase <em>a red herring</em>, 
+			you may like to know that it means a misleading or distracting piece 
+			of information.)<br />
+			Life, as John Lennon pointed out (not very originally), is what 
+			happens while you are busy making other plans.<br />
+			The best laid plans can go wrong and even when they don't go wrong, 
+			they usually need some sort of amendment to take into account what 
+			is happening in the classroom.<br />
+			What happens in the classroom and what your learners need <strong>right 
+			now</strong> is infinitely more important than the smooth 
+			running of the plan.&nbsp; Deviate from the plan when your learners 
+			need you to, not when you want to chase a red herring.</p>
+		<table cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+				<img alt="sunk" height="133" src="../../../images/underwater200.jpg" width="200" /></td>
+				<td class="auto-style2">
+				<h3>The sunk-cost fallacy</h3>
+				</td>
+			</tr>
+		</table>
+			<p>
+			The sunk-cost fallacy is a term drawn from economics and refers to humans' reluctance to cut their 
+			losses.&nbsp; Briefly put, it describes the error of valuing the 
+			investment already made over the benefits of abandoning something 
+			that is not working.<br />
+			For example, organisations and governments around the world are reluctant to 
+			abandon vast infrastructure projects, the costs of which are 
+			ballooning out of control and whose utility is, in any case, 
+			doubtful, for two connected reasons:</p>
+			<ol>
+				<li>The amount already invested will be lost if the project is 
+				abandoned and that is seen as an unacceptable cost even if the 
+				cost of continuing will be greater than the loss.</li>
+				<li>Cancelling a project implies that you have made a 
+				poor decision and going back on it will be seen as losing face.</li>
+			</ol>
+			<p>Less grandly, the syndrome is observable in, for example, staying 
+			to the end of a film you hate because you have invested in a cinema 
+			ticket, going to an event you are not interested in because you have 
+			acquired a ticket, continuing to invest money in an old vehicle you know 
+			should be sold and replaced and so on.</p>
+			<p>In the classroom, the same fallacy is often observable and 
+			involves the teacher sticking with an activity, text or set of 
+			materials which is patently not working and not contributing to the 
+			learning that was intended.&nbsp; It may even be operating 
+			counterproductively and producing error.&nbsp; There are many reasons why things 
+			are not doing what they were planned to do, for example:</p>
+			<ol>
+				<li>The material is too easy or too difficult so the learners 
+				are operating outside the optimum learning zone.&nbsp; They will 
+				either be over challenged by the material, become anxious and gain little or 
+				under challenged, gain nothing and be bored.</li>
+				<li>The material is flawed in terms of the language or skill it 
+				should targeting and not actually evincing what it should.</li>
+				<li>The learners are approaching the materials or tasks in a way 
+				you did not intend and not gaining what you thought they would 
+				gain.</li>
+				<li>The material is actually producing errors in language or 
+				making the learners produce language which is inappropriate.</li>
+				<li>The materials are not forcing the learners to use the 
+				subskills which were the intended targets of the lesson.</li>
+			</ol>
+			<p>
+			There is a great temptation to look on the bright side and think,<em><span class="style_black"><br />
+			</span>&nbsp;&nbsp;&nbsp; <span class="style_black">Well, it's not 
+			working but I'll stick with it because it might get better</span></em>.<br />
+			when you know it won't,
+			or<br />
+			<span class="style_black"><em>&nbsp;&nbsp;&nbsp; It took ages to 
+			prepare all this stuff and my time will have been wasted if I stop 
+			the activity now.</em></span><br />
+			and so on.<br />
+			And these are not very good reasons to spend time in a classroom 
+			doing something that isn't helping.</p>
+			<p>
+			Bite the bullet, cut your losses and do something useful.</p>
+			<p>If you don't adapt your plan to take into account emerging needs 
+			or you deviate from the plan unnecessarily, you will be criticised 
+			for:</p>
+			<ol class="auto-style3">
+				<li>not monitoring, checking learning and responding 
+				appropriately</li>
+				<li>not noticing and exploiting learners’ output</li>
+				<li>teaching the plan not the learners</li>
+				<li>not maintaining focus</li>
+			</ol>
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+			<img alt="avoid" height="133" src="../../../images/avoid_rodeo200.jpg" width="200" /></td>
+					<td class="auto-style2" valign="middle">
+			<h3>How to avoid the problem</h3>
+					</td>
+				</tr>
+			</table>
+			<ul class="bluebullet">
+				<li>When you do the 
+				<a href="visualisation_lesson.html" target="_blank">pre-lesson visualisation task</a> on this site, try to imagine 
+				where in the lesson the plan may need adaptation if the learners 
+				are not responding as expected.&nbsp; The usual place is between 
+				the controlled and freer practice stages because this is where 
+				it becomes clear that it is unsafe to move on before 
+				consolidating what has come before.<ul class="smallgreybullet">
+					<li>How will you respond?</li>
+					<li>What extra stage have you planned?</li>
+				</ul>
+				</li>
+				<li>Before you depart from the plan, ask yourself if this is a 
+				necessary diversion or a tangent.&nbsp; If it's the latter, do 
+				not do it.</li>
+				<li>Be objective and avoid the sunk-cost fallacy.&nbsp; If 
+				something is not working, it is not suddenly going to start 
+				working.</li>
+			</ul>
+			<hr />
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="tick" height="166" src="../../../images/hand_tick250.jpg" width="250" /></td>
+					<td class="auto-style2" valign="middle">
+			<h2>Not checking</h2>
+					</td>
+				</tr>
+			</table>
+			<p>One of the skills that comes hard on an initial training course 
+			is formulating, using and following up on instruction-checking 
+			questions (ICQs) and concept-checking questions (CCQs).<br />
+			By the time people get to a Delta-level qualification, the art has 
+			generally been mastered but the stress of being in an assessed 
+			observation can do funny things to people and the hard-won skill of 
+			making concepts and instructions transparently clear is often 
+			forgotten.<br />
+			Assessors often note, critically, that concepts or instructions were 
+			inadequately or not checked.<br />
+			To avoid this criticism, you should do two things:</p>
+			<ol>
+				<li>Follow the guide in the initial plus section of the site to 
+				how to construct and use both instruction- and concept-checking 
+				questions.&nbsp; It shouldn't take you long and it may remind 
+				you of some essential ideas.<br />
+				The guide is linked below or you can open it in a new tab by
+				<a href="../../../initial/teaching/checking_questions.html" target="_blank">
+				clicking here</a>.</li>
+				<li>Make sure for an assessed lesson that you write down the 
+				questions you are going to use to make concepts clear, lead 
+				people to noticing key concepts and doing the tasks the way you 
+				want them done.</li>
+			</ol>
+			<p>Missing out on these areas will often result in not meeting some 
+			key teaching criteria, in particular those to do with focusing 
+			learners, managing activities and supplying the right information 
+			about language and skills at the right time.</p>
+			<hr />
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<img alt="signals" height="166" src="../../../images/signal_lights_confusing250.jpg" width="250" /></td>
+					<td class="auto-style2" valign="middle">
+			<h2>Being in the wrong place and sending confusing signals</h2>
+					</td>
+				</tr>
+			</table>
+			<p>When you are planning an assessed or observed less (or any other 
+			lesson in an ideal world), it is worth taking a little time to 
+			consider where in the classroom you should be to signal what your 
+			role is during the various stages and activities.<br />
+			It is surprising how often even very experienced teachers like you 
+			can fail to appreciate how much their place in the room contributes 
+			to the smooth running of a lesson with everyone knowing what their 
+			role is and what your role is.<br />
+			Here's a short rundown, taken from the initial plus guide to teacher 
+			roles.</p>
+			<p class="indentpara">What role does the position of the teacher 
+			imply to you?</p>
+			<p>The teacher's positions are indicated by the red star symbol.<br />
+			Click on the diagrams to see some comments.</p>
+
+<table cellpadding="3" cellspacing="0" class="deltabluetableborder">
+				<tr>
+					<td class="auto-style82">
+					<img alt="manager" height="139" onclick="FP_changeProp(/*id*/'intel',0,'style.visibility','visible')" src="../../../imagesgraphics/teacher_manager.png" width="155" /></td>
+					<td class="auto-style83">
+					<div id="intel" style="visibility: hidden"> <em>If you are 
+						behind your desk facing the learners, you are signalling 
+						that your role is a manager, an assessor, a presenter or 
+						a knower.&nbsp; If you are writing on the board, then 
+						you are in presenter mode.<br />
+						You are certainly not signalling that you want to be 
+						involved or facilitate because you have allowed a 
+						barrier to exist between you and the class (two barriers 
+						if you include the learners' tables).</em></div>
+					</td>
+				</tr>
+				<tr>
+					<td class="auto-style77">
+					<img alt="narrator" height="164" onclick="FP_changeProp(/*id*/'intel0',0,'style.visibility','visible')" src="../../../imagesgraphics/teacher_narrator.png" width="155" /></td>
+					<td class="auto-style79">
+					<div id="intel0" style="visibility: hidden"> <em>Simply 
+						moving to the other side of the desk and perhaps leaning 
+						against it or sitting on it removes the barrier and 
+						allows you to be a narrator or, if you can hear everyone 
+						clearly, a monitor.<br />
+						It's also a good place to signal that you are a resource 
+						because anyone can ask you a question and you can make 
+						eye contact with all the learners.<br />
+						It does not allow you to signal that you want to be a 
+						contributor or facilitator, however, and the position 
+						still implies a management role of some sort.</em></div>
+					</td>
+				</tr>
+				<tr>
+					<td class="auto-style77">
+					<img alt="out" height="175" onclick="FP_changeProp(/*id*/'intel1',0,'style.visibility','visible')" src="../../../imagesgraphics/teacher_out.png" width="155" /></td>
+					<td class="auto-style79">
+					<div id="intel1" style="visibility: hidden">
+						<em>This is where you should be when you do not want a 
+						role at all.&nbsp; It is clear from the diagram that 
+						this is a learner-centred phase of the lesson with two 
+						learners presenting to or quizzing their colleagues.<br />
+						You are a non-participant.<br />
+						It is unlikely that your presence will be ignored, of 
+						course, especially if you are standing so lower it by 
+						sitting down.<br />
+						The class is likely to be aware that you may be 
+						assessing how things are going, particularly if you are 
+						taking notes.</em></div>
+					</td>
+				</tr>
+				<tr>
+					<td class="auto-style77">
+					<img alt="contributor" height="127" onclick="FP_changeProp(/*id*/'intel2',0,'style.visibility','visible')" src="../../../imagesgraphics/teacher_contributor.png" width="155" /></td>
+					<td class="auto-style79">
+					<div id="intel2" style="visibility: hidden">
+						<em>This is a very different arrangement with no 
+						barriers between learners and the teacher or each other.&nbsp; 
+						Everyone can contribute to the whole group so your role 
+						is contributor and you need to be very careful not to 
+						dominate or play the knower</em>.</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="auto-style78">
+					<img alt="facilitator" height="156" onclick="FP_changeProp(/*id*/'intel3',0,'style.visibility','visible')" src="../../../imagesgraphics/class.gif" width="155" /></td>
+					<td class="auto-style76">
+					<div id="intel3" style="visibility: hidden">
+						<em>In this classroom, learners are working in groups of 
+						4 and your current position means that you are in the 
+						role of facilitator or resource, providing a little help 
+						to the group in the top right but probably being able to 
+						hear the other two nearest groups</em>.<br />
+						<em>If you watch the diagram, you will see that the 
+						teacher's positions changes quite quickly.&nbsp; How 
+						quickly you actually move on is a judgement call.</em></div>
+					</td>
+				</tr>
+				<tr>
+					<td class="auto-style80">
+					<img alt="monitor" height="121" onclick="FP_changeProp(/*id*/'intel4',0,'style.visibility','visible')" src="../../../imagesgraphics/teacher_monitor.png" width="155" /></td>
+					<td class="auto-style81">
+					<div id="intel4" style="visibility: hidden">
+						<em>In this classroom, learners are working in pairs and 
+						you are in monitor mode.&nbsp; You have positioned 
+						yourself where you can see and hear all the pairs and 
+						are ready to intervene if they go off task or encounter 
+						a difficulty that will block their progress.</em></div>
+					</td>
+				</tr>
+				</table>
+		
+			<br />
+			<hr /><br />
+			<table id="deltaindexnav" cellpadding="0" class="auto-style72">
+			<tr>
+				<td class="auto-style22" colspan="2">Related guides</td>
+			</tr>
+			<tr>
+				<td class="auto-style24"> 
+				<a href="meeting_delta_teaching_criteria/meeting_delta_criteria_index.html">
+				meeting the teaching criteria</a></td>
+				<td class="auto-style29">guides which take each section at a 
+				time and explain what the criteria mean and how to meet them</td>
+			</tr>
+			<tr>
+				<td class="auto-style24"> <a href="visualisation_lesson.html">
+				visualising the lesson</a></td>
+				<td class="auto-style73">this exercise will take around thirty 
+				minutes and repay you well</td>
+			</tr>
+			<tr>
+				<td class="auto-style24"> <a href="planning_delta.html">writing a 
+				Delta lesson plan</a></td>
+				<td class="auto-style73">because many of the issues discussed on 
+				this page can be avoided with good planning</td>
+			</tr>
+			<tr>
+				<td class="auto-style24"> 
+				<a href="../../../initial/teaching/checking_questions.html">
+				checking questions</a></td>
+				<td class="auto-style73">for the initial plus guide to 
+				instruction- and concept-checking questions</td>
+			</tr>
+			<tr>
+				<td class="auto-style30"> <a href="ea_faqs.html">the external 
+				assessment</a></td>
+				<td class="auto-style31">so you know what to expect in the 
+				externally assessed lesson</td>
+			</tr>
+			<tr>
+				<td class="auto-style30"> 
+				<a href="../../teaching/teacher_induced_error.html">
+				teacher-induced error</a></td>
+				<td class="auto-style31">for a guide to how to avoid&nbsp;creating 
+				errors rather than dealing with them</td>
+			</tr>
+			</table>
+			<br />
+			<hr />
+			</div><!-- #EndEditable -->
+		<!-- End Content -->
+	
+	<!-- Begin Footer -->
+	<div id="footer">
+		<p>
+		<a href="../../../../contact.html">Contact</a> |
+		<a href="../../../../faq.html">FAQs</a> |
+		<a href="../../../../copyright_notice.html">Copyright notice</a> |
+		<a href="../../../../documents/ELT_Concourse_Charter.pdf" target="_blank"> ELT Concourse charter</a> |
+		<a href="../../../../disclaimer.html"> Disclaimer and Privacy statement </a>|
+		<a href="../../../../search_the_site.html">Search <strong>
+		ELT Concourse</strong></a></p>
+	</div>
+	<!-- End Footer -->
+
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>
