@@ -1,0 +1,91 @@
+/* Styles for course Navigation */
+#sidebarcourse {
+	position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top (probably not needed) */
+    top: 58px; /* Stay at the top but below the masthead */
+    left: 0;
+	float: left;
+	width: 140px;
+	background-color: #ffff00;
+}
+#sidebarcourse ul {
+	list-style-type: none;
+	width: 100%;
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+#sidebarcourse li {
+	display: block;
+}
+#sidebarcourse a {
+	font-weight: normal;
+	text-decoration: none;
+	color: #009900;
+	padding: 1%;
+	display: block;
+	border-bottom: 1px solid #f5f5f5;
+}
+#sidebarcourse a:hover {
+	font-weight: normal;
+	text-decoration: none;
+	color: #ffff00;
+	border-bottom: 1px solid #f5f5f5;
+	background-color: #009900;
+}
+/* Styles for LA Course Navigation */
+#lacourselist ul {
+	list-style-type: none;
+	min-width: 400px;
+	padding: 2px;
+}
+#lacourselist li {
+	list-style-type: none;
+	padding: 2px;
+	margin: 2px;
+	border:1px;
+	text-indent: 2px;
+}
+#lacourselist a {
+	color: #009900;
+	text-decoration: none;
+	display: block;
+	border-style: solid;
+	border:1px;
+	border-color: #f5f5f5; 
+	border-width: 1px;
+	padding-right: 5px;
+	padding-left:5px;
+	background-color: #ffff00;
+}
+#lacourselist a:hover {
+	color: #ffff00;
+	background-color: #009900;
+	border:1px;
+	border-color: #f5f5f5;
+}
+hr { 
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-width: 1px;
+	border-color: #ffff00;
+}
+/* Class Styles for highlight link la*/
+a.highlightlinkla:link{
+	color: #009900;
+	text-decoration: none;
+	background-color: #ffff00;
+}
+a.highlightlinkla:visited{
+	color: #009900;
+	text-decoration: none;
+	background-color: #ffff00;
+}
+a.highlightlinkla:hover {
+	color: #ffff00;
+	background-color: #009900;
+}

@@ -1,0 +1,214 @@
+﻿/* Class Styles for deltahighlight block link */
+a.deltahighlightlinkblock:visited {
+	color: white;
+	text-decoration: none;
+	background: #0099cc;
+	display:block;
+}
+a.deltahighlightlinkblock:link {
+	color: white;
+	text-decoration: none;
+	background: #0099cc;
+	display:block;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+a.deltahighlightlinkblock:hover {
+	color: #0099cc;
+	text-decoration: none;
+	background: white;
+	display:block;
+}
+hr { 
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-width: 1px;
+	border-color: #0099cc;
+}
+.deltablue {
+	 color: #0099cc;
+}
+.deltabluebullet {
+	list-style-image: url('../gfx/deltabluebullet8px.png');
+}
+.deltabluexxlargebold {
+	color: #0099cc;
+	font-size: xx-large;
+	font-weight: bold;
+}
+.deltabluetableborder {
+	border: 1px solid #0099CC;
+	border-collapse: collapse;
+}
+
+/* Styles for Delta sidebar Navigation */
+#sidebardelta {
+	position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top (probably not needed) */
+    top: 58px; /* Stay at the top but below the masthead */
+    left: 0;
+	float: left;
+	width: 140px;
+	background-color: #0099cc;
+}
+#sidebardelta ul {
+	list-style-type: none;
+	width: 100%;
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+#sidebardelta li {
+	display: block;
+}
+#sidebardelta a {
+	font-weight: normal;
+	text-decoration: none;
+	color: white;
+	padding: 1%;
+	display: block;
+	border-bottom: 1px solid #f5f5f5;
+}
+#sidebardelta a:hover {
+	font-weight: normal;
+	text-decoration: none;
+	color: #0099cc
+;
+	border-bottom: 1px solid #f5f5f5;
+	background-color: white;
+}
+/* Styles for Delta indexes Navigation */
+
+#deltaindexnav ul {
+	list-style-type: none;
+	width: 100%;
+	padding: 0px;
+}
+#deltaindexnav li {
+	float: left;
+	text-align:center;
+}
+#deltaindexnav a {
+	font-family: Calibri, Arial, Trebuchet;
+	color: white;
+	display: block;
+	min-width:150px;
+	text-decoration: none;
+	background: #0099cc
+;
+	padding: 1px;
+}
+#deltaindexnav a:hover {
+	color: #0099cc
+;
+	font-weight: normal;
+	text-decoration: none;
+	background: white;
+}
+#deltaindexnav a:active {
+	color:white;
+	background-color:red;
+	text-decoration:none
+}
+/* Styles for Delta indexes Navigation0 */
+
+#deltaindexnav0 ul {
+	list-style-type: none;
+	width: 100%;
+	padding: 0px;
+}
+#deltaindexnav0 li {
+	float: left;
+	text-align:center;
+	
+}
+#deltaindexnav0 a {
+	font-family: Calibri, Arial, Trebuchet;
+	color: white;
+	display: block;
+	min-width:150px;
+	text-decoration: none;
+	background: #0099cc
+;
+	padding: 1px;
+}
+#deltaindexnav0 a:hover {
+	color: #0099cc
+;
+	font-weight: normal;
+	text-decoration: none;
+	background: white;
+}
+#deltaindexnav0 a:active {
+	color:white;
+	background-color:red;
+	text-decoration:none
+}
+/* Styles for Delta indexes Navigation1 */
+
+#deltaindexnav1 ul {
+	list-style-type: none;
+	width: 100%;
+	padding: 0px;
+	margin: -3px;
+}
+#deltaindexnav1 li {
+	float: left;
+	text-align:center;
+
+}
+#deltaindexnav1 a {
+	font-family: Calibri, Arial, Trebuchet;
+	color: white;
+	display: block;
+	min-width:150px;
+	text-decoration: none;
+	background: #0099cc;
+	padding: 1px;
+
+}
+#deltaindexnav1 a:hover {
+	color: #0099cc
+;
+	font-weight: normal;
+	text-decoration: none;
+	background: white;
+}
+#deltaindexnav1 a:active {
+	color:white;
+	background-color:red;
+	text-decoration:none
+}
+/* Class Styles for deltahighlight link */
+a.deltahighlightlink:link {
+	color: white;
+	text-decoration: none;
+	background: #0099cc;
+	display:inline;
+	padding-left:3px;
+	padding-right:3px;
+}
+a.deltahighlightlink:visited {
+	color: white;
+	text-decoration: none;
+	background:#0099cc;
+	display:inline;
+}
+a.deltahighlightlink:hover {
+	color: #0099cc;
+	text-decoration: none;
+	background: white;
+	display:inline;
+}
+a.deltahighlightlink:active {
+	color: red;
+	background: white;
+	text-decoration: none;
+}
+.paleblueborder {
+	border: 1px solid #CCCCFF;
+}

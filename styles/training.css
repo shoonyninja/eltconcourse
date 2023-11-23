@@ -1,0 +1,398 @@
+﻿/* Styles for TT Navigation */
+#sidebartt {
+	position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top (probably not needed) */
+    top: 58px; /* Stay at the top but below the masthead */
+    left: 0;
+	float: left;
+	width: 140px;
+	background-color: #000080;
+}
+#sidebartt ul {
+	list-style-type: none;
+	width: 100%;
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+#sidebartt li {
+	display: block;
+}
+#sidebartt a {
+	font-weight: normal;
+	text-decoration: none;
+	color: white;
+	padding: 1%;
+	display: block;
+	border-bottom: 1px solid #f5f5f5;
+}
+#sidebartt a:hover {
+	font-weight: normal;
+	text-decoration: none;
+	color: #000080;
+	border-bottom: 1px solid #f5f5f5;
+	background-color: #ffffff;
+}
+/* Styles for TT Table Navigation no padding*/
+
+#ttnav a {
+	font-family: Calibri, Arial, Trebuchet;
+	color: white;
+	display: block;
+	min-width:150px; 
+	text-decoration: none;
+	padding:0px;
+	margin:0px;
+	background: #000080;
+}
+#ttnav a:hover {
+	color: #000080;
+	font-weight: normal;
+	text-decoration: none;
+	background: #ffffff;
+}
+#ttnav a:active {
+	color:white;
+	background-color:red;
+	text-decoration:none;
+}
+/* Styles for TT Table Navigation with padding left 2px right 1px*/
+
+#ttnavpadded a {
+	font-family: Calibri, Arial, Trebuchet;
+	color: white;
+	display: block;
+	text-decoration: none;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 2px;
+	padding-right: 1px;
+	margin-right: 0px;
+	margin-bottom:0px;
+	background: #000080;
+}
+#ttnavpadded a:hover {
+	color: #000080;
+	font-weight: normal;
+	text-decoration: none;
+	background: #ffffff;
+}
+#ttnavpadded a:active {
+	color:white;
+	background-color:red;
+	text-decoration:none;
+}
+
+/* Styles for In-service Navigation */
+#istrainingnav ul {
+	list-style-type: none;
+	width: 100%;
+	padding: 0px;
+	margin: -3px;
+}
+#istrainingnav li {
+	float: left;
+	text-align:center;
+	padding-bottom:1px;
+	padding-top:1px;
+	
+}
+
+/* Styles for In-service Navigation */
+#istrainingnav ul {
+	list-style-type: none;
+	width: 100%;
+	padding: 0px;
+	margin: -3px;
+}
+#istrainingnav li {
+	float: left;
+	text-align:center;
+	padding-bottom:1px;
+	padding-top:1px;
+}
+#istrainingnav a {
+	font-family: Calibri, Arial, Trebuchet;
+	color: #000080;
+	display: block;
+	min-width:150px;
+	text-decoration: none;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 2px;
+	padding-right: 2px;
+	margin-bottom:0px;
+	background: #cccccc;
+	
+}
+#istrainingnav a:hover {
+	color: #cccccc;
+	font-weight: normal;
+	text-decoration: none;
+	background: #000080;
+}
+#istrainingnav a:active {
+	color:white;
+	background-color:red;
+	text-decoration:none;
+}
+
+}
+#istrainingnav0 ul {
+	list-style-type: none;
+	width: 100%;
+	padding: 0px;
+	margin: -3px;
+}
+#istrainingnav0 li {
+	float: left;
+	text-align:center;
+	padding-bottom:1px;
+	padding-top:1px;
+}
+#istrainingnav0 a {
+	font-family: Calibri, Arial, Trebuchet;
+	color: #000080;
+	display: block;
+	min-width:150px;
+	text-decoration: none;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 2px;
+	padding-right: 2px;
+	margin-bottom:0px;
+	background: #cccccc;
+}
+#istrainingnav0 a:hover {
+	color: #cccccc;
+	font-weight: normal;
+	text-decoration: none;
+	background: #000080;
+}
+#istrainingnav0 a:active {
+	color:white;
+	background-color:red;
+	text-decoration:none;
+}
+
+/* Styles for Initial plus Navigation */
+#iptrainingnav ul {
+	list-style-type: none;
+	width: 100%;
+	padding: 0px;
+	margin: -3px;
+}
+#iptrainingnav li {
+	float: left;
+	text-align:center;
+	padding-bottom:1px;
+	padding-top:1px;
+	
+}
+#iptrainingnav a {
+	font-family: Calibri, Arial, Trebuchet;
+	color: #000080;
+	display: block;
+	min-width:150px;
+	text-decoration: none;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 2px;
+	padding-right: 2px;
+	margin-bottom:0px;
+	background: #ffcc00;
+}
+#iptrainingnav a:hover {
+	
+	color: #ffcc00;
+	font-weight: normal;
+	text-decoration: none;
+	background: #000080;
+}
+#iptrainingnav a:active {
+	color:white;
+	background-color:red;
+	text-decoration:none;
+}
+#iptrainingnav0 ul {
+	list-style-type: none;
+	width: 100%;
+	padding: 0px;
+	margin: -3px;
+}
+#iptrainingnav0 li {
+	float: left;
+	text-align:center;
+	padding-bottom:1px;
+	padding-top:1px;
+	
+}
+#iptrainingnav0 a {
+	font-family: Calibri, Arial, Trebuchet;
+	color: #000080;
+	display: block;
+	min-width:150px;
+	text-decoration: none;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 2px;
+	padding-right: 2px;
+	margin-bottom:0px;
+	background: #ffcc00;
+}
+#iptrainingnav0 a:hover {
+	color: #ffcc00;
+	font-weight: normal;
+	text-decoration: none;
+	background: #000080;
+}
+#iptrainingnav0 a:active {
+	color:white;
+	background-color:red;
+	text-decoration:none;
+}
+#iptrainingnav1 ul {
+	list-style-type: none;
+	width: 100%;
+	padding: 0px;
+	margin: -3px;
+}
+#iptrainingnav1 li {
+	float: left;
+	text-align:center;
+	padding-bottom:1px;
+	padding-top:1px;
+	
+}
+#iptrainingnav1 a {
+	font-family: Calibri, Arial, Trebuchet;
+	color: #000080;
+	display: block;
+	min-width:150px;
+	text-decoration: none;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 2px;
+	padding-right: 2px;
+	margin-bottom:0px;
+	background: #ffcc00;
+}
+#iptrainingnav1 a:hover {
+	
+	color: #ffcc00;
+	font-weight: normal;
+	text-decoration: none;
+	background: #000080;
+}
+#iptrainingnav1 a:active {
+	color:white;
+	background-color:red;
+	text-decoration:none;
+}
+
+/* Styles for normal-looking links */
+#normallinks a {
+	color: #ff3300;
+	text-decoration: none;
+	background:#FFFFFF;
+	display:inline;
+}
+#normallinks a:hover {
+	color: #000080;
+	text-decoration: underline;
+	background:#FFFFFF;
+	display:inline;
+}
+#normallinks a:active {
+	color:white;
+	background-color:red;
+	text-decoration:none
+}
+#normallinks a:visited {
+	color: #666666;
+}
+
+hr { 
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-width: 1px;
+	border-color: #000080;
+}
+/* Styles for initial plus highlight links */
+
+a.highlightlinkip:link{
+	color: #000080;
+	text-decoration: none;
+	background:#ffcc00;
+	display:inline;
+	padding-left:3px;
+	padding-right:3px;
+}
+a.highlightlinkip:visited {
+	color: #000080;
+	text-decoration: none;
+	background:#ffcc00;
+	display:inline;
+}
+a.highlightlinkip:hover {
+	color: #ffcc00;
+	text-decoration: none;
+	background:#000080;
+	display:inline;
+}
+/* Styles for inservice highlight links */
+
+a.highlightlinkis:link{
+	color: #000080;
+	text-decoration: none;
+	background:#cccccc;
+	display:inline;
+	padding-left:3px;
+	padding-right:3px;
+}
+a.highlightlinkis:visited {
+	color: #000080;
+	text-decoration: none;
+	background:#cccccc;
+	display:inline;
+}
+a.highlightlinkis:hover {
+	color: #cccccc;
+	text-decoration: none;
+	background:#000080;
+	display:inline;
+}
+/* Styles for TT Table Navigation quick access ONLY*/
+
+#ttnavquick a {
+	font-family: Calibri, Arial, Trebuchet;
+	color: white;
+	display: block;
+	min-width:150px; 
+	text-decoration: none;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 4px;
+	padding-right: 0px;
+	margin-right: 0px;
+	margin-bottom:0px;
+	background: #000080;
+	width:100%; height:100%;
+}
+#ttnavquick a:hover {
+	color: #000080;
+	font-weight: normal;
+	text-decoration: none;
+	background: #ffffff;
+	width:100%; height:100%;
+}
+#ttnavquick a:active {
+	color:white;
+	background-color:red;
+	text-decoration:none;
+	width:100%; height:100%;
+}

@@ -1,0 +1,248 @@
+#content {
+	margin-left: 140px;
+	margin-right: 10px;
+	padding-left: 3px;
+	background-color: #fff;
+	font-family: Calibri, Arial, Trebuchet;
+	color: #000080; 
+	text-align:justify;
+}
+h1 {
+	font-family: Calibri, Arial, Trebuchet;
+	color: #0066cc; 
+}
+h2,h3,h4 {
+	font-family: Calibri, Arial, Trebuchet;
+	color: #0066cc;
+}
+h5,h6 {
+	font-family: Calibri, Arial, Trebuchet;
+	color:#663300;
+	
+	margin-bottom:0px;
+}
+.greenbullet {
+	list-style-image: url('../gfx/greenbullet8px.png');
+}
+.bluebullet {
+	list-style-image: url('../gfx/bluebullet8px.png');
+}
+/* Styles for TKT sidebar */
+#sidebartkt {
+	position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top (probably not needed) */
+    top: 58px; /* Stay at the top but below the masthead */
+    left: 0;
+	float: left;
+	width: 140px;
+	background-color: #ccccff;
+}
+#sidebartkt ul {
+	list-style-type: none;
+	width: 100%;
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+#sidebartkt li {
+	display: block;
+}
+#sidebartkt a {
+	font-weight: normal;
+	text-decoration: none;
+	color: black;
+	padding: 1%;
+	display: block;
+	border-bottom: 1px solid #f5f5f5;
+}
+#sidebartkt a:hover {
+	font-weight: normal;
+	text-decoration: none;
+	color: #ccccff;
+	border-bottom: 1px solid #f5f5f5;
+	background-color: black;
+}
+
+hr { 
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-width: 1px;
+	border-color: #ccccff;
+}
+.boldblue {
+	color: #0066cc;
+	font-weight:bold;
+	text-decoration:underline;
+	
+}
+#tktnavigation ul {
+	list-style-type: none;
+	width: 100%;
+	padding: 0px;
+	margin: -3px;
+}
+#tktnavigation li {
+	float: left;
+	text-align:center;
+	padding-bottom:1px;
+	padding-top:1px;
+	
+}
+#tktnavigation a:visited {
+	font-family: Calibri, Arial, Trebuchet;
+	color: black;
+	display: block;
+	min-width:150px;
+	text-decoration: none;
+	padding-top: 0px;
+	padding-bottom: 2px;
+	padding-left: 2px;
+	padding-right: 2px;
+	margin-right: 1px;
+	margin-bottom:1px;
+	background: #ccccff;
+}
+#tktnavigation a {
+	font-family: Calibri, Arial, Trebuchet;
+	color: black;
+	display: block;
+	min-width:150px;
+	text-decoration: none;
+	padding-top: 0px;
+	padding-bottom: 2px;
+	padding-left: 2px;
+	padding-right: 2px;
+	margin-right: 1px;
+	margin-bottom:1px;
+	background: #ccccff;
+}
+#tktnavigation a:hover {
+	
+	color: #ccccff;
+	font-weight: normal;
+	text-decoration: none;
+	background-color: black;
+	
+}
+#tktnavigation a:active {
+	color:white;
+	background-color:red;
+	text-decoration:none
+}
+#tktnavigation0 a:visited {
+	font-family: Calibri, Arial, Trebuchet;
+	color: black;
+	display: block;
+	min-width:150px;
+	text-decoration: none;
+	padding-top: 0px;
+	padding-bottom: 2px;
+	padding-left: 2px;
+	padding-right: 2px;
+	margin-right: 1px;
+	margin-bottom:1px;
+	background: #ccccff;
+}
+#tktnavigation0 ul {
+	list-style-type: none;
+	width: 100%;
+	padding: 0px;
+	margin: -3px;
+}
+#tktnavigation0 li {
+	float: left;
+	text-align:center;
+	padding-bottom:1px;
+	padding-top:1px;
+	
+}
+#tktnavigation0 a {
+	font-family: Calibri, Arial, Trebuchet;
+	color: black;
+	display: block;
+	min-width:150px;
+	text-decoration: none;
+	padding-top: 0px;
+	padding-bottom: 2px;
+	padding-left: 2px;
+	padding-right: 2px;
+	margin-right: 1px;
+	margin-bottom:1px;
+	background: #ccccff;
+	
+}
+#tktnavigation0 a:hover {
+	
+	color: #ccccff;
+	font-weight: normal;
+	text-decoration: none;
+	background-color: black;
+	
+}
+#tktnavigation0 a:active {
+	color:white;
+	background-color:red;
+	text-decoration:none
+}
+#tktnavigation1:visited a {
+	font-family: Calibri, Arial, Trebuchet;
+	color: black;
+	display: block;
+	min-width:150px;
+	text-decoration: none;
+	padding-top: 0px;
+	padding-bottom: 2px;
+	padding-left: 2px;
+	padding-right: 2px;
+	margin-right: 1px;
+	margin-bottom:1px;
+	background: #ccccff;
+	
+}
+#tktnavigation1 ul {
+	list-style-type: none;
+	width: 100%;
+	padding: 0px;
+	margin: -3px;
+}
+#tktnavigation1 li {
+	float: left;
+	text-align:center;
+	padding-bottom:1px;
+	padding-top:1px;
+	
+}
+#tktnavigation1 a {
+	font-family: Calibri, Arial, Trebuchet;
+	color: black;
+	display: block;
+	min-width:150px;
+	text-decoration: none;
+	padding-top: 0px;
+	padding-bottom: 2px;
+	padding-left: 2px;
+	padding-right: 2px;
+	margin-right: 1px;
+	margin-bottom:1px;
+	background: #ccccff;
+	
+}
+#tktnavigation1 a:hover {
+	
+	color: #ccccff;
+	font-weight: normal;
+	text-decoration: none;
+	background-color: black;
+	
+}
+#tktnavigation1 a:active {
+	color:white;
+	background-color:red;
+	text-decoration:none
+}
+
+

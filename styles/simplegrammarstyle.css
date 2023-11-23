@@ -1,0 +1,101 @@
+﻿#content {
+	margin-left: 140px;
+	margin-right: 10px;
+	padding-left: 3px;
+	background-color: #fff;
+	font-family: Calibri, Arial, Trebuchet;
+	color: #000080;
+	text-align:justify;
+}
+h1 {
+	font-family: Calibri, Arial, Trebuchet;
+	color: #000066; 
+}
+h2,h3,h4 {
+	font-family: Calibri, Arial, Trebuchet;
+	color: #000066;
+}
+h5,h6 {
+	font-family: Calibri, Arial, Trebuchet;
+	color:#663300;
+	margin-bottom:0px;
+}
+
+/* Styles for simple grammar sidebar */
+#sidebarsimplegrammar {
+	position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top (probably not needed) */
+    top: 58px; /* Stay at the top but below the masthead */
+    left: 0;
+	float: left;
+	width: 140px;
+	background-color: #cccc00;
+}
+#sidebarsimplegrammar ul {
+	list-style-type: none;
+	width: 100%;
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+#sidebarsimplegrammar li {
+	display: block;
+}
+#sidebarsimplegrammar a {
+	font-weight: normal;
+	text-decoration: none;
+	color: #000066;
+	padding: 1%;
+	display: block;
+	border-bottom: 1px solid #f5f5f5;
+}
+#sidebarsimplegrammar a:hover {
+	font-weight: normal;
+	text-decoration: none;
+	color: #cccc00;
+	border-bottom: 1px solid #f5f5f5;
+	background-color: #000066;
+}
+#blockedlist a {
+	background-color:#cccc00;
+	color: #000066;
+	text-decoration: none;
+	display: block;
+	border-style: solid;
+	border-width: 0px;
+	padding-right: 5px;
+	padding-left: 5px;
+	min-width: 180px;
+}
+
+#blockedlist a:hover {
+	color: #cccc00;
+	background-color: #000066;
+}
+
+hr { 
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-width: 1px;
+	border-color: #cccc00;
+}
+/* Styles for simple grammar linked table */
+
+#simplegrammartable a {
+	font-weight: normal;
+	text-decoration: none;
+	color: #000066;
+	display: inline;
+	background-color:#CCCC00
+}
+#simplegrammartable a:hover {
+	font-weight: normal;
+	text-decoration: none;
+	color: #cccc00;
+	background-color: #000066;
+}
+

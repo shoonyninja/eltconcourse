@@ -1,0 +1,130 @@
+﻿hr { 
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-width: 1px;
+	border-color: #81607b;
+}
+/* Styles for bridge sidebar Navigation */
+#sidebarbridge {
+	position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top (probably not needed) */
+    top: 58px; /* Stay at the top but below the masthead */
+    left: 0;
+	float: left;
+	width: 140px;
+	background-color: #81607b;
+}
+#sidebarbridge ul {
+	list-style-type: none;
+	width: 100%;
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+#sidebarbridge li {
+	display: block;
+	background-color: #81607b;
+}
+#sidebarbridge a {
+	font-weight: normal;
+	text-decoration: none;
+	color: white;
+	padding: 1%;
+	display: block;
+	border-bottom: 1px solid #f5f5f5;
+}
+#sidebarbridge a:hover {
+	font-weight: normal;
+	text-decoration: none;
+	color: #81607b;
+	border-bottom: 1px solid #f5f5f5;
+	background-color: #FDD5FD;
+}
+/* Styles for bridge index Navigation */
+#bridgeindexnav ul {
+	list-style-type: none;
+	width: 100%;
+	padding: 0px;
+	margin: -3px;
+	background-color: #81607b;
+}
+#bridgeindexnav li {
+	float: left;
+	text-align:center;
+	padding-bottom:1px;
+	padding-top:1px;
+}
+#bridgeindexnav a {
+	font-family: Calibri, Arial, Trebuchet;
+	color: white;
+	display: block;
+	min-width:100px;
+	text-decoration: none;
+	padding-top: 0px;
+	padding-bottom: 2px;
+	padding-left: 2px;
+	padding-right: 2px;
+	background: #81607b;
+	
+}
+#bridgeindexnav a:hover {
+	color: #81607b;
+	background-color: #FDD5FD;
+}
+#bridgeindexnav a:active {
+	color:white;
+	background-color:red;
+	text-decoration:none
+}
+
+/* Styles for bridge index Navigation0 */
+#bridgeindexnav0 ul {
+	list-style-type: none;
+	width: 100%;
+	padding: 0px;
+	margin: -3px;
+	background-color: #81607b;
+}
+#bridgeindexnav0 li {
+	float: left;
+	text-align:center;
+	padding-bottom:1px;
+	padding-top:1px;
+}
+#bridgeindexnav0 a {
+	font-family: Calibri, Arial, Trebuchet;
+	color: white;
+	display: block;
+	min-width:100px;
+	text-decoration: none;
+	padding-top: 0px;
+	padding-bottom: 2px;
+	padding-left: 2px;
+	padding-right: 2px;
+	background: #81607b;
+	
+}
+#bridgeindexnav0 a:hover {
+	color: #81607b;
+	background-color: #FDD5FD;
+}
+#bridgeindexnav0 a:active {
+	color:white;
+	background-color:red;
+	text-decoration:none
+}
+.bridge_table {
+	border-collapse: collapse;
+	border: 1px solid #81607b;
+}
+h1 {
+	color:#81607b;
+}
+.purple_bullet {
+	list-style-image: url('../gfx/purple_bullet.gif');
+}
+

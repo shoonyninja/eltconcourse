@@ -1,0 +1,47 @@
+﻿hr { 
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-width: 1px;
+	border-color: #009999;
+}
+/* Class Styles for deltahighlight block link */
+a.deltahighlightlinkblock:visited {
+	color: white;
+	text-decoration: none;
+	background: #0099cc;
+	display:block;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+a.deltahighlightlinkblock:link {
+	color: white;
+	text-decoration: none;
+	background: #0099cc;
+	display:block;
+}
+a.deltahighlightlinkblock:hover {
+	color: #0099cc;
+	text-decoration: none;
+	background: white;
+	display:block;
+}
+a {
+	color: #ff3300;
+	text-decoration: none;
+}
+a:hover {
+	color: #000080;
+}
+a:active {
+	color:white;
+	background-color:red;
+	text-decoration:none
+}
+.green {
+	color: #003300;
+}
+

@@ -1,0 +1,519 @@
+﻿@import url("layout.css");
+.table5x2 {
+	border: 1px solid #C23901;
+}
+body {
+	font-family: Calibri, Arial, Trebuchet;
+	font-size: medium;
+	color: #000;
+}
+.concoursebluepara{
+	font-family: Calibri, Arial, Trebuchet;
+	font-size: medium;
+	color: #001dff;
+	text-align:justify;
+}
+
+.smallfont {
+	font-size: small;
+	font-family: Calibri, Arial, Trebuchet;
+}
+.orangeitalic {
+	color: #da6200;
+	font-style: italic;
+}
+.bluexxlargebold {
+	color: #001dff;
+	font-size: xx-large;
+	font-weight:bold;
+
+}
+.orangexxlargebold {
+	color: #FF9900;
+	font-size: xx-large;
+	font-weight: bold;
+}
+
+#container {
+	width: 100%;
+	height: 100%;
+	background-color: white;
+}
+#masthead {
+	width: 100%;
+	overflow: auto;
+	text-align: left;
+	background-color: white;
+}
+#page_content {
+	position: relative;
+}
+#sidebar {
+	position: relative;
+	float: left;
+	width: 140px;
+	background-color: #FDB415;
+	font-size: 0.875em;
+}
+#content {
+	margin-left: 140px;
+	margin-right: 10px;
+	padding-left: 3px;
+	background-color: #fff;
+	font-family: Calibri, Arial, Trebuchet;
+	color: #001dff
+;
+	text-align:justify;
+}
+#toppicture {
+	margin-left:140px;
+}
+#footer {
+	clear: both;
+	width: 99%;
+	overflow: hidden;
+	padding-top: 1%;
+	padding-right: 0;
+	padding-bottom: 1%;
+	padding-left: 1%;
+	background-color: #F4F4F4;
+}
+#masthead img {
+	float: left;
+}
+#masthead p {
+	font-size: small;
+	margin: 0;
+	margin-right: 1%;
+}
+h1 {
+	font-family: Calibri, Arial, Trebuchet;
+	color: #FF9900; 
+}
+h2,h3,h4 {
+	font-family: Calibri, Arial, Trebuchet;
+	color: #001dff;
+}
+h5,h6
+	{font-family: Calibri, Arial, Trebuchet;
+	color:#C23901;
+	font-size:medium;
+	margin-bottom:0px;
+}
+/* Styles for Navigation */
+
+
+#sidebar ul {
+	list-style-type: none;
+	width: 100%;
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+#sidebar li {
+	display: block;
+		
+}
+#sidebar a {
+	font-weight: normal;
+	text-decoration: none;
+	color: #001dff
+;
+	padding: 1%;
+	display: block;
+	border-bottom: 1px solid #f5f5f5;
+}
+#sidebar a:hover {
+	font-weight: normal;
+	text-decoration: none;
+	color: #FDB415;
+	border-bottom: 1px solid #f5f5f5;
+	background-color: #001dff
+;
+}
+/* Styles for TT Navigation */
+#sidebartt {
+	position: relative;
+	float: left;
+	width: 140px;
+	background-color: #001dff;
+	font-size: 0.875em;
+}
+
+
+#sidebartt ul {
+	list-style-type: none;
+	width: 100%;
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+#sidebartt li {
+	display: block;
+		
+}
+#sidebartt a {
+	font-weight: normal;
+	text-decoration: none;
+	color: #ffe100
+;
+	padding: 1%;
+	display: block;
+	border-bottom: 1px solid #f5f5f5;
+}
+#sidebartt a:hover {
+	font-weight: normal;
+	text-decoration: none;
+	color: #001dff;
+	border-bottom: 1px solid #f5f5f5;
+	background-color: #ffe100
+;
+}
+/* Styles for CELTA Navigation */
+#sidebarcelta {
+	position: relative;
+	float: left;
+	width: 140px;
+	background-color: #00a28a;
+	font-size: 0.875em;
+}
+
+
+#sidebarcelta ul {
+	list-style-type: none;
+	width: 100%;
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+#sidebarcelta li {
+	display: block;
+		
+}
+#sidebarcelta a {
+	font-weight: normal;
+	text-decoration: none;
+	color: #ffe100
+;
+	padding: 1%;
+	display: block;
+	border-bottom: 1px solid #f5f5f5;
+}
+#sidebarcelta a:hover {
+	font-weight: normal;
+	text-decoration: none;
+	color: #001dff;
+	border-bottom: 1px solid #f5f5f5;
+	background-color: #ffe100
+;
+}
+
+
+/* Styles for lesson Navigation */
+#sidebarless {
+	position: relative;
+	float: left;
+	width: 140px;
+	background-color: #009900;
+	font-size: 0.875em;
+}
+
+
+#sidebarless ul {
+	list-style-type: none;
+	width: 100%;
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+#sidebarless li {
+	display: block;
+		
+}
+#sidebarless a {
+	font-weight: normal;
+	text-decoration: none;
+	color: #ffcc00
+;
+	padding: 1%;
+	display: block;
+	border-bottom: 1px solid #f5f5f5;
+}
+#sidebarless a:hover {
+	font-weight: normal;
+	text-decoration: none;
+	color: #009900;
+	border-bottom: 1px solid #f5f5f5;
+	background-color: #ffcc00
+;
+}
+/* Styles for teacher Navigation */
+#sidebarteach {
+	position: relative;
+	float: left;
+	width: 140px;
+	background-color: #996600;
+	font-size: 0.875em;
+}
+
+
+#sidebarteach ul {
+	list-style-type: none;
+	width: 100%;
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+#sidebarteach li {
+	display: block;
+		
+}
+#sidebarteach a {
+	font-weight: normal;
+	text-decoration: none;
+	color: #ffcc00
+;
+	padding: 1%;
+	display: block;
+	border-bottom: 1px solid #f5f5f5;
+}
+#sidebarteach a:hover {
+	font-weight: normal;
+	text-decoration: none;
+	color: #996600;
+	border-bottom: 1px solid #f5f5f5;
+	background-color: #ffcc00
+;
+}
+
+/* Styles for development Navigation */
+#sidebardev {
+	position: relative;
+	float: left;
+	width: 140px;
+	background-color: #e6180d;
+	font-size: 0.875em;
+}
+
+
+#sidebardev ul {
+	list-style-type: none;
+	width: 100%;
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+#sidebardev li {
+	display: block;
+		
+}
+#sidebardev a {
+	font-weight: normal;
+	text-decoration: none;
+	color: #ffcc00
+;
+	padding: 1%;
+	display: block;
+	border-bottom: 1px solid #f5f5f5;
+}
+#sidebardev a:hover {
+	font-weight: normal;
+	text-decoration: none;
+	color: #e6180d;
+	border-bottom: 1px solid #f5f5f5;
+	background-color: #ffcc00
+;
+}
+/* Styles for course Navigation */
+#sidebarcourse {
+	position: relative;
+	float: left;
+	width: 140px;
+	background-color: #ffe100;
+	font-size: 0.875em;
+}
+
+
+#sidebarcourse ul {
+	list-style-type: none;
+	width: 100%;
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+#sidebarcourse li {
+	display: block;
+		
+}
+#sidebarcourse a {
+	font-weight: normal;
+	text-decoration: none;
+	color: #008000
+;
+	padding: 1%;
+	display: block;
+	border-bottom: 1px solid #f5f5f5;
+}
+#sidebarcourse a:hover {
+	font-weight: normal;
+	text-decoration: none;
+	color: #ffe100;
+	border-bottom: 1px solid #f5f5f5;
+	background-color: #008000
+;
+}
+
+/* Styles for Footer */
+#footer p {
+	font-size: small;
+}
+#footer a {
+	color: #393939;
+	text-decoration: underline;
+}
+#footer a:hover {
+	color: #393939;
+	text-decoration: none;
+}
+hr { 
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-width: 1px;
+	border-color: #fdb415;
+}
+a
+{
+	color: #FF4500;
+	text-decoration: none;
+}
+a:hover {
+	color: #000080;
+	text-decoration: underline
+
+}
+a:active  {
+	color:yellow;
+	text-decoration:none
+}
+.style_bold {
+	font-weight: bold;
+}
+.style_italic {
+	font-style: italic;
+}
+.style_underline {
+	text-decoration:underline;
+}
+.style_brown {
+	color: #C23901;
+}
+.style_black {
+	color: black;
+}
+.style_red {
+	color: red;
+}
+
+
+#horizontallist ul {
+	list-style-type: none;
+	width: 100%;
+	padding: 2px;
+	}
+#horizontallist li {
+	list-style-type: none;
+	padding: 2px;
+	margin: 2px;
+	text-indent: 2px;
+	float: left;
+}
+#horizontallist a {
+	color: #001dff;
+	text-decoration: none;
+	display: block;
+	width:150px;
+	border-style: solid;
+	border-width: 1px;
+	padding-right:  5px;
+	padding-left:5px; background-color: #Fdb415;font-size: 0.875em;
+}
+
+#horizontallist a:hover {
+	color: #FDB415;
+	background-color: #001dff;
+}
+#verticallist ul {
+	list-style-type: none;
+	min-width: 400px;
+	padding: 2px;
+}
+#verticallist li {
+	list-style-type: none;
+	padding: 2px;
+	margin: 2px;
+	border:1px;
+	text-indent: 2px;
+}
+#verticallist a {
+	color: #001dff;
+	text-decoration: none;
+	display: block;
+	border-style: solid;
+	border:1px;
+	border-color: #001dff; 
+	border-width: 1px;
+	padding-right:  5px;
+	padding-left:5px;
+	background-color: #fdb415;
+}
+
+#verticallist a:hover {
+	color: #FDB415;
+	background-color: #001dff;
+	border:1px;
+	border-color: #ebcf62;
+}
+#lesson p {
+	font-size: medium; color: #001dff
+}
+#lessonnav a {
+	color: #001dff;
+	float:left;
+	text-decoration: none;
+	display: block;
+	border-style: solid;
+	border-color: #fdb415; 
+	border-width: 1px;
+	padding-right:  5px;
+	padding-left:5px;
+	background-color: #fdb415;
+}
+#lessonnav a:hover {
+	color: #FDB415;
+	background-color: #001dff;
+}
+#blocklist a {
+	color: #001dff;
+	text-decoration: none;
+	width: auto;
+	border-style: solid;
+	border-width: 1px;
+	padding-right:  5px;
+	padding-left:5px; background-color: #Fdb415; 
+}
+
+#blocklist a:hover {
+	color: #FDB415;
+	background-color: #001dff;
+}
+
+.redbulletlist {
+	list-style-image: url('../gfx/7pxredbull.gif');
+}
+.greybulletlist {
+	list-style-image: url('../gfx/7pxbullet.png');
+}

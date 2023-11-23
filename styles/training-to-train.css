@@ -1,0 +1,163 @@
+#content {
+	margin-left: 140px;
+	margin-right: 10px;
+	padding-left: 3px;
+	background-color: #fff;
+	font-family: Calibri, Arial, Trebuchet;
+	color: #003300; 
+	text-align:justify;
+}
+h1 {
+	font-family: Calibri, Arial, Trebuchet;
+	color: #006600; 
+}
+h2,h3,h4 {
+	font-family: Calibri, Arial, Trebuchet;
+	color: #006600;
+}
+h5,h6 {
+	font-family: Calibri, Arial, Trebuchet;
+	color:#006600;
+	margin-bottom:0px;
+}
+.darkgreenbullet {
+	list-style-image: url('../gfx/dark_green_bullet7px.gif');
+}
+.greenroundbullet {
+	list-style-image: url('../gfx/greenroundbullet5px.gif');
+}
+.brownroundbullet {
+	list-style-image: url('../gfx/brownroundbutton5px.png');
+}
+/* Styles for sidebar */
+#sidebartrainertraining {
+	position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top (probably not needed) */
+    top: 58px; /* Stay at the top but below the masthead */
+    left: 0;
+	float: left;
+	width: 140px;
+	background-color: #006600;
+}
+#sidebartrainertraining ul {
+	list-style-type: none;
+	width: 100%;
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+#sidebartrainertraining li {
+	display: block;
+}
+#sidebartrainertraining a {
+	font-weight: normal;
+	text-decoration: none;
+	color: #ffcccc;
+	padding: 1%;
+	display: block;
+	border-bottom: 1px solid #f1f1f1;
+}
+#sidebartrainertraining a:hover {
+	font-weight: normal;
+	text-decoration: none;
+	color: #006600;
+	border-bottom: 1px solid #f1f1f1;
+	background-color:  #ffcccc;
+}
+hr { 
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-width: 1px;
+	border-color: #006600;
+}
+.greenxxlargebold {
+	color: #006600;
+	font-size: xx-large;
+	font-weight:bold;
+}
+.orangexxlargebold {
+	color: #ff6600;
+	font-size: xx-large;
+	font-weight: bold;
+}
+
+/* Styles for Navigation */
+#trainertrainingnavigation ul {
+	list-style-type: none;
+	width: 100%;
+	padding: 0px;
+	margin: -3px;
+}
+#trainertrainingnavigation li {
+	float: left;
+	text-align:center;
+	padding-bottom:1px;
+	padding-top:1px;
+	
+}
+#trainertrainingnavigation a {
+	font-family: Calibri, Arial, Trebuchet;
+	color: #ffcccc;
+	display: block;
+	text-decoration: none;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 2px;
+	padding-right: 2px;
+	margin-right: 0px;
+	margin-bottom:0px;
+	background: #006600;
+	
+}
+#trainertrainingnavigation a:hover {
+	
+	color: #006600;
+	font-weight: normal;
+	text-decoration: none;
+	background-color: #ffcccc;
+	
+}
+#trainertrainingnavigation a:active {
+	color:white;
+	background-color:red;
+	text-decoration:none
+}
+.tablegreenborder {
+	border: 1px solid #006600;
+	border-collapse: collapse;
+}
+.quote {
+	margin: 0 40px;
+	font-family: Calibri, Arial, "Trebuchet MS";
+	font-style: italic;
+	color: #000080;
+}
+.indent {
+	margin: 0 40px;
+	font-family: Calibri, Arial, "Trebuchet MS";
+	font-weight: bolder;
+	color: #000080;
+}
+/* Class Styles for training to train highlight link */
+a.trainingtotrainhighlightlink:link {
+	color: #ffcccc;
+	text-decoration: none;
+	background:#006600;
+	display:inline;
+}
+a.trainingtotrainhighlightlink:visited {
+	color: #ffcccc;
+	text-decoration: none;
+	background:#006600;
+	display:inline;
+}
+a.trainingtotrainhighlightlink:hover {
+	color: #006600;
+	text-decoration: none;
+	background:#ffcccc;
+	display:inline;
+}
